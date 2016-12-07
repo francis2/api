@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **CurrencyId** | **int?** | id of Currency | 
 **Amount** | **double?** |  | 
 **RealizedPnL** | **double?** |  | [optional] 
+**WeekRealizedPnL** | **double?** |  | [optional] 
 **CashChangeType** | **string** | AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, TradePaired, TradovateSubscription | 
 **FillPairId** | **int?** | id of FillPair | [optional] 
 **FillId** | **int?** | id of Fill | [optional] 

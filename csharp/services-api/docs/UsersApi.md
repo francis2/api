@@ -5,6 +5,7 @@ All URIs are relative to *https://live-api-d.tradovate.com/v1*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AcceptTradingPermission**](UsersApi.md#accepttradingpermission) | **POST** /user/accepttradingpermission | 
+[**AddMarketDataSubscription**](UsersApi.md#addmarketdatasubscription) | **POST** /user/addmarketdatasubscription | 
 [**AddTradovateSubscription**](UsersApi.md#addtradovatesubscription) | **POST** /user/addtradovatesubscription | 
 [**CancelTradovateSubscription**](UsersApi.md#canceltradovatesubscription) | **POST** /user/canceltradovatesubscription | 
 [**FindCountry**](UsersApi.md#findcountry) | **GET** /country/find | 
@@ -110,6 +111,70 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TradingPermissionResponse**](TradingPermissionResponse.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addmarketdatasubscription"></a>
+# **AddMarketDataSubscription**
+> MarketDataSubscriptionResponse AddMarketDataSubscription (AddMarketDataSubscription body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class AddMarketDataSubscriptionExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new AddMarketDataSubscription(); // AddMarketDataSubscription | 
+
+            try
+            {
+                MarketDataSubscriptionResponse result = apiInstance.AddMarketDataSubscription(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.AddMarketDataSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**AddMarketDataSubscription**](AddMarketDataSubscription.md)|  | 
+
+### Return type
+
+[**MarketDataSubscriptionResponse**](MarketDataSubscriptionResponse.md)
 
 ### Authorization
 

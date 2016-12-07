@@ -6170,6 +6170,24 @@ paths:
                     description: See definition
                     schema:
                         $ref: '#/definitions/TradingPermissionResponse'
+    /user/addmarketdatasubscription:
+        post:
+            operationId: addMarketDataSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/AddMarketDataSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResponse'
     /user/addtradovatesubscription:
         post:
             operationId: addTradovateSubscription
@@ -6571,6 +6589,38 @@ definitions:
                     - LP
                     - Joint
                     - GP
+    AddMarketDataSubscription:
+        type: object
+        required:
+            - marketDataSubscriptionPlanIds
+            - year
+            - month
+        properties: 
+            marketDataSubscriptionPlanIds:
+                type: array
+                items:
+                    type: integer
+            year:
+                type: integer
+                format: int32
+            month:
+                type: integer
+                format: int32
+            creditCardId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of CreditCard"
+            accountId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of Account"
+            userId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of User"
     AddTradovateSubscription:
         type: object
         required:
@@ -6805,6 +6855,9 @@ definitions:
             realizedPnL:
                 type: number
                 format: double
+            weekRealizedPnL:
+                type: number
+                format: double
     CashBalanceLog:
         type: object
         required:
@@ -6840,6 +6893,9 @@ definitions:
                 type: number
                 format: double
             realizedPnL:
+                type: number
+                format: double
+            weekRealizedPnL:
                 type: number
                 format: double
             cashChangeType:
@@ -7993,6 +8049,28 @@ definitions:
                     - NonProfessional
                     - Professional
                     - Either
+    MarketDataSubscriptionResponse:
+        type: object
+        properties: 
+            errorText:
+                type: string
+                maxLength: 8192
+                description: "Non-empty if the request failed"
+            errorCode:
+                type: string
+                description: "ConflictWithExisting, DowngradeNotAllowed, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError"
+                enum:
+                    - IncorrectPaymentMethod
+                    - UnknownError
+                    - InsufficientFunds
+                    - ConflictWithExisting
+                    - PaymentProviderError
+                    - PlanDiscontinued
+                    - DowngradeNotAllowed
+                    - SingleTrialOnly
+                    - Success
+            marketDataSubscription:
+                $ref: '#/definitions/MarketDataSubscription'
     ModifyAlert:
         type: object
         required:
@@ -9782,6 +9860,10 @@ definitions:
                 type: number
                 format: double
                 description: "$ Daily Loss for an Auto-Liq"
+            weeklyLossAutoLiq:
+                type: number
+                format: double
+                description: "$ Weekly Loss for an Auto-Liq"
     UserAccountPositionLimit:
         type: object
         required:

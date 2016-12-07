@@ -52,7 +52,8 @@ namespace Tradovate.Services.Model
         /// <param name="MarginPercentageAutoLiq">Margin % for an Auto-Liq.</param>
         /// <param name="DailyLossPercentageAutoLiq">Daily Loss % for an AutoLiq.</param>
         /// <param name="DailyLossAutoLiq">$ Daily Loss for an Auto-Liq.</param>
-        public UserAccountAutoLiq(int? Id = null, double? MarginPercentageAlert = null, double? DailyLossPercentageAlert = null, double? DailyLossAlert = null, double? MarginPercentageLiqOnly = null, double? DailyLossPercentageLiqOnly = null, double? DailyLossLiqOnly = null, double? MarginPercentageAutoLiq = null, double? DailyLossPercentageAutoLiq = null, double? DailyLossAutoLiq = null)
+        /// <param name="WeeklyLossAutoLiq">$ Weekly Loss for an Auto-Liq.</param>
+        public UserAccountAutoLiq(int? Id = null, double? MarginPercentageAlert = null, double? DailyLossPercentageAlert = null, double? DailyLossAlert = null, double? MarginPercentageLiqOnly = null, double? DailyLossPercentageLiqOnly = null, double? DailyLossLiqOnly = null, double? MarginPercentageAutoLiq = null, double? DailyLossPercentageAutoLiq = null, double? DailyLossAutoLiq = null, double? WeeklyLossAutoLiq = null)
         {
             this.Id = Id;
             this.MarginPercentageAlert = MarginPercentageAlert;
@@ -64,6 +65,7 @@ namespace Tradovate.Services.Model
             this.MarginPercentageAutoLiq = MarginPercentageAutoLiq;
             this.DailyLossPercentageAutoLiq = DailyLossPercentageAutoLiq;
             this.DailyLossAutoLiq = DailyLossAutoLiq;
+            this.WeeklyLossAutoLiq = WeeklyLossAutoLiq;
         }
         
         /// <summary>
@@ -126,6 +128,12 @@ namespace Tradovate.Services.Model
         [DataMember(Name="dailyLossAutoLiq", EmitDefaultValue=false)]
         public double? DailyLossAutoLiq { get; set; }
         /// <summary>
+        /// $ Weekly Loss for an Auto-Liq
+        /// </summary>
+        /// <value>$ Weekly Loss for an Auto-Liq</value>
+        [DataMember(Name="weeklyLossAutoLiq", EmitDefaultValue=false)]
+        public double? WeeklyLossAutoLiq { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -143,6 +151,7 @@ namespace Tradovate.Services.Model
             sb.Append("  MarginPercentageAutoLiq: ").Append(MarginPercentageAutoLiq).Append("\n");
             sb.Append("  DailyLossPercentageAutoLiq: ").Append(DailyLossPercentageAutoLiq).Append("\n");
             sb.Append("  DailyLossAutoLiq: ").Append(DailyLossAutoLiq).Append("\n");
+            sb.Append("  WeeklyLossAutoLiq: ").Append(WeeklyLossAutoLiq).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -228,6 +237,11 @@ namespace Tradovate.Services.Model
                     this.DailyLossAutoLiq == other.DailyLossAutoLiq ||
                     this.DailyLossAutoLiq != null &&
                     this.DailyLossAutoLiq.Equals(other.DailyLossAutoLiq)
+                ) && 
+                (
+                    this.WeeklyLossAutoLiq == other.WeeklyLossAutoLiq ||
+                    this.WeeklyLossAutoLiq != null &&
+                    this.WeeklyLossAutoLiq.Equals(other.WeeklyLossAutoLiq)
                 );
         }
 
@@ -262,6 +276,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.DailyLossPercentageAutoLiq.GetHashCode();
                 if (this.DailyLossAutoLiq != null)
                     hash = hash * 59 + this.DailyLossAutoLiq.GetHashCode();
+                if (this.WeeklyLossAutoLiq != null)
+                    hash = hash * 59 + this.WeeklyLossAutoLiq.GetHashCode();
                 return hash;
             }
         }

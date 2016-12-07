@@ -65,6 +65,27 @@ namespace Tradovate.Services.Api
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
+        /// <returns>MarketDataSubscriptionResponse</returns>
+        MarketDataSubscriptionResponse AddMarketDataSubscription (AddMarketDataSubscription body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of MarketDataSubscriptionResponse</returns>
+        ApiResponse<MarketDataSubscriptionResponse> AddMarketDataSubscriptionWithHttpInfo (AddMarketDataSubscription body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
         /// <returns>TradovateSubscriptionResponse</returns>
         TradovateSubscriptionResponse AddTradovateSubscription (AddTradovateSubscription body);
 
@@ -1147,6 +1168,27 @@ namespace Tradovate.Services.Api
         /// <param name="body"></param>
         /// <returns>Task of ApiResponse (TradingPermissionResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<TradingPermissionResponse>> AcceptTradingPermissionAsyncWithHttpInfo (AcceptTradingPermission body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of MarketDataSubscriptionResponse</returns>
+        System.Threading.Tasks.Task<MarketDataSubscriptionResponse> AddMarketDataSubscriptionAsync (AddMarketDataSubscription body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (MarketDataSubscriptionResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<MarketDataSubscriptionResponse>> AddMarketDataSubscriptionAsyncWithHttpInfo (AddMarketDataSubscription body);
         /// <summary>
         /// 
         /// </summary>
@@ -2491,6 +2533,174 @@ namespace Tradovate.Services.Api
             return new ApiResponse<TradingPermissionResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (TradingPermissionResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradingPermissionResponse)));
+            
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>MarketDataSubscriptionResponse</returns>
+        public MarketDataSubscriptionResponse AddMarketDataSubscription (AddMarketDataSubscription body)
+        {
+             ApiResponse<MarketDataSubscriptionResponse> localVarResponse = AddMarketDataSubscriptionWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of MarketDataSubscriptionResponse</returns>
+        public ApiResponse< MarketDataSubscriptionResponse > AddMarketDataSubscriptionWithHttpInfo (AddMarketDataSubscription body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->AddMarketDataSubscription");
+
+            var localVarPath = "/user/addmarketdatasubscription";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AddMarketDataSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<MarketDataSubscriptionResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (MarketDataSubscriptionResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(MarketDataSubscriptionResponse)));
+            
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of MarketDataSubscriptionResponse</returns>
+        public async System.Threading.Tasks.Task<MarketDataSubscriptionResponse> AddMarketDataSubscriptionAsync (AddMarketDataSubscription body)
+        {
+             ApiResponse<MarketDataSubscriptionResponse> localVarResponse = await AddMarketDataSubscriptionAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (MarketDataSubscriptionResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<MarketDataSubscriptionResponse>> AddMarketDataSubscriptionAsyncWithHttpInfo (AddMarketDataSubscription body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->AddMarketDataSubscription");
+
+            var localVarPath = "/user/addmarketdatasubscription";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("AddMarketDataSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<MarketDataSubscriptionResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (MarketDataSubscriptionResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(MarketDataSubscriptionResponse)));
             
         }
 

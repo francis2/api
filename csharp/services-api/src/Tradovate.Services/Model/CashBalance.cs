@@ -54,7 +54,8 @@ namespace Tradovate.Services.Model
         /// <param name="CurrencyId">id of Currency (required).</param>
         /// <param name="Amount">Amount (required).</param>
         /// <param name="RealizedPnL">RealizedPnL.</param>
-        public CashBalance(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, TradeDate TradeDate = null, int? CurrencyId = null, double? Amount = null, double? RealizedPnL = null)
+        /// <param name="WeekRealizedPnL">WeekRealizedPnL.</param>
+        public CashBalance(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, TradeDate TradeDate = null, int? CurrencyId = null, double? Amount = null, double? RealizedPnL = null, double? WeekRealizedPnL = null)
         {
             // to ensure "AccountId" is required (not null)
             if (AccountId == null)
@@ -103,6 +104,7 @@ namespace Tradovate.Services.Model
             }
             this.Id = Id;
             this.RealizedPnL = RealizedPnL;
+            this.WeekRealizedPnL = WeekRealizedPnL;
         }
         
         /// <summary>
@@ -143,6 +145,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="realizedPnL", EmitDefaultValue=false)]
         public double? RealizedPnL { get; set; }
         /// <summary>
+        /// Gets or Sets WeekRealizedPnL
+        /// </summary>
+        [DataMember(Name="weekRealizedPnL", EmitDefaultValue=false)]
+        public double? WeekRealizedPnL { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -157,6 +164,7 @@ namespace Tradovate.Services.Model
             sb.Append("  CurrencyId: ").Append(CurrencyId).Append("\n");
             sb.Append("  Amount: ").Append(Amount).Append("\n");
             sb.Append("  RealizedPnL: ").Append(RealizedPnL).Append("\n");
+            sb.Append("  WeekRealizedPnL: ").Append(WeekRealizedPnL).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -227,6 +235,11 @@ namespace Tradovate.Services.Model
                     this.RealizedPnL == other.RealizedPnL ||
                     this.RealizedPnL != null &&
                     this.RealizedPnL.Equals(other.RealizedPnL)
+                ) && 
+                (
+                    this.WeekRealizedPnL == other.WeekRealizedPnL ||
+                    this.WeekRealizedPnL != null &&
+                    this.WeekRealizedPnL.Equals(other.WeekRealizedPnL)
                 );
         }
 
@@ -255,6 +268,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Amount.GetHashCode();
                 if (this.RealizedPnL != null)
                     hash = hash * 59 + this.RealizedPnL.GetHashCode();
+                if (this.WeekRealizedPnL != null)
+                    hash = hash * 59 + this.WeekRealizedPnL.GetHashCode();
                 return hash;
             }
         }

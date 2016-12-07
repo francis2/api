@@ -177,13 +177,14 @@ namespace Tradovate.Services.Model
         /// <param name="CurrencyId">id of Currency (required).</param>
         /// <param name="Amount">Amount (required).</param>
         /// <param name="RealizedPnL">RealizedPnL.</param>
+        /// <param name="WeekRealizedPnL">WeekRealizedPnL.</param>
         /// <param name="CashChangeType">AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, TradePaired, TradovateSubscription (required).</param>
         /// <param name="FillPairId">id of FillPair.</param>
         /// <param name="FillId">id of Fill.</param>
         /// <param name="FundTransactionId">id of FundTransaction.</param>
         /// <param name="Comment">Comment.</param>
         /// <param name="Delta">Delta (required).</param>
-        public CashBalanceLog(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, TradeDate TradeDate = null, int? CurrencyId = null, double? Amount = null, double? RealizedPnL = null, CashChangeTypeEnum? CashChangeType = null, int? FillPairId = null, int? FillId = null, int? FundTransactionId = null, string Comment = null, double? Delta = null)
+        public CashBalanceLog(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, TradeDate TradeDate = null, int? CurrencyId = null, double? Amount = null, double? RealizedPnL = null, double? WeekRealizedPnL = null, CashChangeTypeEnum? CashChangeType = null, int? FillPairId = null, int? FillId = null, int? FundTransactionId = null, string Comment = null, double? Delta = null)
         {
             // to ensure "AccountId" is required (not null)
             if (AccountId == null)
@@ -250,6 +251,7 @@ namespace Tradovate.Services.Model
             }
             this.Id = Id;
             this.RealizedPnL = RealizedPnL;
+            this.WeekRealizedPnL = WeekRealizedPnL;
             this.FillPairId = FillPairId;
             this.FillId = FillId;
             this.FundTransactionId = FundTransactionId;
@@ -294,6 +296,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="realizedPnL", EmitDefaultValue=false)]
         public double? RealizedPnL { get; set; }
         /// <summary>
+        /// Gets or Sets WeekRealizedPnL
+        /// </summary>
+        [DataMember(Name="weekRealizedPnL", EmitDefaultValue=false)]
+        public double? WeekRealizedPnL { get; set; }
+        /// <summary>
         /// id of FillPair
         /// </summary>
         /// <value>id of FillPair</value>
@@ -336,6 +343,7 @@ namespace Tradovate.Services.Model
             sb.Append("  CurrencyId: ").Append(CurrencyId).Append("\n");
             sb.Append("  Amount: ").Append(Amount).Append("\n");
             sb.Append("  RealizedPnL: ").Append(RealizedPnL).Append("\n");
+            sb.Append("  WeekRealizedPnL: ").Append(WeekRealizedPnL).Append("\n");
             sb.Append("  CashChangeType: ").Append(CashChangeType).Append("\n");
             sb.Append("  FillPairId: ").Append(FillPairId).Append("\n");
             sb.Append("  FillId: ").Append(FillId).Append("\n");
@@ -414,6 +422,11 @@ namespace Tradovate.Services.Model
                     this.RealizedPnL.Equals(other.RealizedPnL)
                 ) && 
                 (
+                    this.WeekRealizedPnL == other.WeekRealizedPnL ||
+                    this.WeekRealizedPnL != null &&
+                    this.WeekRealizedPnL.Equals(other.WeekRealizedPnL)
+                ) && 
+                (
                     this.CashChangeType == other.CashChangeType ||
                     this.CashChangeType != null &&
                     this.CashChangeType.Equals(other.CashChangeType)
@@ -470,6 +483,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Amount.GetHashCode();
                 if (this.RealizedPnL != null)
                     hash = hash * 59 + this.RealizedPnL.GetHashCode();
+                if (this.WeekRealizedPnL != null)
+                    hash = hash * 59 + this.WeekRealizedPnL.GetHashCode();
                 if (this.CashChangeType != null)
                     hash = hash * 59 + this.CashChangeType.GetHashCode();
                 if (this.FillPairId != null)
