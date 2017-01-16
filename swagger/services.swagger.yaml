@@ -6317,6 +6317,42 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/User'
+    /user/modifycredentials:
+        post:
+            operationId: modifyCredentials
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/ModifyCredentials'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/AccessTokenResponse'
+    /user/modifyemailaddress:
+        post:
+            operationId: modifyEmailAddress
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/ModifyEmailAddress'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserStatusMessage'
     /user/opendemoaccount:
         post:
             operationId: openDemoAccount
@@ -8093,6 +8129,36 @@ definitions:
                 format: int32
             message:
                 type: string
+    ModifyCredentials:
+        type: object
+        required:
+            - name
+            - password
+            - currentPassword
+        properties: 
+            userId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of User"
+            name:
+                type: string
+            password:
+                type: string
+            currentPassword:
+                type: string
+    ModifyEmailAddress:
+        type: object
+        required:
+            - email
+        properties: 
+            userId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of User"
+            email:
+                type: string
     ModifyOrder:
         type: object
         required:
@@ -8264,6 +8330,7 @@ definitions:
             timestamp:
                 type: string
                 format: date-time
+                description: "Create Time"
             action:
                 type: string
                 description: "Buy, Sell"
@@ -10150,3 +10217,19 @@ definitions:
                 type: string
             appVersion:
                 type: string
+    UserStatusMessage:
+        type: object
+        properties: 
+            errorText:
+                type: string
+                maxLength: 8192
+                description: "Non-empty if the request failed"
+            status:
+                type: string
+                description: "Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail"
+                enum:
+                    - TemporaryLocked
+                    - Active
+                    - Initiated
+                    - UnconfirmedEmail
+                    - Closed

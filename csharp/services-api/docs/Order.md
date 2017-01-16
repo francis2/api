@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **AccountId** | **int?** | id of Account | 
 **ContractId** | **int?** | id of Contract | [optional] 
 **SpreadDefinitionId** | **int?** | id of SpreadDefinition | [optional] 
-**Timestamp** | **DateTime?** |  | 
+**Timestamp** | **DateTime?** | Create Time | 
 **Action** | **string** | Buy, Sell | 
 **OrdStatus** | **string** | Canceled, Completed, Expired, Filled, PendingCancel, PendingNew, PendingReplace, Rejected, Suspended, Unknown, Working | 
 **ExecutionProviderId** | **int?** | id of ExecutionProvider | [optional] 

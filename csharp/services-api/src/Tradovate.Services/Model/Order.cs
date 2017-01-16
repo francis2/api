@@ -159,7 +159,7 @@ namespace Tradovate.Services.Model
         /// <param name="AccountId">id of Account (required).</param>
         /// <param name="ContractId">id of Contract.</param>
         /// <param name="SpreadDefinitionId">id of SpreadDefinition.</param>
-        /// <param name="Timestamp">Timestamp (required).</param>
+        /// <param name="Timestamp">Create Time (required).</param>
         /// <param name="Action">Buy, Sell (required).</param>
         /// <param name="OrdStatus">Canceled, Completed, Expired, Filled, PendingCancel, PendingNew, PendingReplace, Rejected, Suspended, Unknown, Working (required).</param>
         /// <param name="ExecutionProviderId">id of ExecutionProvider.</param>
@@ -247,8 +247,9 @@ namespace Tradovate.Services.Model
         [DataMember(Name="spreadDefinitionId", EmitDefaultValue=false)]
         public int? SpreadDefinitionId { get; set; }
         /// <summary>
-        /// Gets or Sets Timestamp
+        /// Create Time
         /// </summary>
+        /// <value>Create Time</value>
         [DataMember(Name="timestamp", EmitDefaultValue=false)]
         public DateTime? Timestamp { get; set; }
         /// <summary>

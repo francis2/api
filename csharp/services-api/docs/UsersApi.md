@@ -49,6 +49,8 @@ Method | HTTP request | Description
 [**GetUserSession**](UsersApi.md#getusersession) | **GET** /userSession/item | 
 [**GetUserSessions**](UsersApi.md#getusersessions) | **GET** /userSession/items | 
 [**GetUsers**](UsersApi.md#getusers) | **GET** /user/items | 
+[**ModifyCredentials**](UsersApi.md#modifycredentials) | **POST** /user/modifycredentials | 
+[**ModifyEmailAddress**](UsersApi.md#modifyemailaddress) | **POST** /user/modifyemailaddress | 
 [**OpenDemoAccount**](UsersApi.md#opendemoaccount) | **POST** /user/opendemoaccount | 
 [**RequestTradingPermission**](UsersApi.md#requesttradingpermission) | **POST** /user/requesttradingpermission | 
 [**RevokeTradingPermission**](UsersApi.md#revoketradingpermission) | **POST** /user/revoketradingpermission | 
@@ -2987,6 +2989,134 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<User>**](User.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="modifycredentials"></a>
+# **ModifyCredentials**
+> AccessTokenResponse ModifyCredentials (ModifyCredentials body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class ModifyCredentialsExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new ModifyCredentials(); // ModifyCredentials | 
+
+            try
+            {
+                AccessTokenResponse result = apiInstance.ModifyCredentials(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.ModifyCredentials: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ModifyCredentials**](ModifyCredentials.md)|  | 
+
+### Return type
+
+[**AccessTokenResponse**](AccessTokenResponse.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="modifyemailaddress"></a>
+# **ModifyEmailAddress**
+> UserStatusMessage ModifyEmailAddress (ModifyEmailAddress body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class ModifyEmailAddressExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new ModifyEmailAddress(); // ModifyEmailAddress | 
+
+            try
+            {
+                UserStatusMessage result = apiInstance.ModifyEmailAddress(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.ModifyEmailAddress: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ModifyEmailAddress**](ModifyEmailAddress.md)|  | 
+
+### Return type
+
+[**UserStatusMessage**](UserStatusMessage.md)
 
 ### Authorization
 
