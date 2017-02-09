@@ -6625,6 +6625,8 @@ definitions:
                     - LP
                     - Joint
                     - GP
+            readonly:
+                type: boolean
     AddMarketDataSubscription:
         type: object
         required:
