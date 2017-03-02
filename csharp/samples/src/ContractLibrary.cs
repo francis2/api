@@ -18,35 +18,36 @@ namespace Tradovate
         {
             var contractLibraryApi = new ContractLibraryApi();
             Contract contract = contractLibraryApi.FindContract(symbol);
-            Console.WriteLine(contract);
+            Log.Write(contract);
             ContractMaturity contractMaturity = contractLibraryApi.GetContractMaturity(contract.ContractMaturityId);
-            Console.WriteLine(contractMaturity);
+            Log.Write(contractMaturity);
             Product product = contractLibraryApi.GetProduct(contractMaturity.ProductId);
-            Console.WriteLine(product);
+            Log.Write(product);
             Exchange exchange = contractLibraryApi.GetExchange(product.ExchangeId);
-            Console.WriteLine(exchange);
+            Log.Write(exchange);
             ContractGroup contractGroup = contractLibraryApi.GetContractGroup(product.ContractGroupId);
-            Console.WriteLine(contractGroup);
+            Log.Write(contractGroup);
             Currency currency = contractLibraryApi.GetCurrency(product.CurrencyId);
-            Console.WriteLine(currency);
+            Log.Write(currency);
             CurrencyRate currencyRate = contractLibraryApi.GetCurrencyRate(product.CurrencyId);
-            Console.WriteLine(currencyRate);
+            Log.Write(currencyRate);
             ProductSession productSession = contractLibraryApi.GetProductSession(product.Id);
-            Console.WriteLine(productSession);
+            Log.Write(productSession);
             ProductFeeParamsResponse productFees = contractLibraryApi.GetProductFeeParams(new GetProductFeeParams(new List<int?> { product.Id }));
             foreach(var fee in productFees._Params) {
-                Console.WriteLine(fee);
+                Log.Write(fee);
             }
             var riskApi = new RisksApi();
             ProductMargin productMargin = riskApi.GetProductMargin(product.Id);
-            Console.WriteLine(productMargin);
+            Log.Write(productMargin);
             try
             {
                 ContractMargin contractMargin = riskApi.GetContractMargin(contract.Id);
+                Log.Write(contractMargin);
             }
             catch
             {
-                Console.WriteLine("Per-contract margin is not specified");
+                Log.Write("Per-contract margin is not specified");
             }
         }
     }

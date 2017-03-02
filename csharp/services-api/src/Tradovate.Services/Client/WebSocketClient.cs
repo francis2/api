@@ -5,7 +5,6 @@
 */
 
 using System;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
@@ -59,8 +58,8 @@ namespace Tradovate.Services.Client
         {
             uri = uri.Replace("https:", "wss:") + "/websocket";
             webSocket = new WebSocket(uri);
-            webSocket.EnableAutoSendPing = true;
-            webSocket.AutoSendPingInterval = 2500; 
+            webSocket.EnableAutoSendPing = false;
+            webSocket.NoDelay = true;
             webSocket.MessageReceived += WebSocket_MessageReceived;
             webSocket.Closed += WebSocket_Closed;
             webSocket.Error += WebSocket_Error;
@@ -83,7 +82,7 @@ namespace Tradovate.Services.Client
             await Task.Delay(2500);
             if (webSocket.State == WebSocketState.Open)
             {
-                Debug.WriteLine("WEBSOCKET HEARTBEAT SEND");
+                Log.Write("HEARTBEAT: SEND");
                 webSocket.Send("[]");
                 ScheduleHeartbeats();
             }
@@ -91,7 +90,7 @@ namespace Tradovate.Services.Client
 
         private void WebSocket_Error(object sender, SuperSocket.ClientEngine.ErrorEventArgs e)
         {
-            Debug.WriteLine($"WEBSOCKET ERROR: {e}");
+            Log.Write($"ERROR: {e}");
         }
 
         private void WebSocket_Closed(object sender, EventArgs e)
@@ -108,7 +107,7 @@ namespace Tradovate.Services.Client
         private void WebSocket_MessageReceived(object sender, MessageReceivedEventArgs e)
         {
             var frame = e.Message;
-            Debug.WriteLine($"WEBSOCKET: {frame}");
+            Log.Write($"RECVD: {frame}");
             if(frame == "o")
             {
                 Opened?.Invoke(this, EventArgs.Empty);
@@ -150,7 +149,7 @@ namespace Tradovate.Services.Client
                                             entity = prop.Value;
                                             break;
                                         default:
-                                            Debug.WriteLine($"Unrecognized event propert: {prop}");
+                                            Log.Write($"Unrecognized event property: {prop}");
                                             break;
                                     }
                                 }
@@ -165,7 +164,7 @@ namespace Tradovate.Services.Client
                                     }
                                     catch (Exception ex)
                                     {
-                                        Debug.WriteLine($"Cannot deserialize event's entity: {entityType}, {entity}, {ex}");
+                                        Console.Error.WriteLine($"Cannot deserialize event's entity: {entityType}, {entity}, {ex}");
                                     }
                                 }
                                 DataUpdated?.Invoke(this, new DataUpdate(eventType, entityType, entity));
@@ -212,8 +211,8 @@ namespace Tradovate.Services.Client
             var frame = $"{endpoint}\n{id}\n{queryParams}\n{body}";
             var promise = new TaskCompletionSource<IRestResponse>();
             pendingRequests.TryAdd(id, promise);
-            Debug.WriteLine($"WEBSOCKET SEND: {frame.Replace("\n", "\\n")}");
             webSocket.Send(frame);
+            Log.Write($"SENT: {frame.Replace("\n", "\\n")}");
             return promise.Task;
         }
 

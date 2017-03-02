@@ -82,17 +82,19 @@ namespace Tradovate
                     Accounting.StartRealtimeUpdates();
 
                     Thread.Sleep(3000);
-                    Console.WriteLine("SHOW ESZ6 SPECIFICATIONS");
-                    ContractLibrary.ContractSpec("ESZ6");
+                    var symbol = "ESH7";
+                    Log.Write($"SHOW {symbol} SPECIFICATIONS");
+                    ContractLibrary.ContractSpec(symbol);
 
                     Thread.Sleep(3000);
                     var account = Accounting.GetAccount(MyUserId);
-                    Console.WriteLine("PLACE BUY 1 ESZ6 MKT ORDER");
-                    Trading.PlaceOrder(account, Services.Model.PlaceOrder.ActionEnum.Buy, 1, "ESZ6", Services.Model.PlaceOrder.OrderTypeEnum.Market);
+                    Log.Write($"PLACE BUY 1 {symbol} MKT ORDER");
+                    Trading.PlaceOrder(account, Services.Model.PlaceOrder.ActionEnum.Buy, 1, symbol, Services.Model.PlaceOrder.OrderTypeEnum.Market);
 
                     Thread.Sleep(3000);
-                    Console.WriteLine("PLACE SELL 1 ESZ6 MKT ORDER");
-                    Trading.PlaceOrder(account, Services.Model.PlaceOrder.ActionEnum.Sell, 1, "ESZ6", Services.Model.PlaceOrder.OrderTypeEnum.Market);
+                    Log.Write($"PLACE SELL 1 {symbol} MKT ORDER");
+                    Trading.PlaceOrder(account, Services.Model.PlaceOrder.ActionEnum.Sell, 1, symbol, Services.Model.PlaceOrder.OrderTypeEnum.Market);
+
                     Thread.Sleep(3000);
                     websocketClient.Close();
                 });
