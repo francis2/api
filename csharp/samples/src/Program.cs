@@ -8,6 +8,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Tradovate.Services.Client;
+using Tradovate.Services.Model;
 
 namespace Tradovate
 {
@@ -20,8 +21,14 @@ namespace Tradovate
 
         static void Main(string[] args)
         {
-            MyUsername = "APISample01";
-            var password = "ApiSample+01";
+            if (args.Length != 2)
+            {
+                Console.WriteLine("Please specify username and password as arguments");
+                return;
+            }
+
+            MyUsername = args[0];
+            var password = args[1];
             LiveUrl = "https://live-api-d.tradovate.com/v1";
             DemoUrl = "https://demo-api-d.tradovate.com/v1";
 
@@ -29,9 +36,9 @@ namespace Tradovate
             AccessToken = accessTokenResponse.AccessToken;
             MyUserId = accessTokenResponse.UserId ?? 0;
 
-            RestApiExample();
-            TradingRelatedExample();
-            AccountRiskLimits();
+            // RestApiExample();
+            TradingViaWebSocketExample();
+            // AccountRiskLimits();
 
             // Authenticated user should be "OrganizationAdmin" to successfully proceed the next samples
             // Please uncomment the next line
@@ -45,6 +52,18 @@ namespace Tradovate
         private static void WebsocketClient_DataUpdated(object sender, DataUpdate e)
         {
             Console.WriteLine(e.ToString());
+            if (e.Entity is ExecutionReport)
+            {
+                Trading.ShowOrderDetails(e.Entity as ExecutionReport);
+            }
+            else if (e.Entity is Order)
+            {
+                Trading.ShowOrderDetails(e.Entity as Order);
+            }
+            if (e.Entity is CommandReport)
+            {
+                Trading.ShowOrderDetails(e.Entity as CommandReport);
+            }
         }
 
         private static void WebsocketClient_Closed(object sender, EventArgs e)
@@ -64,14 +83,20 @@ namespace Tradovate
             Accounting.ShowAccountActivities(account);
         }
 
-        private static void TradingRelatedExample()
+        static WebSocketClient InitializeWebSocket(bool liveEnvironment)
         {
-            Console.WriteLine("\nCALLING SERVICES VIA WEBSOCKET");
             Configuration.Default = new Configuration(new ApiClient());
             Configuration.Default.ApiKey.Add("Authorization", AccessToken);
             Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-            WebSocketClient websocketClient = new WebSocketClient(DemoUrl);
+            WebSocketClient websocketClient = new WebSocketClient(liveEnvironment ? LiveUrl : DemoUrl);
             Configuration.Default.ApiClient.RestClient = websocketClient;
+            return websocketClient;
+        }
+
+        private static void TradingViaWebSocketExample()
+        {
+            Console.WriteLine("\nCALLING SERVICES VIA WEBSOCKET");
+            WebSocketClient websocketClient = InitializeWebSocket(false);
             websocketClient.DataUpdated += WebsocketClient_DataUpdated;
             websocketClient.Closed += WebsocketClient_Closed;
             websocketClient.Opened += (sender, e) =>
@@ -87,15 +112,16 @@ namespace Tradovate
                     ContractLibrary.ContractSpec(symbol);
 
                     Thread.Sleep(3000);
-                    var account = Accounting.GetAccount(MyUserId);
-                    Log.Write($"PLACE BUY 1 {symbol} MKT ORDER");
-                    Trading.PlaceOrder(account, Services.Model.PlaceOrder.ActionEnum.Buy, 1, symbol, Services.Model.PlaceOrder.OrderTypeEnum.Market);
+                    var account = Accounting.GetAccount(0);
+                    var orderQty = 1;
+                    Log.Write($"PLACE BUY {orderQty} {symbol} MKT ORDER");
+                    Trading.PlaceOrder(account, PlaceOrder.ActionEnum.Buy, orderQty, symbol, PlaceOrder.OrderTypeEnum.Market);
 
                     Thread.Sleep(3000);
-                    Log.Write($"PLACE SELL 1 {symbol} MKT ORDER");
-                    Trading.PlaceOrder(account, Services.Model.PlaceOrder.ActionEnum.Sell, 1, symbol, Services.Model.PlaceOrder.OrderTypeEnum.Market);
+                    Log.Write($"PLACE SELL {orderQty} {symbol} MKT ORDER");
+                    Trading.PlaceOrder(account, PlaceOrder.ActionEnum.Sell, orderQty, symbol, PlaceOrder.OrderTypeEnum.Market);
 
-                    Thread.Sleep(3000);
+                    Thread.Sleep(300000);
                     websocketClient.Close();
                 });
             };

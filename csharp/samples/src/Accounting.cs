@@ -18,7 +18,7 @@ namespace Tradovate
             var apiInstance = new AccountingApi();
             var result = apiInstance.GetAllAccounts();
             Log.Write($"Accounts: {result.Count}");
-            var account = result.First(x => x.UserId == myUserId);
+            var account = result.First(x => x.Active == true && (myUserId == 0 || x.UserId == myUserId));
             Log.Write($"Account: {account}");
             return account;
         }
