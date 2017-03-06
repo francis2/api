@@ -2,3 +2,4 @@
 *.exe
 csharp/samples/bin
 csharp/samples/src/obj
+*.user
