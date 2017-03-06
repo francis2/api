@@ -5,11 +5,15 @@ namespace Tradovate
 {
     public static class Log
     {
+        static bool Enabled = true;
         static private Stopwatch stopwatch = new Stopwatch();
         static public void Write(object message)
-        {            
-            Console.WriteLine($"[+{stopwatch.ElapsedMilliseconds}] {message}");
-            stopwatch.Restart();
+        {
+            if (Enabled)
+            {
+                Console.WriteLine($"[+{stopwatch.ElapsedMilliseconds}] {message}");
+                stopwatch.Restart();
+            }
         }
     }
 }

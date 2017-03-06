@@ -13,6 +13,7 @@ using RestSharp;
 using WebSocket4Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Tradovate.Services.Cache;
 
 namespace Tradovate.Services.Client
 {
@@ -34,7 +35,7 @@ namespace Tradovate.Services.Client
         }
     }
 
-    public class IncomingMessage
+    class IncomingMessage
     {
         public string e;
         public int i;
@@ -42,12 +43,29 @@ namespace Tradovate.Services.Client
         public object d;
     }
 
+    struct PendingRequest
+    {
+        public TaskCompletionSource<IRestResponse> Promise;
+        public string RequestEndpoint;
+    }
+
+    class TaskQueue
+    {
+        private Task LastTask = Task.Run(() => { });
+        public void Enqueue(Action action)
+        {
+            LastTask = LastTask.ContinueWith(previous => action());
+        }
+    }
+
     public partial class WebSocketClient : RestClient
     {
-        private int requestCounter = 0;
-        private WebSocket webSocket;
-        private string accessToken;
-        private ConcurrentDictionary<int, TaskCompletionSource<IRestResponse>> pendingRequests = new ConcurrentDictionary<int, TaskCompletionSource<IRestResponse>>();
+        private int RequestCounter = 0;
+        private WebSocket WebSocket;
+        private string AccessToken;
+        private ConcurrentDictionary<int, PendingRequest> PendingRequests = new ConcurrentDictionary<int, PendingRequest>();
+        private ICache Cache = new NoCache();
+        private TaskQueue NotificationTaskQueue = new TaskQueue();
 
         public event EventHandler Opened;
         public event EventHandler Authorized;
@@ -57,187 +75,51 @@ namespace Tradovate.Services.Client
         public WebSocketClient(string uri)
         {
             uri = uri.Replace("https:", "wss:") + "/websocket";
-            webSocket = new WebSocket(uri);
-            webSocket.EnableAutoSendPing = false;
-            webSocket.NoDelay = true;
-            webSocket.MessageReceived += WebSocket_MessageReceived;
-            webSocket.Closed += WebSocket_Closed;
-            webSocket.Error += WebSocket_Error;
-            webSocket.Open();
+            WebSocket = new WebSocket(uri);
+            WebSocket.EnableAutoSendPing = false;
+            WebSocket.NoDelay = true;
+            WebSocket.MessageReceived += WebSocket_MessageReceived;
+            WebSocket.Closed += WebSocket_Closed;
+            WebSocket.Error += WebSocket_Error;
+            WebSocket.Open();
             ScheduleHeartbeats();
         }
 
         public void Close()
         {
-            webSocket.Close();
+            WebSocket.Close();
         }
 
         public void Dispose()
         {
-            webSocket.Dispose();
-        }
-
-        private async void ScheduleHeartbeats()
-        {
-            await Task.Delay(2500);
-            if (webSocket.State == WebSocketState.Open)
-            {
-                Log.Write("HEARTBEAT: SEND");
-                webSocket.Send("[]");
-                ScheduleHeartbeats();
-            }
-        }
-
-        private void WebSocket_Error(object sender, SuperSocket.ClientEngine.ErrorEventArgs e)
-        {
-            Log.Write($"ERROR: {e}");
-        }
-
-        private void WebSocket_Closed(object sender, EventArgs e)
-        {
-            var promises = pendingRequests.Values.ToArray();
-            pendingRequests.Clear();
-            foreach (var promise in promises)
-            {
-                promise.TrySetCanceled();
-            }
-            Closed?.Invoke(this, EventArgs.Empty);
-        }
-
-        private void WebSocket_MessageReceived(object sender, MessageReceivedEventArgs e)
-        {
-            var frame = e.Message;
-            Log.Write($"RECVD: {frame}");
-            if(frame == "o")
-            {
-                Opened?.Invoke(this, EventArgs.Empty);
-            }
-            else if (frame == "h") {
-                // Hearbeat
-            }
-            else if (frame == "c")
-            {
-                webSocket.Close();
-            }
-            else if (frame[0] == 'a')
-            {
-                var json = frame.Substring(1);
-                var messages = JsonConvert.DeserializeObject<IncomingMessage[]>(json);
-                foreach (var message in messages)
-                {
-                    if(message.e != null)
-                    {
-                        switch(message.e)
-                        {
-                            case "shutdown":
-                                Console.WriteLine($"Server is going to close this connection: {message.d}");
-                                break;
-                            case "props":
-                                string eventType = "", entityType = "";
-                                object entity = null;
-                                foreach (var prop in (message.d as JContainer).Values<JProperty>())
-                                {
-                                    switch (prop.Name)
-                                    {
-                                        case "eventType":
-                                            eventType = prop.Value.ToString();
-                                            break;
-                                        case "entityType":
-                                            entityType = prop.Value.ToString();
-                                            break;
-                                        case "entity":
-                                            entity = prop.Value;
-                                            break;
-                                        default:
-                                            Log.Write($"Unrecognized event property: {prop}");
-                                            break;
-                                    }
-                                }
-                                if (entity != null)
-                                {
-                                    try
-                                    {
-                                        var typeName = entityType[0].ToString().ToUpper() + entityType.Substring(1);
-                                        typeName = $"Tradovate.Services.Model.{typeName}";
-                                        var type = Type.GetType(typeName, true);
-                                        entity = JsonConvert.DeserializeObject(entity.ToString(), type);
-                                    }
-                                    catch (Exception ex)
-                                    {
-                                        Console.Error.WriteLine($"Cannot deserialize event's entity: {entityType}, {entity}, {ex}");
-                                    }
-                                }
-                                DataUpdated?.Invoke(this, new DataUpdate(eventType, entityType, entity));
-                                break;
-                        }
-                    }
-                    else
-                    {
-                        TaskCompletionSource<IRestResponse> promise;
-                        if(pendingRequests.TryRemove(message.i, out promise))
-                        {
-                            var response = new RestResponse();
-                            response.StatusCode = (System.Net.HttpStatusCode)message.s;
-                            response.Content = message.d?.ToString();
-                            if (response.Content != null)
-                            {
-                                response.ContentLength = response.Content.Length;
-                            }
-                            if (message.s / 100 == 2)
-                            {
-                                response.ResponseStatus = ResponseStatus.Completed;
-                            }
-                            else
-                            {
-                                response.ResponseStatus = ResponseStatus.Error;
-                            }
-                            promise.TrySetResult(response);
-                        }
-                    }
-                }
-            }
+            WebSocket.Dispose();
         }
 
         public override IRestResponse Execute(IRestRequest request)
         {
-            var task = ExecuteTaskAsync(request);
-            task.Wait(request.Timeout - 1);
-            return task.Result;
-        }
-
-        private Task<IRestResponse> DoExecuteTaskAsync(string endpoint, string queryParams, string body)
-        {
-            var id = Interlocked.Increment(ref requestCounter);
-            var frame = $"{endpoint}\n{id}\n{queryParams}\n{body}";
-            var promise = new TaskCompletionSource<IRestResponse>();
-            pendingRequests.TryAdd(id, promise);
-            webSocket.Send(frame);
-            Log.Write($"SENT: {frame.Replace("\n", "\\n")}");
-            return promise.Task;
-        }
-
-        private Task<IRestResponse> DoExecuteTaskAsync(IRestRequest request)
-        {
-            var endpoint = request.Resource.Substring(1);
-            var bodyParameter = request.Parameters.FirstOrDefault(x => x.Type == ParameterType.RequestBody);
-            var body = "";
-            if (bodyParameter != null)
+            JToken cachedResponse;
+            if (Cache.TryRespond(GetEndpoint(request), GetQueryParameters(request), out cachedResponse))
             {
-                body = bodyParameter.Value.ToString();
+                return CreateRestResponse(200, cachedResponse);
             }
-            var queryParameters = request.Parameters.Where(x => x.Type == ParameterType.QueryString).Select(x => x.Name + "=" + x.Value.ToString());
-            return DoExecuteTaskAsync(endpoint, string.Join("&", queryParameters), body);
+            else
+            {
+                var task = ExecuteTaskAsync(request);
+                task.Wait(request.Timeout - 1);
+                return task.Result;
+            }
         }
 
         public override Task<IRestResponse> ExecuteTaskAsync(IRestRequest request)
         {
             Task<IRestResponse> authorizeTask = null;
-            if (accessToken == null) {
+            if (AccessToken == null)
+            {
                 var authorizationHeader = request.Parameters.FirstOrDefault(x => x.Type == ParameterType.HttpHeader && x.Name == "Authorization");
                 if (authorizationHeader != null)
                 {
-                    accessToken = authorizationHeader.Value.ToString().Replace("Bearer ", "");
-                    authorizeTask = DoExecuteTaskAsync("authorize", "", accessToken);
+                    AccessToken = authorizationHeader.Value.ToString().Replace("Bearer ", "");
+                    authorizeTask = DoExecuteTaskAsync("authorize", "", AccessToken);
                 }
             }
             if (authorizeTask != null)
@@ -261,6 +143,205 @@ namespace Tradovate.Services.Client
             {
                 return DoExecuteTaskAsync(request);
             }
+        }
+
+        private async void ScheduleHeartbeats()
+        {
+            await Task.Delay(2500);
+            if (WebSocket.State == WebSocketState.Open)
+            {
+                Log.Write("HEARTBEAT: SEND");
+                WebSocket.Send("[]");
+                ScheduleHeartbeats();
+            }
+        }
+
+        private void WebSocket_Error(object sender, SuperSocket.ClientEngine.ErrorEventArgs e)
+        {
+            Log.Write($"ERROR: {e}");
+        }
+
+        private void WebSocket_Closed(object sender, EventArgs e)
+        {
+            Cache = new NoCache();
+            var all = PendingRequests.Values.ToArray();
+            PendingRequests.Clear();
+            foreach (var pendingRequest in all)
+            {
+                pendingRequest.Promise.TrySetCanceled();
+            }
+            Closed?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void HandleEvent(IncomingMessage message)
+        {
+            switch (message.e)
+            {
+                case "shutdown":
+                    Console.WriteLine($"Server is going to close this connection: {message.d}");
+                    break;
+                case "props":
+                    string eventType = "", entityType = "";
+                    JObject entity = null;
+                    object entityObject = null;
+                    foreach (var prop in (message.d as JContainer).Values<JProperty>())
+                    {
+                        switch (prop.Name)
+                        {
+                            case "eventType":
+                                eventType = prop.Value.ToString();
+                                break;
+                            case "entityType":
+                                entityType = prop.Value.ToString();
+                                break;
+                            case "entity":
+                                entity = prop.Value as JObject;
+                                break;
+                            default:
+                                Log.Write($"Unrecognized event property: {prop}");
+                                break;
+                        }
+                    }
+                    NotificationTaskQueue.Enqueue(() =>
+                    {
+                        if (entity != null)
+                        {
+                            Cache.Update(eventType, entityType, entity);
+                            try
+                            {
+                                var typeName = entityType[0].ToString().ToUpper() + entityType.Substring(1);
+                                typeName = $"Tradovate.Services.Model.{typeName}";
+                                var type = Type.GetType(typeName, true);
+                                entityObject = JsonConvert.DeserializeObject(entity.ToString(), type);
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.Error.WriteLine($"Cannot deserialize event's entity: {entityType}, {entity}, {ex}");
+                            }
+                        }
+                        DataUpdated?.Invoke(this, new DataUpdate(eventType, entityType, entityObject));
+                    });
+                    break;
+            }
+        }
+
+        private void HandleResponse(IncomingMessage message)
+        {
+            PendingRequest pendingRequest;
+            if (PendingRequests.TryRemove(message.i, out pendingRequest))
+            {
+                var jsonResponse = message.d as JToken;
+                var response = CreateRestResponse(message.s, jsonResponse);
+                if (pendingRequest.RequestEndpoint == "user/syncrequest")
+                {
+                    Cache = new SessionCache(jsonResponse as JObject);
+                }
+                else if (jsonResponse != null)
+                {
+                    Cache.ConsumeResponse(pendingRequest.RequestEndpoint, jsonResponse);
+                }
+                pendingRequest.Promise.TrySetResult(response);
+            }
+        }
+
+        private void WebSocket_MessageReceived(object sender, MessageReceivedEventArgs e)
+        {
+            var frame = e.Message;
+            Log.Write($"RECVD: {frame.Substring(0, Math.Min(50, frame.Length))}...");
+            if (frame == "o")
+            {
+                Opened?.Invoke(this, EventArgs.Empty);
+            }
+            else if (frame == "h")
+            {
+                // Hearbeat
+            }
+            else if (frame == "c")
+            {
+                WebSocket.Close();
+            }
+            else if (frame[0] == 'a')
+            {
+                var json = frame.Substring(1);
+                var messages = JsonConvert.DeserializeObject<IncomingMessage[]>(json);
+                foreach (var message in messages)
+                {
+                    if (message.e != null)
+                    {
+                        HandleEvent(message);
+                    }
+                    else
+                    {
+                        HandleResponse(message);
+                    }
+                }
+            }
+        }
+
+        private IRestResponse CreateRestResponse(int statusCode, JToken content)
+        {
+            var response = new RestResponse();
+            response.StatusCode = (System.Net.HttpStatusCode)statusCode;
+            response.Content = content?.ToString();
+            if (response.Content != null)
+            {
+                response.ContentLength = response.Content.Length;
+            }
+            if (statusCode / 100 == 2)
+            {
+                response.ResponseStatus = ResponseStatus.Completed;
+            }
+            else
+            {
+                response.ResponseStatus = ResponseStatus.Error;
+            }
+            return response;
+        }
+
+        private Task<IRestResponse> DoExecuteTaskAsync(string endpoint, string queryParams, string body)
+        {
+            var promise = new TaskCompletionSource<IRestResponse>();
+            JToken cachedResponse;
+            if (Cache.TryRespond(endpoint, queryParams, out cachedResponse))
+            {
+                // Log.Write($"FROM CACHE: {cachedResponse.ToString().Replace("\n", "").Replace("\r", "")}");
+                promise.TrySetResult(CreateRestResponse(200, cachedResponse));
+            }
+            else
+            {
+                var id = Interlocked.Increment(ref RequestCounter);
+                var frame = $"{endpoint}\n{id}\n{queryParams}\n{body}";
+                PendingRequests.TryAdd(id, new PendingRequest { Promise = promise, RequestEndpoint = endpoint });
+                WebSocket.Send(frame);
+                Log.Write($"SENT: {frame.Replace("\n", "\\n")}");
+            }
+            return promise.Task;
+        }
+
+        private string GetQueryParameters(IRestRequest request)
+        {
+            var queryParameters = request.Parameters.Where(x => x.Type == ParameterType.QueryString).Select(x => x.Name + "=" + x.Value.ToString());
+            return string.Join("&", queryParameters);
+        }
+
+        private string GetBodyParameter(IRestRequest request)
+        {
+            var bodyParameter = request.Parameters.FirstOrDefault(x => x.Type == ParameterType.RequestBody);
+            if (bodyParameter != null)
+            {
+                return bodyParameter.Value.ToString();
+            }
+            return "";
+        }
+
+        private string GetEndpoint(IRestRequest request)
+        {
+            return request.Resource.Substring(1);
+        }
+
+        private Task<IRestResponse> DoExecuteTaskAsync(IRestRequest request)
+        {
+            return DoExecuteTaskAsync(GetEndpoint(request), GetQueryParameters(request), GetBodyParameter(request));
         }
     }
 }
