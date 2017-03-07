@@ -106,6 +106,9 @@ namespace Tradovate
                 {
                     Accounting.StartRealtimeUpdates();
 
+                    Accounting.PrepopulateCache();
+                    ContractLibrary.PrepopulateCache();
+
                     Thread.Sleep(3000);
                     var symbol = "ESH7";
                     Log.Write($"SHOW {symbol} SPECIFICATIONS");

@@ -7,6 +7,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Tradovate.Services.Api;
 using Tradovate.Services.Model;
 
@@ -14,6 +15,31 @@ namespace Tradovate
 {
     class ContractLibrary
     {
+        public static async void PrepopulateCache()
+        {
+            // Cache pre-populating can save some latency at trading time, but not recommended for short-term connections
+            Log.Write("PRE-POPULATING CONTRACT LIBRARY");
+
+            var contractLibraryApi = new ContractLibraryApi();
+            contractLibraryApi.GetAllContractGroupsAsync();
+            contractLibraryApi.GetAllExchangesAsync();
+            contractLibraryApi.GetAllCurrenciesAsync();
+            contractLibraryApi.GetAllCurrencyRatesAsync();
+
+            var riskApi = new RisksApi();
+            riskApi.GetAllProductMarginsAsync();
+
+            var products = await contractLibraryApi.GetAllProductsAsync();
+
+            // Highly not recommended for short-term connections
+            foreach (var product in products)
+            {
+                contractLibraryApi.GetOwnedContractMaturitiesAsync(product.Id).ContinueWith(contractMaturities => {
+                    contractLibraryApi.GetOwnedContractsBatchAsync(contractMaturities.Result.Select(contractMaturity => contractMaturity.Id).ToList());
+                });
+            }
+        }
+
         public static void ContractSpec(string symbol)
         {
             var contractLibraryApi = new ContractLibraryApi();

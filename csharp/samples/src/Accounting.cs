@@ -61,5 +61,13 @@ namespace Tradovate
             var result = apiInstance.SyncRequest(syncRequest);
             Log.Write($"Initial data sync response");
         }
+
+        public static void PrepopulateCache()
+        {
+            // Cache pre-populating can save some latency at trading time
+            Log.Write("PRE-POPULATING ACCOUNT INFO");
+            var apiInstance = new AccountingApi();
+            apiInstance.GetAllTradingPermissions();
+        }
     }
 }
