@@ -6938,7 +6938,7 @@ definitions:
                 format: double
             cashChangeType:
                 type: string
-                description: "AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, TradePaired, TradovateSubscription"
+                description: "AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, Commission, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, OrderRoutingFee, TradePaired, TradovateSubscription"
                 enum:
                     - ClearingFee
                     - TradovateSubscription
@@ -6956,6 +6956,8 @@ definitions:
                     - NfaFee
                     - AutomaticReconciliation
                     - ExchangeFee
+                    - OrderRoutingFee
+                    - Commission
                     - IPFee
                     - CancelledPairedTrade
             fillPairId:
@@ -7804,6 +7806,22 @@ definitions:
                 type: number
                 format: double
             ipCurrencyId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of Currency"
+            commission:
+                type: number
+                format: double
+            commissionCurrencyId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of Currency"
+            orderRoutingFee:
+                type: number
+                format: double
+            orderRoutingCurrencyId:
                 type: integer
                 format: int32
                 minimum: 0
@@ -9211,6 +9229,22 @@ definitions:
                 format: int32
                 minimum: 0
                 description: "id of Currency"
+            commission:
+                type: number
+                format: double
+            commissionCurrencyId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of Currency"
+            orderRoutingFee:
+                type: number
+                format: double
+            orderRoutingCurrencyId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of Currency"
             productId:
                 type: integer
                 format: int32
@@ -9830,6 +9864,9 @@ definitions:
                 format: int32
                 minimum: 0
                 description: "id of Organization"
+            replaySessions:
+                type: integer
+                format: int32
     TradovateSubscriptionResponse:
         type: object
         properties: 
