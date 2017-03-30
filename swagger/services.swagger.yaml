@@ -9132,11 +9132,12 @@ definitions:
                 description: "id of Currency"
             productType:
                 type: string
-                description: "Futures, Options, Spread"
+                description: "Futures, MarketInternals, Options, Spread"
                 enum:
                     - Futures
                     - Options
                     - Spread
+                    - MarketInternals
             description:
                 type: string
             exchangeId:
@@ -9997,11 +9998,12 @@ definitions:
                 description: "id of Exchange"
             productType:
                 type: string
-                description: "Futures, Options, Spread"
+                description: "Futures, MarketInternals, Options, Spread"
                 enum:
                     - Futures
                     - Options
                     - Spread
+                    - MarketInternals
             riskDiscountContractGroupId:
                 type: integer
                 format: int32
@@ -10081,11 +10083,12 @@ definitions:
                 description: "id of Exchange"
             productType:
                 type: string
-                description: "Futures, Options, Spread"
+                description: "Futures, MarketInternals, Options, Spread"
                 enum:
                     - Futures
                     - Options
                     - Spread
+                    - MarketInternals
             riskDiscountContractGroupId:
                 type: integer
                 format: int32
