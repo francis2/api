@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **RiskCategoryId** | **int?** | id of RiskCategory | [optional] 
 **MultipleAccounts** | **bool?** |  | [optional] 
 **OrganizationId** | **int?** | id of Organization | [optional] 
+**ReplaySessions** | **int?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

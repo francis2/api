@@ -14,6 +14,10 @@ Name | Type | Description | Notes
 **BrokerageCurrencyId** | **int?** | id of Currency | [optional] 
 **IpFee** | **double?** |  | [optional] 
 **IpCurrencyId** | **int?** | id of Currency | [optional] 
+**Commission** | **double?** |  | [optional] 
+**CommissionCurrencyId** | **int?** | id of Currency | [optional] 
+**OrderRoutingFee** | **double?** |  | [optional] 
+**OrderRoutingCurrencyId** | **int?** | id of Currency | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

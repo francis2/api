@@ -13,6 +13,10 @@ Name | Type | Description | Notes
 **BrokerageCurrencyId** | **int?** | id of Currency | [optional] 
 **IpFee** | **double?** |  | [optional] 
 **IpCurrencyId** | **int?** | id of Currency | [optional] 
+**Commission** | **double?** |  | [optional] 
+**CommissionCurrencyId** | **int?** | id of Currency | [optional] 
+**OrderRoutingFee** | **double?** |  | [optional] 
+**OrderRoutingCurrencyId** | **int?** | id of Currency | [optional] 
 **ProductId** | **int?** | id of Product | 
 **DayMargin** | **double?** |  | [optional] 
 **FullMargin** | [**ProductMargin**](ProductMargin.md) |  | [optional] 

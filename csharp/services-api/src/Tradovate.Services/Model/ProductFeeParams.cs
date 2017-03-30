@@ -57,10 +57,14 @@ namespace Tradovate.Services.Model
         /// <param name="BrokerageCurrencyId">id of Currency.</param>
         /// <param name="IpFee">IpFee.</param>
         /// <param name="IpCurrencyId">id of Currency.</param>
+        /// <param name="Commission">Commission.</param>
+        /// <param name="CommissionCurrencyId">id of Currency.</param>
+        /// <param name="OrderRoutingFee">OrderRoutingFee.</param>
+        /// <param name="OrderRoutingCurrencyId">id of Currency.</param>
         /// <param name="ProductId">id of Product (required).</param>
         /// <param name="DayMargin">DayMargin.</param>
         /// <param name="FullMargin">FullMargin.</param>
-        public ProductFeeParams(double? ClearingFee = null, int? ClearingCurrencyId = null, double? ExchangeFee = null, int? ExchangeCurrencyId = null, double? NfaFee = null, int? NfaCurrencyId = null, double? BrokerageFee = null, int? BrokerageCurrencyId = null, double? IpFee = null, int? IpCurrencyId = null, int? ProductId = null, double? DayMargin = null, ProductMargin FullMargin = null)
+        public ProductFeeParams(double? ClearingFee = null, int? ClearingCurrencyId = null, double? ExchangeFee = null, int? ExchangeCurrencyId = null, double? NfaFee = null, int? NfaCurrencyId = null, double? BrokerageFee = null, int? BrokerageCurrencyId = null, double? IpFee = null, int? IpCurrencyId = null, double? Commission = null, int? CommissionCurrencyId = null, double? OrderRoutingFee = null, int? OrderRoutingCurrencyId = null, int? ProductId = null, double? DayMargin = null, ProductMargin FullMargin = null)
         {
             // to ensure "ProductId" is required (not null)
             if (ProductId == null)
@@ -81,6 +85,10 @@ namespace Tradovate.Services.Model
             this.BrokerageCurrencyId = BrokerageCurrencyId;
             this.IpFee = IpFee;
             this.IpCurrencyId = IpCurrencyId;
+            this.Commission = Commission;
+            this.CommissionCurrencyId = CommissionCurrencyId;
+            this.OrderRoutingFee = OrderRoutingFee;
+            this.OrderRoutingCurrencyId = OrderRoutingCurrencyId;
             this.DayMargin = DayMargin;
             this.FullMargin = FullMargin;
         }
@@ -141,6 +149,28 @@ namespace Tradovate.Services.Model
         [DataMember(Name="ipCurrencyId", EmitDefaultValue=false)]
         public int? IpCurrencyId { get; set; }
         /// <summary>
+        /// Gets or Sets Commission
+        /// </summary>
+        [DataMember(Name="commission", EmitDefaultValue=false)]
+        public double? Commission { get; set; }
+        /// <summary>
+        /// id of Currency
+        /// </summary>
+        /// <value>id of Currency</value>
+        [DataMember(Name="commissionCurrencyId", EmitDefaultValue=false)]
+        public int? CommissionCurrencyId { get; set; }
+        /// <summary>
+        /// Gets or Sets OrderRoutingFee
+        /// </summary>
+        [DataMember(Name="orderRoutingFee", EmitDefaultValue=false)]
+        public double? OrderRoutingFee { get; set; }
+        /// <summary>
+        /// id of Currency
+        /// </summary>
+        /// <value>id of Currency</value>
+        [DataMember(Name="orderRoutingCurrencyId", EmitDefaultValue=false)]
+        public int? OrderRoutingCurrencyId { get; set; }
+        /// <summary>
         /// id of Product
         /// </summary>
         /// <value>id of Product</value>
@@ -174,6 +204,10 @@ namespace Tradovate.Services.Model
             sb.Append("  BrokerageCurrencyId: ").Append(BrokerageCurrencyId).Append("\n");
             sb.Append("  IpFee: ").Append(IpFee).Append("\n");
             sb.Append("  IpCurrencyId: ").Append(IpCurrencyId).Append("\n");
+            sb.Append("  Commission: ").Append(Commission).Append("\n");
+            sb.Append("  CommissionCurrencyId: ").Append(CommissionCurrencyId).Append("\n");
+            sb.Append("  OrderRoutingFee: ").Append(OrderRoutingFee).Append("\n");
+            sb.Append("  OrderRoutingCurrencyId: ").Append(OrderRoutingCurrencyId).Append("\n");
             sb.Append("  ProductId: ").Append(ProductId).Append("\n");
             sb.Append("  DayMargin: ").Append(DayMargin).Append("\n");
             sb.Append("  FullMargin: ").Append(FullMargin).Append("\n");
@@ -264,6 +298,26 @@ namespace Tradovate.Services.Model
                     this.IpCurrencyId.Equals(other.IpCurrencyId)
                 ) && 
                 (
+                    this.Commission == other.Commission ||
+                    this.Commission != null &&
+                    this.Commission.Equals(other.Commission)
+                ) && 
+                (
+                    this.CommissionCurrencyId == other.CommissionCurrencyId ||
+                    this.CommissionCurrencyId != null &&
+                    this.CommissionCurrencyId.Equals(other.CommissionCurrencyId)
+                ) && 
+                (
+                    this.OrderRoutingFee == other.OrderRoutingFee ||
+                    this.OrderRoutingFee != null &&
+                    this.OrderRoutingFee.Equals(other.OrderRoutingFee)
+                ) && 
+                (
+                    this.OrderRoutingCurrencyId == other.OrderRoutingCurrencyId ||
+                    this.OrderRoutingCurrencyId != null &&
+                    this.OrderRoutingCurrencyId.Equals(other.OrderRoutingCurrencyId)
+                ) && 
+                (
                     this.ProductId == other.ProductId ||
                     this.ProductId != null &&
                     this.ProductId.Equals(other.ProductId)
@@ -311,6 +365,14 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.IpFee.GetHashCode();
                 if (this.IpCurrencyId != null)
                     hash = hash * 59 + this.IpCurrencyId.GetHashCode();
+                if (this.Commission != null)
+                    hash = hash * 59 + this.Commission.GetHashCode();
+                if (this.CommissionCurrencyId != null)
+                    hash = hash * 59 + this.CommissionCurrencyId.GetHashCode();
+                if (this.OrderRoutingFee != null)
+                    hash = hash * 59 + this.OrderRoutingFee.GetHashCode();
+                if (this.OrderRoutingCurrencyId != null)
+                    hash = hash * 59 + this.OrderRoutingCurrencyId.GetHashCode();
                 if (this.ProductId != null)
                     hash = hash * 59 + this.ProductId.GetHashCode();
                 if (this.DayMargin != null)

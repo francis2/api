@@ -199,7 +199,8 @@ namespace Tradovate.Services.Model
         /// <param name="CftcNumber">CftcNumber.</param>
         /// <param name="MarginAccountType">Hedger, Speculator (required).</param>
         /// <param name="LegalStatus">Corporation, GP, IRA, Individual, Joint, LLC, LLP, LP, Trust (required).</param>
-        public Account(int? Id = null, string Name = null, int? UserId = null, AccountTypeEnum? AccountType = null, bool? Active = null, int? ClearingHouseId = null, int? RiskCategoryId = null, int? AutoLiqProfileId = null, string CftcNumber = null, MarginAccountTypeEnum? MarginAccountType = null, LegalStatusEnum? LegalStatus = null)
+        /// <param name="_Readonly">_Readonly.</param>
+        public Account(int? Id = null, string Name = null, int? UserId = null, AccountTypeEnum? AccountType = null, bool? Active = null, int? ClearingHouseId = null, int? RiskCategoryId = null, int? AutoLiqProfileId = null, string CftcNumber = null, MarginAccountTypeEnum? MarginAccountType = null, LegalStatusEnum? LegalStatus = null, bool? _Readonly = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -284,6 +285,7 @@ namespace Tradovate.Services.Model
             }
             this.Id = Id;
             this.CftcNumber = CftcNumber;
+            this._Readonly = _Readonly;
         }
         
         /// <summary>
@@ -331,6 +333,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="cftcNumber", EmitDefaultValue=false)]
         public string CftcNumber { get; set; }
         /// <summary>
+        /// Gets or Sets _Readonly
+        /// </summary>
+        [DataMember(Name="readonly", EmitDefaultValue=false)]
+        public bool? _Readonly { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -349,6 +356,7 @@ namespace Tradovate.Services.Model
             sb.Append("  CftcNumber: ").Append(CftcNumber).Append("\n");
             sb.Append("  MarginAccountType: ").Append(MarginAccountType).Append("\n");
             sb.Append("  LegalStatus: ").Append(LegalStatus).Append("\n");
+            sb.Append("  _Readonly: ").Append(_Readonly).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -439,6 +447,11 @@ namespace Tradovate.Services.Model
                     this.LegalStatus == other.LegalStatus ||
                     this.LegalStatus != null &&
                     this.LegalStatus.Equals(other.LegalStatus)
+                ) && 
+                (
+                    this._Readonly == other._Readonly ||
+                    this._Readonly != null &&
+                    this._Readonly.Equals(other._Readonly)
                 );
         }
 
@@ -475,6 +488,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.MarginAccountType.GetHashCode();
                 if (this.LegalStatus != null)
                     hash = hash * 59 + this.LegalStatus.GetHashCode();
+                if (this._Readonly != null)
+                    hash = hash * 59 + this._Readonly.GetHashCode();
                 return hash;
             }
         }

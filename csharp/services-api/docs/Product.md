@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Id** | **int?** |  | [optional] 
 **Name** | **string** |  | 
 **CurrencyId** | **int?** | id of Currency | 
-**ProductType** | **string** | Futures, Options, Spread | 
+**ProductType** | **string** | Futures, MarketInternals, Options, Spread | 
 **Description** | **string** |  | 
 **ExchangeId** | **int?** | id of Exchange | 
 **ContractGroupId** | **int?** | id of ContractGroup | 

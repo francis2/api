@@ -53,7 +53,11 @@ namespace Tradovate.Services.Model
         /// <param name="BrokerageCurrencyId">id of Currency.</param>
         /// <param name="IpFee">IpFee.</param>
         /// <param name="IpCurrencyId">id of Currency.</param>
-        public FillFee(int? Id = null, double? ClearingFee = null, int? ClearingCurrencyId = null, double? ExchangeFee = null, int? ExchangeCurrencyId = null, double? NfaFee = null, int? NfaCurrencyId = null, double? BrokerageFee = null, int? BrokerageCurrencyId = null, double? IpFee = null, int? IpCurrencyId = null)
+        /// <param name="Commission">Commission.</param>
+        /// <param name="CommissionCurrencyId">id of Currency.</param>
+        /// <param name="OrderRoutingFee">OrderRoutingFee.</param>
+        /// <param name="OrderRoutingCurrencyId">id of Currency.</param>
+        public FillFee(int? Id = null, double? ClearingFee = null, int? ClearingCurrencyId = null, double? ExchangeFee = null, int? ExchangeCurrencyId = null, double? NfaFee = null, int? NfaCurrencyId = null, double? BrokerageFee = null, int? BrokerageCurrencyId = null, double? IpFee = null, int? IpCurrencyId = null, double? Commission = null, int? CommissionCurrencyId = null, double? OrderRoutingFee = null, int? OrderRoutingCurrencyId = null)
         {
             this.Id = Id;
             this.ClearingFee = ClearingFee;
@@ -66,6 +70,10 @@ namespace Tradovate.Services.Model
             this.BrokerageCurrencyId = BrokerageCurrencyId;
             this.IpFee = IpFee;
             this.IpCurrencyId = IpCurrencyId;
+            this.Commission = Commission;
+            this.CommissionCurrencyId = CommissionCurrencyId;
+            this.OrderRoutingFee = OrderRoutingFee;
+            this.OrderRoutingCurrencyId = OrderRoutingCurrencyId;
         }
         
         /// <summary>
@@ -129,6 +137,28 @@ namespace Tradovate.Services.Model
         [DataMember(Name="ipCurrencyId", EmitDefaultValue=false)]
         public int? IpCurrencyId { get; set; }
         /// <summary>
+        /// Gets or Sets Commission
+        /// </summary>
+        [DataMember(Name="commission", EmitDefaultValue=false)]
+        public double? Commission { get; set; }
+        /// <summary>
+        /// id of Currency
+        /// </summary>
+        /// <value>id of Currency</value>
+        [DataMember(Name="commissionCurrencyId", EmitDefaultValue=false)]
+        public int? CommissionCurrencyId { get; set; }
+        /// <summary>
+        /// Gets or Sets OrderRoutingFee
+        /// </summary>
+        [DataMember(Name="orderRoutingFee", EmitDefaultValue=false)]
+        public double? OrderRoutingFee { get; set; }
+        /// <summary>
+        /// id of Currency
+        /// </summary>
+        /// <value>id of Currency</value>
+        [DataMember(Name="orderRoutingCurrencyId", EmitDefaultValue=false)]
+        public int? OrderRoutingCurrencyId { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -147,6 +177,10 @@ namespace Tradovate.Services.Model
             sb.Append("  BrokerageCurrencyId: ").Append(BrokerageCurrencyId).Append("\n");
             sb.Append("  IpFee: ").Append(IpFee).Append("\n");
             sb.Append("  IpCurrencyId: ").Append(IpCurrencyId).Append("\n");
+            sb.Append("  Commission: ").Append(Commission).Append("\n");
+            sb.Append("  CommissionCurrencyId: ").Append(CommissionCurrencyId).Append("\n");
+            sb.Append("  OrderRoutingFee: ").Append(OrderRoutingFee).Append("\n");
+            sb.Append("  OrderRoutingCurrencyId: ").Append(OrderRoutingCurrencyId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -237,6 +271,26 @@ namespace Tradovate.Services.Model
                     this.IpCurrencyId == other.IpCurrencyId ||
                     this.IpCurrencyId != null &&
                     this.IpCurrencyId.Equals(other.IpCurrencyId)
+                ) && 
+                (
+                    this.Commission == other.Commission ||
+                    this.Commission != null &&
+                    this.Commission.Equals(other.Commission)
+                ) && 
+                (
+                    this.CommissionCurrencyId == other.CommissionCurrencyId ||
+                    this.CommissionCurrencyId != null &&
+                    this.CommissionCurrencyId.Equals(other.CommissionCurrencyId)
+                ) && 
+                (
+                    this.OrderRoutingFee == other.OrderRoutingFee ||
+                    this.OrderRoutingFee != null &&
+                    this.OrderRoutingFee.Equals(other.OrderRoutingFee)
+                ) && 
+                (
+                    this.OrderRoutingCurrencyId == other.OrderRoutingCurrencyId ||
+                    this.OrderRoutingCurrencyId != null &&
+                    this.OrderRoutingCurrencyId.Equals(other.OrderRoutingCurrencyId)
                 );
         }
 
@@ -273,6 +327,14 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.IpFee.GetHashCode();
                 if (this.IpCurrencyId != null)
                     hash = hash * 59 + this.IpCurrencyId.GetHashCode();
+                if (this.Commission != null)
+                    hash = hash * 59 + this.Commission.GetHashCode();
+                if (this.CommissionCurrencyId != null)
+                    hash = hash * 59 + this.CommissionCurrencyId.GetHashCode();
+                if (this.OrderRoutingFee != null)
+                    hash = hash * 59 + this.OrderRoutingFee.GetHashCode();
+                if (this.OrderRoutingCurrencyId != null)
+                    hash = hash * 59 + this.OrderRoutingCurrencyId.GetHashCode();
                 return hash;
             }
         }

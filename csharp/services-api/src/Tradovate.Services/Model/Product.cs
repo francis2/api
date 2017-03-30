@@ -40,9 +40,9 @@ namespace Tradovate.Services.Model
     public partial class Product :  IEquatable<Product>
     {
         /// <summary>
-        /// Futures, Options, Spread
+        /// Futures, MarketInternals, Options, Spread
         /// </summary>
-        /// <value>Futures, Options, Spread</value>
+        /// <value>Futures, MarketInternals, Options, Spread</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ProductTypeEnum
         {
@@ -63,7 +63,13 @@ namespace Tradovate.Services.Model
             /// Enum Spread for "Spread"
             /// </summary>
             [EnumMember(Value = "Spread")]
-            Spread
+            Spread,
+            
+            /// <summary>
+            /// Enum MarketInternals for "MarketInternals"
+            /// </summary>
+            [EnumMember(Value = "MarketInternals")]
+            MarketInternals
         }
 
         /// <summary>
@@ -127,9 +133,9 @@ namespace Tradovate.Services.Model
         }
 
         /// <summary>
-        /// Futures, Options, Spread
+        /// Futures, MarketInternals, Options, Spread
         /// </summary>
-        /// <value>Futures, Options, Spread</value>
+        /// <value>Futures, MarketInternals, Options, Spread</value>
         [DataMember(Name="productType", EmitDefaultValue=false)]
         public ProductTypeEnum? ProductType { get; set; }
         /// <summary>
@@ -155,7 +161,7 @@ namespace Tradovate.Services.Model
         /// <param name="Id">Id.</param>
         /// <param name="Name">Name (required).</param>
         /// <param name="CurrencyId">id of Currency (required).</param>
-        /// <param name="ProductType">Futures, Options, Spread (required).</param>
+        /// <param name="ProductType">Futures, MarketInternals, Options, Spread (required).</param>
         /// <param name="Description">Description (required).</param>
         /// <param name="ExchangeId">id of Exchange (required).</param>
         /// <param name="ContractGroupId">id of ContractGroup (required).</param>

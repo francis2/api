@@ -40,9 +40,9 @@ namespace Tradovate.Services.Model
     public partial class UserAccountRiskParameter :  IEquatable<UserAccountRiskParameter>
     {
         /// <summary>
-        /// Futures, Options, Spread
+        /// Futures, MarketInternals, Options, Spread
         /// </summary>
-        /// <value>Futures, Options, Spread</value>
+        /// <value>Futures, MarketInternals, Options, Spread</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ProductTypeEnum
         {
@@ -63,7 +63,13 @@ namespace Tradovate.Services.Model
             /// Enum Spread for "Spread"
             /// </summary>
             [EnumMember(Value = "Spread")]
-            Spread
+            Spread,
+            
+            /// <summary>
+            /// Enum MarketInternals for "MarketInternals"
+            /// </summary>
+            [EnumMember(Value = "MarketInternals")]
+            MarketInternals
         }
 
         /// <summary>
@@ -106,9 +112,9 @@ namespace Tradovate.Services.Model
         }
 
         /// <summary>
-        /// Futures, Options, Spread
+        /// Futures, MarketInternals, Options, Spread
         /// </summary>
-        /// <value>Futures, Options, Spread</value>
+        /// <value>Futures, MarketInternals, Options, Spread</value>
         [DataMember(Name="productType", EmitDefaultValue=false)]
         public ProductTypeEnum? ProductType { get; set; }
         /// <summary>
@@ -129,7 +135,7 @@ namespace Tradovate.Services.Model
         /// <param name="ContractId">id of Contract.</param>
         /// <param name="ProductId">id of Product.</param>
         /// <param name="ExchangeId">id of Exchange.</param>
-        /// <param name="ProductType">Futures, Options, Spread.</param>
+        /// <param name="ProductType">Futures, MarketInternals, Options, Spread.</param>
         /// <param name="RiskDiscountContractGroupId">id of RiskDiscountContractGroup.</param>
         /// <param name="ProductVerificationStatus">Inactive, Locked, ReadyForContracts, ReadyToTrade, Verified.</param>
         /// <param name="ContractGroupId">id of ContractGroup.</param>

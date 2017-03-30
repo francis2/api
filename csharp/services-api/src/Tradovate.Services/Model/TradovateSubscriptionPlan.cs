@@ -99,7 +99,8 @@ namespace Tradovate.Services.Model
         /// <param name="RiskCategoryId">id of RiskCategory.</param>
         /// <param name="MultipleAccounts">MultipleAccounts.</param>
         /// <param name="OrganizationId">id of Organization.</param>
-        public TradovateSubscriptionPlan(int? Id = null, string Name = null, string Title = null, double? Price = null, TradeDate StartDate = null, TradeDate DiscontinuedDate = null, string Category = null, bool? Trial = null, int? Duration = null, DurationUnitsEnum? DurationUnits = null, int? RiskCategoryId = null, bool? MultipleAccounts = null, int? OrganizationId = null)
+        /// <param name="ReplaySessions">ReplaySessions.</param>
+        public TradovateSubscriptionPlan(int? Id = null, string Name = null, string Title = null, double? Price = null, TradeDate StartDate = null, TradeDate DiscontinuedDate = null, string Category = null, bool? Trial = null, int? Duration = null, DurationUnitsEnum? DurationUnits = null, int? RiskCategoryId = null, bool? MultipleAccounts = null, int? OrganizationId = null, int? ReplaySessions = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -170,6 +171,7 @@ namespace Tradovate.Services.Model
             this.RiskCategoryId = RiskCategoryId;
             this.MultipleAccounts = MultipleAccounts;
             this.OrganizationId = OrganizationId;
+            this.ReplaySessions = ReplaySessions;
         }
         
         /// <summary>
@@ -235,6 +237,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="organizationId", EmitDefaultValue=false)]
         public int? OrganizationId { get; set; }
         /// <summary>
+        /// Gets or Sets ReplaySessions
+        /// </summary>
+        [DataMember(Name="replaySessions", EmitDefaultValue=false)]
+        public int? ReplaySessions { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -255,6 +262,7 @@ namespace Tradovate.Services.Model
             sb.Append("  RiskCategoryId: ").Append(RiskCategoryId).Append("\n");
             sb.Append("  MultipleAccounts: ").Append(MultipleAccounts).Append("\n");
             sb.Append("  OrganizationId: ").Append(OrganizationId).Append("\n");
+            sb.Append("  ReplaySessions: ").Append(ReplaySessions).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -355,6 +363,11 @@ namespace Tradovate.Services.Model
                     this.OrganizationId == other.OrganizationId ||
                     this.OrganizationId != null &&
                     this.OrganizationId.Equals(other.OrganizationId)
+                ) && 
+                (
+                    this.ReplaySessions == other.ReplaySessions ||
+                    this.ReplaySessions != null &&
+                    this.ReplaySessions.Equals(other.ReplaySessions)
                 );
         }
 
@@ -395,6 +408,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.MultipleAccounts.GetHashCode();
                 if (this.OrganizationId != null)
                     hash = hash * 59 + this.OrganizationId.GetHashCode();
+                if (this.ReplaySessions != null)
+                    hash = hash * 59 + this.ReplaySessions.GetHashCode();
                 return hash;
             }
         }

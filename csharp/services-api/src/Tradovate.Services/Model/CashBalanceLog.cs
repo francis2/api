@@ -40,9 +40,9 @@ namespace Tradovate.Services.Model
     public partial class CashBalanceLog :  IEquatable<CashBalanceLog>
     {
         /// <summary>
-        /// AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, TradePaired, TradovateSubscription
+        /// AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, Commission, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, OrderRoutingFee, TradePaired, TradovateSubscription
         /// </summary>
-        /// <value>AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, TradePaired, TradovateSubscription</value>
+        /// <value>AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, Commission, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, OrderRoutingFee, TradePaired, TradovateSubscription</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum CashChangeTypeEnum
         {
@@ -144,6 +144,18 @@ namespace Tradovate.Services.Model
             ExchangeFee,
             
             /// <summary>
+            /// Enum OrderRoutingFee for "OrderRoutingFee"
+            /// </summary>
+            [EnumMember(Value = "OrderRoutingFee")]
+            OrderRoutingFee,
+            
+            /// <summary>
+            /// Enum Commission for "Commission"
+            /// </summary>
+            [EnumMember(Value = "Commission")]
+            Commission,
+            
+            /// <summary>
             /// Enum IPFee for "IPFee"
             /// </summary>
             [EnumMember(Value = "IPFee")]
@@ -157,9 +169,9 @@ namespace Tradovate.Services.Model
         }
 
         /// <summary>
-        /// AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, TradePaired, TradovateSubscription
+        /// AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, Commission, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, OrderRoutingFee, TradePaired, TradovateSubscription
         /// </summary>
-        /// <value>AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, TradePaired, TradovateSubscription</value>
+        /// <value>AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, Commission, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, OrderRoutingFee, TradePaired, TradovateSubscription</value>
         [DataMember(Name="cashChangeType", EmitDefaultValue=false)]
         public CashChangeTypeEnum? CashChangeType { get; set; }
         /// <summary>
@@ -178,7 +190,7 @@ namespace Tradovate.Services.Model
         /// <param name="Amount">Amount (required).</param>
         /// <param name="RealizedPnL">RealizedPnL.</param>
         /// <param name="WeekRealizedPnL">WeekRealizedPnL.</param>
-        /// <param name="CashChangeType">AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, TradePaired, TradovateSubscription (required).</param>
+        /// <param name="CashChangeType">AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, Commission, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, OrderRoutingFee, TradePaired, TradovateSubscription (required).</param>
         /// <param name="FillPairId">id of FillPair.</param>
         /// <param name="FillId">id of Fill.</param>
         /// <param name="FundTransactionId">id of FundTransaction.</param>
