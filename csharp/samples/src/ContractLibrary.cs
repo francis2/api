@@ -21,22 +21,23 @@ namespace Tradovate
             Log.Write("PRE-POPULATING CONTRACT LIBRARY");
 
             var contractLibraryApi = new ContractLibraryApi();
-            contractLibraryApi.GetAllContractGroupsAsync();
-            contractLibraryApi.GetAllExchangesAsync();
-            contractLibraryApi.GetAllCurrenciesAsync();
-            contractLibraryApi.GetAllCurrencyRatesAsync();
+            await contractLibraryApi.GetAllContractGroupsAsync();
+            await contractLibraryApi.GetAllExchangesAsync();
+            await contractLibraryApi.GetAllCurrenciesAsync();
+            await contractLibraryApi.GetAllCurrencyRatesAsync();
 
             var riskApi = new RisksApi();
-            riskApi.GetAllProductMarginsAsync();
+            await riskApi.GetAllProductMarginsAsync();
 
             var products = await contractLibraryApi.GetAllProductsAsync();
 
             // Highly not recommended for short-term connections
             foreach (var product in products)
             {
-                contractLibraryApi.GetOwnedContractMaturitiesAsync(product.Id).ContinueWith(contractMaturities => {
-                    contractLibraryApi.GetOwnedContractsBatchAsync(contractMaturities.Result.Select(contractMaturity => contractMaturity.Id).ToList());
-                });
+                await contractLibraryApi.GetOwnedContractMaturitiesAsync(product.Id)
+                    .ContinueWith(contractMaturities => {
+                        return contractLibraryApi.GetOwnedContractsBatchAsync(contractMaturities.Result.Select(contractMaturity => contractMaturity.Id).ToList());
+                    });
             }
         }
 
