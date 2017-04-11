@@ -35,7 +35,7 @@ namespace Tradovate.Services.Client
         }
     }
 
-    class IncomingMessage
+    public class IncomingMessage
     {
         public string e;
         public int i;
@@ -173,7 +173,7 @@ namespace Tradovate.Services.Client
             Closed?.Invoke(this, EventArgs.Empty);
         }
 
-        private void HandleEvent(IncomingMessage message)
+        protected virtual void HandleEvent(IncomingMessage message)
         {
             switch (message.e)
             {

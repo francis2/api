@@ -1,0 +1,461 @@
+swagger: '2.0'
+info:
+    title: Tradovate API
+    description: Tradovate API
+    version: "1.0.0"
+host: live-api-d.tradovate.com
+schemes:
+    - https
+basePath: /v1
+consumes:
+    - application/json
+produces:
+    - application/json
+securityDefinitions:
+    bearer_access_token:
+        type: apiKey
+        name: Authorization
+        in: header
+paths:
+    /md/alterhistogramsubscription:
+        post:
+            operationId: alterHistogramSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/AlterHistogramSubscription'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+    /md/alterquotesubscription:
+        post:
+            operationId: alterQuoteSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/AlterQuoteSubscription'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+    /md/cancelchart:
+        post:
+            operationId: cancelChart
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/CancelChart'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+    /md/getchart:
+        post:
+            operationId: getChart
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/GetChart'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/ChartSubscriptionResult'
+    /md/subscribedom:
+        post:
+            operationId: subscribeDOM
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/SubscribeDOM'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+definitions:
+    TradeTime:
+        type: object
+        required:
+            - hour
+            - minute
+        properties:
+            hour:
+                type: integer
+            minute:
+                type: integer
+    TradeDate:
+        type: object
+        required:
+            - year
+            - month
+            - day
+        properties:
+            year:
+                type: integer
+            month:
+                type: integer
+            day:
+                type: integer
+    AlterHistogramSubscription:
+        type: object
+        required:
+            - symbol
+            - subscribe
+        properties: 
+            symbol:
+                type: string
+            subscribe:
+                type: boolean
+    AlterQuoteSubscription:
+        type: object
+        required:
+            - symbol
+            - filter
+        properties: 
+            symbol:
+                type: string
+            filter:
+                type: array
+                items:
+                    type: string
+    BasicChartDescription:
+        type: object
+        required:
+            - underlyingType
+            - elementSize
+            - elementSizeUnit
+        properties: 
+            underlyingType:
+                type: string
+                description: "Custom, DOM, DailyBar, MinuteBar, Tick"
+                enum:
+                    - Tick
+                    - DailyBar
+                    - MinuteBar
+                    - Custom
+                    - DOM
+            elementSize:
+                type: integer
+                format: int32
+            elementSizeUnit:
+                type: string
+                description: "MomentumRange, OFARange, PointAndFigure, Range, Renko, UnderlyingUnits, Volume"
+                enum:
+                    - Volume
+                    - Range
+                    - UnderlyingUnits
+                    - Renko
+                    - MomentumRange
+                    - PointAndFigure
+                    - OFARange
+            elementSize2:
+                type: integer
+                format: int32
+    CancelChart:
+        type: object
+        properties: 
+            subscriptionId:
+                type: integer
+                format: int32
+    ChartCustomSession:
+        type: object
+        required:
+            - startTime
+            - stopTime
+        properties: 
+            startTime:
+                $ref: '#/definitions/TradeTime'
+            stopTime:
+                $ref: '#/definitions/TradeTime'
+    ChartDescription:
+        type: object
+        required:
+            - underlyingType
+            - elementSize
+            - elementSizeUnit
+        properties: 
+            underlyingType:
+                type: string
+                description: "Custom, DOM, DailyBar, MinuteBar, Tick"
+                enum:
+                    - Tick
+                    - DailyBar
+                    - MinuteBar
+                    - Custom
+                    - DOM
+            elementSize:
+                type: integer
+                format: int32
+            elementSizeUnit:
+                type: string
+                description: "MomentumRange, OFARange, PointAndFigure, Range, Renko, UnderlyingUnits, Volume"
+                enum:
+                    - Volume
+                    - Range
+                    - UnderlyingUnits
+                    - Renko
+                    - MomentumRange
+                    - PointAndFigure
+                    - OFARange
+            elementSize2:
+                type: integer
+                format: int32
+            customUnderlying:
+                $ref: '#/definitions/BasicChartDescription'
+            withHistogram:
+                type: boolean
+    ChartSubscriptionResult:
+        type: object
+        required:
+            - mode
+        properties: 
+            errorText:
+                type: string
+                maxLength: 8192
+                description: "Non-empty if the request failed"
+            errorCode:
+                type: string
+                description: "NoServicePlan, OperationNotSupported, Success, UnknownReason, UnknownSymbol"
+                enum:
+                    - OperationNotSupported
+                    - UnknownReason
+                    - UnknownSymbol
+                    - NoServicePlan
+                    - Success
+            mode:
+                type: string
+                description: "Delayed, None, RealTime"
+                enum:
+                    - None
+                    - Delayed
+                    - RealTime
+            historicalId:
+                type: integer
+                format: int32
+            realtimeId:
+                type: integer
+                format: int32
+    ChartTimeRange:
+        type: object
+        properties: 
+            closestTimestamp:
+                type: string
+                format: date-time
+            closestTickId:
+                type: integer
+                format: int32
+            asFarAsTimestamp:
+                type: string
+                format: date-time
+            asMuchAsElements:
+                type: integer
+                format: int32
+    DOM:
+        type: object
+        required:
+            - contractId
+            - timestamp
+            - bids
+            - offers
+        properties: 
+            contractId:
+                type: integer
+                format: int32
+                minimum: 0
+                exclusiveMinimum: true
+                description: "id of Contract"
+            timestamp:
+                type: string
+                format: date-time
+            bids:
+                type: array
+                items:
+                    $ref: '#/definitions/PriceLevel'
+            offers:
+                type: array
+                items:
+                    $ref: '#/definitions/PriceLevel'
+            id:
+                type: integer
+                format: int32
+    GetChart:
+        type: object
+        required:
+            - symbol
+            - chartDescription
+            - timeRange
+        properties: 
+            symbol:
+                type: string
+            chartDescription:
+                $ref: '#/definitions/ChartDescription'
+            timeRange:
+                $ref: '#/definitions/ChartTimeRange'
+            customSession:
+                $ref: '#/definitions/ChartCustomSession'
+    Histogram:
+        type: object
+        required:
+            - contractId
+            - timestamp
+            - tradeDate
+            - base
+            - items
+            - refresh
+        properties: 
+            contractId:
+                type: integer
+                format: int32
+                minimum: 0
+                exclusiveMinimum: true
+                description: "id of Contract"
+            timestamp:
+                type: string
+                format: date-time
+            tradeDate:
+                $ref: '#/definitions/TradeDate'
+            base:
+                type: number
+                format: double
+            items:
+                type: object
+            refresh:
+                type: boolean
+            id:
+                type: integer
+                format: int32
+    MarketDataSubscriptionResult:
+        type: object
+        required:
+            - mode
+        properties: 
+            errorText:
+                type: string
+                maxLength: 8192
+                description: "Non-empty if the request failed"
+            errorCode:
+                type: string
+                description: "NoServicePlan, OperationNotSupported, Success, UnknownReason, UnknownSymbol"
+                enum:
+                    - OperationNotSupported
+                    - UnknownReason
+                    - UnknownSymbol
+                    - NoServicePlan
+                    - Success
+            mode:
+                type: string
+                description: "Delayed, None, RealTime"
+                enum:
+                    - None
+                    - Delayed
+                    - RealTime
+            subscriptionId:
+                type: integer
+                format: int32
+    OHLC:
+        type: object
+        required:
+            - timestamp
+            - open
+            - high
+            - low
+            - close
+            - upVolume
+            - downVolume
+            - upTicks
+            - downTicks
+        properties: 
+            timestamp:
+                type: string
+                format: date-time
+            open:
+                type: number
+                format: double
+            high:
+                type: number
+                format: double
+            low:
+                type: number
+                format: double
+            close:
+                type: number
+                format: double
+            upVolume:
+                type: integer
+                format: int32
+            downVolume:
+                type: integer
+                format: int32
+            upTicks:
+                type: integer
+                format: int32
+            downTicks:
+                type: integer
+                format: int32
+            histogram:
+                type: string
+            bidVolume:
+                type: integer
+                format: int32
+            offerVolume:
+                type: integer
+                format: int32
+    PriceLevel:
+        type: object
+        required:
+            - price
+            - size
+        properties: 
+            price:
+                type: number
+                format: double
+            size:
+                type: integer
+                format: int32
+    SubscribeDOM:
+        type: object
+        required:
+            - symbol
+            - filter
+        properties: 
+            symbol:
+                type: string
+            filter:
+                type: array
+                items:
+                    type: string
