@@ -24,33 +24,31 @@ using System.ComponentModel.DataAnnotations;
 namespace Tradovate.Services.Model
 {
     /// <summary>
-    /// SubscribeDOM
+    /// UnsubscribeDOM
     /// </summary>
     [DataContract]
-    public partial class SubscribeDOM :  IEquatable<SubscribeDOM>, IValidatableObject
+    public partial class UnsubscribeDOM :  IEquatable<UnsubscribeDOM>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SubscribeDOM" /> class.
+        /// Initializes a new instance of the <see cref="UnsubscribeDOM" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected SubscribeDOM() { }
+        protected UnsubscribeDOM() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="SubscribeDOM" /> class.
+        /// Initializes a new instance of the <see cref="UnsubscribeDOM" /> class.
         /// </summary>
         /// <param name="Symbol">Symbol (required).</param>
-        /// <param name="Filter">Filter.</param>
-        public SubscribeDOM(string Symbol = default(string), List<string> Filter = default(List<string>))
+        public UnsubscribeDOM(string Symbol = default(string))
         {
             // to ensure "Symbol" is required (not null)
             if (Symbol == null)
             {
-                throw new InvalidDataException("Symbol is a required property for SubscribeDOM and cannot be null");
+                throw new InvalidDataException("Symbol is a required property for UnsubscribeDOM and cannot be null");
             }
             else
             {
                 this.Symbol = Symbol;
             }
-            this.Filter = Filter;
         }
         
         /// <summary>
@@ -59,20 +57,14 @@ namespace Tradovate.Services.Model
         [DataMember(Name="symbol", EmitDefaultValue=false)]
         public string Symbol { get; set; }
         /// <summary>
-        /// Gets or Sets Filter
-        /// </summary>
-        [DataMember(Name="filter", EmitDefaultValue=false)]
-        public List<string> Filter { get; set; }
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class SubscribeDOM {\n");
+            sb.Append("class UnsubscribeDOM {\n");
             sb.Append("  Symbol: ").Append(Symbol).Append("\n");
-            sb.Append("  Filter: ").Append(Filter).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -94,15 +86,15 @@ namespace Tradovate.Services.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as SubscribeDOM);
+            return this.Equals(obj as UnsubscribeDOM);
         }
 
         /// <summary>
-        /// Returns true if SubscribeDOM instances are equal
+        /// Returns true if UnsubscribeDOM instances are equal
         /// </summary>
-        /// <param name="other">Instance of SubscribeDOM to be compared</param>
+        /// <param name="other">Instance of UnsubscribeDOM to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SubscribeDOM other)
+        public bool Equals(UnsubscribeDOM other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)
@@ -113,11 +105,6 @@ namespace Tradovate.Services.Model
                     this.Symbol == other.Symbol ||
                     this.Symbol != null &&
                     this.Symbol.Equals(other.Symbol)
-                ) && 
-                (
-                    this.Filter == other.Filter ||
-                    this.Filter != null &&
-                    this.Filter.SequenceEqual(other.Filter)
                 );
         }
 
@@ -134,8 +121,6 @@ namespace Tradovate.Services.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.Symbol != null)
                     hash = hash * 59 + this.Symbol.GetHashCode();
-                if (this.Filter != null)
-                    hash = hash * 59 + this.Filter.GetHashCode();
                 return hash;
             }
         }
