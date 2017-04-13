@@ -1,6 +1,6 @@
 # Overview
 
-Tradovate Market Data API is a REST API to access market data such as quotes, DOM, charts and histograms.
+Tradovate Market Data API provides an access to market data such as quotes, DOM, charts and histograms.
 
 The API uses JSON format to pass request parameters and response/data message payload.
 
@@ -42,11 +42,11 @@ A typical scenario of using Market Data API consists of the following steps:
 
   Client creates request parameters, specifies request endpoint such as `md/subscribeQuote` and [sends the request](https://github.com/tradovate/api/blob/master/WebSockets.md#client-requests) to Tradovate server.
 
-  Tradovate server sends a [response message](https://github.com/tradovate/api/blob/master/WebSockets.md#response-message):
+  Tradovate server sends back a [response message](https://github.com/tradovate/api/blob/master/WebSockets.md#response-message):
 
-  - If the response has an error, client can perform [error handling](https://github.com/tradovate/api/blob/master/Conventions.md#error-handling).
+  - If a response has an error, client can perform [error handling](https://github.com/tradovate/api/blob/master/Conventions.md#error-handling).
 
-  - If the response is successful, the corresponding subscription is activated and client is going to be provided by market data. Client is responsible to track the contracts for which subscriptions are activated (to unsubscribe properly). Client can have a single subscription of each type (quotes, DOM, etc) per contract, so no explicit subscription ID is provided.
+  - If a response is successful, the corresponding subscription is activated and client is going to be provided by market data. Client is responsible to track the contracts for which subscriptions are activated (to properly unsubscribe ). Client can have a single subscription of each type (quotes, DOM, etc) per contract, so no explicit subscription ID is provided.
 
 - **Handle market data.**
 
@@ -81,11 +81,11 @@ A typical scenario of using Market Data API consists of the following steps:
 
   Client creates request parameters, specifies request endpoint such as `md/unsubscribeQuote` and [sends the request](https://github.com/tradovate/api/blob/master/WebSockets.md#client-requests) to Tradovate server.
 
-  Tradovate server sends a [response message](https://github.com/tradovate/api/blob/master/WebSockets.md#response-message):
+  Tradovate server sends back a [response message](https://github.com/tradovate/api/blob/master/WebSockets.md#response-message):
 
-  - If the response has an error, client can perform [error handling](https://github.com/tradovate/api/blob/master/Conventions.md#error-handling).
+  - If a response has an error, client can perform [error handling](https://github.com/tradovate/api/blob/master/Conventions.md#error-handling).
 
-  - If the response is successful, the corresponding subscription is deactivated and no market data are provided to client anymore.
+  - If a response is successful, the corresponding subscription is deactivated and no market data are provided to client anymore.
 
 - **Close WebSocket.**
 
