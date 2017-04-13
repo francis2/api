@@ -246,7 +246,9 @@ A typical scenario of using Market Data API consists of the following steps:
 
 
 
-## *Subscribe Chart*
+## *Get Chart*
+
+**Description**: Client may have multiple charts for the same contract, so response for `md/getChart` request contains subscription ID to properly cancel real-time chart subscription.
 
 **Endpoint**: `md/getChart`
 
@@ -262,12 +264,27 @@ A typical scenario of using Market Data API consists of the following steps:
     "withHistogram": true | false
   },
   "timeRange": {
-    // All fields in "timeRange" are optional, but at least one is required
+    // All fields in "timeRange" are optional, but at least anyone is required
     "closestTimestamp":"2017-04-13T11:33Z",
     "closestTickId":123,
     "asFarAsTimestamp":"2017-04-13T11:33Z",
     "asMuchAsElements":66
   },
+}
+```
+
+**Response**
+
+A response for `md/getChart` request contains two subscription ID, `historicalId` and `realtimeId`. Client needs to store `realtimeId` value to properly cancel real-time chart subscription via `md/cancelChart` request.
+
+```js
+{
+  "s":200,
+  "i":13,
+  "d":{
+    "historicalId":32,
+    "realtimeId":31
+  }
 }
 ```
 
@@ -279,7 +296,7 @@ A typical scenario of using Market Data API consists of the following steps:
   "d": {
     "charts": [ // "charts" may contain multiple chart objects
       {
-        "id":9,
+        "id":9, // "id" matches either historicalId or realtimeId values from response
         "td":20170413, // Trade date as a number with value YYYYMMDD
         "bars": [ // "bars" may contain multiple bar objects
           {
@@ -302,12 +319,14 @@ A typical scenario of using Market Data API consists of the following steps:
 }
 ```
 
-## *Unsubscribe Chart*
+## *Cancel Chart*
 
 **Endpoint**: `md/cancelChart`
 
 **Parameters**:
 
 ```js
-{ "symbol": 123456 }
+{
+  "subscriptionId": 123456 // The value of real-time chart subscription ID from `md/getChart` response
+}
 ```

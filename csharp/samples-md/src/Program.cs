@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Tradovate.MarketData.Models;
 using Tradovate.Services.Api;
 using Tradovate.Services.Client;
 using Tradovate.Services.Model;
@@ -27,7 +28,6 @@ namespace Tradovate.MarketData
 
             var accessTokenResponse = GetAccessToken("https://live-api-d.tradovate.com/v1", Username, Password);
             var AccessToken = accessTokenResponse.AccessToken;
-            var UserId = accessTokenResponse.UserId ?? 0;
 
             ConsumingQuotes(AccessToken);
             ConsumingDOM(AccessToken);
@@ -35,6 +35,9 @@ namespace Tradovate.MarketData
             ConsumingCharts(AccessToken);
         }
 
+        /// <summary>
+        /// Demonstrates how to work with quote data. 
+        /// </summary>
         static void ConsumingQuotes(string accessToken)
         {
             var scenario = new Scenario("Consuming quotes")
@@ -75,7 +78,7 @@ namespace Tradovate.MarketData
                             case "md":
                                 Log.Write("MD event:");
                                 var json = message.d as JObject;
-                                var data = json.ToObject<QuotesData>();
+                                var data = json.ToObject<QuoteData>();
                                 data?.Quotes?.ForEach(quote =>
                                 {
                                     Log.Write($"  CONTRACT: {quote.ContractId}");
@@ -110,6 +113,9 @@ namespace Tradovate.MarketData
             scenario.Run();
         }
 
+        /// <summary>
+        /// Demonstrates how to work with DOM data. 
+        /// </summary>
         static void ConsumingDOM(string accessToken)
         {
             var scenario = new Scenario("Consuming DOM")
@@ -179,6 +185,9 @@ namespace Tradovate.MarketData
             scenario.Run();
         }
 
+        /// <summary>
+        /// Demonstrates how to work with histogram data. 
+        /// </summary>
         static void ConsumingHistograms(string accessToken)
         {
             var scenario = new Scenario("Consuming histograms")
@@ -247,8 +256,13 @@ namespace Tradovate.MarketData
             scenario.Run();
         }
 
+        /// <summary>
+        /// Demonstrates how to work with chart data. 
+        /// </summary>
         static void ConsumingCharts(string accessToken)
         {
+            int? subscriptionId = 0;
+
             var scenario = new Scenario("Consuming charts")
                 .InitializeAPI(
                     () =>
@@ -280,6 +294,7 @@ namespace Tradovate.MarketData
                     responseHandler: (request, response) =>
                     {
                         Log.Write($"{request} -> {response.Data}");
+                        subscriptionId = response.Data.RealtimeId; // Store real-time subscription ID to properly cancel the subscription
                     },
                     dataHandler: message =>
                     {
@@ -303,8 +318,8 @@ namespace Tradovate.MarketData
                         }
                     })
                 .ProcessingWhile(TimeSpan.FromSeconds(15))
-                .Request("Cancel chart for ESM7",
-                    init: () => new CancelChart(1062123),
+                .Request($"Cancel chart subscription #{subscriptionId}",
+                    init: () => new CancelChart(subscriptionId ?? 0),
                     sender: (api, request) => api.CancelChartAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
