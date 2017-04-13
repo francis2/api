@@ -4,7 +4,9 @@ Tradovate Market Data API provides an access to market data such as quotes, DOM,
 
 The API uses JSON format to pass request parameters and response/data message payload.
 
-Request/response exchange and data messages are transmitted via [Tradovate WebSocket-based protocol](https://github.com/tradovate/api/blob/master/WebSockets.md).
+Request/response exchange and data messages are transmitted via [Tradovate WebSocket-based protocol](WebSockets.md).
+
+Demonstration C# sample of using Tradovate Market Data API is available in VS solution [here](csharp/services-api).
 
 # Typical Use Case
 
@@ -12,11 +14,11 @@ A typical scenario of using Market Data API consists of the following steps:
 
 - **Get an access token using credentials.**
 
-  Client [obtains](https://github.com/tradovate/api/blob/master/Access.md#get-an-access-token-using-credentials) an [access token](https://github.com/tradovate/api/blob/master/Access.md#access-tokens) from Tradovate server.
+  Client [obtains](Access.md#get-an-access-token-using-credentials) an [access token](Access.md#access-tokens) from Tradovate server.
 
 - **Open a WebSocket and authorize.**
 
-  Client opens a WebSocket to Tradovate URL [https://md-api.tradovate.com](https://md-api.tradovate.com) and performs [authorization procedure](https://github.com/tradovate/api/blob/master/WebSockets.md#authorization).
+  Client opens a WebSocket to Tradovate URL [https://md-api.tradovate.com](https://md-api.tradovate.com) and performs [authorization procedure](WebSockets.md#authorization).
 
 - **Create request parameters.**
 
@@ -40,17 +42,17 @@ A typical scenario of using Market Data API consists of the following steps:
 
 - **Subscribe for market data.**
 
-  Client creates request parameters, specifies request endpoint such as `md/subscribeQuote` and [sends the request](https://github.com/tradovate/api/blob/master/WebSockets.md#client-requests) to Tradovate server.
+  Client creates request parameters, specifies request endpoint such as `md/subscribeQuote` and [sends the request](WebSockets.md#client-requests) to Tradovate server.
 
-  Tradovate server sends back a [response message](https://github.com/tradovate/api/blob/master/WebSockets.md#response-message):
+  Tradovate server sends back a [response message](WebSockets.md#response-message):
 
-  - If a response has an error, client can perform [error handling](https://github.com/tradovate/api/blob/master/Conventions.md#error-handling).
+  - If a response has an error, client can perform [error handling](Conventions.md#error-handling).
 
   - If a response is successful, the corresponding subscription is activated and client is going to be provided by market data. Client is responsible to track the contracts for which subscriptions are activated (to properly unsubscribe ). Client can have a single subscription of each type (quotes, DOM, etc) per contract, so no explicit subscription ID is provided.
 
 - **Handle market data.**
 
-  Market data arrive from Tradovate server to client asynchronously as [event messages](https://github.com/tradovate/api/blob/master/WebSockets.md#event-message) of `md` or `chart` types, for example:
+  Market data arrive from Tradovate server to client asynchronously as [event messages](WebSockets.md#event-message) of `md` or `chart` types, for example:
 
   ```js
   {
@@ -79,11 +81,11 @@ A typical scenario of using Market Data API consists of the following steps:
 
 - **Unsubscribe from market data.**
 
-  Client creates request parameters, specifies request endpoint such as `md/unsubscribeQuote` and [sends the request](https://github.com/tradovate/api/blob/master/WebSockets.md#client-requests) to Tradovate server.
+  Client creates request parameters, specifies request endpoint such as `md/unsubscribeQuote` and [sends the request](WebSockets.md#client-requests) to Tradovate server.
 
-  Tradovate server sends back a [response message](https://github.com/tradovate/api/blob/master/WebSockets.md#response-message):
+  Tradovate server sends back a [response message](WebSockets.md#response-message):
 
-  - If a response has an error, client can perform [error handling](https://github.com/tradovate/api/blob/master/Conventions.md#error-handling).
+  - If a response has an error, client can perform [error handling](Conventions.md#error-handling).
 
   - If a response is successful, the corresponding subscription is deactivated and no market data are provided to client anymore.
 
