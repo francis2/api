@@ -23,11 +23,8 @@ namespace Tradovate.MarketData
         [DataMember(Name = "id", EmitDefaultValue = true)]
         public int Id { get; set; }
 
-        [DataMember(Name = "s", EmitDefaultValue = true)]
-        public string S { get; set; } // TODO:
-
         [DataMember(Name = "td", EmitDefaultValue = true)]
-        public int Td { get; set; } // TODO:
+        public int TradeDate { get; set; }
 
         [DataMember(Name = "bars", EmitDefaultValue = false)]
         public List<OHLC> Bars { get; set; }

@@ -136,7 +136,6 @@ namespace Tradovate.MarketData
                     init: () =>
                     {
                         // The contract ESM7 is specified by contract symbol
-                        // TODO: Filter is optional
                         return new SubscribeDOM("ESM7");
                     },
                     sender: (api, request) => api.SubscribeDOMAsyncWithHttpInfo(request),
@@ -293,8 +292,7 @@ namespace Tradovate.MarketData
                                 data?.Charts?.ForEach(chart =>
                                 {
                                     Log.Write($"  ID: {chart.Id}");
-                                    Log.Write($"  S: {chart.S}");
-                                    Log.Write($"  TD: {chart.Td}");
+                                    Log.Write($"  TD: {chart.TradeDate}");
                                     if (chart.Bars != null)
                                     {
                                         Log.Write("  BARS:");
