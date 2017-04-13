@@ -1,5 +1,9 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+﻿/* 
+ * 
+ * Tradovate API, MarketData Samples
+ *
+*/
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tradovate.Services.Model;
 
-namespace Tradovate.MarketData
+namespace Tradovate.MarketData.Models
 {
     [DataContract]
     public class ChartData
@@ -23,11 +27,8 @@ namespace Tradovate.MarketData
         [DataMember(Name = "id", EmitDefaultValue = true)]
         public int Id { get; set; }
 
-        [DataMember(Name = "s", EmitDefaultValue = true)]
-        public string S { get; set; } // TODO:
-
         [DataMember(Name = "td", EmitDefaultValue = true)]
-        public int Td { get; set; } // TODO:
+        public int TradeDate { get; set; }
 
         [DataMember(Name = "bars", EmitDefaultValue = false)]
         public List<OHLC> Bars { get; set; }
@@ -48,7 +49,7 @@ namespace Tradovate.MarketData
     }
 
     [DataContract]
-    public class QuotesData
+    public class QuoteData
     {
         [DataMember(Name = "quotes", EmitDefaultValue = false)]
         public List<Quote> Quotes { get; set; }
@@ -102,19 +103,5 @@ namespace Tradovate.MarketData
 
         [DataMember(EmitDefaultValue = false)]
         public PriceLevel LowPrice { get; set; }
-    }
-
-    public static class MDEntryType
-    {
-        public static readonly string Bid = "Bid";
-        public static readonly string Offer = "Offer";
-        public static readonly string Trade = "Trade";
-        public static readonly string OpeningPrice = "OpeningPrice";
-        public static readonly string SettlementPrice = "SettlementPrice";
-        public static readonly string TotalTradeVolume = "TotalTradeVolume";
-        public static readonly string EmptyBook = "EmptyBook";
-        public static readonly string OpenInterest = "OpenInterest";
-        public static readonly string HighPrice = "HighPrice";
-        public static readonly string LowPrice = "LowPrice";
     }
 }

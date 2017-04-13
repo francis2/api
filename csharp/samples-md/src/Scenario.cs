@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* 
+ * 
+ * Tradovate API, MarketData Samples
+ *
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +15,9 @@ using Tradovate.Services.Client;
 
 namespace Tradovate.MarketData
 {
+    /// <summary>
+    /// Represents demonstration steps of use cases for Market Data API
+    /// </summary>
     class Scenario
     {
         public Scenario(string description)
@@ -31,6 +40,9 @@ namespace Tradovate.MarketData
         }
         public string Description { get; private set; }
 
+        /// <summary>
+        /// Initialization of Market Data API instance.
+        /// </summary>
         public Scenario InitializeAPI(Func<PricesApi> action)
         {
             Api = action();
@@ -38,18 +50,27 @@ namespace Tradovate.MarketData
             return this;
         }
 
+        /// <summary>
+        /// Initialization of WebSocket client and assigning handlers for 'opened' and 'closed' WebSocket events. 
+        /// </summary>
         public Scenario InitializeClient(Func<WSClient> init, EventHandler opened, EventHandler closed)
         {
             Items.Add(new InitializeClient(init, opened, closed));
             return this;
         }
 
+        /// <summary>
+        /// Simulates asynchronous processing in an application. 
+        /// </summary>
         public Scenario ProcessingWhile(TimeSpan duration)
         {
             Items.Add(new ProcessingWhile(duration));
             return this;
         }
 
+        /// <summary>
+        /// Defines sending a request, response handler and data handler for the request market data. 
+        /// </summary>
         public Scenario Request<TRequest, TResponseResult>(string description,
             Func<TRequest> init,
             Func<PricesApi, TRequest, Task<ApiResponse<TResponseResult>>> sender,
@@ -64,6 +85,9 @@ namespace Tradovate.MarketData
 
         private readonly List<ScenarioItem> Items = new List<ScenarioItem>();
 
+        /// <summary>
+        /// Executes the scenario. Blocks the running program until the scenario finished (successfully or with exception). 
+        /// </summary>
         public void Run()
         {
             Log.Write($"Running scenario '{Description}'");

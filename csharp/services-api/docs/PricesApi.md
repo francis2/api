@@ -4,140 +4,15 @@ All URIs are relative to *https://live-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AlterHistogramSubscription**](PricesApi.md#alterhistogramsubscription) | **POST** /md/alterhistogramsubscription | 
-[**AlterQuoteSubscription**](PricesApi.md#alterquotesubscription) | **POST** /md/alterquotesubscription | 
 [**CancelChart**](PricesApi.md#cancelchart) | **POST** /md/cancelchart | 
 [**GetChart**](PricesApi.md#getchart) | **POST** /md/getchart | 
 [**SubscribeDOM**](PricesApi.md#subscribedom) | **POST** /md/subscribedom | 
+[**SubscribeHistogram**](PricesApi.md#subscribehistogram) | **POST** /md/subscribehistogram | 
+[**SubscribeQuote**](PricesApi.md#subscribequote) | **POST** /md/subscribequote | 
+[**UnsubscribeDOM**](PricesApi.md#unsubscribedom) | **POST** /md/unsubscribedom | 
+[**UnsubscribeHistogram**](PricesApi.md#unsubscribehistogram) | **POST** /md/unsubscribehistogram | 
+[**UnsubscribeQuote**](PricesApi.md#unsubscribequote) | **POST** /md/unsubscribequote | 
 
-
-<a name="alterhistogramsubscription"></a>
-# **AlterHistogramSubscription**
-> MarketDataSubscriptionResult AlterHistogramSubscription (AlterHistogramSubscription body)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class AlterHistogramSubscriptionExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new PricesApi();
-            var body = new AlterHistogramSubscription(); // AlterHistogramSubscription | 
-
-            try
-            {
-                MarketDataSubscriptionResult result = apiInstance.AlterHistogramSubscription(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PricesApi.AlterHistogramSubscription: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**AlterHistogramSubscription**](AlterHistogramSubscription.md)|  | 
-
-### Return type
-
-[**MarketDataSubscriptionResult**](MarketDataSubscriptionResult.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="alterquotesubscription"></a>
-# **AlterQuoteSubscription**
-> MarketDataSubscriptionResult AlterQuoteSubscription (AlterQuoteSubscription body)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class AlterQuoteSubscriptionExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new PricesApi();
-            var body = new AlterQuoteSubscription(); // AlterQuoteSubscription | 
-
-            try
-            {
-                MarketDataSubscriptionResult result = apiInstance.AlterQuoteSubscription(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PricesApi.AlterQuoteSubscription: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**AlterQuoteSubscription**](AlterQuoteSubscription.md)|  | 
-
-### Return type
-
-[**MarketDataSubscriptionResult**](MarketDataSubscriptionResult.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="cancelchart"></a>
 # **CancelChart**
@@ -315,6 +190,326 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**SubscribeDOM**](SubscribeDOM.md)|  | 
+
+### Return type
+
+[**MarketDataSubscriptionResult**](MarketDataSubscriptionResult.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="subscribehistogram"></a>
+# **SubscribeHistogram**
+> MarketDataSubscriptionResult SubscribeHistogram (SubscribeHistogram body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class SubscribeHistogramExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new PricesApi();
+            var body = new SubscribeHistogram(); // SubscribeHistogram | 
+
+            try
+            {
+                MarketDataSubscriptionResult result = apiInstance.SubscribeHistogram(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PricesApi.SubscribeHistogram: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SubscribeHistogram**](SubscribeHistogram.md)|  | 
+
+### Return type
+
+[**MarketDataSubscriptionResult**](MarketDataSubscriptionResult.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="subscribequote"></a>
+# **SubscribeQuote**
+> MarketDataSubscriptionResult SubscribeQuote (SubscribeQuote body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class SubscribeQuoteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new PricesApi();
+            var body = new SubscribeQuote(); // SubscribeQuote | 
+
+            try
+            {
+                MarketDataSubscriptionResult result = apiInstance.SubscribeQuote(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PricesApi.SubscribeQuote: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SubscribeQuote**](SubscribeQuote.md)|  | 
+
+### Return type
+
+[**MarketDataSubscriptionResult**](MarketDataSubscriptionResult.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="unsubscribedom"></a>
+# **UnsubscribeDOM**
+> MarketDataSubscriptionResult UnsubscribeDOM (UnsubscribeDOM body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class UnsubscribeDOMExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new PricesApi();
+            var body = new UnsubscribeDOM(); // UnsubscribeDOM | 
+
+            try
+            {
+                MarketDataSubscriptionResult result = apiInstance.UnsubscribeDOM(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PricesApi.UnsubscribeDOM: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UnsubscribeDOM**](UnsubscribeDOM.md)|  | 
+
+### Return type
+
+[**MarketDataSubscriptionResult**](MarketDataSubscriptionResult.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="unsubscribehistogram"></a>
+# **UnsubscribeHistogram**
+> MarketDataSubscriptionResult UnsubscribeHistogram (UnsubscribeHistogram body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class UnsubscribeHistogramExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new PricesApi();
+            var body = new UnsubscribeHistogram(); // UnsubscribeHistogram | 
+
+            try
+            {
+                MarketDataSubscriptionResult result = apiInstance.UnsubscribeHistogram(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PricesApi.UnsubscribeHistogram: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UnsubscribeHistogram**](UnsubscribeHistogram.md)|  | 
+
+### Return type
+
+[**MarketDataSubscriptionResult**](MarketDataSubscriptionResult.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="unsubscribequote"></a>
+# **UnsubscribeQuote**
+> MarketDataSubscriptionResult UnsubscribeQuote (UnsubscribeQuote body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class UnsubscribeQuoteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new PricesApi();
+            var body = new UnsubscribeQuote(); // UnsubscribeQuote | 
+
+            try
+            {
+                MarketDataSubscriptionResult result = apiInstance.UnsubscribeQuote(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PricesApi.UnsubscribeQuote: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UnsubscribeQuote**](UnsubscribeQuote.md)|  | 
 
 ### Return type
 

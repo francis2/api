@@ -17,42 +17,6 @@ securityDefinitions:
         name: Authorization
         in: header
 paths:
-    /md/alterhistogramsubscription:
-        post:
-            operationId: alterHistogramSubscription
-            security:
-                - bearer_access_token: []
-            parameters:
-                - name: body
-                  in: body
-                  required: true
-                  schema:
-                    $ref: '#/definitions/AlterHistogramSubscription'
-            tags:
-                - Prices
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        $ref: '#/definitions/MarketDataSubscriptionResult'
-    /md/alterquotesubscription:
-        post:
-            operationId: alterQuoteSubscription
-            security:
-                - bearer_access_token: []
-            parameters:
-                - name: body
-                  in: body
-                  required: true
-                  schema:
-                    $ref: '#/definitions/AlterQuoteSubscription'
-            tags:
-                - Prices
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        $ref: '#/definitions/MarketDataSubscriptionResult'
     /md/cancelchart:
         post:
             operationId: cancelChart
@@ -100,6 +64,96 @@ paths:
                   required: true
                   schema:
                     $ref: '#/definitions/SubscribeDOM'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+    /md/subscribehistogram:
+        post:
+            operationId: subscribeHistogram
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/SubscribeHistogram'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+    /md/subscribequote:
+        post:
+            operationId: subscribeQuote
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/SubscribeQuote'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+    /md/unsubscribedom:
+        post:
+            operationId: unsubscribeDOM
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UnsubscribeDOM'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+    /md/unsubscribehistogram:
+        post:
+            operationId: unsubscribeHistogram
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UnsubscribeHistogram'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscriptionResult'
+    /md/unsubscribequote:
+        post:
+            operationId: unsubscribeQuote
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UnsubscribeQuote'
             tags:
                 - Prices
             responses:
@@ -451,7 +505,6 @@ definitions:
         type: object
         required:
             - symbol
-            - filter
         properties: 
             symbol:
                 type: string
@@ -459,3 +512,38 @@ definitions:
                 type: array
                 items:
                     type: string
+    SubscribeHistogram:
+        type: object
+        required:
+            - symbol
+        properties: 
+            symbol:
+                type: string
+    SubscribeQuote:
+        type: object
+        required:
+            - symbol
+        properties: 
+            symbol:
+                type: string
+    UnsubscribeDOM:
+        type: object
+        required:
+            - symbol
+        properties: 
+            symbol:
+                type: string
+    UnsubscribeHistogram:
+        type: object
+        required:
+            - symbol
+        properties: 
+            symbol:
+                type: string
+    UnsubscribeQuote:
+        type: object
+        required:
+            - symbol
+        properties: 
+            symbol:
+                type: string

@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Tradovate.MarketData.Models;
 using Tradovate.Services.Api;
 using Tradovate.Services.Client;
 using Tradovate.Services.Model;
@@ -27,7 +28,6 @@ namespace Tradovate.MarketData
 
             var accessTokenResponse = GetAccessToken("https://live-api-d.tradovate.com/v1", Username, Password);
             var AccessToken = accessTokenResponse.AccessToken;
-            var UserId = accessTokenResponse.UserId ?? 0;
 
             ConsumingQuotes(AccessToken);
             ConsumingDOM(AccessToken);
@@ -35,6 +35,9 @@ namespace Tradovate.MarketData
             ConsumingCharts(AccessToken);
         }
 
+        /// <summary>
+        /// Demonstrates how to work with quote data. 
+        /// </summary>
         static void ConsumingQuotes(string accessToken)
         {
             var scenario = new Scenario("Consuming quotes")
@@ -61,9 +64,9 @@ namespace Tradovate.MarketData
                     init: () =>
                     {
                         // The contract ESM7 is specified by contract symbol
-                        return new AlterQuoteSubscription("ESM7", new List<string> { MDEntryType.Bid, MDEntryType.Offer });
+                        return new SubscribeQuote("ESM7");
                     },
-                    sender: (api, request) => api.AlterQuoteSubscriptionAsyncWithHttpInfo(request),
+                    sender: (api, request) => api.SubscribeQuoteAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
                         Log.Write($"{request} -> {response.Data}");
@@ -75,38 +78,7 @@ namespace Tradovate.MarketData
                             case "md":
                                 Log.Write("MD event:");
                                 var json = message.d as JObject;
-                                var data = json.ToObject<QuotesData>();
-                                data?.Quotes?.ForEach(quote =>
-                                {
-                                    // TODO: Why data contains more entries than requested? 
-                                    Log.Write($"  CONTRACT: {quote.ContractId}");
-                                    Log.Write($"  TIMESTAMP: {quote.Timestamp}");
-                                    Log.Write($"  BID: {quote.Entries.Bid}");
-                                    Log.Write($"  OFFER: {quote.Entries.Offer}");
-                                });
-                                break;
-                        }
-                    })
-                .ProcessingWhile(TimeSpan.FromSeconds(15))
-                .Request("Alter subscribtion filter for ESM7 quotes",
-                    init: () =>
-                    {
-                        // The contract ESM7 is specified by contract ID
-                        return new AlterQuoteSubscription("1062123", new List<string> { MDEntryType.Bid, MDEntryType.Offer, MDEntryType.Trade });
-                    },
-                    sender: (api, request) => api.AlterQuoteSubscriptionAsyncWithHttpInfo(request),
-                    responseHandler: (request, response) =>
-                    {
-                        Log.Write($"{request} -> {response.Data}");
-                    },
-                    dataHandler: message =>
-                    {
-                        switch (message.e)
-                        {
-                            case "md":
-                                Log.Write("MD event:");
-                                var json = message.d as JObject;
-                                var data = json.ToObject<QuotesData>();
+                                var data = json.ToObject<QuoteData>();
                                 data?.Quotes?.ForEach(quote =>
                                 {
                                     Log.Write($"  CONTRACT: {quote.ContractId}");
@@ -114,6 +86,13 @@ namespace Tradovate.MarketData
                                     Log.Write($"  BID: {quote.Entries.Bid}");
                                     Log.Write($"  OFFER: {quote.Entries.Offer}");
                                     Log.Write($"  TRADE: {quote.Entries.Trade}");
+                                    Log.Write($"  EMPTY BOOK: {quote.Entries.EmptyBook}");
+                                    Log.Write($"  HIGH PRICE: {quote.Entries.HighPrice}");
+                                    Log.Write($"  LOW PRICE: {quote.Entries.LowPrice}");
+                                    Log.Write($"  OPENING PRICE: {quote.Entries.OpeningPrice}");
+                                    Log.Write($"  OPEN INTEREST: {quote.Entries.OpenInterest}");
+                                    Log.Write($"  SETTLEMENT PRICE: {quote.Entries.SettlementPrice}");
+                                    Log.Write($"  TOTAL TRADE VOLUME: {quote.Entries.TotalTradeVolume}");
                                 });
                                 break;
                         }
@@ -122,10 +101,10 @@ namespace Tradovate.MarketData
                 .Request("Unsubscribe from ESM7 quotes",
                     init: () =>
                     {
-                        // Specify empty filter to unsubscribe from a quote
-                        return new AlterQuoteSubscription("1062123", new List<string>());
+                        // The contract ESM7 is specified by contract ID
+                        return new UnsubscribeQuote("1062123");
                     },
-                    sender: (api, request) => api.AlterQuoteSubscriptionAsyncWithHttpInfo(request),
+                    sender: (api, request) => api.UnsubscribeQuoteAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
                         Log.Write($"{request} -> {response.Data}");
@@ -134,6 +113,9 @@ namespace Tradovate.MarketData
             scenario.Run();
         }
 
+        /// <summary>
+        /// Demonstrates how to work with DOM data. 
+        /// </summary>
         static void ConsumingDOM(string accessToken)
         {
             var scenario = new Scenario("Consuming DOM")
@@ -160,8 +142,7 @@ namespace Tradovate.MarketData
                     init: () =>
                     {
                         // The contract ESM7 is specified by contract symbol
-                        // TODO: For what reason entry type filter is required for DOM? 
-                        return new SubscribeDOM("ESM7", new List<string> { MDEntryType.Bid, MDEntryType.Offer });
+                        return new SubscribeDOM("ESM7");
                     },
                     sender: (api, request) => api.SubscribeDOMAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
@@ -192,10 +173,10 @@ namespace Tradovate.MarketData
                 .Request("Unsubscribe from ESM7 DOM",
                     init: () =>
                     {
-                        // Specify empty filter to unsubscribe from the DOM
-                        return new SubscribeDOM("1062123", new List<string>());
+                        // The contract ESM7 is specified by contract ID
+                        return new UnsubscribeDOM("1062123");
                     },
-                    sender: (api, request) => api.SubscribeDOMAsyncWithHttpInfo(request),
+                    sender: (api, request) => api.UnsubscribeDOMAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
                         Log.Write($"{request} -> {response.Data}");
@@ -204,6 +185,9 @@ namespace Tradovate.MarketData
             scenario.Run();
         }
 
+        /// <summary>
+        /// Demonstrates how to work with histogram data. 
+        /// </summary>
         static void ConsumingHistograms(string accessToken)
         {
             var scenario = new Scenario("Consuming histograms")
@@ -227,8 +211,8 @@ namespace Tradovate.MarketData
                         Log.Write("WebSocket closed.");
                     })
                 .Request("Subscribe for ESM7 histograms",
-                    init: () => new AlterHistogramSubscription("ESM7", Subscribe: true),
-                    sender: (api, request) => api.AlterHistogramSubscriptionAsyncWithHttpInfo(request),
+                    init: () => new SubscribeHistogram("ESM7"),
+                    sender: (api, request) => api.SubscribeHistogramAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
                         Log.Write($"{request} -> {response.Data}");
@@ -262,8 +246,8 @@ namespace Tradovate.MarketData
                     })
                 .ProcessingWhile(TimeSpan.FromSeconds(15))
                 .Request("Unsubscribe from ESM7 histograms",
-                    init: () => new AlterHistogramSubscription("1062123", Subscribe: false),
-                    sender: (api, request) => api.AlterHistogramSubscriptionAsyncWithHttpInfo(request),
+                    init: () => new UnsubscribeHistogram("1062123"),
+                    sender: (api, request) => api.UnsubscribeHistogramAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
                         Log.Write($"{request} -> {response.Data}");
@@ -272,8 +256,13 @@ namespace Tradovate.MarketData
             scenario.Run();
         }
 
+        /// <summary>
+        /// Demonstrates how to work with chart data. 
+        /// </summary>
         static void ConsumingCharts(string accessToken)
         {
+            int? subscriptionId = 0;
+
             var scenario = new Scenario("Consuming charts")
                 .InitializeAPI(
                     () =>
@@ -305,6 +294,7 @@ namespace Tradovate.MarketData
                     responseHandler: (request, response) =>
                     {
                         Log.Write($"{request} -> {response.Data}");
+                        subscriptionId = response.Data.RealtimeId; // Store real-time subscription ID to properly cancel the subscription
                     },
                     dataHandler: message =>
                     {
@@ -317,8 +307,7 @@ namespace Tradovate.MarketData
                                 data?.Charts?.ForEach(chart =>
                                 {
                                     Log.Write($"  ID: {chart.Id}");
-                                    Log.Write($"  S: {chart.S}");
-                                    Log.Write($"  TD: {chart.Td}");
+                                    Log.Write($"  TD: {chart.TradeDate}");
                                     if (chart.Bars != null)
                                     {
                                         Log.Write("  BARS:");
@@ -329,8 +318,8 @@ namespace Tradovate.MarketData
                         }
                     })
                 .ProcessingWhile(TimeSpan.FromSeconds(15))
-                .Request("Cancel chart for ESM7",
-                    init: () => new CancelChart(1062123),
+                .Request($"Cancel chart subscription #{subscriptionId}",
+                    init: () => new CancelChart(subscriptionId ?? 0),
                     sender: (api, request) => api.CancelChartAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
