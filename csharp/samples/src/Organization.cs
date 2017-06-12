@@ -35,6 +35,15 @@ namespace Tradovate
                 return null;
             }
         }
+        
+        public static void ChangePassword(int userId, string username, string newPassword, string currentAdminPassword)
+        {
+            var usersApi = new UsersApi();
+            var passwordRequest = new ModifyCredentials(UserId: userId, Name: username, Password: newPassword, CurrentPassword: currentAdminPassword);
+            Console.WriteLine($"Request to modify password {passwordRequest}");
+            var passwordResponse = usersApi.ModifyCredentials(passwordRequest);
+            Console.WriteLine($"Modify Password: {passwordResponse}"); 
+        }
 
         public static TradovateSubscription AssignPracticeTradovatePlan(User newUser, string membershipPlan)
         {

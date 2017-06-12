@@ -1,5 +1,5 @@
-﻿/* 
- * 
+/*
+ *
  * Tradovate API, Samples
  *
 */
@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Tradovate.Services.Client;
 using Tradovate.Services.Model;
+using Tradovate.Services.Api;
 
 namespace Tradovate
 {
@@ -16,7 +17,7 @@ namespace Tradovate
     {
         static string AccessToken;
         static int MyUserId;
-        static string MyUsername;
+        static string MyUsername, MyPassword;
         static string DemoUrl, LiveUrl;
 
         static void Main(string[] args)
@@ -28,6 +29,7 @@ namespace Tradovate
             }
 
             MyUsername = args[0];
+            MyPassword = args[1];
             var password = args[1];
             LiveUrl = "https://live-api-d.tradovate.com/v1";
             DemoUrl = "https://demo-api-d.tradovate.com/v1";
@@ -81,6 +83,13 @@ namespace Tradovate
 
             var account = Accounting.GetAccount(MyUserId);
             Accounting.ShowAccountActivities(account);
+
+            var feesApi = new FeesApi();
+            var availablePlans = feesApi.GetAllTradovateSubscriptionPlans();
+            foreach (var plan in availablePlans)
+            {
+                Console.WriteLine(plan);
+            }
         }
 
         static WebSocketClient InitializeWebSocket(bool liveEnvironment)
@@ -139,11 +148,13 @@ namespace Tradovate
 
             var randomId = (new Random()).Next();
             var newUsername = $"{MyUsername}_{randomId}";
-            var password = $"{MyUsername}+{randomId}";
+            var password = $"{MyUsername}+{randomId}+A";
             Console.WriteLine($"Creating a user {newUsername} for our organization (should be done in LIVE environment)");
             var newUser = Organization.CreateUser(newUsername, password);
 
-            var membershipPlan = "TST_PRACTICE";
+	    Organization.ChangePassword(newUser.Id.Value, newUser.Name, password + "+", MyPassword);
+
+            var membershipPlan = "GLABRYBA_PLAN";
             Console.WriteLine($"Assigning membership plan {membershipPlan} to {newUser.Name}");
             Organization.AssignPracticeTradovatePlan(newUser, membershipPlan);
 
@@ -158,6 +169,10 @@ namespace Tradovate
             Console.WriteLine($"Practice account created with ID=${account.Id}. Adding initial risk limits (max overall exposure = 3)");
             Risks.SetMaxOverallPositionLimit(account, 3);
             Risks.SetDailyLossLimit(account, 1000.0);
+            var account2 = Organization.CreatePracticeAccount("DUP" + accountName, 50000.0, newUser);
+            Console.WriteLine($"Practice account created with ID=${account2.Id}. Adding initial risk limits (max overall exposure = 3)");
+            Risks.SetMaxOverallPositionLimit(account2, 3);
+            Risks.SetDailyLossLimit(account2, 1000.0);
         }
 
         private static void AccountRiskLimits()
