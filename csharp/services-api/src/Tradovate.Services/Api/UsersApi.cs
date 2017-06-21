@@ -124,6 +124,90 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
+        /// Creates a new entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>TradovateSubscription</returns>
+        TradovateSubscription CreateTradovateSubscription (TradovateSubscription body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Creates a new entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of TradovateSubscription</returns>
+        ApiResponse<TradovateSubscription> CreateTradovateSubscriptionWithHttpInfo (TradovateSubscription body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Creates a new entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>UserPlugin</returns>
+        UserPlugin CreateUserPlugin (UserPlugin body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Creates a new entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of UserPlugin</returns>
+        ApiResponse<UserPlugin> CreateUserPluginWithHttpInfo (UserPlugin body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>TradovateSubscription</returns>
+        TradovateSubscription DeleteTradovateSubscription (TradovateSubscription body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of TradovateSubscription</returns>
+        ApiResponse<TradovateSubscription> DeleteTradovateSubscriptionWithHttpInfo (TradovateSubscription body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>UserPlugin</returns>
+        UserPlugin DeleteUserPlugin (UserPlugin body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of UserPlugin</returns>
+        ApiResponse<UserPlugin> DeleteUserPluginWithHttpInfo (UserPlugin body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
         /// Finds an entity of Country type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -280,6 +364,25 @@ namespace Tradovate.Services.Api
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
         ApiResponse<List<UserReadStatus>> GetAllUserReadStatusesWithHttpInfo ();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>List&lt;UserSessionStats&gt;</returns>
+        List<UserSessionStats> GetAllUserSessionStatses ();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
+        ApiResponse<List<UserSessionStats>> GetAllUserSessionStatsesWithHttpInfo ();
         /// <summary>
         /// 
         /// </summary>
@@ -723,6 +826,48 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
+        /// Returns all entities of UserSessionStats type related to User type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterid">id of User entity</param>
+        /// <returns>List&lt;UserSessionStats&gt;</returns>
+        List<UserSessionStats> GetOwnedUserSessionStatses (int? masterid);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type related to User type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterid">id of User entity</param>
+        /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
+        ApiResponse<List<UserSessionStats>> GetOwnedUserSessionStatsesWithHttpInfo (int? masterid);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterids">ids of User entity</param>
+        /// <returns>List&lt;UserSessionStats&gt;</returns>
+        List<UserSessionStats> GetOwnedUserSessionStatsesBatch (List<int?> masterids);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterids">ids of User entity</param>
+        /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
+        ApiResponse<List<UserSessionStats>> GetOwnedUserSessionStatsesBatchWithHttpInfo (List<int?> masterids);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
         /// Finds an entity of TradovateSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -933,6 +1078,48 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
+        /// Finds an entity of UserSessionStats type by its id
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"></param>
+        /// <returns>UserSessionStats</returns>
+        UserSessionStats GetUserSessionStats (int? id);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Finds an entity of UserSessionStats type by its id
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"></param>
+        /// <returns>ApiResponse of UserSessionStats</returns>
+        ApiResponse<UserSessionStats> GetUserSessionStatsWithHttpInfo (int? id);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Finds multiple entities of UserSessionStats type by its ids
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ids"></param>
+        /// <returns>List&lt;UserSessionStats&gt;</returns>
+        List<UserSessionStats> GetUserSessionStatses (List<int?> ids);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Finds multiple entities of UserSessionStats type by its ids
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ids"></param>
+        /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
+        ApiResponse<List<UserSessionStats>> GetUserSessionStatsesWithHttpInfo (List<int?> ids);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
         /// Finds multiple entities of UserSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1013,6 +1200,27 @@ namespace Tradovate.Services.Api
         /// <param name="body"></param>
         /// <returns>ApiResponse of UserStatusMessage</returns>
         ApiResponse<UserStatusMessage> ModifyEmailAddressWithHttpInfo (ModifyEmailAddress body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>AccessTokenResponse</returns>
+        AccessTokenResponse ModifyPassword (ModifyPassword body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of AccessTokenResponse</returns>
+        ApiResponse<AccessTokenResponse> ModifyPasswordWithHttpInfo (ModifyPassword body);
         /// <summary>
         /// 
         /// </summary>
@@ -1187,6 +1395,48 @@ namespace Tradovate.Services.Api
         /// <param name="body"></param>
         /// <returns>ApiResponse of SyncMessage</returns>
         ApiResponse<SyncMessage> SyncRequestWithHttpInfo (SyncRequest body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>TradovateSubscription</returns>
+        TradovateSubscription UpdateTradovateSubscription (TradovateSubscription body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of TradovateSubscription</returns>
+        ApiResponse<TradovateSubscription> UpdateTradovateSubscriptionWithHttpInfo (TradovateSubscription body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>UserPlugin</returns>
+        UserPlugin UpdateUserPlugin (UserPlugin body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of UserPlugin</returns>
+        ApiResponse<UserPlugin> UpdateUserPluginWithHttpInfo (UserPlugin body);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -1273,6 +1523,90 @@ namespace Tradovate.Services.Api
         /// <param name="body"></param>
         /// <returns>Task of ApiResponse (TradovateSubscriptionResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<TradovateSubscriptionResponse>> CancelTradovateSubscriptionAsyncWithHttpInfo (CancelTradovateSubscription body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Creates a new entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of TradovateSubscription</returns>
+        System.Threading.Tasks.Task<TradovateSubscription> CreateTradovateSubscriptionAsync (TradovateSubscription body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Creates a new entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (TradovateSubscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TradovateSubscription>> CreateTradovateSubscriptionAsyncWithHttpInfo (TradovateSubscription body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Creates a new entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of UserPlugin</returns>
+        System.Threading.Tasks.Task<UserPlugin> CreateUserPluginAsync (UserPlugin body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Creates a new entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (UserPlugin)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UserPlugin>> CreateUserPluginAsyncWithHttpInfo (UserPlugin body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of TradovateSubscription</returns>
+        System.Threading.Tasks.Task<TradovateSubscription> DeleteTradovateSubscriptionAsync (TradovateSubscription body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (TradovateSubscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TradovateSubscription>> DeleteTradovateSubscriptionAsyncWithHttpInfo (TradovateSubscription body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of UserPlugin</returns>
+        System.Threading.Tasks.Task<UserPlugin> DeleteUserPluginAsync (UserPlugin body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (UserPlugin)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UserPlugin>> DeleteUserPluginAsyncWithHttpInfo (UserPlugin body);
         /// <summary>
         /// 
         /// </summary>
@@ -1433,6 +1767,25 @@ namespace Tradovate.Services.Api
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetAllUserReadStatusesAsyncWithHttpInfo ();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
+        System.Threading.Tasks.Task<List<UserSessionStats>> GetAllUserSessionStatsesAsync ();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetAllUserSessionStatsesAsyncWithHttpInfo ();
         /// <summary>
         /// 
         /// </summary>
@@ -1876,6 +2229,48 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
+        /// Returns all entities of UserSessionStats type related to User type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterid">id of User entity</param>
+        /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
+        System.Threading.Tasks.Task<List<UserSessionStats>> GetOwnedUserSessionStatsesAsync (int? masterid);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type related to User type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterid">id of User entity</param>
+        /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetOwnedUserSessionStatsesAsyncWithHttpInfo (int? masterid);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterids">ids of User entity</param>
+        /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
+        System.Threading.Tasks.Task<List<UserSessionStats>> GetOwnedUserSessionStatsesBatchAsync (List<int?> masterids);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterids">ids of User entity</param>
+        /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetOwnedUserSessionStatsesBatchAsyncWithHttpInfo (List<int?> masterids);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
         /// Finds an entity of TradovateSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2086,6 +2481,48 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
+        /// Finds an entity of UserSessionStats type by its id
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"></param>
+        /// <returns>Task of UserSessionStats</returns>
+        System.Threading.Tasks.Task<UserSessionStats> GetUserSessionStatsAsync (int? id);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Finds an entity of UserSessionStats type by its id
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"></param>
+        /// <returns>Task of ApiResponse (UserSessionStats)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UserSessionStats>> GetUserSessionStatsAsyncWithHttpInfo (int? id);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Finds multiple entities of UserSessionStats type by its ids
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ids"></param>
+        /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
+        System.Threading.Tasks.Task<List<UserSessionStats>> GetUserSessionStatsesAsync (List<int?> ids);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Finds multiple entities of UserSessionStats type by its ids
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ids"></param>
+        /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetUserSessionStatsesAsyncWithHttpInfo (List<int?> ids);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
         /// Finds multiple entities of UserSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2166,6 +2603,27 @@ namespace Tradovate.Services.Api
         /// <param name="body"></param>
         /// <returns>Task of ApiResponse (UserStatusMessage)</returns>
         System.Threading.Tasks.Task<ApiResponse<UserStatusMessage>> ModifyEmailAddressAsyncWithHttpInfo (ModifyEmailAddress body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of AccessTokenResponse</returns>
+        System.Threading.Tasks.Task<AccessTokenResponse> ModifyPasswordAsync (ModifyPassword body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (AccessTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AccessTokenResponse>> ModifyPasswordAsyncWithHttpInfo (ModifyPassword body);
         /// <summary>
         /// 
         /// </summary>
@@ -2340,6 +2798,48 @@ namespace Tradovate.Services.Api
         /// <param name="body"></param>
         /// <returns>Task of ApiResponse (SyncMessage)</returns>
         System.Threading.Tasks.Task<ApiResponse<SyncMessage>> SyncRequestAsyncWithHttpInfo (SyncRequest body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of TradovateSubscription</returns>
+        System.Threading.Tasks.Task<TradovateSubscription> UpdateTradovateSubscriptionAsync (TradovateSubscription body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of TradovateSubscription
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (TradovateSubscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TradovateSubscription>> UpdateTradovateSubscriptionAsyncWithHttpInfo (TradovateSubscription body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of UserPlugin</returns>
+        System.Threading.Tasks.Task<UserPlugin> UpdateUserPluginAsync (UserPlugin body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Updates a existing entity of UserPlugin
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (UserPlugin)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UserPlugin>> UpdateUserPluginAsyncWithHttpInfo (UserPlugin body);
         #endregion Asynchronous Operations
     }
 
@@ -3121,6 +3621,678 @@ namespace Tradovate.Services.Api
             return new ApiResponse<TradovateSubscriptionResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (TradovateSubscriptionResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscriptionResponse)));
+            
+        }
+
+        /// <summary>
+        ///  Creates a new entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>TradovateSubscription</returns>
+        public TradovateSubscription CreateTradovateSubscription (TradovateSubscription body)
+        {
+             ApiResponse<TradovateSubscription> localVarResponse = CreateTradovateSubscriptionWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Creates a new entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of TradovateSubscription</returns>
+        public ApiResponse< TradovateSubscription > CreateTradovateSubscriptionWithHttpInfo (TradovateSubscription body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->CreateTradovateSubscription");
+
+            var localVarPath = "/tradovateSubscription/create";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateTradovateSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TradovateSubscription>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TradovateSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscription)));
+            
+        }
+
+        /// <summary>
+        ///  Creates a new entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of TradovateSubscription</returns>
+        public async System.Threading.Tasks.Task<TradovateSubscription> CreateTradovateSubscriptionAsync (TradovateSubscription body)
+        {
+             ApiResponse<TradovateSubscription> localVarResponse = await CreateTradovateSubscriptionAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Creates a new entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (TradovateSubscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TradovateSubscription>> CreateTradovateSubscriptionAsyncWithHttpInfo (TradovateSubscription body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->CreateTradovateSubscription");
+
+            var localVarPath = "/tradovateSubscription/create";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateTradovateSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TradovateSubscription>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TradovateSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscription)));
+            
+        }
+
+        /// <summary>
+        ///  Creates a new entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>UserPlugin</returns>
+        public UserPlugin CreateUserPlugin (UserPlugin body)
+        {
+             ApiResponse<UserPlugin> localVarResponse = CreateUserPluginWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Creates a new entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of UserPlugin</returns>
+        public ApiResponse< UserPlugin > CreateUserPluginWithHttpInfo (UserPlugin body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->CreateUserPlugin");
+
+            var localVarPath = "/userPlugin/create";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateUserPlugin", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UserPlugin>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UserPlugin) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserPlugin)));
+            
+        }
+
+        /// <summary>
+        ///  Creates a new entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of UserPlugin</returns>
+        public async System.Threading.Tasks.Task<UserPlugin> CreateUserPluginAsync (UserPlugin body)
+        {
+             ApiResponse<UserPlugin> localVarResponse = await CreateUserPluginAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Creates a new entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (UserPlugin)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UserPlugin>> CreateUserPluginAsyncWithHttpInfo (UserPlugin body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->CreateUserPlugin");
+
+            var localVarPath = "/userPlugin/create";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateUserPlugin", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UserPlugin>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UserPlugin) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserPlugin)));
+            
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>TradovateSubscription</returns>
+        public TradovateSubscription DeleteTradovateSubscription (TradovateSubscription body)
+        {
+             ApiResponse<TradovateSubscription> localVarResponse = DeleteTradovateSubscriptionWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of TradovateSubscription</returns>
+        public ApiResponse< TradovateSubscription > DeleteTradovateSubscriptionWithHttpInfo (TradovateSubscription body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteTradovateSubscription");
+
+            var localVarPath = "/tradovateSubscription/delete";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteTradovateSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TradovateSubscription>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TradovateSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscription)));
+            
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of TradovateSubscription</returns>
+        public async System.Threading.Tasks.Task<TradovateSubscription> DeleteTradovateSubscriptionAsync (TradovateSubscription body)
+        {
+             ApiResponse<TradovateSubscription> localVarResponse = await DeleteTradovateSubscriptionAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (TradovateSubscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TradovateSubscription>> DeleteTradovateSubscriptionAsyncWithHttpInfo (TradovateSubscription body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteTradovateSubscription");
+
+            var localVarPath = "/tradovateSubscription/delete";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteTradovateSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TradovateSubscription>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TradovateSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscription)));
+            
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>UserPlugin</returns>
+        public UserPlugin DeleteUserPlugin (UserPlugin body)
+        {
+             ApiResponse<UserPlugin> localVarResponse = DeleteUserPluginWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of UserPlugin</returns>
+        public ApiResponse< UserPlugin > DeleteUserPluginWithHttpInfo (UserPlugin body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteUserPlugin");
+
+            var localVarPath = "/userPlugin/delete";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteUserPlugin", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UserPlugin>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UserPlugin) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserPlugin)));
+            
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of UserPlugin</returns>
+        public async System.Threading.Tasks.Task<UserPlugin> DeleteUserPluginAsync (UserPlugin body)
+        {
+             ApiResponse<UserPlugin> localVarResponse = await DeleteUserPluginAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (UserPlugin)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UserPlugin>> DeleteUserPluginAsyncWithHttpInfo (UserPlugin body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteUserPlugin");
+
+            var localVarPath = "/userPlugin/delete";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteUserPlugin", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UserPlugin>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UserPlugin) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserPlugin)));
             
         }
 
@@ -4319,6 +5491,148 @@ namespace Tradovate.Services.Api
             return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
+            
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>List&lt;UserSessionStats&gt;</returns>
+        public List<UserSessionStats> GetAllUserSessionStatses ()
+        {
+             ApiResponse<List<UserSessionStats>> localVarResponse = GetAllUserSessionStatsesWithHttpInfo();
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
+        public ApiResponse< List<UserSessionStats> > GetAllUserSessionStatsesWithHttpInfo ()
+        {
+
+            var localVarPath = "/userSessionStats/list";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAllUserSessionStatses", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<UserSessionStats>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<UserSessionStats>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserSessionStats>)));
+            
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
+        public async System.Threading.Tasks.Task<List<UserSessionStats>> GetAllUserSessionStatsesAsync ()
+        {
+             ApiResponse<List<UserSessionStats>> localVarResponse = await GetAllUserSessionStatsesAsyncWithHttpInfo();
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetAllUserSessionStatsesAsyncWithHttpInfo ()
+        {
+
+            var localVarPath = "/userSessionStats/list";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAllUserSessionStatses", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<UserSessionStats>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<UserSessionStats>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserSessionStats>)));
             
         }
 
@@ -7545,6 +8859,314 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
+        ///  Returns all entities of UserSessionStats type related to User type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterid">id of User entity</param>
+        /// <returns>List&lt;UserSessionStats&gt;</returns>
+        public List<UserSessionStats> GetOwnedUserSessionStatses (int? masterid)
+        {
+             ApiResponse<List<UserSessionStats>> localVarResponse = GetOwnedUserSessionStatsesWithHttpInfo(masterid);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type related to User type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterid">id of User entity</param>
+        /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
+        public ApiResponse< List<UserSessionStats> > GetOwnedUserSessionStatsesWithHttpInfo (int? masterid)
+        {
+            // verify the required parameter 'masterid' is set
+            if (masterid == null)
+                throw new ApiException(400, "Missing required parameter 'masterid' when calling UsersApi->GetOwnedUserSessionStatses");
+
+            var localVarPath = "/userSessionStats/deps";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (masterid != null) localVarQueryParams.Add("masterid", Configuration.ApiClient.ParameterToString(masterid)); // query parameter
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetOwnedUserSessionStatses", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<UserSessionStats>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<UserSessionStats>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserSessionStats>)));
+            
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type related to User type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterid">id of User entity</param>
+        /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
+        public async System.Threading.Tasks.Task<List<UserSessionStats>> GetOwnedUserSessionStatsesAsync (int? masterid)
+        {
+             ApiResponse<List<UserSessionStats>> localVarResponse = await GetOwnedUserSessionStatsesAsyncWithHttpInfo(masterid);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type related to User type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterid">id of User entity</param>
+        /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetOwnedUserSessionStatsesAsyncWithHttpInfo (int? masterid)
+        {
+            // verify the required parameter 'masterid' is set
+            if (masterid == null)
+                throw new ApiException(400, "Missing required parameter 'masterid' when calling UsersApi->GetOwnedUserSessionStatses");
+
+            var localVarPath = "/userSessionStats/deps";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (masterid != null) localVarQueryParams.Add("masterid", Configuration.ApiClient.ParameterToString(masterid)); // query parameter
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetOwnedUserSessionStatses", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<UserSessionStats>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<UserSessionStats>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserSessionStats>)));
+            
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterids">ids of User entity</param>
+        /// <returns>List&lt;UserSessionStats&gt;</returns>
+        public List<UserSessionStats> GetOwnedUserSessionStatsesBatch (List<int?> masterids)
+        {
+             ApiResponse<List<UserSessionStats>> localVarResponse = GetOwnedUserSessionStatsesBatchWithHttpInfo(masterids);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterids">ids of User entity</param>
+        /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
+        public ApiResponse< List<UserSessionStats> > GetOwnedUserSessionStatsesBatchWithHttpInfo (List<int?> masterids)
+        {
+            // verify the required parameter 'masterids' is set
+            if (masterids == null)
+                throw new ApiException(400, "Missing required parameter 'masterids' when calling UsersApi->GetOwnedUserSessionStatsesBatch");
+
+            var localVarPath = "/userSessionStats/ldeps";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (masterids != null) localVarQueryParams.Add("masterids", Configuration.ApiClient.ParameterToString(masterids)); // query parameter
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetOwnedUserSessionStatsesBatch", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<UserSessionStats>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<UserSessionStats>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserSessionStats>)));
+            
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterids">ids of User entity</param>
+        /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
+        public async System.Threading.Tasks.Task<List<UserSessionStats>> GetOwnedUserSessionStatsesBatchAsync (List<int?> masterids)
+        {
+             ApiResponse<List<UserSessionStats>> localVarResponse = await GetOwnedUserSessionStatsesBatchAsyncWithHttpInfo(masterids);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="masterids">ids of User entity</param>
+        /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetOwnedUserSessionStatsesBatchAsyncWithHttpInfo (List<int?> masterids)
+        {
+            // verify the required parameter 'masterids' is set
+            if (masterids == null)
+                throw new ApiException(400, "Missing required parameter 'masterids' when calling UsersApi->GetOwnedUserSessionStatsesBatch");
+
+            var localVarPath = "/userSessionStats/ldeps";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (masterids != null) localVarQueryParams.Add("masterids", Configuration.ApiClient.ParameterToString(masterids)); // query parameter
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetOwnedUserSessionStatsesBatch", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<UserSessionStats>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<UserSessionStats>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserSessionStats>)));
+            
+        }
+
+        /// <summary>
         ///  Finds an entity of TradovateSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -9085,6 +10707,314 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
+        ///  Finds an entity of UserSessionStats type by its id
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"></param>
+        /// <returns>UserSessionStats</returns>
+        public UserSessionStats GetUserSessionStats (int? id)
+        {
+             ApiResponse<UserSessionStats> localVarResponse = GetUserSessionStatsWithHttpInfo(id);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Finds an entity of UserSessionStats type by its id
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"></param>
+        /// <returns>ApiResponse of UserSessionStats</returns>
+        public ApiResponse< UserSessionStats > GetUserSessionStatsWithHttpInfo (int? id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling UsersApi->GetUserSessionStats");
+
+            var localVarPath = "/userSessionStats/item";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetUserSessionStats", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UserSessionStats>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UserSessionStats) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserSessionStats)));
+            
+        }
+
+        /// <summary>
+        ///  Finds an entity of UserSessionStats type by its id
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"></param>
+        /// <returns>Task of UserSessionStats</returns>
+        public async System.Threading.Tasks.Task<UserSessionStats> GetUserSessionStatsAsync (int? id)
+        {
+             ApiResponse<UserSessionStats> localVarResponse = await GetUserSessionStatsAsyncWithHttpInfo(id);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Finds an entity of UserSessionStats type by its id
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id"></param>
+        /// <returns>Task of ApiResponse (UserSessionStats)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UserSessionStats>> GetUserSessionStatsAsyncWithHttpInfo (int? id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling UsersApi->GetUserSessionStats");
+
+            var localVarPath = "/userSessionStats/item";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetUserSessionStats", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UserSessionStats>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UserSessionStats) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserSessionStats)));
+            
+        }
+
+        /// <summary>
+        ///  Finds multiple entities of UserSessionStats type by its ids
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ids"></param>
+        /// <returns>List&lt;UserSessionStats&gt;</returns>
+        public List<UserSessionStats> GetUserSessionStatses (List<int?> ids)
+        {
+             ApiResponse<List<UserSessionStats>> localVarResponse = GetUserSessionStatsesWithHttpInfo(ids);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Finds multiple entities of UserSessionStats type by its ids
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ids"></param>
+        /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
+        public ApiResponse< List<UserSessionStats> > GetUserSessionStatsesWithHttpInfo (List<int?> ids)
+        {
+            // verify the required parameter 'ids' is set
+            if (ids == null)
+                throw new ApiException(400, "Missing required parameter 'ids' when calling UsersApi->GetUserSessionStatses");
+
+            var localVarPath = "/userSessionStats/items";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetUserSessionStatses", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<UserSessionStats>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<UserSessionStats>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserSessionStats>)));
+            
+        }
+
+        /// <summary>
+        ///  Finds multiple entities of UserSessionStats type by its ids
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ids"></param>
+        /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
+        public async System.Threading.Tasks.Task<List<UserSessionStats>> GetUserSessionStatsesAsync (List<int?> ids)
+        {
+             ApiResponse<List<UserSessionStats>> localVarResponse = await GetUserSessionStatsesAsyncWithHttpInfo(ids);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Finds multiple entities of UserSessionStats type by its ids
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ids"></param>
+        /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetUserSessionStatsesAsyncWithHttpInfo (List<int?> ids)
+        {
+            // verify the required parameter 'ids' is set
+            if (ids == null)
+                throw new ApiException(400, "Missing required parameter 'ids' when calling UsersApi->GetUserSessionStatses");
+
+            var localVarPath = "/userSessionStats/items";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetUserSessionStatses", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<UserSessionStats>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<UserSessionStats>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserSessionStats>)));
+            
+        }
+
+        /// <summary>
         ///  Finds multiple entities of UserSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -9725,6 +11655,174 @@ namespace Tradovate.Services.Api
             return new ApiResponse<UserStatusMessage>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (UserStatusMessage) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserStatusMessage)));
+            
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>AccessTokenResponse</returns>
+        public AccessTokenResponse ModifyPassword (ModifyPassword body)
+        {
+             ApiResponse<AccessTokenResponse> localVarResponse = ModifyPasswordWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of AccessTokenResponse</returns>
+        public ApiResponse< AccessTokenResponse > ModifyPasswordWithHttpInfo (ModifyPassword body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->ModifyPassword");
+
+            var localVarPath = "/user/modifypassword";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ModifyPassword", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<AccessTokenResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (AccessTokenResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(AccessTokenResponse)));
+            
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of AccessTokenResponse</returns>
+        public async System.Threading.Tasks.Task<AccessTokenResponse> ModifyPasswordAsync (ModifyPassword body)
+        {
+             ApiResponse<AccessTokenResponse> localVarResponse = await ModifyPasswordAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (AccessTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AccessTokenResponse>> ModifyPasswordAsyncWithHttpInfo (ModifyPassword body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->ModifyPassword");
+
+            var localVarPath = "/user/modifypassword";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ModifyPassword", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<AccessTokenResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (AccessTokenResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(AccessTokenResponse)));
             
         }
 
@@ -11063,6 +13161,342 @@ namespace Tradovate.Services.Api
             return new ApiResponse<SyncMessage>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (SyncMessage) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SyncMessage)));
+            
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>TradovateSubscription</returns>
+        public TradovateSubscription UpdateTradovateSubscription (TradovateSubscription body)
+        {
+             ApiResponse<TradovateSubscription> localVarResponse = UpdateTradovateSubscriptionWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of TradovateSubscription</returns>
+        public ApiResponse< TradovateSubscription > UpdateTradovateSubscriptionWithHttpInfo (TradovateSubscription body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->UpdateTradovateSubscription");
+
+            var localVarPath = "/tradovateSubscription/update";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdateTradovateSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TradovateSubscription>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TradovateSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscription)));
+            
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of TradovateSubscription</returns>
+        public async System.Threading.Tasks.Task<TradovateSubscription> UpdateTradovateSubscriptionAsync (TradovateSubscription body)
+        {
+             ApiResponse<TradovateSubscription> localVarResponse = await UpdateTradovateSubscriptionAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of TradovateSubscription
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (TradovateSubscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TradovateSubscription>> UpdateTradovateSubscriptionAsyncWithHttpInfo (TradovateSubscription body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->UpdateTradovateSubscription");
+
+            var localVarPath = "/tradovateSubscription/update";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdateTradovateSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TradovateSubscription>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TradovateSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscription)));
+            
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>UserPlugin</returns>
+        public UserPlugin UpdateUserPlugin (UserPlugin body)
+        {
+             ApiResponse<UserPlugin> localVarResponse = UpdateUserPluginWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of UserPlugin</returns>
+        public ApiResponse< UserPlugin > UpdateUserPluginWithHttpInfo (UserPlugin body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->UpdateUserPlugin");
+
+            var localVarPath = "/userPlugin/update";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdateUserPlugin", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UserPlugin>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UserPlugin) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserPlugin)));
+            
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of UserPlugin</returns>
+        public async System.Threading.Tasks.Task<UserPlugin> UpdateUserPluginAsync (UserPlugin body)
+        {
+             ApiResponse<UserPlugin> localVarResponse = await UpdateUserPluginAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Updates a existing entity of UserPlugin
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (UserPlugin)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UserPlugin>> UpdateUserPluginAsyncWithHttpInfo (UserPlugin body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->UpdateUserPlugin");
+
+            var localVarPath = "/userPlugin/update";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdateUserPlugin", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UserPlugin>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (UserPlugin) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserPlugin)));
             
         }
 

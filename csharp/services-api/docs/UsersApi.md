@@ -8,6 +8,10 @@ Method | HTTP request | Description
 [**AddMarketDataSubscription**](UsersApi.md#addmarketdatasubscription) | **POST** /user/addmarketdatasubscription | 
 [**AddTradovateSubscription**](UsersApi.md#addtradovatesubscription) | **POST** /user/addtradovatesubscription | 
 [**CancelTradovateSubscription**](UsersApi.md#canceltradovatesubscription) | **POST** /user/canceltradovatesubscription | 
+[**CreateTradovateSubscription**](UsersApi.md#createtradovatesubscription) | **POST** /tradovateSubscription/create | 
+[**CreateUserPlugin**](UsersApi.md#createuserplugin) | **POST** /userPlugin/create | 
+[**DeleteTradovateSubscription**](UsersApi.md#deletetradovatesubscription) | **POST** /tradovateSubscription/delete | 
+[**DeleteUserPlugin**](UsersApi.md#deleteuserplugin) | **POST** /userPlugin/delete | 
 [**FindCountry**](UsersApi.md#findcountry) | **GET** /country/find | 
 [**FindOrganization**](UsersApi.md#findorganization) | **GET** /organization/find | 
 [**FindUser**](UsersApi.md#finduser) | **GET** /user/find | 
@@ -16,6 +20,7 @@ Method | HTTP request | Description
 [**GetAllOrganizations**](UsersApi.md#getallorganizations) | **GET** /organization/list | 
 [**GetAllUserPlugins**](UsersApi.md#getalluserplugins) | **GET** /userPlugin/list | 
 [**GetAllUserReadStatuses**](UsersApi.md#getalluserreadstatuses) | **GET** /userReadStatus/list | 
+[**GetAllUserSessionStatses**](UsersApi.md#getallusersessionstatses) | **GET** /userSessionStats/list | 
 [**GetAllUsers**](UsersApi.md#getallusers) | **GET** /user/list | 
 [**GetContactInfo**](UsersApi.md#getcontactinfo) | **GET** /contactInfo/item | 
 [**GetContactInfos**](UsersApi.md#getcontactinfos) | **GET** /contactInfo/items | 
@@ -37,6 +42,8 @@ Method | HTTP request | Description
 [**GetOwnedUserPropertiesBatch**](UsersApi.md#getowneduserpropertiesbatch) | **GET** /userProperty/ldeps | 
 [**GetOwnedUserReadStatuses**](UsersApi.md#getowneduserreadstatuses) | **GET** /userReadStatus/deps | 
 [**GetOwnedUserReadStatusesBatch**](UsersApi.md#getowneduserreadstatusesbatch) | **GET** /userReadStatus/ldeps | 
+[**GetOwnedUserSessionStatses**](UsersApi.md#getownedusersessionstatses) | **GET** /userSessionStats/deps | 
+[**GetOwnedUserSessionStatsesBatch**](UsersApi.md#getownedusersessionstatsesbatch) | **GET** /userSessionStats/ldeps | 
 [**GetTradovateSubscription**](UsersApi.md#gettradovatesubscription) | **GET** /tradovateSubscription/item | 
 [**GetTradovateSubscriptions**](UsersApi.md#gettradovatesubscriptions) | **GET** /tradovateSubscription/items | 
 [**GetUser**](UsersApi.md#getuser) | **GET** /user/item | 
@@ -47,10 +54,13 @@ Method | HTTP request | Description
 [**GetUserReadStatus**](UsersApi.md#getuserreadstatus) | **GET** /userReadStatus/item | 
 [**GetUserReadStatuses**](UsersApi.md#getuserreadstatuses) | **GET** /userReadStatus/items | 
 [**GetUserSession**](UsersApi.md#getusersession) | **GET** /userSession/item | 
+[**GetUserSessionStats**](UsersApi.md#getusersessionstats) | **GET** /userSessionStats/item | 
+[**GetUserSessionStatses**](UsersApi.md#getusersessionstatses) | **GET** /userSessionStats/items | 
 [**GetUserSessions**](UsersApi.md#getusersessions) | **GET** /userSession/items | 
 [**GetUsers**](UsersApi.md#getusers) | **GET** /user/items | 
 [**ModifyCredentials**](UsersApi.md#modifycredentials) | **POST** /user/modifycredentials | 
 [**ModifyEmailAddress**](UsersApi.md#modifyemailaddress) | **POST** /user/modifyemailaddress | 
+[**ModifyPassword**](UsersApi.md#modifypassword) | **POST** /user/modifypassword | 
 [**OpenDemoAccount**](UsersApi.md#opendemoaccount) | **POST** /user/opendemoaccount | 
 [**RequestTradingPermission**](UsersApi.md#requesttradingpermission) | **POST** /user/requesttradingpermission | 
 [**RevokeTradingPermission**](UsersApi.md#revoketradingpermission) | **POST** /user/revoketradingpermission | 
@@ -59,6 +69,8 @@ Method | HTTP request | Description
 [**SuggestOrganizations**](UsersApi.md#suggestorganizations) | **GET** /organization/suggest | 
 [**SuggestUsers**](UsersApi.md#suggestusers) | **GET** /user/suggest | 
 [**SyncRequest**](UsersApi.md#syncrequest) | **POST** /user/syncrequest | 
+[**UpdateTradovateSubscription**](UsersApi.md#updatetradovatesubscription) | **POST** /tradovateSubscription/update | 
+[**UpdateUserPlugin**](UsersApi.md#updateuserplugin) | **POST** /userPlugin/update | 
 
 
 <a name="accepttradingpermission"></a>
@@ -305,6 +317,270 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TradovateSubscriptionResponse**](TradovateSubscriptionResponse.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="createtradovatesubscription"></a>
+# **CreateTradovateSubscription**
+> TradovateSubscription CreateTradovateSubscription (TradovateSubscription body)
+
+
+
+Creates a new entity of TradovateSubscription
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class CreateTradovateSubscriptionExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new TradovateSubscription(); // TradovateSubscription | 
+
+            try
+            {
+                TradovateSubscription result = apiInstance.CreateTradovateSubscription(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.CreateTradovateSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**TradovateSubscription**](TradovateSubscription.md)|  | 
+
+### Return type
+
+[**TradovateSubscription**](TradovateSubscription.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="createuserplugin"></a>
+# **CreateUserPlugin**
+> UserPlugin CreateUserPlugin (UserPlugin body)
+
+
+
+Creates a new entity of UserPlugin
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class CreateUserPluginExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new UserPlugin(); // UserPlugin | 
+
+            try
+            {
+                UserPlugin result = apiInstance.CreateUserPlugin(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.CreateUserPlugin: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UserPlugin**](UserPlugin.md)|  | 
+
+### Return type
+
+[**UserPlugin**](UserPlugin.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletetradovatesubscription"></a>
+# **DeleteTradovateSubscription**
+> TradovateSubscription DeleteTradovateSubscription (TradovateSubscription body)
+
+
+
+Updates a existing entity of TradovateSubscription
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class DeleteTradovateSubscriptionExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new TradovateSubscription(); // TradovateSubscription | 
+
+            try
+            {
+                TradovateSubscription result = apiInstance.DeleteTradovateSubscription(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.DeleteTradovateSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**TradovateSubscription**](TradovateSubscription.md)|  | 
+
+### Return type
+
+[**TradovateSubscription**](TradovateSubscription.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deleteuserplugin"></a>
+# **DeleteUserPlugin**
+> UserPlugin DeleteUserPlugin (UserPlugin body)
+
+
+
+Updates a existing entity of UserPlugin
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class DeleteUserPluginExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new UserPlugin(); // UserPlugin | 
+
+            try
+            {
+                UserPlugin result = apiInstance.DeleteUserPlugin(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.DeleteUserPlugin: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UserPlugin**](UserPlugin.md)|  | 
+
+### Return type
+
+[**UserPlugin**](UserPlugin.md)
 
 ### Authorization
 
@@ -815,6 +1091,68 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**List<UserReadStatus>**](UserReadStatus.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getallusersessionstatses"></a>
+# **GetAllUserSessionStatses**
+> List<UserSessionStats> GetAllUserSessionStatses ()
+
+
+
+Returns all entities of UserSessionStats type
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetAllUserSessionStatsesExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+
+            try
+            {
+                List&lt;UserSessionStats&gt; result = apiInstance.GetAllUserSessionStatses();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetAllUserSessionStatses: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<UserSessionStats>**](UserSessionStats.md)
 
 ### Authorization
 
@@ -2209,6 +2547,138 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getownedusersessionstatses"></a>
+# **GetOwnedUserSessionStatses**
+> List<UserSessionStats> GetOwnedUserSessionStatses (int? masterid)
+
+
+
+Returns all entities of UserSessionStats type related to User type
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetOwnedUserSessionStatsesExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var masterid = 56;  // int? | id of User entity
+
+            try
+            {
+                List&lt;UserSessionStats&gt; result = apiInstance.GetOwnedUserSessionStatses(masterid);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetOwnedUserSessionStatses: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **masterid** | **int?**| id of User entity | 
+
+### Return type
+
+[**List<UserSessionStats>**](UserSessionStats.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getownedusersessionstatsesbatch"></a>
+# **GetOwnedUserSessionStatsesBatch**
+> List<UserSessionStats> GetOwnedUserSessionStatsesBatch (List<int?> masterids)
+
+
+
+Returns all entities of UserSessionStats type related to multiple entities of User type
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetOwnedUserSessionStatsesBatchExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var masterids = new List<int?>(); // List<int?> | ids of User entity
+
+            try
+            {
+                List&lt;UserSessionStats&gt; result = apiInstance.GetOwnedUserSessionStatsesBatch(masterids);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetOwnedUserSessionStatsesBatch: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+
+### Return type
+
+[**List<UserSessionStats>**](UserSessionStats.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="gettradovatesubscription"></a>
 # **GetTradovateSubscription**
 > TradovateSubscription GetTradovateSubscription (int? id)
@@ -2869,6 +3339,138 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getusersessionstats"></a>
+# **GetUserSessionStats**
+> UserSessionStats GetUserSessionStats (int? id)
+
+
+
+Finds an entity of UserSessionStats type by its id
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetUserSessionStatsExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var id = 56;  // int? | 
+
+            try
+            {
+                UserSessionStats result = apiInstance.GetUserSessionStats(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetUserSessionStats: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **int?**|  | 
+
+### Return type
+
+[**UserSessionStats**](UserSessionStats.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getusersessionstatses"></a>
+# **GetUserSessionStatses**
+> List<UserSessionStats> GetUserSessionStatses (List<int?> ids)
+
+
+
+Finds multiple entities of UserSessionStats type by its ids
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetUserSessionStatsesExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var ids = new List<int?>(); // List<int?> | 
+
+            try
+            {
+                List&lt;UserSessionStats&gt; result = apiInstance.GetUserSessionStatses(ids);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetUserSessionStatses: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ids** | [**List<int?>**](int?.md)|  | 
+
+### Return type
+
+[**List<UserSessionStats>**](UserSessionStats.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getusersessions"></a>
 # **GetUserSessions**
 > List<UserSession> GetUserSessions (List<int?> ids)
@@ -3117,6 +3719,70 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**UserStatusMessage**](UserStatusMessage.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="modifypassword"></a>
+# **ModifyPassword**
+> AccessTokenResponse ModifyPassword (ModifyPassword body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class ModifyPasswordExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new ModifyPassword(); // ModifyPassword | 
+
+            try
+            {
+                AccessTokenResponse result = apiInstance.ModifyPassword(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.ModifyPassword: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ModifyPassword**](ModifyPassword.md)|  | 
+
+### Return type
+
+[**AccessTokenResponse**](AccessTokenResponse.md)
 
 ### Authorization
 
@@ -3641,6 +4307,138 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SyncMessage**](SyncMessage.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="updatetradovatesubscription"></a>
+# **UpdateTradovateSubscription**
+> TradovateSubscription UpdateTradovateSubscription (TradovateSubscription body)
+
+
+
+Updates a existing entity of TradovateSubscription
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class UpdateTradovateSubscriptionExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new TradovateSubscription(); // TradovateSubscription | 
+
+            try
+            {
+                TradovateSubscription result = apiInstance.UpdateTradovateSubscription(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.UpdateTradovateSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**TradovateSubscription**](TradovateSubscription.md)|  | 
+
+### Return type
+
+[**TradovateSubscription**](TradovateSubscription.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="updateuserplugin"></a>
+# **UpdateUserPlugin**
+> UserPlugin UpdateUserPlugin (UserPlugin body)
+
+
+
+Updates a existing entity of UserPlugin
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class UpdateUserPluginExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new UserPlugin(); // UserPlugin | 
+
+            try
+            {
+                UserPlugin result = apiInstance.UpdateUserPlugin(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.UpdateUserPlugin: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UserPlugin**](UserPlugin.md)|  | 
+
+### Return type
+
+[**UserPlugin**](UserPlugin.md)
 
 ### Authorization
 

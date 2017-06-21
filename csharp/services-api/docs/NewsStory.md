@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **Teaser** | **string** |  | [optional] 
 **Body** | **string** |  | [optional] 
 **Url** | **string** |  | [optional] 
+**Source** | **string** |  | [optional] 
 **Images** | **string** |  | [optional] 
 **Channels** | **string** |  | [optional] 
 **Stocks** | **string** |  | [optional] 

@@ -12,13 +12,10 @@ Method | HTTP request | Description
 [**GetAdminAlerts**](ConfigurationApi.md#getadminalerts) | **GET** /adminAlert/items | 
 [**GetAllAdminAlerts**](ConfigurationApi.md#getalladminalerts) | **GET** /adminAlert/list | 
 [**GetAllClearingHouses**](ConfigurationApi.md#getallclearinghouses) | **GET** /clearingHouse/list | 
-[**GetAllEntitlements**](ConfigurationApi.md#getallentitlements) | **GET** /entitlement/list | 
 [**GetAllOrderStrategyTypes**](ConfigurationApi.md#getallorderstrategytypes) | **GET** /orderStrategyType/list | 
 [**GetAllProperties**](ConfigurationApi.md#getallproperties) | **GET** /property/list | 
 [**GetClearingHouse**](ConfigurationApi.md#getclearinghouse) | **GET** /clearingHouse/item | 
 [**GetClearingHouses**](ConfigurationApi.md#getclearinghouses) | **GET** /clearingHouse/items | 
-[**GetEntitlement**](ConfigurationApi.md#getentitlement) | **GET** /entitlement/item | 
-[**GetEntitlements**](ConfigurationApi.md#getentitlements) | **GET** /entitlement/items | 
 [**GetOrderStrategyType**](ConfigurationApi.md#getorderstrategytype) | **GET** /orderStrategyType/item | 
 [**GetOrderStrategyTypes**](ConfigurationApi.md#getorderstrategytypes) | **GET** /orderStrategyType/items | 
 [**GetProperties**](ConfigurationApi.md#getproperties) | **GET** /property/items | 
@@ -549,68 +546,6 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getallentitlements"></a>
-# **GetAllEntitlements**
-> List<Entitlement> GetAllEntitlements ()
-
-
-
-Returns all entities of Entitlement type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetAllEntitlementsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new ConfigurationApi();
-
-            try
-            {
-                List&lt;Entitlement&gt; result = apiInstance.GetAllEntitlements();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ConfigurationApi.GetAllEntitlements: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<Entitlement>**](Entitlement.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getallorderstrategytypes"></a>
 # **GetAllOrderStrategyTypes**
 > List<OrderStrategyType> GetAllOrderStrategyTypes ()
@@ -855,138 +790,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<ClearingHouse>**](ClearingHouse.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getentitlement"></a>
-# **GetEntitlement**
-> Entitlement GetEntitlement (int? id)
-
-
-
-Finds an entity of Entitlement type by its id
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetEntitlementExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new ConfigurationApi();
-            var id = 56;  // int? | 
-
-            try
-            {
-                Entitlement result = apiInstance.GetEntitlement(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ConfigurationApi.GetEntitlement: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **int?**|  | 
-
-### Return type
-
-[**Entitlement**](Entitlement.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getentitlements"></a>
-# **GetEntitlements**
-> List<Entitlement> GetEntitlements (List<int?> ids)
-
-
-
-Finds multiple entities of Entitlement type by its ids
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetEntitlementsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new ConfigurationApi();
-            var ids = new List<int?>(); // List<int?> | 
-
-            try
-            {
-                List&lt;Entitlement&gt; result = apiInstance.GetEntitlements(ids);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ConfigurationApi.GetEntitlements: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ids** | [**List<int?>**](int?.md)|  | 
-
-### Return type
-
-[**List<Entitlement>**](Entitlement.md)
 
 ### Authorization
 

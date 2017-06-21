@@ -57,11 +57,12 @@ namespace Tradovate.Services.Model
         /// <param name="Teaser">Teaser.</param>
         /// <param name="Body">Body.</param>
         /// <param name="Url">Url.</param>
+        /// <param name="Source">Source.</param>
         /// <param name="Images">Images.</param>
         /// <param name="Channels">Channels.</param>
         /// <param name="Stocks">Stocks.</param>
         /// <param name="Tags">Tags.</param>
-        public NewsStory(int? Id = null, DateTime? Timestamp = null, string Name = null, string Author = null, DateTime? Created = null, DateTime? Updated = null, string Title = null, string Teaser = null, string Body = null, string Url = null, string Images = null, string Channels = null, string Stocks = null, string Tags = null)
+        public NewsStory(int? Id = null, DateTime? Timestamp = null, string Name = null, string Author = null, DateTime? Created = null, DateTime? Updated = null, string Title = null, string Teaser = null, string Body = null, string Url = null, string Source = null, string Images = null, string Channels = null, string Stocks = null, string Tags = null)
         {
             // to ensure "Timestamp" is required (not null)
             if (Timestamp == null)
@@ -121,6 +122,7 @@ namespace Tradovate.Services.Model
             this.Teaser = Teaser;
             this.Body = Body;
             this.Url = Url;
+            this.Source = Source;
             this.Images = Images;
             this.Channels = Channels;
             this.Stocks = Stocks;
@@ -178,6 +180,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="url", EmitDefaultValue=false)]
         public string Url { get; set; }
         /// <summary>
+        /// Gets or Sets Source
+        /// </summary>
+        [DataMember(Name="source", EmitDefaultValue=false)]
+        public string Source { get; set; }
+        /// <summary>
         /// Gets or Sets Images
         /// </summary>
         [DataMember(Name="images", EmitDefaultValue=false)]
@@ -215,6 +222,7 @@ namespace Tradovate.Services.Model
             sb.Append("  Teaser: ").Append(Teaser).Append("\n");
             sb.Append("  Body: ").Append(Body).Append("\n");
             sb.Append("  Url: ").Append(Url).Append("\n");
+            sb.Append("  Source: ").Append(Source).Append("\n");
             sb.Append("  Images: ").Append(Images).Append("\n");
             sb.Append("  Channels: ").Append(Channels).Append("\n");
             sb.Append("  Stocks: ").Append(Stocks).Append("\n");
@@ -306,6 +314,11 @@ namespace Tradovate.Services.Model
                     this.Url.Equals(other.Url)
                 ) && 
                 (
+                    this.Source == other.Source ||
+                    this.Source != null &&
+                    this.Source.Equals(other.Source)
+                ) && 
+                (
                     this.Images == other.Images ||
                     this.Images != null &&
                     this.Images.Equals(other.Images)
@@ -358,6 +371,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Body.GetHashCode();
                 if (this.Url != null)
                     hash = hash * 59 + this.Url.GetHashCode();
+                if (this.Source != null)
+                    hash = hash * 59 + this.Source.GetHashCode();
                 if (this.Images != null)
                     hash = hash * 59 + this.Images.GetHashCode();
                 if (this.Channels != null)
