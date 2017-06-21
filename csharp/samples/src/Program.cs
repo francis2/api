@@ -152,7 +152,7 @@ namespace Tradovate
             Console.WriteLine($"Creating a user {newUsername} for our organization (should be done in LIVE environment)");
             var newUser = Organization.CreateUser(newUsername, password);
 
-	    Organization.ChangePassword(newUser.Id.Value, newUser.Name, password + "+", MyPassword);
+            Organization.ChangePassword(newUser.Id.Value, password + "+", MyPassword);
 
             var membershipPlan = "GLABRYBA_PLAN";
             Console.WriteLine($"Assigning membership plan {membershipPlan} to {newUser.Name}");
