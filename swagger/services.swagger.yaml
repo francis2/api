@@ -8190,6 +8190,16 @@ definitions:
             month:
                 type: integer
                 format: int32
+            renewalCreditCardId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of CreditCard"
+            renewalAccountId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of Account"
     MarketDataSubscriptionExchangeScope:
         type: object
         required:
@@ -8613,6 +8623,11 @@ definitions:
                     - ActiveStrategy
             failureMessage:
                 type: string
+            senderId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of User"
     OrderStrategyLink:
         type: object
         required:
@@ -10128,6 +10143,10 @@ definitions:
                 type: number
                 format: double
                 description: "$ Weekly Loss for an Auto-Liq"
+            flattenTimestamp:
+                type: string
+                format: date-time
+                description: "Flatten &amp; Cancel"
     UserAccountPositionLimit:
         type: object
         required:
