@@ -17,10 +17,10 @@ namespace Tradovate
         public static User CreateUser(string username, string password)
         {
             var usersApi = new UsersApi();
-            var request = new SignUpOrganizationMember(Name: username, 
-                Email: $"fake+{username}@tradovate.com", 
-                Password: password, 
-                FirstName: "John", 
+            var request = new SignUpOrganizationMember(Name: username,
+                Email: $"fake+{username}@tradovate.com",
+                Password: password,
+                FirstName: "John",
                 LastName: "Uppee");
             var response = usersApi.SignUpOrganizationMember(request);
             Console.WriteLine(response);
@@ -34,6 +34,24 @@ namespace Tradovate
             {
                 return null;
             }
+        }
+
+        public static void ChangeCredentials(int userId, string username, string newPassword, string currentAdminPassword)
+        {
+            var usersApi = new UsersApi();
+            var passwordRequest = new ModifyCredentials(UserId: userId, Name: username, Password: newPassword, CurrentPassword: currentAdminPassword);
+            Console.WriteLine($"Request to modify password {passwordRequest}");
+            var passwordResponse = usersApi.ModifyCredentials(passwordRequest);
+            Console.WriteLine($"Modify Password: {passwordResponse}");
+        }
+
+        public static void ChangePassword(int userId, string newPassword, string currentAdminPassword)
+        {
+            var usersApi = new UsersApi();
+            var passwordRequest = new ModifyPassword(UserId: userId, Password: newPassword, CurrentPassword: currentAdminPassword);
+            Console.WriteLine($"Request to modify password {passwordRequest}");
+            var passwordResponse = usersApi.ModifyPassword(passwordRequest);
+            Console.WriteLine($"Modify Password: {passwordResponse}");
         }
 
         public static TradovateSubscription AssignPracticeTradovatePlan(User newUser, string membershipPlan)

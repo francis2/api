@@ -1544,63 +1544,6 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/ClearingHouse'
-    /entitlement/item:
-        get:
-            description: Finds an entity of Entitlement type by its id
-            operationId: getEntitlement
-            security:
-                - bearer_access_token: []
-            parameters:
-                - name: id
-                  in: query
-                  required: true
-                  type: integer
-                  format: int32
-            tags:
-                - Configuration
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        $ref: '#/definitions/Entitlement'
-    /entitlement/items:
-        get:
-            description: Finds multiple entities of Entitlement type by its ids
-            operationId: getEntitlements
-            security:
-                - bearer_access_token: []
-            parameters:
-                - name: ids
-                  in: query
-                  required: true
-                  type: array
-                  items:
-                    type: integer
-                  collectionFormat: csv
-            tags:
-                - Configuration
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        type: array
-                        items:
-                            $ref: '#/definitions/Entitlement'
-    /entitlement/list:
-        get:
-            description: Returns all entities of Entitlement type
-            operationId: getAllEntitlements
-            security:
-                - bearer_access_token: []
-            tags:
-                - Configuration
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        type: array
-                        items:
-                            $ref: '#/definitions/Entitlement'
     /orderStrategyType/find:
         get:
             description: Finds an entity of OrderStrategyType type by its name
@@ -5728,6 +5671,44 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/Organization'
+    /tradovateSubscription/create:
+        post:
+            description: Creates a new entity of TradovateSubscription
+            operationId: createTradovateSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/TradovateSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/TradovateSubscription'
+    /tradovateSubscription/delete:
+        post:
+            description: Updates a existing entity of TradovateSubscription
+            operationId: deleteTradovateSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/TradovateSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/TradovateSubscription'
     /tradovateSubscription/deps:
         get:
             description: Returns all entities of TradovateSubscription type related to User type
@@ -5816,6 +5797,63 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/TradovateSubscription'
+    /tradovateSubscription/update:
+        post:
+            description: Updates a existing entity of TradovateSubscription
+            operationId: updateTradovateSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/TradovateSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/TradovateSubscription'
+    /userPlugin/create:
+        post:
+            description: Creates a new entity of UserPlugin
+            operationId: createUserPlugin
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserPlugin'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserPlugin'
+    /userPlugin/delete:
+        post:
+            description: Updates a existing entity of UserPlugin
+            operationId: deleteUserPlugin
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserPlugin'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserPlugin'
     /userPlugin/deps:
         get:
             description: Returns all entities of UserPlugin type related to User type
@@ -5919,6 +5957,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/UserPlugin'
+    /userPlugin/update:
+        post:
+            description: Updates a existing entity of UserPlugin
+            operationId: updateUserPlugin
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserPlugin'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserPlugin'
     /userProperty/deps:
         get:
             description: Returns all entities of UserProperty type related to User type
@@ -6110,6 +6167,109 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/UserReadStatus'
+    /userSessionStats/deps:
+        get:
+            description: Returns all entities of UserSessionStats type related to User type
+            operationId: getOwnedUserSessionStatses
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: masterid
+                  description: id of User entity
+                  in: query
+                  required: true
+                  type: integer
+                  format: int32
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        type: array
+                        items:
+                            $ref: '#/definitions/UserSessionStats'
+    /userSessionStats/item:
+        get:
+            description: Finds an entity of UserSessionStats type by its id
+            operationId: getUserSessionStats
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: id
+                  in: query
+                  required: true
+                  type: integer
+                  format: int32
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserSessionStats'
+    /userSessionStats/items:
+        get:
+            description: Finds multiple entities of UserSessionStats type by its ids
+            operationId: getUserSessionStatses
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: ids
+                  in: query
+                  required: true
+                  type: array
+                  items:
+                    type: integer
+                  collectionFormat: csv
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        type: array
+                        items:
+                            $ref: '#/definitions/UserSessionStats'
+    /userSessionStats/ldeps:
+        get:
+            description: Returns all entities of UserSessionStats type related to multiple entities of User type
+            operationId: getOwnedUserSessionStatsesBatch
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: masterids
+                  description: ids of User entity
+                  in: query
+                  required: true
+                  type: array
+                  items:
+                    type: integer
+                  collectionFormat: csv
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        type: array
+                        items:
+                            $ref: '#/definitions/UserSessionStats'
+    /userSessionStats/list:
+        get:
+            description: Returns all entities of UserSessionStats type
+            operationId: getAllUserSessionStatses
+            security:
+                - bearer_access_token: []
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        type: array
+                        items:
+                            $ref: '#/definitions/UserSessionStats'
     /userSession/item:
         get:
             description: Finds an entity of UserSession type by its id
@@ -6353,6 +6513,24 @@ paths:
                     description: See definition
                     schema:
                         $ref: '#/definitions/UserStatusMessage'
+    /user/modifypassword:
+        post:
+            operationId: modifyPassword
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/ModifyPassword'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/AccessTokenResponse'
     /user/opendemoaccount:
         post:
             operationId: openDemoAccount
@@ -7528,44 +7706,6 @@ definitions:
                 minimum: 0
                 exclusiveMinimum: true
                 description: "id of Alert"
-    Entitlement:
-        type: object
-        required:
-            - title
-            - price
-            - name
-        properties: 
-            id:
-                type: integer
-                format: int32
-            title:
-                type: string
-            price:
-                type: number
-                format: double
-            startDate:
-                $ref: '#/definitions/TradeDate'
-            discontinuedDate:
-                $ref: '#/definitions/TradeDate'
-            name:
-                type: string
-            planCategories:
-                type: string
-            duration:
-                type: integer
-                format: int32
-            durationUnits:
-                type: string
-                description: "Month, Quarter, Week, Year"
-                enum:
-                    - Month
-                    - Quarter
-                    - Year
-                    - Week
-            hardcodeId:
-                type: string
-            hardcodeTitle:
-                type: string
     Exchange:
         type: object
         required:
@@ -8050,6 +8190,16 @@ definitions:
             month:
                 type: integer
                 format: int32
+            renewalCreditCardId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of CreditCard"
+            renewalAccountId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of Account"
     MarketDataSubscriptionExchangeScope:
         type: object
         required:
@@ -8252,6 +8402,21 @@ definitions:
                 description: "id of OrderStrategy"
             command:
                 type: string
+    ModifyPassword:
+        type: object
+        required:
+            - password
+            - currentPassword
+        properties: 
+            userId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of User"
+            password:
+                type: string
+            currentPassword:
+                type: string
     NewsStory:
         type: object
         required:
@@ -8285,6 +8450,8 @@ definitions:
             body:
                 type: string
             url:
+                type: string
+            source:
                 type: string
             images:
                 type: string
@@ -8456,6 +8623,11 @@ definitions:
                     - ActiveStrategy
             failureMessage:
                 type: string
+            senderId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of User"
     OrderStrategyLink:
         type: object
         required:
@@ -9971,6 +10143,10 @@ definitions:
                 type: number
                 format: double
                 description: "$ Weekly Loss for an Auto-Liq"
+            flattenTimestamp:
+                type: string
+                format: date-time
+                description: "Flatten &amp; Cancel"
     UserAccountPositionLimit:
         type: object
         required:
@@ -10196,6 +10372,8 @@ definitions:
             paidAmount:
                 type: number
                 format: double
+            autorenewal:
+                type: boolean
             planCategories:
                 type: string
     UserProperty:
@@ -10259,6 +10437,17 @@ definitions:
                 type: string
             appVersion:
                 type: string
+    UserSessionStats:
+        type: object
+        required:
+            - lastSessionTime
+        properties: 
+            id:
+                type: integer
+                format: int32
+            lastSessionTime:
+                type: string
+                format: date-time
     UserStatusMessage:
         type: object
         properties: 

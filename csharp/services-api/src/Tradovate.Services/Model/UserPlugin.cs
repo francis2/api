@@ -61,8 +61,9 @@ namespace Tradovate.Services.Model
         /// <param name="StartDate">StartDate (required).</param>
         /// <param name="ExpirationDate">ExpirationDate.</param>
         /// <param name="PaidAmount">PaidAmount (required).</param>
+        /// <param name="Autorenewal">Autorenewal.</param>
         /// <param name="PlanCategories">PlanCategories.</param>
-        public UserPlugin(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CreditCardTransactionId = null, int? CashBalanceLogId = null, int? CreditCardId = null, int? AccountId = null, string PluginName = null, bool? Approval = null, int? EntitlementId = null, TradeDate StartDate = null, TradeDate ExpirationDate = null, double? PaidAmount = null, string PlanCategories = null)
+        public UserPlugin(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CreditCardTransactionId = null, int? CashBalanceLogId = null, int? CreditCardId = null, int? AccountId = null, string PluginName = null, bool? Approval = null, int? EntitlementId = null, TradeDate StartDate = null, TradeDate ExpirationDate = null, double? PaidAmount = null, bool? Autorenewal = null, string PlanCategories = null)
         {
             // to ensure "UserId" is required (not null)
             if (UserId == null)
@@ -134,6 +135,7 @@ namespace Tradovate.Services.Model
             this.AccountId = AccountId;
             this.EntitlementId = EntitlementId;
             this.ExpirationDate = ExpirationDate;
+            this.Autorenewal = Autorenewal;
             this.PlanCategories = PlanCategories;
         }
         
@@ -214,6 +216,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="paidAmount", EmitDefaultValue=false)]
         public double? PaidAmount { get; set; }
         /// <summary>
+        /// Gets or Sets Autorenewal
+        /// </summary>
+        [DataMember(Name="autorenewal", EmitDefaultValue=false)]
+        public bool? Autorenewal { get; set; }
+        /// <summary>
         /// Gets or Sets PlanCategories
         /// </summary>
         [DataMember(Name="planCategories", EmitDefaultValue=false)]
@@ -240,6 +247,7 @@ namespace Tradovate.Services.Model
             sb.Append("  StartDate: ").Append(StartDate).Append("\n");
             sb.Append("  ExpirationDate: ").Append(ExpirationDate).Append("\n");
             sb.Append("  PaidAmount: ").Append(PaidAmount).Append("\n");
+            sb.Append("  Autorenewal: ").Append(Autorenewal).Append("\n");
             sb.Append("  PlanCategories: ").Append(PlanCategories).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -348,6 +356,11 @@ namespace Tradovate.Services.Model
                     this.PaidAmount.Equals(other.PaidAmount)
                 ) && 
                 (
+                    this.Autorenewal == other.Autorenewal ||
+                    this.Autorenewal != null &&
+                    this.Autorenewal.Equals(other.Autorenewal)
+                ) && 
+                (
                     this.PlanCategories == other.PlanCategories ||
                     this.PlanCategories != null &&
                     this.PlanCategories.Equals(other.PlanCategories)
@@ -393,6 +406,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.ExpirationDate.GetHashCode();
                 if (this.PaidAmount != null)
                     hash = hash * 59 + this.PaidAmount.GetHashCode();
+                if (this.Autorenewal != null)
+                    hash = hash * 59 + this.Autorenewal.GetHashCode();
                 if (this.PlanCategories != null)
                     hash = hash * 59 + this.PlanCategories.GetHashCode();
                 return hash;

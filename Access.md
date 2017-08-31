@@ -44,6 +44,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  }
 ```
 
+The client can use the access token until its expiration time that comes in the response.
+
 [Try it!](https://swagger.tradovate.com/#!/Authentication/post_auth_accesstokenrequest)
 
 ## Social Login with a Google token

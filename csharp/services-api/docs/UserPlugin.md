@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **StartDate** | [**TradeDate**](TradeDate.md) |  | 
 **ExpirationDate** | [**TradeDate**](TradeDate.md) |  | [optional] 
 **PaidAmount** | **double?** |  | 
+**Autorenewal** | **bool?** |  | [optional] 
 **PlanCategories** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

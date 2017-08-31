@@ -34,7 +34,8 @@ echo "[INFO] Run 'mcs' to build bin/Tradovate.Services.dll"
 mcs -sdk:${netfx} -r:bin/Newtonsoft.Json.dll,\
 bin/RestSharp.dll,\
 bin/Websocket4Net.dll,\
-System.Runtime.Serialization.dll \
+System.Runtime.Serialization.dll,\
+System.ComponentModel.DataAnnotations.dll \
 -target:library \
 -out:bin/Tradovate.Services.dll \
 -recurse:'src/Tradovate.Services/*.cs' \
