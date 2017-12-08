@@ -40,18 +40,30 @@ namespace Tradovate.Services.Model
     public partial class Product :  IEquatable<Product>
     {
         /// <summary>
-        /// Futures, MarketInternals, Options, Spread
+        /// Cryptocurrency, Futures, MarketInternals, Options, Spread
         /// </summary>
-        /// <value>Futures, MarketInternals, Options, Spread</value>
+        /// <value>Cryptocurrency, Futures, MarketInternals, Options, Spread</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ProductTypeEnum
         {
+            
+            /// <summary>
+            /// Enum Cryptocurrency for "Cryptocurrency"
+            /// </summary>
+            [EnumMember(Value = "Cryptocurrency")]
+            Cryptocurrency,
             
             /// <summary>
             /// Enum Futures for "Futures"
             /// </summary>
             [EnumMember(Value = "Futures")]
             Futures,
+            
+            /// <summary>
+            /// Enum MarketInternals for "MarketInternals"
+            /// </summary>
+            [EnumMember(Value = "MarketInternals")]
+            MarketInternals,
             
             /// <summary>
             /// Enum Options for "Options"
@@ -63,13 +75,7 @@ namespace Tradovate.Services.Model
             /// Enum Spread for "Spread"
             /// </summary>
             [EnumMember(Value = "Spread")]
-            Spread,
-            
-            /// <summary>
-            /// Enum MarketInternals for "MarketInternals"
-            /// </summary>
-            [EnumMember(Value = "MarketInternals")]
-            MarketInternals
+            Spread
         }
 
         /// <summary>
@@ -133,9 +139,9 @@ namespace Tradovate.Services.Model
         }
 
         /// <summary>
-        /// Futures, MarketInternals, Options, Spread
+        /// Cryptocurrency, Futures, MarketInternals, Options, Spread
         /// </summary>
-        /// <value>Futures, MarketInternals, Options, Spread</value>
+        /// <value>Cryptocurrency, Futures, MarketInternals, Options, Spread</value>
         [DataMember(Name="productType", EmitDefaultValue=false)]
         public ProductTypeEnum? ProductType { get; set; }
         /// <summary>
@@ -161,7 +167,7 @@ namespace Tradovate.Services.Model
         /// <param name="Id">Id.</param>
         /// <param name="Name">Name (required).</param>
         /// <param name="CurrencyId">id of Currency (required).</param>
-        /// <param name="ProductType">Futures, MarketInternals, Options, Spread (required).</param>
+        /// <param name="ProductType">Cryptocurrency, Futures, MarketInternals, Options, Spread (required).</param>
         /// <param name="Description">Description (required).</param>
         /// <param name="ExchangeId">id of Exchange (required).</param>
         /// <param name="ContractGroupId">id of ContractGroup (required).</param>

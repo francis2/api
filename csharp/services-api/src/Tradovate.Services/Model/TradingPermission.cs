@@ -100,8 +100,9 @@ namespace Tradovate.Services.Model
         /// <param name="CtaContact">CtaContact (required).</param>
         /// <param name="CtaEmail">CtaEmail (required).</param>
         /// <param name="Status">Accepted, Approved, Declined, Requested, Revoked (required).</param>
+        /// <param name="Updated">Updated.</param>
         /// <param name="ApprovedById">id of User.</param>
-        public TradingPermission(int? Id = null, int? UserId = null, int? AccountId = null, string AccountHolderContact = null, string AccountHolderEmail = null, string CtaContact = null, string CtaEmail = null, StatusEnum? Status = null, int? ApprovedById = null)
+        public TradingPermission(int? Id = null, int? UserId = null, int? AccountId = null, string AccountHolderContact = null, string AccountHolderEmail = null, string CtaContact = null, string CtaEmail = null, StatusEnum? Status = null, DateTime? Updated = null, int? ApprovedById = null)
         {
             // to ensure "UserId" is required (not null)
             if (UserId == null)
@@ -167,6 +168,7 @@ namespace Tradovate.Services.Model
                 this.Status = Status;
             }
             this.Id = Id;
+            this.Updated = Updated;
             this.ApprovedById = ApprovedById;
         }
         
@@ -208,6 +210,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="ctaEmail", EmitDefaultValue=false)]
         public string CtaEmail { get; set; }
         /// <summary>
+        /// Gets or Sets Updated
+        /// </summary>
+        [DataMember(Name="updated", EmitDefaultValue=false)]
+        public DateTime? Updated { get; set; }
+        /// <summary>
         /// id of User
         /// </summary>
         /// <value>id of User</value>
@@ -229,6 +236,7 @@ namespace Tradovate.Services.Model
             sb.Append("  CtaContact: ").Append(CtaContact).Append("\n");
             sb.Append("  CtaEmail: ").Append(CtaEmail).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
+            sb.Append("  Updated: ").Append(Updated).Append("\n");
             sb.Append("  ApprovedById: ").Append(ApprovedById).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -307,6 +315,11 @@ namespace Tradovate.Services.Model
                     this.Status.Equals(other.Status)
                 ) && 
                 (
+                    this.Updated == other.Updated ||
+                    this.Updated != null &&
+                    this.Updated.Equals(other.Updated)
+                ) && 
+                (
                     this.ApprovedById == other.ApprovedById ||
                     this.ApprovedById != null &&
                     this.ApprovedById.Equals(other.ApprovedById)
@@ -340,6 +353,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.CtaEmail.GetHashCode();
                 if (this.Status != null)
                     hash = hash * 59 + this.Status.GetHashCode();
+                if (this.Updated != null)
+                    hash = hash * 59 + this.Updated.GetHashCode();
                 if (this.ApprovedById != null)
                     hash = hash * 59 + this.ApprovedById.GetHashCode();
                 return hash;

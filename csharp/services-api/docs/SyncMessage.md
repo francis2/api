@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **UserPlugins** | [**List&lt;UserPlugin&gt;**](UserPlugin.md) |  | [optional] 
 **UserReadStatuses** | [**List&lt;UserReadStatus&gt;**](UserReadStatus.md) |  | [optional] 
 **ContractGroups** | [**List&lt;ContractGroup&gt;**](ContractGroup.md) |  | 
+**OrderStrategyTypes** | [**List&lt;OrderStrategyType&gt;**](OrderStrategyType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

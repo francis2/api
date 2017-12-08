@@ -49,7 +49,8 @@ namespace Tradovate.Services.Model
         /// </summary>
         /// <param name="Id">Id.</param>
         /// <param name="LastSessionTime">LastSessionTime (required).</param>
-        public UserSessionStats(int? Id = null, DateTime? LastSessionTime = null)
+        /// <param name="FailedPasswords">FailedPasswords (required).</param>
+        public UserSessionStats(int? Id = null, DateTime? LastSessionTime = null, int? FailedPasswords = null)
         {
             // to ensure "LastSessionTime" is required (not null)
             if (LastSessionTime == null)
@@ -59,6 +60,15 @@ namespace Tradovate.Services.Model
             else
             {
                 this.LastSessionTime = LastSessionTime;
+            }
+            // to ensure "FailedPasswords" is required (not null)
+            if (FailedPasswords == null)
+            {
+                throw new InvalidDataException("FailedPasswords is a required property for UserSessionStats and cannot be null");
+            }
+            else
+            {
+                this.FailedPasswords = FailedPasswords;
             }
             this.Id = Id;
         }
@@ -74,6 +84,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="lastSessionTime", EmitDefaultValue=false)]
         public DateTime? LastSessionTime { get; set; }
         /// <summary>
+        /// Gets or Sets FailedPasswords
+        /// </summary>
+        [DataMember(Name="failedPasswords", EmitDefaultValue=false)]
+        public int? FailedPasswords { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -83,6 +98,7 @@ namespace Tradovate.Services.Model
             sb.Append("class UserSessionStats {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  LastSessionTime: ").Append(LastSessionTime).Append("\n");
+            sb.Append("  FailedPasswords: ").Append(FailedPasswords).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -128,6 +144,11 @@ namespace Tradovate.Services.Model
                     this.LastSessionTime == other.LastSessionTime ||
                     this.LastSessionTime != null &&
                     this.LastSessionTime.Equals(other.LastSessionTime)
+                ) && 
+                (
+                    this.FailedPasswords == other.FailedPasswords ||
+                    this.FailedPasswords != null &&
+                    this.FailedPasswords.Equals(other.FailedPasswords)
                 );
         }
 
@@ -146,6 +167,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Id.GetHashCode();
                 if (this.LastSessionTime != null)
                     hash = hash * 59 + this.LastSessionTime.GetHashCode();
+                if (this.FailedPasswords != null)
+                    hash = hash * 59 + this.FailedPasswords.GetHashCode();
                 return hash;
             }
         }

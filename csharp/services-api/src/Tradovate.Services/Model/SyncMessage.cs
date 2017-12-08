@@ -71,7 +71,8 @@ namespace Tradovate.Services.Model
         /// <param name="UserPlugins">UserPlugins.</param>
         /// <param name="UserReadStatuses">UserReadStatuses.</param>
         /// <param name="ContractGroups">ContractGroups (required).</param>
-        public SyncMessage(List<User> Users = null, List<Account> Accounts = null, List<Order> Orders = null, List<Contract> Contracts = null, List<ContractMaturity> ContractMaturities = null, List<Product> Products = null, List<Exchange> Exchanges = null, List<SpreadDefinition> SpreadDefinitions = null, List<Command> Commands = null, List<CommandReport> CommandReports = null, List<ExecutionReport> ExecutionReports = null, List<OrderVersion> OrderVersions = null, List<Fill> Fills = null, List<CashBalance> CashBalances = null, List<Currency> Currencies = null, List<Position> Positions = null, List<FillPair> FillPairs = null, List<OrderStrategy> OrderStrategies = null, List<OrderStrategyLink> OrderStrategyLinks = null, List<UserProperty> UserProperties = null, List<Property> Properties = null, List<UserPlugin> UserPlugins = null, List<UserReadStatus> UserReadStatuses = null, List<ContractGroup> ContractGroups = null)
+        /// <param name="OrderStrategyTypes">OrderStrategyTypes.</param>
+        public SyncMessage(List<User> Users = null, List<Account> Accounts = null, List<Order> Orders = null, List<Contract> Contracts = null, List<ContractMaturity> ContractMaturities = null, List<Product> Products = null, List<Exchange> Exchanges = null, List<SpreadDefinition> SpreadDefinitions = null, List<Command> Commands = null, List<CommandReport> CommandReports = null, List<ExecutionReport> ExecutionReports = null, List<OrderVersion> OrderVersions = null, List<Fill> Fills = null, List<CashBalance> CashBalances = null, List<Currency> Currencies = null, List<Position> Positions = null, List<FillPair> FillPairs = null, List<OrderStrategy> OrderStrategies = null, List<OrderStrategyLink> OrderStrategyLinks = null, List<UserProperty> UserProperties = null, List<Property> Properties = null, List<UserPlugin> UserPlugins = null, List<UserReadStatus> UserReadStatuses = null, List<ContractGroup> ContractGroups = null, List<OrderStrategyType> OrderStrategyTypes = null)
         {
             // to ensure "Users" is required (not null)
             if (Users == null)
@@ -113,6 +114,7 @@ namespace Tradovate.Services.Model
             this.Properties = Properties;
             this.UserPlugins = UserPlugins;
             this.UserReadStatuses = UserReadStatuses;
+            this.OrderStrategyTypes = OrderStrategyTypes;
         }
         
         /// <summary>
@@ -236,6 +238,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="contractGroups", EmitDefaultValue=false)]
         public List<ContractGroup> ContractGroups { get; set; }
         /// <summary>
+        /// Gets or Sets OrderStrategyTypes
+        /// </summary>
+        [DataMember(Name="orderStrategyTypes", EmitDefaultValue=false)]
+        public List<OrderStrategyType> OrderStrategyTypes { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -267,6 +274,7 @@ namespace Tradovate.Services.Model
             sb.Append("  UserPlugins: ").Append(UserPlugins).Append("\n");
             sb.Append("  UserReadStatuses: ").Append(UserReadStatuses).Append("\n");
             sb.Append("  ContractGroups: ").Append(ContractGroups).Append("\n");
+            sb.Append("  OrderStrategyTypes: ").Append(OrderStrategyTypes).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -422,6 +430,11 @@ namespace Tradovate.Services.Model
                     this.ContractGroups == other.ContractGroups ||
                     this.ContractGroups != null &&
                     this.ContractGroups.SequenceEqual(other.ContractGroups)
+                ) && 
+                (
+                    this.OrderStrategyTypes == other.OrderStrategyTypes ||
+                    this.OrderStrategyTypes != null &&
+                    this.OrderStrategyTypes.SequenceEqual(other.OrderStrategyTypes)
                 );
         }
 
@@ -484,6 +497,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.UserReadStatuses.GetHashCode();
                 if (this.ContractGroups != null)
                     hash = hash * 59 + this.ContractGroups.GetHashCode();
+                if (this.OrderStrategyTypes != null)
+                    hash = hash * 59 + this.OrderStrategyTypes.GetHashCode();
                 return hash;
             }
         }

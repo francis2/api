@@ -58,7 +58,9 @@ namespace Tradovate.Services.Model
         /// <param name="MarketDataSubscriptionPlanId">id of MarketDataSubscriptionPlan (required).</param>
         /// <param name="Year">Year (required).</param>
         /// <param name="Month">Month (required).</param>
-        public MarketDataSubscription(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CreditCardTransactionId = null, int? CashBalanceLogId = null, int? CreditCardId = null, int? AccountId = null, int? MarketDataSubscriptionPlanId = null, int? Year = null, int? Month = null)
+        /// <param name="RenewalCreditCardId">id of CreditCard.</param>
+        /// <param name="RenewalAccountId">id of Account.</param>
+        public MarketDataSubscription(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CreditCardTransactionId = null, int? CashBalanceLogId = null, int? CreditCardId = null, int? AccountId = null, int? MarketDataSubscriptionPlanId = null, int? Year = null, int? Month = null, int? RenewalCreditCardId = null, int? RenewalAccountId = null)
         {
             // to ensure "UserId" is required (not null)
             if (UserId == null)
@@ -119,6 +121,8 @@ namespace Tradovate.Services.Model
             this.CashBalanceLogId = CashBalanceLogId;
             this.CreditCardId = CreditCardId;
             this.AccountId = AccountId;
+            this.RenewalCreditCardId = RenewalCreditCardId;
+            this.RenewalAccountId = RenewalAccountId;
         }
         
         /// <summary>
@@ -183,6 +187,18 @@ namespace Tradovate.Services.Model
         [DataMember(Name="month", EmitDefaultValue=false)]
         public int? Month { get; set; }
         /// <summary>
+        /// id of CreditCard
+        /// </summary>
+        /// <value>id of CreditCard</value>
+        [DataMember(Name="renewalCreditCardId", EmitDefaultValue=false)]
+        public int? RenewalCreditCardId { get; set; }
+        /// <summary>
+        /// id of Account
+        /// </summary>
+        /// <value>id of Account</value>
+        [DataMember(Name="renewalAccountId", EmitDefaultValue=false)]
+        public int? RenewalAccountId { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -201,6 +217,8 @@ namespace Tradovate.Services.Model
             sb.Append("  MarketDataSubscriptionPlanId: ").Append(MarketDataSubscriptionPlanId).Append("\n");
             sb.Append("  Year: ").Append(Year).Append("\n");
             sb.Append("  Month: ").Append(Month).Append("\n");
+            sb.Append("  RenewalCreditCardId: ").Append(RenewalCreditCardId).Append("\n");
+            sb.Append("  RenewalAccountId: ").Append(RenewalAccountId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -291,6 +309,16 @@ namespace Tradovate.Services.Model
                     this.Month == other.Month ||
                     this.Month != null &&
                     this.Month.Equals(other.Month)
+                ) && 
+                (
+                    this.RenewalCreditCardId == other.RenewalCreditCardId ||
+                    this.RenewalCreditCardId != null &&
+                    this.RenewalCreditCardId.Equals(other.RenewalCreditCardId)
+                ) && 
+                (
+                    this.RenewalAccountId == other.RenewalAccountId ||
+                    this.RenewalAccountId != null &&
+                    this.RenewalAccountId.Equals(other.RenewalAccountId)
                 );
         }
 
@@ -327,6 +355,10 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Year.GetHashCode();
                 if (this.Month != null)
                     hash = hash * 59 + this.Month.GetHashCode();
+                if (this.RenewalCreditCardId != null)
+                    hash = hash * 59 + this.RenewalCreditCardId.GetHashCode();
+                if (this.RenewalAccountId != null)
+                    hash = hash * 59 + this.RenewalAccountId.GetHashCode();
                 return hash;
             }
         }

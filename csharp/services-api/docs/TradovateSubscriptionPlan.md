@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **MultipleAccounts** | **bool?** |  | [optional] 
 **OrganizationId** | **int?** | id of Organization | [optional] 
 **ReplaySessions** | **int?** |  | [optional] 
+**Footnote** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

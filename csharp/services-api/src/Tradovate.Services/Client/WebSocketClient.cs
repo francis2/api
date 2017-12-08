@@ -1,5 +1,5 @@
-﻿/* 
- * 
+﻿/*
+ *
  * Tradovate API, Websocket implementation
  *
 */
@@ -158,7 +158,7 @@ namespace Tradovate.Services.Client
 
         private void WebSocket_Error(object sender, SuperSocket.ClientEngine.ErrorEventArgs e)
         {
-            Log.Write($"ERROR: {e}");
+            Log.Write($"ERROR: {e.Exception}");
         }
 
         private void WebSocket_Closed(object sender, EventArgs e)
