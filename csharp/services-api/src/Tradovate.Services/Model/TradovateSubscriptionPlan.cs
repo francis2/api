@@ -100,7 +100,8 @@ namespace Tradovate.Services.Model
         /// <param name="MultipleAccounts">MultipleAccounts.</param>
         /// <param name="OrganizationId">id of Organization.</param>
         /// <param name="ReplaySessions">ReplaySessions.</param>
-        public TradovateSubscriptionPlan(int? Id = null, string Name = null, string Title = null, double? Price = null, TradeDate StartDate = null, TradeDate DiscontinuedDate = null, string Category = null, bool? Trial = null, int? Duration = null, DurationUnitsEnum? DurationUnits = null, int? RiskCategoryId = null, bool? MultipleAccounts = null, int? OrganizationId = null, int? ReplaySessions = null)
+        /// <param name="Footnote">Footnote.</param>
+        public TradovateSubscriptionPlan(int? Id = null, string Name = null, string Title = null, double? Price = null, TradeDate StartDate = null, TradeDate DiscontinuedDate = null, string Category = null, bool? Trial = null, int? Duration = null, DurationUnitsEnum? DurationUnits = null, int? RiskCategoryId = null, bool? MultipleAccounts = null, int? OrganizationId = null, int? ReplaySessions = null, string Footnote = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -172,6 +173,7 @@ namespace Tradovate.Services.Model
             this.MultipleAccounts = MultipleAccounts;
             this.OrganizationId = OrganizationId;
             this.ReplaySessions = ReplaySessions;
+            this.Footnote = Footnote;
         }
         
         /// <summary>
@@ -242,6 +244,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="replaySessions", EmitDefaultValue=false)]
         public int? ReplaySessions { get; set; }
         /// <summary>
+        /// Gets or Sets Footnote
+        /// </summary>
+        [DataMember(Name="footnote", EmitDefaultValue=false)]
+        public string Footnote { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -263,6 +270,7 @@ namespace Tradovate.Services.Model
             sb.Append("  MultipleAccounts: ").Append(MultipleAccounts).Append("\n");
             sb.Append("  OrganizationId: ").Append(OrganizationId).Append("\n");
             sb.Append("  ReplaySessions: ").Append(ReplaySessions).Append("\n");
+            sb.Append("  Footnote: ").Append(Footnote).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -368,6 +376,11 @@ namespace Tradovate.Services.Model
                     this.ReplaySessions == other.ReplaySessions ||
                     this.ReplaySessions != null &&
                     this.ReplaySessions.Equals(other.ReplaySessions)
+                ) && 
+                (
+                    this.Footnote == other.Footnote ||
+                    this.Footnote != null &&
+                    this.Footnote.Equals(other.Footnote)
                 );
         }
 
@@ -410,6 +423,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.OrganizationId.GetHashCode();
                 if (this.ReplaySessions != null)
                     hash = hash * 59 + this.ReplaySessions.GetHashCode();
+                if (this.Footnote != null)
+                    hash = hash * 59 + this.Footnote.GetHashCode();
                 return hash;
             }
         }

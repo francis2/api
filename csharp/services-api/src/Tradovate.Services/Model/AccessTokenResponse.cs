@@ -94,7 +94,8 @@ namespace Tradovate.Services.Model
         /// <param name="UserStatus">Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail.</param>
         /// <param name="UserId">id of User.</param>
         /// <param name="Name">Name.</param>
-        public AccessTokenResponse(string ErrorText = null, string AccessToken = null, DateTime? ExpirationTime = null, DateTime? PasswordExpirationTime = null, UserStatusEnum? UserStatus = null, int? UserId = null, string Name = null)
+        /// <param name="HasLive">HasLive.</param>
+        public AccessTokenResponse(string ErrorText = null, string AccessToken = null, DateTime? ExpirationTime = null, DateTime? PasswordExpirationTime = null, UserStatusEnum? UserStatus = null, int? UserId = null, string Name = null, bool? HasLive = null)
         {
             this.ErrorText = ErrorText;
             this.AccessToken = AccessToken;
@@ -103,6 +104,7 @@ namespace Tradovate.Services.Model
             this.UserStatus = UserStatus;
             this.UserId = UserId;
             this.Name = Name;
+            this.HasLive = HasLive;
         }
         
         /// <summary>
@@ -138,6 +140,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="name", EmitDefaultValue=false)]
         public string Name { get; set; }
         /// <summary>
+        /// Gets or Sets HasLive
+        /// </summary>
+        [DataMember(Name="hasLive", EmitDefaultValue=false)]
+        public bool? HasLive { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -152,6 +159,7 @@ namespace Tradovate.Services.Model
             sb.Append("  UserStatus: ").Append(UserStatus).Append("\n");
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
+            sb.Append("  HasLive: ").Append(HasLive).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -222,6 +230,11 @@ namespace Tradovate.Services.Model
                     this.Name == other.Name ||
                     this.Name != null &&
                     this.Name.Equals(other.Name)
+                ) && 
+                (
+                    this.HasLive == other.HasLive ||
+                    this.HasLive != null &&
+                    this.HasLive.Equals(other.HasLive)
                 );
         }
 
@@ -250,6 +263,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.UserId.GetHashCode();
                 if (this.Name != null)
                     hash = hash * 59 + this.Name.GetHashCode();
+                if (this.HasLive != null)
+                    hash = hash * 59 + this.HasLive.GetHashCode();
                 return hash;
             }
         }

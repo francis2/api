@@ -142,7 +142,8 @@ namespace Tradovate.Services.Model
         /// <param name="Uuid">Uuid.</param>
         /// <param name="Status">ActiveStrategy, ExecutionFailed, ExecutionFinished, ExecutionInterrupted, InactiveStrategy, NotEnoughLiquidity, StoppedByUser (required).</param>
         /// <param name="FailureMessage">FailureMessage.</param>
-        public OrderStrategy(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, int? ContractId = null, int? OrderStrategyTypeId = null, int? InitiatorId = null, ActionEnum? Action = null, string _Params = null, string Uuid = null, StatusEnum? Status = null, string FailureMessage = null)
+        /// <param name="SenderId">id of User.</param>
+        public OrderStrategy(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, int? ContractId = null, int? OrderStrategyTypeId = null, int? InitiatorId = null, ActionEnum? Action = null, string _Params = null, string Uuid = null, StatusEnum? Status = null, string FailureMessage = null, int? SenderId = null)
         {
             // to ensure "AccountId" is required (not null)
             if (AccountId == null)
@@ -203,6 +204,7 @@ namespace Tradovate.Services.Model
             this._Params = _Params;
             this.Uuid = Uuid;
             this.FailureMessage = FailureMessage;
+            this.SenderId = SenderId;
         }
         
         /// <summary>
@@ -255,6 +257,12 @@ namespace Tradovate.Services.Model
         [DataMember(Name="failureMessage", EmitDefaultValue=false)]
         public string FailureMessage { get; set; }
         /// <summary>
+        /// id of User
+        /// </summary>
+        /// <value>id of User</value>
+        [DataMember(Name="senderId", EmitDefaultValue=false)]
+        public int? SenderId { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -273,6 +281,7 @@ namespace Tradovate.Services.Model
             sb.Append("  Uuid: ").Append(Uuid).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  FailureMessage: ").Append(FailureMessage).Append("\n");
+            sb.Append("  SenderId: ").Append(SenderId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -363,6 +372,11 @@ namespace Tradovate.Services.Model
                     this.FailureMessage == other.FailureMessage ||
                     this.FailureMessage != null &&
                     this.FailureMessage.Equals(other.FailureMessage)
+                ) && 
+                (
+                    this.SenderId == other.SenderId ||
+                    this.SenderId != null &&
+                    this.SenderId.Equals(other.SenderId)
                 );
         }
 
@@ -399,6 +413,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Status.GetHashCode();
                 if (this.FailureMessage != null)
                     hash = hash * 59 + this.FailureMessage.GetHashCode();
+                if (this.SenderId != null)
+                    hash = hash * 59 + this.SenderId.GetHashCode();
                 return hash;
             }
         }

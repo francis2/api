@@ -5381,6 +5381,21 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/ContactInfo'
+    /contactInfo/list:
+        get:
+            description: Returns all entities of ContactInfo type
+            operationId: getAllContactInfos
+            security:
+                - bearer_access_token: []
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        type: array
+                        items:
+                            $ref: '#/definitions/ContactInfo'
     /country/find:
         get:
             description: Finds an entity of Country type by its name
@@ -5482,6 +5497,44 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/Country'
+    /marketDataSubscription/create:
+        post:
+            description: Creates a new entity of MarketDataSubscription
+            operationId: createMarketDataSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/MarketDataSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscription'
+    /marketDataSubscription/delete:
+        post:
+            description: Updates a existing entity of MarketDataSubscription
+            operationId: deleteMarketDataSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/MarketDataSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscription'
     /marketDataSubscription/deps:
         get:
             description: Returns all entities of MarketDataSubscription type related to User type
@@ -5570,6 +5623,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/MarketDataSubscription'
+    /marketDataSubscription/update:
+        post:
+            description: Updates a existing entity of MarketDataSubscription
+            operationId: updateMarketDataSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/MarketDataSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscription'
     /organization/find:
         get:
             description: Finds an entity of Organization type by its name
@@ -5788,6 +5860,21 @@ paths:
                   items:
                     type: integer
                   collectionFormat: csv
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        type: array
+                        items:
+                            $ref: '#/definitions/TradovateSubscription'
+    /tradovateSubscription/list:
+        get:
+            description: Returns all entities of TradovateSubscription type
+            operationId: getAllTradovateSubscriptions
+            security:
+                - bearer_access_token: []
             tags:
                 - Users
             responses:
@@ -6167,6 +6254,24 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/UserReadStatus'
+    /userReadStatus/setlastnewsreadstatus:
+        post:
+            operationId: setLastNewsReadStatus
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/SetLastNewsReadStatus'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserReadStatusResponse'
     /userSessionStats/deps:
         get:
             description: Returns all entities of UserSessionStats type related to User type
@@ -6729,6 +6834,8 @@ definitions:
                 description: "id of User"
             name:
                 type: string
+            hasLive:
+                type: boolean
     Account:
         type: object
         required:
@@ -9304,12 +9411,13 @@ definitions:
                 description: "id of Currency"
             productType:
                 type: string
-                description: "Futures, MarketInternals, Options, Spread"
+                description: "Cryptocurrency, Futures, MarketInternals, Options, Spread"
                 enum:
+                    - Cryptocurrency
                     - Futures
+                    - MarketInternals
                     - Options
                     - Spread
-                    - MarketInternals
             description:
                 type: string
             exchangeId:
@@ -9615,6 +9723,14 @@ definitions:
                 description: "Non-empty if the request failed"
             contract:
                 $ref: '#/definitions/Contract'
+    SetLastNewsReadStatus:
+        type: object
+        properties: 
+            newsStoryId:
+                type: integer
+                format: int32
+                minimum: 0
+                description: "id of NewsStory"
     SignUpOrganizationMember:
         type: object
         required:
@@ -9836,6 +9952,10 @@ definitions:
                 type: array
                 items:
                     $ref: '#/definitions/ContractGroup'
+            orderStrategyTypes:
+                type: array
+                items:
+                    $ref: '#/definitions/OrderStrategyType'
     SyncRequest:
         type: object
         properties: 
@@ -9901,6 +10021,9 @@ definitions:
                     - Approved
                     - Requested
                     - Accepted
+            updated:
+                type: string
+                format: date-time
             approvedById:
                 type: integer
                 format: int32
@@ -10040,6 +10163,8 @@ definitions:
             replaySessions:
                 type: integer
                 format: int32
+            footnote:
+                type: string
     TradovateSubscriptionResponse:
         type: object
         properties: 
@@ -10174,12 +10299,13 @@ definitions:
                 description: "id of Exchange"
             productType:
                 type: string
-                description: "Futures, MarketInternals, Options, Spread"
+                description: "Cryptocurrency, Futures, MarketInternals, Options, Spread"
                 enum:
+                    - Cryptocurrency
                     - Futures
+                    - MarketInternals
                     - Options
                     - Spread
-                    - MarketInternals
             riskDiscountContractGroupId:
                 type: integer
                 format: int32
@@ -10259,12 +10385,13 @@ definitions:
                 description: "id of Exchange"
             productType:
                 type: string
-                description: "Futures, MarketInternals, Options, Spread"
+                description: "Cryptocurrency, Futures, MarketInternals, Options, Spread"
                 enum:
+                    - Cryptocurrency
                     - Futures
+                    - MarketInternals
                     - Options
                     - Spread
-                    - MarketInternals
             riskDiscountContractGroupId:
                 type: integer
                 format: int32
@@ -10410,6 +10537,13 @@ definitions:
                 format: int32
                 minimum: 0
                 description: "id of NewsStory"
+    UserReadStatusResponse:
+        type: object
+        required:
+            - userReadStatus
+        properties: 
+            userReadStatus:
+                $ref: '#/definitions/UserReadStatus'
     UserSession:
         type: object
         required:
@@ -10441,6 +10575,7 @@ definitions:
         type: object
         required:
             - lastSessionTime
+            - failedPasswords
         properties: 
             id:
                 type: integer
@@ -10448,6 +10583,9 @@ definitions:
             lastSessionTime:
                 type: string
                 format: date-time
+            failedPasswords:
+                type: integer
+                format: int32
     UserStatusMessage:
         type: object
         properties: 

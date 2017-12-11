@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **DailyLossPercentageAutoLiq** | **double?** | Daily Loss % for an AutoLiq | [optional] 
 **DailyLossAutoLiq** | **double?** | $ Daily Loss for an Auto-Liq | [optional] 
 **WeeklyLossAutoLiq** | **double?** | $ Weekly Loss for an Auto-Liq | [optional] 
+**FlattenTimestamp** | **DateTime?** | Flatten &amp;amp; Cancel | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

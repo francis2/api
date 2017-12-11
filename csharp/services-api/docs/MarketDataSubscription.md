@@ -14,6 +14,8 @@ Name | Type | Description | Notes
 **MarketDataSubscriptionPlanId** | **int?** | id of MarketDataSubscriptionPlan | 
 **Year** | **int?** |  | 
 **Month** | **int?** |  | 
+**RenewalCreditCardId** | **int?** | id of CreditCard | [optional] 
+**RenewalAccountId** | **int?** | id of Account | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

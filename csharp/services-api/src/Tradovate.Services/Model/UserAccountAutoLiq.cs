@@ -53,7 +53,8 @@ namespace Tradovate.Services.Model
         /// <param name="DailyLossPercentageAutoLiq">Daily Loss % for an AutoLiq.</param>
         /// <param name="DailyLossAutoLiq">$ Daily Loss for an Auto-Liq.</param>
         /// <param name="WeeklyLossAutoLiq">$ Weekly Loss for an Auto-Liq.</param>
-        public UserAccountAutoLiq(int? Id = null, double? MarginPercentageAlert = null, double? DailyLossPercentageAlert = null, double? DailyLossAlert = null, double? MarginPercentageLiqOnly = null, double? DailyLossPercentageLiqOnly = null, double? DailyLossLiqOnly = null, double? MarginPercentageAutoLiq = null, double? DailyLossPercentageAutoLiq = null, double? DailyLossAutoLiq = null, double? WeeklyLossAutoLiq = null)
+        /// <param name="FlattenTimestamp">Flatten &amp;amp; Cancel.</param>
+        public UserAccountAutoLiq(int? Id = null, double? MarginPercentageAlert = null, double? DailyLossPercentageAlert = null, double? DailyLossAlert = null, double? MarginPercentageLiqOnly = null, double? DailyLossPercentageLiqOnly = null, double? DailyLossLiqOnly = null, double? MarginPercentageAutoLiq = null, double? DailyLossPercentageAutoLiq = null, double? DailyLossAutoLiq = null, double? WeeklyLossAutoLiq = null, DateTime? FlattenTimestamp = null)
         {
             this.Id = Id;
             this.MarginPercentageAlert = MarginPercentageAlert;
@@ -66,6 +67,7 @@ namespace Tradovate.Services.Model
             this.DailyLossPercentageAutoLiq = DailyLossPercentageAutoLiq;
             this.DailyLossAutoLiq = DailyLossAutoLiq;
             this.WeeklyLossAutoLiq = WeeklyLossAutoLiq;
+            this.FlattenTimestamp = FlattenTimestamp;
         }
         
         /// <summary>
@@ -134,6 +136,12 @@ namespace Tradovate.Services.Model
         [DataMember(Name="weeklyLossAutoLiq", EmitDefaultValue=false)]
         public double? WeeklyLossAutoLiq { get; set; }
         /// <summary>
+        /// Flatten &amp;amp; Cancel
+        /// </summary>
+        /// <value>Flatten &amp;amp; Cancel</value>
+        [DataMember(Name="flattenTimestamp", EmitDefaultValue=false)]
+        public DateTime? FlattenTimestamp { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -152,6 +160,7 @@ namespace Tradovate.Services.Model
             sb.Append("  DailyLossPercentageAutoLiq: ").Append(DailyLossPercentageAutoLiq).Append("\n");
             sb.Append("  DailyLossAutoLiq: ").Append(DailyLossAutoLiq).Append("\n");
             sb.Append("  WeeklyLossAutoLiq: ").Append(WeeklyLossAutoLiq).Append("\n");
+            sb.Append("  FlattenTimestamp: ").Append(FlattenTimestamp).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -242,6 +251,11 @@ namespace Tradovate.Services.Model
                     this.WeeklyLossAutoLiq == other.WeeklyLossAutoLiq ||
                     this.WeeklyLossAutoLiq != null &&
                     this.WeeklyLossAutoLiq.Equals(other.WeeklyLossAutoLiq)
+                ) && 
+                (
+                    this.FlattenTimestamp == other.FlattenTimestamp ||
+                    this.FlattenTimestamp != null &&
+                    this.FlattenTimestamp.Equals(other.FlattenTimestamp)
                 );
         }
 
@@ -278,6 +292,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.DailyLossAutoLiq.GetHashCode();
                 if (this.WeeklyLossAutoLiq != null)
                     hash = hash * 59 + this.WeeklyLossAutoLiq.GetHashCode();
+                if (this.FlattenTimestamp != null)
+                    hash = hash * 59 + this.FlattenTimestamp.GetHashCode();
                 return hash;
             }
         }

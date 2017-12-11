@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **CtaContact** | **string** |  | 
 **CtaEmail** | **string** |  | 
 **Status** | **string** | Accepted, Approved, Declined, Requested, Revoked | 
+**Updated** | **DateTime?** |  | [optional] 
 **ApprovedById** | **int?** | id of User | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

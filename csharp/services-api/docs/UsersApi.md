@@ -8,16 +8,20 @@ Method | HTTP request | Description
 [**AddMarketDataSubscription**](UsersApi.md#addmarketdatasubscription) | **POST** /user/addmarketdatasubscription | 
 [**AddTradovateSubscription**](UsersApi.md#addtradovatesubscription) | **POST** /user/addtradovatesubscription | 
 [**CancelTradovateSubscription**](UsersApi.md#canceltradovatesubscription) | **POST** /user/canceltradovatesubscription | 
+[**CreateMarketDataSubscription**](UsersApi.md#createmarketdatasubscription) | **POST** /marketDataSubscription/create | 
 [**CreateTradovateSubscription**](UsersApi.md#createtradovatesubscription) | **POST** /tradovateSubscription/create | 
 [**CreateUserPlugin**](UsersApi.md#createuserplugin) | **POST** /userPlugin/create | 
+[**DeleteMarketDataSubscription**](UsersApi.md#deletemarketdatasubscription) | **POST** /marketDataSubscription/delete | 
 [**DeleteTradovateSubscription**](UsersApi.md#deletetradovatesubscription) | **POST** /tradovateSubscription/delete | 
 [**DeleteUserPlugin**](UsersApi.md#deleteuserplugin) | **POST** /userPlugin/delete | 
 [**FindCountry**](UsersApi.md#findcountry) | **GET** /country/find | 
 [**FindOrganization**](UsersApi.md#findorganization) | **GET** /organization/find | 
 [**FindUser**](UsersApi.md#finduser) | **GET** /user/find | 
 [**GetAccountTradingPermissions**](UsersApi.md#getaccounttradingpermissions) | **POST** /user/getaccounttradingpermissions | 
+[**GetAllContactInfos**](UsersApi.md#getallcontactinfos) | **GET** /contactInfo/list | 
 [**GetAllCountries**](UsersApi.md#getallcountries) | **GET** /country/list | 
 [**GetAllOrganizations**](UsersApi.md#getallorganizations) | **GET** /organization/list | 
+[**GetAllTradovateSubscriptions**](UsersApi.md#getalltradovatesubscriptions) | **GET** /tradovateSubscription/list | 
 [**GetAllUserPlugins**](UsersApi.md#getalluserplugins) | **GET** /userPlugin/list | 
 [**GetAllUserReadStatuses**](UsersApi.md#getalluserreadstatuses) | **GET** /userReadStatus/list | 
 [**GetAllUserSessionStatses**](UsersApi.md#getallusersessionstatses) | **GET** /userSessionStats/list | 
@@ -64,11 +68,13 @@ Method | HTTP request | Description
 [**OpenDemoAccount**](UsersApi.md#opendemoaccount) | **POST** /user/opendemoaccount | 
 [**RequestTradingPermission**](UsersApi.md#requesttradingpermission) | **POST** /user/requesttradingpermission | 
 [**RevokeTradingPermission**](UsersApi.md#revoketradingpermission) | **POST** /user/revoketradingpermission | 
+[**SetLastNewsReadStatus**](UsersApi.md#setlastnewsreadstatus) | **POST** /userReadStatus/setlastnewsreadstatus | 
 [**SignUpOrganizationMember**](UsersApi.md#signuporganizationmember) | **POST** /user/signuporganizationmember | 
 [**SuggestCountries**](UsersApi.md#suggestcountries) | **GET** /country/suggest | 
 [**SuggestOrganizations**](UsersApi.md#suggestorganizations) | **GET** /organization/suggest | 
 [**SuggestUsers**](UsersApi.md#suggestusers) | **GET** /user/suggest | 
 [**SyncRequest**](UsersApi.md#syncrequest) | **POST** /user/syncrequest | 
+[**UpdateMarketDataSubscription**](UsersApi.md#updatemarketdatasubscription) | **POST** /marketDataSubscription/update | 
 [**UpdateTradovateSubscription**](UsersApi.md#updatetradovatesubscription) | **POST** /tradovateSubscription/update | 
 [**UpdateUserPlugin**](UsersApi.md#updateuserplugin) | **POST** /userPlugin/update | 
 
@@ -329,6 +335,72 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="createmarketdatasubscription"></a>
+# **CreateMarketDataSubscription**
+> MarketDataSubscription CreateMarketDataSubscription (MarketDataSubscription body)
+
+
+
+Creates a new entity of MarketDataSubscription
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class CreateMarketDataSubscriptionExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new MarketDataSubscription(); // MarketDataSubscription | 
+
+            try
+            {
+                MarketDataSubscription result = apiInstance.CreateMarketDataSubscription(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.CreateMarketDataSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**MarketDataSubscription**](MarketDataSubscription.md)|  | 
+
+### Return type
+
+[**MarketDataSubscription**](MarketDataSubscription.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="createtradovatesubscription"></a>
 # **CreateTradovateSubscription**
 > TradovateSubscription CreateTradovateSubscription (TradovateSubscription body)
@@ -449,6 +521,72 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**UserPlugin**](UserPlugin.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletemarketdatasubscription"></a>
+# **DeleteMarketDataSubscription**
+> MarketDataSubscription DeleteMarketDataSubscription (MarketDataSubscription body)
+
+
+
+Updates a existing entity of MarketDataSubscription
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class DeleteMarketDataSubscriptionExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new MarketDataSubscription(); // MarketDataSubscription | 
+
+            try
+            {
+                MarketDataSubscription result = apiInstance.DeleteMarketDataSubscription(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.DeleteMarketDataSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**MarketDataSubscription**](MarketDataSubscription.md)|  | 
+
+### Return type
+
+[**MarketDataSubscription**](MarketDataSubscription.md)
 
 ### Authorization
 
@@ -855,6 +993,68 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getallcontactinfos"></a>
+# **GetAllContactInfos**
+> List<ContactInfo> GetAllContactInfos ()
+
+
+
+Returns all entities of ContactInfo type
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetAllContactInfosExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+
+            try
+            {
+                List&lt;ContactInfo&gt; result = apiInstance.GetAllContactInfos();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetAllContactInfos: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<ContactInfo>**](ContactInfo.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getallcountries"></a>
 # **GetAllCountries**
 > List<Country> GetAllCountries ()
@@ -967,6 +1167,68 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**List<Organization>**](Organization.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getalltradovatesubscriptions"></a>
+# **GetAllTradovateSubscriptions**
+> List<TradovateSubscription> GetAllTradovateSubscriptions ()
+
+
+
+Returns all entities of TradovateSubscription type
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetAllTradovateSubscriptionsExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+
+            try
+            {
+                List&lt;TradovateSubscription&gt; result = apiInstance.GetAllTradovateSubscriptions();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetAllTradovateSubscriptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<TradovateSubscription>**](TradovateSubscription.md)
 
 ### Authorization
 
@@ -3987,6 +4249,70 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="setlastnewsreadstatus"></a>
+# **SetLastNewsReadStatus**
+> UserReadStatusResponse SetLastNewsReadStatus (SetLastNewsReadStatus body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class SetLastNewsReadStatusExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new SetLastNewsReadStatus(); // SetLastNewsReadStatus | 
+
+            try
+            {
+                UserReadStatusResponse result = apiInstance.SetLastNewsReadStatus(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.SetLastNewsReadStatus: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SetLastNewsReadStatus**](SetLastNewsReadStatus.md)|  | 
+
+### Return type
+
+[**UserReadStatusResponse**](UserReadStatusResponse.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="signuporganizationmember"></a>
 # **SignUpOrganizationMember**
 > SignUpResponse SignUpOrganizationMember (SignUpOrganizationMember body)
@@ -4307,6 +4633,72 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SyncMessage**](SyncMessage.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="updatemarketdatasubscription"></a>
+# **UpdateMarketDataSubscription**
+> MarketDataSubscription UpdateMarketDataSubscription (MarketDataSubscription body)
+
+
+
+Updates a existing entity of MarketDataSubscription
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class UpdateMarketDataSubscriptionExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new MarketDataSubscription(); // MarketDataSubscription | 
+
+            try
+            {
+                MarketDataSubscription result = apiInstance.UpdateMarketDataSubscription(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.UpdateMarketDataSubscription: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**MarketDataSubscription**](MarketDataSubscription.md)|  | 
+
+### Return type
+
+[**MarketDataSubscription**](MarketDataSubscription.md)
 
 ### Authorization
 

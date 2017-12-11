@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **UserStatus** | **string** | Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail | [optional] 
 **UserId** | **int?** | id of User | [optional] 
 **Name** | **string** |  | [optional] 
+**HasLive** | **bool?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
