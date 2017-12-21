@@ -14,21 +14,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-frameworkVersion=net45
+frameworkVersion=net46
 netfx=${frameworkVersion#net}
 
 echo "[INFO] Target framework: ${frameworkVersion}"
 
 echo "[INFO] Download nuget and packages"
-wget -nc https://nuget.org/nuget.exe;
+wget -nc https://dist.nuget.org/win-x86-commandline/v4.5.0/nuget.exe
 mozroots --import --sync
 mono nuget.exe install src/Tradovate.Services/packages.config -o packages;
 
 echo "[INFO] Copy DLLs to the 'bin' folder"
 mkdir -p bin;
-cp packages/Newtonsoft.Json.8.0.3/lib/net45/Newtonsoft.Json.dll bin/Newtonsoft.Json.dll;
-cp packages/RestSharp.105.1.0/lib/net45/RestSharp.dll bin/RestSharp.dll;
-cp packages/Websocket4Net.0.14.1/lib/net45/Websocket4Net.dll bin/Websocket4Net.dll;
+cp packages/Newtonsoft.Json.10.0.3/lib/net45/Newtonsoft.Json.dll bin/Newtonsoft.Json.dll;
+cp packages/RestSharp.105.2.2/lib/net46/RestSharp.dll bin/RestSharp.dll;
+cp packages/Websocket4Net.0.15.1/lib/net45/Websocket4Net.dll bin/Websocket4Net.dll;
 
 echo "[INFO] Run 'mcs' to build bin/Tradovate.Services.dll"
 mcs -sdk:${netfx} -r:bin/Newtonsoft.Json.dll,\
