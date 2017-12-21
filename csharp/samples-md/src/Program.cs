@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -333,6 +334,7 @@ namespace Tradovate.MarketData
         {
             var apiInstance = new AuthenticationApi(basePath);
             var body = new AccessTokenRequest(Name: username, Password: password, AppId: "Tradovate.MarketData.SampleApp", AppVersion: "0.1.0");
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             AccessTokenResponse result = apiInstance.AccessTokenRequest(body);
             Debug.WriteLine(result);
             return result;
