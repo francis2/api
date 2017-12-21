@@ -9,6 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Collections.Concurrent;
+using System.Security.Authentication;
 using RestSharp;
 using WebSocket4Net;
 using Newtonsoft.Json;
@@ -72,10 +73,10 @@ namespace Tradovate.Services.Client
         public event EventHandler Closed;
         public event EventHandler<DataUpdate> DataUpdated;
 
-        public WebSocketClient(string uri)
+        public WebSocketClient(string uri, SslProtocols sslProtocols = SslProtocols.Tls12)
         {
             uri = uri.Replace("https:", "wss:") + "/websocket";
-            WebSocket = new WebSocket(uri);
+            WebSocket = new WebSocket(uri, sslProtocols: sslProtocols);
             WebSocket.EnableAutoSendPing = false;
             WebSocket.NoDelay = true;
             WebSocket.MessageReceived += WebSocket_MessageReceived;
