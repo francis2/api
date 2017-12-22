@@ -29,11 +29,13 @@ mkdir -p bin;
 cp packages/Newtonsoft.Json.10.0.3/lib/net45/Newtonsoft.Json.dll bin/Newtonsoft.Json.dll;
 cp packages/RestSharp.105.2.2/lib/net46/RestSharp.dll bin/RestSharp.dll;
 cp packages/Websocket4Net.0.15.1/lib/net45/Websocket4Net.dll bin/Websocket4Net.dll;
+cp packages/SuperSocket.ClientEngine.Core.0.9.0/lib/net45/SuperSocket.ClientEngine.dll bin/SuperSocket.ClientEngine.dll
 
 echo "[INFO] Run 'mcs' to build bin/Tradovate.Services.dll"
 mcs -sdk:${netfx} -r:bin/Newtonsoft.Json.dll,\
 bin/RestSharp.dll,\
 bin/Websocket4Net.dll,\
+bin/SuperSocket.ClientEngine.dll,\
 System.Runtime.Serialization.dll,\
 System.ComponentModel.DataAnnotations.dll \
 -target:library \

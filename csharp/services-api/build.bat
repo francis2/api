@@ -14,16 +14,21 @@
 
 @echo off
 
-SET CSCPATH=%SYSTEMROOT%\Microsoft.NET\Framework\v4.0.30319
-
+SET CLRPATH=%SYSTEMROOT%\Microsoft.NET\Framework\v4.0.30319
+if not defined CSCPATH (
+	echo CSCPATH variable is not defined. Set CSCPATH variable to the folder where Roslyn C# compiler csc.exe is located, like the following:
+	echo 	SET CSCPATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn"
+	exit /b
+)
 
 if not exist ".\nuget.exe" powershell -Command "(new-object System.Net.WebClient).DownloadFile('https://nuget.org/nuget.exe', '.\nuget.exe')"
 .\nuget.exe install src\Tradovate.Services\packages.config -o packages
 
 if not exist ".\bin" mkdir bin
 
-copy packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll bin\Newtonsoft.Json.dll
-copy packages\RestSharp.105.1.0\lib\net45\RestSharp.dll bin\RestSharp.dll
-copy packages\Websocket4Net.0.14.1\lib\net45\Websocket4Net.dll bin\Websocket4Net.dll
+copy packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll bin\Newtonsoft.Json.dll
+copy packages\RestSharp.105.2.2\lib\net46\RestSharp.dll bin\RestSharp.dll
+copy packages\Websocket4Net.0.15.1\lib\net45\Websocket4Net.dll bin\Websocket4Net.dll
+copy packages\SuperSocket.ClientEngine.Core.0.9.0\lib\net45\SuperSocket.ClientEngine.dll bin\SuperSocket.ClientEngine.dll
 
-%CSCPATH%\csc /reference:bin\Newtonsoft.Json.dll;bin\RestSharp.dll;bin/Websocket4Net.dll /target:library /out:bin\Tradovate.Services.dll /recurse:src\Tradovate.Services\*.cs /doc:bin\Tradovate.Services.xml
+%CSCPATH%\csc /reference:bin\Newtonsoft.Json.dll;bin\RestSharp.dll;bin\Websocket4Net.dll;bin\SuperSocket.ClientEngine.dll;System.ComponentModel.DataAnnotations.dll /target:library /out:bin\Tradovate.Services.dll /recurse:src\Tradovate.Services\*.cs /doc:bin\Tradovate.Services.xml /nowarn:1591
