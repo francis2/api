@@ -14,7 +14,6 @@
 
 @echo off
 
-SET CLRPATH=%SYSTEMROOT%\Microsoft.NET\Framework\v4.0.30319
 if not defined CSCPATH (
 	echo CSCPATH variable is not defined. Set CSCPATH variable to the folder where Roslyn C# compiler csc.exe is located, like the following:
 	echo 	SET CSCPATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn"
