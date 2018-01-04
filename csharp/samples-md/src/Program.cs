@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -60,11 +61,11 @@ namespace Tradovate.MarketData
                     {
                         Log.Write("WebSocket closed.");
                     })
-                .Request("Subscribe for ESM7 quotes",
+                .Request("Subscribe for ESM8 quotes",
                     init: () =>
                     {
-                        // The contract ESM7 is specified by contract symbol
-                        return new SubscribeQuote("ESM7");
+                        // The contract ESM8 is specified by contract symbol
+                        return new SubscribeQuote("ESM8");
                     },
                     sender: (api, request) => api.SubscribeQuoteAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
@@ -98,11 +99,11 @@ namespace Tradovate.MarketData
                         }
                     })
                 .ProcessingWhile(TimeSpan.FromSeconds(15))
-                .Request("Unsubscribe from ESM7 quotes",
+                .Request("Unsubscribe from ESM8 quotes",
                     init: () =>
                     {
-                        // The contract ESM7 is specified by contract ID
-                        return new UnsubscribeQuote("1062123");
+                        // The contract ESM8 is specified by contract ID
+                        return new UnsubscribeQuote("1070517");
                     },
                     sender: (api, request) => api.UnsubscribeQuoteAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
@@ -138,11 +139,11 @@ namespace Tradovate.MarketData
                     {
                         Log.Write("WebSocket closed.");
                     })
-                .Request("Subscribe for ESM7 DOM",
+                .Request("Subscribe for ESM8 DOM",
                     init: () =>
                     {
-                        // The contract ESM7 is specified by contract symbol
-                        return new SubscribeDOM("ESM7");
+                        // The contract ESM8 is specified by contract symbol
+                        return new SubscribeDOM("ESM8");
                     },
                     sender: (api, request) => api.SubscribeDOMAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
@@ -170,11 +171,11 @@ namespace Tradovate.MarketData
                         }
                     })
                 .ProcessingWhile(TimeSpan.FromSeconds(15))
-                .Request("Unsubscribe from ESM7 DOM",
+                .Request("Unsubscribe from ESM8 DOM",
                     init: () =>
                     {
-                        // The contract ESM7 is specified by contract ID
-                        return new UnsubscribeDOM("1062123");
+                        // The contract ESM8 is specified by contract ID
+                        return new UnsubscribeDOM("1070517");
                     },
                     sender: (api, request) => api.UnsubscribeDOMAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
@@ -210,8 +211,8 @@ namespace Tradovate.MarketData
                     {
                         Log.Write("WebSocket closed.");
                     })
-                .Request("Subscribe for ESM7 histograms",
-                    init: () => new SubscribeHistogram("ESM7"),
+                .Request("Subscribe for ESM8 histograms",
+                    init: () => new SubscribeHistogram("ESM8"),
                     sender: (api, request) => api.SubscribeHistogramAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
@@ -245,8 +246,8 @@ namespace Tradovate.MarketData
                         }
                     })
                 .ProcessingWhile(TimeSpan.FromSeconds(15))
-                .Request("Unsubscribe from ESM7 histograms",
-                    init: () => new UnsubscribeHistogram("1062123"),
+                .Request("Unsubscribe from ESM8 histograms",
+                    init: () => new UnsubscribeHistogram("1070517"),
                     sender: (api, request) => api.UnsubscribeHistogramAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
                     {
@@ -283,12 +284,12 @@ namespace Tradovate.MarketData
                     {
                         Log.Write("WebSocket closed.");
                     })
-                .Request("Get chart for ESM7",
+                .Request("Get chart for ESM8",
                     init: () =>
                     {
                         var description = new ChartDescription(ChartDescription.UnderlyingTypeEnum.MinuteBar, 15, ChartDescription.ElementSizeUnitEnum.UnderlyingUnits);
                         var timeRange = new ChartTimeRange(AsMuchAsElements: 66);
-                        return new GetChart("ESM7", description, timeRange);
+                        return new GetChart("ESM8", description, timeRange);
                     },
                     sender: (api, request) => api.GetChartAsyncWithHttpInfo(request),
                     responseHandler: (request, response) =>
@@ -333,6 +334,7 @@ namespace Tradovate.MarketData
         {
             var apiInstance = new AuthenticationApi(basePath);
             var body = new AccessTokenRequest(Name: username, Password: password, AppId: "Tradovate.MarketData.SampleApp", AppVersion: "0.1.0");
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             AccessTokenResponse result = apiInstance.AccessTokenRequest(body);
             Debug.WriteLine(result);
             return result;

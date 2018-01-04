@@ -6,6 +6,7 @@
 */
 
 using System.Diagnostics;
+using System.Net;
 using Tradovate.Services.Api;
 using Tradovate.Services.Model;
 
@@ -17,6 +18,7 @@ namespace Tradovate
         {
             var apiInstance = new AuthenticationApi(basePath);
             var body = new AccessTokenRequest(Name: username, Password: password, AppId: "SampleApp", AppVersion: "0.1.0");
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             AccessTokenResponse result = apiInstance.AccessTokenRequest(body);
             Debug.WriteLine(result);
             return result;

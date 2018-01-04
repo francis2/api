@@ -5,3 +5,4 @@ csharp/samples/src/obj
 csharp/samples-md/src/bin
 csharp/samples-md/src/obj
 *.user
+.vs
