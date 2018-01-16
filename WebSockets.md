@@ -2,6 +2,11 @@
 
 The current version of our WebSocket-based protocol is inherited from [SockJS protocol](http://sockjs.github.io/sockjs-protocol/sockjs-protocol-0.3.3.html#section-42) that was used in earlier versions.
 
+# URL
+
+URL for Websocket should be composed as wss://[API].tradovate.com/v1/websocket
+Possible values for [API] can be found here: https://github.com/tradovate/api/blob/master/Access.md#overview
+
 # Server frames
 
 The server can send the next type of frames (from SockJS documentation):
