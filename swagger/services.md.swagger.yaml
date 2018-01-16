@@ -293,6 +293,11 @@ definitions:
                 $ref: '#/definitions/BasicChartDescription'
             withHistogram:
                 type: boolean
+            closeOnly:
+                type: boolean
+            throttle:
+                type: integer
+                format: int32
     ChartSubscriptionResult:
         type: object
         required:
