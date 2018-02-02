@@ -6525,6 +6525,24 @@ paths:
                     description: See definition
                     schema:
                         $ref: '#/definitions/TradingPermissionsResponse'
+    /user/getconnectedapplications:
+        get:
+            operationId: getConnectedApplications
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/GetConnectedApplications'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/ConnectedApplications'
     /user/item:
         get:
             description: Finds an entity of User type by its id
@@ -7143,6 +7161,8 @@ definitions:
                 minimum: 0
                 exclusiveMinimum: true
                 description: "id of TradovateSubscription"
+            cancelReason:
+                type: string
     CashBalance:
         type: object
         required:
@@ -7401,6 +7421,14 @@ definitions:
                 format: int32
             name:
                 type: string
+            description:
+                type: string
+            canUserChoose:
+                type: boolean
+            details:
+                type: string
+            openAccountUrl:
+                type: string
     CloseChat:
         type: object
         required:
@@ -7605,6 +7633,35 @@ definitions:
                 minimum: 0
                 exclusiveMinimum: true
                 description: "id of AdminAlertSignal"
+    ConnectedApplicationInfo:
+        type: object
+        required:
+            - startTime
+            - appId
+            - userAgent
+            - deviceId
+            - ipAddress
+        properties: 
+            startTime:
+                type: string
+                format: date-time
+            appId:
+                type: string
+            userAgent:
+                type: string
+            deviceId:
+                type: string
+            ipAddress:
+                type: string
+    ConnectedApplications:
+        type: object
+        required:
+            - connectedApplications
+        properties: 
+            connectedApplications:
+                type: array
+                items:
+                    $ref: '#/definitions/ConnectedApplicationInfo'
     ContactInfo:
         type: object
         required:
@@ -8138,6 +8195,8 @@ definitions:
                 minimum: 0
                 exclusiveMinimum: true
                 description: "id of Account"
+    GetConnectedApplications:
+        type: object
     GetProductFeeParams:
         type: object
         required:
@@ -8186,6 +8245,7 @@ definitions:
             - riskTimePeriodId
             - initialMargin
             - maintenanceMargin
+            - totalUsedMargin
         properties: 
             id:
                 type: integer
@@ -8209,6 +8269,9 @@ definitions:
                 type: number
                 format: double
             liqOnlyLevel:
+                type: number
+                format: double
+            totalUsedMargin:
                 type: number
                 format: double
     MarkAsReadChatMessage:
@@ -10108,6 +10171,8 @@ definitions:
                 format: double
             cancelledRenewal:
                 type: boolean
+            cancelReason:
+                type: string
     TradovateSubscriptionPlan:
         type: object
         required:
