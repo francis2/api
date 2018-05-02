@@ -8246,6 +8246,7 @@ definitions:
             - initialMargin
             - maintenanceMargin
             - totalUsedMargin
+            - fullInitialMargin
         properties: 
             id:
                 type: integer
@@ -8272,6 +8273,9 @@ definitions:
                 type: number
                 format: double
             totalUsedMargin:
+                type: number
+                format: double
+            fullInitialMargin:
                 type: number
                 format: double
     MarkAsReadChatMessage:
@@ -10337,6 +10341,14 @@ definitions:
                 type: string
                 format: date-time
                 description: "Flatten &amp; Cancel"
+            trailingMaxDrawdown:
+                type: number
+                format: double
+                description: "$ Trailing Max Drawdown"
+            trailingMaxDrawdownLimit:
+                type: number
+                format: double
+                description: "$ Trailing Max Drawdown Limit"
     UserAccountPositionLimit:
         type: object
         required:
