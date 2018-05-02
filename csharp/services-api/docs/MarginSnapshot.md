@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **MaintenanceMargin** | **double?** |  | 
 **AutoLiqLevel** | **double?** |  | [optional] 
 **LiqOnlyLevel** | **double?** |  | [optional] 
+**TotalUsedMargin** | **double?** |  | 
+**FullInitialMargin** | **double?** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

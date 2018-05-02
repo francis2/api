@@ -54,7 +54,9 @@ namespace Tradovate.Services.Model
         /// <param name="MaintenanceMargin">MaintenanceMargin (required).</param>
         /// <param name="AutoLiqLevel">AutoLiqLevel.</param>
         /// <param name="LiqOnlyLevel">LiqOnlyLevel.</param>
-        public MarginSnapshot(int? Id = null, DateTime? Timestamp = null, int? RiskTimePeriodId = null, double? InitialMargin = null, double? MaintenanceMargin = null, double? AutoLiqLevel = null, double? LiqOnlyLevel = null)
+        /// <param name="TotalUsedMargin">TotalUsedMargin (required).</param>
+        /// <param name="FullInitialMargin">FullInitialMargin (required).</param>
+        public MarginSnapshot(int? Id = null, DateTime? Timestamp = null, int? RiskTimePeriodId = null, double? InitialMargin = null, double? MaintenanceMargin = null, double? AutoLiqLevel = null, double? LiqOnlyLevel = null, double? TotalUsedMargin = null, double? FullInitialMargin = null)
         {
             // to ensure "Timestamp" is required (not null)
             if (Timestamp == null)
@@ -91,6 +93,24 @@ namespace Tradovate.Services.Model
             else
             {
                 this.MaintenanceMargin = MaintenanceMargin;
+            }
+            // to ensure "TotalUsedMargin" is required (not null)
+            if (TotalUsedMargin == null)
+            {
+                throw new InvalidDataException("TotalUsedMargin is a required property for MarginSnapshot and cannot be null");
+            }
+            else
+            {
+                this.TotalUsedMargin = TotalUsedMargin;
+            }
+            // to ensure "FullInitialMargin" is required (not null)
+            if (FullInitialMargin == null)
+            {
+                throw new InvalidDataException("FullInitialMargin is a required property for MarginSnapshot and cannot be null");
+            }
+            else
+            {
+                this.FullInitialMargin = FullInitialMargin;
             }
             this.Id = Id;
             this.AutoLiqLevel = AutoLiqLevel;
@@ -134,6 +154,16 @@ namespace Tradovate.Services.Model
         [DataMember(Name="liqOnlyLevel", EmitDefaultValue=false)]
         public double? LiqOnlyLevel { get; set; }
         /// <summary>
+        /// Gets or Sets TotalUsedMargin
+        /// </summary>
+        [DataMember(Name="totalUsedMargin", EmitDefaultValue=false)]
+        public double? TotalUsedMargin { get; set; }
+        /// <summary>
+        /// Gets or Sets FullInitialMargin
+        /// </summary>
+        [DataMember(Name="fullInitialMargin", EmitDefaultValue=false)]
+        public double? FullInitialMargin { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -148,6 +178,8 @@ namespace Tradovate.Services.Model
             sb.Append("  MaintenanceMargin: ").Append(MaintenanceMargin).Append("\n");
             sb.Append("  AutoLiqLevel: ").Append(AutoLiqLevel).Append("\n");
             sb.Append("  LiqOnlyLevel: ").Append(LiqOnlyLevel).Append("\n");
+            sb.Append("  TotalUsedMargin: ").Append(TotalUsedMargin).Append("\n");
+            sb.Append("  FullInitialMargin: ").Append(FullInitialMargin).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -218,6 +250,16 @@ namespace Tradovate.Services.Model
                     this.LiqOnlyLevel == other.LiqOnlyLevel ||
                     this.LiqOnlyLevel != null &&
                     this.LiqOnlyLevel.Equals(other.LiqOnlyLevel)
+                ) && 
+                (
+                    this.TotalUsedMargin == other.TotalUsedMargin ||
+                    this.TotalUsedMargin != null &&
+                    this.TotalUsedMargin.Equals(other.TotalUsedMargin)
+                ) && 
+                (
+                    this.FullInitialMargin == other.FullInitialMargin ||
+                    this.FullInitialMargin != null &&
+                    this.FullInitialMargin.Equals(other.FullInitialMargin)
                 );
         }
 
@@ -246,6 +288,10 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.AutoLiqLevel.GetHashCode();
                 if (this.LiqOnlyLevel != null)
                     hash = hash * 59 + this.LiqOnlyLevel.GetHashCode();
+                if (this.TotalUsedMargin != null)
+                    hash = hash * 59 + this.TotalUsedMargin.GetHashCode();
+                if (this.FullInitialMargin != null)
+                    hash = hash * 59 + this.FullInitialMargin.GetHashCode();
                 return hash;
             }
         }

@@ -26,6 +26,7 @@ Method | HTTP request | Description
 [**GetAllUserReadStatuses**](UsersApi.md#getalluserreadstatuses) | **GET** /userReadStatus/list | 
 [**GetAllUserSessionStatses**](UsersApi.md#getallusersessionstatses) | **GET** /userSessionStats/list | 
 [**GetAllUsers**](UsersApi.md#getallusers) | **GET** /user/list | 
+[**GetConnectedApplications**](UsersApi.md#getconnectedapplications) | **GET** /user/getconnectedapplications | 
 [**GetContactInfo**](UsersApi.md#getcontactinfo) | **GET** /contactInfo/item | 
 [**GetContactInfos**](UsersApi.md#getcontactinfos) | **GET** /contactInfo/items | 
 [**GetCountries**](UsersApi.md#getcountries) | **GET** /country/items | 
@@ -1477,6 +1478,70 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**List<User>**](User.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getconnectedapplications"></a>
+# **GetConnectedApplications**
+> ConnectedApplications GetConnectedApplications (GetConnectedApplications body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetConnectedApplicationsExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+            var body = new GetConnectedApplications(); // GetConnectedApplications | 
+
+            try
+            {
+                ConnectedApplications result = apiInstance.GetConnectedApplications(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetConnectedApplications: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**GetConnectedApplications**](GetConnectedApplications.md)|  | 
+
+### Return type
+
+[**ConnectedApplications**](ConnectedApplications.md)
 
 ### Authorization
 

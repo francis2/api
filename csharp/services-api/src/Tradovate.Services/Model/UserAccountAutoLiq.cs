@@ -54,7 +54,9 @@ namespace Tradovate.Services.Model
         /// <param name="DailyLossAutoLiq">$ Daily Loss for an Auto-Liq.</param>
         /// <param name="WeeklyLossAutoLiq">$ Weekly Loss for an Auto-Liq.</param>
         /// <param name="FlattenTimestamp">Flatten &amp;amp; Cancel.</param>
-        public UserAccountAutoLiq(int? Id = null, double? MarginPercentageAlert = null, double? DailyLossPercentageAlert = null, double? DailyLossAlert = null, double? MarginPercentageLiqOnly = null, double? DailyLossPercentageLiqOnly = null, double? DailyLossLiqOnly = null, double? MarginPercentageAutoLiq = null, double? DailyLossPercentageAutoLiq = null, double? DailyLossAutoLiq = null, double? WeeklyLossAutoLiq = null, DateTime? FlattenTimestamp = null)
+        /// <param name="TrailingMaxDrawdown">$ Trailing Max Drawdown.</param>
+        /// <param name="TrailingMaxDrawdownLimit">$ Trailing Max Drawdown Limit.</param>
+        public UserAccountAutoLiq(int? Id = null, double? MarginPercentageAlert = null, double? DailyLossPercentageAlert = null, double? DailyLossAlert = null, double? MarginPercentageLiqOnly = null, double? DailyLossPercentageLiqOnly = null, double? DailyLossLiqOnly = null, double? MarginPercentageAutoLiq = null, double? DailyLossPercentageAutoLiq = null, double? DailyLossAutoLiq = null, double? WeeklyLossAutoLiq = null, DateTime? FlattenTimestamp = null, double? TrailingMaxDrawdown = null, double? TrailingMaxDrawdownLimit = null)
         {
             this.Id = Id;
             this.MarginPercentageAlert = MarginPercentageAlert;
@@ -68,6 +70,8 @@ namespace Tradovate.Services.Model
             this.DailyLossAutoLiq = DailyLossAutoLiq;
             this.WeeklyLossAutoLiq = WeeklyLossAutoLiq;
             this.FlattenTimestamp = FlattenTimestamp;
+            this.TrailingMaxDrawdown = TrailingMaxDrawdown;
+            this.TrailingMaxDrawdownLimit = TrailingMaxDrawdownLimit;
         }
         
         /// <summary>
@@ -142,6 +146,18 @@ namespace Tradovate.Services.Model
         [DataMember(Name="flattenTimestamp", EmitDefaultValue=false)]
         public DateTime? FlattenTimestamp { get; set; }
         /// <summary>
+        /// $ Trailing Max Drawdown
+        /// </summary>
+        /// <value>$ Trailing Max Drawdown</value>
+        [DataMember(Name="trailingMaxDrawdown", EmitDefaultValue=false)]
+        public double? TrailingMaxDrawdown { get; set; }
+        /// <summary>
+        /// $ Trailing Max Drawdown Limit
+        /// </summary>
+        /// <value>$ Trailing Max Drawdown Limit</value>
+        [DataMember(Name="trailingMaxDrawdownLimit", EmitDefaultValue=false)]
+        public double? TrailingMaxDrawdownLimit { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -161,6 +177,8 @@ namespace Tradovate.Services.Model
             sb.Append("  DailyLossAutoLiq: ").Append(DailyLossAutoLiq).Append("\n");
             sb.Append("  WeeklyLossAutoLiq: ").Append(WeeklyLossAutoLiq).Append("\n");
             sb.Append("  FlattenTimestamp: ").Append(FlattenTimestamp).Append("\n");
+            sb.Append("  TrailingMaxDrawdown: ").Append(TrailingMaxDrawdown).Append("\n");
+            sb.Append("  TrailingMaxDrawdownLimit: ").Append(TrailingMaxDrawdownLimit).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -256,6 +274,16 @@ namespace Tradovate.Services.Model
                     this.FlattenTimestamp == other.FlattenTimestamp ||
                     this.FlattenTimestamp != null &&
                     this.FlattenTimestamp.Equals(other.FlattenTimestamp)
+                ) && 
+                (
+                    this.TrailingMaxDrawdown == other.TrailingMaxDrawdown ||
+                    this.TrailingMaxDrawdown != null &&
+                    this.TrailingMaxDrawdown.Equals(other.TrailingMaxDrawdown)
+                ) && 
+                (
+                    this.TrailingMaxDrawdownLimit == other.TrailingMaxDrawdownLimit ||
+                    this.TrailingMaxDrawdownLimit != null &&
+                    this.TrailingMaxDrawdownLimit.Equals(other.TrailingMaxDrawdownLimit)
                 );
         }
 
@@ -294,6 +322,10 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.WeeklyLossAutoLiq.GetHashCode();
                 if (this.FlattenTimestamp != null)
                     hash = hash * 59 + this.FlattenTimestamp.GetHashCode();
+                if (this.TrailingMaxDrawdown != null)
+                    hash = hash * 59 + this.TrailingMaxDrawdown.GetHashCode();
+                if (this.TrailingMaxDrawdownLimit != null)
+                    hash = hash * 59 + this.TrailingMaxDrawdownLimit.GetHashCode();
                 return hash;
             }
         }

@@ -486,6 +486,27 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ConnectedApplications</returns>
+        ConnectedApplications GetConnectedApplications (GetConnectedApplications body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of ConnectedApplications</returns>
+        ApiResponse<ConnectedApplications> GetConnectedApplicationsWithHttpInfo (GetConnectedApplications body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
         /// Finds an entity of ContactInfo type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2007,6 +2028,27 @@ namespace Tradovate.Services.Api
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;User&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<User>>> GetAllUsersAsyncWithHttpInfo ();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ConnectedApplications</returns>
+        System.Threading.Tasks.Task<ConnectedApplications> GetConnectedApplicationsAsync (GetConnectedApplications body);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (ConnectedApplications)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ConnectedApplications>> GetConnectedApplicationsAsyncWithHttpInfo (GetConnectedApplications body);
         /// <summary>
         /// 
         /// </summary>
@@ -6639,6 +6681,174 @@ namespace Tradovate.Services.Api
             return new ApiResponse<List<User>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (List<User>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<User>)));
+            
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ConnectedApplications</returns>
+        public ConnectedApplications GetConnectedApplications (GetConnectedApplications body)
+        {
+             ApiResponse<ConnectedApplications> localVarResponse = GetConnectedApplicationsWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>ApiResponse of ConnectedApplications</returns>
+        public ApiResponse< ConnectedApplications > GetConnectedApplicationsWithHttpInfo (GetConnectedApplications body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->GetConnectedApplications");
+
+            var localVarPath = "/user/getconnectedapplications";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetConnectedApplications", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectedApplications>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectedApplications) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectedApplications)));
+            
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ConnectedApplications</returns>
+        public async System.Threading.Tasks.Task<ConnectedApplications> GetConnectedApplicationsAsync (GetConnectedApplications body)
+        {
+             ApiResponse<ConnectedApplications> localVarResponse = await GetConnectedApplicationsAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <returns>Task of ApiResponse (ConnectedApplications)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectedApplications>> GetConnectedApplicationsAsyncWithHttpInfo (GetConnectedApplications body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->GetConnectedApplications");
+
+            var localVarPath = "/user/getconnectedapplications";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (body != null && body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetConnectedApplications", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ConnectedApplications>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ConnectedApplications) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ConnectedApplications)));
             
         }
 

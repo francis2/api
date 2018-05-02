@@ -7421,14 +7421,6 @@ definitions:
                 format: int32
             name:
                 type: string
-            description:
-                type: string
-            canUserChoose:
-                type: boolean
-            details:
-                type: string
-            openAccountUrl:
-                type: string
     CloseChat:
         type: object
         required:

@@ -60,7 +60,8 @@ namespace Tradovate.Services.Model
         /// <param name="ExpirationDate">ExpirationDate (required).</param>
         /// <param name="PaidAmount">PaidAmount (required).</param>
         /// <param name="CancelledRenewal">CancelledRenewal.</param>
-        public TradovateSubscription(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CreditCardTransactionId = null, int? CashBalanceLogId = null, int? CreditCardId = null, int? AccountId = null, int? TradovateSubscriptionPlanId = null, TradeDate StartDate = null, TradeDate ExpirationDate = null, double? PaidAmount = null, bool? CancelledRenewal = null)
+        /// <param name="CancelReason">CancelReason.</param>
+        public TradovateSubscription(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CreditCardTransactionId = null, int? CashBalanceLogId = null, int? CreditCardId = null, int? AccountId = null, int? TradovateSubscriptionPlanId = null, TradeDate StartDate = null, TradeDate ExpirationDate = null, double? PaidAmount = null, bool? CancelledRenewal = null, string CancelReason = null)
         {
             // to ensure "UserId" is required (not null)
             if (UserId == null)
@@ -131,6 +132,7 @@ namespace Tradovate.Services.Model
             this.CreditCardId = CreditCardId;
             this.AccountId = AccountId;
             this.CancelledRenewal = CancelledRenewal;
+            this.CancelReason = CancelReason;
         }
         
         /// <summary>
@@ -205,6 +207,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="cancelledRenewal", EmitDefaultValue=false)]
         public bool? CancelledRenewal { get; set; }
         /// <summary>
+        /// Gets or Sets CancelReason
+        /// </summary>
+        [DataMember(Name="cancelReason", EmitDefaultValue=false)]
+        public string CancelReason { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -225,6 +232,7 @@ namespace Tradovate.Services.Model
             sb.Append("  ExpirationDate: ").Append(ExpirationDate).Append("\n");
             sb.Append("  PaidAmount: ").Append(PaidAmount).Append("\n");
             sb.Append("  CancelledRenewal: ").Append(CancelledRenewal).Append("\n");
+            sb.Append("  CancelReason: ").Append(CancelReason).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -325,6 +333,11 @@ namespace Tradovate.Services.Model
                     this.CancelledRenewal == other.CancelledRenewal ||
                     this.CancelledRenewal != null &&
                     this.CancelledRenewal.Equals(other.CancelledRenewal)
+                ) && 
+                (
+                    this.CancelReason == other.CancelReason ||
+                    this.CancelReason != null &&
+                    this.CancelReason.Equals(other.CancelReason)
                 );
         }
 
@@ -365,6 +378,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.PaidAmount.GetHashCode();
                 if (this.CancelledRenewal != null)
                     hash = hash * 59 + this.CancelledRenewal.GetHashCode();
+                if (this.CancelReason != null)
+                    hash = hash * 59 + this.CancelReason.GetHashCode();
                 return hash;
             }
         }

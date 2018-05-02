@@ -15,6 +15,8 @@ Name | Type | Description | Notes
 **DailyLossAutoLiq** | **double?** | $ Daily Loss for an Auto-Liq | [optional] 
 **WeeklyLossAutoLiq** | **double?** | $ Weekly Loss for an Auto-Liq | [optional] 
 **FlattenTimestamp** | **DateTime?** | Flatten &amp;amp; Cancel | [optional] 
+**TrailingMaxDrawdown** | **double?** | $ Trailing Max Drawdown | [optional] 
+**TrailingMaxDrawdownLimit** | **double?** | $ Trailing Max Drawdown Limit | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

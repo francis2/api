@@ -34,46 +34,38 @@ using Newtonsoft.Json.Converters;
 namespace Tradovate.Services.Model
 {
     /// <summary>
-    /// CancelTradovateSubscription
+    /// ConnectedApplications
     /// </summary>
     [DataContract]
-    public partial class CancelTradovateSubscription :  IEquatable<CancelTradovateSubscription>
+    public partial class ConnectedApplications :  IEquatable<ConnectedApplications>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CancelTradovateSubscription" /> class.
+        /// Initializes a new instance of the <see cref="ConnectedApplications" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected CancelTradovateSubscription() { }
+        protected ConnectedApplications() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="CancelTradovateSubscription" /> class.
+        /// Initializes a new instance of the <see cref="ConnectedApplications" /> class.
         /// </summary>
-        /// <param name="TradovateSubscriptionId">id of TradovateSubscription (required).</param>
-        /// <param name="CancelReason">CancelReason.</param>
-        public CancelTradovateSubscription(int? TradovateSubscriptionId = null, string CancelReason = null)
+        /// <param name="_ConnectedApplications">_ConnectedApplications (required).</param>
+        public ConnectedApplications(List<ConnectedApplicationInfo> _ConnectedApplications = null)
         {
-            // to ensure "TradovateSubscriptionId" is required (not null)
-            if (TradovateSubscriptionId == null)
+            // to ensure "_ConnectedApplications" is required (not null)
+            if (_ConnectedApplications == null)
             {
-                throw new InvalidDataException("TradovateSubscriptionId is a required property for CancelTradovateSubscription and cannot be null");
+                throw new InvalidDataException("_ConnectedApplications is a required property for ConnectedApplications and cannot be null");
             }
             else
             {
-                this.TradovateSubscriptionId = TradovateSubscriptionId;
+                this._ConnectedApplications = _ConnectedApplications;
             }
-            this.CancelReason = CancelReason;
         }
         
         /// <summary>
-        /// id of TradovateSubscription
+        /// Gets or Sets _ConnectedApplications
         /// </summary>
-        /// <value>id of TradovateSubscription</value>
-        [DataMember(Name="tradovateSubscriptionId", EmitDefaultValue=false)]
-        public int? TradovateSubscriptionId { get; set; }
-        /// <summary>
-        /// Gets or Sets CancelReason
-        /// </summary>
-        [DataMember(Name="cancelReason", EmitDefaultValue=false)]
-        public string CancelReason { get; set; }
+        [DataMember(Name="connectedApplications", EmitDefaultValue=false)]
+        public List<ConnectedApplicationInfo> _ConnectedApplications { get; set; }
         /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
@@ -81,9 +73,8 @@ namespace Tradovate.Services.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class CancelTradovateSubscription {\n");
-            sb.Append("  TradovateSubscriptionId: ").Append(TradovateSubscriptionId).Append("\n");
-            sb.Append("  CancelReason: ").Append(CancelReason).Append("\n");
+            sb.Append("class ConnectedApplications {\n");
+            sb.Append("  _ConnectedApplications: ").Append(_ConnectedApplications).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -105,15 +96,15 @@ namespace Tradovate.Services.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as CancelTradovateSubscription);
+            return this.Equals(obj as ConnectedApplications);
         }
 
         /// <summary>
-        /// Returns true if CancelTradovateSubscription instances are equal
+        /// Returns true if ConnectedApplications instances are equal
         /// </summary>
-        /// <param name="other">Instance of CancelTradovateSubscription to be compared</param>
+        /// <param name="other">Instance of ConnectedApplications to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CancelTradovateSubscription other)
+        public bool Equals(ConnectedApplications other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)
@@ -121,14 +112,9 @@ namespace Tradovate.Services.Model
 
             return 
                 (
-                    this.TradovateSubscriptionId == other.TradovateSubscriptionId ||
-                    this.TradovateSubscriptionId != null &&
-                    this.TradovateSubscriptionId.Equals(other.TradovateSubscriptionId)
-                ) && 
-                (
-                    this.CancelReason == other.CancelReason ||
-                    this.CancelReason != null &&
-                    this.CancelReason.Equals(other.CancelReason)
+                    this._ConnectedApplications == other._ConnectedApplications ||
+                    this._ConnectedApplications != null &&
+                    this._ConnectedApplications.SequenceEqual(other._ConnectedApplications)
                 );
         }
 
@@ -143,10 +129,8 @@ namespace Tradovate.Services.Model
             {
                 int hash = 41;
                 // Suitable nullity checks etc, of course :)
-                if (this.TradovateSubscriptionId != null)
-                    hash = hash * 59 + this.TradovateSubscriptionId.GetHashCode();
-                if (this.CancelReason != null)
-                    hash = hash * 59 + this.CancelReason.GetHashCode();
+                if (this._ConnectedApplications != null)
+                    hash = hash * 59 + this._ConnectedApplications.GetHashCode();
                 return hash;
             }
         }
