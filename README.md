@@ -22,3 +22,7 @@ Tradovate has a separate environment established for developers to use for testi
 
 # Issue Reporting
 Issues can be reported through https://github.com/tradovate/api/issues
+
+# Custom Indicators
+
+If you need just to create an indicator, please consider our [Custom Indicators](https://github.com/tradovate/custom-indicators)
