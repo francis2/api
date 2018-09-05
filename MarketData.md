@@ -327,6 +327,6 @@ A response for `md/getChart` request contains two subscription ID, `historicalId
 
 ```js
 {
-  "subscriptionId": 123456 // The value of real-time chart subscription ID from `md/getChart` response
+  "subscriptionId": 123456 // The value of historical chart subscription ID from `md/getChart` response
 }
 ```
