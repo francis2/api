@@ -268,39 +268,6 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/CashBalanceLog'
-    /cashBalanceLog/list:
-        get:
-            description: Returns all entities of CashBalanceLog type
-            operationId: getAllCashBalanceLogs
-            security:
-                - bearer_access_token: []
-            tags:
-                - Accounting
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        type: array
-                        items:
-                            $ref: '#/definitions/CashBalanceLog'
-    /cashBalance/changedemobalance:
-        post:
-            operationId: changeDemoBalance
-            security:
-                - bearer_access_token: []
-            parameters:
-                - name: body
-                  in: body
-                  required: true
-                  schema:
-                    $ref: '#/definitions/ChangeDemoBalance'
-            tags:
-                - Accounting
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        $ref: '#/definitions/CashBalanceSnapshot'
     /cashBalance/deps:
         get:
             description: Returns all entities of CashBalance type related to Account type
@@ -4516,21 +4483,6 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/PositionLog'
-    /positionLog/list:
-        get:
-            description: Returns all entities of PositionLog type
-            operationId: getAllPositionLogs
-            security:
-                - bearer_access_token: []
-            tags:
-                - Positions
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        type: array
-                        items:
-                            $ref: '#/definitions/PositionLog'
     /position/deps:
         get:
             description: Returns all entities of Position type related to Account type
@@ -5381,21 +5333,6 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/ContactInfo'
-    /contactInfo/list:
-        get:
-            description: Returns all entities of ContactInfo type
-            operationId: getAllContactInfos
-            security:
-                - bearer_access_token: []
-            tags:
-                - Users
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        type: array
-                        items:
-                            $ref: '#/definitions/ContactInfo'
     /country/find:
         get:
             description: Finds an entity of Country type by its name
@@ -5614,6 +5551,21 @@ paths:
                   items:
                     type: integer
                   collectionFormat: csv
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        type: array
+                        items:
+                            $ref: '#/definitions/MarketDataSubscription'
+    /marketDataSubscription/list:
+        get:
+            description: Returns all entities of MarketDataSubscription type
+            operationId: getAllMarketDataSubscriptions
+            security:
+                - bearer_access_token: []
             tags:
                 - Users
             responses:
@@ -7307,21 +7259,6 @@ definitions:
             netLiq:
                 type: number
                 format: double
-    ChangeDemoBalance:
-        type: object
-        required:
-            - accountId
-            - cashChange
-        properties: 
-            accountId:
-                type: integer
-                format: int32
-                minimum: 0
-                exclusiveMinimum: true
-                description: "id of Account"
-            cashChange:
-                type: number
-                format: double
     Chat:
         type: object
         required:
@@ -8430,10 +8367,11 @@ definitions:
                 description: "Non-empty if the request failed"
             errorCode:
                 type: string
-                description: "ConflictWithExisting, DowngradeNotAllowed, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError"
+                description: "ConflictWithExisting, DowngradeNotAllowed, IncompatibleCMEMarketDataSubscriptionPlans, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError"
                 enum:
                     - IncorrectPaymentMethod
                     - UnknownError
+                    - IncompatibleCMEMarketDataSubscriptionPlans
                     - InsufficientFunds
                     - ConflictWithExisting
                     - PaymentProviderError
@@ -9524,6 +9462,9 @@ definitions:
             tickSize:
                 type: number
                 format: double
+                minimum: 0
+                exclusiveMinimum: true
+                description: "Product Tick Size"
     ProductFeeParams:
         type: object
         required:
@@ -9923,6 +9864,22 @@ definitions:
                 type: array
                 items:
                     $ref: '#/definitions/Account'
+            cashBalances:
+                type: array
+                items:
+                    $ref: '#/definitions/CashBalance'
+            currencies:
+                type: array
+                items:
+                    $ref: '#/definitions/Currency'
+            positions:
+                type: array
+                items:
+                    $ref: '#/definitions/Position'
+            fillPairs:
+                type: array
+                items:
+                    $ref: '#/definitions/FillPair'
             orders:
                 type: array
                 items:
@@ -9967,22 +9924,6 @@ definitions:
                 type: array
                 items:
                     $ref: '#/definitions/Fill'
-            cashBalances:
-                type: array
-                items:
-                    $ref: '#/definitions/CashBalance'
-            currencies:
-                type: array
-                items:
-                    $ref: '#/definitions/Currency'
-            positions:
-                type: array
-                items:
-                    $ref: '#/definitions/Position'
-            fillPairs:
-                type: array
-                items:
-                    $ref: '#/definitions/FillPair'
             orderStrategies:
                 type: array
                 items:
@@ -10235,10 +10176,11 @@ definitions:
                 description: "Non-empty if the request failed"
             errorCode:
                 type: string
-                description: "ConflictWithExisting, DowngradeNotAllowed, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError"
+                description: "ConflictWithExisting, DowngradeNotAllowed, IncompatibleCMEMarketDataSubscriptionPlans, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError"
                 enum:
                     - IncorrectPaymentMethod
                     - UnknownError
+                    - IncompatibleCMEMarketDataSubscriptionPlans
                     - InsufficientFunds
                     - ConflictWithExisting
                     - PaymentProviderError

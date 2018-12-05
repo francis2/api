@@ -53,6 +53,24 @@ paths:
                     description: See definition
                     schema:
                         $ref: '#/definitions/ChartSubscriptionResult'
+    /md/getcontractrollvolumes:
+        post:
+            operationId: getContractRollVolumes
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/GetContractRollVolumes'
+            tags:
+                - Prices
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/ContractRollVolumes'
     /md/subscribedom:
         post:
             operationId: subscribeDOM
@@ -344,6 +362,15 @@ definitions:
             asMuchAsElements:
                 type: integer
                 format: int32
+    ContractRollVolumes:
+        type: object
+        required:
+            - rollCandidates
+        properties: 
+            rollCandidates:
+                type: array
+                items:
+                    $ref: '#/definitions/ContractRollVolume'
     DOM:
         type: object
         required:
@@ -387,6 +414,15 @@ definitions:
                 $ref: '#/definitions/ChartTimeRange'
             customSession:
                 $ref: '#/definitions/ChartCustomSession'
+    GetContractRollVolumes:
+        type: object
+        required:
+            - symbols
+        properties: 
+            symbols:
+                type: array
+                items:
+                    type: string
     Histogram:
         type: object
         required:
@@ -458,6 +494,9 @@ definitions:
             - downVolume
             - upTicks
             - downTicks
+            - histogram
+            - bidVolume
+            - offerVolume
         properties: 
             timestamp:
                 type: string
