@@ -18,8 +18,8 @@ Method | HTTP request | Description
 [**FindOrganization**](UsersApi.md#findorganization) | **GET** /organization/find | 
 [**FindUser**](UsersApi.md#finduser) | **GET** /user/find | 
 [**GetAccountTradingPermissions**](UsersApi.md#getaccounttradingpermissions) | **POST** /user/getaccounttradingpermissions | 
-[**GetAllContactInfos**](UsersApi.md#getallcontactinfos) | **GET** /contactInfo/list | 
 [**GetAllCountries**](UsersApi.md#getallcountries) | **GET** /country/list | 
+[**GetAllMarketDataSubscriptions**](UsersApi.md#getallmarketdatasubscriptions) | **GET** /marketDataSubscription/list | 
 [**GetAllOrganizations**](UsersApi.md#getallorganizations) | **GET** /organization/list | 
 [**GetAllTradovateSubscriptions**](UsersApi.md#getalltradovatesubscriptions) | **GET** /tradovateSubscription/list | 
 [**GetAllUserPlugins**](UsersApi.md#getalluserplugins) | **GET** /userPlugin/list | 
@@ -994,68 +994,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getallcontactinfos"></a>
-# **GetAllContactInfos**
-> List<ContactInfo> GetAllContactInfos ()
-
-
-
-Returns all entities of ContactInfo type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetAllContactInfosExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-
-            try
-            {
-                List&lt;ContactInfo&gt; result = apiInstance.GetAllContactInfos();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetAllContactInfos: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<ContactInfo>**](ContactInfo.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getallcountries"></a>
 # **GetAllCountries**
 > List<Country> GetAllCountries ()
@@ -1106,6 +1044,68 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**List<Country>**](Country.md)
+
+### Authorization
+
+[bearer_access_token](../README.md#bearer_access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getallmarketdatasubscriptions"></a>
+# **GetAllMarketDataSubscriptions**
+> List<MarketDataSubscription> GetAllMarketDataSubscriptions ()
+
+
+
+Returns all entities of MarketDataSubscription type
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Tradovate.Services.Api;
+using Tradovate.Services.Client;
+using Tradovate.Services.Model;
+
+namespace Example
+{
+    public class GetAllMarketDataSubscriptionsExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: bearer_access_token
+            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
+
+            var apiInstance = new UsersApi();
+
+            try
+            {
+                List&lt;MarketDataSubscription&gt; result = apiInstance.GetAllMarketDataSubscriptions();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetAllMarketDataSubscriptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<MarketDataSubscription>**](MarketDataSubscription.md)
 
 ### Authorization
 

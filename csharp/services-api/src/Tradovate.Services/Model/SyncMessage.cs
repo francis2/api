@@ -49,6 +49,10 @@ namespace Tradovate.Services.Model
         /// </summary>
         /// <param name="Users">Users (required).</param>
         /// <param name="Accounts">Accounts.</param>
+        /// <param name="CashBalances">CashBalances.</param>
+        /// <param name="Currencies">Currencies.</param>
+        /// <param name="Positions">Positions.</param>
+        /// <param name="FillPairs">FillPairs.</param>
         /// <param name="Orders">Orders.</param>
         /// <param name="Contracts">Contracts.</param>
         /// <param name="ContractMaturities">ContractMaturities.</param>
@@ -60,10 +64,6 @@ namespace Tradovate.Services.Model
         /// <param name="ExecutionReports">ExecutionReports.</param>
         /// <param name="OrderVersions">OrderVersions.</param>
         /// <param name="Fills">Fills.</param>
-        /// <param name="CashBalances">CashBalances.</param>
-        /// <param name="Currencies">Currencies.</param>
-        /// <param name="Positions">Positions.</param>
-        /// <param name="FillPairs">FillPairs.</param>
         /// <param name="OrderStrategies">OrderStrategies.</param>
         /// <param name="OrderStrategyLinks">OrderStrategyLinks.</param>
         /// <param name="UserProperties">UserProperties.</param>
@@ -72,7 +72,7 @@ namespace Tradovate.Services.Model
         /// <param name="UserReadStatuses">UserReadStatuses.</param>
         /// <param name="ContractGroups">ContractGroups (required).</param>
         /// <param name="OrderStrategyTypes">OrderStrategyTypes.</param>
-        public SyncMessage(List<User> Users = null, List<Account> Accounts = null, List<Order> Orders = null, List<Contract> Contracts = null, List<ContractMaturity> ContractMaturities = null, List<Product> Products = null, List<Exchange> Exchanges = null, List<SpreadDefinition> SpreadDefinitions = null, List<Command> Commands = null, List<CommandReport> CommandReports = null, List<ExecutionReport> ExecutionReports = null, List<OrderVersion> OrderVersions = null, List<Fill> Fills = null, List<CashBalance> CashBalances = null, List<Currency> Currencies = null, List<Position> Positions = null, List<FillPair> FillPairs = null, List<OrderStrategy> OrderStrategies = null, List<OrderStrategyLink> OrderStrategyLinks = null, List<UserProperty> UserProperties = null, List<Property> Properties = null, List<UserPlugin> UserPlugins = null, List<UserReadStatus> UserReadStatuses = null, List<ContractGroup> ContractGroups = null, List<OrderStrategyType> OrderStrategyTypes = null)
+        public SyncMessage(List<User> Users = null, List<Account> Accounts = null, List<CashBalance> CashBalances = null, List<Currency> Currencies = null, List<Position> Positions = null, List<FillPair> FillPairs = null, List<Order> Orders = null, List<Contract> Contracts = null, List<ContractMaturity> ContractMaturities = null, List<Product> Products = null, List<Exchange> Exchanges = null, List<SpreadDefinition> SpreadDefinitions = null, List<Command> Commands = null, List<CommandReport> CommandReports = null, List<ExecutionReport> ExecutionReports = null, List<OrderVersion> OrderVersions = null, List<Fill> Fills = null, List<OrderStrategy> OrderStrategies = null, List<OrderStrategyLink> OrderStrategyLinks = null, List<UserProperty> UserProperties = null, List<Property> Properties = null, List<UserPlugin> UserPlugins = null, List<UserReadStatus> UserReadStatuses = null, List<ContractGroup> ContractGroups = null, List<OrderStrategyType> OrderStrategyTypes = null)
         {
             // to ensure "Users" is required (not null)
             if (Users == null)
@@ -93,6 +93,10 @@ namespace Tradovate.Services.Model
                 this.ContractGroups = ContractGroups;
             }
             this.Accounts = Accounts;
+            this.CashBalances = CashBalances;
+            this.Currencies = Currencies;
+            this.Positions = Positions;
+            this.FillPairs = FillPairs;
             this.Orders = Orders;
             this.Contracts = Contracts;
             this.ContractMaturities = ContractMaturities;
@@ -104,10 +108,6 @@ namespace Tradovate.Services.Model
             this.ExecutionReports = ExecutionReports;
             this.OrderVersions = OrderVersions;
             this.Fills = Fills;
-            this.CashBalances = CashBalances;
-            this.Currencies = Currencies;
-            this.Positions = Positions;
-            this.FillPairs = FillPairs;
             this.OrderStrategies = OrderStrategies;
             this.OrderStrategyLinks = OrderStrategyLinks;
             this.UserProperties = UserProperties;
@@ -127,6 +127,26 @@ namespace Tradovate.Services.Model
         /// </summary>
         [DataMember(Name="accounts", EmitDefaultValue=false)]
         public List<Account> Accounts { get; set; }
+        /// <summary>
+        /// Gets or Sets CashBalances
+        /// </summary>
+        [DataMember(Name="cashBalances", EmitDefaultValue=false)]
+        public List<CashBalance> CashBalances { get; set; }
+        /// <summary>
+        /// Gets or Sets Currencies
+        /// </summary>
+        [DataMember(Name="currencies", EmitDefaultValue=false)]
+        public List<Currency> Currencies { get; set; }
+        /// <summary>
+        /// Gets or Sets Positions
+        /// </summary>
+        [DataMember(Name="positions", EmitDefaultValue=false)]
+        public List<Position> Positions { get; set; }
+        /// <summary>
+        /// Gets or Sets FillPairs
+        /// </summary>
+        [DataMember(Name="fillPairs", EmitDefaultValue=false)]
+        public List<FillPair> FillPairs { get; set; }
         /// <summary>
         /// Gets or Sets Orders
         /// </summary>
@@ -183,26 +203,6 @@ namespace Tradovate.Services.Model
         [DataMember(Name="fills", EmitDefaultValue=false)]
         public List<Fill> Fills { get; set; }
         /// <summary>
-        /// Gets or Sets CashBalances
-        /// </summary>
-        [DataMember(Name="cashBalances", EmitDefaultValue=false)]
-        public List<CashBalance> CashBalances { get; set; }
-        /// <summary>
-        /// Gets or Sets Currencies
-        /// </summary>
-        [DataMember(Name="currencies", EmitDefaultValue=false)]
-        public List<Currency> Currencies { get; set; }
-        /// <summary>
-        /// Gets or Sets Positions
-        /// </summary>
-        [DataMember(Name="positions", EmitDefaultValue=false)]
-        public List<Position> Positions { get; set; }
-        /// <summary>
-        /// Gets or Sets FillPairs
-        /// </summary>
-        [DataMember(Name="fillPairs", EmitDefaultValue=false)]
-        public List<FillPair> FillPairs { get; set; }
-        /// <summary>
         /// Gets or Sets OrderStrategies
         /// </summary>
         [DataMember(Name="orderStrategies", EmitDefaultValue=false)]
@@ -252,6 +252,10 @@ namespace Tradovate.Services.Model
             sb.Append("class SyncMessage {\n");
             sb.Append("  Users: ").Append(Users).Append("\n");
             sb.Append("  Accounts: ").Append(Accounts).Append("\n");
+            sb.Append("  CashBalances: ").Append(CashBalances).Append("\n");
+            sb.Append("  Currencies: ").Append(Currencies).Append("\n");
+            sb.Append("  Positions: ").Append(Positions).Append("\n");
+            sb.Append("  FillPairs: ").Append(FillPairs).Append("\n");
             sb.Append("  Orders: ").Append(Orders).Append("\n");
             sb.Append("  Contracts: ").Append(Contracts).Append("\n");
             sb.Append("  ContractMaturities: ").Append(ContractMaturities).Append("\n");
@@ -263,10 +267,6 @@ namespace Tradovate.Services.Model
             sb.Append("  ExecutionReports: ").Append(ExecutionReports).Append("\n");
             sb.Append("  OrderVersions: ").Append(OrderVersions).Append("\n");
             sb.Append("  Fills: ").Append(Fills).Append("\n");
-            sb.Append("  CashBalances: ").Append(CashBalances).Append("\n");
-            sb.Append("  Currencies: ").Append(Currencies).Append("\n");
-            sb.Append("  Positions: ").Append(Positions).Append("\n");
-            sb.Append("  FillPairs: ").Append(FillPairs).Append("\n");
             sb.Append("  OrderStrategies: ").Append(OrderStrategies).Append("\n");
             sb.Append("  OrderStrategyLinks: ").Append(OrderStrategyLinks).Append("\n");
             sb.Append("  UserProperties: ").Append(UserProperties).Append("\n");
@@ -322,6 +322,26 @@ namespace Tradovate.Services.Model
                     this.Accounts.SequenceEqual(other.Accounts)
                 ) && 
                 (
+                    this.CashBalances == other.CashBalances ||
+                    this.CashBalances != null &&
+                    this.CashBalances.SequenceEqual(other.CashBalances)
+                ) && 
+                (
+                    this.Currencies == other.Currencies ||
+                    this.Currencies != null &&
+                    this.Currencies.SequenceEqual(other.Currencies)
+                ) && 
+                (
+                    this.Positions == other.Positions ||
+                    this.Positions != null &&
+                    this.Positions.SequenceEqual(other.Positions)
+                ) && 
+                (
+                    this.FillPairs == other.FillPairs ||
+                    this.FillPairs != null &&
+                    this.FillPairs.SequenceEqual(other.FillPairs)
+                ) && 
+                (
                     this.Orders == other.Orders ||
                     this.Orders != null &&
                     this.Orders.SequenceEqual(other.Orders)
@@ -375,26 +395,6 @@ namespace Tradovate.Services.Model
                     this.Fills == other.Fills ||
                     this.Fills != null &&
                     this.Fills.SequenceEqual(other.Fills)
-                ) && 
-                (
-                    this.CashBalances == other.CashBalances ||
-                    this.CashBalances != null &&
-                    this.CashBalances.SequenceEqual(other.CashBalances)
-                ) && 
-                (
-                    this.Currencies == other.Currencies ||
-                    this.Currencies != null &&
-                    this.Currencies.SequenceEqual(other.Currencies)
-                ) && 
-                (
-                    this.Positions == other.Positions ||
-                    this.Positions != null &&
-                    this.Positions.SequenceEqual(other.Positions)
-                ) && 
-                (
-                    this.FillPairs == other.FillPairs ||
-                    this.FillPairs != null &&
-                    this.FillPairs.SequenceEqual(other.FillPairs)
                 ) && 
                 (
                     this.OrderStrategies == other.OrderStrategies ||
@@ -453,6 +453,14 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Users.GetHashCode();
                 if (this.Accounts != null)
                     hash = hash * 59 + this.Accounts.GetHashCode();
+                if (this.CashBalances != null)
+                    hash = hash * 59 + this.CashBalances.GetHashCode();
+                if (this.Currencies != null)
+                    hash = hash * 59 + this.Currencies.GetHashCode();
+                if (this.Positions != null)
+                    hash = hash * 59 + this.Positions.GetHashCode();
+                if (this.FillPairs != null)
+                    hash = hash * 59 + this.FillPairs.GetHashCode();
                 if (this.Orders != null)
                     hash = hash * 59 + this.Orders.GetHashCode();
                 if (this.Contracts != null)
@@ -475,14 +483,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.OrderVersions.GetHashCode();
                 if (this.Fills != null)
                     hash = hash * 59 + this.Fills.GetHashCode();
-                if (this.CashBalances != null)
-                    hash = hash * 59 + this.CashBalances.GetHashCode();
-                if (this.Currencies != null)
-                    hash = hash * 59 + this.Currencies.GetHashCode();
-                if (this.Positions != null)
-                    hash = hash * 59 + this.Positions.GetHashCode();
-                if (this.FillPairs != null)
-                    hash = hash * 59 + this.FillPairs.GetHashCode();
                 if (this.OrderStrategies != null)
                     hash = hash * 59 + this.OrderStrategies.GetHashCode();
                 if (this.OrderStrategyLinks != null)

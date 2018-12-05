@@ -80,25 +80,6 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of PositionLog type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;PositionLog&gt;</returns>
-        List<PositionLog> GetAllPositionLogs ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;PositionLog&gt;</returns>
-        ApiResponse<List<PositionLog>> GetAllPositionLogsWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
         /// Returns all entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -408,25 +389,6 @@ namespace Tradovate.Services.Api
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;FillPair&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<FillPair>>> GetAllFillPairsAsyncWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;PositionLog&gt;</returns>
-        System.Threading.Tasks.Task<List<PositionLog>> GetAllPositionLogsAsync ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;PositionLog&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<PositionLog>>> GetAllPositionLogsAsyncWithHttpInfo ();
         /// <summary>
         /// 
         /// </summary>
@@ -1103,148 +1065,6 @@ namespace Tradovate.Services.Api
             return new ApiResponse<List<FillPair>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (List<FillPair>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<FillPair>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;PositionLog&gt;</returns>
-        public List<PositionLog> GetAllPositionLogs ()
-        {
-             ApiResponse<List<PositionLog>> localVarResponse = GetAllPositionLogsWithHttpInfo();
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;PositionLog&gt;</returns>
-        public ApiResponse< List<PositionLog> > GetAllPositionLogsWithHttpInfo ()
-        {
-
-            var localVarPath = "/positionLog/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllPositionLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<PositionLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<PositionLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PositionLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;PositionLog&gt;</returns>
-        public async System.Threading.Tasks.Task<List<PositionLog>> GetAllPositionLogsAsync ()
-        {
-             ApiResponse<List<PositionLog>> localVarResponse = await GetAllPositionLogsAsyncWithHttpInfo();
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;PositionLog&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<PositionLog>>> GetAllPositionLogsAsyncWithHttpInfo ()
-        {
-
-            var localVarPath = "/positionLog/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllPositionLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<PositionLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<PositionLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PositionLog>)));
             
         }
 

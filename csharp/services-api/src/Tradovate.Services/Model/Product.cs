@@ -178,7 +178,7 @@ namespace Tradovate.Services.Model
         /// <param name="ValuePerPoint">ValuePerPoint (required).</param>
         /// <param name="PriceFormatType">Decimal, Fractional (required).</param>
         /// <param name="PriceFormat">PriceFormat (required).</param>
-        /// <param name="TickSize">TickSize (required).</param>
+        /// <param name="TickSize">Product Tick Size (required).</param>
         public Product(int? Id = null, string Name = null, int? CurrencyId = null, ProductTypeEnum? ProductType = null, string Description = null, int? ExchangeId = null, int? ContractGroupId = null, int? RiskDiscountContractGroupId = null, StatusEnum? Status = null, string Months = null, bool? IsSecured = null, double? ValuePerPoint = null, PriceFormatTypeEnum? PriceFormatType = null, int? PriceFormat = null, double? TickSize = null)
         {
             // to ensure "Name" is required (not null)
@@ -346,8 +346,9 @@ namespace Tradovate.Services.Model
         [DataMember(Name="priceFormat", EmitDefaultValue=false)]
         public int? PriceFormat { get; set; }
         /// <summary>
-        /// Gets or Sets TickSize
+        /// Product Tick Size
         /// </summary>
+        /// <value>Product Tick Size</value>
         [DataMember(Name="tickSize", EmitDefaultValue=false)]
         public double? TickSize { get; set; }
         /// <summary>

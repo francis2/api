@@ -40,9 +40,9 @@ namespace Tradovate.Services.Model
     public partial class TradovateSubscriptionResponse :  IEquatable<TradovateSubscriptionResponse>
     {
         /// <summary>
-        /// ConflictWithExisting, DowngradeNotAllowed, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError
+        /// ConflictWithExisting, DowngradeNotAllowed, IncompatibleCMEMarketDataSubscriptionPlans, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError
         /// </summary>
-        /// <value>ConflictWithExisting, DowngradeNotAllowed, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError</value>
+        /// <value>ConflictWithExisting, DowngradeNotAllowed, IncompatibleCMEMarketDataSubscriptionPlans, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ErrorCodeEnum
         {
@@ -58,6 +58,12 @@ namespace Tradovate.Services.Model
             /// </summary>
             [EnumMember(Value = "UnknownError")]
             UnknownError,
+            
+            /// <summary>
+            /// Enum IncompatibleCMEMarketDataSubscriptionPlans for "IncompatibleCMEMarketDataSubscriptionPlans"
+            /// </summary>
+            [EnumMember(Value = "IncompatibleCMEMarketDataSubscriptionPlans")]
+            IncompatibleCMEMarketDataSubscriptionPlans,
             
             /// <summary>
             /// Enum InsufficientFunds for "InsufficientFunds"
@@ -103,16 +109,16 @@ namespace Tradovate.Services.Model
         }
 
         /// <summary>
-        /// ConflictWithExisting, DowngradeNotAllowed, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError
+        /// ConflictWithExisting, DowngradeNotAllowed, IncompatibleCMEMarketDataSubscriptionPlans, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError
         /// </summary>
-        /// <value>ConflictWithExisting, DowngradeNotAllowed, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError</value>
+        /// <value>ConflictWithExisting, DowngradeNotAllowed, IncompatibleCMEMarketDataSubscriptionPlans, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError</value>
         [DataMember(Name="errorCode", EmitDefaultValue=false)]
         public ErrorCodeEnum? ErrorCode { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="TradovateSubscriptionResponse" /> class.
         /// </summary>
         /// <param name="ErrorText">Non-empty if the request failed.</param>
-        /// <param name="ErrorCode">ConflictWithExisting, DowngradeNotAllowed, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError.</param>
+        /// <param name="ErrorCode">ConflictWithExisting, DowngradeNotAllowed, IncompatibleCMEMarketDataSubscriptionPlans, IncorrectPaymentMethod, InsufficientFunds, PaymentProviderError, PlanDiscontinued, SingleTrialOnly, Success, UnknownError.</param>
         /// <param name="TradovateSubscription">TradovateSubscription.</param>
         public TradovateSubscriptionResponse(string ErrorText = null, ErrorCodeEnum? ErrorCode = null, TradovateSubscription TradovateSubscription = null)
         {

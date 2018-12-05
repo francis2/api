@@ -4,12 +4,10 @@ All URIs are relative to *https://live-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ChangeDemoBalance**](AccountingApi.md#changedemobalance) | **POST** /cashBalance/changedemobalance | 
 [**FindAccount**](AccountingApi.md#findaccount) | **GET** /account/find | 
 [**GetAccount**](AccountingApi.md#getaccount) | **GET** /account/item | 
 [**GetAccounts**](AccountingApi.md#getaccounts) | **GET** /account/items | 
 [**GetAllAccounts**](AccountingApi.md#getallaccounts) | **GET** /account/list | 
-[**GetAllCashBalanceLogs**](AccountingApi.md#getallcashbalancelogs) | **GET** /cashBalanceLog/list | 
 [**GetAllCashBalances**](AccountingApi.md#getallcashbalances) | **GET** /cashBalance/list | 
 [**GetAllMarginSnapshots**](AccountingApi.md#getallmarginsnapshots) | **GET** /marginSnapshot/list | 
 [**GetAllTradingPermissions**](AccountingApi.md#getalltradingpermissions) | **GET** /tradingPermission/list | 
@@ -34,70 +32,6 @@ Method | HTTP request | Description
 [**GetTradingPermissions**](AccountingApi.md#gettradingpermissions) | **GET** /tradingPermission/items | 
 [**SuggestAccounts**](AccountingApi.md#suggestaccounts) | **GET** /account/suggest | 
 
-
-<a name="changedemobalance"></a>
-# **ChangeDemoBalance**
-> CashBalanceSnapshot ChangeDemoBalance (ChangeDemoBalance body)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class ChangeDemoBalanceExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new AccountingApi();
-            var body = new ChangeDemoBalance(); // ChangeDemoBalance | 
-
-            try
-            {
-                CashBalanceSnapshot result = apiInstance.ChangeDemoBalance(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AccountingApi.ChangeDemoBalance: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**ChangeDemoBalance**](ChangeDemoBalance.md)|  | 
-
-### Return type
-
-[**CashBalanceSnapshot**](CashBalanceSnapshot.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="findaccount"></a>
 # **FindAccount**
@@ -347,68 +281,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**List<Account>**](Account.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getallcashbalancelogs"></a>
-# **GetAllCashBalanceLogs**
-> List<CashBalanceLog> GetAllCashBalanceLogs ()
-
-
-
-Returns all entities of CashBalanceLog type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetAllCashBalanceLogsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new AccountingApi();
-
-            try
-            {
-                List&lt;CashBalanceLog&gt; result = apiInstance.GetAllCashBalanceLogs();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AccountingApi.GetAllCashBalanceLogs: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<CashBalanceLog>**](CashBalanceLog.md)
 
 ### Authorization
 

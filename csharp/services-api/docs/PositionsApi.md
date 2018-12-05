@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**FindPosition**](PositionsApi.md#findposition) | **GET** /position/find | 
 [**GetAllFillPairs**](PositionsApi.md#getallfillpairs) | **GET** /fillPair/list | 
-[**GetAllPositionLogs**](PositionsApi.md#getallpositionlogs) | **GET** /positionLog/list | 
 [**GetAllPositions**](PositionsApi.md#getallpositions) | **GET** /position/list | 
 [**GetFillPair**](PositionsApi.md#getfillpair) | **GET** /fillPair/item | 
 [**GetFillPairs**](PositionsApi.md#getfillpairs) | **GET** /fillPair/items | 
@@ -138,68 +137,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**List<FillPair>**](FillPair.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getallpositionlogs"></a>
-# **GetAllPositionLogs**
-> List<PositionLog> GetAllPositionLogs ()
-
-
-
-Returns all entities of PositionLog type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetAllPositionLogsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new PositionsApi();
-
-            try
-            {
-                List&lt;PositionLog&gt; result = apiInstance.GetAllPositionLogs();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PositionsApi.GetAllPositionLogs: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<PositionLog>**](PositionLog.md)
 
 ### Authorization
 

@@ -334,25 +334,6 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;ContactInfo&gt;</returns>
-        List<ContactInfo> GetAllContactInfos ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of ContactInfo type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;ContactInfo&gt;</returns>
-        ApiResponse<List<ContactInfo>> GetAllContactInfosWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
         /// Returns all entities of Country type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -368,6 +349,25 @@ namespace Tradovate.Services.Api
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Country&gt;</returns>
         ApiResponse<List<Country>> GetAllCountriesWithHttpInfo ();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of MarketDataSubscription type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>List&lt;MarketDataSubscription&gt;</returns>
+        List<MarketDataSubscription> GetAllMarketDataSubscriptions ();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of MarketDataSubscription type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of List&lt;MarketDataSubscription&gt;</returns>
+        ApiResponse<List<MarketDataSubscription>> GetAllMarketDataSubscriptionsWithHttpInfo ();
         /// <summary>
         /// 
         /// </summary>
@@ -1880,25 +1880,6 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;ContactInfo&gt;</returns>
-        System.Threading.Tasks.Task<List<ContactInfo>> GetAllContactInfosAsync ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of ContactInfo type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;ContactInfo&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<ContactInfo>>> GetAllContactInfosAsyncWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
         /// Returns all entities of Country type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1914,6 +1895,25 @@ namespace Tradovate.Services.Api
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Country&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Country>>> GetAllCountriesAsyncWithHttpInfo ();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of MarketDataSubscription type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of List&lt;MarketDataSubscription&gt;</returns>
+        System.Threading.Tasks.Task<List<MarketDataSubscription>> GetAllMarketDataSubscriptionsAsync ();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Returns all entities of MarketDataSubscription type
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (List&lt;MarketDataSubscription&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<MarketDataSubscription>>> GetAllMarketDataSubscriptionsAsyncWithHttpInfo ();
         /// <summary>
         /// 
         /// </summary>
@@ -5549,148 +5549,6 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;ContactInfo&gt;</returns>
-        public List<ContactInfo> GetAllContactInfos ()
-        {
-             ApiResponse<List<ContactInfo>> localVarResponse = GetAllContactInfosWithHttpInfo();
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of ContactInfo type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;ContactInfo&gt;</returns>
-        public ApiResponse< List<ContactInfo> > GetAllContactInfosWithHttpInfo ()
-        {
-
-            var localVarPath = "/contactInfo/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllContactInfos", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<ContactInfo>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<ContactInfo>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ContactInfo>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of ContactInfo type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;ContactInfo&gt;</returns>
-        public async System.Threading.Tasks.Task<List<ContactInfo>> GetAllContactInfosAsync ()
-        {
-             ApiResponse<List<ContactInfo>> localVarResponse = await GetAllContactInfosAsyncWithHttpInfo();
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of ContactInfo type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;ContactInfo&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<ContactInfo>>> GetAllContactInfosAsyncWithHttpInfo ()
-        {
-
-            var localVarPath = "/contactInfo/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllContactInfos", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<ContactInfo>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<ContactInfo>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ContactInfo>)));
-            
-        }
-
-        /// <summary>
         ///  Returns all entities of Country type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
@@ -5829,6 +5687,148 @@ namespace Tradovate.Services.Api
             return new ApiResponse<List<Country>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (List<Country>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Country>)));
+            
+        }
+
+        /// <summary>
+        ///  Returns all entities of MarketDataSubscription type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>List&lt;MarketDataSubscription&gt;</returns>
+        public List<MarketDataSubscription> GetAllMarketDataSubscriptions ()
+        {
+             ApiResponse<List<MarketDataSubscription>> localVarResponse = GetAllMarketDataSubscriptionsWithHttpInfo();
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  Returns all entities of MarketDataSubscription type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of List&lt;MarketDataSubscription&gt;</returns>
+        public ApiResponse< List<MarketDataSubscription> > GetAllMarketDataSubscriptionsWithHttpInfo ()
+        {
+
+            var localVarPath = "/marketDataSubscription/list";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAllMarketDataSubscriptions", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<MarketDataSubscription>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<MarketDataSubscription>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<MarketDataSubscription>)));
+            
+        }
+
+        /// <summary>
+        ///  Returns all entities of MarketDataSubscription type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of List&lt;MarketDataSubscription&gt;</returns>
+        public async System.Threading.Tasks.Task<List<MarketDataSubscription>> GetAllMarketDataSubscriptionsAsync ()
+        {
+             ApiResponse<List<MarketDataSubscription>> localVarResponse = await GetAllMarketDataSubscriptionsAsyncWithHttpInfo();
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  Returns all entities of MarketDataSubscription type
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (List&lt;MarketDataSubscription&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<MarketDataSubscription>>> GetAllMarketDataSubscriptionsAsyncWithHttpInfo ()
+        {
+
+            var localVarPath = "/marketDataSubscription/list";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAllMarketDataSubscriptions", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<MarketDataSubscription>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<MarketDataSubscription>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<MarketDataSubscription>)));
             
         }
 

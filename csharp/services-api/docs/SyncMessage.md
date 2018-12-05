@@ -5,6 +5,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Users** | [**List&lt;User&gt;**](User.md) |  | 
 **Accounts** | [**List&lt;Account&gt;**](Account.md) |  | [optional] 
+**CashBalances** | [**List&lt;CashBalance&gt;**](CashBalance.md) |  | [optional] 
+**Currencies** | [**List&lt;Currency&gt;**](Currency.md) |  | [optional] 
+**Positions** | [**List&lt;Position&gt;**](Position.md) |  | [optional] 
+**FillPairs** | [**List&lt;FillPair&gt;**](FillPair.md) |  | [optional] 
 **Orders** | [**List&lt;Order&gt;**](Order.md) |  | [optional] 
 **Contracts** | [**List&lt;Contract&gt;**](Contract.md) |  | [optional] 
 **ContractMaturities** | [**List&lt;ContractMaturity&gt;**](ContractMaturity.md) |  | [optional] 
@@ -16,10 +20,6 @@ Name | Type | Description | Notes
 **ExecutionReports** | [**List&lt;ExecutionReport&gt;**](ExecutionReport.md) |  | [optional] 
 **OrderVersions** | [**List&lt;OrderVersion&gt;**](OrderVersion.md) |  | [optional] 
 **Fills** | [**List&lt;Fill&gt;**](Fill.md) |  | [optional] 
-**CashBalances** | [**List&lt;CashBalance&gt;**](CashBalance.md) |  | [optional] 
-**Currencies** | [**List&lt;Currency&gt;**](Currency.md) |  | [optional] 
-**Positions** | [**List&lt;Position&gt;**](Position.md) |  | [optional] 
-**FillPairs** | [**List&lt;FillPair&gt;**](FillPair.md) |  | [optional] 
 **OrderStrategies** | [**List&lt;OrderStrategy&gt;**](OrderStrategy.md) |  | [optional] 
 **OrderStrategyLinks** | [**List&lt;OrderStrategyLink&gt;**](OrderStrategyLink.md) |  | [optional] 
 **UserProperties** | [**List&lt;UserProperty&gt;**](UserProperty.md) |  | [optional] 
