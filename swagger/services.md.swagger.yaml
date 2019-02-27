@@ -3,7 +3,7 @@ info:
     title: Tradovate API
     description: Tradovate API
     version: "1.0.0"
-host: live-api-d.tradovate.com
+host: md-api-d.tradovate.com
 schemes:
     - https
 basePath: /v1
@@ -53,24 +53,6 @@ paths:
                     description: See definition
                     schema:
                         $ref: '#/definitions/ChartSubscriptionResult'
-    /md/getcontractrollvolumes:
-        post:
-            operationId: getContractRollVolumes
-            security:
-                - bearer_access_token: []
-            parameters:
-                - name: body
-                  in: body
-                  required: true
-                  schema:
-                    $ref: '#/definitions/GetContractRollVolumes'
-            tags:
-                - Prices
-            responses:
-                200: 
-                    description: See definition
-                    schema:
-                        $ref: '#/definitions/ContractRollVolumes'
     /md/subscribedom:
         post:
             operationId: subscribeDOM
@@ -203,28 +185,6 @@ definitions:
                 type: integer
             day:
                 type: integer
-    AlterHistogramSubscription:
-        type: object
-        required:
-            - symbol
-            - subscribe
-        properties: 
-            symbol:
-                type: string
-            subscribe:
-                type: boolean
-    AlterQuoteSubscription:
-        type: object
-        required:
-            - symbol
-            - filter
-        properties: 
-            symbol:
-                type: string
-            filter:
-                type: array
-                items:
-                    type: string
     BasicChartDescription:
         type: object
         required:
@@ -236,25 +196,27 @@ definitions:
                 type: string
                 description: "Custom, DOM, DailyBar, MinuteBar, Tick"
                 enum:
-                    - Tick
-                    - DailyBar
-                    - MinuteBar
                     - Custom
                     - DOM
+                    - DailyBar
+                    - MinuteBar
+                    - Tick
             elementSize:
                 type: integer
                 format: int32
+                minimum: 0
+                exclusiveMinimum: true
             elementSizeUnit:
                 type: string
                 description: "MomentumRange, OFARange, PointAndFigure, Range, Renko, UnderlyingUnits, Volume"
                 enum:
-                    - Volume
-                    - Range
-                    - UnderlyingUnits
-                    - Renko
                     - MomentumRange
-                    - PointAndFigure
                     - OFARange
+                    - PointAndFigure
+                    - Range
+                    - Renko
+                    - UnderlyingUnits
+                    - Volume
             elementSize2:
                 type: integer
                 format: int32
@@ -264,6 +226,8 @@ definitions:
             subscriptionId:
                 type: integer
                 format: int32
+                minimum: 0
+                exclusiveMinimum: true
     ChartCustomSession:
         type: object
         required:
@@ -285,25 +249,27 @@ definitions:
                 type: string
                 description: "Custom, DOM, DailyBar, MinuteBar, Tick"
                 enum:
-                    - Tick
-                    - DailyBar
-                    - MinuteBar
                     - Custom
                     - DOM
+                    - DailyBar
+                    - MinuteBar
+                    - Tick
             elementSize:
                 type: integer
                 format: int32
+                minimum: 0
+                exclusiveMinimum: true
             elementSizeUnit:
                 type: string
                 description: "MomentumRange, OFARange, PointAndFigure, Range, Renko, UnderlyingUnits, Volume"
                 enum:
-                    - Volume
-                    - Range
-                    - UnderlyingUnits
-                    - Renko
                     - MomentumRange
-                    - PointAndFigure
                     - OFARange
+                    - PointAndFigure
+                    - Range
+                    - Renko
+                    - UnderlyingUnits
+                    - Volume
             elementSize2:
                 type: integer
                 format: int32
@@ -316,6 +282,8 @@ definitions:
             throttle:
                 type: integer
                 format: int32
+                minimum: 0
+                exclusiveMinimum: true
     ChartSubscriptionResult:
         type: object
         required:
@@ -323,23 +291,23 @@ definitions:
         properties: 
             errorText:
                 type: string
-                maxLength: 8192
                 description: "Non-empty if the request failed"
+                maxLength: 8192
             errorCode:
                 type: string
                 description: "NoServicePlan, OperationNotSupported, Success, UnknownReason, UnknownSymbol"
                 enum:
+                    - NoServicePlan
                     - OperationNotSupported
+                    - Success
                     - UnknownReason
                     - UnknownSymbol
-                    - NoServicePlan
-                    - Success
             mode:
                 type: string
                 description: "Delayed, None, RealTime"
                 enum:
-                    - None
                     - Delayed
+                    - None
                     - RealTime
             historicalId:
                 type: integer
@@ -356,21 +324,16 @@ definitions:
             closestTickId:
                 type: integer
                 format: int32
+                minimum: 0
+                exclusiveMinimum: true
             asFarAsTimestamp:
                 type: string
                 format: date-time
             asMuchAsElements:
                 type: integer
                 format: int32
-    ContractRollVolumes:
-        type: object
-        required:
-            - rollCandidates
-        properties: 
-            rollCandidates:
-                type: array
-                items:
-                    $ref: '#/definitions/ContractRollVolume'
+                minimum: 0
+                exclusiveMinimum: true
     DOM:
         type: object
         required:
@@ -382,9 +345,9 @@ definitions:
             contractId:
                 type: integer
                 format: int32
+                description: "id of Contract"
                 minimum: 0
                 exclusiveMinimum: true
-                description: "id of Contract"
             timestamp:
                 type: string
                 format: date-time
@@ -396,9 +359,6 @@ definitions:
                 type: array
                 items:
                     $ref: '#/definitions/PriceLevel'
-            id:
-                type: integer
-                format: int32
     GetChart:
         type: object
         required:
@@ -408,21 +368,13 @@ definitions:
         properties: 
             symbol:
                 type: string
+                maxLength: 64
             chartDescription:
                 $ref: '#/definitions/ChartDescription'
             timeRange:
                 $ref: '#/definitions/ChartTimeRange'
             customSession:
                 $ref: '#/definitions/ChartCustomSession'
-    GetContractRollVolumes:
-        type: object
-        required:
-            - symbols
-        properties: 
-            symbols:
-                type: array
-                items:
-                    type: string
     Histogram:
         type: object
         required:
@@ -436,9 +388,9 @@ definitions:
             contractId:
                 type: integer
                 format: int32
+                description: "id of Contract"
                 minimum: 0
                 exclusiveMinimum: true
-                description: "id of Contract"
             timestamp:
                 type: string
                 format: date-time
@@ -461,27 +413,29 @@ definitions:
         properties: 
             errorText:
                 type: string
-                maxLength: 8192
                 description: "Non-empty if the request failed"
+                maxLength: 8192
             errorCode:
                 type: string
                 description: "NoServicePlan, OperationNotSupported, Success, UnknownReason, UnknownSymbol"
                 enum:
+                    - NoServicePlan
                     - OperationNotSupported
+                    - Success
                     - UnknownReason
                     - UnknownSymbol
-                    - NoServicePlan
-                    - Success
             mode:
                 type: string
                 description: "Delayed, None, RealTime"
                 enum:
-                    - None
                     - Delayed
+                    - None
                     - RealTime
             subscriptionId:
                 type: integer
                 format: int32
+                minimum: 0
+                exclusiveMinimum: true
     OHLC:
         type: object
         required:
@@ -552,6 +506,7 @@ definitions:
         properties: 
             symbol:
                 type: string
+                maxLength: 64
             filter:
                 type: array
                 items:
@@ -563,6 +518,7 @@ definitions:
         properties: 
             symbol:
                 type: string
+                maxLength: 64
     SubscribeQuote:
         type: object
         required:
@@ -570,6 +526,7 @@ definitions:
         properties: 
             symbol:
                 type: string
+                maxLength: 64
     UnsubscribeDOM:
         type: object
         required:
@@ -577,6 +534,7 @@ definitions:
         properties: 
             symbol:
                 type: string
+                maxLength: 64
     UnsubscribeHistogram:
         type: object
         required:
@@ -584,6 +542,7 @@ definitions:
         properties: 
             symbol:
                 type: string
+                maxLength: 64
     UnsubscribeQuote:
         type: object
         required:
@@ -591,3 +550,4 @@ definitions:
         properties: 
             symbol:
                 type: string
+                maxLength: 64
