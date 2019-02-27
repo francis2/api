@@ -3101,6 +3101,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/ProductMargin'
+    /userAccountAutoLiq/create:
+        post:
+            description: Creates a new entity of UserAccountAutoLiq
+            operationId: createUserAccountAutoLiq
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserAccountAutoLiq'
+            tags:
+                - Risks
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserAccountAutoLiq'
     /userAccountAutoLiq/deps:
         get:
             description: Retrieves all entities of UserAccountAutoLiq type related to Account entity
@@ -3204,6 +3223,44 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/UserAccountAutoLiq'
+    /userAccountAutoLiq/update:
+        post:
+            description: Updates an existing entity of UserAccountAutoLiq
+            operationId: updateUserAccountAutoLiq
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserAccountAutoLiq'
+            tags:
+                - Risks
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserAccountAutoLiq'
+    /userAccountPositionLimit/create:
+        post:
+            description: Creates a new entity of UserAccountPositionLimit
+            operationId: createUserAccountPositionLimit
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserAccountPositionLimit'
+            tags:
+                - Risks
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserAccountPositionLimit'
     /userAccountPositionLimit/deleteuseraccountpositionlimit:
         post:
             operationId: deleteUserAccountPositionLimit
@@ -3328,6 +3385,44 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/UserAccountPositionLimit'
+    /userAccountPositionLimit/update:
+        post:
+            description: Updates an existing entity of UserAccountPositionLimit
+            operationId: updateUserAccountPositionLimit
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserAccountPositionLimit'
+            tags:
+                - Risks
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserAccountPositionLimit'
+    /userAccountRiskParameter/create:
+        post:
+            description: Creates a new entity of UserAccountRiskParameter
+            operationId: createUserAccountRiskParameter
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserAccountRiskParameter'
+            tags:
+                - Risks
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserAccountRiskParameter'
     /userAccountRiskParameter/deps:
         get:
             description: Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
@@ -3416,6 +3511,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/UserAccountRiskParameter'
+    /userAccountRiskParameter/update:
+        post:
+            description: Updates an existing entity of UserAccountRiskParameter
+            operationId: updateUserAccountRiskParameter
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserAccountRiskParameter'
+            tags:
+                - Risks
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserAccountRiskParameter'
     /marketDataSubscriptionExchangeScope/find:
         get:
             description: Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
@@ -4671,6 +4785,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/ContactInfo'
+    /marketDataSubscription/create:
+        post:
+            description: Creates a new entity of MarketDataSubscription
+            operationId: createMarketDataSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/MarketDataSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscription'
     /marketDataSubscription/deps:
         get:
             description: Retrieves all entities of MarketDataSubscription type related to User entity
@@ -4774,6 +4907,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/MarketDataSubscription'
+    /marketDataSubscription/update:
+        post:
+            description: Updates an existing entity of MarketDataSubscription
+            operationId: updateMarketDataSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/MarketDataSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/MarketDataSubscription'
     /organization/find:
         get:
             description: Retrieves an entity of Organization type by its name
@@ -4876,6 +5028,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/Organization'
+    /tradovateSubscription/create:
+        post:
+            description: Creates a new entity of TradovateSubscription
+            operationId: createTradovateSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/TradovateSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/TradovateSubscription'
     /tradovateSubscription/deps:
         get:
             description: Retrieves all entities of TradovateSubscription type related to User entity
@@ -4979,6 +5150,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/TradovateSubscription'
+    /tradovateSubscription/update:
+        post:
+            description: Updates an existing entity of TradovateSubscription
+            operationId: updateTradovateSubscription
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/TradovateSubscription'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/TradovateSubscription'
     /user/accepttradingpermission:
         post:
             operationId: acceptTradingPermission
@@ -5327,6 +5517,25 @@ paths:
                     description: See definition
                     schema:
                         $ref: '#/definitions/SyncMessage'
+    /userPlugin/create:
+        post:
+            description: Creates a new entity of UserPlugin
+            operationId: createUserPlugin
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserPlugin'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserPlugin'
     /userPlugin/deps:
         get:
             description: Retrieves all entities of UserPlugin type related to User entity
@@ -5430,6 +5639,25 @@ paths:
                         type: array
                         items:
                             $ref: '#/definitions/UserPlugin'
+    /userPlugin/update:
+        post:
+            description: Updates an existing entity of UserPlugin
+            operationId: updateUserPlugin
+            security:
+                - bearer_access_token: []
+            parameters:
+                - name: body
+                  in: body
+                  required: true
+                  schema:
+                    $ref: '#/definitions/UserPlugin'
+            tags:
+                - Users
+            responses:
+                200: 
+                    description: See definition
+                    schema:
+                        $ref: '#/definitions/UserPlugin'
     /userProperty/deps:
         get:
             description: Retrieves all entities of UserProperty type related to User entity
