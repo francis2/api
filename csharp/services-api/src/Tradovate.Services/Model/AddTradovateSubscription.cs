@@ -48,10 +48,9 @@ namespace Tradovate.Services.Model
         /// Initializes a new instance of the <see cref="AddTradovateSubscription" /> class.
         /// </summary>
         /// <param name="TradovateSubscriptionPlanId">id of TradovateSubscriptionPlan (required).</param>
-        /// <param name="CreditCardId">id of CreditCard.</param>
         /// <param name="AccountId">id of Account.</param>
         /// <param name="UserId">id of User.</param>
-        public AddTradovateSubscription(int? TradovateSubscriptionPlanId = null, int? CreditCardId = null, int? AccountId = null, int? UserId = null)
+        public AddTradovateSubscription(int? TradovateSubscriptionPlanId = null, int? AccountId = null, int? UserId = null)
         {
             // to ensure "TradovateSubscriptionPlanId" is required (not null)
             if (TradovateSubscriptionPlanId == null)
@@ -62,7 +61,6 @@ namespace Tradovate.Services.Model
             {
                 this.TradovateSubscriptionPlanId = TradovateSubscriptionPlanId;
             }
-            this.CreditCardId = CreditCardId;
             this.AccountId = AccountId;
             this.UserId = UserId;
         }
@@ -73,12 +71,6 @@ namespace Tradovate.Services.Model
         /// <value>id of TradovateSubscriptionPlan</value>
         [DataMember(Name="tradovateSubscriptionPlanId", EmitDefaultValue=false)]
         public int? TradovateSubscriptionPlanId { get; set; }
-        /// <summary>
-        /// id of CreditCard
-        /// </summary>
-        /// <value>id of CreditCard</value>
-        [DataMember(Name="creditCardId", EmitDefaultValue=false)]
-        public int? CreditCardId { get; set; }
         /// <summary>
         /// id of Account
         /// </summary>
@@ -100,7 +92,6 @@ namespace Tradovate.Services.Model
             var sb = new StringBuilder();
             sb.Append("class AddTradovateSubscription {\n");
             sb.Append("  TradovateSubscriptionPlanId: ").Append(TradovateSubscriptionPlanId).Append("\n");
-            sb.Append("  CreditCardId: ").Append(CreditCardId).Append("\n");
             sb.Append("  AccountId: ").Append(AccountId).Append("\n");
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("}\n");
@@ -145,11 +136,6 @@ namespace Tradovate.Services.Model
                     this.TradovateSubscriptionPlanId.Equals(other.TradovateSubscriptionPlanId)
                 ) && 
                 (
-                    this.CreditCardId == other.CreditCardId ||
-                    this.CreditCardId != null &&
-                    this.CreditCardId.Equals(other.CreditCardId)
-                ) && 
-                (
                     this.AccountId == other.AccountId ||
                     this.AccountId != null &&
                     this.AccountId.Equals(other.AccountId)
@@ -174,8 +160,6 @@ namespace Tradovate.Services.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.TradovateSubscriptionPlanId != null)
                     hash = hash * 59 + this.TradovateSubscriptionPlanId.GetHashCode();
-                if (this.CreditCardId != null)
-                    hash = hash * 59 + this.CreditCardId.GetHashCode();
                 if (this.AccountId != null)
                     hash = hash * 59 + this.AccountId.GetHashCode();
                 if (this.UserId != null)

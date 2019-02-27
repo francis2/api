@@ -48,112 +48,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum Unsupported for "Unsupported"
-            /// </summary>
-            [EnumMember(Value = "Unsupported")]
-            Unsupported,
-            
-            /// <summary>
-            /// Enum InvalidPrice for "InvalidPrice"
-            /// </summary>
-            [EnumMember(Value = "InvalidPrice")]
-            InvalidPrice,
-            
-            /// <summary>
-            /// Enum NoQuote for "NoQuote"
-            /// </summary>
-            [EnumMember(Value = "NoQuote")]
-            NoQuote,
-            
-            /// <summary>
-            /// Enum MaxPosLimitMisconfigured for "MaxPosLimitMisconfigured"
-            /// </summary>
-            [EnumMember(Value = "MaxPosLimitMisconfigured")]
-            MaxPosLimitMisconfigured,
-            
-            /// <summary>
-            /// Enum TooLate for "TooLate"
-            /// </summary>
-            [EnumMember(Value = "TooLate")]
-            TooLate,
-            
-            /// <summary>
-            /// Enum AnotherCommandPending for "AnotherCommandPending"
-            /// </summary>
-            [EnumMember(Value = "AnotherCommandPending")]
-            AnotherCommandPending,
-            
-            /// <summary>
-            /// Enum MultipleAccountPlanRequired for "MultipleAccountPlanRequired"
-            /// </summary>
-            [EnumMember(Value = "MultipleAccountPlanRequired")]
-            MultipleAccountPlanRequired,
-            
-            /// <summary>
-            /// Enum ExecutionProviderNotConfigured for "ExecutionProviderNotConfigured"
-            /// </summary>
-            [EnumMember(Value = "ExecutionProviderNotConfigured")]
-            ExecutionProviderNotConfigured,
-            
-            /// <summary>
             /// Enum AccountClosed for "AccountClosed"
             /// </summary>
             [EnumMember(Value = "AccountClosed")]
             AccountClosed,
-            
-            /// <summary>
-            /// Enum BackMonthProhibited for "BackMonthProhibited"
-            /// </summary>
-            [EnumMember(Value = "BackMonthProhibited")]
-            BackMonthProhibited,
-            
-            /// <summary>
-            /// Enum NotEnoughLiquidity for "NotEnoughLiquidity"
-            /// </summary>
-            [EnumMember(Value = "NotEnoughLiquidity")]
-            NotEnoughLiquidity,
-            
-            /// <summary>
-            /// Enum UnknownReason for "UnknownReason"
-            /// </summary>
-            [EnumMember(Value = "UnknownReason")]
-            UnknownReason,
-            
-            /// <summary>
-            /// Enum SessionClosed for "SessionClosed"
-            /// </summary>
-            [EnumMember(Value = "SessionClosed")]
-            SessionClosed,
-            
-            /// <summary>
-            /// Enum OtherExecutionRelated for "OtherExecutionRelated"
-            /// </summary>
-            [EnumMember(Value = "OtherExecutionRelated")]
-            OtherExecutionRelated,
-            
-            /// <summary>
-            /// Enum LiquidationOnly for "LiquidationOnly"
-            /// </summary>
-            [EnumMember(Value = "LiquidationOnly")]
-            LiquidationOnly,
-            
-            /// <summary>
-            /// Enum MaxTotalPosLimitReached for "MaxTotalPosLimitReached"
-            /// </summary>
-            [EnumMember(Value = "MaxTotalPosLimitReached")]
-            MaxTotalPosLimitReached,
-            
-            /// <summary>
-            /// Enum LiquidationOnlyBeforeExpiration for "LiquidationOnlyBeforeExpiration"
-            /// </summary>
-            [EnumMember(Value = "LiquidationOnlyBeforeExpiration")]
-            LiquidationOnlyBeforeExpiration,
-            
-            /// <summary>
-            /// Enum Unauthorized for "Unauthorized"
-            /// </summary>
-            [EnumMember(Value = "Unauthorized")]
-            Unauthorized,
             
             /// <summary>
             /// Enum AdvancedTrailingStopUnsupported for "AdvancedTrailingStopUnsupported"
@@ -162,22 +60,52 @@ namespace Tradovate.Services.Model
             AdvancedTrailingStopUnsupported,
             
             /// <summary>
-            /// Enum RiskCheckTimeout for "RiskCheckTimeout"
+            /// Enum AnotherCommandPending for "AnotherCommandPending"
             /// </summary>
-            [EnumMember(Value = "RiskCheckTimeout")]
-            RiskCheckTimeout,
+            [EnumMember(Value = "AnotherCommandPending")]
+            AnotherCommandPending,
             
             /// <summary>
-            /// Enum ParentRejected for "ParentRejected"
+            /// Enum BackMonthProhibited for "BackMonthProhibited"
             /// </summary>
-            [EnumMember(Value = "ParentRejected")]
-            ParentRejected,
+            [EnumMember(Value = "BackMonthProhibited")]
+            BackMonthProhibited,
             
             /// <summary>
-            /// Enum MaxPosLimitReached for "MaxPosLimitReached"
+            /// Enum ExecutionProviderNotConfigured for "ExecutionProviderNotConfigured"
             /// </summary>
-            [EnumMember(Value = "MaxPosLimitReached")]
-            MaxPosLimitReached,
+            [EnumMember(Value = "ExecutionProviderNotConfigured")]
+            ExecutionProviderNotConfigured,
+            
+            /// <summary>
+            /// Enum ExecutionProviderUnavailable for "ExecutionProviderUnavailable"
+            /// </summary>
+            [EnumMember(Value = "ExecutionProviderUnavailable")]
+            ExecutionProviderUnavailable,
+            
+            /// <summary>
+            /// Enum InvalidContract for "InvalidContract"
+            /// </summary>
+            [EnumMember(Value = "InvalidContract")]
+            InvalidContract,
+            
+            /// <summary>
+            /// Enum InvalidPrice for "InvalidPrice"
+            /// </summary>
+            [EnumMember(Value = "InvalidPrice")]
+            InvalidPrice,
+            
+            /// <summary>
+            /// Enum LiquidationOnly for "LiquidationOnly"
+            /// </summary>
+            [EnumMember(Value = "LiquidationOnly")]
+            LiquidationOnly,
+            
+            /// <summary>
+            /// Enum LiquidationOnlyBeforeExpiration for "LiquidationOnlyBeforeExpiration"
+            /// </summary>
+            [EnumMember(Value = "LiquidationOnlyBeforeExpiration")]
+            LiquidationOnlyBeforeExpiration,
             
             /// <summary>
             /// Enum MaxOrderQtyIsNotSpecified for "MaxOrderQtyIsNotSpecified"
@@ -192,16 +120,76 @@ namespace Tradovate.Services.Model
             MaxOrderQtyLimitReached,
             
             /// <summary>
-            /// Enum InvalidContract for "InvalidContract"
+            /// Enum MaxPosLimitMisconfigured for "MaxPosLimitMisconfigured"
             /// </summary>
-            [EnumMember(Value = "InvalidContract")]
-            InvalidContract,
+            [EnumMember(Value = "MaxPosLimitMisconfigured")]
+            MaxPosLimitMisconfigured,
+            
+            /// <summary>
+            /// Enum MaxPosLimitReached for "MaxPosLimitReached"
+            /// </summary>
+            [EnumMember(Value = "MaxPosLimitReached")]
+            MaxPosLimitReached,
+            
+            /// <summary>
+            /// Enum MaxTotalPosLimitReached for "MaxTotalPosLimitReached"
+            /// </summary>
+            [EnumMember(Value = "MaxTotalPosLimitReached")]
+            MaxTotalPosLimitReached,
+            
+            /// <summary>
+            /// Enum MultipleAccountPlanRequired for "MultipleAccountPlanRequired"
+            /// </summary>
+            [EnumMember(Value = "MultipleAccountPlanRequired")]
+            MultipleAccountPlanRequired,
+            
+            /// <summary>
+            /// Enum NoQuote for "NoQuote"
+            /// </summary>
+            [EnumMember(Value = "NoQuote")]
+            NoQuote,
+            
+            /// <summary>
+            /// Enum NotEnoughLiquidity for "NotEnoughLiquidity"
+            /// </summary>
+            [EnumMember(Value = "NotEnoughLiquidity")]
+            NotEnoughLiquidity,
+            
+            /// <summary>
+            /// Enum OtherExecutionRelated for "OtherExecutionRelated"
+            /// </summary>
+            [EnumMember(Value = "OtherExecutionRelated")]
+            OtherExecutionRelated,
+            
+            /// <summary>
+            /// Enum ParentRejected for "ParentRejected"
+            /// </summary>
+            [EnumMember(Value = "ParentRejected")]
+            ParentRejected,
+            
+            /// <summary>
+            /// Enum RiskCheckTimeout for "RiskCheckTimeout"
+            /// </summary>
+            [EnumMember(Value = "RiskCheckTimeout")]
+            RiskCheckTimeout,
+            
+            /// <summary>
+            /// Enum SessionClosed for "SessionClosed"
+            /// </summary>
+            [EnumMember(Value = "SessionClosed")]
+            SessionClosed,
             
             /// <summary>
             /// Enum Success for "Success"
             /// </summary>
             [EnumMember(Value = "Success")]
             Success,
+            
+            /// <summary>
+            /// Enum TooLate for "TooLate"
+            /// </summary>
+            [EnumMember(Value = "TooLate")]
+            TooLate,
             
             /// <summary>
             /// Enum TradingLocked for "TradingLocked"
@@ -216,10 +204,22 @@ namespace Tradovate.Services.Model
             TrailingStopNonOrderQtyModify,
             
             /// <summary>
-            /// Enum ExecutionProviderUnavailable for "ExecutionProviderUnavailable"
+            /// Enum Unauthorized for "Unauthorized"
             /// </summary>
-            [EnumMember(Value = "ExecutionProviderUnavailable")]
-            ExecutionProviderUnavailable
+            [EnumMember(Value = "Unauthorized")]
+            Unauthorized,
+            
+            /// <summary>
+            /// Enum UnknownReason for "UnknownReason"
+            /// </summary>
+            [EnumMember(Value = "UnknownReason")]
+            UnknownReason,
+            
+            /// <summary>
+            /// Enum Unsupported for "Unsupported"
+            /// </summary>
+            [EnumMember(Value = "Unsupported")]
+            Unsupported
         }
 
         /// <summary>

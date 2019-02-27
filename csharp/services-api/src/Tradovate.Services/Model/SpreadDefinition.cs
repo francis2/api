@@ -48,40 +48,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum ReverseIntercommoditySpread for "ReverseIntercommoditySpread"
+            /// Enum Bundle for "Bundle"
             /// </summary>
-            [EnumMember(Value = "ReverseIntercommoditySpread")]
-            ReverseIntercommoditySpread,
-            
-            /// <summary>
-            /// Enum Strip for "Strip"
-            /// </summary>
-            [EnumMember(Value = "Strip")]
-            Strip,
-            
-            /// <summary>
-            /// Enum ReducedTickCalendarSpread for "ReducedTickCalendarSpread"
-            /// </summary>
-            [EnumMember(Value = "ReducedTickCalendarSpread")]
-            ReducedTickCalendarSpread,
-            
-            /// <summary>
-            /// Enum TreasuryIntercommoditySpread for "TreasuryIntercommoditySpread"
-            /// </summary>
-            [EnumMember(Value = "TreasuryIntercommoditySpread")]
-            TreasuryIntercommoditySpread,
-            
-            /// <summary>
-            /// Enum LaggedIntercommoditySpread for "LaggedIntercommoditySpread"
-            /// </summary>
-            [EnumMember(Value = "LaggedIntercommoditySpread")]
-            LaggedIntercommoditySpread,
-            
-            /// <summary>
-            /// Enum DoubleButterfly for "DoubleButterfly"
-            /// </summary>
-            [EnumMember(Value = "DoubleButterfly")]
-            DoubleButterfly,
+            [EnumMember(Value = "Bundle")]
+            Bundle,
             
             /// <summary>
             /// Enum BundleSpread for "BundleSpread"
@@ -90,46 +60,10 @@ namespace Tradovate.Services.Model
             BundleSpread,
             
             /// <summary>
-            /// Enum PackButterfly for "PackButterfly"
+            /// Enum Butterfly for "Butterfly"
             /// </summary>
-            [EnumMember(Value = "PackButterfly")]
-            PackButterfly,
-            
-            /// <summary>
-            /// Enum ReverseSpread for "ReverseSpread"
-            /// </summary>
-            [EnumMember(Value = "ReverseSpread")]
-            ReverseSpread,
-            
-            /// <summary>
-            /// Enum Pack for "Pack"
-            /// </summary>
-            [EnumMember(Value = "Pack")]
-            Pack,
-            
-            /// <summary>
-            /// Enum Crack for "Crack"
-            /// </summary>
-            [EnumMember(Value = "Crack")]
-            Crack,
-            
-            /// <summary>
-            /// Enum General for "General"
-            /// </summary>
-            [EnumMember(Value = "General")]
-            General,
-            
-            /// <summary>
-            /// Enum Condor for "Condor"
-            /// </summary>
-            [EnumMember(Value = "Condor")]
-            Condor,
-            
-            /// <summary>
-            /// Enum PackSpread for "PackSpread"
-            /// </summary>
-            [EnumMember(Value = "PackSpread")]
-            PackSpread,
+            [EnumMember(Value = "Butterfly")]
+            Butterfly,
             
             /// <summary>
             /// Enum CalendarSpread for "CalendarSpread"
@@ -138,22 +72,88 @@ namespace Tradovate.Services.Model
             CalendarSpread,
             
             /// <summary>
-            /// Enum Bundle for "Bundle"
+            /// Enum Condor for "Condor"
             /// </summary>
-            [EnumMember(Value = "Bundle")]
-            Bundle,
+            [EnumMember(Value = "Condor")]
+            Condor,
             
             /// <summary>
-            /// Enum Butterfly for "Butterfly"
+            /// Enum Crack for "Crack"
             /// </summary>
-            [EnumMember(Value = "Butterfly")]
-            Butterfly,
+            [EnumMember(Value = "Crack")]
+            Crack,
+            
+            /// <summary>
+            /// Enum DoubleButterfly for "DoubleButterfly"
+            /// </summary>
+            [EnumMember(Value = "DoubleButterfly")]
+            DoubleButterfly,
+            
+            /// <summary>
+            /// Enum General for "General"
+            /// </summary>
+            [EnumMember(Value = "General")]
+            General,
             
             /// <summary>
             /// Enum IntercommoditySpread for "IntercommoditySpread"
             /// </summary>
             [EnumMember(Value = "IntercommoditySpread")]
-            IntercommoditySpread
+            IntercommoditySpread,
+            
+            /// <summary>
+            /// Enum LaggedIntercommoditySpread for "LaggedIntercommoditySpread"
+            /// </summary>
+            [EnumMember(Value = "LaggedIntercommoditySpread")]
+            LaggedIntercommoditySpread,
+            
+            /// <summary>
+            /// Enum Pack for "Pack"
+            /// </summary>
+            [EnumMember(Value = "Pack")]
+            Pack,
+            
+            /// <summary>
+            /// Enum PackButterfly for "PackButterfly"
+            /// </summary>
+            [EnumMember(Value = "PackButterfly")]
+            PackButterfly,
+            
+            /// <summary>
+            /// Enum PackSpread for "PackSpread"
+            /// </summary>
+            [EnumMember(Value = "PackSpread")]
+            PackSpread,
+            
+            /// <summary>
+            /// Enum ReducedTickCalendarSpread for "ReducedTickCalendarSpread"
+            /// </summary>
+            [EnumMember(Value = "ReducedTickCalendarSpread")]
+            ReducedTickCalendarSpread,
+            
+            /// <summary>
+            /// Enum ReverseIntercommoditySpread for "ReverseIntercommoditySpread"
+            /// </summary>
+            [EnumMember(Value = "ReverseIntercommoditySpread")]
+            ReverseIntercommoditySpread,
+            
+            /// <summary>
+            /// Enum ReverseSpread for "ReverseSpread"
+            /// </summary>
+            [EnumMember(Value = "ReverseSpread")]
+            ReverseSpread,
+            
+            /// <summary>
+            /// Enum Strip for "Strip"
+            /// </summary>
+            [EnumMember(Value = "Strip")]
+            Strip,
+            
+            /// <summary>
+            /// Enum TreasuryIntercommoditySpread for "TreasuryIntercommoditySpread"
+            /// </summary>
+            [EnumMember(Value = "TreasuryIntercommoditySpread")]
+            TreasuryIntercommoditySpread
         }
 
         /// <summary>

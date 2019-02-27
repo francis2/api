@@ -81,7 +81,8 @@ namespace Tradovate.Services.Model
         /// <param name="Action">Buy, Sell (required).</param>
         /// <param name="_Params">_Params.</param>
         /// <param name="Uuid">Uuid.</param>
-        public StartOrderStrategy(int? AccountId = null, string AccountSpec = null, string Symbol = null, int? OrderStrategyTypeId = null, ActionEnum? Action = null, string _Params = null, string Uuid = null)
+        /// <param name="CustomTag50">CustomTag50.</param>
+        public StartOrderStrategy(int? AccountId = null, string AccountSpec = null, string Symbol = null, int? OrderStrategyTypeId = null, ActionEnum? Action = null, string _Params = null, string Uuid = null, string CustomTag50 = null)
         {
             // to ensure "Symbol" is required (not null)
             if (Symbol == null)
@@ -114,6 +115,7 @@ namespace Tradovate.Services.Model
             this.AccountSpec = AccountSpec;
             this._Params = _Params;
             this.Uuid = Uuid;
+            this.CustomTag50 = CustomTag50;
         }
         
         /// <summary>
@@ -149,6 +151,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="uuid", EmitDefaultValue=false)]
         public string Uuid { get; set; }
         /// <summary>
+        /// Gets or Sets CustomTag50
+        /// </summary>
+        [DataMember(Name="customTag50", EmitDefaultValue=false)]
+        public string CustomTag50 { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -163,6 +170,7 @@ namespace Tradovate.Services.Model
             sb.Append("  Action: ").Append(Action).Append("\n");
             sb.Append("  _Params: ").Append(_Params).Append("\n");
             sb.Append("  Uuid: ").Append(Uuid).Append("\n");
+            sb.Append("  CustomTag50: ").Append(CustomTag50).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -233,6 +241,11 @@ namespace Tradovate.Services.Model
                     this.Uuid == other.Uuid ||
                     this.Uuid != null &&
                     this.Uuid.Equals(other.Uuid)
+                ) && 
+                (
+                    this.CustomTag50 == other.CustomTag50 ||
+                    this.CustomTag50 != null &&
+                    this.CustomTag50.Equals(other.CustomTag50)
                 );
         }
 
@@ -261,6 +274,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this._Params.GetHashCode();
                 if (this.Uuid != null)
                     hash = hash * 59 + this.Uuid.GetHashCode();
+                if (this.CustomTag50 != null)
+                    hash = hash * 59 + this.CustomTag50.GetHashCode();
                 return hash;
             }
         }

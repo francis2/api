@@ -9,8 +9,6 @@ Name | Type | Description | Notes
 **AccountType** | **string** | Customer, Giveup, House, Omnibus, Wash | 
 **Active** | **bool?** |  | 
 **ClearingHouseId** | **int?** | id of ClearingHouse | 
-**RiskCategoryId** | **int?** | id of RiskCategory | 
-**AutoLiqProfileId** | **int?** | id of AutoLiqProfile | 
 **CftcNumber** | **string** |  | [optional] 
 **MarginAccountType** | **string** | Hedger, Speculator | 
 **LegalStatus** | **string** | Corporation, GP, IRA, Individual, Joint, LLC, LLP, LP, Trust | 

@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **ExpireTime** | **DateTime?** |  | [optional] 
 **Text** | **string** |  | [optional] 
 **ActivationTime** | **DateTime?** |  | [optional] 
+**CustomTag50** | **string** |  | [optional] 
 **Bracket1** | [**RestrainedOrderVersion**](RestrainedOrderVersion.md) |  | 
 **Bracket2** | [**RestrainedOrderVersion**](RestrainedOrderVersion.md) |  | [optional] 
 

@@ -51,9 +51,7 @@ namespace Tradovate.Services.Model
         /// <param name="UserId">id of User (required).</param>
         /// <param name="Timestamp">Timestamp (required).</param>
         /// <param name="PlanPrice">PlanPrice (required).</param>
-        /// <param name="CreditCardTransactionId">id of CreditCardTransaction.</param>
         /// <param name="CashBalanceLogId">id of CashBalanceLog.</param>
-        /// <param name="CreditCardId">id of CreditCard.</param>
         /// <param name="AccountId">id of Account.</param>
         /// <param name="TradovateSubscriptionPlanId">id of TradovateSubscriptionPlan (required).</param>
         /// <param name="StartDate">StartDate (required).</param>
@@ -61,7 +59,7 @@ namespace Tradovate.Services.Model
         /// <param name="PaidAmount">PaidAmount (required).</param>
         /// <param name="CancelledRenewal">CancelledRenewal.</param>
         /// <param name="CancelReason">CancelReason.</param>
-        public TradovateSubscription(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CreditCardTransactionId = null, int? CashBalanceLogId = null, int? CreditCardId = null, int? AccountId = null, int? TradovateSubscriptionPlanId = null, TradeDate StartDate = null, TradeDate ExpirationDate = null, double? PaidAmount = null, bool? CancelledRenewal = null, string CancelReason = null)
+        public TradovateSubscription(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CashBalanceLogId = null, int? AccountId = null, int? TradovateSubscriptionPlanId = null, TradeDate StartDate = null, TradeDate ExpirationDate = null, double? PaidAmount = null, bool? CancelledRenewal = null, string CancelReason = null)
         {
             // to ensure "UserId" is required (not null)
             if (UserId == null)
@@ -127,9 +125,7 @@ namespace Tradovate.Services.Model
                 this.PaidAmount = PaidAmount;
             }
             this.Id = Id;
-            this.CreditCardTransactionId = CreditCardTransactionId;
             this.CashBalanceLogId = CashBalanceLogId;
-            this.CreditCardId = CreditCardId;
             this.AccountId = AccountId;
             this.CancelledRenewal = CancelledRenewal;
             this.CancelReason = CancelReason;
@@ -157,23 +153,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="planPrice", EmitDefaultValue=false)]
         public double? PlanPrice { get; set; }
         /// <summary>
-        /// id of CreditCardTransaction
-        /// </summary>
-        /// <value>id of CreditCardTransaction</value>
-        [DataMember(Name="creditCardTransactionId", EmitDefaultValue=false)]
-        public int? CreditCardTransactionId { get; set; }
-        /// <summary>
         /// id of CashBalanceLog
         /// </summary>
         /// <value>id of CashBalanceLog</value>
         [DataMember(Name="cashBalanceLogId", EmitDefaultValue=false)]
         public int? CashBalanceLogId { get; set; }
-        /// <summary>
-        /// id of CreditCard
-        /// </summary>
-        /// <value>id of CreditCard</value>
-        [DataMember(Name="creditCardId", EmitDefaultValue=false)]
-        public int? CreditCardId { get; set; }
         /// <summary>
         /// id of Account
         /// </summary>
@@ -223,9 +207,7 @@ namespace Tradovate.Services.Model
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  Timestamp: ").Append(Timestamp).Append("\n");
             sb.Append("  PlanPrice: ").Append(PlanPrice).Append("\n");
-            sb.Append("  CreditCardTransactionId: ").Append(CreditCardTransactionId).Append("\n");
             sb.Append("  CashBalanceLogId: ").Append(CashBalanceLogId).Append("\n");
-            sb.Append("  CreditCardId: ").Append(CreditCardId).Append("\n");
             sb.Append("  AccountId: ").Append(AccountId).Append("\n");
             sb.Append("  TradovateSubscriptionPlanId: ").Append(TradovateSubscriptionPlanId).Append("\n");
             sb.Append("  StartDate: ").Append(StartDate).Append("\n");
@@ -290,19 +272,9 @@ namespace Tradovate.Services.Model
                     this.PlanPrice.Equals(other.PlanPrice)
                 ) && 
                 (
-                    this.CreditCardTransactionId == other.CreditCardTransactionId ||
-                    this.CreditCardTransactionId != null &&
-                    this.CreditCardTransactionId.Equals(other.CreditCardTransactionId)
-                ) && 
-                (
                     this.CashBalanceLogId == other.CashBalanceLogId ||
                     this.CashBalanceLogId != null &&
                     this.CashBalanceLogId.Equals(other.CashBalanceLogId)
-                ) && 
-                (
-                    this.CreditCardId == other.CreditCardId ||
-                    this.CreditCardId != null &&
-                    this.CreditCardId.Equals(other.CreditCardId)
                 ) && 
                 (
                     this.AccountId == other.AccountId ||
@@ -360,12 +332,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Timestamp.GetHashCode();
                 if (this.PlanPrice != null)
                     hash = hash * 59 + this.PlanPrice.GetHashCode();
-                if (this.CreditCardTransactionId != null)
-                    hash = hash * 59 + this.CreditCardTransactionId.GetHashCode();
                 if (this.CashBalanceLogId != null)
                     hash = hash * 59 + this.CashBalanceLogId.GetHashCode();
-                if (this.CreditCardId != null)
-                    hash = hash * 59 + this.CreditCardId.GetHashCode();
                 if (this.AccountId != null)
                     hash = hash * 59 + this.AccountId.GetHashCode();
                 if (this.TradovateSubscriptionPlanId != null)

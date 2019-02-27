@@ -69,28 +69,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum Suspended for "Suspended"
+            /// Enum Canceled for "Canceled"
             /// </summary>
-            [EnumMember(Value = "Suspended")]
-            Suspended,
-            
-            /// <summary>
-            /// Enum Filled for "Filled"
-            /// </summary>
-            [EnumMember(Value = "Filled")]
-            Filled,
-            
-            /// <summary>
-            /// Enum PendingReplace for "PendingReplace"
-            /// </summary>
-            [EnumMember(Value = "PendingReplace")]
-            PendingReplace,
-            
-            /// <summary>
-            /// Enum Working for "Working"
-            /// </summary>
-            [EnumMember(Value = "Working")]
-            Working,
+            [EnumMember(Value = "Canceled")]
+            Canceled,
             
             /// <summary>
             /// Enum Completed for "Completed"
@@ -99,22 +81,34 @@ namespace Tradovate.Services.Model
             Completed,
             
             /// <summary>
-            /// Enum PendingCancel for "PendingCancel"
-            /// </summary>
-            [EnumMember(Value = "PendingCancel")]
-            PendingCancel,
-            
-            /// <summary>
             /// Enum Expired for "Expired"
             /// </summary>
             [EnumMember(Value = "Expired")]
             Expired,
             
             /// <summary>
-            /// Enum Canceled for "Canceled"
+            /// Enum Filled for "Filled"
             /// </summary>
-            [EnumMember(Value = "Canceled")]
-            Canceled,
+            [EnumMember(Value = "Filled")]
+            Filled,
+            
+            /// <summary>
+            /// Enum PendingCancel for "PendingCancel"
+            /// </summary>
+            [EnumMember(Value = "PendingCancel")]
+            PendingCancel,
+            
+            /// <summary>
+            /// Enum PendingNew for "PendingNew"
+            /// </summary>
+            [EnumMember(Value = "PendingNew")]
+            PendingNew,
+            
+            /// <summary>
+            /// Enum PendingReplace for "PendingReplace"
+            /// </summary>
+            [EnumMember(Value = "PendingReplace")]
+            PendingReplace,
             
             /// <summary>
             /// Enum Rejected for "Rejected"
@@ -123,16 +117,22 @@ namespace Tradovate.Services.Model
             Rejected,
             
             /// <summary>
+            /// Enum Suspended for "Suspended"
+            /// </summary>
+            [EnumMember(Value = "Suspended")]
+            Suspended,
+            
+            /// <summary>
             /// Enum Unknown for "Unknown"
             /// </summary>
             [EnumMember(Value = "Unknown")]
             Unknown,
             
             /// <summary>
-            /// Enum PendingNew for "PendingNew"
+            /// Enum Working for "Working"
             /// </summary>
-            [EnumMember(Value = "PendingNew")]
-            PendingNew
+            [EnumMember(Value = "Working")]
+            Working
         }
 
         /// <summary>
@@ -162,12 +162,11 @@ namespace Tradovate.Services.Model
         /// <param name="Timestamp">Create Time (required).</param>
         /// <param name="Action">Buy, Sell (required).</param>
         /// <param name="OrdStatus">Canceled, Completed, Expired, Filled, PendingCancel, PendingNew, PendingReplace, Rejected, Suspended, Unknown, Working (required).</param>
-        /// <param name="ExecutionProviderId">id of ExecutionProvider.</param>
         /// <param name="OcoId">id of Order.</param>
         /// <param name="ParentId">id of Order.</param>
         /// <param name="LinkedId">id of Order.</param>
         /// <param name="Admin">Admin (required).</param>
-        public Order(int? Id = null, int? AccountId = null, int? ContractId = null, int? SpreadDefinitionId = null, DateTime? Timestamp = null, ActionEnum? Action = null, OrdStatusEnum? OrdStatus = null, int? ExecutionProviderId = null, int? OcoId = null, int? ParentId = null, int? LinkedId = null, bool? Admin = null)
+        public Order(int? Id = null, int? AccountId = null, int? ContractId = null, int? SpreadDefinitionId = null, DateTime? Timestamp = null, ActionEnum? Action = null, OrdStatusEnum? OrdStatus = null, int? OcoId = null, int? ParentId = null, int? LinkedId = null, bool? Admin = null)
         {
             // to ensure "AccountId" is required (not null)
             if (AccountId == null)
@@ -217,7 +216,6 @@ namespace Tradovate.Services.Model
             this.Id = Id;
             this.ContractId = ContractId;
             this.SpreadDefinitionId = SpreadDefinitionId;
-            this.ExecutionProviderId = ExecutionProviderId;
             this.OcoId = OcoId;
             this.ParentId = ParentId;
             this.LinkedId = LinkedId;
@@ -252,12 +250,6 @@ namespace Tradovate.Services.Model
         /// <value>Create Time</value>
         [DataMember(Name="timestamp", EmitDefaultValue=false)]
         public DateTime? Timestamp { get; set; }
-        /// <summary>
-        /// id of ExecutionProvider
-        /// </summary>
-        /// <value>id of ExecutionProvider</value>
-        [DataMember(Name="executionProviderId", EmitDefaultValue=false)]
-        public int? ExecutionProviderId { get; set; }
         /// <summary>
         /// id of Order
         /// </summary>
@@ -296,7 +288,6 @@ namespace Tradovate.Services.Model
             sb.Append("  Timestamp: ").Append(Timestamp).Append("\n");
             sb.Append("  Action: ").Append(Action).Append("\n");
             sb.Append("  OrdStatus: ").Append(OrdStatus).Append("\n");
-            sb.Append("  ExecutionProviderId: ").Append(ExecutionProviderId).Append("\n");
             sb.Append("  OcoId: ").Append(OcoId).Append("\n");
             sb.Append("  ParentId: ").Append(ParentId).Append("\n");
             sb.Append("  LinkedId: ").Append(LinkedId).Append("\n");
@@ -373,11 +364,6 @@ namespace Tradovate.Services.Model
                     this.OrdStatus.Equals(other.OrdStatus)
                 ) && 
                 (
-                    this.ExecutionProviderId == other.ExecutionProviderId ||
-                    this.ExecutionProviderId != null &&
-                    this.ExecutionProviderId.Equals(other.ExecutionProviderId)
-                ) && 
-                (
                     this.OcoId == other.OcoId ||
                     this.OcoId != null &&
                     this.OcoId.Equals(other.OcoId)
@@ -424,8 +410,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Action.GetHashCode();
                 if (this.OrdStatus != null)
                     hash = hash * 59 + this.OrdStatus.GetHashCode();
-                if (this.ExecutionProviderId != null)
-                    hash = hash * 59 + this.ExecutionProviderId.GetHashCode();
                 if (this.OcoId != null)
                     hash = hash * 59 + this.OcoId.GetHashCode();
                 if (this.ParentId != null)

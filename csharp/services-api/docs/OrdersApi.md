@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.OrdersApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,7 +13,6 @@ Method | HTTP request | Description
 [**GetAllFills**](OrdersApi.md#getallfills) | **GET** /fill/list | 
 [**GetAllOrderStrategies**](OrdersApi.md#getallorderstrategies) | **GET** /orderStrategy/list | 
 [**GetAllOrderStrategyLinks**](OrdersApi.md#getallorderstrategylinks) | **GET** /orderStrategyLink/list | 
-[**GetAllOrderStrategyLogs**](OrdersApi.md#getallorderstrategylogs) | **GET** /orderStrategyLog/list | 
 [**GetAllOrderVersions**](OrdersApi.md#getallorderversions) | **GET** /orderVersion/list | 
 [**GetAllOrders**](OrdersApi.md#getallorders) | **GET** /order/list | 
 [**GetCommand**](OrdersApi.md#getcommand) | **GET** /command/item | 
@@ -31,8 +30,6 @@ Method | HTTP request | Description
 [**GetOrderStrategy**](OrdersApi.md#getorderstrategy) | **GET** /orderStrategy/item | 
 [**GetOrderStrategyLink**](OrdersApi.md#getorderstrategylink) | **GET** /orderStrategyLink/item | 
 [**GetOrderStrategyLinks**](OrdersApi.md#getorderstrategylinks) | **GET** /orderStrategyLink/items | 
-[**GetOrderStrategyLog**](OrdersApi.md#getorderstrategylog) | **GET** /orderStrategyLog/item | 
-[**GetOrderStrategyLogs**](OrdersApi.md#getorderstrategylogs) | **GET** /orderStrategyLog/items | 
 [**GetOrderVersion**](OrdersApi.md#getorderversion) | **GET** /orderVersion/item | 
 [**GetOrderVersions**](OrdersApi.md#getorderversions) | **GET** /orderVersion/items | 
 [**GetOrders**](OrdersApi.md#getorders) | **GET** /order/items | 
@@ -50,8 +47,6 @@ Method | HTTP request | Description
 [**GetOwnedOrderStrategiesBatch**](OrdersApi.md#getownedorderstrategiesbatch) | **GET** /orderStrategy/ldeps | 
 [**GetOwnedOrderStrategyLinks**](OrdersApi.md#getownedorderstrategylinks) | **GET** /orderStrategyLink/deps | 
 [**GetOwnedOrderStrategyLinksBatch**](OrdersApi.md#getownedorderstrategylinksbatch) | **GET** /orderStrategyLink/ldeps | 
-[**GetOwnedOrderStrategyLogs**](OrdersApi.md#getownedorderstrategylogs) | **GET** /orderStrategyLog/deps | 
-[**GetOwnedOrderStrategyLogsBatch**](OrdersApi.md#getownedorderstrategylogsbatch) | **GET** /orderStrategyLog/ldeps | 
 [**GetOwnedOrderVersions**](OrdersApi.md#getownedorderversions) | **GET** /orderVersion/deps | 
 [**GetOwnedOrderVersionsBatch**](OrdersApi.md#getownedorderversionsbatch) | **GET** /orderVersion/ldeps | 
 [**GetOwnedOrders**](OrdersApi.md#getownedorders) | **GET** /order/deps | 
@@ -137,7 +132,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ExecutionReport type by its name
+Retrieves an entity of ExecutionReport type by its name
 
 ### Example
 ```csharp
@@ -203,7 +198,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CommandReport type
+Retrieves all entities of CommandReport type
 
 ### Example
 ```csharp
@@ -265,7 +260,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Command type
+Retrieves all entities of Command type
 
 ### Example
 ```csharp
@@ -327,7 +322,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of ExecutionReport type
+Retrieves all entities of ExecutionReport type
 
 ### Example
 ```csharp
@@ -389,7 +384,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of FillFee type
+Retrieves all entities of FillFee type
 
 ### Example
 ```csharp
@@ -451,7 +446,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Fill type
+Retrieves all entities of Fill type
 
 ### Example
 ```csharp
@@ -513,7 +508,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of OrderStrategy type
+Retrieves all entities of OrderStrategy type
 
 ### Example
 ```csharp
@@ -575,7 +570,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of OrderStrategyLink type
+Retrieves all entities of OrderStrategyLink type
 
 ### Example
 ```csharp
@@ -631,75 +626,13 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getallorderstrategylogs"></a>
-# **GetAllOrderStrategyLogs**
-> List<OrderStrategyLog> GetAllOrderStrategyLogs ()
-
-
-
-Returns all entities of OrderStrategyLog type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetAllOrderStrategyLogsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new OrdersApi();
-
-            try
-            {
-                List&lt;OrderStrategyLog&gt; result = apiInstance.GetAllOrderStrategyLogs();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrdersApi.GetAllOrderStrategyLogs: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<OrderStrategyLog>**](OrderStrategyLog.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getallorderversions"></a>
 # **GetAllOrderVersions**
 > List<OrderVersion> GetAllOrderVersions ()
 
 
 
-Returns all entities of OrderVersion type
+Retrieves all entities of OrderVersion type
 
 ### Example
 ```csharp
@@ -761,7 +694,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Order type
+Retrieves all entities of Order type
 
 ### Example
 ```csharp
@@ -823,7 +756,7 @@ This endpoint does not need any parameter.
 
 
 
-Finds an entity of Command type by its id
+Retrieves an entity of Command type by its id
 
 ### Example
 ```csharp
@@ -889,7 +822,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of CommandReport type by its id
+Retrieves an entity of CommandReport type by its id
 
 ### Example
 ```csharp
@@ -955,7 +888,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of CommandReport type by its ids
+Retrieves multiple entities of CommandReport type by its ids
 
 ### Example
 ```csharp
@@ -1021,7 +954,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Command type by its ids
+Retrieves multiple entities of Command type by its ids
 
 ### Example
 ```csharp
@@ -1087,7 +1020,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ExecutionReport type by its id
+Retrieves an entity of ExecutionReport type by its id
 
 ### Example
 ```csharp
@@ -1153,7 +1086,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ExecutionReport type by its ids
+Retrieves multiple entities of ExecutionReport type by its ids
 
 ### Example
 ```csharp
@@ -1219,7 +1152,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Fill type by its id
+Retrieves an entity of Fill type by its id
 
 ### Example
 ```csharp
@@ -1285,7 +1218,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of FillFee type by its id
+Retrieves an entity of FillFee type by its id
 
 ### Example
 ```csharp
@@ -1351,7 +1284,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of FillFee type by its ids
+Retrieves multiple entities of FillFee type by its ids
 
 ### Example
 ```csharp
@@ -1417,7 +1350,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Fill type by its ids
+Retrieves multiple entities of Fill type by its ids
 
 ### Example
 ```csharp
@@ -1483,7 +1416,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Order type by its id
+Retrieves an entity of Order type by its id
 
 ### Example
 ```csharp
@@ -1549,7 +1482,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of OrderStrategy type by its ids
+Retrieves multiple entities of OrderStrategy type by its ids
 
 ### Example
 ```csharp
@@ -1615,7 +1548,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of OrderStrategy type by its id
+Retrieves an entity of OrderStrategy type by its id
 
 ### Example
 ```csharp
@@ -1681,7 +1614,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of OrderStrategyLink type by its id
+Retrieves an entity of OrderStrategyLink type by its id
 
 ### Example
 ```csharp
@@ -1747,7 +1680,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of OrderStrategyLink type by its ids
+Retrieves multiple entities of OrderStrategyLink type by its ids
 
 ### Example
 ```csharp
@@ -1807,145 +1740,13 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getorderstrategylog"></a>
-# **GetOrderStrategyLog**
-> OrderStrategyLog GetOrderStrategyLog (int? id)
-
-
-
-Finds an entity of OrderStrategyLog type by its id
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetOrderStrategyLogExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new OrdersApi();
-            var id = 56;  // int? | 
-
-            try
-            {
-                OrderStrategyLog result = apiInstance.GetOrderStrategyLog(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrdersApi.GetOrderStrategyLog: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **int?**|  | 
-
-### Return type
-
-[**OrderStrategyLog**](OrderStrategyLog.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getorderstrategylogs"></a>
-# **GetOrderStrategyLogs**
-> List<OrderStrategyLog> GetOrderStrategyLogs (List<int?> ids)
-
-
-
-Finds multiple entities of OrderStrategyLog type by its ids
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetOrderStrategyLogsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new OrdersApi();
-            var ids = new List<int?>(); // List<int?> | 
-
-            try
-            {
-                List&lt;OrderStrategyLog&gt; result = apiInstance.GetOrderStrategyLogs(ids);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrdersApi.GetOrderStrategyLogs: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ids** | [**List<int?>**](int?.md)|  | 
-
-### Return type
-
-[**List<OrderStrategyLog>**](OrderStrategyLog.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getorderversion"></a>
 # **GetOrderVersion**
 > OrderVersion GetOrderVersion (int? id)
 
 
 
-Finds an entity of OrderVersion type by its id
+Retrieves an entity of OrderVersion type by its id
 
 ### Example
 ```csharp
@@ -2011,7 +1812,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of OrderVersion type by its ids
+Retrieves multiple entities of OrderVersion type by its ids
 
 ### Example
 ```csharp
@@ -2077,7 +1878,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Order type by its ids
+Retrieves multiple entities of Order type by its ids
 
 ### Example
 ```csharp
@@ -2143,7 +1944,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CommandReport type related to Command type
+Retrieves all entities of CommandReport type related to Command entity
 
 ### Example
 ```csharp
@@ -2209,7 +2010,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CommandReport type related to multiple entities of Command type
+Retrieves all entities of CommandReport type related to multiple entities of Command type
 
 ### Example
 ```csharp
@@ -2232,7 +2033,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Command entity
+            var masterids = new List<int?>(); // List<int?> | ids of Command entities
 
             try
             {
@@ -2252,7 +2053,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Command entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Command entities | 
 
 ### Return type
 
@@ -2275,7 +2076,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Command type related to Order type
+Retrieves all entities of Command type related to Order entity
 
 ### Example
 ```csharp
@@ -2341,7 +2142,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Command type related to multiple entities of Order type
+Retrieves all entities of Command type related to multiple entities of Order type
 
 ### Example
 ```csharp
@@ -2364,7 +2165,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Order entity
+            var masterids = new List<int?>(); // List<int?> | ids of Order entities
 
             try
             {
@@ -2384,7 +2185,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Order entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Order entities | 
 
 ### Return type
 
@@ -2407,7 +2208,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ExecutionReport type related to Command type
+Retrieves all entities of ExecutionReport type related to Command entity
 
 ### Example
 ```csharp
@@ -2473,7 +2274,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ExecutionReport type related to multiple entities of Command type
+Retrieves all entities of ExecutionReport type related to multiple entities of Command type
 
 ### Example
 ```csharp
@@ -2496,7 +2297,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Command entity
+            var masterids = new List<int?>(); // List<int?> | ids of Command entities
 
             try
             {
@@ -2516,7 +2317,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Command entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Command entities | 
 
 ### Return type
 
@@ -2539,7 +2340,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of FillFee type related to Fill type
+Retrieves all entities of FillFee type related to Fill entity
 
 ### Example
 ```csharp
@@ -2605,7 +2406,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of FillFee type related to multiple entities of Fill type
+Retrieves all entities of FillFee type related to multiple entities of Fill type
 
 ### Example
 ```csharp
@@ -2628,7 +2429,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Fill entity
+            var masterids = new List<int?>(); // List<int?> | ids of Fill entities
 
             try
             {
@@ -2648,7 +2449,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Fill entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Fill entities | 
 
 ### Return type
 
@@ -2671,7 +2472,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Fill type related to Order type
+Retrieves all entities of Fill type related to Order entity
 
 ### Example
 ```csharp
@@ -2737,7 +2538,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Fill type related to multiple entities of Order type
+Retrieves all entities of Fill type related to multiple entities of Order type
 
 ### Example
 ```csharp
@@ -2760,7 +2561,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Order entity
+            var masterids = new List<int?>(); // List<int?> | ids of Order entities
 
             try
             {
@@ -2780,7 +2581,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Order entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Order entities | 
 
 ### Return type
 
@@ -2803,7 +2604,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of OrderStrategy type related to Account type
+Retrieves all entities of OrderStrategy type related to Account entity
 
 ### Example
 ```csharp
@@ -2869,7 +2670,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of OrderStrategy type related to multiple entities of Account type
+Retrieves all entities of OrderStrategy type related to multiple entities of Account type
 
 ### Example
 ```csharp
@@ -2892,7 +2693,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
+            var masterids = new List<int?>(); // List<int?> | ids of Account entities
 
             try
             {
@@ -2912,7 +2713,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Account entities | 
 
 ### Return type
 
@@ -2935,7 +2736,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of OrderStrategyLink type related to OrderStrategy type
+Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
 
 ### Example
 ```csharp
@@ -3001,7 +2802,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
 
 ### Example
 ```csharp
@@ -3024,7 +2825,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of OrderStrategy entity
+            var masterids = new List<int?>(); // List<int?> | ids of OrderStrategy entities
 
             try
             {
@@ -3044,143 +2845,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of OrderStrategy entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of OrderStrategy entities | 
 
 ### Return type
 
 [**List<OrderStrategyLink>**](OrderStrategyLink.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getownedorderstrategylogs"></a>
-# **GetOwnedOrderStrategyLogs**
-> List<OrderStrategyLog> GetOwnedOrderStrategyLogs (int? masterid)
-
-
-
-Returns all entities of OrderStrategyLog type related to OrderStrategy type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetOwnedOrderStrategyLogsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new OrdersApi();
-            var masterid = 56;  // int? | id of OrderStrategy entity
-
-            try
-            {
-                List&lt;OrderStrategyLog&gt; result = apiInstance.GetOwnedOrderStrategyLogs(masterid);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrdersApi.GetOwnedOrderStrategyLogs: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **masterid** | **int?**| id of OrderStrategy entity | 
-
-### Return type
-
-[**List<OrderStrategyLog>**](OrderStrategyLog.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getownedorderstrategylogsbatch"></a>
-# **GetOwnedOrderStrategyLogsBatch**
-> List<OrderStrategyLog> GetOwnedOrderStrategyLogsBatch (List<int?> masterids)
-
-
-
-Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetOwnedOrderStrategyLogsBatchExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of OrderStrategy entity
-
-            try
-            {
-                List&lt;OrderStrategyLog&gt; result = apiInstance.GetOwnedOrderStrategyLogsBatch(masterids);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling OrdersApi.GetOwnedOrderStrategyLogsBatch: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of OrderStrategy entity | 
-
-### Return type
-
-[**List<OrderStrategyLog>**](OrderStrategyLog.md)
 
 ### Authorization
 
@@ -3199,7 +2868,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of OrderVersion type related to Order type
+Retrieves all entities of OrderVersion type related to Order entity
 
 ### Example
 ```csharp
@@ -3265,7 +2934,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of OrderVersion type related to multiple entities of Order type
+Retrieves all entities of OrderVersion type related to multiple entities of Order type
 
 ### Example
 ```csharp
@@ -3288,7 +2957,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Order entity
+            var masterids = new List<int?>(); // List<int?> | ids of Order entities
 
             try
             {
@@ -3308,7 +2977,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Order entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Order entities | 
 
 ### Return type
 
@@ -3331,7 +3000,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Order type related to Account type
+Retrieves all entities of Order type related to Account entity
 
 ### Example
 ```csharp
@@ -3397,7 +3066,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Order type related to multiple entities of Account type
+Retrieves all entities of Order type related to multiple entities of Account type
 
 ### Example
 ```csharp
@@ -3420,7 +3089,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
+            var masterids = new List<int?>(); // List<int?> | ids of Account entities
 
             try
             {
@@ -3440,7 +3109,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Account entities | 
 
 ### Return type
 
@@ -3975,7 +3644,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp

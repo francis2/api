@@ -34,65 +34,20 @@ using Newtonsoft.Json.Converters;
 namespace Tradovate.Services.Model
 {
     /// <summary>
-    /// UserStatusMessage
+    /// DeleteResultResponse
     /// </summary>
     [DataContract]
-    public partial class UserStatusMessage :  IEquatable<UserStatusMessage>
+    public partial class DeleteResultResponse :  IEquatable<DeleteResultResponse>
     {
         /// <summary>
-        /// Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail
-        /// </summary>
-        /// <value>Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail</value>
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum StatusEnum
-        {
-            
-            /// <summary>
-            /// Enum Active for "Active"
-            /// </summary>
-            [EnumMember(Value = "Active")]
-            Active,
-            
-            /// <summary>
-            /// Enum Closed for "Closed"
-            /// </summary>
-            [EnumMember(Value = "Closed")]
-            Closed,
-            
-            /// <summary>
-            /// Enum Initiated for "Initiated"
-            /// </summary>
-            [EnumMember(Value = "Initiated")]
-            Initiated,
-            
-            /// <summary>
-            /// Enum TemporaryLocked for "TemporaryLocked"
-            /// </summary>
-            [EnumMember(Value = "TemporaryLocked")]
-            TemporaryLocked,
-            
-            /// <summary>
-            /// Enum UnconfirmedEmail for "UnconfirmedEmail"
-            /// </summary>
-            [EnumMember(Value = "UnconfirmedEmail")]
-            UnconfirmedEmail
-        }
-
-        /// <summary>
-        /// Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail
-        /// </summary>
-        /// <value>Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail</value>
-        [DataMember(Name="status", EmitDefaultValue=false)]
-        public StatusEnum? Status { get; set; }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UserStatusMessage" /> class.
+        /// Initializes a new instance of the <see cref="DeleteResultResponse" /> class.
         /// </summary>
         /// <param name="ErrorText">Non-empty if the request failed.</param>
-        /// <param name="Status">Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail.</param>
-        public UserStatusMessage(string ErrorText = null, StatusEnum? Status = null)
+        /// <param name="Success">Success.</param>
+        public DeleteResultResponse(string ErrorText = null, bool? Success = null)
         {
             this.ErrorText = ErrorText;
-            this.Status = Status;
+            this.Success = Success;
         }
         
         /// <summary>
@@ -102,15 +57,20 @@ namespace Tradovate.Services.Model
         [DataMember(Name="errorText", EmitDefaultValue=false)]
         public string ErrorText { get; set; }
         /// <summary>
+        /// Gets or Sets Success
+        /// </summary>
+        [DataMember(Name="success", EmitDefaultValue=false)]
+        public bool? Success { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class UserStatusMessage {\n");
+            sb.Append("class DeleteResultResponse {\n");
             sb.Append("  ErrorText: ").Append(ErrorText).Append("\n");
-            sb.Append("  Status: ").Append(Status).Append("\n");
+            sb.Append("  Success: ").Append(Success).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -132,15 +92,15 @@ namespace Tradovate.Services.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as UserStatusMessage);
+            return this.Equals(obj as DeleteResultResponse);
         }
 
         /// <summary>
-        /// Returns true if UserStatusMessage instances are equal
+        /// Returns true if DeleteResultResponse instances are equal
         /// </summary>
-        /// <param name="other">Instance of UserStatusMessage to be compared</param>
+        /// <param name="other">Instance of DeleteResultResponse to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(UserStatusMessage other)
+        public bool Equals(DeleteResultResponse other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)
@@ -153,9 +113,9 @@ namespace Tradovate.Services.Model
                     this.ErrorText.Equals(other.ErrorText)
                 ) && 
                 (
-                    this.Status == other.Status ||
-                    this.Status != null &&
-                    this.Status.Equals(other.Status)
+                    this.Success == other.Success ||
+                    this.Success != null &&
+                    this.Success.Equals(other.Success)
                 );
         }
 
@@ -172,8 +132,8 @@ namespace Tradovate.Services.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.ErrorText != null)
                     hash = hash * 59 + this.ErrorText.GetHashCode();
-                if (this.Status != null)
-                    hash = hash * 59 + this.Status.GetHashCode();
+                if (this.Success != null)
+                    hash = hash * 59 + this.Success.GetHashCode();
                 return hash;
             }
         }

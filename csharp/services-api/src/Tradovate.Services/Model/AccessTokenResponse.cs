@@ -48,16 +48,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum TemporaryLocked for "TemporaryLocked"
-            /// </summary>
-            [EnumMember(Value = "TemporaryLocked")]
-            TemporaryLocked,
-            
-            /// <summary>
             /// Enum Active for "Active"
             /// </summary>
             [EnumMember(Value = "Active")]
             Active,
+            
+            /// <summary>
+            /// Enum Closed for "Closed"
+            /// </summary>
+            [EnumMember(Value = "Closed")]
+            Closed,
             
             /// <summary>
             /// Enum Initiated for "Initiated"
@@ -66,16 +66,16 @@ namespace Tradovate.Services.Model
             Initiated,
             
             /// <summary>
+            /// Enum TemporaryLocked for "TemporaryLocked"
+            /// </summary>
+            [EnumMember(Value = "TemporaryLocked")]
+            TemporaryLocked,
+            
+            /// <summary>
             /// Enum UnconfirmedEmail for "UnconfirmedEmail"
             /// </summary>
             [EnumMember(Value = "UnconfirmedEmail")]
-            UnconfirmedEmail,
-            
-            /// <summary>
-            /// Enum Closed for "Closed"
-            /// </summary>
-            [EnumMember(Value = "Closed")]
-            Closed
+            UnconfirmedEmail
         }
 
         /// <summary>

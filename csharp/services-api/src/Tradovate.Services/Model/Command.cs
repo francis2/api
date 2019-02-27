@@ -48,10 +48,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum New for "New"
+            /// Enum Cancel for "Cancel"
             /// </summary>
-            [EnumMember(Value = "New")]
-            New,
+            [EnumMember(Value = "Cancel")]
+            Cancel,
             
             /// <summary>
             /// Enum Modify for "Modify"
@@ -60,10 +60,10 @@ namespace Tradovate.Services.Model
             Modify,
             
             /// <summary>
-            /// Enum Cancel for "Cancel"
+            /// Enum New for "New"
             /// </summary>
-            [EnumMember(Value = "Cancel")]
-            Cancel
+            [EnumMember(Value = "New")]
+            New
         }
 
         /// <summary>
@@ -73,36 +73,6 @@ namespace Tradovate.Services.Model
         [JsonConverter(typeof(StringEnumConverter))]
         public enum CommandStatusEnum
         {
-            
-            /// <summary>
-            /// Enum Replaced for "Replaced"
-            /// </summary>
-            [EnumMember(Value = "Replaced")]
-            Replaced,
-            
-            /// <summary>
-            /// Enum ExecutionStopped for "ExecutionStopped"
-            /// </summary>
-            [EnumMember(Value = "ExecutionStopped")]
-            ExecutionStopped,
-            
-            /// <summary>
-            /// Enum ExecutionSuspended for "ExecutionSuspended"
-            /// </summary>
-            [EnumMember(Value = "ExecutionSuspended")]
-            ExecutionSuspended,
-            
-            /// <summary>
-            /// Enum RiskRejected for "RiskRejected"
-            /// </summary>
-            [EnumMember(Value = "RiskRejected")]
-            RiskRejected,
-            
-            /// <summary>
-            /// Enum RiskPassed for "RiskPassed"
-            /// </summary>
-            [EnumMember(Value = "RiskPassed")]
-            RiskPassed,
             
             /// <summary>
             /// Enum AtExecution for "AtExecution"
@@ -117,10 +87,16 @@ namespace Tradovate.Services.Model
             ExecutionRejected,
             
             /// <summary>
-            /// Enum PendingExecution for "PendingExecution"
+            /// Enum ExecutionStopped for "ExecutionStopped"
             /// </summary>
-            [EnumMember(Value = "PendingExecution")]
-            PendingExecution,
+            [EnumMember(Value = "ExecutionStopped")]
+            ExecutionStopped,
+            
+            /// <summary>
+            /// Enum ExecutionSuspended for "ExecutionSuspended"
+            /// </summary>
+            [EnumMember(Value = "ExecutionSuspended")]
+            ExecutionSuspended,
             
             /// <summary>
             /// Enum OnHold for "OnHold"
@@ -132,7 +108,31 @@ namespace Tradovate.Services.Model
             /// Enum Pending for "Pending"
             /// </summary>
             [EnumMember(Value = "Pending")]
-            Pending
+            Pending,
+            
+            /// <summary>
+            /// Enum PendingExecution for "PendingExecution"
+            /// </summary>
+            [EnumMember(Value = "PendingExecution")]
+            PendingExecution,
+            
+            /// <summary>
+            /// Enum Replaced for "Replaced"
+            /// </summary>
+            [EnumMember(Value = "Replaced")]
+            Replaced,
+            
+            /// <summary>
+            /// Enum RiskPassed for "RiskPassed"
+            /// </summary>
+            [EnumMember(Value = "RiskPassed")]
+            RiskPassed,
+            
+            /// <summary>
+            /// Enum RiskRejected for "RiskRejected"
+            /// </summary>
+            [EnumMember(Value = "RiskRejected")]
+            RiskRejected
         }
 
         /// <summary>
@@ -164,7 +164,8 @@ namespace Tradovate.Services.Model
         /// <param name="SenderId">id of User.</param>
         /// <param name="UserSessionId">id of UserSession.</param>
         /// <param name="ActivationTime">ActivationTime.</param>
-        public Command(int? Id = null, int? OrderId = null, DateTime? Timestamp = null, string ClOrdId = null, CommandTypeEnum? CommandType = null, CommandStatusEnum? CommandStatus = null, int? SenderId = null, int? UserSessionId = null, DateTime? ActivationTime = null)
+        /// <param name="CustomTag50">CustomTag50.</param>
+        public Command(int? Id = null, int? OrderId = null, DateTime? Timestamp = null, string ClOrdId = null, CommandTypeEnum? CommandType = null, CommandStatusEnum? CommandStatus = null, int? SenderId = null, int? UserSessionId = null, DateTime? ActivationTime = null, string CustomTag50 = null)
         {
             // to ensure "OrderId" is required (not null)
             if (OrderId == null)
@@ -207,6 +208,7 @@ namespace Tradovate.Services.Model
             this.SenderId = SenderId;
             this.UserSessionId = UserSessionId;
             this.ActivationTime = ActivationTime;
+            this.CustomTag50 = CustomTag50;
         }
         
         /// <summary>
@@ -248,6 +250,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="activationTime", EmitDefaultValue=false)]
         public DateTime? ActivationTime { get; set; }
         /// <summary>
+        /// Gets or Sets CustomTag50
+        /// </summary>
+        [DataMember(Name="customTag50", EmitDefaultValue=false)]
+        public string CustomTag50 { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -264,6 +271,7 @@ namespace Tradovate.Services.Model
             sb.Append("  SenderId: ").Append(SenderId).Append("\n");
             sb.Append("  UserSessionId: ").Append(UserSessionId).Append("\n");
             sb.Append("  ActivationTime: ").Append(ActivationTime).Append("\n");
+            sb.Append("  CustomTag50: ").Append(CustomTag50).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -344,6 +352,11 @@ namespace Tradovate.Services.Model
                     this.ActivationTime == other.ActivationTime ||
                     this.ActivationTime != null &&
                     this.ActivationTime.Equals(other.ActivationTime)
+                ) && 
+                (
+                    this.CustomTag50 == other.CustomTag50 ||
+                    this.CustomTag50 != null &&
+                    this.CustomTag50.Equals(other.CustomTag50)
                 );
         }
 
@@ -376,6 +389,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.UserSessionId.GetHashCode();
                 if (this.ActivationTime != null)
                     hash = hash * 59 + this.ActivationTime.GetHashCode();
+                if (this.CustomTag50 != null)
+                    hash = hash * 59 + this.CustomTag50.GetHashCode();
                 return hash;
             }
         }

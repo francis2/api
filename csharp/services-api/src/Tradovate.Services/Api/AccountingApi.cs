@@ -40,7 +40,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Account type by its name
+        /// Retrieves an entity of Account type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -51,7 +51,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Account type by its name
+        /// Retrieves an entity of Account type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -61,7 +61,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Account type by its id
+        /// Retrieves an entity of Account type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -72,7 +72,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Account type by its id
+        /// Retrieves an entity of Account type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -82,7 +82,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Account type by its ids
+        /// Retrieves multiple entities of Account type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -93,7 +93,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Account type by its ids
+        /// Retrieves multiple entities of Account type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -103,7 +103,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type
+        /// Retrieves all entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Account&gt;</returns>
@@ -113,7 +113,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type
+        /// Retrieves all entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Account&gt;</returns>
@@ -122,7 +122,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type
+        /// Retrieves all entities of CashBalance type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;CashBalance&gt;</returns>
@@ -132,7 +132,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type
+        /// Retrieves all entities of CashBalance type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;CashBalance&gt;</returns>
@@ -141,7 +141,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type
+        /// Retrieves all entities of MarginSnapshot type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;MarginSnapshot&gt;</returns>
@@ -151,7 +151,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type
+        /// Retrieves all entities of MarginSnapshot type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;MarginSnapshot&gt;</returns>
@@ -160,7 +160,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type
+        /// Retrieves all entities of TradingPermission type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;TradingPermission&gt;</returns>
@@ -170,7 +170,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type
+        /// Retrieves all entities of TradingPermission type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;TradingPermission&gt;</returns>
@@ -179,7 +179,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CashBalance type by its id
+        /// Retrieves an entity of CashBalance type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -190,7 +190,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CashBalance type by its id
+        /// Retrieves an entity of CashBalance type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -200,7 +200,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CashBalanceLog type by its id
+        /// Retrieves an entity of CashBalanceLog type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -211,7 +211,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CashBalanceLog type by its id
+        /// Retrieves an entity of CashBalanceLog type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -221,7 +221,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CashBalanceLog type by its ids
+        /// Retrieves multiple entities of CashBalanceLog type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -232,7 +232,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CashBalanceLog type by its ids
+        /// Retrieves multiple entities of CashBalanceLog type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -263,7 +263,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CashBalance type by its ids
+        /// Retrieves multiple entities of CashBalance type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -274,7 +274,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CashBalance type by its ids
+        /// Retrieves multiple entities of CashBalance type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -284,7 +284,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarginSnapshot type by its id
+        /// Retrieves an entity of MarginSnapshot type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -295,7 +295,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarginSnapshot type by its id
+        /// Retrieves an entity of MarginSnapshot type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -305,7 +305,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarginSnapshot type by its ids
+        /// Retrieves multiple entities of MarginSnapshot type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -316,7 +316,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarginSnapshot type by its ids
+        /// Retrieves multiple entities of MarginSnapshot type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -326,7 +326,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type related to User type
+        /// Retrieves all entities of Account type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -337,7 +337,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type related to User type
+        /// Retrieves all entities of Account type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -347,10 +347,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type related to multiple entities of User type
+        /// Retrieves all entities of Account type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;Account&gt;</returns>
         List<Account> GetOwnedAccountsBatch (List<int?> masterids);
 
@@ -358,17 +358,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type related to multiple entities of User type
+        /// Retrieves all entities of Account type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;Account&gt;</returns>
         ApiResponse<List<Account>> GetOwnedAccountsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalanceLog type related to Account type
+        /// Retrieves all entities of CashBalanceLog type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -379,7 +379,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalanceLog type related to Account type
+        /// Retrieves all entities of CashBalanceLog type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -389,10 +389,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalanceLog type related to multiple entities of Account type
+        /// Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;CashBalanceLog&gt;</returns>
         List<CashBalanceLog> GetOwnedCashBalanceLogsBatch (List<int?> masterids);
 
@@ -400,17 +400,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalanceLog type related to multiple entities of Account type
+        /// Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;CashBalanceLog&gt;</returns>
         ApiResponse<List<CashBalanceLog>> GetOwnedCashBalanceLogsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type related to Account type
+        /// Retrieves all entities of CashBalance type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -421,7 +421,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type related to Account type
+        /// Retrieves all entities of CashBalance type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -431,10 +431,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type related to multiple entities of Account type
+        /// Retrieves all entities of CashBalance type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;CashBalance&gt;</returns>
         List<CashBalance> GetOwnedCashBalancesBatch (List<int?> masterids);
 
@@ -442,17 +442,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type related to multiple entities of Account type
+        /// Retrieves all entities of CashBalance type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;CashBalance&gt;</returns>
         ApiResponse<List<CashBalance>> GetOwnedCashBalancesBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type related to Account type
+        /// Retrieves all entities of MarginSnapshot type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -463,7 +463,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type related to Account type
+        /// Retrieves all entities of MarginSnapshot type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -473,10 +473,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type related to multiple entities of Account type
+        /// Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;MarginSnapshot&gt;</returns>
         List<MarginSnapshot> GetOwnedMarginSnapshotsBatch (List<int?> masterids);
 
@@ -484,17 +484,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type related to multiple entities of Account type
+        /// Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;MarginSnapshot&gt;</returns>
         ApiResponse<List<MarginSnapshot>> GetOwnedMarginSnapshotsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type related to User type
+        /// Retrieves all entities of TradingPermission type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -505,7 +505,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type related to User type
+        /// Retrieves all entities of TradingPermission type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -515,10 +515,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type related to multiple entities of User type
+        /// Retrieves all entities of TradingPermission type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;TradingPermission&gt;</returns>
         List<TradingPermission> GetOwnedTradingPermissionsBatch (List<int?> masterids);
 
@@ -526,17 +526,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type related to multiple entities of User type
+        /// Retrieves all entities of TradingPermission type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;TradingPermission&gt;</returns>
         ApiResponse<List<TradingPermission>> GetOwnedTradingPermissionsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradingPermission type by its id
+        /// Retrieves an entity of TradingPermission type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -547,7 +547,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradingPermission type by its id
+        /// Retrieves an entity of TradingPermission type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -557,7 +557,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradingPermission type by its ids
+        /// Retrieves multiple entities of TradingPermission type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -568,7 +568,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradingPermission type by its ids
+        /// Retrieves multiple entities of TradingPermission type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -578,7 +578,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Account type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -590,7 +590,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Account type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -603,7 +603,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Account type by its name
+        /// Retrieves an entity of Account type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -614,7 +614,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Account type by its name
+        /// Retrieves an entity of Account type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -624,7 +624,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Account type by its id
+        /// Retrieves an entity of Account type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -635,7 +635,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Account type by its id
+        /// Retrieves an entity of Account type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -645,7 +645,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Account type by its ids
+        /// Retrieves multiple entities of Account type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -656,7 +656,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Account type by its ids
+        /// Retrieves multiple entities of Account type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -666,7 +666,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type
+        /// Retrieves all entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Account&gt;</returns>
@@ -676,7 +676,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type
+        /// Retrieves all entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Account&gt;)</returns>
@@ -685,7 +685,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type
+        /// Retrieves all entities of CashBalance type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;CashBalance&gt;</returns>
@@ -695,7 +695,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type
+        /// Retrieves all entities of CashBalance type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;CashBalance&gt;)</returns>
@@ -704,7 +704,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type
+        /// Retrieves all entities of MarginSnapshot type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;MarginSnapshot&gt;</returns>
@@ -714,7 +714,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type
+        /// Retrieves all entities of MarginSnapshot type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;MarginSnapshot&gt;)</returns>
@@ -723,7 +723,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type
+        /// Retrieves all entities of TradingPermission type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;TradingPermission&gt;</returns>
@@ -733,7 +733,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type
+        /// Retrieves all entities of TradingPermission type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;TradingPermission&gt;)</returns>
@@ -742,7 +742,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CashBalance type by its id
+        /// Retrieves an entity of CashBalance type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -753,7 +753,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CashBalance type by its id
+        /// Retrieves an entity of CashBalance type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -763,7 +763,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CashBalanceLog type by its id
+        /// Retrieves an entity of CashBalanceLog type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -774,7 +774,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CashBalanceLog type by its id
+        /// Retrieves an entity of CashBalanceLog type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -784,7 +784,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CashBalanceLog type by its ids
+        /// Retrieves multiple entities of CashBalanceLog type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -795,7 +795,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CashBalanceLog type by its ids
+        /// Retrieves multiple entities of CashBalanceLog type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -826,7 +826,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CashBalance type by its ids
+        /// Retrieves multiple entities of CashBalance type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -837,7 +837,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CashBalance type by its ids
+        /// Retrieves multiple entities of CashBalance type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -847,7 +847,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarginSnapshot type by its id
+        /// Retrieves an entity of MarginSnapshot type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -858,7 +858,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarginSnapshot type by its id
+        /// Retrieves an entity of MarginSnapshot type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -868,7 +868,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarginSnapshot type by its ids
+        /// Retrieves multiple entities of MarginSnapshot type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -879,7 +879,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarginSnapshot type by its ids
+        /// Retrieves multiple entities of MarginSnapshot type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -889,7 +889,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type related to User type
+        /// Retrieves all entities of Account type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -900,7 +900,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type related to User type
+        /// Retrieves all entities of Account type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -910,10 +910,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type related to multiple entities of User type
+        /// Retrieves all entities of Account type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;Account&gt;</returns>
         System.Threading.Tasks.Task<List<Account>> GetOwnedAccountsBatchAsync (List<int?> masterids);
 
@@ -921,17 +921,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Account type related to multiple entities of User type
+        /// Retrieves all entities of Account type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;Account&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Account>>> GetOwnedAccountsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalanceLog type related to Account type
+        /// Retrieves all entities of CashBalanceLog type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -942,7 +942,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalanceLog type related to Account type
+        /// Retrieves all entities of CashBalanceLog type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -952,10 +952,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalanceLog type related to multiple entities of Account type
+        /// Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;CashBalanceLog&gt;</returns>
         System.Threading.Tasks.Task<List<CashBalanceLog>> GetOwnedCashBalanceLogsBatchAsync (List<int?> masterids);
 
@@ -963,17 +963,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalanceLog type related to multiple entities of Account type
+        /// Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;CashBalanceLog&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<CashBalanceLog>>> GetOwnedCashBalanceLogsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type related to Account type
+        /// Retrieves all entities of CashBalance type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -984,7 +984,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type related to Account type
+        /// Retrieves all entities of CashBalance type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -994,10 +994,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type related to multiple entities of Account type
+        /// Retrieves all entities of CashBalance type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;CashBalance&gt;</returns>
         System.Threading.Tasks.Task<List<CashBalance>> GetOwnedCashBalancesBatchAsync (List<int?> masterids);
 
@@ -1005,17 +1005,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CashBalance type related to multiple entities of Account type
+        /// Retrieves all entities of CashBalance type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;CashBalance&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<CashBalance>>> GetOwnedCashBalancesBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type related to Account type
+        /// Retrieves all entities of MarginSnapshot type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -1026,7 +1026,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type related to Account type
+        /// Retrieves all entities of MarginSnapshot type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -1036,10 +1036,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type related to multiple entities of Account type
+        /// Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;MarginSnapshot&gt;</returns>
         System.Threading.Tasks.Task<List<MarginSnapshot>> GetOwnedMarginSnapshotsBatchAsync (List<int?> masterids);
 
@@ -1047,17 +1047,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarginSnapshot type related to multiple entities of Account type
+        /// Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;MarginSnapshot&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<MarginSnapshot>>> GetOwnedMarginSnapshotsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type related to User type
+        /// Retrieves all entities of TradingPermission type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -1068,7 +1068,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type related to User type
+        /// Retrieves all entities of TradingPermission type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -1078,10 +1078,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type related to multiple entities of User type
+        /// Retrieves all entities of TradingPermission type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;TradingPermission&gt;</returns>
         System.Threading.Tasks.Task<List<TradingPermission>> GetOwnedTradingPermissionsBatchAsync (List<int?> masterids);
 
@@ -1089,17 +1089,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradingPermission type related to multiple entities of User type
+        /// Retrieves all entities of TradingPermission type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;TradingPermission&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<TradingPermission>>> GetOwnedTradingPermissionsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradingPermission type by its id
+        /// Retrieves an entity of TradingPermission type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1110,7 +1110,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradingPermission type by its id
+        /// Retrieves an entity of TradingPermission type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1120,7 +1120,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradingPermission type by its ids
+        /// Retrieves multiple entities of TradingPermission type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1131,7 +1131,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradingPermission type by its ids
+        /// Retrieves multiple entities of TradingPermission type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1141,7 +1141,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Account type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1153,7 +1153,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Account type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1273,7 +1273,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Account type by its name
+        ///  Retrieves an entity of Account type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1285,7 +1285,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Account type by its name
+        ///  Retrieves an entity of Account type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1350,7 +1350,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Account type by its name
+        ///  Retrieves an entity of Account type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1363,7 +1363,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Account type by its name
+        ///  Retrieves an entity of Account type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1427,7 +1427,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Account type by its id
+        ///  Retrieves an entity of Account type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1439,7 +1439,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Account type by its id
+        ///  Retrieves an entity of Account type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1504,7 +1504,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Account type by its id
+        ///  Retrieves an entity of Account type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1517,7 +1517,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Account type by its id
+        ///  Retrieves an entity of Account type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1581,7 +1581,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Account type by its ids
+        ///  Retrieves multiple entities of Account type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1593,7 +1593,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Account type by its ids
+        ///  Retrieves multiple entities of Account type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1658,7 +1658,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Account type by its ids
+        ///  Retrieves multiple entities of Account type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1671,7 +1671,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Account type by its ids
+        ///  Retrieves multiple entities of Account type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1735,7 +1735,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type
+        ///  Retrieves all entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Account&gt;</returns>
@@ -1746,7 +1746,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type
+        ///  Retrieves all entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Account&gt;</returns>
@@ -1806,7 +1806,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type
+        ///  Retrieves all entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Account&gt;</returns>
@@ -1818,7 +1818,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type
+        ///  Retrieves all entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Account&gt;)</returns>
@@ -1877,7 +1877,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type
+        ///  Retrieves all entities of CashBalance type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;CashBalance&gt;</returns>
@@ -1888,7 +1888,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type
+        ///  Retrieves all entities of CashBalance type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;CashBalance&gt;</returns>
@@ -1948,7 +1948,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type
+        ///  Retrieves all entities of CashBalance type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;CashBalance&gt;</returns>
@@ -1960,7 +1960,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type
+        ///  Retrieves all entities of CashBalance type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;CashBalance&gt;)</returns>
@@ -2019,7 +2019,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type
+        ///  Retrieves all entities of MarginSnapshot type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;MarginSnapshot&gt;</returns>
@@ -2030,7 +2030,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type
+        ///  Retrieves all entities of MarginSnapshot type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;MarginSnapshot&gt;</returns>
@@ -2090,7 +2090,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type
+        ///  Retrieves all entities of MarginSnapshot type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;MarginSnapshot&gt;</returns>
@@ -2102,7 +2102,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type
+        ///  Retrieves all entities of MarginSnapshot type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;MarginSnapshot&gt;)</returns>
@@ -2161,7 +2161,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type
+        ///  Retrieves all entities of TradingPermission type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;TradingPermission&gt;</returns>
@@ -2172,7 +2172,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type
+        ///  Retrieves all entities of TradingPermission type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;TradingPermission&gt;</returns>
@@ -2232,7 +2232,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type
+        ///  Retrieves all entities of TradingPermission type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;TradingPermission&gt;</returns>
@@ -2244,7 +2244,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type
+        ///  Retrieves all entities of TradingPermission type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;TradingPermission&gt;)</returns>
@@ -2303,7 +2303,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CashBalance type by its id
+        ///  Retrieves an entity of CashBalance type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2315,7 +2315,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CashBalance type by its id
+        ///  Retrieves an entity of CashBalance type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2380,7 +2380,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CashBalance type by its id
+        ///  Retrieves an entity of CashBalance type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2393,7 +2393,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CashBalance type by its id
+        ///  Retrieves an entity of CashBalance type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2457,7 +2457,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CashBalanceLog type by its id
+        ///  Retrieves an entity of CashBalanceLog type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2469,7 +2469,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CashBalanceLog type by its id
+        ///  Retrieves an entity of CashBalanceLog type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2534,7 +2534,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CashBalanceLog type by its id
+        ///  Retrieves an entity of CashBalanceLog type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2547,7 +2547,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CashBalanceLog type by its id
+        ///  Retrieves an entity of CashBalanceLog type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2611,7 +2611,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CashBalanceLog type by its ids
+        ///  Retrieves multiple entities of CashBalanceLog type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2623,7 +2623,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CashBalanceLog type by its ids
+        ///  Retrieves multiple entities of CashBalanceLog type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2688,7 +2688,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CashBalanceLog type by its ids
+        ///  Retrieves multiple entities of CashBalanceLog type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2701,7 +2701,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CashBalanceLog type by its ids
+        ///  Retrieves multiple entities of CashBalanceLog type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2933,7 +2933,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CashBalance type by its ids
+        ///  Retrieves multiple entities of CashBalance type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2945,7 +2945,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CashBalance type by its ids
+        ///  Retrieves multiple entities of CashBalance type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3010,7 +3010,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CashBalance type by its ids
+        ///  Retrieves multiple entities of CashBalance type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3023,7 +3023,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CashBalance type by its ids
+        ///  Retrieves multiple entities of CashBalance type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3087,7 +3087,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarginSnapshot type by its id
+        ///  Retrieves an entity of MarginSnapshot type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3099,7 +3099,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarginSnapshot type by its id
+        ///  Retrieves an entity of MarginSnapshot type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3164,7 +3164,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarginSnapshot type by its id
+        ///  Retrieves an entity of MarginSnapshot type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3177,7 +3177,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarginSnapshot type by its id
+        ///  Retrieves an entity of MarginSnapshot type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3241,7 +3241,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarginSnapshot type by its ids
+        ///  Retrieves multiple entities of MarginSnapshot type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3253,7 +3253,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarginSnapshot type by its ids
+        ///  Retrieves multiple entities of MarginSnapshot type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3318,7 +3318,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarginSnapshot type by its ids
+        ///  Retrieves multiple entities of MarginSnapshot type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3331,7 +3331,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarginSnapshot type by its ids
+        ///  Retrieves multiple entities of MarginSnapshot type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3395,7 +3395,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type related to User type
+        ///  Retrieves all entities of Account type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -3407,7 +3407,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type related to User type
+        ///  Retrieves all entities of Account type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -3472,7 +3472,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type related to User type
+        ///  Retrieves all entities of Account type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -3485,7 +3485,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type related to User type
+        ///  Retrieves all entities of Account type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -3549,10 +3549,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type related to multiple entities of User type
+        ///  Retrieves all entities of Account type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;Account&gt;</returns>
         public List<Account> GetOwnedAccountsBatch (List<int?> masterids)
         {
@@ -3561,10 +3561,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type related to multiple entities of User type
+        ///  Retrieves all entities of Account type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;Account&gt;</returns>
         public ApiResponse< List<Account> > GetOwnedAccountsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -3626,10 +3626,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type related to multiple entities of User type
+        ///  Retrieves all entities of Account type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;Account&gt;</returns>
         public async System.Threading.Tasks.Task<List<Account>> GetOwnedAccountsBatchAsync (List<int?> masterids)
         {
@@ -3639,10 +3639,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Account type related to multiple entities of User type
+        ///  Retrieves all entities of Account type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;Account&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Account>>> GetOwnedAccountsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -3703,7 +3703,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalanceLog type related to Account type
+        ///  Retrieves all entities of CashBalanceLog type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3715,7 +3715,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalanceLog type related to Account type
+        ///  Retrieves all entities of CashBalanceLog type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3780,7 +3780,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalanceLog type related to Account type
+        ///  Retrieves all entities of CashBalanceLog type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3793,7 +3793,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalanceLog type related to Account type
+        ///  Retrieves all entities of CashBalanceLog type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3857,10 +3857,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalanceLog type related to multiple entities of Account type
+        ///  Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;CashBalanceLog&gt;</returns>
         public List<CashBalanceLog> GetOwnedCashBalanceLogsBatch (List<int?> masterids)
         {
@@ -3869,10 +3869,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalanceLog type related to multiple entities of Account type
+        ///  Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;CashBalanceLog&gt;</returns>
         public ApiResponse< List<CashBalanceLog> > GetOwnedCashBalanceLogsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -3934,10 +3934,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalanceLog type related to multiple entities of Account type
+        ///  Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;CashBalanceLog&gt;</returns>
         public async System.Threading.Tasks.Task<List<CashBalanceLog>> GetOwnedCashBalanceLogsBatchAsync (List<int?> masterids)
         {
@@ -3947,10 +3947,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalanceLog type related to multiple entities of Account type
+        ///  Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;CashBalanceLog&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<CashBalanceLog>>> GetOwnedCashBalanceLogsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -4011,7 +4011,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type related to Account type
+        ///  Retrieves all entities of CashBalance type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4023,7 +4023,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type related to Account type
+        ///  Retrieves all entities of CashBalance type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4088,7 +4088,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type related to Account type
+        ///  Retrieves all entities of CashBalance type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4101,7 +4101,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type related to Account type
+        ///  Retrieves all entities of CashBalance type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4165,10 +4165,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type related to multiple entities of Account type
+        ///  Retrieves all entities of CashBalance type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;CashBalance&gt;</returns>
         public List<CashBalance> GetOwnedCashBalancesBatch (List<int?> masterids)
         {
@@ -4177,10 +4177,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type related to multiple entities of Account type
+        ///  Retrieves all entities of CashBalance type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;CashBalance&gt;</returns>
         public ApiResponse< List<CashBalance> > GetOwnedCashBalancesBatchWithHttpInfo (List<int?> masterids)
         {
@@ -4242,10 +4242,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type related to multiple entities of Account type
+        ///  Retrieves all entities of CashBalance type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;CashBalance&gt;</returns>
         public async System.Threading.Tasks.Task<List<CashBalance>> GetOwnedCashBalancesBatchAsync (List<int?> masterids)
         {
@@ -4255,10 +4255,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CashBalance type related to multiple entities of Account type
+        ///  Retrieves all entities of CashBalance type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;CashBalance&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<CashBalance>>> GetOwnedCashBalancesBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -4319,7 +4319,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type related to Account type
+        ///  Retrieves all entities of MarginSnapshot type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4331,7 +4331,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type related to Account type
+        ///  Retrieves all entities of MarginSnapshot type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4396,7 +4396,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type related to Account type
+        ///  Retrieves all entities of MarginSnapshot type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4409,7 +4409,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type related to Account type
+        ///  Retrieves all entities of MarginSnapshot type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4473,10 +4473,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type related to multiple entities of Account type
+        ///  Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;MarginSnapshot&gt;</returns>
         public List<MarginSnapshot> GetOwnedMarginSnapshotsBatch (List<int?> masterids)
         {
@@ -4485,10 +4485,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type related to multiple entities of Account type
+        ///  Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;MarginSnapshot&gt;</returns>
         public ApiResponse< List<MarginSnapshot> > GetOwnedMarginSnapshotsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -4550,10 +4550,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type related to multiple entities of Account type
+        ///  Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;MarginSnapshot&gt;</returns>
         public async System.Threading.Tasks.Task<List<MarginSnapshot>> GetOwnedMarginSnapshotsBatchAsync (List<int?> masterids)
         {
@@ -4563,10 +4563,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarginSnapshot type related to multiple entities of Account type
+        ///  Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;MarginSnapshot&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<MarginSnapshot>>> GetOwnedMarginSnapshotsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -4627,7 +4627,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type related to User type
+        ///  Retrieves all entities of TradingPermission type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -4639,7 +4639,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type related to User type
+        ///  Retrieves all entities of TradingPermission type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -4704,7 +4704,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type related to User type
+        ///  Retrieves all entities of TradingPermission type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -4717,7 +4717,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type related to User type
+        ///  Retrieves all entities of TradingPermission type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -4781,10 +4781,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type related to multiple entities of User type
+        ///  Retrieves all entities of TradingPermission type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;TradingPermission&gt;</returns>
         public List<TradingPermission> GetOwnedTradingPermissionsBatch (List<int?> masterids)
         {
@@ -4793,10 +4793,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type related to multiple entities of User type
+        ///  Retrieves all entities of TradingPermission type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;TradingPermission&gt;</returns>
         public ApiResponse< List<TradingPermission> > GetOwnedTradingPermissionsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -4858,10 +4858,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type related to multiple entities of User type
+        ///  Retrieves all entities of TradingPermission type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;TradingPermission&gt;</returns>
         public async System.Threading.Tasks.Task<List<TradingPermission>> GetOwnedTradingPermissionsBatchAsync (List<int?> masterids)
         {
@@ -4871,10 +4871,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradingPermission type related to multiple entities of User type
+        ///  Retrieves all entities of TradingPermission type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;TradingPermission&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<TradingPermission>>> GetOwnedTradingPermissionsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -4935,7 +4935,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradingPermission type by its id
+        ///  Retrieves an entity of TradingPermission type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4947,7 +4947,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradingPermission type by its id
+        ///  Retrieves an entity of TradingPermission type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5012,7 +5012,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradingPermission type by its id
+        ///  Retrieves an entity of TradingPermission type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5025,7 +5025,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradingPermission type by its id
+        ///  Retrieves an entity of TradingPermission type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5089,7 +5089,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradingPermission type by its ids
+        ///  Retrieves multiple entities of TradingPermission type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5101,7 +5101,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradingPermission type by its ids
+        ///  Retrieves multiple entities of TradingPermission type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5166,7 +5166,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradingPermission type by its ids
+        ///  Retrieves multiple entities of TradingPermission type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5179,7 +5179,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradingPermission type by its ids
+        ///  Retrieves multiple entities of TradingPermission type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5243,7 +5243,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Account type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -5256,7 +5256,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Account type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -5326,7 +5326,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Account type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -5340,7 +5340,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Account type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>

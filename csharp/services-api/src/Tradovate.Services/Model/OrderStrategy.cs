@@ -69,22 +69,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum ExecutionInterrupted for "ExecutionInterrupted"
+            /// Enum ActiveStrategy for "ActiveStrategy"
             /// </summary>
-            [EnumMember(Value = "ExecutionInterrupted")]
-            ExecutionInterrupted,
-            
-            /// <summary>
-            /// Enum ExecutionFinished for "ExecutionFinished"
-            /// </summary>
-            [EnumMember(Value = "ExecutionFinished")]
-            ExecutionFinished,
-            
-            /// <summary>
-            /// Enum NotEnoughLiquidity for "NotEnoughLiquidity"
-            /// </summary>
-            [EnumMember(Value = "NotEnoughLiquidity")]
-            NotEnoughLiquidity,
+            [EnumMember(Value = "ActiveStrategy")]
+            ActiveStrategy,
             
             /// <summary>
             /// Enum ExecutionFailed for "ExecutionFailed"
@@ -93,22 +81,34 @@ namespace Tradovate.Services.Model
             ExecutionFailed,
             
             /// <summary>
+            /// Enum ExecutionFinished for "ExecutionFinished"
+            /// </summary>
+            [EnumMember(Value = "ExecutionFinished")]
+            ExecutionFinished,
+            
+            /// <summary>
+            /// Enum ExecutionInterrupted for "ExecutionInterrupted"
+            /// </summary>
+            [EnumMember(Value = "ExecutionInterrupted")]
+            ExecutionInterrupted,
+            
+            /// <summary>
             /// Enum InactiveStrategy for "InactiveStrategy"
             /// </summary>
             [EnumMember(Value = "InactiveStrategy")]
             InactiveStrategy,
             
             /// <summary>
+            /// Enum NotEnoughLiquidity for "NotEnoughLiquidity"
+            /// </summary>
+            [EnumMember(Value = "NotEnoughLiquidity")]
+            NotEnoughLiquidity,
+            
+            /// <summary>
             /// Enum StoppedByUser for "StoppedByUser"
             /// </summary>
             [EnumMember(Value = "StoppedByUser")]
-            StoppedByUser,
-            
-            /// <summary>
-            /// Enum ActiveStrategy for "ActiveStrategy"
-            /// </summary>
-            [EnumMember(Value = "ActiveStrategy")]
-            ActiveStrategy
+            StoppedByUser
         }
 
         /// <summary>
@@ -143,7 +143,8 @@ namespace Tradovate.Services.Model
         /// <param name="Status">ActiveStrategy, ExecutionFailed, ExecutionFinished, ExecutionInterrupted, InactiveStrategy, NotEnoughLiquidity, StoppedByUser (required).</param>
         /// <param name="FailureMessage">FailureMessage.</param>
         /// <param name="SenderId">id of User.</param>
-        public OrderStrategy(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, int? ContractId = null, int? OrderStrategyTypeId = null, int? InitiatorId = null, ActionEnum? Action = null, string _Params = null, string Uuid = null, StatusEnum? Status = null, string FailureMessage = null, int? SenderId = null)
+        /// <param name="CustomTag50">CustomTag50.</param>
+        public OrderStrategy(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, int? ContractId = null, int? OrderStrategyTypeId = null, int? InitiatorId = null, ActionEnum? Action = null, string _Params = null, string Uuid = null, StatusEnum? Status = null, string FailureMessage = null, int? SenderId = null, string CustomTag50 = null)
         {
             // to ensure "AccountId" is required (not null)
             if (AccountId == null)
@@ -205,6 +206,7 @@ namespace Tradovate.Services.Model
             this.Uuid = Uuid;
             this.FailureMessage = FailureMessage;
             this.SenderId = SenderId;
+            this.CustomTag50 = CustomTag50;
         }
         
         /// <summary>
@@ -263,6 +265,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="senderId", EmitDefaultValue=false)]
         public int? SenderId { get; set; }
         /// <summary>
+        /// Gets or Sets CustomTag50
+        /// </summary>
+        [DataMember(Name="customTag50", EmitDefaultValue=false)]
+        public string CustomTag50 { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -282,6 +289,7 @@ namespace Tradovate.Services.Model
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  FailureMessage: ").Append(FailureMessage).Append("\n");
             sb.Append("  SenderId: ").Append(SenderId).Append("\n");
+            sb.Append("  CustomTag50: ").Append(CustomTag50).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -377,6 +385,11 @@ namespace Tradovate.Services.Model
                     this.SenderId == other.SenderId ||
                     this.SenderId != null &&
                     this.SenderId.Equals(other.SenderId)
+                ) && 
+                (
+                    this.CustomTag50 == other.CustomTag50 ||
+                    this.CustomTag50 != null &&
+                    this.CustomTag50.Equals(other.CustomTag50)
                 );
         }
 
@@ -415,6 +428,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.FailureMessage.GetHashCode();
                 if (this.SenderId != null)
                     hash = hash * 59 + this.SenderId.GetHashCode();
+                if (this.CustomTag50 != null)
+                    hash = hash * 59 + this.CustomTag50.GetHashCode();
                 return hash;
             }
         }

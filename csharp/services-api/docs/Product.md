@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **Description** | **string** |  | 
 **ExchangeId** | **int?** | id of Exchange | 
 **ContractGroupId** | **int?** | id of ContractGroup | 
-**RiskDiscountContractGroupId** | **int?** | id of RiskDiscountContractGroup | [optional] 
 **Status** | **string** | Inactive, Locked, ReadyForContracts, ReadyToTrade, Verified | 
 **Months** | **string** |  | [optional] 
 **IsSecured** | **bool?** |  | [optional] 

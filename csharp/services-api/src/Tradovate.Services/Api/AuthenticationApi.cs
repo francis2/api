@@ -57,6 +57,25 @@ namespace Tradovate.Services.Api
         /// <param name="body"></param>
         /// <returns>ApiResponse of AccessTokenResponse</returns>
         ApiResponse<AccessTokenResponse> AccessTokenRequestWithHttpInfo (AccessTokenRequest body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>AccessTokenResponse</returns>
+        AccessTokenResponse RenewAccessToken ();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of AccessTokenResponse</returns>
+        ApiResponse<AccessTokenResponse> RenewAccessTokenWithHttpInfo ();
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -80,6 +99,25 @@ namespace Tradovate.Services.Api
         /// <param name="body"></param>
         /// <returns>Task of ApiResponse (AccessTokenResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<AccessTokenResponse>> AccessTokenRequestAsyncWithHttpInfo (AccessTokenRequest body);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of AccessTokenResponse</returns>
+        System.Threading.Tasks.Task<AccessTokenResponse> RenewAccessTokenAsync ();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (AccessTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AccessTokenResponse>> RenewAccessTokenAsyncWithHttpInfo ();
         #endregion Asynchronous Operations
     }
 
@@ -340,6 +378,148 @@ namespace Tradovate.Services.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("AccessTokenRequest", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<AccessTokenResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (AccessTokenResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(AccessTokenResponse)));
+            
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>AccessTokenResponse</returns>
+        public AccessTokenResponse RenewAccessToken ()
+        {
+             ApiResponse<AccessTokenResponse> localVarResponse = RenewAccessTokenWithHttpInfo();
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of AccessTokenResponse</returns>
+        public ApiResponse< AccessTokenResponse > RenewAccessTokenWithHttpInfo ()
+        {
+
+            var localVarPath = "/auth/renewaccesstoken";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("RenewAccessToken", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<AccessTokenResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (AccessTokenResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(AccessTokenResponse)));
+            
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of AccessTokenResponse</returns>
+        public async System.Threading.Tasks.Task<AccessTokenResponse> RenewAccessTokenAsync ()
+        {
+             ApiResponse<AccessTokenResponse> localVarResponse = await RenewAccessTokenAsyncWithHttpInfo();
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (AccessTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AccessTokenResponse>> RenewAccessTokenAsyncWithHttpInfo ()
+        {
+
+            var localVarPath = "/auth/renewaccesstoken";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+
+            // authentication (bearer_access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("RenewAccessToken", localVarResponse);
                 if (exception != null) throw exception;
             }
 

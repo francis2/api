@@ -48,16 +48,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum Declined for "Declined"
+            /// Enum Accepted for "Accepted"
             /// </summary>
-            [EnumMember(Value = "Declined")]
-            Declined,
-            
-            /// <summary>
-            /// Enum Revoked for "Revoked"
-            /// </summary>
-            [EnumMember(Value = "Revoked")]
-            Revoked,
+            [EnumMember(Value = "Accepted")]
+            Accepted,
             
             /// <summary>
             /// Enum Approved for "Approved"
@@ -66,16 +60,22 @@ namespace Tradovate.Services.Model
             Approved,
             
             /// <summary>
+            /// Enum Declined for "Declined"
+            /// </summary>
+            [EnumMember(Value = "Declined")]
+            Declined,
+            
+            /// <summary>
             /// Enum Requested for "Requested"
             /// </summary>
             [EnumMember(Value = "Requested")]
             Requested,
             
             /// <summary>
-            /// Enum Accepted for "Accepted"
+            /// Enum Revoked for "Revoked"
             /// </summary>
-            [EnumMember(Value = "Accepted")]
-            Accepted
+            [EnumMember(Value = "Revoked")]
+            Revoked
         }
 
         /// <summary>

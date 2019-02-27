@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.ContractLibraryApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -57,7 +57,7 @@ Method | HTTP request | Description
 
 
 
-Finds an entity of Contract type by its name
+Retrieves an entity of Contract type by its name
 
 ### Example
 ```csharp
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ContractGroup type by its name
+Retrieves an entity of ContractGroup type by its name
 
 ### Example
 ```csharp
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Currency type by its name
+Retrieves an entity of Currency type by its name
 
 ### Example
 ```csharp
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Exchange type by its name
+Retrieves an entity of Exchange type by its name
 
 ### Example
 ```csharp
@@ -321,7 +321,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Product type by its name
+Retrieves an entity of Product type by its name
 
 ### Example
 ```csharp
@@ -387,7 +387,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ContractGroup type
+Retrieves all entities of ContractGroup type
 
 ### Example
 ```csharp
@@ -449,7 +449,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Currency type
+Retrieves all entities of Currency type
 
 ### Example
 ```csharp
@@ -511,7 +511,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of CurrencyRate type
+Retrieves all entities of CurrencyRate type
 
 ### Example
 ```csharp
@@ -573,7 +573,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Exchange type
+Retrieves all entities of Exchange type
 
 ### Example
 ```csharp
@@ -635,7 +635,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Product type
+Retrieves all entities of Product type
 
 ### Example
 ```csharp
@@ -697,7 +697,7 @@ This endpoint does not need any parameter.
 
 
 
-Finds an entity of Contract type by its id
+Retrieves an entity of Contract type by its id
 
 ### Example
 ```csharp
@@ -763,7 +763,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ContractGroup type by its id
+Retrieves an entity of ContractGroup type by its id
 
 ### Example
 ```csharp
@@ -829,7 +829,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ContractGroup type by its ids
+Retrieves multiple entities of ContractGroup type by its ids
 
 ### Example
 ```csharp
@@ -895,7 +895,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ContractMaturity type by its ids
+Retrieves multiple entities of ContractMaturity type by its ids
 
 ### Example
 ```csharp
@@ -961,7 +961,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ContractMaturity type by its id
+Retrieves an entity of ContractMaturity type by its id
 
 ### Example
 ```csharp
@@ -1027,7 +1027,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Contract type by its ids
+Retrieves multiple entities of Contract type by its ids
 
 ### Example
 ```csharp
@@ -1093,7 +1093,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Currency type by its ids
+Retrieves multiple entities of Currency type by its ids
 
 ### Example
 ```csharp
@@ -1159,7 +1159,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Currency type by its id
+Retrieves an entity of Currency type by its id
 
 ### Example
 ```csharp
@@ -1225,7 +1225,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of CurrencyRate type by its id
+Retrieves an entity of CurrencyRate type by its id
 
 ### Example
 ```csharp
@@ -1291,7 +1291,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of CurrencyRate type by its ids
+Retrieves multiple entities of CurrencyRate type by its ids
 
 ### Example
 ```csharp
@@ -1357,7 +1357,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Exchange type by its id
+Retrieves an entity of Exchange type by its id
 
 ### Example
 ```csharp
@@ -1423,7 +1423,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Exchange type by its ids
+Retrieves multiple entities of Exchange type by its ids
 
 ### Example
 ```csharp
@@ -1489,7 +1489,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ContractMaturity type related to Product type
+Retrieves all entities of ContractMaturity type related to Product entity
 
 ### Example
 ```csharp
@@ -1555,7 +1555,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ContractMaturity type related to multiple entities of Product type
+Retrieves all entities of ContractMaturity type related to multiple entities of Product type
 
 ### Example
 ```csharp
@@ -1578,7 +1578,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ContractLibraryApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Product entity
+            var masterids = new List<int?>(); // List<int?> | ids of Product entities
 
             try
             {
@@ -1598,7 +1598,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Product entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Product entities | 
 
 ### Return type
 
@@ -1621,7 +1621,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Contract type related to ContractMaturity type
+Retrieves all entities of Contract type related to ContractMaturity entity
 
 ### Example
 ```csharp
@@ -1687,7 +1687,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Contract type related to multiple entities of ContractMaturity type
+Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
 
 ### Example
 ```csharp
@@ -1710,7 +1710,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ContractLibraryApi();
-            var masterids = new List<int?>(); // List<int?> | ids of ContractMaturity entity
+            var masterids = new List<int?>(); // List<int?> | ids of ContractMaturity entities
 
             try
             {
@@ -1730,7 +1730,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of ContractMaturity entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of ContractMaturity entities | 
 
 ### Return type
 
@@ -1753,7 +1753,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CurrencyRate type related to Currency type
+Retrieves all entities of CurrencyRate type related to Currency entity
 
 ### Example
 ```csharp
@@ -1819,7 +1819,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CurrencyRate type related to multiple entities of Currency type
+Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
 
 ### Example
 ```csharp
@@ -1842,7 +1842,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ContractLibraryApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Currency entity
+            var masterids = new List<int?>(); // List<int?> | ids of Currency entities
 
             try
             {
@@ -1862,7 +1862,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Currency entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Currency entities | 
 
 ### Return type
 
@@ -1885,7 +1885,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ProductSession type related to Product type
+Retrieves all entities of ProductSession type related to Product entity
 
 ### Example
 ```csharp
@@ -1951,7 +1951,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ProductSession type related to multiple entities of Product type
+Retrieves all entities of ProductSession type related to multiple entities of Product type
 
 ### Example
 ```csharp
@@ -1974,7 +1974,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ContractLibraryApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Product entity
+            var masterids = new List<int?>(); // List<int?> | ids of Product entities
 
             try
             {
@@ -1994,7 +1994,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Product entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Product entities | 
 
 ### Return type
 
@@ -2017,7 +2017,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Product type related to Exchange type
+Retrieves all entities of Product type related to Exchange entity
 
 ### Example
 ```csharp
@@ -2083,7 +2083,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Product type related to multiple entities of Exchange type
+Retrieves all entities of Product type related to multiple entities of Exchange type
 
 ### Example
 ```csharp
@@ -2106,7 +2106,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ContractLibraryApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Exchange entity
+            var masterids = new List<int?>(); // List<int?> | ids of Exchange entities
 
             try
             {
@@ -2126,7 +2126,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Exchange entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Exchange entities | 
 
 ### Return type
 
@@ -2149,7 +2149,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Product type by its id
+Retrieves an entity of Product type by its id
 
 ### Example
 ```csharp
@@ -2279,7 +2279,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ProductSession type by its id
+Retrieves an entity of ProductSession type by its id
 
 ### Example
 ```csharp
@@ -2345,7 +2345,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ProductSession type by its ids
+Retrieves multiple entities of ProductSession type by its ids
 
 ### Example
 ```csharp
@@ -2411,7 +2411,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Product type by its ids
+Retrieves multiple entities of Product type by its ids
 
 ### Example
 ```csharp
@@ -2477,7 +2477,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of SpreadDefinition type by its id
+Retrieves an entity of SpreadDefinition type by its id
 
 ### Example
 ```csharp
@@ -2543,7 +2543,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of SpreadDefinition type by its ids
+Retrieves multiple entities of SpreadDefinition type by its ids
 
 ### Example
 ```csharp
@@ -2673,7 +2673,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -2741,7 +2741,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of Contract type filtered by occurence of a text in one of its fields
+Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -2809,7 +2809,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of Currency type filtered by occurence of a text in one of its fields
+Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -2877,7 +2877,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of Exchange type filtered by occurence of a text in one of its fields
+Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -2945,7 +2945,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of Product type filtered by occurence of a text in one of its fields
+Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp

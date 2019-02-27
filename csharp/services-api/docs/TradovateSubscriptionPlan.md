@@ -13,7 +13,6 @@ Name | Type | Description | Notes
 **Trial** | **bool?** |  | 
 **Duration** | **int?** |  | 
 **DurationUnits** | **string** | Month, Quarter, Week, Year | 
-**RiskCategoryId** | **int?** | id of RiskCategory | [optional] 
 **MultipleAccounts** | **bool?** |  | [optional] 
 **OrganizationId** | **int?** | id of Organization | [optional] 
 **ReplaySessions** | **int?** |  | [optional] 

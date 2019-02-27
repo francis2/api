@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **OrderId** | **int?** | id of Order | 
 **ClOrdId** | **string** |  | [optional] 
 **ActivationTime** | **DateTime?** |  | [optional] 
+**CustomTag50** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -124,7 +124,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlertSignal type by its id
+        /// Retrieves an entity of AdminAlertSignal type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -135,7 +135,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlertSignal type by its id
+        /// Retrieves an entity of AdminAlertSignal type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -145,7 +145,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AdminAlertSignal type by its ids
+        /// Retrieves multiple entities of AdminAlertSignal type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -156,7 +156,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AdminAlertSignal type by its ids
+        /// Retrieves multiple entities of AdminAlertSignal type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -166,7 +166,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Alert type by its id
+        /// Retrieves an entity of Alert type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -177,7 +177,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Alert type by its id
+        /// Retrieves an entity of Alert type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -187,7 +187,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AlertSignal type by its id
+        /// Retrieves an entity of AlertSignal type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -198,7 +198,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AlertSignal type by its id
+        /// Retrieves an entity of AlertSignal type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -208,7 +208,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AlertSignal type by its ids
+        /// Retrieves multiple entities of AlertSignal type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -219,7 +219,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AlertSignal type by its ids
+        /// Retrieves multiple entities of AlertSignal type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -229,7 +229,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Alert type by its ids
+        /// Retrieves multiple entities of Alert type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -240,7 +240,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Alert type by its ids
+        /// Retrieves multiple entities of Alert type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -250,7 +250,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type
+        /// Retrieves all entities of AdminAlertSignal type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;AdminAlertSignal&gt;</returns>
@@ -260,7 +260,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type
+        /// Retrieves all entities of AdminAlertSignal type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;AdminAlertSignal&gt;</returns>
@@ -269,7 +269,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type
+        /// Retrieves all entities of AlertSignal type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;AlertSignal&gt;</returns>
@@ -279,7 +279,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type
+        /// Retrieves all entities of AlertSignal type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;AlertSignal&gt;</returns>
@@ -288,7 +288,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type
+        /// Retrieves all entities of Alert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Alert&gt;</returns>
@@ -298,7 +298,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type
+        /// Retrieves all entities of Alert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Alert&gt;</returns>
@@ -307,7 +307,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type related to AdminAlert type
+        /// Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of AdminAlert entity</param>
@@ -318,7 +318,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type related to AdminAlert type
+        /// Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of AdminAlert entity</param>
@@ -328,10 +328,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+        /// Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of AdminAlert entity</param>
+        /// <param name="masterids">ids of AdminAlert entities</param>
         /// <returns>List&lt;AdminAlertSignal&gt;</returns>
         List<AdminAlertSignal> GetOwnedAdminAlertSignalsBatch (List<int?> masterids);
 
@@ -339,17 +339,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+        /// Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of AdminAlert entity</param>
+        /// <param name="masterids">ids of AdminAlert entities</param>
         /// <returns>ApiResponse of List&lt;AdminAlertSignal&gt;</returns>
         ApiResponse<List<AdminAlertSignal>> GetOwnedAdminAlertSignalsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type related to Alert type
+        /// Retrieves all entities of AlertSignal type related to Alert entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Alert entity</param>
@@ -360,7 +360,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type related to Alert type
+        /// Retrieves all entities of AlertSignal type related to Alert entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Alert entity</param>
@@ -370,10 +370,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type related to multiple entities of Alert type
+        /// Retrieves all entities of AlertSignal type related to multiple entities of Alert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Alert entity</param>
+        /// <param name="masterids">ids of Alert entities</param>
         /// <returns>List&lt;AlertSignal&gt;</returns>
         List<AlertSignal> GetOwnedAlertSignalsBatch (List<int?> masterids);
 
@@ -381,17 +381,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type related to multiple entities of Alert type
+        /// Retrieves all entities of AlertSignal type related to multiple entities of Alert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Alert entity</param>
+        /// <param name="masterids">ids of Alert entities</param>
         /// <returns>ApiResponse of List&lt;AlertSignal&gt;</returns>
         ApiResponse<List<AlertSignal>> GetOwnedAlertSignalsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type related to User type
+        /// Retrieves all entities of Alert type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -402,7 +402,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type related to User type
+        /// Retrieves all entities of Alert type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -412,10 +412,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type related to multiple entities of User type
+        /// Retrieves all entities of Alert type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;Alert&gt;</returns>
         List<Alert> GetOwnedAlertsBatch (List<int?> masterids);
 
@@ -423,10 +423,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type related to multiple entities of User type
+        /// Retrieves all entities of Alert type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;Alert&gt;</returns>
         ApiResponse<List<Alert>> GetOwnedAlertsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
@@ -603,7 +603,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlertSignal type by its id
+        /// Retrieves an entity of AdminAlertSignal type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -614,7 +614,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlertSignal type by its id
+        /// Retrieves an entity of AdminAlertSignal type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -624,7 +624,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AdminAlertSignal type by its ids
+        /// Retrieves multiple entities of AdminAlertSignal type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -635,7 +635,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AdminAlertSignal type by its ids
+        /// Retrieves multiple entities of AdminAlertSignal type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -645,7 +645,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Alert type by its id
+        /// Retrieves an entity of Alert type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -656,7 +656,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Alert type by its id
+        /// Retrieves an entity of Alert type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -666,7 +666,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AlertSignal type by its id
+        /// Retrieves an entity of AlertSignal type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -677,7 +677,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AlertSignal type by its id
+        /// Retrieves an entity of AlertSignal type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -687,7 +687,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AlertSignal type by its ids
+        /// Retrieves multiple entities of AlertSignal type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -698,7 +698,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AlertSignal type by its ids
+        /// Retrieves multiple entities of AlertSignal type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -708,7 +708,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Alert type by its ids
+        /// Retrieves multiple entities of Alert type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -719,7 +719,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Alert type by its ids
+        /// Retrieves multiple entities of Alert type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -729,7 +729,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type
+        /// Retrieves all entities of AdminAlertSignal type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;AdminAlertSignal&gt;</returns>
@@ -739,7 +739,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type
+        /// Retrieves all entities of AdminAlertSignal type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;AdminAlertSignal&gt;)</returns>
@@ -748,7 +748,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type
+        /// Retrieves all entities of AlertSignal type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;AlertSignal&gt;</returns>
@@ -758,7 +758,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type
+        /// Retrieves all entities of AlertSignal type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;AlertSignal&gt;)</returns>
@@ -767,7 +767,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type
+        /// Retrieves all entities of Alert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Alert&gt;</returns>
@@ -777,7 +777,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type
+        /// Retrieves all entities of Alert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Alert&gt;)</returns>
@@ -786,7 +786,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type related to AdminAlert type
+        /// Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of AdminAlert entity</param>
@@ -797,7 +797,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type related to AdminAlert type
+        /// Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of AdminAlert entity</param>
@@ -807,10 +807,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+        /// Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of AdminAlert entity</param>
+        /// <param name="masterids">ids of AdminAlert entities</param>
         /// <returns>Task of List&lt;AdminAlertSignal&gt;</returns>
         System.Threading.Tasks.Task<List<AdminAlertSignal>> GetOwnedAdminAlertSignalsBatchAsync (List<int?> masterids);
 
@@ -818,17 +818,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+        /// Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of AdminAlert entity</param>
+        /// <param name="masterids">ids of AdminAlert entities</param>
         /// <returns>Task of ApiResponse (List&lt;AdminAlertSignal&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<AdminAlertSignal>>> GetOwnedAdminAlertSignalsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type related to Alert type
+        /// Retrieves all entities of AlertSignal type related to Alert entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Alert entity</param>
@@ -839,7 +839,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type related to Alert type
+        /// Retrieves all entities of AlertSignal type related to Alert entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Alert entity</param>
@@ -849,10 +849,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type related to multiple entities of Alert type
+        /// Retrieves all entities of AlertSignal type related to multiple entities of Alert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Alert entity</param>
+        /// <param name="masterids">ids of Alert entities</param>
         /// <returns>Task of List&lt;AlertSignal&gt;</returns>
         System.Threading.Tasks.Task<List<AlertSignal>> GetOwnedAlertSignalsBatchAsync (List<int?> masterids);
 
@@ -860,17 +860,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AlertSignal type related to multiple entities of Alert type
+        /// Retrieves all entities of AlertSignal type related to multiple entities of Alert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Alert entity</param>
+        /// <param name="masterids">ids of Alert entities</param>
         /// <returns>Task of ApiResponse (List&lt;AlertSignal&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<AlertSignal>>> GetOwnedAlertSignalsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type related to User type
+        /// Retrieves all entities of Alert type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -881,7 +881,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type related to User type
+        /// Retrieves all entities of Alert type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -891,10 +891,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type related to multiple entities of User type
+        /// Retrieves all entities of Alert type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;Alert&gt;</returns>
         System.Threading.Tasks.Task<List<Alert>> GetOwnedAlertsBatchAsync (List<int?> masterids);
 
@@ -902,10 +902,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Alert type related to multiple entities of User type
+        /// Retrieves all entities of Alert type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;Alert&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Alert>>> GetOwnedAlertsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
@@ -1777,7 +1777,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlertSignal type by its id
+        ///  Retrieves an entity of AdminAlertSignal type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1789,7 +1789,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlertSignal type by its id
+        ///  Retrieves an entity of AdminAlertSignal type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1854,7 +1854,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlertSignal type by its id
+        ///  Retrieves an entity of AdminAlertSignal type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1867,7 +1867,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlertSignal type by its id
+        ///  Retrieves an entity of AdminAlertSignal type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1931,7 +1931,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AdminAlertSignal type by its ids
+        ///  Retrieves multiple entities of AdminAlertSignal type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1943,7 +1943,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AdminAlertSignal type by its ids
+        ///  Retrieves multiple entities of AdminAlertSignal type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2008,7 +2008,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AdminAlertSignal type by its ids
+        ///  Retrieves multiple entities of AdminAlertSignal type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2021,7 +2021,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AdminAlertSignal type by its ids
+        ///  Retrieves multiple entities of AdminAlertSignal type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2085,7 +2085,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Alert type by its id
+        ///  Retrieves an entity of Alert type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2097,7 +2097,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Alert type by its id
+        ///  Retrieves an entity of Alert type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2162,7 +2162,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Alert type by its id
+        ///  Retrieves an entity of Alert type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2175,7 +2175,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Alert type by its id
+        ///  Retrieves an entity of Alert type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2239,7 +2239,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AlertSignal type by its id
+        ///  Retrieves an entity of AlertSignal type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2251,7 +2251,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AlertSignal type by its id
+        ///  Retrieves an entity of AlertSignal type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2316,7 +2316,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AlertSignal type by its id
+        ///  Retrieves an entity of AlertSignal type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2329,7 +2329,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AlertSignal type by its id
+        ///  Retrieves an entity of AlertSignal type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2393,7 +2393,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AlertSignal type by its ids
+        ///  Retrieves multiple entities of AlertSignal type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2405,7 +2405,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AlertSignal type by its ids
+        ///  Retrieves multiple entities of AlertSignal type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2470,7 +2470,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AlertSignal type by its ids
+        ///  Retrieves multiple entities of AlertSignal type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2483,7 +2483,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AlertSignal type by its ids
+        ///  Retrieves multiple entities of AlertSignal type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2547,7 +2547,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Alert type by its ids
+        ///  Retrieves multiple entities of Alert type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2559,7 +2559,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Alert type by its ids
+        ///  Retrieves multiple entities of Alert type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2624,7 +2624,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Alert type by its ids
+        ///  Retrieves multiple entities of Alert type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2637,7 +2637,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Alert type by its ids
+        ///  Retrieves multiple entities of Alert type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2701,7 +2701,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type
+        ///  Retrieves all entities of AdminAlertSignal type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;AdminAlertSignal&gt;</returns>
@@ -2712,7 +2712,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type
+        ///  Retrieves all entities of AdminAlertSignal type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;AdminAlertSignal&gt;</returns>
@@ -2772,7 +2772,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type
+        ///  Retrieves all entities of AdminAlertSignal type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;AdminAlertSignal&gt;</returns>
@@ -2784,7 +2784,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type
+        ///  Retrieves all entities of AdminAlertSignal type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;AdminAlertSignal&gt;)</returns>
@@ -2843,7 +2843,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type
+        ///  Retrieves all entities of AlertSignal type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;AlertSignal&gt;</returns>
@@ -2854,7 +2854,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type
+        ///  Retrieves all entities of AlertSignal type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;AlertSignal&gt;</returns>
@@ -2914,7 +2914,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type
+        ///  Retrieves all entities of AlertSignal type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;AlertSignal&gt;</returns>
@@ -2926,7 +2926,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type
+        ///  Retrieves all entities of AlertSignal type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;AlertSignal&gt;)</returns>
@@ -2985,7 +2985,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type
+        ///  Retrieves all entities of Alert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Alert&gt;</returns>
@@ -2996,7 +2996,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type
+        ///  Retrieves all entities of Alert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Alert&gt;</returns>
@@ -3056,7 +3056,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type
+        ///  Retrieves all entities of Alert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Alert&gt;</returns>
@@ -3068,7 +3068,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type
+        ///  Retrieves all entities of Alert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Alert&gt;)</returns>
@@ -3127,7 +3127,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type related to AdminAlert type
+        ///  Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of AdminAlert entity</param>
@@ -3139,7 +3139,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type related to AdminAlert type
+        ///  Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of AdminAlert entity</param>
@@ -3204,7 +3204,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type related to AdminAlert type
+        ///  Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of AdminAlert entity</param>
@@ -3217,7 +3217,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type related to AdminAlert type
+        ///  Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of AdminAlert entity</param>
@@ -3281,10 +3281,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+        ///  Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of AdminAlert entity</param>
+        /// <param name="masterids">ids of AdminAlert entities</param>
         /// <returns>List&lt;AdminAlertSignal&gt;</returns>
         public List<AdminAlertSignal> GetOwnedAdminAlertSignalsBatch (List<int?> masterids)
         {
@@ -3293,10 +3293,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+        ///  Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of AdminAlert entity</param>
+        /// <param name="masterids">ids of AdminAlert entities</param>
         /// <returns>ApiResponse of List&lt;AdminAlertSignal&gt;</returns>
         public ApiResponse< List<AdminAlertSignal> > GetOwnedAdminAlertSignalsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -3358,10 +3358,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+        ///  Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of AdminAlert entity</param>
+        /// <param name="masterids">ids of AdminAlert entities</param>
         /// <returns>Task of List&lt;AdminAlertSignal&gt;</returns>
         public async System.Threading.Tasks.Task<List<AdminAlertSignal>> GetOwnedAdminAlertSignalsBatchAsync (List<int?> masterids)
         {
@@ -3371,10 +3371,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+        ///  Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of AdminAlert entity</param>
+        /// <param name="masterids">ids of AdminAlert entities</param>
         /// <returns>Task of ApiResponse (List&lt;AdminAlertSignal&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<AdminAlertSignal>>> GetOwnedAdminAlertSignalsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -3435,7 +3435,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type related to Alert type
+        ///  Retrieves all entities of AlertSignal type related to Alert entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Alert entity</param>
@@ -3447,7 +3447,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type related to Alert type
+        ///  Retrieves all entities of AlertSignal type related to Alert entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Alert entity</param>
@@ -3512,7 +3512,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type related to Alert type
+        ///  Retrieves all entities of AlertSignal type related to Alert entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Alert entity</param>
@@ -3525,7 +3525,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type related to Alert type
+        ///  Retrieves all entities of AlertSignal type related to Alert entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Alert entity</param>
@@ -3589,10 +3589,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type related to multiple entities of Alert type
+        ///  Retrieves all entities of AlertSignal type related to multiple entities of Alert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Alert entity</param>
+        /// <param name="masterids">ids of Alert entities</param>
         /// <returns>List&lt;AlertSignal&gt;</returns>
         public List<AlertSignal> GetOwnedAlertSignalsBatch (List<int?> masterids)
         {
@@ -3601,10 +3601,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type related to multiple entities of Alert type
+        ///  Retrieves all entities of AlertSignal type related to multiple entities of Alert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Alert entity</param>
+        /// <param name="masterids">ids of Alert entities</param>
         /// <returns>ApiResponse of List&lt;AlertSignal&gt;</returns>
         public ApiResponse< List<AlertSignal> > GetOwnedAlertSignalsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -3666,10 +3666,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type related to multiple entities of Alert type
+        ///  Retrieves all entities of AlertSignal type related to multiple entities of Alert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Alert entity</param>
+        /// <param name="masterids">ids of Alert entities</param>
         /// <returns>Task of List&lt;AlertSignal&gt;</returns>
         public async System.Threading.Tasks.Task<List<AlertSignal>> GetOwnedAlertSignalsBatchAsync (List<int?> masterids)
         {
@@ -3679,10 +3679,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AlertSignal type related to multiple entities of Alert type
+        ///  Retrieves all entities of AlertSignal type related to multiple entities of Alert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Alert entity</param>
+        /// <param name="masterids">ids of Alert entities</param>
         /// <returns>Task of ApiResponse (List&lt;AlertSignal&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<AlertSignal>>> GetOwnedAlertSignalsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -3743,7 +3743,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type related to User type
+        ///  Retrieves all entities of Alert type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -3755,7 +3755,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type related to User type
+        ///  Retrieves all entities of Alert type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -3820,7 +3820,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type related to User type
+        ///  Retrieves all entities of Alert type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -3833,7 +3833,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type related to User type
+        ///  Retrieves all entities of Alert type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -3897,10 +3897,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type related to multiple entities of User type
+        ///  Retrieves all entities of Alert type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;Alert&gt;</returns>
         public List<Alert> GetOwnedAlertsBatch (List<int?> masterids)
         {
@@ -3909,10 +3909,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type related to multiple entities of User type
+        ///  Retrieves all entities of Alert type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;Alert&gt;</returns>
         public ApiResponse< List<Alert> > GetOwnedAlertsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -3974,10 +3974,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type related to multiple entities of User type
+        ///  Retrieves all entities of Alert type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;Alert&gt;</returns>
         public async System.Threading.Tasks.Task<List<Alert>> GetOwnedAlertsBatchAsync (List<int?> masterids)
         {
@@ -3987,10 +3987,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Alert type related to multiple entities of User type
+        ///  Retrieves all entities of Alert type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;Alert&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Alert>>> GetOwnedAlertsBatchAsyncWithHttpInfo (List<int?> masterids)
         {

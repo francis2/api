@@ -49,7 +49,8 @@ namespace Tradovate.Services.Model
         /// </summary>
         /// <param name="OrderStrategyId">id of OrderStrategy (required).</param>
         /// <param name="Command">Command (required).</param>
-        public ModifyOrderStrategy(int? OrderStrategyId = null, string Command = null)
+        /// <param name="CustomTag50">CustomTag50.</param>
+        public ModifyOrderStrategy(int? OrderStrategyId = null, string Command = null, string CustomTag50 = null)
         {
             // to ensure "OrderStrategyId" is required (not null)
             if (OrderStrategyId == null)
@@ -69,6 +70,7 @@ namespace Tradovate.Services.Model
             {
                 this.Command = Command;
             }
+            this.CustomTag50 = CustomTag50;
         }
         
         /// <summary>
@@ -83,6 +85,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="command", EmitDefaultValue=false)]
         public string Command { get; set; }
         /// <summary>
+        /// Gets or Sets CustomTag50
+        /// </summary>
+        [DataMember(Name="customTag50", EmitDefaultValue=false)]
+        public string CustomTag50 { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -92,6 +99,7 @@ namespace Tradovate.Services.Model
             sb.Append("class ModifyOrderStrategy {\n");
             sb.Append("  OrderStrategyId: ").Append(OrderStrategyId).Append("\n");
             sb.Append("  Command: ").Append(Command).Append("\n");
+            sb.Append("  CustomTag50: ").Append(CustomTag50).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -137,6 +145,11 @@ namespace Tradovate.Services.Model
                     this.Command == other.Command ||
                     this.Command != null &&
                     this.Command.Equals(other.Command)
+                ) && 
+                (
+                    this.CustomTag50 == other.CustomTag50 ||
+                    this.CustomTag50 != null &&
+                    this.CustomTag50.Equals(other.CustomTag50)
                 );
         }
 
@@ -155,6 +168,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.OrderStrategyId.GetHashCode();
                 if (this.Command != null)
                     hash = hash * 59 + this.Command.GetHashCode();
+                if (this.CustomTag50 != null)
+                    hash = hash * 59 + this.CustomTag50.GetHashCode();
                 return hash;
             }
         }

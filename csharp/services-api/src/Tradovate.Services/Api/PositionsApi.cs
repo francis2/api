@@ -40,7 +40,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Position type by its name
+        /// Retrieves an entity of Position type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -51,7 +51,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Position type by its name
+        /// Retrieves an entity of Position type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -61,7 +61,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type
+        /// Retrieves all entities of FillPair type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;FillPair&gt;</returns>
@@ -71,7 +71,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type
+        /// Retrieves all entities of FillPair type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;FillPair&gt;</returns>
@@ -80,7 +80,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type
+        /// Retrieves all entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Position&gt;</returns>
@@ -90,7 +90,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type
+        /// Retrieves all entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Position&gt;</returns>
@@ -99,7 +99,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of FillPair type by its id
+        /// Retrieves an entity of FillPair type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -110,7 +110,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of FillPair type by its id
+        /// Retrieves an entity of FillPair type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -120,7 +120,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of FillPair type by its ids
+        /// Retrieves multiple entities of FillPair type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -131,7 +131,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of FillPair type by its ids
+        /// Retrieves multiple entities of FillPair type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -141,7 +141,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type related to Position type
+        /// Retrieves all entities of FillPair type related to Position entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Position entity</param>
@@ -152,7 +152,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type related to Position type
+        /// Retrieves all entities of FillPair type related to Position entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Position entity</param>
@@ -162,10 +162,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type related to multiple entities of Position type
+        /// Retrieves all entities of FillPair type related to multiple entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Position entity</param>
+        /// <param name="masterids">ids of Position entities</param>
         /// <returns>List&lt;FillPair&gt;</returns>
         List<FillPair> GetOwnedFillPairsBatch (List<int?> masterids);
 
@@ -173,59 +173,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type related to multiple entities of Position type
+        /// Retrieves all entities of FillPair type related to multiple entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Position entity</param>
+        /// <param name="masterids">ids of Position entities</param>
         /// <returns>ApiResponse of List&lt;FillPair&gt;</returns>
         ApiResponse<List<FillPair>> GetOwnedFillPairsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of PositionLog type related to Account type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of Account entity</param>
-        /// <returns>List&lt;PositionLog&gt;</returns>
-        List<PositionLog> GetOwnedPositionLogs (int? masterid);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type related to Account type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of Account entity</param>
-        /// <returns>ApiResponse of List&lt;PositionLog&gt;</returns>
-        ApiResponse<List<PositionLog>> GetOwnedPositionLogsWithHttpInfo (int? masterid);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type related to multiple entities of Account type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
-        /// <returns>List&lt;PositionLog&gt;</returns>
-        List<PositionLog> GetOwnedPositionLogsBatch (List<int?> masterids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type related to multiple entities of Account type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
-        /// <returns>ApiResponse of List&lt;PositionLog&gt;</returns>
-        ApiResponse<List<PositionLog>> GetOwnedPositionLogsBatchWithHttpInfo (List<int?> masterids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of Position type related to Account type
+        /// Retrieves all entities of Position type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -236,7 +194,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type related to Account type
+        /// Retrieves all entities of Position type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -246,10 +204,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type related to multiple entities of Account type
+        /// Retrieves all entities of Position type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;Position&gt;</returns>
         List<Position> GetOwnedPositionsBatch (List<int?> masterids);
 
@@ -257,17 +215,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type related to multiple entities of Account type
+        /// Retrieves all entities of Position type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;Position&gt;</returns>
         ApiResponse<List<Position>> GetOwnedPositionsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Position type by its id
+        /// Retrieves an entity of Position type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -278,7 +236,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Position type by its id
+        /// Retrieves an entity of Position type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -288,49 +246,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of PositionLog type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>PositionLog</returns>
-        PositionLog GetPositionLog (int? id);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of PositionLog type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>ApiResponse of PositionLog</returns>
-        ApiResponse<PositionLog> GetPositionLogWithHttpInfo (int? id);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of PositionLog type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>List&lt;PositionLog&gt;</returns>
-        List<PositionLog> GetPositionLogs (List<int?> ids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of PositionLog type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>ApiResponse of List&lt;PositionLog&gt;</returns>
-        ApiResponse<List<PositionLog>> GetPositionLogsWithHttpInfo (List<int?> ids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of Position type by its ids
+        /// Retrieves multiple entities of Position type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -341,7 +257,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Position type by its ids
+        /// Retrieves multiple entities of Position type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -353,7 +269,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Position type by its name
+        /// Retrieves an entity of Position type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -364,7 +280,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Position type by its name
+        /// Retrieves an entity of Position type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -374,7 +290,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type
+        /// Retrieves all entities of FillPair type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;FillPair&gt;</returns>
@@ -384,7 +300,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type
+        /// Retrieves all entities of FillPair type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;FillPair&gt;)</returns>
@@ -393,7 +309,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type
+        /// Retrieves all entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Position&gt;</returns>
@@ -403,7 +319,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type
+        /// Retrieves all entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Position&gt;)</returns>
@@ -412,7 +328,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of FillPair type by its id
+        /// Retrieves an entity of FillPair type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -423,7 +339,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of FillPair type by its id
+        /// Retrieves an entity of FillPair type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -433,7 +349,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of FillPair type by its ids
+        /// Retrieves multiple entities of FillPair type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -444,7 +360,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of FillPair type by its ids
+        /// Retrieves multiple entities of FillPair type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -454,7 +370,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type related to Position type
+        /// Retrieves all entities of FillPair type related to Position entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Position entity</param>
@@ -465,7 +381,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type related to Position type
+        /// Retrieves all entities of FillPair type related to Position entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Position entity</param>
@@ -475,10 +391,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type related to multiple entities of Position type
+        /// Retrieves all entities of FillPair type related to multiple entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Position entity</param>
+        /// <param name="masterids">ids of Position entities</param>
         /// <returns>Task of List&lt;FillPair&gt;</returns>
         System.Threading.Tasks.Task<List<FillPair>> GetOwnedFillPairsBatchAsync (List<int?> masterids);
 
@@ -486,59 +402,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillPair type related to multiple entities of Position type
+        /// Retrieves all entities of FillPair type related to multiple entities of Position type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Position entity</param>
+        /// <param name="masterids">ids of Position entities</param>
         /// <returns>Task of ApiResponse (List&lt;FillPair&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<FillPair>>> GetOwnedFillPairsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of PositionLog type related to Account type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of Account entity</param>
-        /// <returns>Task of List&lt;PositionLog&gt;</returns>
-        System.Threading.Tasks.Task<List<PositionLog>> GetOwnedPositionLogsAsync (int? masterid);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type related to Account type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of Account entity</param>
-        /// <returns>Task of ApiResponse (List&lt;PositionLog&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<PositionLog>>> GetOwnedPositionLogsAsyncWithHttpInfo (int? masterid);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type related to multiple entities of Account type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
-        /// <returns>Task of List&lt;PositionLog&gt;</returns>
-        System.Threading.Tasks.Task<List<PositionLog>> GetOwnedPositionLogsBatchAsync (List<int?> masterids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of PositionLog type related to multiple entities of Account type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
-        /// <returns>Task of ApiResponse (List&lt;PositionLog&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<PositionLog>>> GetOwnedPositionLogsBatchAsyncWithHttpInfo (List<int?> masterids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of Position type related to Account type
+        /// Retrieves all entities of Position type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -549,7 +423,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type related to Account type
+        /// Retrieves all entities of Position type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -559,10 +433,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type related to multiple entities of Account type
+        /// Retrieves all entities of Position type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;Position&gt;</returns>
         System.Threading.Tasks.Task<List<Position>> GetOwnedPositionsBatchAsync (List<int?> masterids);
 
@@ -570,17 +444,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Position type related to multiple entities of Account type
+        /// Retrieves all entities of Position type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;Position&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Position>>> GetOwnedPositionsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Position type by its id
+        /// Retrieves an entity of Position type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -591,7 +465,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Position type by its id
+        /// Retrieves an entity of Position type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -601,49 +475,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of PositionLog type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of PositionLog</returns>
-        System.Threading.Tasks.Task<PositionLog> GetPositionLogAsync (int? id);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of PositionLog type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of ApiResponse (PositionLog)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PositionLog>> GetPositionLogAsyncWithHttpInfo (int? id);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of PositionLog type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of List&lt;PositionLog&gt;</returns>
-        System.Threading.Tasks.Task<List<PositionLog>> GetPositionLogsAsync (List<int?> ids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of PositionLog type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of ApiResponse (List&lt;PositionLog&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<PositionLog>>> GetPositionLogsAsyncWithHttpInfo (List<int?> ids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of Position type by its ids
+        /// Retrieves multiple entities of Position type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -654,7 +486,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Position type by its ids
+        /// Retrieves multiple entities of Position type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -773,7 +605,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Position type by its name
+        ///  Retrieves an entity of Position type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -785,7 +617,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Position type by its name
+        ///  Retrieves an entity of Position type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -850,7 +682,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Position type by its name
+        ///  Retrieves an entity of Position type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -863,7 +695,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Position type by its name
+        ///  Retrieves an entity of Position type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -927,7 +759,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type
+        ///  Retrieves all entities of FillPair type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;FillPair&gt;</returns>
@@ -938,7 +770,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type
+        ///  Retrieves all entities of FillPair type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;FillPair&gt;</returns>
@@ -998,7 +830,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type
+        ///  Retrieves all entities of FillPair type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;FillPair&gt;</returns>
@@ -1010,7 +842,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type
+        ///  Retrieves all entities of FillPair type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;FillPair&gt;)</returns>
@@ -1069,7 +901,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type
+        ///  Retrieves all entities of Position type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Position&gt;</returns>
@@ -1080,7 +912,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type
+        ///  Retrieves all entities of Position type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Position&gt;</returns>
@@ -1140,7 +972,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type
+        ///  Retrieves all entities of Position type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Position&gt;</returns>
@@ -1152,7 +984,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type
+        ///  Retrieves all entities of Position type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Position&gt;)</returns>
@@ -1211,7 +1043,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of FillPair type by its id
+        ///  Retrieves an entity of FillPair type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1223,7 +1055,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of FillPair type by its id
+        ///  Retrieves an entity of FillPair type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1288,7 +1120,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of FillPair type by its id
+        ///  Retrieves an entity of FillPair type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1301,7 +1133,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of FillPair type by its id
+        ///  Retrieves an entity of FillPair type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1365,7 +1197,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of FillPair type by its ids
+        ///  Retrieves multiple entities of FillPair type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1377,7 +1209,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of FillPair type by its ids
+        ///  Retrieves multiple entities of FillPair type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1442,7 +1274,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of FillPair type by its ids
+        ///  Retrieves multiple entities of FillPair type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1455,7 +1287,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of FillPair type by its ids
+        ///  Retrieves multiple entities of FillPair type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1519,7 +1351,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type related to Position type
+        ///  Retrieves all entities of FillPair type related to Position entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Position entity</param>
@@ -1531,7 +1363,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type related to Position type
+        ///  Retrieves all entities of FillPair type related to Position entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Position entity</param>
@@ -1596,7 +1428,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type related to Position type
+        ///  Retrieves all entities of FillPair type related to Position entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Position entity</param>
@@ -1609,7 +1441,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type related to Position type
+        ///  Retrieves all entities of FillPair type related to Position entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Position entity</param>
@@ -1673,10 +1505,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type related to multiple entities of Position type
+        ///  Retrieves all entities of FillPair type related to multiple entities of Position type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Position entity</param>
+        /// <param name="masterids">ids of Position entities</param>
         /// <returns>List&lt;FillPair&gt;</returns>
         public List<FillPair> GetOwnedFillPairsBatch (List<int?> masterids)
         {
@@ -1685,10 +1517,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type related to multiple entities of Position type
+        ///  Retrieves all entities of FillPair type related to multiple entities of Position type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Position entity</param>
+        /// <param name="masterids">ids of Position entities</param>
         /// <returns>ApiResponse of List&lt;FillPair&gt;</returns>
         public ApiResponse< List<FillPair> > GetOwnedFillPairsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -1750,10 +1582,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type related to multiple entities of Position type
+        ///  Retrieves all entities of FillPair type related to multiple entities of Position type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Position entity</param>
+        /// <param name="masterids">ids of Position entities</param>
         /// <returns>Task of List&lt;FillPair&gt;</returns>
         public async System.Threading.Tasks.Task<List<FillPair>> GetOwnedFillPairsBatchAsync (List<int?> masterids)
         {
@@ -1763,10 +1595,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillPair type related to multiple entities of Position type
+        ///  Retrieves all entities of FillPair type related to multiple entities of Position type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Position entity</param>
+        /// <param name="masterids">ids of Position entities</param>
         /// <returns>Task of ApiResponse (List&lt;FillPair&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<FillPair>>> GetOwnedFillPairsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -1827,315 +1659,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of PositionLog type related to Account type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of Account entity</param>
-        /// <returns>List&lt;PositionLog&gt;</returns>
-        public List<PositionLog> GetOwnedPositionLogs (int? masterid)
-        {
-             ApiResponse<List<PositionLog>> localVarResponse = GetOwnedPositionLogsWithHttpInfo(masterid);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type related to Account type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of Account entity</param>
-        /// <returns>ApiResponse of List&lt;PositionLog&gt;</returns>
-        public ApiResponse< List<PositionLog> > GetOwnedPositionLogsWithHttpInfo (int? masterid)
-        {
-            // verify the required parameter 'masterid' is set
-            if (masterid == null)
-                throw new ApiException(400, "Missing required parameter 'masterid' when calling PositionsApi->GetOwnedPositionLogs");
-
-            var localVarPath = "/positionLog/deps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterid != null) localVarQueryParams.Add("masterid", Configuration.ApiClient.ParameterToString(masterid)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedPositionLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<PositionLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<PositionLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PositionLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type related to Account type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of Account entity</param>
-        /// <returns>Task of List&lt;PositionLog&gt;</returns>
-        public async System.Threading.Tasks.Task<List<PositionLog>> GetOwnedPositionLogsAsync (int? masterid)
-        {
-             ApiResponse<List<PositionLog>> localVarResponse = await GetOwnedPositionLogsAsyncWithHttpInfo(masterid);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type related to Account type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of Account entity</param>
-        /// <returns>Task of ApiResponse (List&lt;PositionLog&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<PositionLog>>> GetOwnedPositionLogsAsyncWithHttpInfo (int? masterid)
-        {
-            // verify the required parameter 'masterid' is set
-            if (masterid == null)
-                throw new ApiException(400, "Missing required parameter 'masterid' when calling PositionsApi->GetOwnedPositionLogs");
-
-            var localVarPath = "/positionLog/deps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterid != null) localVarQueryParams.Add("masterid", Configuration.ApiClient.ParameterToString(masterid)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedPositionLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<PositionLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<PositionLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PositionLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type related to multiple entities of Account type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
-        /// <returns>List&lt;PositionLog&gt;</returns>
-        public List<PositionLog> GetOwnedPositionLogsBatch (List<int?> masterids)
-        {
-             ApiResponse<List<PositionLog>> localVarResponse = GetOwnedPositionLogsBatchWithHttpInfo(masterids);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type related to multiple entities of Account type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
-        /// <returns>ApiResponse of List&lt;PositionLog&gt;</returns>
-        public ApiResponse< List<PositionLog> > GetOwnedPositionLogsBatchWithHttpInfo (List<int?> masterids)
-        {
-            // verify the required parameter 'masterids' is set
-            if (masterids == null)
-                throw new ApiException(400, "Missing required parameter 'masterids' when calling PositionsApi->GetOwnedPositionLogsBatch");
-
-            var localVarPath = "/positionLog/ldeps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterids != null) localVarQueryParams.Add("masterids", Configuration.ApiClient.ParameterToString(masterids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedPositionLogsBatch", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<PositionLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<PositionLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PositionLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type related to multiple entities of Account type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
-        /// <returns>Task of List&lt;PositionLog&gt;</returns>
-        public async System.Threading.Tasks.Task<List<PositionLog>> GetOwnedPositionLogsBatchAsync (List<int?> masterids)
-        {
-             ApiResponse<List<PositionLog>> localVarResponse = await GetOwnedPositionLogsBatchAsyncWithHttpInfo(masterids);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of PositionLog type related to multiple entities of Account type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
-        /// <returns>Task of ApiResponse (List&lt;PositionLog&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<PositionLog>>> GetOwnedPositionLogsBatchAsyncWithHttpInfo (List<int?> masterids)
-        {
-            // verify the required parameter 'masterids' is set
-            if (masterids == null)
-                throw new ApiException(400, "Missing required parameter 'masterids' when calling PositionsApi->GetOwnedPositionLogsBatch");
-
-            var localVarPath = "/positionLog/ldeps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterids != null) localVarQueryParams.Add("masterids", Configuration.ApiClient.ParameterToString(masterids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedPositionLogsBatch", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<PositionLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<PositionLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PositionLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of Position type related to Account type
+        ///  Retrieves all entities of Position type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -2147,7 +1671,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type related to Account type
+        ///  Retrieves all entities of Position type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -2212,7 +1736,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type related to Account type
+        ///  Retrieves all entities of Position type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -2225,7 +1749,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type related to Account type
+        ///  Retrieves all entities of Position type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -2289,10 +1813,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type related to multiple entities of Account type
+        ///  Retrieves all entities of Position type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;Position&gt;</returns>
         public List<Position> GetOwnedPositionsBatch (List<int?> masterids)
         {
@@ -2301,10 +1825,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type related to multiple entities of Account type
+        ///  Retrieves all entities of Position type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;Position&gt;</returns>
         public ApiResponse< List<Position> > GetOwnedPositionsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -2366,10 +1890,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type related to multiple entities of Account type
+        ///  Retrieves all entities of Position type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;Position&gt;</returns>
         public async System.Threading.Tasks.Task<List<Position>> GetOwnedPositionsBatchAsync (List<int?> masterids)
         {
@@ -2379,10 +1903,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Position type related to multiple entities of Account type
+        ///  Retrieves all entities of Position type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;Position&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Position>>> GetOwnedPositionsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -2443,7 +1967,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Position type by its id
+        ///  Retrieves an entity of Position type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2455,7 +1979,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Position type by its id
+        ///  Retrieves an entity of Position type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2520,7 +2044,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Position type by its id
+        ///  Retrieves an entity of Position type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2533,7 +2057,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Position type by its id
+        ///  Retrieves an entity of Position type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2597,315 +2121,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of PositionLog type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>PositionLog</returns>
-        public PositionLog GetPositionLog (int? id)
-        {
-             ApiResponse<PositionLog> localVarResponse = GetPositionLogWithHttpInfo(id);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds an entity of PositionLog type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>ApiResponse of PositionLog</returns>
-        public ApiResponse< PositionLog > GetPositionLogWithHttpInfo (int? id)
-        {
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling PositionsApi->GetPositionLog");
-
-            var localVarPath = "/positionLog/item";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetPositionLog", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<PositionLog>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (PositionLog) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PositionLog)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of PositionLog type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of PositionLog</returns>
-        public async System.Threading.Tasks.Task<PositionLog> GetPositionLogAsync (int? id)
-        {
-             ApiResponse<PositionLog> localVarResponse = await GetPositionLogAsyncWithHttpInfo(id);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds an entity of PositionLog type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of ApiResponse (PositionLog)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PositionLog>> GetPositionLogAsyncWithHttpInfo (int? id)
-        {
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling PositionsApi->GetPositionLog");
-
-            var localVarPath = "/positionLog/item";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetPositionLog", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<PositionLog>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (PositionLog) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PositionLog)));
-            
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of PositionLog type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>List&lt;PositionLog&gt;</returns>
-        public List<PositionLog> GetPositionLogs (List<int?> ids)
-        {
-             ApiResponse<List<PositionLog>> localVarResponse = GetPositionLogsWithHttpInfo(ids);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of PositionLog type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>ApiResponse of List&lt;PositionLog&gt;</returns>
-        public ApiResponse< List<PositionLog> > GetPositionLogsWithHttpInfo (List<int?> ids)
-        {
-            // verify the required parameter 'ids' is set
-            if (ids == null)
-                throw new ApiException(400, "Missing required parameter 'ids' when calling PositionsApi->GetPositionLogs");
-
-            var localVarPath = "/positionLog/items";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetPositionLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<PositionLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<PositionLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PositionLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of PositionLog type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of List&lt;PositionLog&gt;</returns>
-        public async System.Threading.Tasks.Task<List<PositionLog>> GetPositionLogsAsync (List<int?> ids)
-        {
-             ApiResponse<List<PositionLog>> localVarResponse = await GetPositionLogsAsyncWithHttpInfo(ids);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of PositionLog type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of ApiResponse (List&lt;PositionLog&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<PositionLog>>> GetPositionLogsAsyncWithHttpInfo (List<int?> ids)
-        {
-            // verify the required parameter 'ids' is set
-            if (ids == null)
-                throw new ApiException(400, "Missing required parameter 'ids' when calling PositionsApi->GetPositionLogs");
-
-            var localVarPath = "/positionLog/items";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetPositionLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<PositionLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<PositionLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PositionLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of Position type by its ids
+        ///  Retrieves multiple entities of Position type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2917,7 +2133,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Position type by its ids
+        ///  Retrieves multiple entities of Position type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2982,7 +2198,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Position type by its ids
+        ///  Retrieves multiple entities of Position type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2995,7 +2211,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Position type by its ids
+        ///  Retrieves multiple entities of Position type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>

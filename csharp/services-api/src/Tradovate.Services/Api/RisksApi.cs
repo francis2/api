@@ -103,70 +103,49 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountAutoLiq
+        /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>UserAccountAutoLiq</returns>
-        UserAccountAutoLiq DeleteUserAccountAutoLiq (UserAccountAutoLiq body);
+        /// <returns>DeleteResultResponse</returns>
+        DeleteResultResponse DeleteUserAccountPositionLimit (DeleteUserAccountPositionLimit body);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountAutoLiq
+        /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>ApiResponse of UserAccountAutoLiq</returns>
-        ApiResponse<UserAccountAutoLiq> DeleteUserAccountAutoLiqWithHttpInfo (UserAccountAutoLiq body);
+        /// <returns>ApiResponse of DeleteResultResponse</returns>
+        ApiResponse<DeleteResultResponse> DeleteUserAccountPositionLimitWithHttpInfo (DeleteUserAccountPositionLimit body);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountPositionLimit
+        /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>UserAccountPositionLimit</returns>
-        UserAccountPositionLimit DeleteUserAccountPositionLimit (UserAccountPositionLimit body);
+        /// <returns>DeleteResultResponse</returns>
+        DeleteResultResponse DeleteUserAccountRiskParameter (DeleteUserAccountRiskParameter body);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountPositionLimit
+        /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>ApiResponse of UserAccountPositionLimit</returns>
-        ApiResponse<UserAccountPositionLimit> DeleteUserAccountPositionLimitWithHttpInfo (UserAccountPositionLimit body);
+        /// <returns>ApiResponse of DeleteResultResponse</returns>
+        ApiResponse<DeleteResultResponse> DeleteUserAccountRiskParameterWithHttpInfo (DeleteUserAccountRiskParameter body);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountRiskParameter
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>UserAccountRiskParameter</returns>
-        UserAccountRiskParameter DeleteUserAccountRiskParameter (UserAccountRiskParameter body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of UserAccountRiskParameter
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of UserAccountRiskParameter</returns>
-        ApiResponse<UserAccountRiskParameter> DeleteUserAccountRiskParameterWithHttpInfo (UserAccountRiskParameter body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of ProductMargin type
+        /// Retrieves all entities of ProductMargin type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;ProductMargin&gt;</returns>
@@ -176,7 +155,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type
+        /// Retrieves all entities of ProductMargin type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;ProductMargin&gt;</returns>
@@ -185,7 +164,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type
+        /// Retrieves all entities of UserAccountAutoLiq type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;UserAccountAutoLiq&gt;</returns>
@@ -195,7 +174,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type
+        /// Retrieves all entities of UserAccountAutoLiq type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;UserAccountAutoLiq&gt;</returns>
@@ -204,7 +183,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractMargin type by its id
+        /// Retrieves an entity of ContractMargin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -215,7 +194,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractMargin type by its id
+        /// Retrieves an entity of ContractMargin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -225,7 +204,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractMargin type by its ids
+        /// Retrieves multiple entities of ContractMargin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -236,7 +215,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractMargin type by its ids
+        /// Retrieves multiple entities of ContractMargin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -246,7 +225,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMargin type related to Contract type
+        /// Retrieves all entities of ContractMargin type related to Contract entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Contract entity</param>
@@ -257,7 +236,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMargin type related to Contract type
+        /// Retrieves all entities of ContractMargin type related to Contract entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Contract entity</param>
@@ -267,10 +246,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMargin type related to multiple entities of Contract type
+        /// Retrieves all entities of ContractMargin type related to multiple entities of Contract type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Contract entity</param>
+        /// <param name="masterids">ids of Contract entities</param>
         /// <returns>List&lt;ContractMargin&gt;</returns>
         List<ContractMargin> GetOwnedContractMarginsBatch (List<int?> masterids);
 
@@ -278,17 +257,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMargin type related to multiple entities of Contract type
+        /// Retrieves all entities of ContractMargin type related to multiple entities of Contract type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Contract entity</param>
+        /// <param name="masterids">ids of Contract entities</param>
         /// <returns>ApiResponse of List&lt;ContractMargin&gt;</returns>
         ApiResponse<List<ContractMargin>> GetOwnedContractMarginsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type related to Product type
+        /// Retrieves all entities of ProductMargin type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -299,7 +278,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type related to Product type
+        /// Retrieves all entities of ProductMargin type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -309,10 +288,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type related to multiple entities of Product type
+        /// Retrieves all entities of ProductMargin type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>List&lt;ProductMargin&gt;</returns>
         List<ProductMargin> GetOwnedProductMarginsBatch (List<int?> masterids);
 
@@ -320,17 +299,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type related to multiple entities of Product type
+        /// Retrieves all entities of ProductMargin type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>ApiResponse of List&lt;ProductMargin&gt;</returns>
         ApiResponse<List<ProductMargin>> GetOwnedProductMarginsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type related to Account type
+        /// Retrieves all entities of UserAccountAutoLiq type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -341,7 +320,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type related to Account type
+        /// Retrieves all entities of UserAccountAutoLiq type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -351,10 +330,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+        /// Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;UserAccountAutoLiq&gt;</returns>
         List<UserAccountAutoLiq> GetOwnedUserAccountAutoLiqsBatch (List<int?> masterids);
 
@@ -362,17 +341,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+        /// Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;UserAccountAutoLiq&gt;</returns>
         ApiResponse<List<UserAccountAutoLiq>> GetOwnedUserAccountAutoLiqsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountPositionLimit type related to Account type
+        /// Retrieves all entities of UserAccountPositionLimit type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -383,7 +362,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountPositionLimit type related to Account type
+        /// Retrieves all entities of UserAccountPositionLimit type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -393,10 +372,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+        /// Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;UserAccountPositionLimit&gt;</returns>
         List<UserAccountPositionLimit> GetOwnedUserAccountPositionLimitsBatch (List<int?> masterids);
 
@@ -404,17 +383,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+        /// Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;UserAccountPositionLimit&gt;</returns>
         ApiResponse<List<UserAccountPositionLimit>> GetOwnedUserAccountPositionLimitsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+        /// Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of UserAccountPositionLimit entity</param>
@@ -425,7 +404,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+        /// Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of UserAccountPositionLimit entity</param>
@@ -435,10 +414,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+        /// Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of UserAccountPositionLimit entity</param>
+        /// <param name="masterids">ids of UserAccountPositionLimit entities</param>
         /// <returns>List&lt;UserAccountRiskParameter&gt;</returns>
         List<UserAccountRiskParameter> GetOwnedUserAccountRiskParametersBatch (List<int?> masterids);
 
@@ -446,17 +425,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+        /// Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of UserAccountPositionLimit entity</param>
+        /// <param name="masterids">ids of UserAccountPositionLimit entities</param>
         /// <returns>ApiResponse of List&lt;UserAccountRiskParameter&gt;</returns>
         ApiResponse<List<UserAccountRiskParameter>> GetOwnedUserAccountRiskParametersBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ProductMargin type by its id
+        /// Retrieves an entity of ProductMargin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -467,7 +446,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ProductMargin type by its id
+        /// Retrieves an entity of ProductMargin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -477,7 +456,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ProductMargin type by its ids
+        /// Retrieves multiple entities of ProductMargin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -488,7 +467,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ProductMargin type by its ids
+        /// Retrieves multiple entities of ProductMargin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -498,7 +477,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountAutoLiq type by its id
+        /// Retrieves an entity of UserAccountAutoLiq type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -509,7 +488,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountAutoLiq type by its id
+        /// Retrieves an entity of UserAccountAutoLiq type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -519,7 +498,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountAutoLiq type by its ids
+        /// Retrieves multiple entities of UserAccountAutoLiq type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -530,7 +509,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountAutoLiq type by its ids
+        /// Retrieves multiple entities of UserAccountAutoLiq type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -540,7 +519,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountPositionLimit type by its id
+        /// Retrieves an entity of UserAccountPositionLimit type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -551,7 +530,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountPositionLimit type by its id
+        /// Retrieves an entity of UserAccountPositionLimit type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -561,7 +540,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountPositionLimit type by its ids
+        /// Retrieves multiple entities of UserAccountPositionLimit type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -572,7 +551,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountPositionLimit type by its ids
+        /// Retrieves multiple entities of UserAccountPositionLimit type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -582,7 +561,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountRiskParameter type by its id
+        /// Retrieves an entity of UserAccountRiskParameter type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -593,7 +572,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountRiskParameter type by its id
+        /// Retrieves an entity of UserAccountRiskParameter type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -603,7 +582,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountRiskParameter type by its ids
+        /// Retrieves multiple entities of UserAccountRiskParameter type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -614,7 +593,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountRiskParameter type by its ids
+        /// Retrieves multiple entities of UserAccountRiskParameter type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -624,7 +603,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountAutoLiq
+        /// Updates an existing entity of UserAccountAutoLiq
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -635,7 +614,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountAutoLiq
+        /// Updates an existing entity of UserAccountAutoLiq
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -645,7 +624,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountPositionLimit
+        /// Updates an existing entity of UserAccountPositionLimit
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -656,7 +635,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountPositionLimit
+        /// Updates an existing entity of UserAccountPositionLimit
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -666,7 +645,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountRiskParameter
+        /// Updates an existing entity of UserAccountRiskParameter
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -677,7 +656,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountRiskParameter
+        /// Updates an existing entity of UserAccountRiskParameter
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -752,70 +731,49 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountAutoLiq
+        /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of UserAccountAutoLiq</returns>
-        System.Threading.Tasks.Task<UserAccountAutoLiq> DeleteUserAccountAutoLiqAsync (UserAccountAutoLiq body);
+        /// <returns>Task of DeleteResultResponse</returns>
+        System.Threading.Tasks.Task<DeleteResultResponse> DeleteUserAccountPositionLimitAsync (DeleteUserAccountPositionLimit body);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountAutoLiq
+        /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserAccountAutoLiq)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UserAccountAutoLiq>> DeleteUserAccountAutoLiqAsyncWithHttpInfo (UserAccountAutoLiq body);
+        /// <returns>Task of ApiResponse (DeleteResultResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DeleteResultResponse>> DeleteUserAccountPositionLimitAsyncWithHttpInfo (DeleteUserAccountPositionLimit body);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountPositionLimit
+        /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of UserAccountPositionLimit</returns>
-        System.Threading.Tasks.Task<UserAccountPositionLimit> DeleteUserAccountPositionLimitAsync (UserAccountPositionLimit body);
+        /// <returns>Task of DeleteResultResponse</returns>
+        System.Threading.Tasks.Task<DeleteResultResponse> DeleteUserAccountRiskParameterAsync (DeleteUserAccountRiskParameter body);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountPositionLimit
+        /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserAccountPositionLimit)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UserAccountPositionLimit>> DeleteUserAccountPositionLimitAsyncWithHttpInfo (UserAccountPositionLimit body);
+        /// <returns>Task of ApiResponse (DeleteResultResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DeleteResultResponse>> DeleteUserAccountRiskParameterAsyncWithHttpInfo (DeleteUserAccountRiskParameter body);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountRiskParameter
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of UserAccountRiskParameter</returns>
-        System.Threading.Tasks.Task<UserAccountRiskParameter> DeleteUserAccountRiskParameterAsync (UserAccountRiskParameter body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of UserAccountRiskParameter
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserAccountRiskParameter)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UserAccountRiskParameter>> DeleteUserAccountRiskParameterAsyncWithHttpInfo (UserAccountRiskParameter body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of ProductMargin type
+        /// Retrieves all entities of ProductMargin type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;ProductMargin&gt;</returns>
@@ -825,7 +783,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type
+        /// Retrieves all entities of ProductMargin type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;ProductMargin&gt;)</returns>
@@ -834,7 +792,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type
+        /// Retrieves all entities of UserAccountAutoLiq type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;UserAccountAutoLiq&gt;</returns>
@@ -844,7 +802,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type
+        /// Retrieves all entities of UserAccountAutoLiq type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;UserAccountAutoLiq&gt;)</returns>
@@ -853,7 +811,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractMargin type by its id
+        /// Retrieves an entity of ContractMargin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -864,7 +822,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractMargin type by its id
+        /// Retrieves an entity of ContractMargin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -874,7 +832,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractMargin type by its ids
+        /// Retrieves multiple entities of ContractMargin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -885,7 +843,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractMargin type by its ids
+        /// Retrieves multiple entities of ContractMargin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -895,7 +853,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMargin type related to Contract type
+        /// Retrieves all entities of ContractMargin type related to Contract entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Contract entity</param>
@@ -906,7 +864,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMargin type related to Contract type
+        /// Retrieves all entities of ContractMargin type related to Contract entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Contract entity</param>
@@ -916,10 +874,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMargin type related to multiple entities of Contract type
+        /// Retrieves all entities of ContractMargin type related to multiple entities of Contract type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Contract entity</param>
+        /// <param name="masterids">ids of Contract entities</param>
         /// <returns>Task of List&lt;ContractMargin&gt;</returns>
         System.Threading.Tasks.Task<List<ContractMargin>> GetOwnedContractMarginsBatchAsync (List<int?> masterids);
 
@@ -927,17 +885,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMargin type related to multiple entities of Contract type
+        /// Retrieves all entities of ContractMargin type related to multiple entities of Contract type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Contract entity</param>
+        /// <param name="masterids">ids of Contract entities</param>
         /// <returns>Task of ApiResponse (List&lt;ContractMargin&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<ContractMargin>>> GetOwnedContractMarginsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type related to Product type
+        /// Retrieves all entities of ProductMargin type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -948,7 +906,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type related to Product type
+        /// Retrieves all entities of ProductMargin type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -958,10 +916,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type related to multiple entities of Product type
+        /// Retrieves all entities of ProductMargin type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of List&lt;ProductMargin&gt;</returns>
         System.Threading.Tasks.Task<List<ProductMargin>> GetOwnedProductMarginsBatchAsync (List<int?> masterids);
 
@@ -969,17 +927,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductMargin type related to multiple entities of Product type
+        /// Retrieves all entities of ProductMargin type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of ApiResponse (List&lt;ProductMargin&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<ProductMargin>>> GetOwnedProductMarginsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type related to Account type
+        /// Retrieves all entities of UserAccountAutoLiq type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -990,7 +948,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type related to Account type
+        /// Retrieves all entities of UserAccountAutoLiq type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -1000,10 +958,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+        /// Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;UserAccountAutoLiq&gt;</returns>
         System.Threading.Tasks.Task<List<UserAccountAutoLiq>> GetOwnedUserAccountAutoLiqsBatchAsync (List<int?> masterids);
 
@@ -1011,17 +969,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+        /// Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserAccountAutoLiq&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<UserAccountAutoLiq>>> GetOwnedUserAccountAutoLiqsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountPositionLimit type related to Account type
+        /// Retrieves all entities of UserAccountPositionLimit type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -1032,7 +990,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountPositionLimit type related to Account type
+        /// Retrieves all entities of UserAccountPositionLimit type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -1042,10 +1000,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+        /// Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;UserAccountPositionLimit&gt;</returns>
         System.Threading.Tasks.Task<List<UserAccountPositionLimit>> GetOwnedUserAccountPositionLimitsBatchAsync (List<int?> masterids);
 
@@ -1053,17 +1011,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+        /// Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserAccountPositionLimit&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<UserAccountPositionLimit>>> GetOwnedUserAccountPositionLimitsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+        /// Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of UserAccountPositionLimit entity</param>
@@ -1074,7 +1032,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+        /// Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of UserAccountPositionLimit entity</param>
@@ -1084,10 +1042,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+        /// Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of UserAccountPositionLimit entity</param>
+        /// <param name="masterids">ids of UserAccountPositionLimit entities</param>
         /// <returns>Task of List&lt;UserAccountRiskParameter&gt;</returns>
         System.Threading.Tasks.Task<List<UserAccountRiskParameter>> GetOwnedUserAccountRiskParametersBatchAsync (List<int?> masterids);
 
@@ -1095,17 +1053,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+        /// Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of UserAccountPositionLimit entity</param>
+        /// <param name="masterids">ids of UserAccountPositionLimit entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserAccountRiskParameter&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<UserAccountRiskParameter>>> GetOwnedUserAccountRiskParametersBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ProductMargin type by its id
+        /// Retrieves an entity of ProductMargin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1116,7 +1074,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ProductMargin type by its id
+        /// Retrieves an entity of ProductMargin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1126,7 +1084,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ProductMargin type by its ids
+        /// Retrieves multiple entities of ProductMargin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1137,7 +1095,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ProductMargin type by its ids
+        /// Retrieves multiple entities of ProductMargin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1147,7 +1105,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountAutoLiq type by its id
+        /// Retrieves an entity of UserAccountAutoLiq type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1158,7 +1116,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountAutoLiq type by its id
+        /// Retrieves an entity of UserAccountAutoLiq type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1168,7 +1126,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountAutoLiq type by its ids
+        /// Retrieves multiple entities of UserAccountAutoLiq type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1179,7 +1137,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountAutoLiq type by its ids
+        /// Retrieves multiple entities of UserAccountAutoLiq type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1189,7 +1147,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountPositionLimit type by its id
+        /// Retrieves an entity of UserAccountPositionLimit type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1200,7 +1158,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountPositionLimit type by its id
+        /// Retrieves an entity of UserAccountPositionLimit type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1210,7 +1168,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountPositionLimit type by its ids
+        /// Retrieves multiple entities of UserAccountPositionLimit type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1221,7 +1179,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountPositionLimit type by its ids
+        /// Retrieves multiple entities of UserAccountPositionLimit type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1231,7 +1189,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountRiskParameter type by its id
+        /// Retrieves an entity of UserAccountRiskParameter type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1242,7 +1200,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserAccountRiskParameter type by its id
+        /// Retrieves an entity of UserAccountRiskParameter type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1252,7 +1210,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountRiskParameter type by its ids
+        /// Retrieves multiple entities of UserAccountRiskParameter type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1263,7 +1221,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserAccountRiskParameter type by its ids
+        /// Retrieves multiple entities of UserAccountRiskParameter type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1273,7 +1231,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountAutoLiq
+        /// Updates an existing entity of UserAccountAutoLiq
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1284,7 +1242,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountAutoLiq
+        /// Updates an existing entity of UserAccountAutoLiq
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1294,7 +1252,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountPositionLimit
+        /// Updates an existing entity of UserAccountPositionLimit
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1305,7 +1263,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountPositionLimit
+        /// Updates an existing entity of UserAccountPositionLimit
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1315,7 +1273,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountRiskParameter
+        /// Updates an existing entity of UserAccountRiskParameter
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1326,7 +1284,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserAccountRiskParameter
+        /// Updates an existing entity of UserAccountRiskParameter
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1949,198 +1907,30 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountAutoLiq
+        ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>UserAccountAutoLiq</returns>
-        public UserAccountAutoLiq DeleteUserAccountAutoLiq (UserAccountAutoLiq body)
+        /// <returns>DeleteResultResponse</returns>
+        public DeleteResultResponse DeleteUserAccountPositionLimit (DeleteUserAccountPositionLimit body)
         {
-             ApiResponse<UserAccountAutoLiq> localVarResponse = DeleteUserAccountAutoLiqWithHttpInfo(body);
+             ApiResponse<DeleteResultResponse> localVarResponse = DeleteUserAccountPositionLimitWithHttpInfo(body);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountAutoLiq
+        ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>ApiResponse of UserAccountAutoLiq</returns>
-        public ApiResponse< UserAccountAutoLiq > DeleteUserAccountAutoLiqWithHttpInfo (UserAccountAutoLiq body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling RisksApi->DeleteUserAccountAutoLiq");
-
-            var localVarPath = "/userAccountAutoLiq/delete";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteUserAccountAutoLiq", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UserAccountAutoLiq>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserAccountAutoLiq) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserAccountAutoLiq)));
-            
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of UserAccountAutoLiq
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of UserAccountAutoLiq</returns>
-        public async System.Threading.Tasks.Task<UserAccountAutoLiq> DeleteUserAccountAutoLiqAsync (UserAccountAutoLiq body)
-        {
-             ApiResponse<UserAccountAutoLiq> localVarResponse = await DeleteUserAccountAutoLiqAsyncWithHttpInfo(body);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of UserAccountAutoLiq
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserAccountAutoLiq)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UserAccountAutoLiq>> DeleteUserAccountAutoLiqAsyncWithHttpInfo (UserAccountAutoLiq body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling RisksApi->DeleteUserAccountAutoLiq");
-
-            var localVarPath = "/userAccountAutoLiq/delete";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteUserAccountAutoLiq", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UserAccountAutoLiq>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserAccountAutoLiq) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserAccountAutoLiq)));
-            
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of UserAccountPositionLimit
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>UserAccountPositionLimit</returns>
-        public UserAccountPositionLimit DeleteUserAccountPositionLimit (UserAccountPositionLimit body)
-        {
-             ApiResponse<UserAccountPositionLimit> localVarResponse = DeleteUserAccountPositionLimitWithHttpInfo(body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of UserAccountPositionLimit
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of UserAccountPositionLimit</returns>
-        public ApiResponse< UserAccountPositionLimit > DeleteUserAccountPositionLimitWithHttpInfo (UserAccountPositionLimit body)
+        /// <returns>ApiResponse of DeleteResultResponse</returns>
+        public ApiResponse< DeleteResultResponse > DeleteUserAccountPositionLimitWithHttpInfo (DeleteUserAccountPositionLimit body)
         {
             // verify the required parameter 'body' is set
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling RisksApi->DeleteUserAccountPositionLimit");
 
-            var localVarPath = "/userAccountPositionLimit/delete";
+            var localVarPath = "/userAccountPositionLimit/deleteuseraccountpositionlimit";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -2194,38 +1984,38 @@ namespace Tradovate.Services.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<UserAccountPositionLimit>(localVarStatusCode,
+            return new ApiResponse<DeleteResultResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserAccountPositionLimit) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserAccountPositionLimit)));
+                (DeleteResultResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DeleteResultResponse)));
             
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountPositionLimit
+        ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of UserAccountPositionLimit</returns>
-        public async System.Threading.Tasks.Task<UserAccountPositionLimit> DeleteUserAccountPositionLimitAsync (UserAccountPositionLimit body)
+        /// <returns>Task of DeleteResultResponse</returns>
+        public async System.Threading.Tasks.Task<DeleteResultResponse> DeleteUserAccountPositionLimitAsync (DeleteUserAccountPositionLimit body)
         {
-             ApiResponse<UserAccountPositionLimit> localVarResponse = await DeleteUserAccountPositionLimitAsyncWithHttpInfo(body);
+             ApiResponse<DeleteResultResponse> localVarResponse = await DeleteUserAccountPositionLimitAsyncWithHttpInfo(body);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountPositionLimit
+        ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserAccountPositionLimit)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UserAccountPositionLimit>> DeleteUserAccountPositionLimitAsyncWithHttpInfo (UserAccountPositionLimit body)
+        /// <returns>Task of ApiResponse (DeleteResultResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DeleteResultResponse>> DeleteUserAccountPositionLimitAsyncWithHttpInfo (DeleteUserAccountPositionLimit body)
         {
             // verify the required parameter 'body' is set
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling RisksApi->DeleteUserAccountPositionLimit");
 
-            var localVarPath = "/userAccountPositionLimit/delete";
+            var localVarPath = "/userAccountPositionLimit/deleteuseraccountpositionlimit";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -2278,37 +2068,37 @@ namespace Tradovate.Services.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<UserAccountPositionLimit>(localVarStatusCode,
+            return new ApiResponse<DeleteResultResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserAccountPositionLimit) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserAccountPositionLimit)));
+                (DeleteResultResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DeleteResultResponse)));
             
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountRiskParameter
+        ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>UserAccountRiskParameter</returns>
-        public UserAccountRiskParameter DeleteUserAccountRiskParameter (UserAccountRiskParameter body)
+        /// <returns>DeleteResultResponse</returns>
+        public DeleteResultResponse DeleteUserAccountRiskParameter (DeleteUserAccountRiskParameter body)
         {
-             ApiResponse<UserAccountRiskParameter> localVarResponse = DeleteUserAccountRiskParameterWithHttpInfo(body);
+             ApiResponse<DeleteResultResponse> localVarResponse = DeleteUserAccountRiskParameterWithHttpInfo(body);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountRiskParameter
+        ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>ApiResponse of UserAccountRiskParameter</returns>
-        public ApiResponse< UserAccountRiskParameter > DeleteUserAccountRiskParameterWithHttpInfo (UserAccountRiskParameter body)
+        /// <returns>ApiResponse of DeleteResultResponse</returns>
+        public ApiResponse< DeleteResultResponse > DeleteUserAccountRiskParameterWithHttpInfo (DeleteUserAccountRiskParameter body)
         {
             // verify the required parameter 'body' is set
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling RisksApi->DeleteUserAccountRiskParameter");
 
-            var localVarPath = "/userAccountRiskParameter/delete";
+            var localVarPath = "/userAccountPositionLimit/deleteuseraccountriskparameter";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -2362,38 +2152,38 @@ namespace Tradovate.Services.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<UserAccountRiskParameter>(localVarStatusCode,
+            return new ApiResponse<DeleteResultResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserAccountRiskParameter) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserAccountRiskParameter)));
+                (DeleteResultResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DeleteResultResponse)));
             
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountRiskParameter
+        ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of UserAccountRiskParameter</returns>
-        public async System.Threading.Tasks.Task<UserAccountRiskParameter> DeleteUserAccountRiskParameterAsync (UserAccountRiskParameter body)
+        /// <returns>Task of DeleteResultResponse</returns>
+        public async System.Threading.Tasks.Task<DeleteResultResponse> DeleteUserAccountRiskParameterAsync (DeleteUserAccountRiskParameter body)
         {
-             ApiResponse<UserAccountRiskParameter> localVarResponse = await DeleteUserAccountRiskParameterAsyncWithHttpInfo(body);
+             ApiResponse<DeleteResultResponse> localVarResponse = await DeleteUserAccountRiskParameterAsyncWithHttpInfo(body);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountRiskParameter
+        ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserAccountRiskParameter)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UserAccountRiskParameter>> DeleteUserAccountRiskParameterAsyncWithHttpInfo (UserAccountRiskParameter body)
+        /// <returns>Task of ApiResponse (DeleteResultResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DeleteResultResponse>> DeleteUserAccountRiskParameterAsyncWithHttpInfo (DeleteUserAccountRiskParameter body)
         {
             // verify the required parameter 'body' is set
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling RisksApi->DeleteUserAccountRiskParameter");
 
-            var localVarPath = "/userAccountRiskParameter/delete";
+            var localVarPath = "/userAccountPositionLimit/deleteuseraccountriskparameter";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -2446,14 +2236,14 @@ namespace Tradovate.Services.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<UserAccountRiskParameter>(localVarStatusCode,
+            return new ApiResponse<DeleteResultResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserAccountRiskParameter) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserAccountRiskParameter)));
+                (DeleteResultResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DeleteResultResponse)));
             
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type
+        ///  Retrieves all entities of ProductMargin type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;ProductMargin&gt;</returns>
@@ -2464,7 +2254,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type
+        ///  Retrieves all entities of ProductMargin type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;ProductMargin&gt;</returns>
@@ -2524,7 +2314,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type
+        ///  Retrieves all entities of ProductMargin type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;ProductMargin&gt;</returns>
@@ -2536,7 +2326,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type
+        ///  Retrieves all entities of ProductMargin type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;ProductMargin&gt;)</returns>
@@ -2595,7 +2385,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type
+        ///  Retrieves all entities of UserAccountAutoLiq type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;UserAccountAutoLiq&gt;</returns>
@@ -2606,7 +2396,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type
+        ///  Retrieves all entities of UserAccountAutoLiq type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;UserAccountAutoLiq&gt;</returns>
@@ -2666,7 +2456,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type
+        ///  Retrieves all entities of UserAccountAutoLiq type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;UserAccountAutoLiq&gt;</returns>
@@ -2678,7 +2468,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type
+        ///  Retrieves all entities of UserAccountAutoLiq type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;UserAccountAutoLiq&gt;)</returns>
@@ -2737,7 +2527,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractMargin type by its id
+        ///  Retrieves an entity of ContractMargin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2749,7 +2539,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractMargin type by its id
+        ///  Retrieves an entity of ContractMargin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2814,7 +2604,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractMargin type by its id
+        ///  Retrieves an entity of ContractMargin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2827,7 +2617,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractMargin type by its id
+        ///  Retrieves an entity of ContractMargin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2891,7 +2681,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractMargin type by its ids
+        ///  Retrieves multiple entities of ContractMargin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2903,7 +2693,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractMargin type by its ids
+        ///  Retrieves multiple entities of ContractMargin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2968,7 +2758,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractMargin type by its ids
+        ///  Retrieves multiple entities of ContractMargin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2981,7 +2771,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractMargin type by its ids
+        ///  Retrieves multiple entities of ContractMargin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3045,7 +2835,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMargin type related to Contract type
+        ///  Retrieves all entities of ContractMargin type related to Contract entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Contract entity</param>
@@ -3057,7 +2847,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMargin type related to Contract type
+        ///  Retrieves all entities of ContractMargin type related to Contract entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Contract entity</param>
@@ -3122,7 +2912,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMargin type related to Contract type
+        ///  Retrieves all entities of ContractMargin type related to Contract entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Contract entity</param>
@@ -3135,7 +2925,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMargin type related to Contract type
+        ///  Retrieves all entities of ContractMargin type related to Contract entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Contract entity</param>
@@ -3199,10 +2989,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMargin type related to multiple entities of Contract type
+        ///  Retrieves all entities of ContractMargin type related to multiple entities of Contract type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Contract entity</param>
+        /// <param name="masterids">ids of Contract entities</param>
         /// <returns>List&lt;ContractMargin&gt;</returns>
         public List<ContractMargin> GetOwnedContractMarginsBatch (List<int?> masterids)
         {
@@ -3211,10 +3001,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMargin type related to multiple entities of Contract type
+        ///  Retrieves all entities of ContractMargin type related to multiple entities of Contract type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Contract entity</param>
+        /// <param name="masterids">ids of Contract entities</param>
         /// <returns>ApiResponse of List&lt;ContractMargin&gt;</returns>
         public ApiResponse< List<ContractMargin> > GetOwnedContractMarginsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -3276,10 +3066,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMargin type related to multiple entities of Contract type
+        ///  Retrieves all entities of ContractMargin type related to multiple entities of Contract type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Contract entity</param>
+        /// <param name="masterids">ids of Contract entities</param>
         /// <returns>Task of List&lt;ContractMargin&gt;</returns>
         public async System.Threading.Tasks.Task<List<ContractMargin>> GetOwnedContractMarginsBatchAsync (List<int?> masterids)
         {
@@ -3289,10 +3079,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMargin type related to multiple entities of Contract type
+        ///  Retrieves all entities of ContractMargin type related to multiple entities of Contract type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Contract entity</param>
+        /// <param name="masterids">ids of Contract entities</param>
         /// <returns>Task of ApiResponse (List&lt;ContractMargin&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<ContractMargin>>> GetOwnedContractMarginsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -3353,7 +3143,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type related to Product type
+        ///  Retrieves all entities of ProductMargin type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -3365,7 +3155,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type related to Product type
+        ///  Retrieves all entities of ProductMargin type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -3430,7 +3220,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type related to Product type
+        ///  Retrieves all entities of ProductMargin type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -3443,7 +3233,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type related to Product type
+        ///  Retrieves all entities of ProductMargin type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -3507,10 +3297,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type related to multiple entities of Product type
+        ///  Retrieves all entities of ProductMargin type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>List&lt;ProductMargin&gt;</returns>
         public List<ProductMargin> GetOwnedProductMarginsBatch (List<int?> masterids)
         {
@@ -3519,10 +3309,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type related to multiple entities of Product type
+        ///  Retrieves all entities of ProductMargin type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>ApiResponse of List&lt;ProductMargin&gt;</returns>
         public ApiResponse< List<ProductMargin> > GetOwnedProductMarginsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -3584,10 +3374,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type related to multiple entities of Product type
+        ///  Retrieves all entities of ProductMargin type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of List&lt;ProductMargin&gt;</returns>
         public async System.Threading.Tasks.Task<List<ProductMargin>> GetOwnedProductMarginsBatchAsync (List<int?> masterids)
         {
@@ -3597,10 +3387,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductMargin type related to multiple entities of Product type
+        ///  Retrieves all entities of ProductMargin type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of ApiResponse (List&lt;ProductMargin&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<ProductMargin>>> GetOwnedProductMarginsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -3661,7 +3451,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type related to Account type
+        ///  Retrieves all entities of UserAccountAutoLiq type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3673,7 +3463,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type related to Account type
+        ///  Retrieves all entities of UserAccountAutoLiq type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3738,7 +3528,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type related to Account type
+        ///  Retrieves all entities of UserAccountAutoLiq type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3751,7 +3541,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type related to Account type
+        ///  Retrieves all entities of UserAccountAutoLiq type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3815,10 +3605,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+        ///  Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;UserAccountAutoLiq&gt;</returns>
         public List<UserAccountAutoLiq> GetOwnedUserAccountAutoLiqsBatch (List<int?> masterids)
         {
@@ -3827,10 +3617,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+        ///  Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;UserAccountAutoLiq&gt;</returns>
         public ApiResponse< List<UserAccountAutoLiq> > GetOwnedUserAccountAutoLiqsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -3892,10 +3682,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+        ///  Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;UserAccountAutoLiq&gt;</returns>
         public async System.Threading.Tasks.Task<List<UserAccountAutoLiq>> GetOwnedUserAccountAutoLiqsBatchAsync (List<int?> masterids)
         {
@@ -3905,10 +3695,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+        ///  Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserAccountAutoLiq&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<UserAccountAutoLiq>>> GetOwnedUserAccountAutoLiqsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -3969,7 +3759,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountPositionLimit type related to Account type
+        ///  Retrieves all entities of UserAccountPositionLimit type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -3981,7 +3771,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountPositionLimit type related to Account type
+        ///  Retrieves all entities of UserAccountPositionLimit type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4046,7 +3836,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountPositionLimit type related to Account type
+        ///  Retrieves all entities of UserAccountPositionLimit type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4059,7 +3849,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountPositionLimit type related to Account type
+        ///  Retrieves all entities of UserAccountPositionLimit type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -4123,10 +3913,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+        ///  Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;UserAccountPositionLimit&gt;</returns>
         public List<UserAccountPositionLimit> GetOwnedUserAccountPositionLimitsBatch (List<int?> masterids)
         {
@@ -4135,10 +3925,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+        ///  Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;UserAccountPositionLimit&gt;</returns>
         public ApiResponse< List<UserAccountPositionLimit> > GetOwnedUserAccountPositionLimitsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -4200,10 +3990,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+        ///  Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;UserAccountPositionLimit&gt;</returns>
         public async System.Threading.Tasks.Task<List<UserAccountPositionLimit>> GetOwnedUserAccountPositionLimitsBatchAsync (List<int?> masterids)
         {
@@ -4213,10 +4003,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+        ///  Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserAccountPositionLimit&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<UserAccountPositionLimit>>> GetOwnedUserAccountPositionLimitsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -4277,7 +4067,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+        ///  Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of UserAccountPositionLimit entity</param>
@@ -4289,7 +4079,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+        ///  Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of UserAccountPositionLimit entity</param>
@@ -4354,7 +4144,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+        ///  Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of UserAccountPositionLimit entity</param>
@@ -4367,7 +4157,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+        ///  Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of UserAccountPositionLimit entity</param>
@@ -4431,10 +4221,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+        ///  Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of UserAccountPositionLimit entity</param>
+        /// <param name="masterids">ids of UserAccountPositionLimit entities</param>
         /// <returns>List&lt;UserAccountRiskParameter&gt;</returns>
         public List<UserAccountRiskParameter> GetOwnedUserAccountRiskParametersBatch (List<int?> masterids)
         {
@@ -4443,10 +4233,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+        ///  Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of UserAccountPositionLimit entity</param>
+        /// <param name="masterids">ids of UserAccountPositionLimit entities</param>
         /// <returns>ApiResponse of List&lt;UserAccountRiskParameter&gt;</returns>
         public ApiResponse< List<UserAccountRiskParameter> > GetOwnedUserAccountRiskParametersBatchWithHttpInfo (List<int?> masterids)
         {
@@ -4508,10 +4298,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+        ///  Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of UserAccountPositionLimit entity</param>
+        /// <param name="masterids">ids of UserAccountPositionLimit entities</param>
         /// <returns>Task of List&lt;UserAccountRiskParameter&gt;</returns>
         public async System.Threading.Tasks.Task<List<UserAccountRiskParameter>> GetOwnedUserAccountRiskParametersBatchAsync (List<int?> masterids)
         {
@@ -4521,10 +4311,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+        ///  Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of UserAccountPositionLimit entity</param>
+        /// <param name="masterids">ids of UserAccountPositionLimit entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserAccountRiskParameter&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<UserAccountRiskParameter>>> GetOwnedUserAccountRiskParametersBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -4585,7 +4375,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ProductMargin type by its id
+        ///  Retrieves an entity of ProductMargin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4597,7 +4387,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ProductMargin type by its id
+        ///  Retrieves an entity of ProductMargin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4662,7 +4452,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ProductMargin type by its id
+        ///  Retrieves an entity of ProductMargin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4675,7 +4465,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ProductMargin type by its id
+        ///  Retrieves an entity of ProductMargin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4739,7 +4529,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ProductMargin type by its ids
+        ///  Retrieves multiple entities of ProductMargin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4751,7 +4541,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ProductMargin type by its ids
+        ///  Retrieves multiple entities of ProductMargin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4816,7 +4606,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ProductMargin type by its ids
+        ///  Retrieves multiple entities of ProductMargin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4829,7 +4619,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ProductMargin type by its ids
+        ///  Retrieves multiple entities of ProductMargin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4893,7 +4683,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountAutoLiq type by its id
+        ///  Retrieves an entity of UserAccountAutoLiq type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4905,7 +4695,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountAutoLiq type by its id
+        ///  Retrieves an entity of UserAccountAutoLiq type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4970,7 +4760,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountAutoLiq type by its id
+        ///  Retrieves an entity of UserAccountAutoLiq type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4983,7 +4773,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountAutoLiq type by its id
+        ///  Retrieves an entity of UserAccountAutoLiq type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5047,7 +4837,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountAutoLiq type by its ids
+        ///  Retrieves multiple entities of UserAccountAutoLiq type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5059,7 +4849,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountAutoLiq type by its ids
+        ///  Retrieves multiple entities of UserAccountAutoLiq type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5124,7 +4914,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountAutoLiq type by its ids
+        ///  Retrieves multiple entities of UserAccountAutoLiq type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5137,7 +4927,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountAutoLiq type by its ids
+        ///  Retrieves multiple entities of UserAccountAutoLiq type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5201,7 +4991,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountPositionLimit type by its id
+        ///  Retrieves an entity of UserAccountPositionLimit type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5213,7 +5003,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountPositionLimit type by its id
+        ///  Retrieves an entity of UserAccountPositionLimit type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5278,7 +5068,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountPositionLimit type by its id
+        ///  Retrieves an entity of UserAccountPositionLimit type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5291,7 +5081,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountPositionLimit type by its id
+        ///  Retrieves an entity of UserAccountPositionLimit type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5355,7 +5145,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountPositionLimit type by its ids
+        ///  Retrieves multiple entities of UserAccountPositionLimit type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5367,7 +5157,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountPositionLimit type by its ids
+        ///  Retrieves multiple entities of UserAccountPositionLimit type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5432,7 +5222,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountPositionLimit type by its ids
+        ///  Retrieves multiple entities of UserAccountPositionLimit type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5445,7 +5235,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountPositionLimit type by its ids
+        ///  Retrieves multiple entities of UserAccountPositionLimit type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5509,7 +5299,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountRiskParameter type by its id
+        ///  Retrieves an entity of UserAccountRiskParameter type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5521,7 +5311,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountRiskParameter type by its id
+        ///  Retrieves an entity of UserAccountRiskParameter type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5586,7 +5376,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountRiskParameter type by its id
+        ///  Retrieves an entity of UserAccountRiskParameter type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5599,7 +5389,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserAccountRiskParameter type by its id
+        ///  Retrieves an entity of UserAccountRiskParameter type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5663,7 +5453,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountRiskParameter type by its ids
+        ///  Retrieves multiple entities of UserAccountRiskParameter type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5675,7 +5465,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountRiskParameter type by its ids
+        ///  Retrieves multiple entities of UserAccountRiskParameter type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5740,7 +5530,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountRiskParameter type by its ids
+        ///  Retrieves multiple entities of UserAccountRiskParameter type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5753,7 +5543,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserAccountRiskParameter type by its ids
+        ///  Retrieves multiple entities of UserAccountRiskParameter type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5817,7 +5607,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountAutoLiq
+        ///  Updates an existing entity of UserAccountAutoLiq
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -5829,7 +5619,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountAutoLiq
+        ///  Updates an existing entity of UserAccountAutoLiq
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -5901,7 +5691,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountAutoLiq
+        ///  Updates an existing entity of UserAccountAutoLiq
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -5914,7 +5704,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountAutoLiq
+        ///  Updates an existing entity of UserAccountAutoLiq
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -5985,7 +5775,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountPositionLimit
+        ///  Updates an existing entity of UserAccountPositionLimit
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -5997,7 +5787,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountPositionLimit
+        ///  Updates an existing entity of UserAccountPositionLimit
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -6069,7 +5859,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountPositionLimit
+        ///  Updates an existing entity of UserAccountPositionLimit
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -6082,7 +5872,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountPositionLimit
+        ///  Updates an existing entity of UserAccountPositionLimit
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -6153,7 +5943,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountRiskParameter
+        ///  Updates an existing entity of UserAccountRiskParameter
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -6165,7 +5955,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountRiskParameter
+        ///  Updates an existing entity of UserAccountRiskParameter
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -6237,7 +6027,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountRiskParameter
+        ///  Updates an existing entity of UserAccountRiskParameter
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -6250,7 +6040,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserAccountRiskParameter
+        ///  Updates an existing entity of UserAccountRiskParameter
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>

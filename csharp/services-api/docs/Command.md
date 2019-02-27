@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **SenderId** | **int?** | id of User | [optional] 
 **UserSessionId** | **int?** | id of UserSession | [optional] 
 **ActivationTime** | **DateTime?** |  | [optional] 
+**CustomTag50** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

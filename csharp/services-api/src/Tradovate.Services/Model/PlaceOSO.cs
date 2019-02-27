@@ -75,16 +75,28 @@ namespace Tradovate.Services.Model
             Limit,
             
             /// <summary>
+            /// Enum MIT for "MIT"
+            /// </summary>
+            [EnumMember(Value = "MIT")]
+            MIT,
+            
+            /// <summary>
             /// Enum Market for "Market"
             /// </summary>
             [EnumMember(Value = "Market")]
             Market,
             
             /// <summary>
-            /// Enum TrailingStopLimit for "TrailingStopLimit"
+            /// Enum QTS for "QTS"
             /// </summary>
-            [EnumMember(Value = "TrailingStopLimit")]
-            TrailingStopLimit,
+            [EnumMember(Value = "QTS")]
+            QTS,
+            
+            /// <summary>
+            /// Enum Stop for "Stop"
+            /// </summary>
+            [EnumMember(Value = "Stop")]
+            Stop,
             
             /// <summary>
             /// Enum StopLimit for "StopLimit"
@@ -99,22 +111,10 @@ namespace Tradovate.Services.Model
             TrailingStop,
             
             /// <summary>
-            /// Enum MIT for "MIT"
+            /// Enum TrailingStopLimit for "TrailingStopLimit"
             /// </summary>
-            [EnumMember(Value = "MIT")]
-            MIT,
-            
-            /// <summary>
-            /// Enum QTS for "QTS"
-            /// </summary>
-            [EnumMember(Value = "QTS")]
-            QTS,
-            
-            /// <summary>
-            /// Enum Stop for "Stop"
-            /// </summary>
-            [EnumMember(Value = "Stop")]
-            Stop
+            [EnumMember(Value = "TrailingStopLimit")]
+            TrailingStopLimit
         }
 
         /// <summary>
@@ -126,10 +126,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum GTD for "GTD"
+            /// Enum Day for "Day"
             /// </summary>
-            [EnumMember(Value = "GTD")]
-            GTD,
+            [EnumMember(Value = "Day")]
+            Day,
             
             /// <summary>
             /// Enum FOK for "FOK"
@@ -144,10 +144,10 @@ namespace Tradovate.Services.Model
             GTC,
             
             /// <summary>
-            /// Enum Day for "Day"
+            /// Enum GTD for "GTD"
             /// </summary>
-            [EnumMember(Value = "Day")]
-            Day,
+            [EnumMember(Value = "GTD")]
+            GTD,
             
             /// <summary>
             /// Enum IOC for "IOC"
@@ -197,9 +197,10 @@ namespace Tradovate.Services.Model
         /// <param name="ExpireTime">ExpireTime.</param>
         /// <param name="Text">Text.</param>
         /// <param name="ActivationTime">ActivationTime.</param>
+        /// <param name="CustomTag50">CustomTag50.</param>
         /// <param name="Bracket1">Bracket1 (required).</param>
         /// <param name="Bracket2">Bracket2.</param>
-        public PlaceOSO(string AccountSpec = null, int? AccountId = null, string ClOrdId = null, ActionEnum? Action = null, string Symbol = null, int? OrderQty = null, OrderTypeEnum? OrderType = null, double? Price = null, double? StopPrice = null, int? MaxShow = null, double? PegDifference = null, TimeInForceEnum? TimeInForce = null, DateTime? ExpireTime = null, string Text = null, DateTime? ActivationTime = null, RestrainedOrderVersion Bracket1 = null, RestrainedOrderVersion Bracket2 = null)
+        public PlaceOSO(string AccountSpec = null, int? AccountId = null, string ClOrdId = null, ActionEnum? Action = null, string Symbol = null, int? OrderQty = null, OrderTypeEnum? OrderType = null, double? Price = null, double? StopPrice = null, int? MaxShow = null, double? PegDifference = null, TimeInForceEnum? TimeInForce = null, DateTime? ExpireTime = null, string Text = null, DateTime? ActivationTime = null, string CustomTag50 = null, RestrainedOrderVersion Bracket1 = null, RestrainedOrderVersion Bracket2 = null)
         {
             // to ensure "Action" is required (not null)
             if (Action == null)
@@ -257,6 +258,7 @@ namespace Tradovate.Services.Model
             this.ExpireTime = ExpireTime;
             this.Text = Text;
             this.ActivationTime = ActivationTime;
+            this.CustomTag50 = CustomTag50;
             this.Bracket2 = Bracket2;
         }
         
@@ -322,6 +324,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="activationTime", EmitDefaultValue=false)]
         public DateTime? ActivationTime { get; set; }
         /// <summary>
+        /// Gets or Sets CustomTag50
+        /// </summary>
+        [DataMember(Name="customTag50", EmitDefaultValue=false)]
+        public string CustomTag50 { get; set; }
+        /// <summary>
         /// Gets or Sets Bracket1
         /// </summary>
         [DataMember(Name="bracket1", EmitDefaultValue=false)]
@@ -354,6 +361,7 @@ namespace Tradovate.Services.Model
             sb.Append("  ExpireTime: ").Append(ExpireTime).Append("\n");
             sb.Append("  Text: ").Append(Text).Append("\n");
             sb.Append("  ActivationTime: ").Append(ActivationTime).Append("\n");
+            sb.Append("  CustomTag50: ").Append(CustomTag50).Append("\n");
             sb.Append("  Bracket1: ").Append(Bracket1).Append("\n");
             sb.Append("  Bracket2: ").Append(Bracket2).Append("\n");
             sb.Append("}\n");
@@ -468,6 +476,11 @@ namespace Tradovate.Services.Model
                     this.ActivationTime.Equals(other.ActivationTime)
                 ) && 
                 (
+                    this.CustomTag50 == other.CustomTag50 ||
+                    this.CustomTag50 != null &&
+                    this.CustomTag50.Equals(other.CustomTag50)
+                ) && 
+                (
                     this.Bracket1 == other.Bracket1 ||
                     this.Bracket1 != null &&
                     this.Bracket1.Equals(other.Bracket1)
@@ -520,6 +533,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Text.GetHashCode();
                 if (this.ActivationTime != null)
                     hash = hash * 59 + this.ActivationTime.GetHashCode();
+                if (this.CustomTag50 != null)
+                    hash = hash * 59 + this.CustomTag50.GetHashCode();
                 if (this.Bracket1 != null)
                     hash = hash * 59 + this.Bracket1.GetHashCode();
                 if (this.Bracket2 != null)

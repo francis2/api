@@ -14,7 +14,6 @@ Name | Type | Description | Notes
 **CashChangeType** | **string** | AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, Commission, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, OrderRoutingFee, TradePaired, TradovateSubscription | 
 **FillPairId** | **int?** | id of FillPair | [optional] 
 **FillId** | **int?** | id of Fill | [optional] 
-**FundTransactionId** | **int?** | id of FundTransaction | [optional] 
 **Comment** | **string** |  | [optional] 
 **Delta** | **double?** |  | 
 

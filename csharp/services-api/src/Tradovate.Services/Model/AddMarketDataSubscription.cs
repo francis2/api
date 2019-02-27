@@ -50,10 +50,9 @@ namespace Tradovate.Services.Model
         /// <param name="MarketDataSubscriptionPlanIds">MarketDataSubscriptionPlanIds (required).</param>
         /// <param name="Year">Year (required).</param>
         /// <param name="Month">Month (required).</param>
-        /// <param name="CreditCardId">id of CreditCard.</param>
         /// <param name="AccountId">id of Account.</param>
         /// <param name="UserId">id of User.</param>
-        public AddMarketDataSubscription(List<int?> MarketDataSubscriptionPlanIds = null, int? Year = null, int? Month = null, int? CreditCardId = null, int? AccountId = null, int? UserId = null)
+        public AddMarketDataSubscription(List<int?> MarketDataSubscriptionPlanIds = null, int? Year = null, int? Month = null, int? AccountId = null, int? UserId = null)
         {
             // to ensure "MarketDataSubscriptionPlanIds" is required (not null)
             if (MarketDataSubscriptionPlanIds == null)
@@ -82,7 +81,6 @@ namespace Tradovate.Services.Model
             {
                 this.Month = Month;
             }
-            this.CreditCardId = CreditCardId;
             this.AccountId = AccountId;
             this.UserId = UserId;
         }
@@ -102,12 +100,6 @@ namespace Tradovate.Services.Model
         /// </summary>
         [DataMember(Name="month", EmitDefaultValue=false)]
         public int? Month { get; set; }
-        /// <summary>
-        /// id of CreditCard
-        /// </summary>
-        /// <value>id of CreditCard</value>
-        [DataMember(Name="creditCardId", EmitDefaultValue=false)]
-        public int? CreditCardId { get; set; }
         /// <summary>
         /// id of Account
         /// </summary>
@@ -131,7 +123,6 @@ namespace Tradovate.Services.Model
             sb.Append("  MarketDataSubscriptionPlanIds: ").Append(MarketDataSubscriptionPlanIds).Append("\n");
             sb.Append("  Year: ").Append(Year).Append("\n");
             sb.Append("  Month: ").Append(Month).Append("\n");
-            sb.Append("  CreditCardId: ").Append(CreditCardId).Append("\n");
             sb.Append("  AccountId: ").Append(AccountId).Append("\n");
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("}\n");
@@ -186,11 +177,6 @@ namespace Tradovate.Services.Model
                     this.Month.Equals(other.Month)
                 ) && 
                 (
-                    this.CreditCardId == other.CreditCardId ||
-                    this.CreditCardId != null &&
-                    this.CreditCardId.Equals(other.CreditCardId)
-                ) && 
-                (
                     this.AccountId == other.AccountId ||
                     this.AccountId != null &&
                     this.AccountId.Equals(other.AccountId)
@@ -219,8 +205,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Year.GetHashCode();
                 if (this.Month != null)
                     hash = hash * 59 + this.Month.GetHashCode();
-                if (this.CreditCardId != null)
-                    hash = hash * 59 + this.CreditCardId.GetHashCode();
                 if (this.AccountId != null)
                     hash = hash * 59 + this.AccountId.GetHashCode();
                 if (this.UserId != null)

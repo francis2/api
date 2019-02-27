@@ -1,15 +1,14 @@
 # Tradovate.Services.Api.RisksApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**CreateUserAccountAutoLiq**](RisksApi.md#createuseraccountautoliq) | **POST** /userAccountAutoLiq/create | 
 [**CreateUserAccountPositionLimit**](RisksApi.md#createuseraccountpositionlimit) | **POST** /userAccountPositionLimit/create | 
 [**CreateUserAccountRiskParameter**](RisksApi.md#createuseraccountriskparameter) | **POST** /userAccountRiskParameter/create | 
-[**DeleteUserAccountAutoLiq**](RisksApi.md#deleteuseraccountautoliq) | **POST** /userAccountAutoLiq/delete | 
-[**DeleteUserAccountPositionLimit**](RisksApi.md#deleteuseraccountpositionlimit) | **POST** /userAccountPositionLimit/delete | 
-[**DeleteUserAccountRiskParameter**](RisksApi.md#deleteuseraccountriskparameter) | **POST** /userAccountRiskParameter/delete | 
+[**DeleteUserAccountPositionLimit**](RisksApi.md#deleteuseraccountpositionlimit) | **POST** /userAccountPositionLimit/deleteuseraccountpositionlimit | 
+[**DeleteUserAccountRiskParameter**](RisksApi.md#deleteuseraccountriskparameter) | **POST** /userAccountPositionLimit/deleteuseraccountriskparameter | 
 [**GetAllProductMargins**](RisksApi.md#getallproductmargins) | **GET** /productMargin/list | 
 [**GetAllUserAccountAutoLiqs**](RisksApi.md#getalluseraccountautoliqs) | **GET** /userAccountAutoLiq/list | 
 [**GetContractMargin**](RisksApi.md#getcontractmargin) | **GET** /contractMargin/item | 
@@ -235,79 +234,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deleteuseraccountautoliq"></a>
-# **DeleteUserAccountAutoLiq**
-> UserAccountAutoLiq DeleteUserAccountAutoLiq (UserAccountAutoLiq body)
-
-
-
-Updates a existing entity of UserAccountAutoLiq
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class DeleteUserAccountAutoLiqExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new RisksApi();
-            var body = new UserAccountAutoLiq(); // UserAccountAutoLiq | 
-
-            try
-            {
-                UserAccountAutoLiq result = apiInstance.DeleteUserAccountAutoLiq(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling RisksApi.DeleteUserAccountAutoLiq: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**UserAccountAutoLiq**](UserAccountAutoLiq.md)|  | 
-
-### Return type
-
-[**UserAccountAutoLiq**](UserAccountAutoLiq.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="deleteuseraccountpositionlimit"></a>
 # **DeleteUserAccountPositionLimit**
-> UserAccountPositionLimit DeleteUserAccountPositionLimit (UserAccountPositionLimit body)
+> DeleteResultResponse DeleteUserAccountPositionLimit (DeleteUserAccountPositionLimit body)
 
 
-
-Updates a existing entity of UserAccountPositionLimit
 
 ### Example
 ```csharp
@@ -330,11 +261,11 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new RisksApi();
-            var body = new UserAccountPositionLimit(); // UserAccountPositionLimit | 
+            var body = new DeleteUserAccountPositionLimit(); // DeleteUserAccountPositionLimit | 
 
             try
             {
-                UserAccountPositionLimit result = apiInstance.DeleteUserAccountPositionLimit(body);
+                DeleteResultResponse result = apiInstance.DeleteUserAccountPositionLimit(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -350,11 +281,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**UserAccountPositionLimit**](UserAccountPositionLimit.md)|  | 
+ **body** | [**DeleteUserAccountPositionLimit**](DeleteUserAccountPositionLimit.md)|  | 
 
 ### Return type
 
-[**UserAccountPositionLimit**](UserAccountPositionLimit.md)
+[**DeleteResultResponse**](DeleteResultResponse.md)
 
 ### Authorization
 
@@ -369,11 +300,9 @@ Name | Type | Description  | Notes
 
 <a name="deleteuseraccountriskparameter"></a>
 # **DeleteUserAccountRiskParameter**
-> UserAccountRiskParameter DeleteUserAccountRiskParameter (UserAccountRiskParameter body)
+> DeleteResultResponse DeleteUserAccountRiskParameter (DeleteUserAccountRiskParameter body)
 
 
-
-Updates a existing entity of UserAccountRiskParameter
 
 ### Example
 ```csharp
@@ -396,11 +325,11 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new RisksApi();
-            var body = new UserAccountRiskParameter(); // UserAccountRiskParameter | 
+            var body = new DeleteUserAccountRiskParameter(); // DeleteUserAccountRiskParameter | 
 
             try
             {
-                UserAccountRiskParameter result = apiInstance.DeleteUserAccountRiskParameter(body);
+                DeleteResultResponse result = apiInstance.DeleteUserAccountRiskParameter(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -416,11 +345,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**UserAccountRiskParameter**](UserAccountRiskParameter.md)|  | 
+ **body** | [**DeleteUserAccountRiskParameter**](DeleteUserAccountRiskParameter.md)|  | 
 
 ### Return type
 
-[**UserAccountRiskParameter**](UserAccountRiskParameter.md)
+[**DeleteResultResponse**](DeleteResultResponse.md)
 
 ### Authorization
 
@@ -439,7 +368,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ProductMargin type
+Retrieves all entities of ProductMargin type
 
 ### Example
 ```csharp
@@ -501,7 +430,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of UserAccountAutoLiq type
+Retrieves all entities of UserAccountAutoLiq type
 
 ### Example
 ```csharp
@@ -563,7 +492,7 @@ This endpoint does not need any parameter.
 
 
 
-Finds an entity of ContractMargin type by its id
+Retrieves an entity of ContractMargin type by its id
 
 ### Example
 ```csharp
@@ -629,7 +558,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ContractMargin type by its ids
+Retrieves multiple entities of ContractMargin type by its ids
 
 ### Example
 ```csharp
@@ -695,7 +624,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ContractMargin type related to Contract type
+Retrieves all entities of ContractMargin type related to Contract entity
 
 ### Example
 ```csharp
@@ -761,7 +690,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ContractMargin type related to multiple entities of Contract type
+Retrieves all entities of ContractMargin type related to multiple entities of Contract type
 
 ### Example
 ```csharp
@@ -784,7 +713,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new RisksApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Contract entity
+            var masterids = new List<int?>(); // List<int?> | ids of Contract entities
 
             try
             {
@@ -804,7 +733,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Contract entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Contract entities | 
 
 ### Return type
 
@@ -827,7 +756,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ProductMargin type related to Product type
+Retrieves all entities of ProductMargin type related to Product entity
 
 ### Example
 ```csharp
@@ -893,7 +822,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ProductMargin type related to multiple entities of Product type
+Retrieves all entities of ProductMargin type related to multiple entities of Product type
 
 ### Example
 ```csharp
@@ -916,7 +845,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new RisksApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Product entity
+            var masterids = new List<int?>(); // List<int?> | ids of Product entities
 
             try
             {
@@ -936,7 +865,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Product entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Product entities | 
 
 ### Return type
 
@@ -959,7 +888,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserAccountAutoLiq type related to Account type
+Retrieves all entities of UserAccountAutoLiq type related to Account entity
 
 ### Example
 ```csharp
@@ -1025,7 +954,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserAccountAutoLiq type related to multiple entities of Account type
+Retrieves all entities of UserAccountAutoLiq type related to multiple entities of Account type
 
 ### Example
 ```csharp
@@ -1048,7 +977,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new RisksApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
+            var masterids = new List<int?>(); // List<int?> | ids of Account entities
 
             try
             {
@@ -1068,7 +997,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Account entities | 
 
 ### Return type
 
@@ -1091,7 +1020,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserAccountPositionLimit type related to Account type
+Retrieves all entities of UserAccountPositionLimit type related to Account entity
 
 ### Example
 ```csharp
@@ -1157,7 +1086,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserAccountPositionLimit type related to multiple entities of Account type
+Retrieves all entities of UserAccountPositionLimit type related to multiple entities of Account type
 
 ### Example
 ```csharp
@@ -1180,7 +1109,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new RisksApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
+            var masterids = new List<int?>(); // List<int?> | ids of Account entities
 
             try
             {
@@ -1200,7 +1129,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Account entities | 
 
 ### Return type
 
@@ -1223,7 +1152,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserAccountRiskParameter type related to UserAccountPositionLimit type
+Retrieves all entities of UserAccountRiskParameter type related to UserAccountPositionLimit entity
 
 ### Example
 ```csharp
@@ -1289,7 +1218,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
+Retrieves all entities of UserAccountRiskParameter type related to multiple entities of UserAccountPositionLimit type
 
 ### Example
 ```csharp
@@ -1312,7 +1241,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new RisksApi();
-            var masterids = new List<int?>(); // List<int?> | ids of UserAccountPositionLimit entity
+            var masterids = new List<int?>(); // List<int?> | ids of UserAccountPositionLimit entities
 
             try
             {
@@ -1332,7 +1261,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of UserAccountPositionLimit entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of UserAccountPositionLimit entities | 
 
 ### Return type
 
@@ -1355,7 +1284,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ProductMargin type by its id
+Retrieves an entity of ProductMargin type by its id
 
 ### Example
 ```csharp
@@ -1421,7 +1350,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ProductMargin type by its ids
+Retrieves multiple entities of ProductMargin type by its ids
 
 ### Example
 ```csharp
@@ -1487,7 +1416,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of UserAccountAutoLiq type by its id
+Retrieves an entity of UserAccountAutoLiq type by its id
 
 ### Example
 ```csharp
@@ -1553,7 +1482,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of UserAccountAutoLiq type by its ids
+Retrieves multiple entities of UserAccountAutoLiq type by its ids
 
 ### Example
 ```csharp
@@ -1619,7 +1548,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of UserAccountPositionLimit type by its id
+Retrieves an entity of UserAccountPositionLimit type by its id
 
 ### Example
 ```csharp
@@ -1685,7 +1614,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of UserAccountPositionLimit type by its ids
+Retrieves multiple entities of UserAccountPositionLimit type by its ids
 
 ### Example
 ```csharp
@@ -1751,7 +1680,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of UserAccountRiskParameter type by its id
+Retrieves an entity of UserAccountRiskParameter type by its id
 
 ### Example
 ```csharp
@@ -1817,7 +1746,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of UserAccountRiskParameter type by its ids
+Retrieves multiple entities of UserAccountRiskParameter type by its ids
 
 ### Example
 ```csharp
@@ -1883,7 +1812,7 @@ Name | Type | Description  | Notes
 
 
 
-Updates a existing entity of UserAccountAutoLiq
+Updates an existing entity of UserAccountAutoLiq
 
 ### Example
 ```csharp
@@ -1949,7 +1878,7 @@ Name | Type | Description  | Notes
 
 
 
-Updates a existing entity of UserAccountPositionLimit
+Updates an existing entity of UserAccountPositionLimit
 
 ### Example
 ```csharp
@@ -2015,7 +1944,7 @@ Name | Type | Description  | Notes
 
 
 
-Updates a existing entity of UserAccountRiskParameter
+Updates an existing entity of UserAccountRiskParameter
 
 ### Example
 ```csharp

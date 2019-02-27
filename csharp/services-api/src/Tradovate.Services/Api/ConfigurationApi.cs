@@ -40,7 +40,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlert type by its name
+        /// Retrieves an entity of AdminAlert type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -51,7 +51,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlert type by its name
+        /// Retrieves an entity of AdminAlert type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -61,7 +61,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ClearingHouse type by its name
+        /// Retrieves an entity of ClearingHouse type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -72,7 +72,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ClearingHouse type by its name
+        /// Retrieves an entity of ClearingHouse type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -82,7 +82,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyType type by its name
+        /// Retrieves an entity of OrderStrategyType type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -93,7 +93,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyType type by its name
+        /// Retrieves an entity of OrderStrategyType type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -103,7 +103,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Property type by its name
+        /// Retrieves an entity of Property type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -114,7 +114,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Property type by its name
+        /// Retrieves an entity of Property type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -124,7 +124,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlert type by its id
+        /// Retrieves an entity of AdminAlert type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -135,7 +135,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlert type by its id
+        /// Retrieves an entity of AdminAlert type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -145,7 +145,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AdminAlert type by its ids
+        /// Retrieves multiple entities of AdminAlert type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -156,7 +156,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AdminAlert type by its ids
+        /// Retrieves multiple entities of AdminAlert type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -166,7 +166,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlert type
+        /// Retrieves all entities of AdminAlert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;AdminAlert&gt;</returns>
@@ -176,7 +176,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlert type
+        /// Retrieves all entities of AdminAlert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;AdminAlert&gt;</returns>
@@ -185,7 +185,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ClearingHouse type
+        /// Retrieves all entities of ClearingHouse type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;ClearingHouse&gt;</returns>
@@ -195,7 +195,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ClearingHouse type
+        /// Retrieves all entities of ClearingHouse type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;ClearingHouse&gt;</returns>
@@ -204,7 +204,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyType type
+        /// Retrieves all entities of OrderStrategyType type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;OrderStrategyType&gt;</returns>
@@ -214,7 +214,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyType type
+        /// Retrieves all entities of OrderStrategyType type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;OrderStrategyType&gt;</returns>
@@ -223,7 +223,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Property type
+        /// Retrieves all entities of Property type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Property&gt;</returns>
@@ -233,7 +233,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Property type
+        /// Retrieves all entities of Property type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Property&gt;</returns>
@@ -242,7 +242,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ClearingHouse type by its id
+        /// Retrieves an entity of ClearingHouse type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -253,7 +253,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ClearingHouse type by its id
+        /// Retrieves an entity of ClearingHouse type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -263,7 +263,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ClearingHouse type by its ids
+        /// Retrieves multiple entities of ClearingHouse type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -274,7 +274,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ClearingHouse type by its ids
+        /// Retrieves multiple entities of ClearingHouse type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -284,7 +284,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyType type by its id
+        /// Retrieves an entity of OrderStrategyType type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -295,7 +295,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyType type by its id
+        /// Retrieves an entity of OrderStrategyType type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -305,7 +305,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategyType type by its ids
+        /// Retrieves multiple entities of OrderStrategyType type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -316,7 +316,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategyType type by its ids
+        /// Retrieves multiple entities of OrderStrategyType type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -326,7 +326,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Property type by its ids
+        /// Retrieves multiple entities of Property type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -337,7 +337,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Property type by its ids
+        /// Retrieves multiple entities of Property type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -347,7 +347,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Property type by its id
+        /// Retrieves an entity of Property type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -358,7 +358,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Property type by its id
+        /// Retrieves an entity of Property type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -368,7 +368,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -380,7 +380,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -391,7 +391,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -403,7 +403,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -414,7 +414,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -426,7 +426,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -437,7 +437,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Property type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -449,7 +449,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Property type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -462,7 +462,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlert type by its name
+        /// Retrieves an entity of AdminAlert type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -473,7 +473,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlert type by its name
+        /// Retrieves an entity of AdminAlert type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -483,7 +483,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ClearingHouse type by its name
+        /// Retrieves an entity of ClearingHouse type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -494,7 +494,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ClearingHouse type by its name
+        /// Retrieves an entity of ClearingHouse type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -504,7 +504,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyType type by its name
+        /// Retrieves an entity of OrderStrategyType type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -515,7 +515,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyType type by its name
+        /// Retrieves an entity of OrderStrategyType type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -525,7 +525,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Property type by its name
+        /// Retrieves an entity of Property type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -536,7 +536,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Property type by its name
+        /// Retrieves an entity of Property type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -546,7 +546,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlert type by its id
+        /// Retrieves an entity of AdminAlert type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -557,7 +557,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of AdminAlert type by its id
+        /// Retrieves an entity of AdminAlert type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -567,7 +567,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AdminAlert type by its ids
+        /// Retrieves multiple entities of AdminAlert type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -578,7 +578,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of AdminAlert type by its ids
+        /// Retrieves multiple entities of AdminAlert type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -588,7 +588,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlert type
+        /// Retrieves all entities of AdminAlert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;AdminAlert&gt;</returns>
@@ -598,7 +598,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of AdminAlert type
+        /// Retrieves all entities of AdminAlert type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;AdminAlert&gt;)</returns>
@@ -607,7 +607,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ClearingHouse type
+        /// Retrieves all entities of ClearingHouse type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;ClearingHouse&gt;</returns>
@@ -617,7 +617,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ClearingHouse type
+        /// Retrieves all entities of ClearingHouse type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;ClearingHouse&gt;)</returns>
@@ -626,7 +626,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyType type
+        /// Retrieves all entities of OrderStrategyType type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;OrderStrategyType&gt;</returns>
@@ -636,7 +636,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyType type
+        /// Retrieves all entities of OrderStrategyType type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategyType&gt;)</returns>
@@ -645,7 +645,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Property type
+        /// Retrieves all entities of Property type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Property&gt;</returns>
@@ -655,7 +655,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Property type
+        /// Retrieves all entities of Property type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Property&gt;)</returns>
@@ -664,7 +664,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ClearingHouse type by its id
+        /// Retrieves an entity of ClearingHouse type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -675,7 +675,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ClearingHouse type by its id
+        /// Retrieves an entity of ClearingHouse type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -685,7 +685,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ClearingHouse type by its ids
+        /// Retrieves multiple entities of ClearingHouse type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -696,7 +696,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ClearingHouse type by its ids
+        /// Retrieves multiple entities of ClearingHouse type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -706,7 +706,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyType type by its id
+        /// Retrieves an entity of OrderStrategyType type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -717,7 +717,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyType type by its id
+        /// Retrieves an entity of OrderStrategyType type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -727,7 +727,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategyType type by its ids
+        /// Retrieves multiple entities of OrderStrategyType type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -738,7 +738,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategyType type by its ids
+        /// Retrieves multiple entities of OrderStrategyType type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -748,7 +748,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Property type by its ids
+        /// Retrieves multiple entities of Property type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -759,7 +759,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Property type by its ids
+        /// Retrieves multiple entities of Property type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -769,7 +769,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Property type by its id
+        /// Retrieves an entity of Property type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -780,7 +780,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Property type by its id
+        /// Retrieves an entity of Property type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -790,7 +790,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -802,7 +802,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -813,7 +813,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -825,7 +825,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -836,7 +836,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -848,7 +848,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -859,7 +859,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Property type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -871,7 +871,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Property type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -991,7 +991,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlert type by its name
+        ///  Retrieves an entity of AdminAlert type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1003,7 +1003,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlert type by its name
+        ///  Retrieves an entity of AdminAlert type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1068,7 +1068,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlert type by its name
+        ///  Retrieves an entity of AdminAlert type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1081,7 +1081,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlert type by its name
+        ///  Retrieves an entity of AdminAlert type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1145,7 +1145,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ClearingHouse type by its name
+        ///  Retrieves an entity of ClearingHouse type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1157,7 +1157,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ClearingHouse type by its name
+        ///  Retrieves an entity of ClearingHouse type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1222,7 +1222,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ClearingHouse type by its name
+        ///  Retrieves an entity of ClearingHouse type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1235,7 +1235,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ClearingHouse type by its name
+        ///  Retrieves an entity of ClearingHouse type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1299,7 +1299,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyType type by its name
+        ///  Retrieves an entity of OrderStrategyType type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1311,7 +1311,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyType type by its name
+        ///  Retrieves an entity of OrderStrategyType type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1376,7 +1376,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyType type by its name
+        ///  Retrieves an entity of OrderStrategyType type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1389,7 +1389,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyType type by its name
+        ///  Retrieves an entity of OrderStrategyType type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1453,7 +1453,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Property type by its name
+        ///  Retrieves an entity of Property type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1465,7 +1465,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Property type by its name
+        ///  Retrieves an entity of Property type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1530,7 +1530,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Property type by its name
+        ///  Retrieves an entity of Property type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1543,7 +1543,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Property type by its name
+        ///  Retrieves an entity of Property type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1607,7 +1607,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlert type by its id
+        ///  Retrieves an entity of AdminAlert type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1619,7 +1619,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlert type by its id
+        ///  Retrieves an entity of AdminAlert type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1684,7 +1684,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlert type by its id
+        ///  Retrieves an entity of AdminAlert type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1697,7 +1697,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of AdminAlert type by its id
+        ///  Retrieves an entity of AdminAlert type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1761,7 +1761,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AdminAlert type by its ids
+        ///  Retrieves multiple entities of AdminAlert type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1773,7 +1773,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AdminAlert type by its ids
+        ///  Retrieves multiple entities of AdminAlert type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1838,7 +1838,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AdminAlert type by its ids
+        ///  Retrieves multiple entities of AdminAlert type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1851,7 +1851,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of AdminAlert type by its ids
+        ///  Retrieves multiple entities of AdminAlert type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1915,7 +1915,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlert type
+        ///  Retrieves all entities of AdminAlert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;AdminAlert&gt;</returns>
@@ -1926,7 +1926,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlert type
+        ///  Retrieves all entities of AdminAlert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;AdminAlert&gt;</returns>
@@ -1986,7 +1986,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlert type
+        ///  Retrieves all entities of AdminAlert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;AdminAlert&gt;</returns>
@@ -1998,7 +1998,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of AdminAlert type
+        ///  Retrieves all entities of AdminAlert type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;AdminAlert&gt;)</returns>
@@ -2057,7 +2057,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ClearingHouse type
+        ///  Retrieves all entities of ClearingHouse type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;ClearingHouse&gt;</returns>
@@ -2068,7 +2068,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ClearingHouse type
+        ///  Retrieves all entities of ClearingHouse type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;ClearingHouse&gt;</returns>
@@ -2128,7 +2128,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ClearingHouse type
+        ///  Retrieves all entities of ClearingHouse type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;ClearingHouse&gt;</returns>
@@ -2140,7 +2140,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ClearingHouse type
+        ///  Retrieves all entities of ClearingHouse type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;ClearingHouse&gt;)</returns>
@@ -2199,7 +2199,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyType type
+        ///  Retrieves all entities of OrderStrategyType type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;OrderStrategyType&gt;</returns>
@@ -2210,7 +2210,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyType type
+        ///  Retrieves all entities of OrderStrategyType type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;OrderStrategyType&gt;</returns>
@@ -2270,7 +2270,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyType type
+        ///  Retrieves all entities of OrderStrategyType type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;OrderStrategyType&gt;</returns>
@@ -2282,7 +2282,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyType type
+        ///  Retrieves all entities of OrderStrategyType type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategyType&gt;)</returns>
@@ -2341,7 +2341,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Property type
+        ///  Retrieves all entities of Property type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Property&gt;</returns>
@@ -2352,7 +2352,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Property type
+        ///  Retrieves all entities of Property type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Property&gt;</returns>
@@ -2412,7 +2412,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Property type
+        ///  Retrieves all entities of Property type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Property&gt;</returns>
@@ -2424,7 +2424,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Property type
+        ///  Retrieves all entities of Property type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Property&gt;)</returns>
@@ -2483,7 +2483,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ClearingHouse type by its id
+        ///  Retrieves an entity of ClearingHouse type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2495,7 +2495,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ClearingHouse type by its id
+        ///  Retrieves an entity of ClearingHouse type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2560,7 +2560,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ClearingHouse type by its id
+        ///  Retrieves an entity of ClearingHouse type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2573,7 +2573,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ClearingHouse type by its id
+        ///  Retrieves an entity of ClearingHouse type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2637,7 +2637,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ClearingHouse type by its ids
+        ///  Retrieves multiple entities of ClearingHouse type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2649,7 +2649,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ClearingHouse type by its ids
+        ///  Retrieves multiple entities of ClearingHouse type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2714,7 +2714,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ClearingHouse type by its ids
+        ///  Retrieves multiple entities of ClearingHouse type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2727,7 +2727,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ClearingHouse type by its ids
+        ///  Retrieves multiple entities of ClearingHouse type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2791,7 +2791,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyType type by its id
+        ///  Retrieves an entity of OrderStrategyType type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2803,7 +2803,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyType type by its id
+        ///  Retrieves an entity of OrderStrategyType type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2868,7 +2868,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyType type by its id
+        ///  Retrieves an entity of OrderStrategyType type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2881,7 +2881,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyType type by its id
+        ///  Retrieves an entity of OrderStrategyType type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2945,7 +2945,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategyType type by its ids
+        ///  Retrieves multiple entities of OrderStrategyType type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2957,7 +2957,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategyType type by its ids
+        ///  Retrieves multiple entities of OrderStrategyType type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3022,7 +3022,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategyType type by its ids
+        ///  Retrieves multiple entities of OrderStrategyType type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3035,7 +3035,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategyType type by its ids
+        ///  Retrieves multiple entities of OrderStrategyType type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3099,7 +3099,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Property type by its ids
+        ///  Retrieves multiple entities of Property type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3111,7 +3111,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Property type by its ids
+        ///  Retrieves multiple entities of Property type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3176,7 +3176,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Property type by its ids
+        ///  Retrieves multiple entities of Property type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3189,7 +3189,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Property type by its ids
+        ///  Retrieves multiple entities of Property type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3253,7 +3253,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Property type by its id
+        ///  Retrieves an entity of Property type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3265,7 +3265,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Property type by its id
+        ///  Retrieves an entity of Property type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3330,7 +3330,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Property type by its id
+        ///  Retrieves an entity of Property type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3343,7 +3343,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Property type by its id
+        ///  Retrieves an entity of Property type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3407,7 +3407,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3420,7 +3420,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3490,7 +3490,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3504,7 +3504,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3573,7 +3573,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3586,7 +3586,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3656,7 +3656,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3670,7 +3670,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3739,7 +3739,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3752,7 +3752,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3822,7 +3822,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3836,7 +3836,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3905,7 +3905,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Property type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3918,7 +3918,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Property type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3988,7 +3988,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Property type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -4002,7 +4002,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Property type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>

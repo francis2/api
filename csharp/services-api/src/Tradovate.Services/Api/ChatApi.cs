@@ -61,7 +61,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type
+        /// Retrieves all entities of Chat type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Chat&gt;</returns>
@@ -71,7 +71,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type
+        /// Retrieves all entities of Chat type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Chat&gt;</returns>
@@ -80,7 +80,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Chat type by its id
+        /// Retrieves an entity of Chat type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -91,7 +91,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Chat type by its id
+        /// Retrieves an entity of Chat type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -101,7 +101,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ChatMessage type by its id
+        /// Retrieves an entity of ChatMessage type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -112,7 +112,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ChatMessage type by its id
+        /// Retrieves an entity of ChatMessage type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -122,7 +122,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ChatMessage type by its ids
+        /// Retrieves multiple entities of ChatMessage type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -133,7 +133,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ChatMessage type by its ids
+        /// Retrieves multiple entities of ChatMessage type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -143,7 +143,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Chat type by its ids
+        /// Retrieves multiple entities of Chat type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -154,7 +154,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Chat type by its ids
+        /// Retrieves multiple entities of Chat type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -164,7 +164,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ChatMessage type related to Chat type
+        /// Retrieves all entities of ChatMessage type related to Chat entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Chat entity</param>
@@ -175,7 +175,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ChatMessage type related to Chat type
+        /// Retrieves all entities of ChatMessage type related to Chat entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Chat entity</param>
@@ -185,10 +185,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ChatMessage type related to multiple entities of Chat type
+        /// Retrieves all entities of ChatMessage type related to multiple entities of Chat type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Chat entity</param>
+        /// <param name="masterids">ids of Chat entities</param>
         /// <returns>List&lt;ChatMessage&gt;</returns>
         List<ChatMessage> GetOwnedChatMessagesBatch (List<int?> masterids);
 
@@ -196,17 +196,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ChatMessage type related to multiple entities of Chat type
+        /// Retrieves all entities of ChatMessage type related to multiple entities of Chat type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Chat entity</param>
+        /// <param name="masterids">ids of Chat entities</param>
         /// <returns>ApiResponse of List&lt;ChatMessage&gt;</returns>
         ApiResponse<List<ChatMessage>> GetOwnedChatMessagesBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type related to User type
+        /// Retrieves all entities of Chat type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -217,7 +217,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type related to User type
+        /// Retrieves all entities of Chat type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -227,10 +227,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type related to multiple entities of User type
+        /// Retrieves all entities of Chat type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;Chat&gt;</returns>
         List<Chat> GetOwnedChatsBatch (List<int?> masterids);
 
@@ -238,10 +238,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type related to multiple entities of User type
+        /// Retrieves all entities of Chat type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;Chat&gt;</returns>
         ApiResponse<List<Chat>> GetOwnedChatsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
@@ -313,7 +313,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type
+        /// Retrieves all entities of Chat type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Chat&gt;</returns>
@@ -323,7 +323,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type
+        /// Retrieves all entities of Chat type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Chat&gt;)</returns>
@@ -332,7 +332,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Chat type by its id
+        /// Retrieves an entity of Chat type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -343,7 +343,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Chat type by its id
+        /// Retrieves an entity of Chat type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -353,7 +353,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ChatMessage type by its id
+        /// Retrieves an entity of ChatMessage type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -364,7 +364,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ChatMessage type by its id
+        /// Retrieves an entity of ChatMessage type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -374,7 +374,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ChatMessage type by its ids
+        /// Retrieves multiple entities of ChatMessage type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -385,7 +385,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ChatMessage type by its ids
+        /// Retrieves multiple entities of ChatMessage type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -395,7 +395,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Chat type by its ids
+        /// Retrieves multiple entities of Chat type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -406,7 +406,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Chat type by its ids
+        /// Retrieves multiple entities of Chat type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -416,7 +416,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ChatMessage type related to Chat type
+        /// Retrieves all entities of ChatMessage type related to Chat entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Chat entity</param>
@@ -427,7 +427,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ChatMessage type related to Chat type
+        /// Retrieves all entities of ChatMessage type related to Chat entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Chat entity</param>
@@ -437,10 +437,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ChatMessage type related to multiple entities of Chat type
+        /// Retrieves all entities of ChatMessage type related to multiple entities of Chat type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Chat entity</param>
+        /// <param name="masterids">ids of Chat entities</param>
         /// <returns>Task of List&lt;ChatMessage&gt;</returns>
         System.Threading.Tasks.Task<List<ChatMessage>> GetOwnedChatMessagesBatchAsync (List<int?> masterids);
 
@@ -448,17 +448,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ChatMessage type related to multiple entities of Chat type
+        /// Retrieves all entities of ChatMessage type related to multiple entities of Chat type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Chat entity</param>
+        /// <param name="masterids">ids of Chat entities</param>
         /// <returns>Task of ApiResponse (List&lt;ChatMessage&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<ChatMessage>>> GetOwnedChatMessagesBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type related to User type
+        /// Retrieves all entities of Chat type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -469,7 +469,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type related to User type
+        /// Retrieves all entities of Chat type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -479,10 +479,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type related to multiple entities of User type
+        /// Retrieves all entities of Chat type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;Chat&gt;</returns>
         System.Threading.Tasks.Task<List<Chat>> GetOwnedChatsBatchAsync (List<int?> masterids);
 
@@ -490,10 +490,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Chat type related to multiple entities of User type
+        /// Retrieves all entities of Chat type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;Chat&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Chat>>> GetOwnedChatsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
@@ -819,7 +819,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type
+        ///  Retrieves all entities of Chat type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Chat&gt;</returns>
@@ -830,7 +830,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type
+        ///  Retrieves all entities of Chat type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Chat&gt;</returns>
@@ -890,7 +890,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type
+        ///  Retrieves all entities of Chat type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Chat&gt;</returns>
@@ -902,7 +902,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type
+        ///  Retrieves all entities of Chat type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Chat&gt;)</returns>
@@ -961,7 +961,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Chat type by its id
+        ///  Retrieves an entity of Chat type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -973,7 +973,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Chat type by its id
+        ///  Retrieves an entity of Chat type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1038,7 +1038,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Chat type by its id
+        ///  Retrieves an entity of Chat type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1051,7 +1051,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Chat type by its id
+        ///  Retrieves an entity of Chat type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1115,7 +1115,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ChatMessage type by its id
+        ///  Retrieves an entity of ChatMessage type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1127,7 +1127,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ChatMessage type by its id
+        ///  Retrieves an entity of ChatMessage type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1192,7 +1192,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ChatMessage type by its id
+        ///  Retrieves an entity of ChatMessage type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1205,7 +1205,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ChatMessage type by its id
+        ///  Retrieves an entity of ChatMessage type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1269,7 +1269,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ChatMessage type by its ids
+        ///  Retrieves multiple entities of ChatMessage type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1281,7 +1281,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ChatMessage type by its ids
+        ///  Retrieves multiple entities of ChatMessage type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1346,7 +1346,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ChatMessage type by its ids
+        ///  Retrieves multiple entities of ChatMessage type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1359,7 +1359,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ChatMessage type by its ids
+        ///  Retrieves multiple entities of ChatMessage type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1423,7 +1423,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Chat type by its ids
+        ///  Retrieves multiple entities of Chat type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1435,7 +1435,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Chat type by its ids
+        ///  Retrieves multiple entities of Chat type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1500,7 +1500,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Chat type by its ids
+        ///  Retrieves multiple entities of Chat type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1513,7 +1513,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Chat type by its ids
+        ///  Retrieves multiple entities of Chat type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1577,7 +1577,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ChatMessage type related to Chat type
+        ///  Retrieves all entities of ChatMessage type related to Chat entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Chat entity</param>
@@ -1589,7 +1589,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ChatMessage type related to Chat type
+        ///  Retrieves all entities of ChatMessage type related to Chat entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Chat entity</param>
@@ -1654,7 +1654,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ChatMessage type related to Chat type
+        ///  Retrieves all entities of ChatMessage type related to Chat entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Chat entity</param>
@@ -1667,7 +1667,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ChatMessage type related to Chat type
+        ///  Retrieves all entities of ChatMessage type related to Chat entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Chat entity</param>
@@ -1731,10 +1731,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ChatMessage type related to multiple entities of Chat type
+        ///  Retrieves all entities of ChatMessage type related to multiple entities of Chat type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Chat entity</param>
+        /// <param name="masterids">ids of Chat entities</param>
         /// <returns>List&lt;ChatMessage&gt;</returns>
         public List<ChatMessage> GetOwnedChatMessagesBatch (List<int?> masterids)
         {
@@ -1743,10 +1743,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ChatMessage type related to multiple entities of Chat type
+        ///  Retrieves all entities of ChatMessage type related to multiple entities of Chat type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Chat entity</param>
+        /// <param name="masterids">ids of Chat entities</param>
         /// <returns>ApiResponse of List&lt;ChatMessage&gt;</returns>
         public ApiResponse< List<ChatMessage> > GetOwnedChatMessagesBatchWithHttpInfo (List<int?> masterids)
         {
@@ -1808,10 +1808,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ChatMessage type related to multiple entities of Chat type
+        ///  Retrieves all entities of ChatMessage type related to multiple entities of Chat type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Chat entity</param>
+        /// <param name="masterids">ids of Chat entities</param>
         /// <returns>Task of List&lt;ChatMessage&gt;</returns>
         public async System.Threading.Tasks.Task<List<ChatMessage>> GetOwnedChatMessagesBatchAsync (List<int?> masterids)
         {
@@ -1821,10 +1821,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ChatMessage type related to multiple entities of Chat type
+        ///  Retrieves all entities of ChatMessage type related to multiple entities of Chat type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Chat entity</param>
+        /// <param name="masterids">ids of Chat entities</param>
         /// <returns>Task of ApiResponse (List&lt;ChatMessage&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<ChatMessage>>> GetOwnedChatMessagesBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -1885,7 +1885,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type related to User type
+        ///  Retrieves all entities of Chat type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -1897,7 +1897,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type related to User type
+        ///  Retrieves all entities of Chat type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -1962,7 +1962,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type related to User type
+        ///  Retrieves all entities of Chat type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -1975,7 +1975,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type related to User type
+        ///  Retrieves all entities of Chat type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2039,10 +2039,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type related to multiple entities of User type
+        ///  Retrieves all entities of Chat type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;Chat&gt;</returns>
         public List<Chat> GetOwnedChatsBatch (List<int?> masterids)
         {
@@ -2051,10 +2051,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type related to multiple entities of User type
+        ///  Retrieves all entities of Chat type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;Chat&gt;</returns>
         public ApiResponse< List<Chat> > GetOwnedChatsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -2116,10 +2116,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type related to multiple entities of User type
+        ///  Retrieves all entities of Chat type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;Chat&gt;</returns>
         public async System.Threading.Tasks.Task<List<Chat>> GetOwnedChatsBatchAsync (List<int?> masterids)
         {
@@ -2129,10 +2129,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Chat type related to multiple entities of User type
+        ///  Retrieves all entities of Chat type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;Chat&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Chat>>> GetOwnedChatsBatchAsyncWithHttpInfo (List<int?> masterids)
         {

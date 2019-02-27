@@ -40,7 +40,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+        /// Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -51,7 +51,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+        /// Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -61,7 +61,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionPlan type by its name
+        /// Retrieves an entity of MarketDataSubscriptionPlan type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -72,7 +72,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionPlan type by its name
+        /// Retrieves an entity of MarketDataSubscriptionPlan type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -82,7 +82,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscriptionPlan type by its name
+        /// Retrieves an entity of TradovateSubscriptionPlan type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -93,7 +93,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscriptionPlan type by its name
+        /// Retrieves an entity of TradovateSubscriptionPlan type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -103,7 +103,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscriptionExchangeScope type
+        /// Retrieves all entities of MarketDataSubscriptionExchangeScope type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;MarketDataSubscriptionExchangeScope&gt;</returns>
@@ -113,7 +113,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscriptionExchangeScope type
+        /// Retrieves all entities of MarketDataSubscriptionExchangeScope type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;MarketDataSubscriptionExchangeScope&gt;</returns>
@@ -122,7 +122,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscriptionPlan type
+        /// Retrieves all entities of MarketDataSubscriptionPlan type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;MarketDataSubscriptionPlan&gt;</returns>
@@ -132,7 +132,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscriptionPlan type
+        /// Retrieves all entities of MarketDataSubscriptionPlan type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;MarketDataSubscriptionPlan&gt;</returns>
@@ -141,7 +141,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscriptionPlan type
+        /// Retrieves all entities of TradovateSubscriptionPlan type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;TradovateSubscriptionPlan&gt;</returns>
@@ -151,7 +151,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscriptionPlan type
+        /// Retrieves all entities of TradovateSubscriptionPlan type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;TradovateSubscriptionPlan&gt;</returns>
@@ -160,7 +160,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+        /// Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -171,7 +171,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+        /// Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -181,7 +181,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+        /// Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -192,7 +192,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+        /// Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -202,7 +202,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionPlan type by its id
+        /// Retrieves an entity of MarketDataSubscriptionPlan type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -213,7 +213,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionPlan type by its id
+        /// Retrieves an entity of MarketDataSubscriptionPlan type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -223,7 +223,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+        /// Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -234,7 +234,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+        /// Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -244,7 +244,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscriptionPlan type by its id
+        /// Retrieves an entity of TradovateSubscriptionPlan type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -255,7 +255,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscriptionPlan type by its id
+        /// Retrieves an entity of TradovateSubscriptionPlan type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -265,7 +265,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradovateSubscriptionPlan type by its ids
+        /// Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -276,7 +276,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradovateSubscriptionPlan type by its ids
+        /// Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -286,7 +286,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -298,7 +298,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -309,7 +309,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -321,7 +321,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -332,7 +332,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -344,7 +344,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -357,7 +357,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+        /// Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -368,7 +368,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+        /// Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -378,7 +378,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionPlan type by its name
+        /// Retrieves an entity of MarketDataSubscriptionPlan type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -389,7 +389,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionPlan type by its name
+        /// Retrieves an entity of MarketDataSubscriptionPlan type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -399,7 +399,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscriptionPlan type by its name
+        /// Retrieves an entity of TradovateSubscriptionPlan type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -410,7 +410,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscriptionPlan type by its name
+        /// Retrieves an entity of TradovateSubscriptionPlan type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -420,7 +420,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscriptionExchangeScope type
+        /// Retrieves all entities of MarketDataSubscriptionExchangeScope type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;MarketDataSubscriptionExchangeScope&gt;</returns>
@@ -430,7 +430,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscriptionExchangeScope type
+        /// Retrieves all entities of MarketDataSubscriptionExchangeScope type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;MarketDataSubscriptionExchangeScope&gt;)</returns>
@@ -439,7 +439,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscriptionPlan type
+        /// Retrieves all entities of MarketDataSubscriptionPlan type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;MarketDataSubscriptionPlan&gt;</returns>
@@ -449,7 +449,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscriptionPlan type
+        /// Retrieves all entities of MarketDataSubscriptionPlan type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;MarketDataSubscriptionPlan&gt;)</returns>
@@ -458,7 +458,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscriptionPlan type
+        /// Retrieves all entities of TradovateSubscriptionPlan type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;TradovateSubscriptionPlan&gt;</returns>
@@ -468,7 +468,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscriptionPlan type
+        /// Retrieves all entities of TradovateSubscriptionPlan type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;TradovateSubscriptionPlan&gt;)</returns>
@@ -477,7 +477,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+        /// Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -488,7 +488,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+        /// Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -498,7 +498,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+        /// Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -509,7 +509,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+        /// Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -519,7 +519,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionPlan type by its id
+        /// Retrieves an entity of MarketDataSubscriptionPlan type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -530,7 +530,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscriptionPlan type by its id
+        /// Retrieves an entity of MarketDataSubscriptionPlan type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -540,7 +540,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+        /// Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -551,7 +551,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+        /// Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -561,7 +561,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscriptionPlan type by its id
+        /// Retrieves an entity of TradovateSubscriptionPlan type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -572,7 +572,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscriptionPlan type by its id
+        /// Retrieves an entity of TradovateSubscriptionPlan type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -582,7 +582,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradovateSubscriptionPlan type by its ids
+        /// Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -593,7 +593,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradovateSubscriptionPlan type by its ids
+        /// Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -603,7 +603,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -615,7 +615,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -626,7 +626,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -638,7 +638,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -649,7 +649,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -661,7 +661,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -781,7 +781,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+        ///  Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -793,7 +793,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+        ///  Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -858,7 +858,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+        ///  Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -871,7 +871,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+        ///  Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -935,7 +935,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionPlan type by its name
+        ///  Retrieves an entity of MarketDataSubscriptionPlan type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -947,7 +947,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionPlan type by its name
+        ///  Retrieves an entity of MarketDataSubscriptionPlan type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1012,7 +1012,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionPlan type by its name
+        ///  Retrieves an entity of MarketDataSubscriptionPlan type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1025,7 +1025,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionPlan type by its name
+        ///  Retrieves an entity of MarketDataSubscriptionPlan type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1089,7 +1089,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscriptionPlan type by its name
+        ///  Retrieves an entity of TradovateSubscriptionPlan type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1101,7 +1101,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscriptionPlan type by its name
+        ///  Retrieves an entity of TradovateSubscriptionPlan type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1166,7 +1166,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscriptionPlan type by its name
+        ///  Retrieves an entity of TradovateSubscriptionPlan type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1179,7 +1179,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscriptionPlan type by its name
+        ///  Retrieves an entity of TradovateSubscriptionPlan type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1243,7 +1243,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscriptionExchangeScope type
+        ///  Retrieves all entities of MarketDataSubscriptionExchangeScope type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;MarketDataSubscriptionExchangeScope&gt;</returns>
@@ -1254,7 +1254,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscriptionExchangeScope type
+        ///  Retrieves all entities of MarketDataSubscriptionExchangeScope type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;MarketDataSubscriptionExchangeScope&gt;</returns>
@@ -1314,7 +1314,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscriptionExchangeScope type
+        ///  Retrieves all entities of MarketDataSubscriptionExchangeScope type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;MarketDataSubscriptionExchangeScope&gt;</returns>
@@ -1326,7 +1326,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscriptionExchangeScope type
+        ///  Retrieves all entities of MarketDataSubscriptionExchangeScope type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;MarketDataSubscriptionExchangeScope&gt;)</returns>
@@ -1385,7 +1385,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscriptionPlan type
+        ///  Retrieves all entities of MarketDataSubscriptionPlan type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;MarketDataSubscriptionPlan&gt;</returns>
@@ -1396,7 +1396,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscriptionPlan type
+        ///  Retrieves all entities of MarketDataSubscriptionPlan type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;MarketDataSubscriptionPlan&gt;</returns>
@@ -1456,7 +1456,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscriptionPlan type
+        ///  Retrieves all entities of MarketDataSubscriptionPlan type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;MarketDataSubscriptionPlan&gt;</returns>
@@ -1468,7 +1468,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscriptionPlan type
+        ///  Retrieves all entities of MarketDataSubscriptionPlan type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;MarketDataSubscriptionPlan&gt;)</returns>
@@ -1527,7 +1527,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscriptionPlan type
+        ///  Retrieves all entities of TradovateSubscriptionPlan type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;TradovateSubscriptionPlan&gt;</returns>
@@ -1538,7 +1538,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscriptionPlan type
+        ///  Retrieves all entities of TradovateSubscriptionPlan type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;TradovateSubscriptionPlan&gt;</returns>
@@ -1598,7 +1598,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscriptionPlan type
+        ///  Retrieves all entities of TradovateSubscriptionPlan type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;TradovateSubscriptionPlan&gt;</returns>
@@ -1610,7 +1610,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscriptionPlan type
+        ///  Retrieves all entities of TradovateSubscriptionPlan type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;TradovateSubscriptionPlan&gt;)</returns>
@@ -1669,7 +1669,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+        ///  Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1681,7 +1681,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+        ///  Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1746,7 +1746,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+        ///  Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1759,7 +1759,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+        ///  Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1823,7 +1823,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1835,7 +1835,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1900,7 +1900,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1913,7 +1913,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1977,7 +1977,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionPlan type by its id
+        ///  Retrieves an entity of MarketDataSubscriptionPlan type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1989,7 +1989,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionPlan type by its id
+        ///  Retrieves an entity of MarketDataSubscriptionPlan type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2054,7 +2054,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionPlan type by its id
+        ///  Retrieves an entity of MarketDataSubscriptionPlan type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2067,7 +2067,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscriptionPlan type by its id
+        ///  Retrieves an entity of MarketDataSubscriptionPlan type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2131,7 +2131,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2143,7 +2143,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2208,7 +2208,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2221,7 +2221,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2285,7 +2285,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscriptionPlan type by its id
+        ///  Retrieves an entity of TradovateSubscriptionPlan type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2297,7 +2297,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscriptionPlan type by its id
+        ///  Retrieves an entity of TradovateSubscriptionPlan type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2362,7 +2362,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscriptionPlan type by its id
+        ///  Retrieves an entity of TradovateSubscriptionPlan type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2375,7 +2375,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscriptionPlan type by its id
+        ///  Retrieves an entity of TradovateSubscriptionPlan type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2439,7 +2439,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradovateSubscriptionPlan type by its ids
+        ///  Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2451,7 +2451,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradovateSubscriptionPlan type by its ids
+        ///  Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2516,7 +2516,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradovateSubscriptionPlan type by its ids
+        ///  Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2529,7 +2529,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradovateSubscriptionPlan type by its ids
+        ///  Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2593,7 +2593,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2606,7 +2606,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2676,7 +2676,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2690,7 +2690,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2759,7 +2759,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2772,7 +2772,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2842,7 +2842,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2856,7 +2856,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2925,7 +2925,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2938,7 +2938,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3008,7 +3008,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3022,7 +3022,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>

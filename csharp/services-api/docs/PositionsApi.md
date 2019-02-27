@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.PositionsApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,13 +11,9 @@ Method | HTTP request | Description
 [**GetFillPairs**](PositionsApi.md#getfillpairs) | **GET** /fillPair/items | 
 [**GetOwnedFillPairs**](PositionsApi.md#getownedfillpairs) | **GET** /fillPair/deps | 
 [**GetOwnedFillPairsBatch**](PositionsApi.md#getownedfillpairsbatch) | **GET** /fillPair/ldeps | 
-[**GetOwnedPositionLogs**](PositionsApi.md#getownedpositionlogs) | **GET** /positionLog/deps | 
-[**GetOwnedPositionLogsBatch**](PositionsApi.md#getownedpositionlogsbatch) | **GET** /positionLog/ldeps | 
 [**GetOwnedPositions**](PositionsApi.md#getownedpositions) | **GET** /position/deps | 
 [**GetOwnedPositionsBatch**](PositionsApi.md#getownedpositionsbatch) | **GET** /position/ldeps | 
 [**GetPosition**](PositionsApi.md#getposition) | **GET** /position/item | 
-[**GetPositionLog**](PositionsApi.md#getpositionlog) | **GET** /positionLog/item | 
-[**GetPositionLogs**](PositionsApi.md#getpositionlogs) | **GET** /positionLog/items | 
 [**GetPositions**](PositionsApi.md#getpositions) | **GET** /position/items | 
 
 
@@ -27,7 +23,7 @@ Method | HTTP request | Description
 
 
 
-Finds an entity of Position type by its name
+Retrieves an entity of Position type by its name
 
 ### Example
 ```csharp
@@ -93,7 +89,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of FillPair type
+Retrieves all entities of FillPair type
 
 ### Example
 ```csharp
@@ -155,7 +151,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Position type
+Retrieves all entities of Position type
 
 ### Example
 ```csharp
@@ -217,7 +213,7 @@ This endpoint does not need any parameter.
 
 
 
-Finds an entity of FillPair type by its id
+Retrieves an entity of FillPair type by its id
 
 ### Example
 ```csharp
@@ -283,7 +279,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of FillPair type by its ids
+Retrieves multiple entities of FillPair type by its ids
 
 ### Example
 ```csharp
@@ -349,7 +345,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of FillPair type related to Position type
+Retrieves all entities of FillPair type related to Position entity
 
 ### Example
 ```csharp
@@ -415,7 +411,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of FillPair type related to multiple entities of Position type
+Retrieves all entities of FillPair type related to multiple entities of Position type
 
 ### Example
 ```csharp
@@ -438,7 +434,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new PositionsApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Position entity
+            var masterids = new List<int?>(); // List<int?> | ids of Position entities
 
             try
             {
@@ -458,143 +454,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Position entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Position entities | 
 
 ### Return type
 
 [**List<FillPair>**](FillPair.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getownedpositionlogs"></a>
-# **GetOwnedPositionLogs**
-> List<PositionLog> GetOwnedPositionLogs (int? masterid)
-
-
-
-Returns all entities of PositionLog type related to Account type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetOwnedPositionLogsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new PositionsApi();
-            var masterid = 56;  // int? | id of Account entity
-
-            try
-            {
-                List&lt;PositionLog&gt; result = apiInstance.GetOwnedPositionLogs(masterid);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PositionsApi.GetOwnedPositionLogs: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **masterid** | **int?**| id of Account entity | 
-
-### Return type
-
-[**List<PositionLog>**](PositionLog.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getownedpositionlogsbatch"></a>
-# **GetOwnedPositionLogsBatch**
-> List<PositionLog> GetOwnedPositionLogsBatch (List<int?> masterids)
-
-
-
-Returns all entities of PositionLog type related to multiple entities of Account type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetOwnedPositionLogsBatchExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new PositionsApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
-
-            try
-            {
-                List&lt;PositionLog&gt; result = apiInstance.GetOwnedPositionLogsBatch(masterids);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PositionsApi.GetOwnedPositionLogsBatch: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
-
-### Return type
-
-[**List<PositionLog>**](PositionLog.md)
 
 ### Authorization
 
@@ -613,7 +477,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Position type related to Account type
+Retrieves all entities of Position type related to Account entity
 
 ### Example
 ```csharp
@@ -679,7 +543,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Position type related to multiple entities of Account type
+Retrieves all entities of Position type related to multiple entities of Account type
 
 ### Example
 ```csharp
@@ -702,7 +566,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new PositionsApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
+            var masterids = new List<int?>(); // List<int?> | ids of Account entities
 
             try
             {
@@ -722,7 +586,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Account entities | 
 
 ### Return type
 
@@ -745,7 +609,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Position type by its id
+Retrieves an entity of Position type by its id
 
 ### Example
 ```csharp
@@ -805,145 +669,13 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getpositionlog"></a>
-# **GetPositionLog**
-> PositionLog GetPositionLog (int? id)
-
-
-
-Finds an entity of PositionLog type by its id
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetPositionLogExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new PositionsApi();
-            var id = 56;  // int? | 
-
-            try
-            {
-                PositionLog result = apiInstance.GetPositionLog(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PositionsApi.GetPositionLog: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **int?**|  | 
-
-### Return type
-
-[**PositionLog**](PositionLog.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getpositionlogs"></a>
-# **GetPositionLogs**
-> List<PositionLog> GetPositionLogs (List<int?> ids)
-
-
-
-Finds multiple entities of PositionLog type by its ids
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetPositionLogsExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new PositionsApi();
-            var ids = new List<int?>(); // List<int?> | 
-
-            try
-            {
-                List&lt;PositionLog&gt; result = apiInstance.GetPositionLogs(ids);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PositionsApi.GetPositionLogs: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ids** | [**List<int?>**](int?.md)|  | 
-
-### Return type
-
-[**List<PositionLog>**](PositionLog.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getpositions"></a>
 # **GetPositions**
 > List<Position> GetPositions (List<int?> ids)
 
 
 
-Finds multiple entities of Position type by its ids
+Retrieves multiple entities of Position type by its ids
 
 ### Example
 ```csharp

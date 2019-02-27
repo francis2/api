@@ -1,13 +1,9 @@
-# Tradovate.Services.Model.AddMarketDataSubscription
+# Tradovate.Services.Model.DeleteUserAccountRiskParameter
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MarketDataSubscriptionPlanIds** | **List&lt;int?&gt;** |  | 
-**Year** | **int?** |  | 
-**Month** | **int?** |  | 
-**AccountId** | **int?** | id of Account | [optional] 
-**UserId** | **int?** | id of User | [optional] 
+**UserAccountRiskParameterId** | **int?** | id of UserAccountRiskParameter | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

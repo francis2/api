@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.AlertsApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of AdminAlertSignal type by its id
+Retrieves an entity of AdminAlertSignal type by its id
 
 ### Example
 ```csharp
@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of AdminAlertSignal type by its ids
+Retrieves multiple entities of AdminAlertSignal type by its ids
 
 ### Example
 ```csharp
@@ -423,7 +423,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Alert type by its id
+Retrieves an entity of Alert type by its id
 
 ### Example
 ```csharp
@@ -489,7 +489,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of AlertSignal type by its id
+Retrieves an entity of AlertSignal type by its id
 
 ### Example
 ```csharp
@@ -555,7 +555,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of AlertSignal type by its ids
+Retrieves multiple entities of AlertSignal type by its ids
 
 ### Example
 ```csharp
@@ -621,7 +621,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Alert type by its ids
+Retrieves multiple entities of Alert type by its ids
 
 ### Example
 ```csharp
@@ -687,7 +687,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of AdminAlertSignal type
+Retrieves all entities of AdminAlertSignal type
 
 ### Example
 ```csharp
@@ -749,7 +749,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of AlertSignal type
+Retrieves all entities of AlertSignal type
 
 ### Example
 ```csharp
@@ -811,7 +811,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Alert type
+Retrieves all entities of Alert type
 
 ### Example
 ```csharp
@@ -873,7 +873,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of AdminAlertSignal type related to AdminAlert type
+Retrieves all entities of AdminAlertSignal type related to AdminAlert entity
 
 ### Example
 ```csharp
@@ -939,7 +939,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
+Retrieves all entities of AdminAlertSignal type related to multiple entities of AdminAlert type
 
 ### Example
 ```csharp
@@ -962,7 +962,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AlertsApi();
-            var masterids = new List<int?>(); // List<int?> | ids of AdminAlert entity
+            var masterids = new List<int?>(); // List<int?> | ids of AdminAlert entities
 
             try
             {
@@ -982,7 +982,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of AdminAlert entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of AdminAlert entities | 
 
 ### Return type
 
@@ -1005,7 +1005,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of AlertSignal type related to Alert type
+Retrieves all entities of AlertSignal type related to Alert entity
 
 ### Example
 ```csharp
@@ -1071,7 +1071,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of AlertSignal type related to multiple entities of Alert type
+Retrieves all entities of AlertSignal type related to multiple entities of Alert type
 
 ### Example
 ```csharp
@@ -1094,7 +1094,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AlertsApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Alert entity
+            var masterids = new List<int?>(); // List<int?> | ids of Alert entities
 
             try
             {
@@ -1114,7 +1114,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Alert entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Alert entities | 
 
 ### Return type
 
@@ -1137,7 +1137,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Alert type related to User type
+Retrieves all entities of Alert type related to User entity
 
 ### Example
 ```csharp
@@ -1203,7 +1203,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Alert type related to multiple entities of User type
+Retrieves all entities of Alert type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -1226,7 +1226,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AlertsApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -1246,7 +1246,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 

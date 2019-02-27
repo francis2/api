@@ -7,13 +7,10 @@ Name | Type | Description | Notes
 **UserId** | **int?** | id of User | 
 **Timestamp** | **DateTime?** |  | 
 **PlanPrice** | **double?** |  | 
-**CreditCardTransactionId** | **int?** | id of CreditCardTransaction | [optional] 
 **CashBalanceLogId** | **int?** | id of CashBalanceLog | [optional] 
-**CreditCardId** | **int?** | id of CreditCard | [optional] 
 **AccountId** | **int?** | id of Account | [optional] 
 **PluginName** | **string** |  | 
 **Approval** | **bool?** |  | 
-**EntitlementId** | **int?** | id of Entitlement | [optional] 
 **StartDate** | [**TradeDate**](TradeDate.md) |  | 
 **ExpirationDate** | [**TradeDate**](TradeDate.md) |  | [optional] 
 **PaidAmount** | **double?** |  | 

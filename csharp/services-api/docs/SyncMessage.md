@@ -25,7 +25,6 @@ Name | Type | Description | Notes
 **UserProperties** | [**List&lt;UserProperty&gt;**](UserProperty.md) |  | [optional] 
 **Properties** | [**List&lt;Property&gt;**](Property.md) |  | [optional] 
 **UserPlugins** | [**List&lt;UserPlugin&gt;**](UserPlugin.md) |  | [optional] 
-**UserReadStatuses** | [**List&lt;UserReadStatus&gt;**](UserReadStatus.md) |  | [optional] 
 **ContractGroups** | [**List&lt;ContractGroup&gt;**](ContractGroup.md) |  | 
 **OrderStrategyTypes** | [**List&lt;OrderStrategyType&gt;**](OrderStrategyType.md) |  | [optional] 
 

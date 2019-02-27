@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.ConfigurationApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 
 
-Finds an entity of AdminAlert type by its name
+Retrieves an entity of AdminAlert type by its name
 
 ### Example
 ```csharp
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ClearingHouse type by its name
+Retrieves an entity of ClearingHouse type by its name
 
 ### Example
 ```csharp
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of OrderStrategyType type by its name
+Retrieves an entity of OrderStrategyType type by its name
 
 ### Example
 ```csharp
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Property type by its name
+Retrieves an entity of Property type by its name
 
 ### Example
 ```csharp
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of AdminAlert type by its id
+Retrieves an entity of AdminAlert type by its id
 
 ### Example
 ```csharp
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of AdminAlert type by its ids
+Retrieves multiple entities of AdminAlert type by its ids
 
 ### Example
 ```csharp
@@ -428,7 +428,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of AdminAlert type
+Retrieves all entities of AdminAlert type
 
 ### Example
 ```csharp
@@ -490,7 +490,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of ClearingHouse type
+Retrieves all entities of ClearingHouse type
 
 ### Example
 ```csharp
@@ -552,7 +552,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of OrderStrategyType type
+Retrieves all entities of OrderStrategyType type
 
 ### Example
 ```csharp
@@ -614,7 +614,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Property type
+Retrieves all entities of Property type
 
 ### Example
 ```csharp
@@ -676,7 +676,7 @@ This endpoint does not need any parameter.
 
 
 
-Finds an entity of ClearingHouse type by its id
+Retrieves an entity of ClearingHouse type by its id
 
 ### Example
 ```csharp
@@ -742,7 +742,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ClearingHouse type by its ids
+Retrieves multiple entities of ClearingHouse type by its ids
 
 ### Example
 ```csharp
@@ -808,7 +808,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of OrderStrategyType type by its id
+Retrieves an entity of OrderStrategyType type by its id
 
 ### Example
 ```csharp
@@ -874,7 +874,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of OrderStrategyType type by its ids
+Retrieves multiple entities of OrderStrategyType type by its ids
 
 ### Example
 ```csharp
@@ -940,7 +940,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Property type by its ids
+Retrieves multiple entities of Property type by its ids
 
 ### Example
 ```csharp
@@ -1006,7 +1006,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Property type by its id
+Retrieves an entity of Property type by its id
 
 ### Example
 ```csharp
@@ -1072,7 +1072,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of AdminAlert type filtered by occurence of a text in one of its fields
+Retrieves entities of AdminAlert type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -1140,7 +1140,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of ClearingHouse type filtered by occurence of a text in one of its fields
+Retrieves entities of ClearingHouse type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -1208,7 +1208,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of OrderStrategyType type filtered by occurence of a text in one of its fields
+Retrieves entities of OrderStrategyType type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -1276,7 +1276,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of Property type filtered by occurence of a text in one of its fields
+Retrieves entities of Property type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp

@@ -40,7 +40,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Contract type by its name
+        /// Retrieves an entity of Contract type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -51,7 +51,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Contract type by its name
+        /// Retrieves an entity of Contract type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -61,7 +61,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractGroup type by its name
+        /// Retrieves an entity of ContractGroup type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -72,7 +72,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractGroup type by its name
+        /// Retrieves an entity of ContractGroup type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -82,7 +82,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Currency type by its name
+        /// Retrieves an entity of Currency type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -93,7 +93,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Currency type by its name
+        /// Retrieves an entity of Currency type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -103,7 +103,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Exchange type by its name
+        /// Retrieves an entity of Exchange type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -114,7 +114,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Exchange type by its name
+        /// Retrieves an entity of Exchange type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -124,7 +124,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Product type by its name
+        /// Retrieves an entity of Product type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -135,7 +135,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Product type by its name
+        /// Retrieves an entity of Product type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -145,7 +145,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractGroup type
+        /// Retrieves all entities of ContractGroup type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;ContractGroup&gt;</returns>
@@ -155,7 +155,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractGroup type
+        /// Retrieves all entities of ContractGroup type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;ContractGroup&gt;</returns>
@@ -164,7 +164,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Currency type
+        /// Retrieves all entities of Currency type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Currency&gt;</returns>
@@ -174,7 +174,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Currency type
+        /// Retrieves all entities of Currency type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Currency&gt;</returns>
@@ -183,7 +183,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type
+        /// Retrieves all entities of CurrencyRate type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;CurrencyRate&gt;</returns>
@@ -193,7 +193,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type
+        /// Retrieves all entities of CurrencyRate type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;CurrencyRate&gt;</returns>
@@ -202,7 +202,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Exchange type
+        /// Retrieves all entities of Exchange type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Exchange&gt;</returns>
@@ -212,7 +212,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Exchange type
+        /// Retrieves all entities of Exchange type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Exchange&gt;</returns>
@@ -221,7 +221,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type
+        /// Retrieves all entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Product&gt;</returns>
@@ -231,7 +231,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type
+        /// Retrieves all entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Product&gt;</returns>
@@ -240,7 +240,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Contract type by its id
+        /// Retrieves an entity of Contract type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -251,7 +251,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Contract type by its id
+        /// Retrieves an entity of Contract type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -261,7 +261,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractGroup type by its id
+        /// Retrieves an entity of ContractGroup type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -272,7 +272,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractGroup type by its id
+        /// Retrieves an entity of ContractGroup type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -282,7 +282,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractGroup type by its ids
+        /// Retrieves multiple entities of ContractGroup type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -293,7 +293,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractGroup type by its ids
+        /// Retrieves multiple entities of ContractGroup type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -303,7 +303,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractMaturity type by its ids
+        /// Retrieves multiple entities of ContractMaturity type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -314,7 +314,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractMaturity type by its ids
+        /// Retrieves multiple entities of ContractMaturity type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -324,7 +324,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractMaturity type by its id
+        /// Retrieves an entity of ContractMaturity type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -335,7 +335,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractMaturity type by its id
+        /// Retrieves an entity of ContractMaturity type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -345,7 +345,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Contract type by its ids
+        /// Retrieves multiple entities of Contract type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -356,7 +356,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Contract type by its ids
+        /// Retrieves multiple entities of Contract type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -366,7 +366,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Currency type by its ids
+        /// Retrieves multiple entities of Currency type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -377,7 +377,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Currency type by its ids
+        /// Retrieves multiple entities of Currency type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -387,7 +387,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Currency type by its id
+        /// Retrieves an entity of Currency type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -398,7 +398,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Currency type by its id
+        /// Retrieves an entity of Currency type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -408,7 +408,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CurrencyRate type by its id
+        /// Retrieves an entity of CurrencyRate type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -419,7 +419,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CurrencyRate type by its id
+        /// Retrieves an entity of CurrencyRate type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -429,7 +429,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CurrencyRate type by its ids
+        /// Retrieves multiple entities of CurrencyRate type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -440,7 +440,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CurrencyRate type by its ids
+        /// Retrieves multiple entities of CurrencyRate type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -450,7 +450,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Exchange type by its id
+        /// Retrieves an entity of Exchange type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -461,7 +461,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Exchange type by its id
+        /// Retrieves an entity of Exchange type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -471,7 +471,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Exchange type by its ids
+        /// Retrieves multiple entities of Exchange type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -482,7 +482,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Exchange type by its ids
+        /// Retrieves multiple entities of Exchange type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -492,7 +492,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMaturity type related to Product type
+        /// Retrieves all entities of ContractMaturity type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -503,7 +503,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMaturity type related to Product type
+        /// Retrieves all entities of ContractMaturity type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -513,10 +513,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMaturity type related to multiple entities of Product type
+        /// Retrieves all entities of ContractMaturity type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>List&lt;ContractMaturity&gt;</returns>
         List<ContractMaturity> GetOwnedContractMaturitiesBatch (List<int?> masterids);
 
@@ -524,17 +524,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMaturity type related to multiple entities of Product type
+        /// Retrieves all entities of ContractMaturity type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>ApiResponse of List&lt;ContractMaturity&gt;</returns>
         ApiResponse<List<ContractMaturity>> GetOwnedContractMaturitiesBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Contract type related to ContractMaturity type
+        /// Retrieves all entities of Contract type related to ContractMaturity entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of ContractMaturity entity</param>
@@ -545,7 +545,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Contract type related to ContractMaturity type
+        /// Retrieves all entities of Contract type related to ContractMaturity entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of ContractMaturity entity</param>
@@ -555,10 +555,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Contract type related to multiple entities of ContractMaturity type
+        /// Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of ContractMaturity entity</param>
+        /// <param name="masterids">ids of ContractMaturity entities</param>
         /// <returns>List&lt;Contract&gt;</returns>
         List<Contract> GetOwnedContractsBatch (List<int?> masterids);
 
@@ -566,17 +566,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Contract type related to multiple entities of ContractMaturity type
+        /// Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of ContractMaturity entity</param>
+        /// <param name="masterids">ids of ContractMaturity entities</param>
         /// <returns>ApiResponse of List&lt;Contract&gt;</returns>
         ApiResponse<List<Contract>> GetOwnedContractsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type related to Currency type
+        /// Retrieves all entities of CurrencyRate type related to Currency entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Currency entity</param>
@@ -587,7 +587,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type related to Currency type
+        /// Retrieves all entities of CurrencyRate type related to Currency entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Currency entity</param>
@@ -597,10 +597,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type related to multiple entities of Currency type
+        /// Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Currency entity</param>
+        /// <param name="masterids">ids of Currency entities</param>
         /// <returns>List&lt;CurrencyRate&gt;</returns>
         List<CurrencyRate> GetOwnedCurrencyRatesBatch (List<int?> masterids);
 
@@ -608,17 +608,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type related to multiple entities of Currency type
+        /// Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Currency entity</param>
+        /// <param name="masterids">ids of Currency entities</param>
         /// <returns>ApiResponse of List&lt;CurrencyRate&gt;</returns>
         ApiResponse<List<CurrencyRate>> GetOwnedCurrencyRatesBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductSession type related to Product type
+        /// Retrieves all entities of ProductSession type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -629,7 +629,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductSession type related to Product type
+        /// Retrieves all entities of ProductSession type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -639,10 +639,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductSession type related to multiple entities of Product type
+        /// Retrieves all entities of ProductSession type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>List&lt;ProductSession&gt;</returns>
         List<ProductSession> GetOwnedProductSessionsBatch (List<int?> masterids);
 
@@ -650,17 +650,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductSession type related to multiple entities of Product type
+        /// Retrieves all entities of ProductSession type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>ApiResponse of List&lt;ProductSession&gt;</returns>
         ApiResponse<List<ProductSession>> GetOwnedProductSessionsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type related to Exchange type
+        /// Retrieves all entities of Product type related to Exchange entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Exchange entity</param>
@@ -671,7 +671,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type related to Exchange type
+        /// Retrieves all entities of Product type related to Exchange entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Exchange entity</param>
@@ -681,10 +681,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type related to multiple entities of Exchange type
+        /// Retrieves all entities of Product type related to multiple entities of Exchange type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Exchange entity</param>
+        /// <param name="masterids">ids of Exchange entities</param>
         /// <returns>List&lt;Product&gt;</returns>
         List<Product> GetOwnedProductsBatch (List<int?> masterids);
 
@@ -692,17 +692,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type related to multiple entities of Exchange type
+        /// Retrieves all entities of Product type related to multiple entities of Exchange type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Exchange entity</param>
+        /// <param name="masterids">ids of Exchange entities</param>
         /// <returns>ApiResponse of List&lt;Product&gt;</returns>
         ApiResponse<List<Product>> GetOwnedProductsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Product type by its id
+        /// Retrieves an entity of Product type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -713,7 +713,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Product type by its id
+        /// Retrieves an entity of Product type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -744,7 +744,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ProductSession type by its id
+        /// Retrieves an entity of ProductSession type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -755,7 +755,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ProductSession type by its id
+        /// Retrieves an entity of ProductSession type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -765,7 +765,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ProductSession type by its ids
+        /// Retrieves multiple entities of ProductSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -776,7 +776,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ProductSession type by its ids
+        /// Retrieves multiple entities of ProductSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -786,7 +786,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Product type by its ids
+        /// Retrieves multiple entities of Product type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -797,7 +797,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Product type by its ids
+        /// Retrieves multiple entities of Product type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -807,7 +807,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of SpreadDefinition type by its id
+        /// Retrieves an entity of SpreadDefinition type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -818,7 +818,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of SpreadDefinition type by its id
+        /// Retrieves an entity of SpreadDefinition type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -828,7 +828,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of SpreadDefinition type by its ids
+        /// Retrieves multiple entities of SpreadDefinition type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -839,7 +839,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of SpreadDefinition type by its ids
+        /// Retrieves multiple entities of SpreadDefinition type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -870,7 +870,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -882,7 +882,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -893,7 +893,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Contract type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -905,7 +905,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Contract type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -916,7 +916,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Currency type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -928,7 +928,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Currency type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -939,7 +939,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Exchange type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -951,7 +951,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Exchange type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -962,7 +962,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Product type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -974,7 +974,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Product type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -987,7 +987,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Contract type by its name
+        /// Retrieves an entity of Contract type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -998,7 +998,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Contract type by its name
+        /// Retrieves an entity of Contract type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1008,7 +1008,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractGroup type by its name
+        /// Retrieves an entity of ContractGroup type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1019,7 +1019,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractGroup type by its name
+        /// Retrieves an entity of ContractGroup type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1029,7 +1029,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Currency type by its name
+        /// Retrieves an entity of Currency type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1040,7 +1040,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Currency type by its name
+        /// Retrieves an entity of Currency type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1050,7 +1050,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Exchange type by its name
+        /// Retrieves an entity of Exchange type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1061,7 +1061,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Exchange type by its name
+        /// Retrieves an entity of Exchange type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1071,7 +1071,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Product type by its name
+        /// Retrieves an entity of Product type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1082,7 +1082,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Product type by its name
+        /// Retrieves an entity of Product type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1092,7 +1092,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractGroup type
+        /// Retrieves all entities of ContractGroup type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;ContractGroup&gt;</returns>
@@ -1102,7 +1102,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractGroup type
+        /// Retrieves all entities of ContractGroup type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;ContractGroup&gt;)</returns>
@@ -1111,7 +1111,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Currency type
+        /// Retrieves all entities of Currency type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Currency&gt;</returns>
@@ -1121,7 +1121,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Currency type
+        /// Retrieves all entities of Currency type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Currency&gt;)</returns>
@@ -1130,7 +1130,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type
+        /// Retrieves all entities of CurrencyRate type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;CurrencyRate&gt;</returns>
@@ -1140,7 +1140,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type
+        /// Retrieves all entities of CurrencyRate type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;CurrencyRate&gt;)</returns>
@@ -1149,7 +1149,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Exchange type
+        /// Retrieves all entities of Exchange type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Exchange&gt;</returns>
@@ -1159,7 +1159,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Exchange type
+        /// Retrieves all entities of Exchange type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Exchange&gt;)</returns>
@@ -1168,7 +1168,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type
+        /// Retrieves all entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Product&gt;</returns>
@@ -1178,7 +1178,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type
+        /// Retrieves all entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Product&gt;)</returns>
@@ -1187,7 +1187,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Contract type by its id
+        /// Retrieves an entity of Contract type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1198,7 +1198,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Contract type by its id
+        /// Retrieves an entity of Contract type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1208,7 +1208,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractGroup type by its id
+        /// Retrieves an entity of ContractGroup type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1219,7 +1219,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractGroup type by its id
+        /// Retrieves an entity of ContractGroup type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1229,7 +1229,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractGroup type by its ids
+        /// Retrieves multiple entities of ContractGroup type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1240,7 +1240,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractGroup type by its ids
+        /// Retrieves multiple entities of ContractGroup type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1250,7 +1250,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractMaturity type by its ids
+        /// Retrieves multiple entities of ContractMaturity type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1261,7 +1261,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContractMaturity type by its ids
+        /// Retrieves multiple entities of ContractMaturity type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1271,7 +1271,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractMaturity type by its id
+        /// Retrieves an entity of ContractMaturity type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1282,7 +1282,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContractMaturity type by its id
+        /// Retrieves an entity of ContractMaturity type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1292,7 +1292,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Contract type by its ids
+        /// Retrieves multiple entities of Contract type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1303,7 +1303,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Contract type by its ids
+        /// Retrieves multiple entities of Contract type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1313,7 +1313,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Currency type by its ids
+        /// Retrieves multiple entities of Currency type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1324,7 +1324,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Currency type by its ids
+        /// Retrieves multiple entities of Currency type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1334,7 +1334,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Currency type by its id
+        /// Retrieves an entity of Currency type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1345,7 +1345,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Currency type by its id
+        /// Retrieves an entity of Currency type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1355,7 +1355,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CurrencyRate type by its id
+        /// Retrieves an entity of CurrencyRate type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1366,7 +1366,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CurrencyRate type by its id
+        /// Retrieves an entity of CurrencyRate type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1376,7 +1376,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CurrencyRate type by its ids
+        /// Retrieves multiple entities of CurrencyRate type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1387,7 +1387,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CurrencyRate type by its ids
+        /// Retrieves multiple entities of CurrencyRate type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1397,7 +1397,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Exchange type by its id
+        /// Retrieves an entity of Exchange type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1408,7 +1408,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Exchange type by its id
+        /// Retrieves an entity of Exchange type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1418,7 +1418,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Exchange type by its ids
+        /// Retrieves multiple entities of Exchange type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1429,7 +1429,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Exchange type by its ids
+        /// Retrieves multiple entities of Exchange type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1439,7 +1439,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMaturity type related to Product type
+        /// Retrieves all entities of ContractMaturity type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -1450,7 +1450,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMaturity type related to Product type
+        /// Retrieves all entities of ContractMaturity type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -1460,10 +1460,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMaturity type related to multiple entities of Product type
+        /// Retrieves all entities of ContractMaturity type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of List&lt;ContractMaturity&gt;</returns>
         System.Threading.Tasks.Task<List<ContractMaturity>> GetOwnedContractMaturitiesBatchAsync (List<int?> masterids);
 
@@ -1471,17 +1471,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContractMaturity type related to multiple entities of Product type
+        /// Retrieves all entities of ContractMaturity type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of ApiResponse (List&lt;ContractMaturity&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<ContractMaturity>>> GetOwnedContractMaturitiesBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Contract type related to ContractMaturity type
+        /// Retrieves all entities of Contract type related to ContractMaturity entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of ContractMaturity entity</param>
@@ -1492,7 +1492,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Contract type related to ContractMaturity type
+        /// Retrieves all entities of Contract type related to ContractMaturity entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of ContractMaturity entity</param>
@@ -1502,10 +1502,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Contract type related to multiple entities of ContractMaturity type
+        /// Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of ContractMaturity entity</param>
+        /// <param name="masterids">ids of ContractMaturity entities</param>
         /// <returns>Task of List&lt;Contract&gt;</returns>
         System.Threading.Tasks.Task<List<Contract>> GetOwnedContractsBatchAsync (List<int?> masterids);
 
@@ -1513,17 +1513,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Contract type related to multiple entities of ContractMaturity type
+        /// Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of ContractMaturity entity</param>
+        /// <param name="masterids">ids of ContractMaturity entities</param>
         /// <returns>Task of ApiResponse (List&lt;Contract&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Contract>>> GetOwnedContractsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type related to Currency type
+        /// Retrieves all entities of CurrencyRate type related to Currency entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Currency entity</param>
@@ -1534,7 +1534,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type related to Currency type
+        /// Retrieves all entities of CurrencyRate type related to Currency entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Currency entity</param>
@@ -1544,10 +1544,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type related to multiple entities of Currency type
+        /// Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Currency entity</param>
+        /// <param name="masterids">ids of Currency entities</param>
         /// <returns>Task of List&lt;CurrencyRate&gt;</returns>
         System.Threading.Tasks.Task<List<CurrencyRate>> GetOwnedCurrencyRatesBatchAsync (List<int?> masterids);
 
@@ -1555,17 +1555,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CurrencyRate type related to multiple entities of Currency type
+        /// Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Currency entity</param>
+        /// <param name="masterids">ids of Currency entities</param>
         /// <returns>Task of ApiResponse (List&lt;CurrencyRate&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<CurrencyRate>>> GetOwnedCurrencyRatesBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductSession type related to Product type
+        /// Retrieves all entities of ProductSession type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -1576,7 +1576,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductSession type related to Product type
+        /// Retrieves all entities of ProductSession type related to Product entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -1586,10 +1586,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductSession type related to multiple entities of Product type
+        /// Retrieves all entities of ProductSession type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of List&lt;ProductSession&gt;</returns>
         System.Threading.Tasks.Task<List<ProductSession>> GetOwnedProductSessionsBatchAsync (List<int?> masterids);
 
@@ -1597,17 +1597,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ProductSession type related to multiple entities of Product type
+        /// Retrieves all entities of ProductSession type related to multiple entities of Product type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of ApiResponse (List&lt;ProductSession&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<ProductSession>>> GetOwnedProductSessionsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type related to Exchange type
+        /// Retrieves all entities of Product type related to Exchange entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Exchange entity</param>
@@ -1618,7 +1618,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type related to Exchange type
+        /// Retrieves all entities of Product type related to Exchange entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Exchange entity</param>
@@ -1628,10 +1628,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type related to multiple entities of Exchange type
+        /// Retrieves all entities of Product type related to multiple entities of Exchange type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Exchange entity</param>
+        /// <param name="masterids">ids of Exchange entities</param>
         /// <returns>Task of List&lt;Product&gt;</returns>
         System.Threading.Tasks.Task<List<Product>> GetOwnedProductsBatchAsync (List<int?> masterids);
 
@@ -1639,17 +1639,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Product type related to multiple entities of Exchange type
+        /// Retrieves all entities of Product type related to multiple entities of Exchange type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Exchange entity</param>
+        /// <param name="masterids">ids of Exchange entities</param>
         /// <returns>Task of ApiResponse (List&lt;Product&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Product>>> GetOwnedProductsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Product type by its id
+        /// Retrieves an entity of Product type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1660,7 +1660,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Product type by its id
+        /// Retrieves an entity of Product type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1691,7 +1691,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ProductSession type by its id
+        /// Retrieves an entity of ProductSession type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1702,7 +1702,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ProductSession type by its id
+        /// Retrieves an entity of ProductSession type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1712,7 +1712,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ProductSession type by its ids
+        /// Retrieves multiple entities of ProductSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1723,7 +1723,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ProductSession type by its ids
+        /// Retrieves multiple entities of ProductSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1733,7 +1733,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Product type by its ids
+        /// Retrieves multiple entities of Product type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1744,7 +1744,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Product type by its ids
+        /// Retrieves multiple entities of Product type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1754,7 +1754,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of SpreadDefinition type by its id
+        /// Retrieves an entity of SpreadDefinition type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1765,7 +1765,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of SpreadDefinition type by its id
+        /// Retrieves an entity of SpreadDefinition type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1775,7 +1775,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of SpreadDefinition type by its ids
+        /// Retrieves multiple entities of SpreadDefinition type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1786,7 +1786,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of SpreadDefinition type by its ids
+        /// Retrieves multiple entities of SpreadDefinition type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1817,7 +1817,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1829,7 +1829,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1840,7 +1840,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Contract type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1852,7 +1852,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Contract type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1863,7 +1863,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Currency type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1875,7 +1875,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Currency type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1886,7 +1886,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Exchange type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1898,7 +1898,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Exchange type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1909,7 +1909,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Product type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1921,7 +1921,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Product type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2041,7 +2041,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Contract type by its name
+        ///  Retrieves an entity of Contract type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2053,7 +2053,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Contract type by its name
+        ///  Retrieves an entity of Contract type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2118,7 +2118,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Contract type by its name
+        ///  Retrieves an entity of Contract type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2131,7 +2131,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Contract type by its name
+        ///  Retrieves an entity of Contract type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2195,7 +2195,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractGroup type by its name
+        ///  Retrieves an entity of ContractGroup type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2207,7 +2207,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractGroup type by its name
+        ///  Retrieves an entity of ContractGroup type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2272,7 +2272,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractGroup type by its name
+        ///  Retrieves an entity of ContractGroup type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2285,7 +2285,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractGroup type by its name
+        ///  Retrieves an entity of ContractGroup type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2349,7 +2349,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Currency type by its name
+        ///  Retrieves an entity of Currency type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2361,7 +2361,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Currency type by its name
+        ///  Retrieves an entity of Currency type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2426,7 +2426,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Currency type by its name
+        ///  Retrieves an entity of Currency type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2439,7 +2439,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Currency type by its name
+        ///  Retrieves an entity of Currency type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2503,7 +2503,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Exchange type by its name
+        ///  Retrieves an entity of Exchange type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2515,7 +2515,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Exchange type by its name
+        ///  Retrieves an entity of Exchange type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2580,7 +2580,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Exchange type by its name
+        ///  Retrieves an entity of Exchange type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2593,7 +2593,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Exchange type by its name
+        ///  Retrieves an entity of Exchange type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2657,7 +2657,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Product type by its name
+        ///  Retrieves an entity of Product type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2669,7 +2669,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Product type by its name
+        ///  Retrieves an entity of Product type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2734,7 +2734,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Product type by its name
+        ///  Retrieves an entity of Product type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2747,7 +2747,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Product type by its name
+        ///  Retrieves an entity of Product type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2811,7 +2811,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractGroup type
+        ///  Retrieves all entities of ContractGroup type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;ContractGroup&gt;</returns>
@@ -2822,7 +2822,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractGroup type
+        ///  Retrieves all entities of ContractGroup type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;ContractGroup&gt;</returns>
@@ -2882,7 +2882,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractGroup type
+        ///  Retrieves all entities of ContractGroup type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;ContractGroup&gt;</returns>
@@ -2894,7 +2894,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractGroup type
+        ///  Retrieves all entities of ContractGroup type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;ContractGroup&gt;)</returns>
@@ -2953,7 +2953,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Currency type
+        ///  Retrieves all entities of Currency type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Currency&gt;</returns>
@@ -2964,7 +2964,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Currency type
+        ///  Retrieves all entities of Currency type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Currency&gt;</returns>
@@ -3024,7 +3024,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Currency type
+        ///  Retrieves all entities of Currency type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Currency&gt;</returns>
@@ -3036,7 +3036,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Currency type
+        ///  Retrieves all entities of Currency type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Currency&gt;)</returns>
@@ -3095,7 +3095,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type
+        ///  Retrieves all entities of CurrencyRate type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;CurrencyRate&gt;</returns>
@@ -3106,7 +3106,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type
+        ///  Retrieves all entities of CurrencyRate type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;CurrencyRate&gt;</returns>
@@ -3166,7 +3166,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type
+        ///  Retrieves all entities of CurrencyRate type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;CurrencyRate&gt;</returns>
@@ -3178,7 +3178,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type
+        ///  Retrieves all entities of CurrencyRate type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;CurrencyRate&gt;)</returns>
@@ -3237,7 +3237,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Exchange type
+        ///  Retrieves all entities of Exchange type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Exchange&gt;</returns>
@@ -3248,7 +3248,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Exchange type
+        ///  Retrieves all entities of Exchange type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Exchange&gt;</returns>
@@ -3308,7 +3308,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Exchange type
+        ///  Retrieves all entities of Exchange type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Exchange&gt;</returns>
@@ -3320,7 +3320,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Exchange type
+        ///  Retrieves all entities of Exchange type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Exchange&gt;)</returns>
@@ -3379,7 +3379,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type
+        ///  Retrieves all entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Product&gt;</returns>
@@ -3390,7 +3390,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type
+        ///  Retrieves all entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Product&gt;</returns>
@@ -3450,7 +3450,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type
+        ///  Retrieves all entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Product&gt;</returns>
@@ -3462,7 +3462,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type
+        ///  Retrieves all entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Product&gt;)</returns>
@@ -3521,7 +3521,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Contract type by its id
+        ///  Retrieves an entity of Contract type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3533,7 +3533,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Contract type by its id
+        ///  Retrieves an entity of Contract type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3598,7 +3598,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Contract type by its id
+        ///  Retrieves an entity of Contract type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3611,7 +3611,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Contract type by its id
+        ///  Retrieves an entity of Contract type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3675,7 +3675,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractGroup type by its id
+        ///  Retrieves an entity of ContractGroup type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3687,7 +3687,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractGroup type by its id
+        ///  Retrieves an entity of ContractGroup type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3752,7 +3752,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractGroup type by its id
+        ///  Retrieves an entity of ContractGroup type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3765,7 +3765,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractGroup type by its id
+        ///  Retrieves an entity of ContractGroup type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -3829,7 +3829,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractGroup type by its ids
+        ///  Retrieves multiple entities of ContractGroup type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3841,7 +3841,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractGroup type by its ids
+        ///  Retrieves multiple entities of ContractGroup type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3906,7 +3906,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractGroup type by its ids
+        ///  Retrieves multiple entities of ContractGroup type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3919,7 +3919,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractGroup type by its ids
+        ///  Retrieves multiple entities of ContractGroup type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3983,7 +3983,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractMaturity type by its ids
+        ///  Retrieves multiple entities of ContractMaturity type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -3995,7 +3995,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractMaturity type by its ids
+        ///  Retrieves multiple entities of ContractMaturity type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4060,7 +4060,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractMaturity type by its ids
+        ///  Retrieves multiple entities of ContractMaturity type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4073,7 +4073,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContractMaturity type by its ids
+        ///  Retrieves multiple entities of ContractMaturity type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4137,7 +4137,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractMaturity type by its id
+        ///  Retrieves an entity of ContractMaturity type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4149,7 +4149,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractMaturity type by its id
+        ///  Retrieves an entity of ContractMaturity type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4214,7 +4214,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractMaturity type by its id
+        ///  Retrieves an entity of ContractMaturity type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4227,7 +4227,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContractMaturity type by its id
+        ///  Retrieves an entity of ContractMaturity type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4291,7 +4291,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Contract type by its ids
+        ///  Retrieves multiple entities of Contract type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4303,7 +4303,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Contract type by its ids
+        ///  Retrieves multiple entities of Contract type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4368,7 +4368,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Contract type by its ids
+        ///  Retrieves multiple entities of Contract type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4381,7 +4381,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Contract type by its ids
+        ///  Retrieves multiple entities of Contract type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4445,7 +4445,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Currency type by its ids
+        ///  Retrieves multiple entities of Currency type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4457,7 +4457,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Currency type by its ids
+        ///  Retrieves multiple entities of Currency type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4522,7 +4522,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Currency type by its ids
+        ///  Retrieves multiple entities of Currency type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4535,7 +4535,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Currency type by its ids
+        ///  Retrieves multiple entities of Currency type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4599,7 +4599,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Currency type by its id
+        ///  Retrieves an entity of Currency type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4611,7 +4611,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Currency type by its id
+        ///  Retrieves an entity of Currency type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4676,7 +4676,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Currency type by its id
+        ///  Retrieves an entity of Currency type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4689,7 +4689,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Currency type by its id
+        ///  Retrieves an entity of Currency type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4753,7 +4753,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CurrencyRate type by its id
+        ///  Retrieves an entity of CurrencyRate type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4765,7 +4765,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CurrencyRate type by its id
+        ///  Retrieves an entity of CurrencyRate type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4830,7 +4830,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CurrencyRate type by its id
+        ///  Retrieves an entity of CurrencyRate type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4843,7 +4843,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CurrencyRate type by its id
+        ///  Retrieves an entity of CurrencyRate type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4907,7 +4907,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CurrencyRate type by its ids
+        ///  Retrieves multiple entities of CurrencyRate type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4919,7 +4919,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CurrencyRate type by its ids
+        ///  Retrieves multiple entities of CurrencyRate type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4984,7 +4984,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CurrencyRate type by its ids
+        ///  Retrieves multiple entities of CurrencyRate type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4997,7 +4997,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CurrencyRate type by its ids
+        ///  Retrieves multiple entities of CurrencyRate type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5061,7 +5061,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Exchange type by its id
+        ///  Retrieves an entity of Exchange type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5073,7 +5073,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Exchange type by its id
+        ///  Retrieves an entity of Exchange type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5138,7 +5138,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Exchange type by its id
+        ///  Retrieves an entity of Exchange type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5151,7 +5151,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Exchange type by its id
+        ///  Retrieves an entity of Exchange type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5215,7 +5215,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Exchange type by its ids
+        ///  Retrieves multiple entities of Exchange type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5227,7 +5227,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Exchange type by its ids
+        ///  Retrieves multiple entities of Exchange type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5292,7 +5292,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Exchange type by its ids
+        ///  Retrieves multiple entities of Exchange type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5305,7 +5305,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Exchange type by its ids
+        ///  Retrieves multiple entities of Exchange type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5369,7 +5369,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMaturity type related to Product type
+        ///  Retrieves all entities of ContractMaturity type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -5381,7 +5381,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMaturity type related to Product type
+        ///  Retrieves all entities of ContractMaturity type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -5446,7 +5446,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMaturity type related to Product type
+        ///  Retrieves all entities of ContractMaturity type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -5459,7 +5459,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMaturity type related to Product type
+        ///  Retrieves all entities of ContractMaturity type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -5523,10 +5523,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMaturity type related to multiple entities of Product type
+        ///  Retrieves all entities of ContractMaturity type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>List&lt;ContractMaturity&gt;</returns>
         public List<ContractMaturity> GetOwnedContractMaturitiesBatch (List<int?> masterids)
         {
@@ -5535,10 +5535,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMaturity type related to multiple entities of Product type
+        ///  Retrieves all entities of ContractMaturity type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>ApiResponse of List&lt;ContractMaturity&gt;</returns>
         public ApiResponse< List<ContractMaturity> > GetOwnedContractMaturitiesBatchWithHttpInfo (List<int?> masterids)
         {
@@ -5600,10 +5600,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMaturity type related to multiple entities of Product type
+        ///  Retrieves all entities of ContractMaturity type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of List&lt;ContractMaturity&gt;</returns>
         public async System.Threading.Tasks.Task<List<ContractMaturity>> GetOwnedContractMaturitiesBatchAsync (List<int?> masterids)
         {
@@ -5613,10 +5613,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContractMaturity type related to multiple entities of Product type
+        ///  Retrieves all entities of ContractMaturity type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of ApiResponse (List&lt;ContractMaturity&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<ContractMaturity>>> GetOwnedContractMaturitiesBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -5677,7 +5677,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Contract type related to ContractMaturity type
+        ///  Retrieves all entities of Contract type related to ContractMaturity entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of ContractMaturity entity</param>
@@ -5689,7 +5689,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Contract type related to ContractMaturity type
+        ///  Retrieves all entities of Contract type related to ContractMaturity entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of ContractMaturity entity</param>
@@ -5754,7 +5754,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Contract type related to ContractMaturity type
+        ///  Retrieves all entities of Contract type related to ContractMaturity entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of ContractMaturity entity</param>
@@ -5767,7 +5767,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Contract type related to ContractMaturity type
+        ///  Retrieves all entities of Contract type related to ContractMaturity entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of ContractMaturity entity</param>
@@ -5831,10 +5831,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Contract type related to multiple entities of ContractMaturity type
+        ///  Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of ContractMaturity entity</param>
+        /// <param name="masterids">ids of ContractMaturity entities</param>
         /// <returns>List&lt;Contract&gt;</returns>
         public List<Contract> GetOwnedContractsBatch (List<int?> masterids)
         {
@@ -5843,10 +5843,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Contract type related to multiple entities of ContractMaturity type
+        ///  Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of ContractMaturity entity</param>
+        /// <param name="masterids">ids of ContractMaturity entities</param>
         /// <returns>ApiResponse of List&lt;Contract&gt;</returns>
         public ApiResponse< List<Contract> > GetOwnedContractsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -5908,10 +5908,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Contract type related to multiple entities of ContractMaturity type
+        ///  Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of ContractMaturity entity</param>
+        /// <param name="masterids">ids of ContractMaturity entities</param>
         /// <returns>Task of List&lt;Contract&gt;</returns>
         public async System.Threading.Tasks.Task<List<Contract>> GetOwnedContractsBatchAsync (List<int?> masterids)
         {
@@ -5921,10 +5921,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Contract type related to multiple entities of ContractMaturity type
+        ///  Retrieves all entities of Contract type related to multiple entities of ContractMaturity type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of ContractMaturity entity</param>
+        /// <param name="masterids">ids of ContractMaturity entities</param>
         /// <returns>Task of ApiResponse (List&lt;Contract&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Contract>>> GetOwnedContractsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -5985,7 +5985,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type related to Currency type
+        ///  Retrieves all entities of CurrencyRate type related to Currency entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Currency entity</param>
@@ -5997,7 +5997,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type related to Currency type
+        ///  Retrieves all entities of CurrencyRate type related to Currency entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Currency entity</param>
@@ -6062,7 +6062,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type related to Currency type
+        ///  Retrieves all entities of CurrencyRate type related to Currency entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Currency entity</param>
@@ -6075,7 +6075,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type related to Currency type
+        ///  Retrieves all entities of CurrencyRate type related to Currency entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Currency entity</param>
@@ -6139,10 +6139,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type related to multiple entities of Currency type
+        ///  Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Currency entity</param>
+        /// <param name="masterids">ids of Currency entities</param>
         /// <returns>List&lt;CurrencyRate&gt;</returns>
         public List<CurrencyRate> GetOwnedCurrencyRatesBatch (List<int?> masterids)
         {
@@ -6151,10 +6151,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type related to multiple entities of Currency type
+        ///  Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Currency entity</param>
+        /// <param name="masterids">ids of Currency entities</param>
         /// <returns>ApiResponse of List&lt;CurrencyRate&gt;</returns>
         public ApiResponse< List<CurrencyRate> > GetOwnedCurrencyRatesBatchWithHttpInfo (List<int?> masterids)
         {
@@ -6216,10 +6216,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type related to multiple entities of Currency type
+        ///  Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Currency entity</param>
+        /// <param name="masterids">ids of Currency entities</param>
         /// <returns>Task of List&lt;CurrencyRate&gt;</returns>
         public async System.Threading.Tasks.Task<List<CurrencyRate>> GetOwnedCurrencyRatesBatchAsync (List<int?> masterids)
         {
@@ -6229,10 +6229,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CurrencyRate type related to multiple entities of Currency type
+        ///  Retrieves all entities of CurrencyRate type related to multiple entities of Currency type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Currency entity</param>
+        /// <param name="masterids">ids of Currency entities</param>
         /// <returns>Task of ApiResponse (List&lt;CurrencyRate&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<CurrencyRate>>> GetOwnedCurrencyRatesBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -6293,7 +6293,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductSession type related to Product type
+        ///  Retrieves all entities of ProductSession type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -6305,7 +6305,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductSession type related to Product type
+        ///  Retrieves all entities of ProductSession type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -6370,7 +6370,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductSession type related to Product type
+        ///  Retrieves all entities of ProductSession type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -6383,7 +6383,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductSession type related to Product type
+        ///  Retrieves all entities of ProductSession type related to Product entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Product entity</param>
@@ -6447,10 +6447,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductSession type related to multiple entities of Product type
+        ///  Retrieves all entities of ProductSession type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>List&lt;ProductSession&gt;</returns>
         public List<ProductSession> GetOwnedProductSessionsBatch (List<int?> masterids)
         {
@@ -6459,10 +6459,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductSession type related to multiple entities of Product type
+        ///  Retrieves all entities of ProductSession type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>ApiResponse of List&lt;ProductSession&gt;</returns>
         public ApiResponse< List<ProductSession> > GetOwnedProductSessionsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -6524,10 +6524,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductSession type related to multiple entities of Product type
+        ///  Retrieves all entities of ProductSession type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of List&lt;ProductSession&gt;</returns>
         public async System.Threading.Tasks.Task<List<ProductSession>> GetOwnedProductSessionsBatchAsync (List<int?> masterids)
         {
@@ -6537,10 +6537,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ProductSession type related to multiple entities of Product type
+        ///  Retrieves all entities of ProductSession type related to multiple entities of Product type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Product entity</param>
+        /// <param name="masterids">ids of Product entities</param>
         /// <returns>Task of ApiResponse (List&lt;ProductSession&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<ProductSession>>> GetOwnedProductSessionsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -6601,7 +6601,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type related to Exchange type
+        ///  Retrieves all entities of Product type related to Exchange entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Exchange entity</param>
@@ -6613,7 +6613,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type related to Exchange type
+        ///  Retrieves all entities of Product type related to Exchange entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Exchange entity</param>
@@ -6678,7 +6678,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type related to Exchange type
+        ///  Retrieves all entities of Product type related to Exchange entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Exchange entity</param>
@@ -6691,7 +6691,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type related to Exchange type
+        ///  Retrieves all entities of Product type related to Exchange entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Exchange entity</param>
@@ -6755,10 +6755,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type related to multiple entities of Exchange type
+        ///  Retrieves all entities of Product type related to multiple entities of Exchange type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Exchange entity</param>
+        /// <param name="masterids">ids of Exchange entities</param>
         /// <returns>List&lt;Product&gt;</returns>
         public List<Product> GetOwnedProductsBatch (List<int?> masterids)
         {
@@ -6767,10 +6767,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type related to multiple entities of Exchange type
+        ///  Retrieves all entities of Product type related to multiple entities of Exchange type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Exchange entity</param>
+        /// <param name="masterids">ids of Exchange entities</param>
         /// <returns>ApiResponse of List&lt;Product&gt;</returns>
         public ApiResponse< List<Product> > GetOwnedProductsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -6832,10 +6832,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type related to multiple entities of Exchange type
+        ///  Retrieves all entities of Product type related to multiple entities of Exchange type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Exchange entity</param>
+        /// <param name="masterids">ids of Exchange entities</param>
         /// <returns>Task of List&lt;Product&gt;</returns>
         public async System.Threading.Tasks.Task<List<Product>> GetOwnedProductsBatchAsync (List<int?> masterids)
         {
@@ -6845,10 +6845,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Product type related to multiple entities of Exchange type
+        ///  Retrieves all entities of Product type related to multiple entities of Exchange type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Exchange entity</param>
+        /// <param name="masterids">ids of Exchange entities</param>
         /// <returns>Task of ApiResponse (List&lt;Product&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Product>>> GetOwnedProductsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -6909,7 +6909,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Product type by its id
+        ///  Retrieves an entity of Product type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6921,7 +6921,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Product type by its id
+        ///  Retrieves an entity of Product type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6986,7 +6986,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Product type by its id
+        ///  Retrieves an entity of Product type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6999,7 +6999,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Product type by its id
+        ///  Retrieves an entity of Product type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7231,7 +7231,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ProductSession type by its id
+        ///  Retrieves an entity of ProductSession type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7243,7 +7243,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ProductSession type by its id
+        ///  Retrieves an entity of ProductSession type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7308,7 +7308,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ProductSession type by its id
+        ///  Retrieves an entity of ProductSession type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7321,7 +7321,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ProductSession type by its id
+        ///  Retrieves an entity of ProductSession type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7385,7 +7385,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ProductSession type by its ids
+        ///  Retrieves multiple entities of ProductSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7397,7 +7397,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ProductSession type by its ids
+        ///  Retrieves multiple entities of ProductSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7462,7 +7462,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ProductSession type by its ids
+        ///  Retrieves multiple entities of ProductSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7475,7 +7475,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ProductSession type by its ids
+        ///  Retrieves multiple entities of ProductSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7539,7 +7539,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Product type by its ids
+        ///  Retrieves multiple entities of Product type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7551,7 +7551,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Product type by its ids
+        ///  Retrieves multiple entities of Product type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7616,7 +7616,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Product type by its ids
+        ///  Retrieves multiple entities of Product type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7629,7 +7629,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Product type by its ids
+        ///  Retrieves multiple entities of Product type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7693,7 +7693,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of SpreadDefinition type by its id
+        ///  Retrieves an entity of SpreadDefinition type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7705,7 +7705,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of SpreadDefinition type by its id
+        ///  Retrieves an entity of SpreadDefinition type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7770,7 +7770,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of SpreadDefinition type by its id
+        ///  Retrieves an entity of SpreadDefinition type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7783,7 +7783,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of SpreadDefinition type by its id
+        ///  Retrieves an entity of SpreadDefinition type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7847,7 +7847,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of SpreadDefinition type by its ids
+        ///  Retrieves multiple entities of SpreadDefinition type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7859,7 +7859,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of SpreadDefinition type by its ids
+        ///  Retrieves multiple entities of SpreadDefinition type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7924,7 +7924,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of SpreadDefinition type by its ids
+        ///  Retrieves multiple entities of SpreadDefinition type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7937,7 +7937,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of SpreadDefinition type by its ids
+        ///  Retrieves multiple entities of SpreadDefinition type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -8169,7 +8169,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8182,7 +8182,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8252,7 +8252,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8266,7 +8266,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ContractGroup type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ContractGroup type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8335,7 +8335,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Contract type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8348,7 +8348,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Contract type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8418,7 +8418,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Contract type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8432,7 +8432,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Contract type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Contract type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8501,7 +8501,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Currency type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8514,7 +8514,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Currency type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8584,7 +8584,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Currency type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8598,7 +8598,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Currency type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Currency type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8667,7 +8667,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Exchange type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8680,7 +8680,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Exchange type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8750,7 +8750,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Exchange type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8764,7 +8764,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Exchange type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Exchange type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8833,7 +8833,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Product type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8846,7 +8846,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Product type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8916,7 +8916,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Product type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -8930,7 +8930,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Product type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Product type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>

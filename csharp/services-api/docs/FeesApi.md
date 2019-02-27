@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.FeesApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -27,7 +27,7 @@ Method | HTTP request | Description
 
 
 
-Finds an entity of MarketDataSubscriptionExchangeScope type by its name
+Retrieves an entity of MarketDataSubscriptionExchangeScope type by its name
 
 ### Example
 ```csharp
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of MarketDataSubscriptionPlan type by its name
+Retrieves an entity of MarketDataSubscriptionPlan type by its name
 
 ### Example
 ```csharp
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of TradovateSubscriptionPlan type by its name
+Retrieves an entity of TradovateSubscriptionPlan type by its name
 
 ### Example
 ```csharp
@@ -225,7 +225,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of MarketDataSubscriptionExchangeScope type
+Retrieves all entities of MarketDataSubscriptionExchangeScope type
 
 ### Example
 ```csharp
@@ -287,7 +287,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of MarketDataSubscriptionPlan type
+Retrieves all entities of MarketDataSubscriptionPlan type
 
 ### Example
 ```csharp
@@ -349,7 +349,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of TradovateSubscriptionPlan type
+Retrieves all entities of TradovateSubscriptionPlan type
 
 ### Example
 ```csharp
@@ -411,7 +411,7 @@ This endpoint does not need any parameter.
 
 
 
-Finds an entity of MarketDataSubscriptionExchangeScope type by its id
+Retrieves an entity of MarketDataSubscriptionExchangeScope type by its id
 
 ### Example
 ```csharp
@@ -477,7 +477,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of MarketDataSubscriptionExchangeScope type by its ids
+Retrieves multiple entities of MarketDataSubscriptionExchangeScope type by its ids
 
 ### Example
 ```csharp
@@ -543,7 +543,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of MarketDataSubscriptionPlan type by its id
+Retrieves an entity of MarketDataSubscriptionPlan type by its id
 
 ### Example
 ```csharp
@@ -609,7 +609,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of MarketDataSubscriptionPlan type by its ids
+Retrieves multiple entities of MarketDataSubscriptionPlan type by its ids
 
 ### Example
 ```csharp
@@ -675,7 +675,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of TradovateSubscriptionPlan type by its id
+Retrieves an entity of TradovateSubscriptionPlan type by its id
 
 ### Example
 ```csharp
@@ -741,7 +741,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of TradovateSubscriptionPlan type by its ids
+Retrieves multiple entities of TradovateSubscriptionPlan type by its ids
 
 ### Example
 ```csharp
@@ -807,7 +807,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of MarketDataSubscriptionExchangeScope type filtered by occurence of a text in one of its fields
+Retrieves entities of MarketDataSubscriptionExchangeScope type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -875,7 +875,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of MarketDataSubscriptionPlan type filtered by occurence of a text in one of its fields
+Retrieves entities of MarketDataSubscriptionPlan type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -943,7 +943,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of TradovateSubscriptionPlan type filtered by occurence of a text in one of its fields
+Retrieves entities of TradovateSubscriptionPlan type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp

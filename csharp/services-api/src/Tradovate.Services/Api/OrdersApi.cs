@@ -61,7 +61,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ExecutionReport type by its name
+        /// Retrieves an entity of ExecutionReport type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -72,7 +72,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ExecutionReport type by its name
+        /// Retrieves an entity of ExecutionReport type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -82,7 +82,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type
+        /// Retrieves all entities of CommandReport type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;CommandReport&gt;</returns>
@@ -92,7 +92,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type
+        /// Retrieves all entities of CommandReport type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;CommandReport&gt;</returns>
@@ -101,7 +101,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type
+        /// Retrieves all entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Command&gt;</returns>
@@ -111,7 +111,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type
+        /// Retrieves all entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Command&gt;</returns>
@@ -120,7 +120,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type
+        /// Retrieves all entities of ExecutionReport type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;ExecutionReport&gt;</returns>
@@ -130,7 +130,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type
+        /// Retrieves all entities of ExecutionReport type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;ExecutionReport&gt;</returns>
@@ -139,7 +139,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type
+        /// Retrieves all entities of FillFee type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;FillFee&gt;</returns>
@@ -149,7 +149,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type
+        /// Retrieves all entities of FillFee type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;FillFee&gt;</returns>
@@ -158,7 +158,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type
+        /// Retrieves all entities of Fill type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Fill&gt;</returns>
@@ -168,7 +168,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type
+        /// Retrieves all entities of Fill type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Fill&gt;</returns>
@@ -177,7 +177,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type
+        /// Retrieves all entities of OrderStrategy type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;OrderStrategy&gt;</returns>
@@ -187,7 +187,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type
+        /// Retrieves all entities of OrderStrategy type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;OrderStrategy&gt;</returns>
@@ -196,7 +196,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type
+        /// Retrieves all entities of OrderStrategyLink type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;OrderStrategyLink&gt;</returns>
@@ -206,7 +206,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type
+        /// Retrieves all entities of OrderStrategyLink type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;OrderStrategyLink&gt;</returns>
@@ -215,26 +215,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLog type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;OrderStrategyLog&gt;</returns>
-        List<OrderStrategyLog> GetAllOrderStrategyLogs ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderStrategyLog type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;OrderStrategyLog&gt;</returns>
-        ApiResponse<List<OrderStrategyLog>> GetAllOrderStrategyLogsWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderVersion type
+        /// Retrieves all entities of OrderVersion type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;OrderVersion&gt;</returns>
@@ -244,7 +225,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderVersion type
+        /// Retrieves all entities of OrderVersion type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;OrderVersion&gt;</returns>
@@ -253,7 +234,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type
+        /// Retrieves all entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Order&gt;</returns>
@@ -263,7 +244,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type
+        /// Retrieves all entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Order&gt;</returns>
@@ -272,7 +253,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Command type by its id
+        /// Retrieves an entity of Command type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -283,7 +264,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Command type by its id
+        /// Retrieves an entity of Command type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -293,7 +274,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CommandReport type by its id
+        /// Retrieves an entity of CommandReport type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -304,7 +285,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CommandReport type by its id
+        /// Retrieves an entity of CommandReport type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -314,7 +295,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CommandReport type by its ids
+        /// Retrieves multiple entities of CommandReport type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -325,7 +306,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CommandReport type by its ids
+        /// Retrieves multiple entities of CommandReport type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -335,7 +316,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Command type by its ids
+        /// Retrieves multiple entities of Command type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -346,7 +327,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Command type by its ids
+        /// Retrieves multiple entities of Command type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -356,7 +337,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ExecutionReport type by its id
+        /// Retrieves an entity of ExecutionReport type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -367,7 +348,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ExecutionReport type by its id
+        /// Retrieves an entity of ExecutionReport type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -377,7 +358,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ExecutionReport type by its ids
+        /// Retrieves multiple entities of ExecutionReport type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -388,7 +369,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ExecutionReport type by its ids
+        /// Retrieves multiple entities of ExecutionReport type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -398,7 +379,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Fill type by its id
+        /// Retrieves an entity of Fill type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -409,7 +390,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Fill type by its id
+        /// Retrieves an entity of Fill type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -419,7 +400,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of FillFee type by its id
+        /// Retrieves an entity of FillFee type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -430,7 +411,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of FillFee type by its id
+        /// Retrieves an entity of FillFee type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -440,7 +421,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of FillFee type by its ids
+        /// Retrieves multiple entities of FillFee type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -451,7 +432,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of FillFee type by its ids
+        /// Retrieves multiple entities of FillFee type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -461,7 +442,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Fill type by its ids
+        /// Retrieves multiple entities of Fill type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -472,7 +453,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Fill type by its ids
+        /// Retrieves multiple entities of Fill type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -482,7 +463,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Order type by its id
+        /// Retrieves an entity of Order type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -493,7 +474,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Order type by its id
+        /// Retrieves an entity of Order type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -503,7 +484,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategy type by its ids
+        /// Retrieves multiple entities of OrderStrategy type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -514,7 +495,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategy type by its ids
+        /// Retrieves multiple entities of OrderStrategy type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -524,7 +505,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategy type by its id
+        /// Retrieves an entity of OrderStrategy type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -535,7 +516,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategy type by its id
+        /// Retrieves an entity of OrderStrategy type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -545,7 +526,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyLink type by its id
+        /// Retrieves an entity of OrderStrategyLink type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -556,7 +537,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyLink type by its id
+        /// Retrieves an entity of OrderStrategyLink type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -566,7 +547,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategyLink type by its ids
+        /// Retrieves multiple entities of OrderStrategyLink type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -577,7 +558,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategyLink type by its ids
+        /// Retrieves multiple entities of OrderStrategyLink type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -587,49 +568,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyLog type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>OrderStrategyLog</returns>
-        OrderStrategyLog GetOrderStrategyLog (int? id);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of OrderStrategyLog type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>ApiResponse of OrderStrategyLog</returns>
-        ApiResponse<OrderStrategyLog> GetOrderStrategyLogWithHttpInfo (int? id);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of OrderStrategyLog type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>List&lt;OrderStrategyLog&gt;</returns>
-        List<OrderStrategyLog> GetOrderStrategyLogs (List<int?> ids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of OrderStrategyLog type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>ApiResponse of List&lt;OrderStrategyLog&gt;</returns>
-        ApiResponse<List<OrderStrategyLog>> GetOrderStrategyLogsWithHttpInfo (List<int?> ids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of OrderVersion type by its id
+        /// Retrieves an entity of OrderVersion type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -640,7 +579,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderVersion type by its id
+        /// Retrieves an entity of OrderVersion type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -650,7 +589,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderVersion type by its ids
+        /// Retrieves multiple entities of OrderVersion type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -661,7 +600,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderVersion type by its ids
+        /// Retrieves multiple entities of OrderVersion type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -671,7 +610,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Order type by its ids
+        /// Retrieves multiple entities of Order type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -682,7 +621,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Order type by its ids
+        /// Retrieves multiple entities of Order type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -692,7 +631,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type related to Command type
+        /// Retrieves all entities of CommandReport type related to Command entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -703,7 +642,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type related to Command type
+        /// Retrieves all entities of CommandReport type related to Command entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -713,10 +652,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type related to multiple entities of Command type
+        /// Retrieves all entities of CommandReport type related to multiple entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>List&lt;CommandReport&gt;</returns>
         List<CommandReport> GetOwnedCommandReportsBatch (List<int?> masterids);
 
@@ -724,17 +663,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type related to multiple entities of Command type
+        /// Retrieves all entities of CommandReport type related to multiple entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>ApiResponse of List&lt;CommandReport&gt;</returns>
         ApiResponse<List<CommandReport>> GetOwnedCommandReportsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type related to Order type
+        /// Retrieves all entities of Command type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -745,7 +684,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type related to Order type
+        /// Retrieves all entities of Command type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -755,10 +694,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type related to multiple entities of Order type
+        /// Retrieves all entities of Command type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>List&lt;Command&gt;</returns>
         List<Command> GetOwnedCommandsBatch (List<int?> masterids);
 
@@ -766,17 +705,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type related to multiple entities of Order type
+        /// Retrieves all entities of Command type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>ApiResponse of List&lt;Command&gt;</returns>
         ApiResponse<List<Command>> GetOwnedCommandsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type related to Command type
+        /// Retrieves all entities of ExecutionReport type related to Command entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -787,7 +726,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type related to Command type
+        /// Retrieves all entities of ExecutionReport type related to Command entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -797,10 +736,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type related to multiple entities of Command type
+        /// Retrieves all entities of ExecutionReport type related to multiple entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>List&lt;ExecutionReport&gt;</returns>
         List<ExecutionReport> GetOwnedExecutionReportsBatch (List<int?> masterids);
 
@@ -808,17 +747,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type related to multiple entities of Command type
+        /// Retrieves all entities of ExecutionReport type related to multiple entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>ApiResponse of List&lt;ExecutionReport&gt;</returns>
         ApiResponse<List<ExecutionReport>> GetOwnedExecutionReportsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type related to Fill type
+        /// Retrieves all entities of FillFee type related to Fill entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Fill entity</param>
@@ -829,7 +768,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type related to Fill type
+        /// Retrieves all entities of FillFee type related to Fill entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Fill entity</param>
@@ -839,10 +778,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type related to multiple entities of Fill type
+        /// Retrieves all entities of FillFee type related to multiple entities of Fill type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Fill entity</param>
+        /// <param name="masterids">ids of Fill entities</param>
         /// <returns>List&lt;FillFee&gt;</returns>
         List<FillFee> GetOwnedFillFeesBatch (List<int?> masterids);
 
@@ -850,17 +789,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type related to multiple entities of Fill type
+        /// Retrieves all entities of FillFee type related to multiple entities of Fill type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Fill entity</param>
+        /// <param name="masterids">ids of Fill entities</param>
         /// <returns>ApiResponse of List&lt;FillFee&gt;</returns>
         ApiResponse<List<FillFee>> GetOwnedFillFeesBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type related to Order type
+        /// Retrieves all entities of Fill type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -871,7 +810,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type related to Order type
+        /// Retrieves all entities of Fill type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -881,10 +820,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type related to multiple entities of Order type
+        /// Retrieves all entities of Fill type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>List&lt;Fill&gt;</returns>
         List<Fill> GetOwnedFillsBatch (List<int?> masterids);
 
@@ -892,17 +831,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type related to multiple entities of Order type
+        /// Retrieves all entities of Fill type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>ApiResponse of List&lt;Fill&gt;</returns>
         ApiResponse<List<Fill>> GetOwnedFillsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type related to Account type
+        /// Retrieves all entities of OrderStrategy type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -913,7 +852,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type related to Account type
+        /// Retrieves all entities of OrderStrategy type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -923,10 +862,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type related to multiple entities of Account type
+        /// Retrieves all entities of OrderStrategy type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;OrderStrategy&gt;</returns>
         List<OrderStrategy> GetOwnedOrderStrategiesBatch (List<int?> masterids);
 
@@ -934,17 +873,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type related to multiple entities of Account type
+        /// Retrieves all entities of OrderStrategy type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;OrderStrategy&gt;</returns>
         ApiResponse<List<OrderStrategy>> GetOwnedOrderStrategiesBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type related to OrderStrategy type
+        /// Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of OrderStrategy entity</param>
@@ -955,7 +894,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type related to OrderStrategy type
+        /// Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of OrderStrategy entity</param>
@@ -965,10 +904,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+        /// Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
+        /// <param name="masterids">ids of OrderStrategy entities</param>
         /// <returns>List&lt;OrderStrategyLink&gt;</returns>
         List<OrderStrategyLink> GetOwnedOrderStrategyLinksBatch (List<int?> masterids);
 
@@ -976,59 +915,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+        /// Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
+        /// <param name="masterids">ids of OrderStrategy entities</param>
         /// <returns>ApiResponse of List&lt;OrderStrategyLink&gt;</returns>
         ApiResponse<List<OrderStrategyLink>> GetOwnedOrderStrategyLinksBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLog type related to OrderStrategy type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of OrderStrategy entity</param>
-        /// <returns>List&lt;OrderStrategyLog&gt;</returns>
-        List<OrderStrategyLog> GetOwnedOrderStrategyLogs (int? masterid);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderStrategyLog type related to OrderStrategy type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of OrderStrategy entity</param>
-        /// <returns>ApiResponse of List&lt;OrderStrategyLog&gt;</returns>
-        ApiResponse<List<OrderStrategyLog>> GetOwnedOrderStrategyLogsWithHttpInfo (int? masterid);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
-        /// <returns>List&lt;OrderStrategyLog&gt;</returns>
-        List<OrderStrategyLog> GetOwnedOrderStrategyLogsBatch (List<int?> masterids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
-        /// <returns>ApiResponse of List&lt;OrderStrategyLog&gt;</returns>
-        ApiResponse<List<OrderStrategyLog>> GetOwnedOrderStrategyLogsBatchWithHttpInfo (List<int?> masterids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderVersion type related to Order type
+        /// Retrieves all entities of OrderVersion type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -1039,7 +936,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderVersion type related to Order type
+        /// Retrieves all entities of OrderVersion type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -1049,10 +946,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderVersion type related to multiple entities of Order type
+        /// Retrieves all entities of OrderVersion type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>List&lt;OrderVersion&gt;</returns>
         List<OrderVersion> GetOwnedOrderVersionsBatch (List<int?> masterids);
 
@@ -1060,17 +957,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderVersion type related to multiple entities of Order type
+        /// Retrieves all entities of OrderVersion type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>ApiResponse of List&lt;OrderVersion&gt;</returns>
         ApiResponse<List<OrderVersion>> GetOwnedOrderVersionsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type related to Account type
+        /// Retrieves all entities of Order type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -1081,7 +978,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type related to Account type
+        /// Retrieves all entities of Order type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -1091,10 +988,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type related to multiple entities of Account type
+        /// Retrieves all entities of Order type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;Order&gt;</returns>
         List<Order> GetOwnedOrdersBatch (List<int?> masterids);
 
@@ -1102,10 +999,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type related to multiple entities of Account type
+        /// Retrieves all entities of Order type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;Order&gt;</returns>
         ApiResponse<List<Order>> GetOwnedOrdersBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
@@ -1280,7 +1177,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1292,7 +1189,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1326,7 +1223,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ExecutionReport type by its name
+        /// Retrieves an entity of ExecutionReport type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1337,7 +1234,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ExecutionReport type by its name
+        /// Retrieves an entity of ExecutionReport type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1347,7 +1244,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type
+        /// Retrieves all entities of CommandReport type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;CommandReport&gt;</returns>
@@ -1357,7 +1254,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type
+        /// Retrieves all entities of CommandReport type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;CommandReport&gt;)</returns>
@@ -1366,7 +1263,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type
+        /// Retrieves all entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Command&gt;</returns>
@@ -1376,7 +1273,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type
+        /// Retrieves all entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Command&gt;)</returns>
@@ -1385,7 +1282,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type
+        /// Retrieves all entities of ExecutionReport type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;ExecutionReport&gt;</returns>
@@ -1395,7 +1292,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type
+        /// Retrieves all entities of ExecutionReport type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;ExecutionReport&gt;)</returns>
@@ -1404,7 +1301,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type
+        /// Retrieves all entities of FillFee type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;FillFee&gt;</returns>
@@ -1414,7 +1311,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type
+        /// Retrieves all entities of FillFee type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;FillFee&gt;)</returns>
@@ -1423,7 +1320,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type
+        /// Retrieves all entities of Fill type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Fill&gt;</returns>
@@ -1433,7 +1330,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type
+        /// Retrieves all entities of Fill type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Fill&gt;)</returns>
@@ -1442,7 +1339,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type
+        /// Retrieves all entities of OrderStrategy type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;OrderStrategy&gt;</returns>
@@ -1452,7 +1349,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type
+        /// Retrieves all entities of OrderStrategy type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategy&gt;)</returns>
@@ -1461,7 +1358,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type
+        /// Retrieves all entities of OrderStrategyLink type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;OrderStrategyLink&gt;</returns>
@@ -1471,7 +1368,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type
+        /// Retrieves all entities of OrderStrategyLink type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategyLink&gt;)</returns>
@@ -1480,26 +1377,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLog type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;OrderStrategyLog&gt;</returns>
-        System.Threading.Tasks.Task<List<OrderStrategyLog>> GetAllOrderStrategyLogsAsync ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderStrategyLog type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;OrderStrategyLog&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLog>>> GetAllOrderStrategyLogsAsyncWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderVersion type
+        /// Retrieves all entities of OrderVersion type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;OrderVersion&gt;</returns>
@@ -1509,7 +1387,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderVersion type
+        /// Retrieves all entities of OrderVersion type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;OrderVersion&gt;)</returns>
@@ -1518,7 +1396,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type
+        /// Retrieves all entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Order&gt;</returns>
@@ -1528,7 +1406,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type
+        /// Retrieves all entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Order&gt;)</returns>
@@ -1537,7 +1415,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Command type by its id
+        /// Retrieves an entity of Command type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1548,7 +1426,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Command type by its id
+        /// Retrieves an entity of Command type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1558,7 +1436,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CommandReport type by its id
+        /// Retrieves an entity of CommandReport type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1569,7 +1447,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of CommandReport type by its id
+        /// Retrieves an entity of CommandReport type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1579,7 +1457,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CommandReport type by its ids
+        /// Retrieves multiple entities of CommandReport type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1590,7 +1468,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of CommandReport type by its ids
+        /// Retrieves multiple entities of CommandReport type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1600,7 +1478,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Command type by its ids
+        /// Retrieves multiple entities of Command type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1611,7 +1489,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Command type by its ids
+        /// Retrieves multiple entities of Command type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1621,7 +1499,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ExecutionReport type by its id
+        /// Retrieves an entity of ExecutionReport type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1632,7 +1510,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ExecutionReport type by its id
+        /// Retrieves an entity of ExecutionReport type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1642,7 +1520,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ExecutionReport type by its ids
+        /// Retrieves multiple entities of ExecutionReport type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1653,7 +1531,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ExecutionReport type by its ids
+        /// Retrieves multiple entities of ExecutionReport type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1663,7 +1541,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Fill type by its id
+        /// Retrieves an entity of Fill type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1674,7 +1552,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Fill type by its id
+        /// Retrieves an entity of Fill type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1684,7 +1562,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of FillFee type by its id
+        /// Retrieves an entity of FillFee type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1695,7 +1573,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of FillFee type by its id
+        /// Retrieves an entity of FillFee type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1705,7 +1583,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of FillFee type by its ids
+        /// Retrieves multiple entities of FillFee type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1716,7 +1594,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of FillFee type by its ids
+        /// Retrieves multiple entities of FillFee type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1726,7 +1604,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Fill type by its ids
+        /// Retrieves multiple entities of Fill type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1737,7 +1615,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Fill type by its ids
+        /// Retrieves multiple entities of Fill type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1747,7 +1625,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Order type by its id
+        /// Retrieves an entity of Order type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1758,7 +1636,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Order type by its id
+        /// Retrieves an entity of Order type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1768,7 +1646,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategy type by its ids
+        /// Retrieves multiple entities of OrderStrategy type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1779,7 +1657,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategy type by its ids
+        /// Retrieves multiple entities of OrderStrategy type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1789,7 +1667,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategy type by its id
+        /// Retrieves an entity of OrderStrategy type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1800,7 +1678,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategy type by its id
+        /// Retrieves an entity of OrderStrategy type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1810,7 +1688,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyLink type by its id
+        /// Retrieves an entity of OrderStrategyLink type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1821,7 +1699,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyLink type by its id
+        /// Retrieves an entity of OrderStrategyLink type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1831,7 +1709,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategyLink type by its ids
+        /// Retrieves multiple entities of OrderStrategyLink type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1842,7 +1720,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderStrategyLink type by its ids
+        /// Retrieves multiple entities of OrderStrategyLink type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1852,49 +1730,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderStrategyLog type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of OrderStrategyLog</returns>
-        System.Threading.Tasks.Task<OrderStrategyLog> GetOrderStrategyLogAsync (int? id);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of OrderStrategyLog type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of ApiResponse (OrderStrategyLog)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OrderStrategyLog>> GetOrderStrategyLogAsyncWithHttpInfo (int? id);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of OrderStrategyLog type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of List&lt;OrderStrategyLog&gt;</returns>
-        System.Threading.Tasks.Task<List<OrderStrategyLog>> GetOrderStrategyLogsAsync (List<int?> ids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of OrderStrategyLog type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of ApiResponse (List&lt;OrderStrategyLog&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLog>>> GetOrderStrategyLogsAsyncWithHttpInfo (List<int?> ids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of OrderVersion type by its id
+        /// Retrieves an entity of OrderVersion type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1905,7 +1741,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of OrderVersion type by its id
+        /// Retrieves an entity of OrderVersion type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1915,7 +1751,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderVersion type by its ids
+        /// Retrieves multiple entities of OrderVersion type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1926,7 +1762,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of OrderVersion type by its ids
+        /// Retrieves multiple entities of OrderVersion type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1936,7 +1772,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Order type by its ids
+        /// Retrieves multiple entities of Order type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1947,7 +1783,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Order type by its ids
+        /// Retrieves multiple entities of Order type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1957,7 +1793,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type related to Command type
+        /// Retrieves all entities of CommandReport type related to Command entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -1968,7 +1804,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type related to Command type
+        /// Retrieves all entities of CommandReport type related to Command entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -1978,10 +1814,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type related to multiple entities of Command type
+        /// Retrieves all entities of CommandReport type related to multiple entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>Task of List&lt;CommandReport&gt;</returns>
         System.Threading.Tasks.Task<List<CommandReport>> GetOwnedCommandReportsBatchAsync (List<int?> masterids);
 
@@ -1989,17 +1825,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of CommandReport type related to multiple entities of Command type
+        /// Retrieves all entities of CommandReport type related to multiple entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>Task of ApiResponse (List&lt;CommandReport&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<CommandReport>>> GetOwnedCommandReportsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type related to Order type
+        /// Retrieves all entities of Command type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -2010,7 +1846,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type related to Order type
+        /// Retrieves all entities of Command type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -2020,10 +1856,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type related to multiple entities of Order type
+        /// Retrieves all entities of Command type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of List&lt;Command&gt;</returns>
         System.Threading.Tasks.Task<List<Command>> GetOwnedCommandsBatchAsync (List<int?> masterids);
 
@@ -2031,17 +1867,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Command type related to multiple entities of Order type
+        /// Retrieves all entities of Command type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of ApiResponse (List&lt;Command&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Command>>> GetOwnedCommandsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type related to Command type
+        /// Retrieves all entities of ExecutionReport type related to Command entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -2052,7 +1888,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type related to Command type
+        /// Retrieves all entities of ExecutionReport type related to Command entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -2062,10 +1898,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type related to multiple entities of Command type
+        /// Retrieves all entities of ExecutionReport type related to multiple entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>Task of List&lt;ExecutionReport&gt;</returns>
         System.Threading.Tasks.Task<List<ExecutionReport>> GetOwnedExecutionReportsBatchAsync (List<int?> masterids);
 
@@ -2073,17 +1909,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ExecutionReport type related to multiple entities of Command type
+        /// Retrieves all entities of ExecutionReport type related to multiple entities of Command type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>Task of ApiResponse (List&lt;ExecutionReport&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<ExecutionReport>>> GetOwnedExecutionReportsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type related to Fill type
+        /// Retrieves all entities of FillFee type related to Fill entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Fill entity</param>
@@ -2094,7 +1930,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type related to Fill type
+        /// Retrieves all entities of FillFee type related to Fill entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Fill entity</param>
@@ -2104,10 +1940,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type related to multiple entities of Fill type
+        /// Retrieves all entities of FillFee type related to multiple entities of Fill type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Fill entity</param>
+        /// <param name="masterids">ids of Fill entities</param>
         /// <returns>Task of List&lt;FillFee&gt;</returns>
         System.Threading.Tasks.Task<List<FillFee>> GetOwnedFillFeesBatchAsync (List<int?> masterids);
 
@@ -2115,17 +1951,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of FillFee type related to multiple entities of Fill type
+        /// Retrieves all entities of FillFee type related to multiple entities of Fill type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Fill entity</param>
+        /// <param name="masterids">ids of Fill entities</param>
         /// <returns>Task of ApiResponse (List&lt;FillFee&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<FillFee>>> GetOwnedFillFeesBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type related to Order type
+        /// Retrieves all entities of Fill type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -2136,7 +1972,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type related to Order type
+        /// Retrieves all entities of Fill type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -2146,10 +1982,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type related to multiple entities of Order type
+        /// Retrieves all entities of Fill type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of List&lt;Fill&gt;</returns>
         System.Threading.Tasks.Task<List<Fill>> GetOwnedFillsBatchAsync (List<int?> masterids);
 
@@ -2157,17 +1993,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Fill type related to multiple entities of Order type
+        /// Retrieves all entities of Fill type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of ApiResponse (List&lt;Fill&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Fill>>> GetOwnedFillsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type related to Account type
+        /// Retrieves all entities of OrderStrategy type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -2178,7 +2014,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type related to Account type
+        /// Retrieves all entities of OrderStrategy type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -2188,10 +2024,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type related to multiple entities of Account type
+        /// Retrieves all entities of OrderStrategy type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;OrderStrategy&gt;</returns>
         System.Threading.Tasks.Task<List<OrderStrategy>> GetOwnedOrderStrategiesBatchAsync (List<int?> masterids);
 
@@ -2199,17 +2035,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategy type related to multiple entities of Account type
+        /// Retrieves all entities of OrderStrategy type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategy&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<OrderStrategy>>> GetOwnedOrderStrategiesBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type related to OrderStrategy type
+        /// Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of OrderStrategy entity</param>
@@ -2220,7 +2056,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type related to OrderStrategy type
+        /// Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of OrderStrategy entity</param>
@@ -2230,10 +2066,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+        /// Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
+        /// <param name="masterids">ids of OrderStrategy entities</param>
         /// <returns>Task of List&lt;OrderStrategyLink&gt;</returns>
         System.Threading.Tasks.Task<List<OrderStrategyLink>> GetOwnedOrderStrategyLinksBatchAsync (List<int?> masterids);
 
@@ -2241,59 +2077,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+        /// Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
+        /// <param name="masterids">ids of OrderStrategy entities</param>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategyLink&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLink>>> GetOwnedOrderStrategyLinksBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderStrategyLog type related to OrderStrategy type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of OrderStrategy entity</param>
-        /// <returns>Task of List&lt;OrderStrategyLog&gt;</returns>
-        System.Threading.Tasks.Task<List<OrderStrategyLog>> GetOwnedOrderStrategyLogsAsync (int? masterid);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderStrategyLog type related to OrderStrategy type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of OrderStrategy entity</param>
-        /// <returns>Task of ApiResponse (List&lt;OrderStrategyLog&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLog>>> GetOwnedOrderStrategyLogsAsyncWithHttpInfo (int? masterid);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
-        /// <returns>Task of List&lt;OrderStrategyLog&gt;</returns>
-        System.Threading.Tasks.Task<List<OrderStrategyLog>> GetOwnedOrderStrategyLogsBatchAsync (List<int?> masterids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
-        /// <returns>Task of ApiResponse (List&lt;OrderStrategyLog&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLog>>> GetOwnedOrderStrategyLogsBatchAsyncWithHttpInfo (List<int?> masterids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of OrderVersion type related to Order type
+        /// Retrieves all entities of OrderVersion type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -2304,7 +2098,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderVersion type related to Order type
+        /// Retrieves all entities of OrderVersion type related to Order entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -2314,10 +2108,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderVersion type related to multiple entities of Order type
+        /// Retrieves all entities of OrderVersion type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of List&lt;OrderVersion&gt;</returns>
         System.Threading.Tasks.Task<List<OrderVersion>> GetOwnedOrderVersionsBatchAsync (List<int?> masterids);
 
@@ -2325,17 +2119,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of OrderVersion type related to multiple entities of Order type
+        /// Retrieves all entities of OrderVersion type related to multiple entities of Order type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of ApiResponse (List&lt;OrderVersion&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<OrderVersion>>> GetOwnedOrderVersionsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type related to Account type
+        /// Retrieves all entities of Order type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -2346,7 +2140,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type related to Account type
+        /// Retrieves all entities of Order type related to Account entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -2356,10 +2150,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type related to multiple entities of Account type
+        /// Retrieves all entities of Order type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;Order&gt;</returns>
         System.Threading.Tasks.Task<List<Order>> GetOwnedOrdersBatchAsync (List<int?> masterids);
 
@@ -2367,10 +2161,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Order type related to multiple entities of Account type
+        /// Retrieves all entities of Order type related to multiple entities of Account type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;Order&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Order>>> GetOwnedOrdersBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
@@ -2545,7 +2339,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2557,7 +2351,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -2845,7 +2639,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ExecutionReport type by its name
+        ///  Retrieves an entity of ExecutionReport type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2857,7 +2651,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ExecutionReport type by its name
+        ///  Retrieves an entity of ExecutionReport type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2922,7 +2716,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ExecutionReport type by its name
+        ///  Retrieves an entity of ExecutionReport type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2935,7 +2729,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ExecutionReport type by its name
+        ///  Retrieves an entity of ExecutionReport type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -2999,7 +2793,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type
+        ///  Retrieves all entities of CommandReport type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;CommandReport&gt;</returns>
@@ -3010,7 +2804,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type
+        ///  Retrieves all entities of CommandReport type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;CommandReport&gt;</returns>
@@ -3070,7 +2864,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type
+        ///  Retrieves all entities of CommandReport type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;CommandReport&gt;</returns>
@@ -3082,7 +2876,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type
+        ///  Retrieves all entities of CommandReport type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;CommandReport&gt;)</returns>
@@ -3141,7 +2935,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type
+        ///  Retrieves all entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Command&gt;</returns>
@@ -3152,7 +2946,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type
+        ///  Retrieves all entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Command&gt;</returns>
@@ -3212,7 +3006,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type
+        ///  Retrieves all entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Command&gt;</returns>
@@ -3224,7 +3018,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type
+        ///  Retrieves all entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Command&gt;)</returns>
@@ -3283,7 +3077,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type
+        ///  Retrieves all entities of ExecutionReport type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;ExecutionReport&gt;</returns>
@@ -3294,7 +3088,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type
+        ///  Retrieves all entities of ExecutionReport type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;ExecutionReport&gt;</returns>
@@ -3354,7 +3148,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type
+        ///  Retrieves all entities of ExecutionReport type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;ExecutionReport&gt;</returns>
@@ -3366,7 +3160,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type
+        ///  Retrieves all entities of ExecutionReport type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;ExecutionReport&gt;)</returns>
@@ -3425,7 +3219,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type
+        ///  Retrieves all entities of FillFee type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;FillFee&gt;</returns>
@@ -3436,7 +3230,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type
+        ///  Retrieves all entities of FillFee type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;FillFee&gt;</returns>
@@ -3496,7 +3290,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type
+        ///  Retrieves all entities of FillFee type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;FillFee&gt;</returns>
@@ -3508,7 +3302,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type
+        ///  Retrieves all entities of FillFee type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;FillFee&gt;)</returns>
@@ -3567,7 +3361,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type
+        ///  Retrieves all entities of Fill type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Fill&gt;</returns>
@@ -3578,7 +3372,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type
+        ///  Retrieves all entities of Fill type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Fill&gt;</returns>
@@ -3638,7 +3432,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type
+        ///  Retrieves all entities of Fill type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Fill&gt;</returns>
@@ -3650,7 +3444,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type
+        ///  Retrieves all entities of Fill type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Fill&gt;)</returns>
@@ -3709,7 +3503,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type
+        ///  Retrieves all entities of OrderStrategy type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;OrderStrategy&gt;</returns>
@@ -3720,7 +3514,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type
+        ///  Retrieves all entities of OrderStrategy type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;OrderStrategy&gt;</returns>
@@ -3780,7 +3574,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type
+        ///  Retrieves all entities of OrderStrategy type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;OrderStrategy&gt;</returns>
@@ -3792,7 +3586,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type
+        ///  Retrieves all entities of OrderStrategy type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategy&gt;)</returns>
@@ -3851,7 +3645,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type
+        ///  Retrieves all entities of OrderStrategyLink type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;OrderStrategyLink&gt;</returns>
@@ -3862,7 +3656,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type
+        ///  Retrieves all entities of OrderStrategyLink type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;OrderStrategyLink&gt;</returns>
@@ -3922,7 +3716,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type
+        ///  Retrieves all entities of OrderStrategyLink type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;OrderStrategyLink&gt;</returns>
@@ -3934,7 +3728,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type
+        ///  Retrieves all entities of OrderStrategyLink type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategyLink&gt;)</returns>
@@ -3993,149 +3787,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLog type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;OrderStrategyLog&gt;</returns>
-        public List<OrderStrategyLog> GetAllOrderStrategyLogs ()
-        {
-             ApiResponse<List<OrderStrategyLog>> localVarResponse = GetAllOrderStrategyLogsWithHttpInfo();
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;OrderStrategyLog&gt;</returns>
-        public ApiResponse< List<OrderStrategyLog> > GetAllOrderStrategyLogsWithHttpInfo ()
-        {
-
-            var localVarPath = "/orderStrategyLog/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllOrderStrategyLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<OrderStrategyLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<OrderStrategyLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<OrderStrategyLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;OrderStrategyLog&gt;</returns>
-        public async System.Threading.Tasks.Task<List<OrderStrategyLog>> GetAllOrderStrategyLogsAsync ()
-        {
-             ApiResponse<List<OrderStrategyLog>> localVarResponse = await GetAllOrderStrategyLogsAsyncWithHttpInfo();
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;OrderStrategyLog&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLog>>> GetAllOrderStrategyLogsAsyncWithHttpInfo ()
-        {
-
-            var localVarPath = "/orderStrategyLog/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllOrderStrategyLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<OrderStrategyLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<OrderStrategyLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<OrderStrategyLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderVersion type
+        ///  Retrieves all entities of OrderVersion type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;OrderVersion&gt;</returns>
@@ -4146,7 +3798,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type
+        ///  Retrieves all entities of OrderVersion type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;OrderVersion&gt;</returns>
@@ -4206,7 +3858,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type
+        ///  Retrieves all entities of OrderVersion type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;OrderVersion&gt;</returns>
@@ -4218,7 +3870,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type
+        ///  Retrieves all entities of OrderVersion type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;OrderVersion&gt;)</returns>
@@ -4277,7 +3929,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type
+        ///  Retrieves all entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Order&gt;</returns>
@@ -4288,7 +3940,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type
+        ///  Retrieves all entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Order&gt;</returns>
@@ -4348,7 +4000,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type
+        ///  Retrieves all entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Order&gt;</returns>
@@ -4360,7 +4012,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type
+        ///  Retrieves all entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Order&gt;)</returns>
@@ -4419,7 +4071,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Command type by its id
+        ///  Retrieves an entity of Command type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4431,7 +4083,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Command type by its id
+        ///  Retrieves an entity of Command type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4496,7 +4148,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Command type by its id
+        ///  Retrieves an entity of Command type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4509,7 +4161,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Command type by its id
+        ///  Retrieves an entity of Command type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4573,7 +4225,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CommandReport type by its id
+        ///  Retrieves an entity of CommandReport type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4585,7 +4237,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CommandReport type by its id
+        ///  Retrieves an entity of CommandReport type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4650,7 +4302,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CommandReport type by its id
+        ///  Retrieves an entity of CommandReport type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4663,7 +4315,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of CommandReport type by its id
+        ///  Retrieves an entity of CommandReport type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -4727,7 +4379,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CommandReport type by its ids
+        ///  Retrieves multiple entities of CommandReport type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4739,7 +4391,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CommandReport type by its ids
+        ///  Retrieves multiple entities of CommandReport type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4804,7 +4456,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CommandReport type by its ids
+        ///  Retrieves multiple entities of CommandReport type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4817,7 +4469,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of CommandReport type by its ids
+        ///  Retrieves multiple entities of CommandReport type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4881,7 +4533,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Command type by its ids
+        ///  Retrieves multiple entities of Command type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4893,7 +4545,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Command type by its ids
+        ///  Retrieves multiple entities of Command type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4958,7 +4610,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Command type by its ids
+        ///  Retrieves multiple entities of Command type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -4971,7 +4623,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Command type by its ids
+        ///  Retrieves multiple entities of Command type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5035,7 +4687,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ExecutionReport type by its id
+        ///  Retrieves an entity of ExecutionReport type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5047,7 +4699,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ExecutionReport type by its id
+        ///  Retrieves an entity of ExecutionReport type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5112,7 +4764,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ExecutionReport type by its id
+        ///  Retrieves an entity of ExecutionReport type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5125,7 +4777,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ExecutionReport type by its id
+        ///  Retrieves an entity of ExecutionReport type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5189,7 +4841,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ExecutionReport type by its ids
+        ///  Retrieves multiple entities of ExecutionReport type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5201,7 +4853,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ExecutionReport type by its ids
+        ///  Retrieves multiple entities of ExecutionReport type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5266,7 +4918,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ExecutionReport type by its ids
+        ///  Retrieves multiple entities of ExecutionReport type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5279,7 +4931,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ExecutionReport type by its ids
+        ///  Retrieves multiple entities of ExecutionReport type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5343,7 +4995,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Fill type by its id
+        ///  Retrieves an entity of Fill type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5355,7 +5007,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Fill type by its id
+        ///  Retrieves an entity of Fill type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5420,7 +5072,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Fill type by its id
+        ///  Retrieves an entity of Fill type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5433,7 +5085,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Fill type by its id
+        ///  Retrieves an entity of Fill type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5497,7 +5149,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of FillFee type by its id
+        ///  Retrieves an entity of FillFee type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5509,7 +5161,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of FillFee type by its id
+        ///  Retrieves an entity of FillFee type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5574,7 +5226,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of FillFee type by its id
+        ///  Retrieves an entity of FillFee type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5587,7 +5239,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of FillFee type by its id
+        ///  Retrieves an entity of FillFee type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5651,7 +5303,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of FillFee type by its ids
+        ///  Retrieves multiple entities of FillFee type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5663,7 +5315,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of FillFee type by its ids
+        ///  Retrieves multiple entities of FillFee type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5728,7 +5380,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of FillFee type by its ids
+        ///  Retrieves multiple entities of FillFee type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5741,7 +5393,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of FillFee type by its ids
+        ///  Retrieves multiple entities of FillFee type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5805,7 +5457,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Fill type by its ids
+        ///  Retrieves multiple entities of Fill type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5817,7 +5469,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Fill type by its ids
+        ///  Retrieves multiple entities of Fill type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5882,7 +5534,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Fill type by its ids
+        ///  Retrieves multiple entities of Fill type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5895,7 +5547,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Fill type by its ids
+        ///  Retrieves multiple entities of Fill type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -5959,7 +5611,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Order type by its id
+        ///  Retrieves an entity of Order type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -5971,7 +5623,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Order type by its id
+        ///  Retrieves an entity of Order type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6036,7 +5688,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Order type by its id
+        ///  Retrieves an entity of Order type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6049,7 +5701,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Order type by its id
+        ///  Retrieves an entity of Order type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6113,7 +5765,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategy type by its ids
+        ///  Retrieves multiple entities of OrderStrategy type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -6125,7 +5777,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategy type by its ids
+        ///  Retrieves multiple entities of OrderStrategy type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -6190,7 +5842,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategy type by its ids
+        ///  Retrieves multiple entities of OrderStrategy type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -6203,7 +5855,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategy type by its ids
+        ///  Retrieves multiple entities of OrderStrategy type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -6267,7 +5919,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategy type by its id
+        ///  Retrieves an entity of OrderStrategy type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6279,7 +5931,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategy type by its id
+        ///  Retrieves an entity of OrderStrategy type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6344,7 +5996,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategy type by its id
+        ///  Retrieves an entity of OrderStrategy type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6357,7 +6009,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategy type by its id
+        ///  Retrieves an entity of OrderStrategy type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6421,7 +6073,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyLink type by its id
+        ///  Retrieves an entity of OrderStrategyLink type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6433,7 +6085,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyLink type by its id
+        ///  Retrieves an entity of OrderStrategyLink type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6498,7 +6150,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyLink type by its id
+        ///  Retrieves an entity of OrderStrategyLink type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6511,7 +6163,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyLink type by its id
+        ///  Retrieves an entity of OrderStrategyLink type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6575,7 +6227,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategyLink type by its ids
+        ///  Retrieves multiple entities of OrderStrategyLink type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -6587,7 +6239,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategyLink type by its ids
+        ///  Retrieves multiple entities of OrderStrategyLink type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -6652,7 +6304,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategyLink type by its ids
+        ///  Retrieves multiple entities of OrderStrategyLink type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -6665,7 +6317,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderStrategyLink type by its ids
+        ///  Retrieves multiple entities of OrderStrategyLink type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -6729,315 +6381,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderStrategyLog type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>OrderStrategyLog</returns>
-        public OrderStrategyLog GetOrderStrategyLog (int? id)
-        {
-             ApiResponse<OrderStrategyLog> localVarResponse = GetOrderStrategyLogWithHttpInfo(id);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds an entity of OrderStrategyLog type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>ApiResponse of OrderStrategyLog</returns>
-        public ApiResponse< OrderStrategyLog > GetOrderStrategyLogWithHttpInfo (int? id)
-        {
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling OrdersApi->GetOrderStrategyLog");
-
-            var localVarPath = "/orderStrategyLog/item";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOrderStrategyLog", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OrderStrategyLog>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (OrderStrategyLog) Configuration.ApiClient.Deserialize(localVarResponse, typeof(OrderStrategyLog)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of OrderStrategyLog type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of OrderStrategyLog</returns>
-        public async System.Threading.Tasks.Task<OrderStrategyLog> GetOrderStrategyLogAsync (int? id)
-        {
-             ApiResponse<OrderStrategyLog> localVarResponse = await GetOrderStrategyLogAsyncWithHttpInfo(id);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds an entity of OrderStrategyLog type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of ApiResponse (OrderStrategyLog)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OrderStrategyLog>> GetOrderStrategyLogAsyncWithHttpInfo (int? id)
-        {
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling OrdersApi->GetOrderStrategyLog");
-
-            var localVarPath = "/orderStrategyLog/item";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOrderStrategyLog", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OrderStrategyLog>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (OrderStrategyLog) Configuration.ApiClient.Deserialize(localVarResponse, typeof(OrderStrategyLog)));
-            
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of OrderStrategyLog type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>List&lt;OrderStrategyLog&gt;</returns>
-        public List<OrderStrategyLog> GetOrderStrategyLogs (List<int?> ids)
-        {
-             ApiResponse<List<OrderStrategyLog>> localVarResponse = GetOrderStrategyLogsWithHttpInfo(ids);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of OrderStrategyLog type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>ApiResponse of List&lt;OrderStrategyLog&gt;</returns>
-        public ApiResponse< List<OrderStrategyLog> > GetOrderStrategyLogsWithHttpInfo (List<int?> ids)
-        {
-            // verify the required parameter 'ids' is set
-            if (ids == null)
-                throw new ApiException(400, "Missing required parameter 'ids' when calling OrdersApi->GetOrderStrategyLogs");
-
-            var localVarPath = "/orderStrategyLog/items";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOrderStrategyLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<OrderStrategyLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<OrderStrategyLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<OrderStrategyLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of OrderStrategyLog type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of List&lt;OrderStrategyLog&gt;</returns>
-        public async System.Threading.Tasks.Task<List<OrderStrategyLog>> GetOrderStrategyLogsAsync (List<int?> ids)
-        {
-             ApiResponse<List<OrderStrategyLog>> localVarResponse = await GetOrderStrategyLogsAsyncWithHttpInfo(ids);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of OrderStrategyLog type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of ApiResponse (List&lt;OrderStrategyLog&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLog>>> GetOrderStrategyLogsAsyncWithHttpInfo (List<int?> ids)
-        {
-            // verify the required parameter 'ids' is set
-            if (ids == null)
-                throw new ApiException(400, "Missing required parameter 'ids' when calling OrdersApi->GetOrderStrategyLogs");
-
-            var localVarPath = "/orderStrategyLog/items";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOrderStrategyLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<OrderStrategyLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<OrderStrategyLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<OrderStrategyLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of OrderVersion type by its id
+        ///  Retrieves an entity of OrderVersion type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7049,7 +6393,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderVersion type by its id
+        ///  Retrieves an entity of OrderVersion type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7114,7 +6458,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderVersion type by its id
+        ///  Retrieves an entity of OrderVersion type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7127,7 +6471,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of OrderVersion type by its id
+        ///  Retrieves an entity of OrderVersion type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7191,7 +6535,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderVersion type by its ids
+        ///  Retrieves multiple entities of OrderVersion type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7203,7 +6547,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderVersion type by its ids
+        ///  Retrieves multiple entities of OrderVersion type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7268,7 +6612,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderVersion type by its ids
+        ///  Retrieves multiple entities of OrderVersion type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7281,7 +6625,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of OrderVersion type by its ids
+        ///  Retrieves multiple entities of OrderVersion type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7345,7 +6689,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Order type by its ids
+        ///  Retrieves multiple entities of Order type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7357,7 +6701,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Order type by its ids
+        ///  Retrieves multiple entities of Order type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7422,7 +6766,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Order type by its ids
+        ///  Retrieves multiple entities of Order type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7435,7 +6779,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Order type by its ids
+        ///  Retrieves multiple entities of Order type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7499,7 +6843,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type related to Command type
+        ///  Retrieves all entities of CommandReport type related to Command entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -7511,7 +6855,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type related to Command type
+        ///  Retrieves all entities of CommandReport type related to Command entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -7576,7 +6920,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type related to Command type
+        ///  Retrieves all entities of CommandReport type related to Command entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -7589,7 +6933,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type related to Command type
+        ///  Retrieves all entities of CommandReport type related to Command entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -7653,10 +6997,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type related to multiple entities of Command type
+        ///  Retrieves all entities of CommandReport type related to multiple entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>List&lt;CommandReport&gt;</returns>
         public List<CommandReport> GetOwnedCommandReportsBatch (List<int?> masterids)
         {
@@ -7665,10 +7009,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type related to multiple entities of Command type
+        ///  Retrieves all entities of CommandReport type related to multiple entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>ApiResponse of List&lt;CommandReport&gt;</returns>
         public ApiResponse< List<CommandReport> > GetOwnedCommandReportsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -7730,10 +7074,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type related to multiple entities of Command type
+        ///  Retrieves all entities of CommandReport type related to multiple entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>Task of List&lt;CommandReport&gt;</returns>
         public async System.Threading.Tasks.Task<List<CommandReport>> GetOwnedCommandReportsBatchAsync (List<int?> masterids)
         {
@@ -7743,10 +7087,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of CommandReport type related to multiple entities of Command type
+        ///  Retrieves all entities of CommandReport type related to multiple entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>Task of ApiResponse (List&lt;CommandReport&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<CommandReport>>> GetOwnedCommandReportsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -7807,7 +7151,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type related to Order type
+        ///  Retrieves all entities of Command type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -7819,7 +7163,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type related to Order type
+        ///  Retrieves all entities of Command type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -7884,7 +7228,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type related to Order type
+        ///  Retrieves all entities of Command type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -7897,7 +7241,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type related to Order type
+        ///  Retrieves all entities of Command type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -7961,10 +7305,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type related to multiple entities of Order type
+        ///  Retrieves all entities of Command type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>List&lt;Command&gt;</returns>
         public List<Command> GetOwnedCommandsBatch (List<int?> masterids)
         {
@@ -7973,10 +7317,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type related to multiple entities of Order type
+        ///  Retrieves all entities of Command type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>ApiResponse of List&lt;Command&gt;</returns>
         public ApiResponse< List<Command> > GetOwnedCommandsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -8038,10 +7382,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type related to multiple entities of Order type
+        ///  Retrieves all entities of Command type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of List&lt;Command&gt;</returns>
         public async System.Threading.Tasks.Task<List<Command>> GetOwnedCommandsBatchAsync (List<int?> masterids)
         {
@@ -8051,10 +7395,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Command type related to multiple entities of Order type
+        ///  Retrieves all entities of Command type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of ApiResponse (List&lt;Command&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Command>>> GetOwnedCommandsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -8115,7 +7459,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type related to Command type
+        ///  Retrieves all entities of ExecutionReport type related to Command entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -8127,7 +7471,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type related to Command type
+        ///  Retrieves all entities of ExecutionReport type related to Command entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -8192,7 +7536,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type related to Command type
+        ///  Retrieves all entities of ExecutionReport type related to Command entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -8205,7 +7549,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type related to Command type
+        ///  Retrieves all entities of ExecutionReport type related to Command entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Command entity</param>
@@ -8269,10 +7613,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type related to multiple entities of Command type
+        ///  Retrieves all entities of ExecutionReport type related to multiple entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>List&lt;ExecutionReport&gt;</returns>
         public List<ExecutionReport> GetOwnedExecutionReportsBatch (List<int?> masterids)
         {
@@ -8281,10 +7625,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type related to multiple entities of Command type
+        ///  Retrieves all entities of ExecutionReport type related to multiple entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>ApiResponse of List&lt;ExecutionReport&gt;</returns>
         public ApiResponse< List<ExecutionReport> > GetOwnedExecutionReportsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -8346,10 +7690,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type related to multiple entities of Command type
+        ///  Retrieves all entities of ExecutionReport type related to multiple entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>Task of List&lt;ExecutionReport&gt;</returns>
         public async System.Threading.Tasks.Task<List<ExecutionReport>> GetOwnedExecutionReportsBatchAsync (List<int?> masterids)
         {
@@ -8359,10 +7703,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ExecutionReport type related to multiple entities of Command type
+        ///  Retrieves all entities of ExecutionReport type related to multiple entities of Command type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Command entity</param>
+        /// <param name="masterids">ids of Command entities</param>
         /// <returns>Task of ApiResponse (List&lt;ExecutionReport&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<ExecutionReport>>> GetOwnedExecutionReportsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -8423,7 +7767,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type related to Fill type
+        ///  Retrieves all entities of FillFee type related to Fill entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Fill entity</param>
@@ -8435,7 +7779,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type related to Fill type
+        ///  Retrieves all entities of FillFee type related to Fill entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Fill entity</param>
@@ -8500,7 +7844,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type related to Fill type
+        ///  Retrieves all entities of FillFee type related to Fill entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Fill entity</param>
@@ -8513,7 +7857,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type related to Fill type
+        ///  Retrieves all entities of FillFee type related to Fill entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Fill entity</param>
@@ -8577,10 +7921,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type related to multiple entities of Fill type
+        ///  Retrieves all entities of FillFee type related to multiple entities of Fill type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Fill entity</param>
+        /// <param name="masterids">ids of Fill entities</param>
         /// <returns>List&lt;FillFee&gt;</returns>
         public List<FillFee> GetOwnedFillFeesBatch (List<int?> masterids)
         {
@@ -8589,10 +7933,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type related to multiple entities of Fill type
+        ///  Retrieves all entities of FillFee type related to multiple entities of Fill type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Fill entity</param>
+        /// <param name="masterids">ids of Fill entities</param>
         /// <returns>ApiResponse of List&lt;FillFee&gt;</returns>
         public ApiResponse< List<FillFee> > GetOwnedFillFeesBatchWithHttpInfo (List<int?> masterids)
         {
@@ -8654,10 +7998,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type related to multiple entities of Fill type
+        ///  Retrieves all entities of FillFee type related to multiple entities of Fill type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Fill entity</param>
+        /// <param name="masterids">ids of Fill entities</param>
         /// <returns>Task of List&lt;FillFee&gt;</returns>
         public async System.Threading.Tasks.Task<List<FillFee>> GetOwnedFillFeesBatchAsync (List<int?> masterids)
         {
@@ -8667,10 +8011,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of FillFee type related to multiple entities of Fill type
+        ///  Retrieves all entities of FillFee type related to multiple entities of Fill type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Fill entity</param>
+        /// <param name="masterids">ids of Fill entities</param>
         /// <returns>Task of ApiResponse (List&lt;FillFee&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<FillFee>>> GetOwnedFillFeesBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -8731,7 +8075,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type related to Order type
+        ///  Retrieves all entities of Fill type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -8743,7 +8087,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type related to Order type
+        ///  Retrieves all entities of Fill type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -8808,7 +8152,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type related to Order type
+        ///  Retrieves all entities of Fill type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -8821,7 +8165,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type related to Order type
+        ///  Retrieves all entities of Fill type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -8885,10 +8229,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type related to multiple entities of Order type
+        ///  Retrieves all entities of Fill type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>List&lt;Fill&gt;</returns>
         public List<Fill> GetOwnedFillsBatch (List<int?> masterids)
         {
@@ -8897,10 +8241,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type related to multiple entities of Order type
+        ///  Retrieves all entities of Fill type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>ApiResponse of List&lt;Fill&gt;</returns>
         public ApiResponse< List<Fill> > GetOwnedFillsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -8962,10 +8306,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type related to multiple entities of Order type
+        ///  Retrieves all entities of Fill type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of List&lt;Fill&gt;</returns>
         public async System.Threading.Tasks.Task<List<Fill>> GetOwnedFillsBatchAsync (List<int?> masterids)
         {
@@ -8975,10 +8319,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Fill type related to multiple entities of Order type
+        ///  Retrieves all entities of Fill type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of ApiResponse (List&lt;Fill&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Fill>>> GetOwnedFillsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -9039,7 +8383,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type related to Account type
+        ///  Retrieves all entities of OrderStrategy type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -9051,7 +8395,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type related to Account type
+        ///  Retrieves all entities of OrderStrategy type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -9116,7 +8460,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type related to Account type
+        ///  Retrieves all entities of OrderStrategy type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -9129,7 +8473,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type related to Account type
+        ///  Retrieves all entities of OrderStrategy type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -9193,10 +8537,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type related to multiple entities of Account type
+        ///  Retrieves all entities of OrderStrategy type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;OrderStrategy&gt;</returns>
         public List<OrderStrategy> GetOwnedOrderStrategiesBatch (List<int?> masterids)
         {
@@ -9205,10 +8549,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type related to multiple entities of Account type
+        ///  Retrieves all entities of OrderStrategy type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;OrderStrategy&gt;</returns>
         public ApiResponse< List<OrderStrategy> > GetOwnedOrderStrategiesBatchWithHttpInfo (List<int?> masterids)
         {
@@ -9270,10 +8614,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type related to multiple entities of Account type
+        ///  Retrieves all entities of OrderStrategy type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;OrderStrategy&gt;</returns>
         public async System.Threading.Tasks.Task<List<OrderStrategy>> GetOwnedOrderStrategiesBatchAsync (List<int?> masterids)
         {
@@ -9283,10 +8627,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategy type related to multiple entities of Account type
+        ///  Retrieves all entities of OrderStrategy type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategy&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<OrderStrategy>>> GetOwnedOrderStrategiesBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -9347,7 +8691,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type related to OrderStrategy type
+        ///  Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of OrderStrategy entity</param>
@@ -9359,7 +8703,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type related to OrderStrategy type
+        ///  Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of OrderStrategy entity</param>
@@ -9424,7 +8768,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type related to OrderStrategy type
+        ///  Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of OrderStrategy entity</param>
@@ -9437,7 +8781,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type related to OrderStrategy type
+        ///  Retrieves all entities of OrderStrategyLink type related to OrderStrategy entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of OrderStrategy entity</param>
@@ -9501,10 +8845,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+        ///  Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
+        /// <param name="masterids">ids of OrderStrategy entities</param>
         /// <returns>List&lt;OrderStrategyLink&gt;</returns>
         public List<OrderStrategyLink> GetOwnedOrderStrategyLinksBatch (List<int?> masterids)
         {
@@ -9513,10 +8857,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+        ///  Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
+        /// <param name="masterids">ids of OrderStrategy entities</param>
         /// <returns>ApiResponse of List&lt;OrderStrategyLink&gt;</returns>
         public ApiResponse< List<OrderStrategyLink> > GetOwnedOrderStrategyLinksBatchWithHttpInfo (List<int?> masterids)
         {
@@ -9578,10 +8922,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+        ///  Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
+        /// <param name="masterids">ids of OrderStrategy entities</param>
         /// <returns>Task of List&lt;OrderStrategyLink&gt;</returns>
         public async System.Threading.Tasks.Task<List<OrderStrategyLink>> GetOwnedOrderStrategyLinksBatchAsync (List<int?> masterids)
         {
@@ -9591,10 +8935,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
+        ///  Retrieves all entities of OrderStrategyLink type related to multiple entities of OrderStrategy type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
+        /// <param name="masterids">ids of OrderStrategy entities</param>
         /// <returns>Task of ApiResponse (List&lt;OrderStrategyLink&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLink>>> GetOwnedOrderStrategyLinksBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -9655,315 +8999,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderStrategyLog type related to OrderStrategy type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of OrderStrategy entity</param>
-        /// <returns>List&lt;OrderStrategyLog&gt;</returns>
-        public List<OrderStrategyLog> GetOwnedOrderStrategyLogs (int? masterid)
-        {
-             ApiResponse<List<OrderStrategyLog>> localVarResponse = GetOwnedOrderStrategyLogsWithHttpInfo(masterid);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type related to OrderStrategy type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of OrderStrategy entity</param>
-        /// <returns>ApiResponse of List&lt;OrderStrategyLog&gt;</returns>
-        public ApiResponse< List<OrderStrategyLog> > GetOwnedOrderStrategyLogsWithHttpInfo (int? masterid)
-        {
-            // verify the required parameter 'masterid' is set
-            if (masterid == null)
-                throw new ApiException(400, "Missing required parameter 'masterid' when calling OrdersApi->GetOwnedOrderStrategyLogs");
-
-            var localVarPath = "/orderStrategyLog/deps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterid != null) localVarQueryParams.Add("masterid", Configuration.ApiClient.ParameterToString(masterid)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedOrderStrategyLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<OrderStrategyLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<OrderStrategyLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<OrderStrategyLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type related to OrderStrategy type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of OrderStrategy entity</param>
-        /// <returns>Task of List&lt;OrderStrategyLog&gt;</returns>
-        public async System.Threading.Tasks.Task<List<OrderStrategyLog>> GetOwnedOrderStrategyLogsAsync (int? masterid)
-        {
-             ApiResponse<List<OrderStrategyLog>> localVarResponse = await GetOwnedOrderStrategyLogsAsyncWithHttpInfo(masterid);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type related to OrderStrategy type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of OrderStrategy entity</param>
-        /// <returns>Task of ApiResponse (List&lt;OrderStrategyLog&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLog>>> GetOwnedOrderStrategyLogsAsyncWithHttpInfo (int? masterid)
-        {
-            // verify the required parameter 'masterid' is set
-            if (masterid == null)
-                throw new ApiException(400, "Missing required parameter 'masterid' when calling OrdersApi->GetOwnedOrderStrategyLogs");
-
-            var localVarPath = "/orderStrategyLog/deps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterid != null) localVarQueryParams.Add("masterid", Configuration.ApiClient.ParameterToString(masterid)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedOrderStrategyLogs", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<OrderStrategyLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<OrderStrategyLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<OrderStrategyLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
-        /// <returns>List&lt;OrderStrategyLog&gt;</returns>
-        public List<OrderStrategyLog> GetOwnedOrderStrategyLogsBatch (List<int?> masterids)
-        {
-             ApiResponse<List<OrderStrategyLog>> localVarResponse = GetOwnedOrderStrategyLogsBatchWithHttpInfo(masterids);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
-        /// <returns>ApiResponse of List&lt;OrderStrategyLog&gt;</returns>
-        public ApiResponse< List<OrderStrategyLog> > GetOwnedOrderStrategyLogsBatchWithHttpInfo (List<int?> masterids)
-        {
-            // verify the required parameter 'masterids' is set
-            if (masterids == null)
-                throw new ApiException(400, "Missing required parameter 'masterids' when calling OrdersApi->GetOwnedOrderStrategyLogsBatch");
-
-            var localVarPath = "/orderStrategyLog/ldeps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterids != null) localVarQueryParams.Add("masterids", Configuration.ApiClient.ParameterToString(masterids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedOrderStrategyLogsBatch", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<OrderStrategyLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<OrderStrategyLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<OrderStrategyLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
-        /// <returns>Task of List&lt;OrderStrategyLog&gt;</returns>
-        public async System.Threading.Tasks.Task<List<OrderStrategyLog>> GetOwnedOrderStrategyLogsBatchAsync (List<int?> masterids)
-        {
-             ApiResponse<List<OrderStrategyLog>> localVarResponse = await GetOwnedOrderStrategyLogsBatchAsyncWithHttpInfo(masterids);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderStrategyLog type related to multiple entities of OrderStrategy type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of OrderStrategy entity</param>
-        /// <returns>Task of ApiResponse (List&lt;OrderStrategyLog&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<OrderStrategyLog>>> GetOwnedOrderStrategyLogsBatchAsyncWithHttpInfo (List<int?> masterids)
-        {
-            // verify the required parameter 'masterids' is set
-            if (masterids == null)
-                throw new ApiException(400, "Missing required parameter 'masterids' when calling OrdersApi->GetOwnedOrderStrategyLogsBatch");
-
-            var localVarPath = "/orderStrategyLog/ldeps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterids != null) localVarQueryParams.Add("masterids", Configuration.ApiClient.ParameterToString(masterids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedOrderStrategyLogsBatch", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<OrderStrategyLog>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<OrderStrategyLog>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<OrderStrategyLog>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of OrderVersion type related to Order type
+        ///  Retrieves all entities of OrderVersion type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -9975,7 +9011,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type related to Order type
+        ///  Retrieves all entities of OrderVersion type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -10040,7 +9076,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type related to Order type
+        ///  Retrieves all entities of OrderVersion type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -10053,7 +9089,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type related to Order type
+        ///  Retrieves all entities of OrderVersion type related to Order entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Order entity</param>
@@ -10117,10 +9153,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type related to multiple entities of Order type
+        ///  Retrieves all entities of OrderVersion type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>List&lt;OrderVersion&gt;</returns>
         public List<OrderVersion> GetOwnedOrderVersionsBatch (List<int?> masterids)
         {
@@ -10129,10 +9165,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type related to multiple entities of Order type
+        ///  Retrieves all entities of OrderVersion type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>ApiResponse of List&lt;OrderVersion&gt;</returns>
         public ApiResponse< List<OrderVersion> > GetOwnedOrderVersionsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -10194,10 +9230,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type related to multiple entities of Order type
+        ///  Retrieves all entities of OrderVersion type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of List&lt;OrderVersion&gt;</returns>
         public async System.Threading.Tasks.Task<List<OrderVersion>> GetOwnedOrderVersionsBatchAsync (List<int?> masterids)
         {
@@ -10207,10 +9243,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of OrderVersion type related to multiple entities of Order type
+        ///  Retrieves all entities of OrderVersion type related to multiple entities of Order type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Order entity</param>
+        /// <param name="masterids">ids of Order entities</param>
         /// <returns>Task of ApiResponse (List&lt;OrderVersion&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<OrderVersion>>> GetOwnedOrderVersionsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -10271,7 +9307,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type related to Account type
+        ///  Retrieves all entities of Order type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -10283,7 +9319,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type related to Account type
+        ///  Retrieves all entities of Order type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -10348,7 +9384,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type related to Account type
+        ///  Retrieves all entities of Order type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -10361,7 +9397,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type related to Account type
+        ///  Retrieves all entities of Order type related to Account entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of Account entity</param>
@@ -10425,10 +9461,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type related to multiple entities of Account type
+        ///  Retrieves all entities of Order type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>List&lt;Order&gt;</returns>
         public List<Order> GetOwnedOrdersBatch (List<int?> masterids)
         {
@@ -10437,10 +9473,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type related to multiple entities of Account type
+        ///  Retrieves all entities of Order type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>ApiResponse of List&lt;Order&gt;</returns>
         public ApiResponse< List<Order> > GetOwnedOrdersBatchWithHttpInfo (List<int?> masterids)
         {
@@ -10502,10 +9538,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type related to multiple entities of Account type
+        ///  Retrieves all entities of Order type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of List&lt;Order&gt;</returns>
         public async System.Threading.Tasks.Task<List<Order>> GetOwnedOrdersBatchAsync (List<int?> masterids)
         {
@@ -10515,10 +9551,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Order type related to multiple entities of Account type
+        ///  Retrieves all entities of Order type related to multiple entities of Account type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of Account entity</param>
+        /// <param name="masterids">ids of Account entities</param>
         /// <returns>Task of ApiResponse (List&lt;Order&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Order>>> GetOwnedOrdersBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -11923,7 +10959,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -11936,7 +10972,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -12006,7 +11042,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -12020,7 +11056,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of ExecutionReport type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of ExecutionReport type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>

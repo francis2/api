@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **ProductId** | **int?** | id of Product | [optional] 
 **ExchangeId** | **int?** | id of Exchange | [optional] 
 **ProductType** | **string** | Cryptocurrency, Futures, MarketInternals, Options, Spread | [optional] 
-**RiskDiscountContractGroupId** | **int?** | id of RiskDiscountContractGroup | [optional] 
 **ProductVerificationStatus** | **string** | Inactive, Locked, ReadyForContracts, ReadyToTrade, Verified | [optional] 
 **ContractGroupId** | **int?** | id of ContractGroup | [optional] 
 **MaxOpeningOrderQty** | **int?** |  | [optional] 

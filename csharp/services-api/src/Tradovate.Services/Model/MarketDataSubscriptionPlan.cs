@@ -48,16 +48,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum Top for "Top"
-            /// </summary>
-            [EnumMember(Value = "Top")]
-            Top,
-            
-            /// <summary>
             /// Enum DOM for "DOM"
             /// </summary>
             [EnumMember(Value = "DOM")]
-            DOM
+            DOM,
+            
+            /// <summary>
+            /// Enum Top for "Top"
+            /// </summary>
+            [EnumMember(Value = "Top")]
+            Top
         }
 
         /// <summary>
@@ -69,6 +69,12 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
+            /// Enum Either for "Either"
+            /// </summary>
+            [EnumMember(Value = "Either")]
+            Either,
+            
+            /// <summary>
             /// Enum NonProfessional for "NonProfessional"
             /// </summary>
             [EnumMember(Value = "NonProfessional")]
@@ -78,13 +84,7 @@ namespace Tradovate.Services.Model
             /// Enum Professional for "Professional"
             /// </summary>
             [EnumMember(Value = "Professional")]
-            Professional,
-            
-            /// <summary>
-            /// Enum Either for "Either"
-            /// </summary>
-            [EnumMember(Value = "Either")]
-            Either
+            Professional
         }
 
         /// <summary>

@@ -50,7 +50,8 @@ namespace Tradovate.Services.Model
         /// <param name="OrderId">id of Order (required).</param>
         /// <param name="ClOrdId">ClOrdId.</param>
         /// <param name="ActivationTime">ActivationTime.</param>
-        public CancelOrder(int? OrderId = null, string ClOrdId = null, DateTime? ActivationTime = null)
+        /// <param name="CustomTag50">CustomTag50.</param>
+        public CancelOrder(int? OrderId = null, string ClOrdId = null, DateTime? ActivationTime = null, string CustomTag50 = null)
         {
             // to ensure "OrderId" is required (not null)
             if (OrderId == null)
@@ -63,6 +64,7 @@ namespace Tradovate.Services.Model
             }
             this.ClOrdId = ClOrdId;
             this.ActivationTime = ActivationTime;
+            this.CustomTag50 = CustomTag50;
         }
         
         /// <summary>
@@ -82,6 +84,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="activationTime", EmitDefaultValue=false)]
         public DateTime? ActivationTime { get; set; }
         /// <summary>
+        /// Gets or Sets CustomTag50
+        /// </summary>
+        [DataMember(Name="customTag50", EmitDefaultValue=false)]
+        public string CustomTag50 { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -92,6 +99,7 @@ namespace Tradovate.Services.Model
             sb.Append("  OrderId: ").Append(OrderId).Append("\n");
             sb.Append("  ClOrdId: ").Append(ClOrdId).Append("\n");
             sb.Append("  ActivationTime: ").Append(ActivationTime).Append("\n");
+            sb.Append("  CustomTag50: ").Append(CustomTag50).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -142,6 +150,11 @@ namespace Tradovate.Services.Model
                     this.ActivationTime == other.ActivationTime ||
                     this.ActivationTime != null &&
                     this.ActivationTime.Equals(other.ActivationTime)
+                ) && 
+                (
+                    this.CustomTag50 == other.CustomTag50 ||
+                    this.CustomTag50 != null &&
+                    this.CustomTag50.Equals(other.CustomTag50)
                 );
         }
 
@@ -162,6 +175,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.ClOrdId.GetHashCode();
                 if (this.ActivationTime != null)
                     hash = hash * 59 + this.ActivationTime.GetHashCode();
+                if (this.CustomTag50 != null)
+                    hash = hash * 59 + this.CustomTag50.GetHashCode();
                 return hash;
             }
         }

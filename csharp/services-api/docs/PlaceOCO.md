@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **ExpireTime** | **DateTime?** |  | [optional] 
 **Text** | **string** |  | [optional] 
 **ActivationTime** | **DateTime?** |  | [optional] 
+**CustomTag50** | **string** |  | [optional] 
 **Other** | [**RestrainedOrderVersion**](RestrainedOrderVersion.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

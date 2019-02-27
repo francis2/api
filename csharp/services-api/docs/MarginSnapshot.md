@@ -5,7 +5,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int?** |  | [optional] 
 **Timestamp** | **DateTime?** |  | 
-**RiskTimePeriodId** | **int?** | id of RiskTimePeriod | 
 **InitialMargin** | **double?** |  | 
 **MaintenanceMargin** | **double?** |  | 
 **AutoLiqLevel** | **double?** |  | [optional] 

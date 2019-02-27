@@ -87,22 +87,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum ReadyToTrade for "ReadyToTrade"
-            /// </summary>
-            [EnumMember(Value = "ReadyToTrade")]
-            ReadyToTrade,
-            
-            /// <summary>
             /// Enum Inactive for "Inactive"
             /// </summary>
             [EnumMember(Value = "Inactive")]
             Inactive,
-            
-            /// <summary>
-            /// Enum Verified for "Verified"
-            /// </summary>
-            [EnumMember(Value = "Verified")]
-            Verified,
             
             /// <summary>
             /// Enum Locked for "Locked"
@@ -114,7 +102,19 @@ namespace Tradovate.Services.Model
             /// Enum ReadyForContracts for "ReadyForContracts"
             /// </summary>
             [EnumMember(Value = "ReadyForContracts")]
-            ReadyForContracts
+            ReadyForContracts,
+            
+            /// <summary>
+            /// Enum ReadyToTrade for "ReadyToTrade"
+            /// </summary>
+            [EnumMember(Value = "ReadyToTrade")]
+            ReadyToTrade,
+            
+            /// <summary>
+            /// Enum Verified for "Verified"
+            /// </summary>
+            [EnumMember(Value = "Verified")]
+            Verified
         }
 
         /// <summary>
@@ -171,7 +171,6 @@ namespace Tradovate.Services.Model
         /// <param name="Description">Description (required).</param>
         /// <param name="ExchangeId">id of Exchange (required).</param>
         /// <param name="ContractGroupId">id of ContractGroup (required).</param>
-        /// <param name="RiskDiscountContractGroupId">id of RiskDiscountContractGroup.</param>
         /// <param name="Status">Inactive, Locked, ReadyForContracts, ReadyToTrade, Verified (required).</param>
         /// <param name="Months">Months.</param>
         /// <param name="IsSecured">IsSecured.</param>
@@ -179,7 +178,7 @@ namespace Tradovate.Services.Model
         /// <param name="PriceFormatType">Decimal, Fractional (required).</param>
         /// <param name="PriceFormat">PriceFormat (required).</param>
         /// <param name="TickSize">Product Tick Size (required).</param>
-        public Product(int? Id = null, string Name = null, int? CurrencyId = null, ProductTypeEnum? ProductType = null, string Description = null, int? ExchangeId = null, int? ContractGroupId = null, int? RiskDiscountContractGroupId = null, StatusEnum? Status = null, string Months = null, bool? IsSecured = null, double? ValuePerPoint = null, PriceFormatTypeEnum? PriceFormatType = null, int? PriceFormat = null, double? TickSize = null)
+        public Product(int? Id = null, string Name = null, int? CurrencyId = null, ProductTypeEnum? ProductType = null, string Description = null, int? ExchangeId = null, int? ContractGroupId = null, StatusEnum? Status = null, string Months = null, bool? IsSecured = null, double? ValuePerPoint = null, PriceFormatTypeEnum? PriceFormatType = null, int? PriceFormat = null, double? TickSize = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -281,7 +280,6 @@ namespace Tradovate.Services.Model
                 this.TickSize = TickSize;
             }
             this.Id = Id;
-            this.RiskDiscountContractGroupId = RiskDiscountContractGroupId;
             this.Months = Months;
             this.IsSecured = IsSecured;
         }
@@ -319,12 +317,6 @@ namespace Tradovate.Services.Model
         /// <value>id of ContractGroup</value>
         [DataMember(Name="contractGroupId", EmitDefaultValue=false)]
         public int? ContractGroupId { get; set; }
-        /// <summary>
-        /// id of RiskDiscountContractGroup
-        /// </summary>
-        /// <value>id of RiskDiscountContractGroup</value>
-        [DataMember(Name="riskDiscountContractGroupId", EmitDefaultValue=false)]
-        public int? RiskDiscountContractGroupId { get; set; }
         /// <summary>
         /// Gets or Sets Months
         /// </summary>
@@ -366,7 +358,6 @@ namespace Tradovate.Services.Model
             sb.Append("  Description: ").Append(Description).Append("\n");
             sb.Append("  ExchangeId: ").Append(ExchangeId).Append("\n");
             sb.Append("  ContractGroupId: ").Append(ContractGroupId).Append("\n");
-            sb.Append("  RiskDiscountContractGroupId: ").Append(RiskDiscountContractGroupId).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  Months: ").Append(Months).Append("\n");
             sb.Append("  IsSecured: ").Append(IsSecured).Append("\n");
@@ -446,11 +437,6 @@ namespace Tradovate.Services.Model
                     this.ContractGroupId.Equals(other.ContractGroupId)
                 ) && 
                 (
-                    this.RiskDiscountContractGroupId == other.RiskDiscountContractGroupId ||
-                    this.RiskDiscountContractGroupId != null &&
-                    this.RiskDiscountContractGroupId.Equals(other.RiskDiscountContractGroupId)
-                ) && 
-                (
                     this.Status == other.Status ||
                     this.Status != null &&
                     this.Status.Equals(other.Status)
@@ -512,8 +498,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.ExchangeId.GetHashCode();
                 if (this.ContractGroupId != null)
                     hash = hash * 59 + this.ContractGroupId.GetHashCode();
-                if (this.RiskDiscountContractGroupId != null)
-                    hash = hash * 59 + this.RiskDiscountContractGroupId.GetHashCode();
                 if (this.Status != null)
                     hash = hash * 59 + this.Status.GetHashCode();
                 if (this.Months != null)

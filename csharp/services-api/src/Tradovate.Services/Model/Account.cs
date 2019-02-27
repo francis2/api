@@ -48,16 +48,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
+            /// Enum Customer for "Customer"
+            /// </summary>
+            [EnumMember(Value = "Customer")]
+            Customer,
+            
+            /// <summary>
             /// Enum Giveup for "Giveup"
             /// </summary>
             [EnumMember(Value = "Giveup")]
             Giveup,
-            
-            /// <summary>
-            /// Enum Omnibus for "Omnibus"
-            /// </summary>
-            [EnumMember(Value = "Omnibus")]
-            Omnibus,
             
             /// <summary>
             /// Enum House for "House"
@@ -66,10 +66,10 @@ namespace Tradovate.Services.Model
             House,
             
             /// <summary>
-            /// Enum Customer for "Customer"
+            /// Enum Omnibus for "Omnibus"
             /// </summary>
-            [EnumMember(Value = "Customer")]
-            Customer,
+            [EnumMember(Value = "Omnibus")]
+            Omnibus,
             
             /// <summary>
             /// Enum Wash for "Wash"
@@ -87,16 +87,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum Speculator for "Speculator"
-            /// </summary>
-            [EnumMember(Value = "Speculator")]
-            Speculator,
-            
-            /// <summary>
             /// Enum Hedger for "Hedger"
             /// </summary>
             [EnumMember(Value = "Hedger")]
-            Hedger
+            Hedger,
+            
+            /// <summary>
+            /// Enum Speculator for "Speculator"
+            /// </summary>
+            [EnumMember(Value = "Speculator")]
+            Speculator
         }
 
         /// <summary>
@@ -108,34 +108,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum LLP for "LLP"
-            /// </summary>
-            [EnumMember(Value = "LLP")]
-            LLP,
-            
-            /// <summary>
             /// Enum Corporation for "Corporation"
             /// </summary>
             [EnumMember(Value = "Corporation")]
             Corporation,
             
             /// <summary>
-            /// Enum Trust for "Trust"
+            /// Enum GP for "GP"
             /// </summary>
-            [EnumMember(Value = "Trust")]
-            Trust,
-            
-            /// <summary>
-            /// Enum Individual for "Individual"
-            /// </summary>
-            [EnumMember(Value = "Individual")]
-            Individual,
-            
-            /// <summary>
-            /// Enum LLC for "LLC"
-            /// </summary>
-            [EnumMember(Value = "LLC")]
-            LLC,
+            [EnumMember(Value = "GP")]
+            GP,
             
             /// <summary>
             /// Enum IRA for "IRA"
@@ -144,10 +126,10 @@ namespace Tradovate.Services.Model
             IRA,
             
             /// <summary>
-            /// Enum LP for "LP"
+            /// Enum Individual for "Individual"
             /// </summary>
-            [EnumMember(Value = "LP")]
-            LP,
+            [EnumMember(Value = "Individual")]
+            Individual,
             
             /// <summary>
             /// Enum Joint for "Joint"
@@ -156,10 +138,28 @@ namespace Tradovate.Services.Model
             Joint,
             
             /// <summary>
-            /// Enum GP for "GP"
+            /// Enum LLC for "LLC"
             /// </summary>
-            [EnumMember(Value = "GP")]
-            GP
+            [EnumMember(Value = "LLC")]
+            LLC,
+            
+            /// <summary>
+            /// Enum LLP for "LLP"
+            /// </summary>
+            [EnumMember(Value = "LLP")]
+            LLP,
+            
+            /// <summary>
+            /// Enum LP for "LP"
+            /// </summary>
+            [EnumMember(Value = "LP")]
+            LP,
+            
+            /// <summary>
+            /// Enum Trust for "Trust"
+            /// </summary>
+            [EnumMember(Value = "Trust")]
+            Trust
         }
 
         /// <summary>
@@ -194,13 +194,11 @@ namespace Tradovate.Services.Model
         /// <param name="AccountType">Customer, Giveup, House, Omnibus, Wash (required).</param>
         /// <param name="Active">Active (required).</param>
         /// <param name="ClearingHouseId">id of ClearingHouse (required).</param>
-        /// <param name="RiskCategoryId">id of RiskCategory (required).</param>
-        /// <param name="AutoLiqProfileId">id of AutoLiqProfile (required).</param>
         /// <param name="CftcNumber">CftcNumber.</param>
         /// <param name="MarginAccountType">Hedger, Speculator (required).</param>
         /// <param name="LegalStatus">Corporation, GP, IRA, Individual, Joint, LLC, LLP, LP, Trust (required).</param>
         /// <param name="_Readonly">_Readonly.</param>
-        public Account(int? Id = null, string Name = null, int? UserId = null, AccountTypeEnum? AccountType = null, bool? Active = null, int? ClearingHouseId = null, int? RiskCategoryId = null, int? AutoLiqProfileId = null, string CftcNumber = null, MarginAccountTypeEnum? MarginAccountType = null, LegalStatusEnum? LegalStatus = null, bool? _Readonly = null)
+        public Account(int? Id = null, string Name = null, int? UserId = null, AccountTypeEnum? AccountType = null, bool? Active = null, int? ClearingHouseId = null, string CftcNumber = null, MarginAccountTypeEnum? MarginAccountType = null, LegalStatusEnum? LegalStatus = null, bool? _Readonly = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -246,24 +244,6 @@ namespace Tradovate.Services.Model
             else
             {
                 this.ClearingHouseId = ClearingHouseId;
-            }
-            // to ensure "RiskCategoryId" is required (not null)
-            if (RiskCategoryId == null)
-            {
-                throw new InvalidDataException("RiskCategoryId is a required property for Account and cannot be null");
-            }
-            else
-            {
-                this.RiskCategoryId = RiskCategoryId;
-            }
-            // to ensure "AutoLiqProfileId" is required (not null)
-            if (AutoLiqProfileId == null)
-            {
-                throw new InvalidDataException("AutoLiqProfileId is a required property for Account and cannot be null");
-            }
-            else
-            {
-                this.AutoLiqProfileId = AutoLiqProfileId;
             }
             // to ensure "MarginAccountType" is required (not null)
             if (MarginAccountType == null)
@@ -316,18 +296,6 @@ namespace Tradovate.Services.Model
         [DataMember(Name="clearingHouseId", EmitDefaultValue=false)]
         public int? ClearingHouseId { get; set; }
         /// <summary>
-        /// id of RiskCategory
-        /// </summary>
-        /// <value>id of RiskCategory</value>
-        [DataMember(Name="riskCategoryId", EmitDefaultValue=false)]
-        public int? RiskCategoryId { get; set; }
-        /// <summary>
-        /// id of AutoLiqProfile
-        /// </summary>
-        /// <value>id of AutoLiqProfile</value>
-        [DataMember(Name="autoLiqProfileId", EmitDefaultValue=false)]
-        public int? AutoLiqProfileId { get; set; }
-        /// <summary>
         /// Gets or Sets CftcNumber
         /// </summary>
         [DataMember(Name="cftcNumber", EmitDefaultValue=false)]
@@ -351,8 +319,6 @@ namespace Tradovate.Services.Model
             sb.Append("  AccountType: ").Append(AccountType).Append("\n");
             sb.Append("  Active: ").Append(Active).Append("\n");
             sb.Append("  ClearingHouseId: ").Append(ClearingHouseId).Append("\n");
-            sb.Append("  RiskCategoryId: ").Append(RiskCategoryId).Append("\n");
-            sb.Append("  AutoLiqProfileId: ").Append(AutoLiqProfileId).Append("\n");
             sb.Append("  CftcNumber: ").Append(CftcNumber).Append("\n");
             sb.Append("  MarginAccountType: ").Append(MarginAccountType).Append("\n");
             sb.Append("  LegalStatus: ").Append(LegalStatus).Append("\n");
@@ -424,16 +390,6 @@ namespace Tradovate.Services.Model
                     this.ClearingHouseId.Equals(other.ClearingHouseId)
                 ) && 
                 (
-                    this.RiskCategoryId == other.RiskCategoryId ||
-                    this.RiskCategoryId != null &&
-                    this.RiskCategoryId.Equals(other.RiskCategoryId)
-                ) && 
-                (
-                    this.AutoLiqProfileId == other.AutoLiqProfileId ||
-                    this.AutoLiqProfileId != null &&
-                    this.AutoLiqProfileId.Equals(other.AutoLiqProfileId)
-                ) && 
-                (
                     this.CftcNumber == other.CftcNumber ||
                     this.CftcNumber != null &&
                     this.CftcNumber.Equals(other.CftcNumber)
@@ -478,10 +434,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Active.GetHashCode();
                 if (this.ClearingHouseId != null)
                     hash = hash * 59 + this.ClearingHouseId.GetHashCode();
-                if (this.RiskCategoryId != null)
-                    hash = hash * 59 + this.RiskCategoryId.GetHashCode();
-                if (this.AutoLiqProfileId != null)
-                    hash = hash * 59 + this.AutoLiqProfileId.GetHashCode();
                 if (this.CftcNumber != null)
                     hash = hash * 59 + this.CftcNumber.GetHashCode();
                 if (this.MarginAccountType != null)

@@ -48,40 +48,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum ClearingFee for "ClearingFee"
+            /// Enum AutomaticReconciliation for "AutomaticReconciliation"
             /// </summary>
-            [EnumMember(Value = "ClearingFee")]
-            ClearingFee,
-            
-            /// <summary>
-            /// Enum TradovateSubscription for "TradovateSubscription"
-            /// </summary>
-            [EnumMember(Value = "TradovateSubscription")]
-            TradovateSubscription,
-            
-            /// <summary>
-            /// Enum FundTransactionFee for "FundTransactionFee"
-            /// </summary>
-            [EnumMember(Value = "FundTransactionFee")]
-            FundTransactionFee,
-            
-            /// <summary>
-            /// Enum MarketDataSubscription for "MarketDataSubscription"
-            /// </summary>
-            [EnumMember(Value = "MarketDataSubscription")]
-            MarketDataSubscription,
-            
-            /// <summary>
-            /// Enum LiquidationFee for "LiquidationFee"
-            /// </summary>
-            [EnumMember(Value = "LiquidationFee")]
-            LiquidationFee,
-            
-            /// <summary>
-            /// Enum OptionsTrade for "OptionsTrade"
-            /// </summary>
-            [EnumMember(Value = "OptionsTrade")]
-            OptionsTrade,
+            [EnumMember(Value = "AutomaticReconciliation")]
+            AutomaticReconciliation,
             
             /// <summary>
             /// Enum BrokerageFee for "BrokerageFee"
@@ -90,10 +60,22 @@ namespace Tradovate.Services.Model
             BrokerageFee,
             
             /// <summary>
-            /// Enum TradePaired for "TradePaired"
+            /// Enum CancelledPairedTrade for "CancelledPairedTrade"
             /// </summary>
-            [EnumMember(Value = "TradePaired")]
-            TradePaired,
+            [EnumMember(Value = "CancelledPairedTrade")]
+            CancelledPairedTrade,
+            
+            /// <summary>
+            /// Enum ClearingFee for "ClearingFee"
+            /// </summary>
+            [EnumMember(Value = "ClearingFee")]
+            ClearingFee,
+            
+            /// <summary>
+            /// Enum Commission for "Commission"
+            /// </summary>
+            [EnumMember(Value = "Commission")]
+            Commission,
             
             /// <summary>
             /// Enum DeskFee for "DeskFee"
@@ -108,16 +90,10 @@ namespace Tradovate.Services.Model
             EntitlementSubscription,
             
             /// <summary>
-            /// Enum NewSession for "NewSession"
+            /// Enum ExchangeFee for "ExchangeFee"
             /// </summary>
-            [EnumMember(Value = "NewSession")]
-            NewSession,
-            
-            /// <summary>
-            /// Enum ManualAdjustment for "ManualAdjustment"
-            /// </summary>
-            [EnumMember(Value = "ManualAdjustment")]
-            ManualAdjustment,
+            [EnumMember(Value = "ExchangeFee")]
+            ExchangeFee,
             
             /// <summary>
             /// Enum FundTransaction for "FundTransaction"
@@ -126,34 +102,10 @@ namespace Tradovate.Services.Model
             FundTransaction,
             
             /// <summary>
-            /// Enum NfaFee for "NfaFee"
+            /// Enum FundTransactionFee for "FundTransactionFee"
             /// </summary>
-            [EnumMember(Value = "NfaFee")]
-            NfaFee,
-            
-            /// <summary>
-            /// Enum AutomaticReconciliation for "AutomaticReconciliation"
-            /// </summary>
-            [EnumMember(Value = "AutomaticReconciliation")]
-            AutomaticReconciliation,
-            
-            /// <summary>
-            /// Enum ExchangeFee for "ExchangeFee"
-            /// </summary>
-            [EnumMember(Value = "ExchangeFee")]
-            ExchangeFee,
-            
-            /// <summary>
-            /// Enum OrderRoutingFee for "OrderRoutingFee"
-            /// </summary>
-            [EnumMember(Value = "OrderRoutingFee")]
-            OrderRoutingFee,
-            
-            /// <summary>
-            /// Enum Commission for "Commission"
-            /// </summary>
-            [EnumMember(Value = "Commission")]
-            Commission,
+            [EnumMember(Value = "FundTransactionFee")]
+            FundTransactionFee,
             
             /// <summary>
             /// Enum IPFee for "IPFee"
@@ -162,10 +114,58 @@ namespace Tradovate.Services.Model
             IPFee,
             
             /// <summary>
-            /// Enum CancelledPairedTrade for "CancelledPairedTrade"
+            /// Enum LiquidationFee for "LiquidationFee"
             /// </summary>
-            [EnumMember(Value = "CancelledPairedTrade")]
-            CancelledPairedTrade
+            [EnumMember(Value = "LiquidationFee")]
+            LiquidationFee,
+            
+            /// <summary>
+            /// Enum ManualAdjustment for "ManualAdjustment"
+            /// </summary>
+            [EnumMember(Value = "ManualAdjustment")]
+            ManualAdjustment,
+            
+            /// <summary>
+            /// Enum MarketDataSubscription for "MarketDataSubscription"
+            /// </summary>
+            [EnumMember(Value = "MarketDataSubscription")]
+            MarketDataSubscription,
+            
+            /// <summary>
+            /// Enum NewSession for "NewSession"
+            /// </summary>
+            [EnumMember(Value = "NewSession")]
+            NewSession,
+            
+            /// <summary>
+            /// Enum NfaFee for "NfaFee"
+            /// </summary>
+            [EnumMember(Value = "NfaFee")]
+            NfaFee,
+            
+            /// <summary>
+            /// Enum OptionsTrade for "OptionsTrade"
+            /// </summary>
+            [EnumMember(Value = "OptionsTrade")]
+            OptionsTrade,
+            
+            /// <summary>
+            /// Enum OrderRoutingFee for "OrderRoutingFee"
+            /// </summary>
+            [EnumMember(Value = "OrderRoutingFee")]
+            OrderRoutingFee,
+            
+            /// <summary>
+            /// Enum TradePaired for "TradePaired"
+            /// </summary>
+            [EnumMember(Value = "TradePaired")]
+            TradePaired,
+            
+            /// <summary>
+            /// Enum TradovateSubscription for "TradovateSubscription"
+            /// </summary>
+            [EnumMember(Value = "TradovateSubscription")]
+            TradovateSubscription
         }
 
         /// <summary>
@@ -193,10 +193,9 @@ namespace Tradovate.Services.Model
         /// <param name="CashChangeType">AutomaticReconciliation, BrokerageFee, CancelledPairedTrade, ClearingFee, Commission, DeskFee, EntitlementSubscription, ExchangeFee, FundTransaction, FundTransactionFee, IPFee, LiquidationFee, ManualAdjustment, MarketDataSubscription, NewSession, NfaFee, OptionsTrade, OrderRoutingFee, TradePaired, TradovateSubscription (required).</param>
         /// <param name="FillPairId">id of FillPair.</param>
         /// <param name="FillId">id of Fill.</param>
-        /// <param name="FundTransactionId">id of FundTransaction.</param>
         /// <param name="Comment">Comment.</param>
         /// <param name="Delta">Delta (required).</param>
-        public CashBalanceLog(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, TradeDate TradeDate = null, int? CurrencyId = null, double? Amount = null, double? RealizedPnL = null, double? WeekRealizedPnL = null, CashChangeTypeEnum? CashChangeType = null, int? FillPairId = null, int? FillId = null, int? FundTransactionId = null, string Comment = null, double? Delta = null)
+        public CashBalanceLog(int? Id = null, int? AccountId = null, DateTime? Timestamp = null, TradeDate TradeDate = null, int? CurrencyId = null, double? Amount = null, double? RealizedPnL = null, double? WeekRealizedPnL = null, CashChangeTypeEnum? CashChangeType = null, int? FillPairId = null, int? FillId = null, string Comment = null, double? Delta = null)
         {
             // to ensure "AccountId" is required (not null)
             if (AccountId == null)
@@ -266,7 +265,6 @@ namespace Tradovate.Services.Model
             this.WeekRealizedPnL = WeekRealizedPnL;
             this.FillPairId = FillPairId;
             this.FillId = FillId;
-            this.FundTransactionId = FundTransactionId;
             this.Comment = Comment;
         }
         
@@ -325,12 +323,6 @@ namespace Tradovate.Services.Model
         [DataMember(Name="fillId", EmitDefaultValue=false)]
         public int? FillId { get; set; }
         /// <summary>
-        /// id of FundTransaction
-        /// </summary>
-        /// <value>id of FundTransaction</value>
-        [DataMember(Name="fundTransactionId", EmitDefaultValue=false)]
-        public int? FundTransactionId { get; set; }
-        /// <summary>
         /// Gets or Sets Comment
         /// </summary>
         [DataMember(Name="comment", EmitDefaultValue=false)]
@@ -359,7 +351,6 @@ namespace Tradovate.Services.Model
             sb.Append("  CashChangeType: ").Append(CashChangeType).Append("\n");
             sb.Append("  FillPairId: ").Append(FillPairId).Append("\n");
             sb.Append("  FillId: ").Append(FillId).Append("\n");
-            sb.Append("  FundTransactionId: ").Append(FundTransactionId).Append("\n");
             sb.Append("  Comment: ").Append(Comment).Append("\n");
             sb.Append("  Delta: ").Append(Delta).Append("\n");
             sb.Append("}\n");
@@ -454,11 +445,6 @@ namespace Tradovate.Services.Model
                     this.FillId.Equals(other.FillId)
                 ) && 
                 (
-                    this.FundTransactionId == other.FundTransactionId ||
-                    this.FundTransactionId != null &&
-                    this.FundTransactionId.Equals(other.FundTransactionId)
-                ) && 
-                (
                     this.Comment == other.Comment ||
                     this.Comment != null &&
                     this.Comment.Equals(other.Comment)
@@ -503,8 +489,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.FillPairId.GetHashCode();
                 if (this.FillId != null)
                     hash = hash * 59 + this.FillId.GetHashCode();
-                if (this.FundTransactionId != null)
-                    hash = hash * 59 + this.FundTransactionId.GetHashCode();
                 if (this.Comment != null)
                     hash = hash * 59 + this.Comment.GetHashCode();
                 if (this.Delta != null)

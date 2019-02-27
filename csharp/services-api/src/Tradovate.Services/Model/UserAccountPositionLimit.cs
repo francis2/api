@@ -87,22 +87,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum ReadyToTrade for "ReadyToTrade"
-            /// </summary>
-            [EnumMember(Value = "ReadyToTrade")]
-            ReadyToTrade,
-            
-            /// <summary>
             /// Enum Inactive for "Inactive"
             /// </summary>
             [EnumMember(Value = "Inactive")]
             Inactive,
-            
-            /// <summary>
-            /// Enum Verified for "Verified"
-            /// </summary>
-            [EnumMember(Value = "Verified")]
-            Verified,
             
             /// <summary>
             /// Enum Locked for "Locked"
@@ -114,7 +102,19 @@ namespace Tradovate.Services.Model
             /// Enum ReadyForContracts for "ReadyForContracts"
             /// </summary>
             [EnumMember(Value = "ReadyForContracts")]
-            ReadyForContracts
+            ReadyForContracts,
+            
+            /// <summary>
+            /// Enum ReadyToTrade for "ReadyToTrade"
+            /// </summary>
+            [EnumMember(Value = "ReadyToTrade")]
+            ReadyToTrade,
+            
+            /// <summary>
+            /// Enum Verified for "Verified"
+            /// </summary>
+            [EnumMember(Value = "Verified")]
+            Verified
         }
 
         /// <summary>
@@ -126,36 +126,6 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum ProductType for "ProductType"
-            /// </summary>
-            [EnumMember(Value = "ProductType")]
-            ProductType,
-            
-            /// <summary>
-            /// Enum DiscountGroup for "DiscountGroup"
-            /// </summary>
-            [EnumMember(Value = "DiscountGroup")]
-            DiscountGroup,
-            
-            /// <summary>
-            /// Enum Product for "Product"
-            /// </summary>
-            [EnumMember(Value = "Product")]
-            Product,
-            
-            /// <summary>
-            /// Enum Overall for "Overall"
-            /// </summary>
-            [EnumMember(Value = "Overall")]
-            Overall,
-            
-            /// <summary>
-            /// Enum Exchange for "Exchange"
-            /// </summary>
-            [EnumMember(Value = "Exchange")]
-            Exchange,
-            
-            /// <summary>
             /// Enum Contract for "Contract"
             /// </summary>
             [EnumMember(Value = "Contract")]
@@ -165,7 +135,37 @@ namespace Tradovate.Services.Model
             /// Enum ContractGroup for "ContractGroup"
             /// </summary>
             [EnumMember(Value = "ContractGroup")]
-            ContractGroup
+            ContractGroup,
+            
+            /// <summary>
+            /// Enum DiscountGroup for "DiscountGroup"
+            /// </summary>
+            [EnumMember(Value = "DiscountGroup")]
+            DiscountGroup,
+            
+            /// <summary>
+            /// Enum Exchange for "Exchange"
+            /// </summary>
+            [EnumMember(Value = "Exchange")]
+            Exchange,
+            
+            /// <summary>
+            /// Enum Overall for "Overall"
+            /// </summary>
+            [EnumMember(Value = "Overall")]
+            Overall,
+            
+            /// <summary>
+            /// Enum Product for "Product"
+            /// </summary>
+            [EnumMember(Value = "Product")]
+            Product,
+            
+            /// <summary>
+            /// Enum ProductType for "ProductType"
+            /// </summary>
+            [EnumMember(Value = "ProductType")]
+            ProductType
         }
 
         /// <summary>
@@ -199,18 +199,16 @@ namespace Tradovate.Services.Model
         /// <param name="ProductId">id of Product.</param>
         /// <param name="ExchangeId">id of Exchange.</param>
         /// <param name="ProductType">Cryptocurrency, Futures, MarketInternals, Options, Spread.</param>
-        /// <param name="RiskDiscountContractGroupId">id of RiskDiscountContractGroup.</param>
         /// <param name="ProductVerificationStatus">Inactive, Locked, ReadyForContracts, ReadyToTrade, Verified.</param>
         /// <param name="ContractGroupId">id of ContractGroup.</param>
         /// <param name="Active">Active (required).</param>
-        /// <param name="RiskTimePeriodId">id of RiskTimePeriod.</param>
         /// <param name="TotalBy">Contract, ContractGroup, DiscountGroup, Exchange, Overall, Product, ProductType (required).</param>
         /// <param name="ShortLimit">ShortLimit.</param>
         /// <param name="LongLimit">LongLimit.</param>
         /// <param name="ExposedLimit">ExposedLimit.</param>
         /// <param name="Description">Description.</param>
         /// <param name="AccountId">id of Account (required).</param>
-        public UserAccountPositionLimit(int? Id = null, int? ContractId = null, int? ProductId = null, int? ExchangeId = null, ProductTypeEnum? ProductType = null, int? RiskDiscountContractGroupId = null, ProductVerificationStatusEnum? ProductVerificationStatus = null, int? ContractGroupId = null, bool? Active = null, int? RiskTimePeriodId = null, TotalByEnum? TotalBy = null, int? ShortLimit = null, int? LongLimit = null, int? ExposedLimit = null, string Description = null, int? AccountId = null)
+        public UserAccountPositionLimit(int? Id = null, int? ContractId = null, int? ProductId = null, int? ExchangeId = null, ProductTypeEnum? ProductType = null, ProductVerificationStatusEnum? ProductVerificationStatus = null, int? ContractGroupId = null, bool? Active = null, TotalByEnum? TotalBy = null, int? ShortLimit = null, int? LongLimit = null, int? ExposedLimit = null, string Description = null, int? AccountId = null)
         {
             // to ensure "Active" is required (not null)
             if (Active == null)
@@ -244,10 +242,8 @@ namespace Tradovate.Services.Model
             this.ProductId = ProductId;
             this.ExchangeId = ExchangeId;
             this.ProductType = ProductType;
-            this.RiskDiscountContractGroupId = RiskDiscountContractGroupId;
             this.ProductVerificationStatus = ProductVerificationStatus;
             this.ContractGroupId = ContractGroupId;
-            this.RiskTimePeriodId = RiskTimePeriodId;
             this.ShortLimit = ShortLimit;
             this.LongLimit = LongLimit;
             this.ExposedLimit = ExposedLimit;
@@ -278,12 +274,6 @@ namespace Tradovate.Services.Model
         [DataMember(Name="exchangeId", EmitDefaultValue=false)]
         public int? ExchangeId { get; set; }
         /// <summary>
-        /// id of RiskDiscountContractGroup
-        /// </summary>
-        /// <value>id of RiskDiscountContractGroup</value>
-        [DataMember(Name="riskDiscountContractGroupId", EmitDefaultValue=false)]
-        public int? RiskDiscountContractGroupId { get; set; }
-        /// <summary>
         /// id of ContractGroup
         /// </summary>
         /// <value>id of ContractGroup</value>
@@ -294,12 +284,6 @@ namespace Tradovate.Services.Model
         /// </summary>
         [DataMember(Name="active", EmitDefaultValue=false)]
         public bool? Active { get; set; }
-        /// <summary>
-        /// id of RiskTimePeriod
-        /// </summary>
-        /// <value>id of RiskTimePeriod</value>
-        [DataMember(Name="riskTimePeriodId", EmitDefaultValue=false)]
-        public int? RiskTimePeriodId { get; set; }
         /// <summary>
         /// Gets or Sets ShortLimit
         /// </summary>
@@ -339,11 +323,9 @@ namespace Tradovate.Services.Model
             sb.Append("  ProductId: ").Append(ProductId).Append("\n");
             sb.Append("  ExchangeId: ").Append(ExchangeId).Append("\n");
             sb.Append("  ProductType: ").Append(ProductType).Append("\n");
-            sb.Append("  RiskDiscountContractGroupId: ").Append(RiskDiscountContractGroupId).Append("\n");
             sb.Append("  ProductVerificationStatus: ").Append(ProductVerificationStatus).Append("\n");
             sb.Append("  ContractGroupId: ").Append(ContractGroupId).Append("\n");
             sb.Append("  Active: ").Append(Active).Append("\n");
-            sb.Append("  RiskTimePeriodId: ").Append(RiskTimePeriodId).Append("\n");
             sb.Append("  TotalBy: ").Append(TotalBy).Append("\n");
             sb.Append("  ShortLimit: ").Append(ShortLimit).Append("\n");
             sb.Append("  LongLimit: ").Append(LongLimit).Append("\n");
@@ -412,11 +394,6 @@ namespace Tradovate.Services.Model
                     this.ProductType.Equals(other.ProductType)
                 ) && 
                 (
-                    this.RiskDiscountContractGroupId == other.RiskDiscountContractGroupId ||
-                    this.RiskDiscountContractGroupId != null &&
-                    this.RiskDiscountContractGroupId.Equals(other.RiskDiscountContractGroupId)
-                ) && 
-                (
                     this.ProductVerificationStatus == other.ProductVerificationStatus ||
                     this.ProductVerificationStatus != null &&
                     this.ProductVerificationStatus.Equals(other.ProductVerificationStatus)
@@ -430,11 +407,6 @@ namespace Tradovate.Services.Model
                     this.Active == other.Active ||
                     this.Active != null &&
                     this.Active.Equals(other.Active)
-                ) && 
-                (
-                    this.RiskTimePeriodId == other.RiskTimePeriodId ||
-                    this.RiskTimePeriodId != null &&
-                    this.RiskTimePeriodId.Equals(other.RiskTimePeriodId)
                 ) && 
                 (
                     this.TotalBy == other.TotalBy ||
@@ -489,16 +461,12 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.ExchangeId.GetHashCode();
                 if (this.ProductType != null)
                     hash = hash * 59 + this.ProductType.GetHashCode();
-                if (this.RiskDiscountContractGroupId != null)
-                    hash = hash * 59 + this.RiskDiscountContractGroupId.GetHashCode();
                 if (this.ProductVerificationStatus != null)
                     hash = hash * 59 + this.ProductVerificationStatus.GetHashCode();
                 if (this.ContractGroupId != null)
                     hash = hash * 59 + this.ContractGroupId.GetHashCode();
                 if (this.Active != null)
                     hash = hash * 59 + this.Active.GetHashCode();
-                if (this.RiskTimePeriodId != null)
-                    hash = hash * 59 + this.RiskTimePeriodId.GetHashCode();
                 if (this.TotalBy != null)
                     hash = hash * 59 + this.TotalBy.GetHashCode();
                 if (this.ShortLimit != null)

@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.UsersApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,26 +11,18 @@ Method | HTTP request | Description
 [**CreateMarketDataSubscription**](UsersApi.md#createmarketdatasubscription) | **POST** /marketDataSubscription/create | 
 [**CreateTradovateSubscription**](UsersApi.md#createtradovatesubscription) | **POST** /tradovateSubscription/create | 
 [**CreateUserPlugin**](UsersApi.md#createuserplugin) | **POST** /userPlugin/create | 
-[**DeleteMarketDataSubscription**](UsersApi.md#deletemarketdatasubscription) | **POST** /marketDataSubscription/delete | 
-[**DeleteTradovateSubscription**](UsersApi.md#deletetradovatesubscription) | **POST** /tradovateSubscription/delete | 
-[**DeleteUserPlugin**](UsersApi.md#deleteuserplugin) | **POST** /userPlugin/delete | 
-[**FindCountry**](UsersApi.md#findcountry) | **GET** /country/find | 
 [**FindOrganization**](UsersApi.md#findorganization) | **GET** /organization/find | 
 [**FindUser**](UsersApi.md#finduser) | **GET** /user/find | 
 [**GetAccountTradingPermissions**](UsersApi.md#getaccounttradingpermissions) | **POST** /user/getaccounttradingpermissions | 
-[**GetAllCountries**](UsersApi.md#getallcountries) | **GET** /country/list | 
 [**GetAllMarketDataSubscriptions**](UsersApi.md#getallmarketdatasubscriptions) | **GET** /marketDataSubscription/list | 
 [**GetAllOrganizations**](UsersApi.md#getallorganizations) | **GET** /organization/list | 
 [**GetAllTradovateSubscriptions**](UsersApi.md#getalltradovatesubscriptions) | **GET** /tradovateSubscription/list | 
 [**GetAllUserPlugins**](UsersApi.md#getalluserplugins) | **GET** /userPlugin/list | 
-[**GetAllUserReadStatuses**](UsersApi.md#getalluserreadstatuses) | **GET** /userReadStatus/list | 
 [**GetAllUserSessionStatses**](UsersApi.md#getallusersessionstatses) | **GET** /userSessionStats/list | 
 [**GetAllUsers**](UsersApi.md#getallusers) | **GET** /user/list | 
 [**GetConnectedApplications**](UsersApi.md#getconnectedapplications) | **GET** /user/getconnectedapplications | 
 [**GetContactInfo**](UsersApi.md#getcontactinfo) | **GET** /contactInfo/item | 
 [**GetContactInfos**](UsersApi.md#getcontactinfos) | **GET** /contactInfo/items | 
-[**GetCountries**](UsersApi.md#getcountries) | **GET** /country/items | 
-[**GetCountry**](UsersApi.md#getcountry) | **GET** /country/item | 
 [**GetMarketDataSubscription**](UsersApi.md#getmarketdatasubscription) | **GET** /marketDataSubscription/item | 
 [**GetMarketDataSubscriptions**](UsersApi.md#getmarketdatasubscriptions) | **GET** /marketDataSubscription/items | 
 [**GetOrganization**](UsersApi.md#getorganization) | **GET** /organization/item | 
@@ -45,8 +37,6 @@ Method | HTTP request | Description
 [**GetOwnedUserPluginsBatch**](UsersApi.md#getowneduserpluginsbatch) | **GET** /userPlugin/ldeps | 
 [**GetOwnedUserProperties**](UsersApi.md#getowneduserproperties) | **GET** /userProperty/deps | 
 [**GetOwnedUserPropertiesBatch**](UsersApi.md#getowneduserpropertiesbatch) | **GET** /userProperty/ldeps | 
-[**GetOwnedUserReadStatuses**](UsersApi.md#getowneduserreadstatuses) | **GET** /userReadStatus/deps | 
-[**GetOwnedUserReadStatusesBatch**](UsersApi.md#getowneduserreadstatusesbatch) | **GET** /userReadStatus/ldeps | 
 [**GetOwnedUserSessionStatses**](UsersApi.md#getownedusersessionstatses) | **GET** /userSessionStats/deps | 
 [**GetOwnedUserSessionStatsesBatch**](UsersApi.md#getownedusersessionstatsesbatch) | **GET** /userSessionStats/ldeps | 
 [**GetTradovateSubscription**](UsersApi.md#gettradovatesubscription) | **GET** /tradovateSubscription/item | 
@@ -56,8 +46,6 @@ Method | HTTP request | Description
 [**GetUserPlugins**](UsersApi.md#getuserplugins) | **GET** /userPlugin/items | 
 [**GetUserProperties**](UsersApi.md#getuserproperties) | **GET** /userProperty/items | 
 [**GetUserProperty**](UsersApi.md#getuserproperty) | **GET** /userProperty/item | 
-[**GetUserReadStatus**](UsersApi.md#getuserreadstatus) | **GET** /userReadStatus/item | 
-[**GetUserReadStatuses**](UsersApi.md#getuserreadstatuses) | **GET** /userReadStatus/items | 
 [**GetUserSession**](UsersApi.md#getusersession) | **GET** /userSession/item | 
 [**GetUserSessionStats**](UsersApi.md#getusersessionstats) | **GET** /userSessionStats/item | 
 [**GetUserSessionStatses**](UsersApi.md#getusersessionstatses) | **GET** /userSessionStats/items | 
@@ -69,9 +57,7 @@ Method | HTTP request | Description
 [**OpenDemoAccount**](UsersApi.md#opendemoaccount) | **POST** /user/opendemoaccount | 
 [**RequestTradingPermission**](UsersApi.md#requesttradingpermission) | **POST** /user/requesttradingpermission | 
 [**RevokeTradingPermission**](UsersApi.md#revoketradingpermission) | **POST** /user/revoketradingpermission | 
-[**SetLastNewsReadStatus**](UsersApi.md#setlastnewsreadstatus) | **POST** /userReadStatus/setlastnewsreadstatus | 
 [**SignUpOrganizationMember**](UsersApi.md#signuporganizationmember) | **POST** /user/signuporganizationmember | 
-[**SuggestCountries**](UsersApi.md#suggestcountries) | **GET** /country/suggest | 
 [**SuggestOrganizations**](UsersApi.md#suggestorganizations) | **GET** /organization/suggest | 
 [**SuggestUsers**](UsersApi.md#suggestusers) | **GET** /user/suggest | 
 [**SyncRequest**](UsersApi.md#syncrequest) | **POST** /user/syncrequest | 
@@ -534,277 +520,13 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deletemarketdatasubscription"></a>
-# **DeleteMarketDataSubscription**
-> MarketDataSubscription DeleteMarketDataSubscription (MarketDataSubscription body)
-
-
-
-Updates a existing entity of MarketDataSubscription
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class DeleteMarketDataSubscriptionExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var body = new MarketDataSubscription(); // MarketDataSubscription | 
-
-            try
-            {
-                MarketDataSubscription result = apiInstance.DeleteMarketDataSubscription(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.DeleteMarketDataSubscription: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**MarketDataSubscription**](MarketDataSubscription.md)|  | 
-
-### Return type
-
-[**MarketDataSubscription**](MarketDataSubscription.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="deletetradovatesubscription"></a>
-# **DeleteTradovateSubscription**
-> TradovateSubscription DeleteTradovateSubscription (TradovateSubscription body)
-
-
-
-Updates a existing entity of TradovateSubscription
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class DeleteTradovateSubscriptionExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var body = new TradovateSubscription(); // TradovateSubscription | 
-
-            try
-            {
-                TradovateSubscription result = apiInstance.DeleteTradovateSubscription(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.DeleteTradovateSubscription: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**TradovateSubscription**](TradovateSubscription.md)|  | 
-
-### Return type
-
-[**TradovateSubscription**](TradovateSubscription.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="deleteuserplugin"></a>
-# **DeleteUserPlugin**
-> UserPlugin DeleteUserPlugin (UserPlugin body)
-
-
-
-Updates a existing entity of UserPlugin
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class DeleteUserPluginExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var body = new UserPlugin(); // UserPlugin | 
-
-            try
-            {
-                UserPlugin result = apiInstance.DeleteUserPlugin(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.DeleteUserPlugin: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**UserPlugin**](UserPlugin.md)|  | 
-
-### Return type
-
-[**UserPlugin**](UserPlugin.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="findcountry"></a>
-# **FindCountry**
-> Country FindCountry (string name)
-
-
-
-Finds an entity of Country type by its name
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class FindCountryExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var name = name_example;  // string | 
-
-            try
-            {
-                Country result = apiInstance.FindCountry(name);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.FindCountry: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **string**|  | 
-
-### Return type
-
-[**Country**](Country.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="findorganization"></a>
 # **FindOrganization**
 > Organization FindOrganization (string name)
 
 
 
-Finds an entity of Organization type by its name
+Retrieves an entity of Organization type by its name
 
 ### Example
 ```csharp
@@ -870,7 +592,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of User type by its name
+Retrieves an entity of User type by its name
 
 ### Example
 ```csharp
@@ -994,75 +716,13 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getallcountries"></a>
-# **GetAllCountries**
-> List<Country> GetAllCountries ()
-
-
-
-Returns all entities of Country type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetAllCountriesExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-
-            try
-            {
-                List&lt;Country&gt; result = apiInstance.GetAllCountries();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetAllCountries: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<Country>**](Country.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getallmarketdatasubscriptions"></a>
 # **GetAllMarketDataSubscriptions**
 > List<MarketDataSubscription> GetAllMarketDataSubscriptions ()
 
 
 
-Returns all entities of MarketDataSubscription type
+Retrieves all entities of MarketDataSubscription type
 
 ### Example
 ```csharp
@@ -1124,7 +784,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of Organization type
+Retrieves all entities of Organization type
 
 ### Example
 ```csharp
@@ -1186,7 +846,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of TradovateSubscription type
+Retrieves all entities of TradovateSubscription type
 
 ### Example
 ```csharp
@@ -1248,7 +908,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of UserPlugin type
+Retrieves all entities of UserPlugin type
 
 ### Example
 ```csharp
@@ -1304,75 +964,13 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getalluserreadstatuses"></a>
-# **GetAllUserReadStatuses**
-> List<UserReadStatus> GetAllUserReadStatuses ()
-
-
-
-Returns all entities of UserReadStatus type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetAllUserReadStatusesExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-
-            try
-            {
-                List&lt;UserReadStatus&gt; result = apiInstance.GetAllUserReadStatuses();
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetAllUserReadStatuses: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**List<UserReadStatus>**](UserReadStatus.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getallusersessionstatses"></a>
 # **GetAllUserSessionStatses**
 > List<UserSessionStats> GetAllUserSessionStatses ()
 
 
 
-Returns all entities of UserSessionStats type
+Retrieves all entities of UserSessionStats type
 
 ### Example
 ```csharp
@@ -1434,7 +1032,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of User type
+Retrieves all entities of User type
 
 ### Example
 ```csharp
@@ -1492,7 +1090,7 @@ This endpoint does not need any parameter.
 
 <a name="getconnectedapplications"></a>
 # **GetConnectedApplications**
-> ConnectedApplications GetConnectedApplications (GetConnectedApplications body)
+> ConnectedApplications GetConnectedApplications ()
 
 
 
@@ -1517,11 +1115,10 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new UsersApi();
-            var body = new GetConnectedApplications(); // GetConnectedApplications | 
 
             try
             {
-                ConnectedApplications result = apiInstance.GetConnectedApplications(body);
+                ConnectedApplications result = apiInstance.GetConnectedApplications();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1534,10 +1131,7 @@ namespace Example
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**GetConnectedApplications**](GetConnectedApplications.md)|  | 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -1560,7 +1154,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ContactInfo type by its id
+Retrieves an entity of ContactInfo type by its id
 
 ### Example
 ```csharp
@@ -1626,7 +1220,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ContactInfo type by its ids
+Retrieves multiple entities of ContactInfo type by its ids
 
 ### Example
 ```csharp
@@ -1686,145 +1280,13 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getcountries"></a>
-# **GetCountries**
-> List<Country> GetCountries (List<int?> ids)
-
-
-
-Finds multiple entities of Country type by its ids
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetCountriesExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var ids = new List<int?>(); // List<int?> | 
-
-            try
-            {
-                List&lt;Country&gt; result = apiInstance.GetCountries(ids);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetCountries: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ids** | [**List<int?>**](int?.md)|  | 
-
-### Return type
-
-[**List<Country>**](Country.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getcountry"></a>
-# **GetCountry**
-> Country GetCountry (int? id)
-
-
-
-Finds an entity of Country type by its id
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetCountryExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var id = 56;  // int? | 
-
-            try
-            {
-                Country result = apiInstance.GetCountry(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetCountry: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **int?**|  | 
-
-### Return type
-
-[**Country**](Country.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getmarketdatasubscription"></a>
 # **GetMarketDataSubscription**
 > MarketDataSubscription GetMarketDataSubscription (int? id)
 
 
 
-Finds an entity of MarketDataSubscription type by its id
+Retrieves an entity of MarketDataSubscription type by its id
 
 ### Example
 ```csharp
@@ -1890,7 +1352,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of MarketDataSubscription type by its ids
+Retrieves multiple entities of MarketDataSubscription type by its ids
 
 ### Example
 ```csharp
@@ -1956,7 +1418,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Organization type by its id
+Retrieves an entity of Organization type by its id
 
 ### Example
 ```csharp
@@ -2022,7 +1484,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Organization type by its ids
+Retrieves multiple entities of Organization type by its ids
 
 ### Example
 ```csharp
@@ -2088,7 +1550,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ContactInfo type related to User type
+Retrieves all entities of ContactInfo type related to User entity
 
 ### Example
 ```csharp
@@ -2154,7 +1616,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ContactInfo type related to multiple entities of User type
+Retrieves all entities of ContactInfo type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -2177,7 +1639,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new UsersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -2197,7 +1659,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 
@@ -2220,7 +1682,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of MarketDataSubscription type related to User type
+Retrieves all entities of MarketDataSubscription type related to User entity
 
 ### Example
 ```csharp
@@ -2286,7 +1748,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of MarketDataSubscription type related to multiple entities of User type
+Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -2309,7 +1771,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new UsersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -2329,7 +1791,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 
@@ -2352,7 +1814,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of TradovateSubscription type related to User type
+Retrieves all entities of TradovateSubscription type related to User entity
 
 ### Example
 ```csharp
@@ -2418,7 +1880,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of TradovateSubscription type related to multiple entities of User type
+Retrieves all entities of TradovateSubscription type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -2441,7 +1903,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new UsersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -2461,7 +1923,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 
@@ -2484,7 +1946,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserPlugin type related to User type
+Retrieves all entities of UserPlugin type related to User entity
 
 ### Example
 ```csharp
@@ -2550,7 +2012,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserPlugin type related to multiple entities of User type
+Retrieves all entities of UserPlugin type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -2573,7 +2035,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new UsersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -2593,7 +2055,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 
@@ -2616,7 +2078,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserProperty type related to User type
+Retrieves all entities of UserProperty type related to User entity
 
 ### Example
 ```csharp
@@ -2682,7 +2144,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserProperty type related to multiple entities of User type
+Retrieves all entities of UserProperty type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -2705,7 +2167,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new UsersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -2725,143 +2187,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 
 [**List<UserProperty>**](UserProperty.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getowneduserreadstatuses"></a>
-# **GetOwnedUserReadStatuses**
-> List<UserReadStatus> GetOwnedUserReadStatuses (int? masterid)
-
-
-
-Returns all entities of UserReadStatus type related to User type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetOwnedUserReadStatusesExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var masterid = 56;  // int? | id of User entity
-
-            try
-            {
-                List&lt;UserReadStatus&gt; result = apiInstance.GetOwnedUserReadStatuses(masterid);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetOwnedUserReadStatuses: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **masterid** | **int?**| id of User entity | 
-
-### Return type
-
-[**List<UserReadStatus>**](UserReadStatus.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getowneduserreadstatusesbatch"></a>
-# **GetOwnedUserReadStatusesBatch**
-> List<UserReadStatus> GetOwnedUserReadStatusesBatch (List<int?> masterids)
-
-
-
-Returns all entities of UserReadStatus type related to multiple entities of User type
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetOwnedUserReadStatusesBatchExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
-
-            try
-            {
-                List&lt;UserReadStatus&gt; result = apiInstance.GetOwnedUserReadStatusesBatch(masterids);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetOwnedUserReadStatusesBatch: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
-
-### Return type
-
-[**List<UserReadStatus>**](UserReadStatus.md)
 
 ### Authorization
 
@@ -2880,7 +2210,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserSessionStats type related to User type
+Retrieves all entities of UserSessionStats type related to User entity
 
 ### Example
 ```csharp
@@ -2946,7 +2276,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of UserSessionStats type related to multiple entities of User type
+Retrieves all entities of UserSessionStats type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -2969,7 +2299,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new UsersApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -2989,7 +2319,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 
@@ -3012,7 +2342,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of TradovateSubscription type by its id
+Retrieves an entity of TradovateSubscription type by its id
 
 ### Example
 ```csharp
@@ -3078,7 +2408,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of TradovateSubscription type by its ids
+Retrieves multiple entities of TradovateSubscription type by its ids
 
 ### Example
 ```csharp
@@ -3144,7 +2474,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of User type by its id
+Retrieves an entity of User type by its id
 
 ### Example
 ```csharp
@@ -3210,7 +2540,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of UserPlugin type by its id
+Retrieves an entity of UserPlugin type by its id
 
 ### Example
 ```csharp
@@ -3276,7 +2606,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of UserPlugin type by its ids
+Retrieves multiple entities of UserPlugin type by its ids
 
 ### Example
 ```csharp
@@ -3342,7 +2672,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of UserProperty type by its ids
+Retrieves multiple entities of UserProperty type by its ids
 
 ### Example
 ```csharp
@@ -3408,7 +2738,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of UserProperty type by its id
+Retrieves an entity of UserProperty type by its id
 
 ### Example
 ```csharp
@@ -3468,145 +2798,13 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getuserreadstatus"></a>
-# **GetUserReadStatus**
-> UserReadStatus GetUserReadStatus (int? id)
-
-
-
-Finds an entity of UserReadStatus type by its id
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetUserReadStatusExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var id = 56;  // int? | 
-
-            try
-            {
-                UserReadStatus result = apiInstance.GetUserReadStatus(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetUserReadStatus: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **int?**|  | 
-
-### Return type
-
-[**UserReadStatus**](UserReadStatus.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getuserreadstatuses"></a>
-# **GetUserReadStatuses**
-> List<UserReadStatus> GetUserReadStatuses (List<int?> ids)
-
-
-
-Finds multiple entities of UserReadStatus type by its ids
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class GetUserReadStatusesExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var ids = new List<int?>(); // List<int?> | 
-
-            try
-            {
-                List&lt;UserReadStatus&gt; result = apiInstance.GetUserReadStatuses(ids);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.GetUserReadStatuses: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ids** | [**List<int?>**](int?.md)|  | 
-
-### Return type
-
-[**List<UserReadStatus>**](UserReadStatus.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="getusersession"></a>
 # **GetUserSession**
 > UserSession GetUserSession (int? id)
 
 
 
-Finds an entity of UserSession type by its id
+Retrieves an entity of UserSession type by its id
 
 ### Example
 ```csharp
@@ -3672,7 +2870,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of UserSessionStats type by its id
+Retrieves an entity of UserSessionStats type by its id
 
 ### Example
 ```csharp
@@ -3738,7 +2936,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of UserSessionStats type by its ids
+Retrieves multiple entities of UserSessionStats type by its ids
 
 ### Example
 ```csharp
@@ -3804,7 +3002,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of UserSession type by its ids
+Retrieves multiple entities of UserSession type by its ids
 
 ### Example
 ```csharp
@@ -3870,7 +3068,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of User type by its ids
+Retrieves multiple entities of User type by its ids
 
 ### Example
 ```csharp
@@ -4314,70 +3512,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="setlastnewsreadstatus"></a>
-# **SetLastNewsReadStatus**
-> UserReadStatusResponse SetLastNewsReadStatus (SetLastNewsReadStatus body)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class SetLastNewsReadStatusExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var body = new SetLastNewsReadStatus(); // SetLastNewsReadStatus | 
-
-            try
-            {
-                UserReadStatusResponse result = apiInstance.SetLastNewsReadStatus(body);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.SetLastNewsReadStatus: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**SetLastNewsReadStatus**](SetLastNewsReadStatus.md)|  | 
-
-### Return type
-
-[**UserReadStatusResponse**](UserReadStatusResponse.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="signuporganizationmember"></a>
 # **SignUpOrganizationMember**
 > SignUpResponse SignUpOrganizationMember (SignUpOrganizationMember body)
@@ -4442,81 +3576,13 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="suggestcountries"></a>
-# **SuggestCountries**
-> List<Country> SuggestCountries (string t, int? l)
-
-
-
-Returns entities of Country type filtered by occurence of a text in one of its fields
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using Tradovate.Services.Api;
-using Tradovate.Services.Client;
-using Tradovate.Services.Model;
-
-namespace Example
-{
-    public class SuggestCountriesExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: bearer_access_token
-            Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
-
-            var apiInstance = new UsersApi();
-            var t = t_example;  // string | Text
-            var l = 56;  // int? | Max number of entities
-
-            try
-            {
-                List&lt;Country&gt; result = apiInstance.SuggestCountries(t, l);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling UsersApi.SuggestCountries: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **t** | **string**| Text | 
- **l** | **int?**| Max number of entities | 
-
-### Return type
-
-[**List<Country>**](Country.md)
-
-### Authorization
-
-[bearer_access_token](../README.md#bearer_access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="suggestorganizations"></a>
 # **SuggestOrganizations**
 > List<Organization> SuggestOrganizations (string t, int? l)
 
 
 
-Returns entities of Organization type filtered by occurence of a text in one of its fields
+Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -4584,7 +3650,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of User type filtered by occurence of a text in one of its fields
+Retrieves entities of User type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp
@@ -4716,7 +3782,7 @@ Name | Type | Description  | Notes
 
 
 
-Updates a existing entity of MarketDataSubscription
+Updates an existing entity of MarketDataSubscription
 
 ### Example
 ```csharp
@@ -4782,7 +3848,7 @@ Name | Type | Description  | Notes
 
 
 
-Updates a existing entity of TradovateSubscription
+Updates an existing entity of TradovateSubscription
 
 ### Example
 ```csharp
@@ -4848,7 +3914,7 @@ Name | Type | Description  | Notes
 
 
 
-Updates a existing entity of UserPlugin
+Updates an existing entity of UserPlugin
 
 ### Example
 ```csharp

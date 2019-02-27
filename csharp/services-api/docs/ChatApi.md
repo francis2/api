@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.ChatApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Chat type
+Retrieves all entities of Chat type
 
 ### Example
 ```csharp
@@ -150,7 +150,7 @@ This endpoint does not need any parameter.
 
 
 
-Finds an entity of Chat type by its id
+Retrieves an entity of Chat type by its id
 
 ### Example
 ```csharp
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of ChatMessage type by its id
+Retrieves an entity of ChatMessage type by its id
 
 ### Example
 ```csharp
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of ChatMessage type by its ids
+Retrieves multiple entities of ChatMessage type by its ids
 
 ### Example
 ```csharp
@@ -348,7 +348,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Chat type by its ids
+Retrieves multiple entities of Chat type by its ids
 
 ### Example
 ```csharp
@@ -414,7 +414,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ChatMessage type related to Chat type
+Retrieves all entities of ChatMessage type related to Chat entity
 
 ### Example
 ```csharp
@@ -480,7 +480,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of ChatMessage type related to multiple entities of Chat type
+Retrieves all entities of ChatMessage type related to multiple entities of Chat type
 
 ### Example
 ```csharp
@@ -503,7 +503,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ChatApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Chat entity
+            var masterids = new List<int?>(); // List<int?> | ids of Chat entities
 
             try
             {
@@ -523,7 +523,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Chat entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Chat entities | 
 
 ### Return type
 
@@ -546,7 +546,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Chat type related to User type
+Retrieves all entities of Chat type related to User entity
 
 ### Example
 ```csharp
@@ -612,7 +612,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Chat type related to multiple entities of User type
+Retrieves all entities of Chat type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -635,7 +635,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ChatApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -655,7 +655,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 

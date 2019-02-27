@@ -48,16 +48,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum IncorrectPaymentMethod for "IncorrectPaymentMethod"
+            /// Enum ConflictWithExisting for "ConflictWithExisting"
             /// </summary>
-            [EnumMember(Value = "IncorrectPaymentMethod")]
-            IncorrectPaymentMethod,
+            [EnumMember(Value = "ConflictWithExisting")]
+            ConflictWithExisting,
             
             /// <summary>
-            /// Enum UnknownError for "UnknownError"
+            /// Enum DowngradeNotAllowed for "DowngradeNotAllowed"
             /// </summary>
-            [EnumMember(Value = "UnknownError")]
-            UnknownError,
+            [EnumMember(Value = "DowngradeNotAllowed")]
+            DowngradeNotAllowed,
             
             /// <summary>
             /// Enum IncompatibleCMEMarketDataSubscriptionPlans for "IncompatibleCMEMarketDataSubscriptionPlans"
@@ -66,16 +66,16 @@ namespace Tradovate.Services.Model
             IncompatibleCMEMarketDataSubscriptionPlans,
             
             /// <summary>
+            /// Enum IncorrectPaymentMethod for "IncorrectPaymentMethod"
+            /// </summary>
+            [EnumMember(Value = "IncorrectPaymentMethod")]
+            IncorrectPaymentMethod,
+            
+            /// <summary>
             /// Enum InsufficientFunds for "InsufficientFunds"
             /// </summary>
             [EnumMember(Value = "InsufficientFunds")]
             InsufficientFunds,
-            
-            /// <summary>
-            /// Enum ConflictWithExisting for "ConflictWithExisting"
-            /// </summary>
-            [EnumMember(Value = "ConflictWithExisting")]
-            ConflictWithExisting,
             
             /// <summary>
             /// Enum PaymentProviderError for "PaymentProviderError"
@@ -90,12 +90,6 @@ namespace Tradovate.Services.Model
             PlanDiscontinued,
             
             /// <summary>
-            /// Enum DowngradeNotAllowed for "DowngradeNotAllowed"
-            /// </summary>
-            [EnumMember(Value = "DowngradeNotAllowed")]
-            DowngradeNotAllowed,
-            
-            /// <summary>
             /// Enum SingleTrialOnly for "SingleTrialOnly"
             /// </summary>
             [EnumMember(Value = "SingleTrialOnly")]
@@ -105,7 +99,13 @@ namespace Tradovate.Services.Model
             /// Enum Success for "Success"
             /// </summary>
             [EnumMember(Value = "Success")]
-            Success
+            Success,
+            
+            /// <summary>
+            /// Enum UnknownError for "UnknownError"
+            /// </summary>
+            [EnumMember(Value = "UnknownError")]
+            UnknownError
         }
 
         /// <summary>

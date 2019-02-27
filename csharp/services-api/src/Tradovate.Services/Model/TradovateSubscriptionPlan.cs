@@ -60,16 +60,16 @@ namespace Tradovate.Services.Model
             Quarter,
             
             /// <summary>
-            /// Enum Year for "Year"
-            /// </summary>
-            [EnumMember(Value = "Year")]
-            Year,
-            
-            /// <summary>
             /// Enum Week for "Week"
             /// </summary>
             [EnumMember(Value = "Week")]
-            Week
+            Week,
+            
+            /// <summary>
+            /// Enum Year for "Year"
+            /// </summary>
+            [EnumMember(Value = "Year")]
+            Year
         }
 
         /// <summary>
@@ -96,12 +96,11 @@ namespace Tradovate.Services.Model
         /// <param name="Trial">Trial (required).</param>
         /// <param name="Duration">Duration (required).</param>
         /// <param name="DurationUnits">Month, Quarter, Week, Year (required).</param>
-        /// <param name="RiskCategoryId">id of RiskCategory.</param>
         /// <param name="MultipleAccounts">MultipleAccounts.</param>
         /// <param name="OrganizationId">id of Organization.</param>
         /// <param name="ReplaySessions">ReplaySessions.</param>
         /// <param name="Footnote">Footnote.</param>
-        public TradovateSubscriptionPlan(int? Id = null, string Name = null, string Title = null, double? Price = null, TradeDate StartDate = null, TradeDate DiscontinuedDate = null, string Category = null, bool? Trial = null, int? Duration = null, DurationUnitsEnum? DurationUnits = null, int? RiskCategoryId = null, bool? MultipleAccounts = null, int? OrganizationId = null, int? ReplaySessions = null, string Footnote = null)
+        public TradovateSubscriptionPlan(int? Id = null, string Name = null, string Title = null, double? Price = null, TradeDate StartDate = null, TradeDate DiscontinuedDate = null, string Category = null, bool? Trial = null, int? Duration = null, DurationUnitsEnum? DurationUnits = null, bool? MultipleAccounts = null, int? OrganizationId = null, int? ReplaySessions = null, string Footnote = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -169,7 +168,6 @@ namespace Tradovate.Services.Model
             this.Id = Id;
             this.StartDate = StartDate;
             this.DiscontinuedDate = DiscontinuedDate;
-            this.RiskCategoryId = RiskCategoryId;
             this.MultipleAccounts = MultipleAccounts;
             this.OrganizationId = OrganizationId;
             this.ReplaySessions = ReplaySessions;
@@ -222,12 +220,6 @@ namespace Tradovate.Services.Model
         [DataMember(Name="duration", EmitDefaultValue=false)]
         public int? Duration { get; set; }
         /// <summary>
-        /// id of RiskCategory
-        /// </summary>
-        /// <value>id of RiskCategory</value>
-        [DataMember(Name="riskCategoryId", EmitDefaultValue=false)]
-        public int? RiskCategoryId { get; set; }
-        /// <summary>
         /// Gets or Sets MultipleAccounts
         /// </summary>
         [DataMember(Name="multipleAccounts", EmitDefaultValue=false)]
@@ -266,7 +258,6 @@ namespace Tradovate.Services.Model
             sb.Append("  Trial: ").Append(Trial).Append("\n");
             sb.Append("  Duration: ").Append(Duration).Append("\n");
             sb.Append("  DurationUnits: ").Append(DurationUnits).Append("\n");
-            sb.Append("  RiskCategoryId: ").Append(RiskCategoryId).Append("\n");
             sb.Append("  MultipleAccounts: ").Append(MultipleAccounts).Append("\n");
             sb.Append("  OrganizationId: ").Append(OrganizationId).Append("\n");
             sb.Append("  ReplaySessions: ").Append(ReplaySessions).Append("\n");
@@ -358,11 +349,6 @@ namespace Tradovate.Services.Model
                     this.DurationUnits.Equals(other.DurationUnits)
                 ) && 
                 (
-                    this.RiskCategoryId == other.RiskCategoryId ||
-                    this.RiskCategoryId != null &&
-                    this.RiskCategoryId.Equals(other.RiskCategoryId)
-                ) && 
-                (
                     this.MultipleAccounts == other.MultipleAccounts ||
                     this.MultipleAccounts != null &&
                     this.MultipleAccounts.Equals(other.MultipleAccounts)
@@ -415,8 +401,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Duration.GetHashCode();
                 if (this.DurationUnits != null)
                     hash = hash * 59 + this.DurationUnits.GetHashCode();
-                if (this.RiskCategoryId != null)
-                    hash = hash * 59 + this.RiskCategoryId.GetHashCode();
                 if (this.MultipleAccounts != null)
                     hash = hash * 59 + this.MultipleAccounts.GetHashCode();
                 if (this.OrganizationId != null)

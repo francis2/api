@@ -51,16 +51,13 @@ namespace Tradovate.Services.Model
         /// <param name="UserId">id of User (required).</param>
         /// <param name="Timestamp">Timestamp (required).</param>
         /// <param name="PlanPrice">PlanPrice (required).</param>
-        /// <param name="CreditCardTransactionId">id of CreditCardTransaction.</param>
         /// <param name="CashBalanceLogId">id of CashBalanceLog.</param>
-        /// <param name="CreditCardId">id of CreditCard.</param>
         /// <param name="AccountId">id of Account.</param>
         /// <param name="MarketDataSubscriptionPlanId">id of MarketDataSubscriptionPlan (required).</param>
         /// <param name="Year">Year (required).</param>
         /// <param name="Month">Month (required).</param>
-        /// <param name="RenewalCreditCardId">id of CreditCard.</param>
         /// <param name="RenewalAccountId">id of Account.</param>
-        public MarketDataSubscription(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CreditCardTransactionId = null, int? CashBalanceLogId = null, int? CreditCardId = null, int? AccountId = null, int? MarketDataSubscriptionPlanId = null, int? Year = null, int? Month = null, int? RenewalCreditCardId = null, int? RenewalAccountId = null)
+        public MarketDataSubscription(int? Id = null, int? UserId = null, DateTime? Timestamp = null, double? PlanPrice = null, int? CashBalanceLogId = null, int? AccountId = null, int? MarketDataSubscriptionPlanId = null, int? Year = null, int? Month = null, int? RenewalAccountId = null)
         {
             // to ensure "UserId" is required (not null)
             if (UserId == null)
@@ -117,11 +114,8 @@ namespace Tradovate.Services.Model
                 this.Month = Month;
             }
             this.Id = Id;
-            this.CreditCardTransactionId = CreditCardTransactionId;
             this.CashBalanceLogId = CashBalanceLogId;
-            this.CreditCardId = CreditCardId;
             this.AccountId = AccountId;
-            this.RenewalCreditCardId = RenewalCreditCardId;
             this.RenewalAccountId = RenewalAccountId;
         }
         
@@ -147,23 +141,11 @@ namespace Tradovate.Services.Model
         [DataMember(Name="planPrice", EmitDefaultValue=false)]
         public double? PlanPrice { get; set; }
         /// <summary>
-        /// id of CreditCardTransaction
-        /// </summary>
-        /// <value>id of CreditCardTransaction</value>
-        [DataMember(Name="creditCardTransactionId", EmitDefaultValue=false)]
-        public int? CreditCardTransactionId { get; set; }
-        /// <summary>
         /// id of CashBalanceLog
         /// </summary>
         /// <value>id of CashBalanceLog</value>
         [DataMember(Name="cashBalanceLogId", EmitDefaultValue=false)]
         public int? CashBalanceLogId { get; set; }
-        /// <summary>
-        /// id of CreditCard
-        /// </summary>
-        /// <value>id of CreditCard</value>
-        [DataMember(Name="creditCardId", EmitDefaultValue=false)]
-        public int? CreditCardId { get; set; }
         /// <summary>
         /// id of Account
         /// </summary>
@@ -187,12 +169,6 @@ namespace Tradovate.Services.Model
         [DataMember(Name="month", EmitDefaultValue=false)]
         public int? Month { get; set; }
         /// <summary>
-        /// id of CreditCard
-        /// </summary>
-        /// <value>id of CreditCard</value>
-        [DataMember(Name="renewalCreditCardId", EmitDefaultValue=false)]
-        public int? RenewalCreditCardId { get; set; }
-        /// <summary>
         /// id of Account
         /// </summary>
         /// <value>id of Account</value>
@@ -210,14 +186,11 @@ namespace Tradovate.Services.Model
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  Timestamp: ").Append(Timestamp).Append("\n");
             sb.Append("  PlanPrice: ").Append(PlanPrice).Append("\n");
-            sb.Append("  CreditCardTransactionId: ").Append(CreditCardTransactionId).Append("\n");
             sb.Append("  CashBalanceLogId: ").Append(CashBalanceLogId).Append("\n");
-            sb.Append("  CreditCardId: ").Append(CreditCardId).Append("\n");
             sb.Append("  AccountId: ").Append(AccountId).Append("\n");
             sb.Append("  MarketDataSubscriptionPlanId: ").Append(MarketDataSubscriptionPlanId).Append("\n");
             sb.Append("  Year: ").Append(Year).Append("\n");
             sb.Append("  Month: ").Append(Month).Append("\n");
-            sb.Append("  RenewalCreditCardId: ").Append(RenewalCreditCardId).Append("\n");
             sb.Append("  RenewalAccountId: ").Append(RenewalAccountId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -276,19 +249,9 @@ namespace Tradovate.Services.Model
                     this.PlanPrice.Equals(other.PlanPrice)
                 ) && 
                 (
-                    this.CreditCardTransactionId == other.CreditCardTransactionId ||
-                    this.CreditCardTransactionId != null &&
-                    this.CreditCardTransactionId.Equals(other.CreditCardTransactionId)
-                ) && 
-                (
                     this.CashBalanceLogId == other.CashBalanceLogId ||
                     this.CashBalanceLogId != null &&
                     this.CashBalanceLogId.Equals(other.CashBalanceLogId)
-                ) && 
-                (
-                    this.CreditCardId == other.CreditCardId ||
-                    this.CreditCardId != null &&
-                    this.CreditCardId.Equals(other.CreditCardId)
                 ) && 
                 (
                     this.AccountId == other.AccountId ||
@@ -309,11 +272,6 @@ namespace Tradovate.Services.Model
                     this.Month == other.Month ||
                     this.Month != null &&
                     this.Month.Equals(other.Month)
-                ) && 
-                (
-                    this.RenewalCreditCardId == other.RenewalCreditCardId ||
-                    this.RenewalCreditCardId != null &&
-                    this.RenewalCreditCardId.Equals(other.RenewalCreditCardId)
                 ) && 
                 (
                     this.RenewalAccountId == other.RenewalAccountId ||
@@ -341,12 +299,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Timestamp.GetHashCode();
                 if (this.PlanPrice != null)
                     hash = hash * 59 + this.PlanPrice.GetHashCode();
-                if (this.CreditCardTransactionId != null)
-                    hash = hash * 59 + this.CreditCardTransactionId.GetHashCode();
                 if (this.CashBalanceLogId != null)
                     hash = hash * 59 + this.CashBalanceLogId.GetHashCode();
-                if (this.CreditCardId != null)
-                    hash = hash * 59 + this.CreditCardId.GetHashCode();
                 if (this.AccountId != null)
                     hash = hash * 59 + this.AccountId.GetHashCode();
                 if (this.MarketDataSubscriptionPlanId != null)
@@ -355,8 +309,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Year.GetHashCode();
                 if (this.Month != null)
                     hash = hash * 59 + this.Month.GetHashCode();
-                if (this.RenewalCreditCardId != null)
-                    hash = hash * 59 + this.RenewalCreditCardId.GetHashCode();
                 if (this.RenewalAccountId != null)
                     hash = hash * 59 + this.RenewalAccountId.GetHashCode();
                 return hash;

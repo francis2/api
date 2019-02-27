@@ -54,10 +54,10 @@ namespace Tradovate.Services.Model
             Active,
             
             /// <summary>
-            /// Enum Inactive for "Inactive"
+            /// Enum Expired for "Expired"
             /// </summary>
-            [EnumMember(Value = "Inactive")]
-            Inactive,
+            [EnumMember(Value = "Expired")]
+            Expired,
             
             /// <summary>
             /// Enum Failed for "Failed"
@@ -66,10 +66,10 @@ namespace Tradovate.Services.Model
             Failed,
             
             /// <summary>
-            /// Enum Expired for "Expired"
+            /// Enum Inactive for "Inactive"
             /// </summary>
-            [EnumMember(Value = "Expired")]
-            Expired,
+            [EnumMember(Value = "Inactive")]
+            Inactive,
             
             /// <summary>
             /// Enum TriggeredOut for "TriggeredOut"

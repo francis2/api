@@ -75,16 +75,28 @@ namespace Tradovate.Services.Model
             Limit,
             
             /// <summary>
+            /// Enum MIT for "MIT"
+            /// </summary>
+            [EnumMember(Value = "MIT")]
+            MIT,
+            
+            /// <summary>
             /// Enum Market for "Market"
             /// </summary>
             [EnumMember(Value = "Market")]
             Market,
             
             /// <summary>
-            /// Enum TrailingStopLimit for "TrailingStopLimit"
+            /// Enum QTS for "QTS"
             /// </summary>
-            [EnumMember(Value = "TrailingStopLimit")]
-            TrailingStopLimit,
+            [EnumMember(Value = "QTS")]
+            QTS,
+            
+            /// <summary>
+            /// Enum Stop for "Stop"
+            /// </summary>
+            [EnumMember(Value = "Stop")]
+            Stop,
             
             /// <summary>
             /// Enum StopLimit for "StopLimit"
@@ -99,22 +111,10 @@ namespace Tradovate.Services.Model
             TrailingStop,
             
             /// <summary>
-            /// Enum MIT for "MIT"
+            /// Enum TrailingStopLimit for "TrailingStopLimit"
             /// </summary>
-            [EnumMember(Value = "MIT")]
-            MIT,
-            
-            /// <summary>
-            /// Enum QTS for "QTS"
-            /// </summary>
-            [EnumMember(Value = "QTS")]
-            QTS,
-            
-            /// <summary>
-            /// Enum Stop for "Stop"
-            /// </summary>
-            [EnumMember(Value = "Stop")]
-            Stop
+            [EnumMember(Value = "TrailingStopLimit")]
+            TrailingStopLimit
         }
 
         /// <summary>
@@ -126,10 +126,10 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum GTD for "GTD"
+            /// Enum Day for "Day"
             /// </summary>
-            [EnumMember(Value = "GTD")]
-            GTD,
+            [EnumMember(Value = "Day")]
+            Day,
             
             /// <summary>
             /// Enum FOK for "FOK"
@@ -144,10 +144,10 @@ namespace Tradovate.Services.Model
             GTC,
             
             /// <summary>
-            /// Enum Day for "Day"
+            /// Enum GTD for "GTD"
             /// </summary>
-            [EnumMember(Value = "Day")]
-            Day,
+            [EnumMember(Value = "GTD")]
+            GTD,
             
             /// <summary>
             /// Enum IOC for "IOC"

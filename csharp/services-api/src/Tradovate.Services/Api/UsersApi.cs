@@ -187,91 +187,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of MarketDataSubscription
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>MarketDataSubscription</returns>
-        MarketDataSubscription DeleteMarketDataSubscription (MarketDataSubscription body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of MarketDataSubscription
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of MarketDataSubscription</returns>
-        ApiResponse<MarketDataSubscription> DeleteMarketDataSubscriptionWithHttpInfo (MarketDataSubscription body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of TradovateSubscription
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>TradovateSubscription</returns>
-        TradovateSubscription DeleteTradovateSubscription (TradovateSubscription body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of TradovateSubscription
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of TradovateSubscription</returns>
-        ApiResponse<TradovateSubscription> DeleteTradovateSubscriptionWithHttpInfo (TradovateSubscription body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of UserPlugin
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>UserPlugin</returns>
-        UserPlugin DeleteUserPlugin (UserPlugin body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of UserPlugin
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of UserPlugin</returns>
-        ApiResponse<UserPlugin> DeleteUserPluginWithHttpInfo (UserPlugin body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Country type by its name
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name"></param>
-        /// <returns>Country</returns>
-        Country FindCountry (string name);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Country type by its name
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name"></param>
-        /// <returns>ApiResponse of Country</returns>
-        ApiResponse<Country> FindCountryWithHttpInfo (string name);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Organization type by its name
+        /// Retrieves an entity of Organization type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -282,7 +198,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Organization type by its name
+        /// Retrieves an entity of Organization type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -292,7 +208,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of User type by its name
+        /// Retrieves an entity of User type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -303,7 +219,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of User type by its name
+        /// Retrieves an entity of User type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -334,26 +250,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Country type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;Country&gt;</returns>
-        List<Country> GetAllCountries ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of Country type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;Country&gt;</returns>
-        ApiResponse<List<Country>> GetAllCountriesWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of MarketDataSubscription type
+        /// Retrieves all entities of MarketDataSubscription type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;MarketDataSubscription&gt;</returns>
@@ -363,7 +260,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type
+        /// Retrieves all entities of MarketDataSubscription type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;MarketDataSubscription&gt;</returns>
@@ -372,7 +269,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Organization type
+        /// Retrieves all entities of Organization type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Organization&gt;</returns>
@@ -382,7 +279,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Organization type
+        /// Retrieves all entities of Organization type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Organization&gt;</returns>
@@ -391,7 +288,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type
+        /// Retrieves all entities of TradovateSubscription type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;TradovateSubscription&gt;</returns>
@@ -401,7 +298,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type
+        /// Retrieves all entities of TradovateSubscription type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;TradovateSubscription&gt;</returns>
@@ -410,7 +307,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type
+        /// Retrieves all entities of UserPlugin type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;UserPlugin&gt;</returns>
@@ -420,7 +317,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type
+        /// Retrieves all entities of UserPlugin type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;UserPlugin&gt;</returns>
@@ -429,26 +326,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserReadStatus type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;UserReadStatus&gt;</returns>
-        List<UserReadStatus> GetAllUserReadStatuses ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserReadStatus type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
-        ApiResponse<List<UserReadStatus>> GetAllUserReadStatusesWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserSessionStats type
+        /// Retrieves all entities of UserSessionStats type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;UserSessionStats&gt;</returns>
@@ -458,7 +336,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserSessionStats type
+        /// Retrieves all entities of UserSessionStats type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
@@ -467,7 +345,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of User type
+        /// Retrieves all entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;User&gt;</returns>
@@ -477,7 +355,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of User type
+        /// Retrieves all entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;User&gt;</returns>
@@ -489,9 +367,8 @@ namespace Tradovate.Services.Api
         /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>ConnectedApplications</returns>
-        ConnectedApplications GetConnectedApplications (GetConnectedApplications body);
+        ConnectedApplications GetConnectedApplications ();
 
         /// <summary>
         /// 
@@ -500,14 +377,13 @@ namespace Tradovate.Services.Api
         /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>ApiResponse of ConnectedApplications</returns>
-        ApiResponse<ConnectedApplications> GetConnectedApplicationsWithHttpInfo (GetConnectedApplications body);
+        ApiResponse<ConnectedApplications> GetConnectedApplicationsWithHttpInfo ();
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContactInfo type by its id
+        /// Retrieves an entity of ContactInfo type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -518,7 +394,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContactInfo type by its id
+        /// Retrieves an entity of ContactInfo type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -528,7 +404,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContactInfo type by its ids
+        /// Retrieves multiple entities of ContactInfo type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -539,7 +415,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContactInfo type by its ids
+        /// Retrieves multiple entities of ContactInfo type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -549,49 +425,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Country type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>List&lt;Country&gt;</returns>
-        List<Country> GetCountries (List<int?> ids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of Country type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>ApiResponse of List&lt;Country&gt;</returns>
-        ApiResponse<List<Country>> GetCountriesWithHttpInfo (List<int?> ids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Country type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Country</returns>
-        Country GetCountry (int? id);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Country type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>ApiResponse of Country</returns>
-        ApiResponse<Country> GetCountryWithHttpInfo (int? id);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of MarketDataSubscription type by its id
+        /// Retrieves an entity of MarketDataSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -602,7 +436,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscription type by its id
+        /// Retrieves an entity of MarketDataSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -612,7 +446,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscription type by its ids
+        /// Retrieves multiple entities of MarketDataSubscription type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -623,7 +457,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscription type by its ids
+        /// Retrieves multiple entities of MarketDataSubscription type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -633,7 +467,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Organization type by its id
+        /// Retrieves an entity of Organization type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -644,7 +478,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Organization type by its id
+        /// Retrieves an entity of Organization type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -654,7 +488,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Organization type by its ids
+        /// Retrieves multiple entities of Organization type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -665,7 +499,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Organization type by its ids
+        /// Retrieves multiple entities of Organization type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -675,7 +509,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type related to User type
+        /// Retrieves all entities of ContactInfo type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -686,7 +520,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type related to User type
+        /// Retrieves all entities of ContactInfo type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -696,10 +530,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type related to multiple entities of User type
+        /// Retrieves all entities of ContactInfo type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;ContactInfo&gt;</returns>
         List<ContactInfo> GetOwnedContactInfosBatch (List<int?> masterids);
 
@@ -707,17 +541,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type related to multiple entities of User type
+        /// Retrieves all entities of ContactInfo type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;ContactInfo&gt;</returns>
         ApiResponse<List<ContactInfo>> GetOwnedContactInfosBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type related to User type
+        /// Retrieves all entities of MarketDataSubscription type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -728,7 +562,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type related to User type
+        /// Retrieves all entities of MarketDataSubscription type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -738,10 +572,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type related to multiple entities of User type
+        /// Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;MarketDataSubscription&gt;</returns>
         List<MarketDataSubscription> GetOwnedMarketDataSubscriptionsBatch (List<int?> masterids);
 
@@ -749,17 +583,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type related to multiple entities of User type
+        /// Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;MarketDataSubscription&gt;</returns>
         ApiResponse<List<MarketDataSubscription>> GetOwnedMarketDataSubscriptionsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type related to User type
+        /// Retrieves all entities of TradovateSubscription type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -770,7 +604,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type related to User type
+        /// Retrieves all entities of TradovateSubscription type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -780,10 +614,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type related to multiple entities of User type
+        /// Retrieves all entities of TradovateSubscription type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;TradovateSubscription&gt;</returns>
         List<TradovateSubscription> GetOwnedTradovateSubscriptionsBatch (List<int?> masterids);
 
@@ -791,17 +625,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type related to multiple entities of User type
+        /// Retrieves all entities of TradovateSubscription type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;TradovateSubscription&gt;</returns>
         ApiResponse<List<TradovateSubscription>> GetOwnedTradovateSubscriptionsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type related to User type
+        /// Retrieves all entities of UserPlugin type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -812,7 +646,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type related to User type
+        /// Retrieves all entities of UserPlugin type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -822,10 +656,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type related to multiple entities of User type
+        /// Retrieves all entities of UserPlugin type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;UserPlugin&gt;</returns>
         List<UserPlugin> GetOwnedUserPluginsBatch (List<int?> masterids);
 
@@ -833,17 +667,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type related to multiple entities of User type
+        /// Retrieves all entities of UserPlugin type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;UserPlugin&gt;</returns>
         ApiResponse<List<UserPlugin>> GetOwnedUserPluginsBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserProperty type related to User type
+        /// Retrieves all entities of UserProperty type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -854,7 +688,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserProperty type related to User type
+        /// Retrieves all entities of UserProperty type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -864,10 +698,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserProperty type related to multiple entities of User type
+        /// Retrieves all entities of UserProperty type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;UserProperty&gt;</returns>
         List<UserProperty> GetOwnedUserPropertiesBatch (List<int?> masterids);
 
@@ -875,59 +709,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserProperty type related to multiple entities of User type
+        /// Retrieves all entities of UserProperty type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;UserProperty&gt;</returns>
         ApiResponse<List<UserProperty>> GetOwnedUserPropertiesBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserReadStatus type related to User type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of User entity</param>
-        /// <returns>List&lt;UserReadStatus&gt;</returns>
-        List<UserReadStatus> GetOwnedUserReadStatuses (int? masterid);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserReadStatus type related to User type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of User entity</param>
-        /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
-        ApiResponse<List<UserReadStatus>> GetOwnedUserReadStatusesWithHttpInfo (int? masterid);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserReadStatus type related to multiple entities of User type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
-        /// <returns>List&lt;UserReadStatus&gt;</returns>
-        List<UserReadStatus> GetOwnedUserReadStatusesBatch (List<int?> masterids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserReadStatus type related to multiple entities of User type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
-        /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
-        ApiResponse<List<UserReadStatus>> GetOwnedUserReadStatusesBatchWithHttpInfo (List<int?> masterids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserSessionStats type related to User type
+        /// Retrieves all entities of UserSessionStats type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -938,7 +730,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserSessionStats type related to User type
+        /// Retrieves all entities of UserSessionStats type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -948,10 +740,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// Retrieves all entities of UserSessionStats type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;UserSessionStats&gt;</returns>
         List<UserSessionStats> GetOwnedUserSessionStatsesBatch (List<int?> masterids);
 
@@ -959,17 +751,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// Retrieves all entities of UserSessionStats type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
         ApiResponse<List<UserSessionStats>> GetOwnedUserSessionStatsesBatchWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscription type by its id
+        /// Retrieves an entity of TradovateSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -980,7 +772,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscription type by its id
+        /// Retrieves an entity of TradovateSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -990,7 +782,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradovateSubscription type by its ids
+        /// Retrieves multiple entities of TradovateSubscription type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1001,7 +793,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradovateSubscription type by its ids
+        /// Retrieves multiple entities of TradovateSubscription type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1011,7 +803,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of User type by its id
+        /// Retrieves an entity of User type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1022,7 +814,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of User type by its id
+        /// Retrieves an entity of User type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1032,7 +824,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserPlugin type by its id
+        /// Retrieves an entity of UserPlugin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1043,7 +835,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserPlugin type by its id
+        /// Retrieves an entity of UserPlugin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1053,7 +845,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserPlugin type by its ids
+        /// Retrieves multiple entities of UserPlugin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1064,7 +856,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserPlugin type by its ids
+        /// Retrieves multiple entities of UserPlugin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1074,7 +866,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserProperty type by its ids
+        /// Retrieves multiple entities of UserProperty type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1085,7 +877,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserProperty type by its ids
+        /// Retrieves multiple entities of UserProperty type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1095,7 +887,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserProperty type by its id
+        /// Retrieves an entity of UserProperty type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1106,7 +898,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserProperty type by its id
+        /// Retrieves an entity of UserProperty type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1116,49 +908,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserReadStatus type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>UserReadStatus</returns>
-        UserReadStatus GetUserReadStatus (int? id);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of UserReadStatus type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>ApiResponse of UserReadStatus</returns>
-        ApiResponse<UserReadStatus> GetUserReadStatusWithHttpInfo (int? id);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of UserReadStatus type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>List&lt;UserReadStatus&gt;</returns>
-        List<UserReadStatus> GetUserReadStatuses (List<int?> ids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of UserReadStatus type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
-        ApiResponse<List<UserReadStatus>> GetUserReadStatusesWithHttpInfo (List<int?> ids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of UserSession type by its id
+        /// Retrieves an entity of UserSession type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1169,7 +919,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserSession type by its id
+        /// Retrieves an entity of UserSession type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1179,7 +929,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserSessionStats type by its id
+        /// Retrieves an entity of UserSessionStats type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1190,7 +940,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserSessionStats type by its id
+        /// Retrieves an entity of UserSessionStats type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -1200,7 +950,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserSessionStats type by its ids
+        /// Retrieves multiple entities of UserSessionStats type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1211,7 +961,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserSessionStats type by its ids
+        /// Retrieves multiple entities of UserSessionStats type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1221,7 +971,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserSession type by its ids
+        /// Retrieves multiple entities of UserSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1232,7 +982,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserSession type by its ids
+        /// Retrieves multiple entities of UserSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1242,7 +992,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of User type by its ids
+        /// Retrieves multiple entities of User type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1253,7 +1003,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of User type by its ids
+        /// Retrieves multiple entities of User type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -1393,27 +1143,6 @@ namespace Tradovate.Services.Api
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>UserReadStatusResponse</returns>
-        UserReadStatusResponse SetLastNewsReadStatus (SetLastNewsReadStatus body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of UserReadStatusResponse</returns>
-        ApiResponse<UserReadStatusResponse> SetLastNewsReadStatusWithHttpInfo (SetLastNewsReadStatus body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>SignUpResponse</returns>
         SignUpResponse SignUpOrganizationMember (SignUpOrganizationMember body);
 
@@ -1431,30 +1160,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Country type filtered by occurence of a text in one of its fields
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="t">Text</param>
-        /// <param name="l">Max number of entities</param>
-        /// <returns>List&lt;Country&gt;</returns>
-        List<Country> SuggestCountries (string t, int? l);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns entities of Country type filtered by occurence of a text in one of its fields
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="t">Text</param>
-        /// <param name="l">Max number of entities</param>
-        /// <returns>ApiResponse of List&lt;Country&gt;</returns>
-        ApiResponse<List<Country>> SuggestCountriesWithHttpInfo (string t, int? l);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns entities of Organization type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1466,7 +1172,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Organization type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1477,7 +1183,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of User type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of User type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1489,7 +1195,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of User type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of User type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -1521,7 +1227,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of MarketDataSubscription
+        /// Updates an existing entity of MarketDataSubscription
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1532,7 +1238,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of MarketDataSubscription
+        /// Updates an existing entity of MarketDataSubscription
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1542,7 +1248,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of TradovateSubscription
+        /// Updates an existing entity of TradovateSubscription
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1553,7 +1259,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of TradovateSubscription
+        /// Updates an existing entity of TradovateSubscription
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1563,7 +1269,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserPlugin
+        /// Updates an existing entity of UserPlugin
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1574,7 +1280,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserPlugin
+        /// Updates an existing entity of UserPlugin
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -1733,91 +1439,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of MarketDataSubscription
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of MarketDataSubscription</returns>
-        System.Threading.Tasks.Task<MarketDataSubscription> DeleteMarketDataSubscriptionAsync (MarketDataSubscription body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of MarketDataSubscription
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (MarketDataSubscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<MarketDataSubscription>> DeleteMarketDataSubscriptionAsyncWithHttpInfo (MarketDataSubscription body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of TradovateSubscription
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of TradovateSubscription</returns>
-        System.Threading.Tasks.Task<TradovateSubscription> DeleteTradovateSubscriptionAsync (TradovateSubscription body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of TradovateSubscription
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (TradovateSubscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<TradovateSubscription>> DeleteTradovateSubscriptionAsyncWithHttpInfo (TradovateSubscription body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of UserPlugin
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of UserPlugin</returns>
-        System.Threading.Tasks.Task<UserPlugin> DeleteUserPluginAsync (UserPlugin body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Updates a existing entity of UserPlugin
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserPlugin)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UserPlugin>> DeleteUserPluginAsyncWithHttpInfo (UserPlugin body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Country type by its name
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name"></param>
-        /// <returns>Task of Country</returns>
-        System.Threading.Tasks.Task<Country> FindCountryAsync (string name);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Country type by its name
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name"></param>
-        /// <returns>Task of ApiResponse (Country)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Country>> FindCountryAsyncWithHttpInfo (string name);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Organization type by its name
+        /// Retrieves an entity of Organization type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1828,7 +1450,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Organization type by its name
+        /// Retrieves an entity of Organization type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1838,7 +1460,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of User type by its name
+        /// Retrieves an entity of User type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1849,7 +1471,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of User type by its name
+        /// Retrieves an entity of User type by its name
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -1880,26 +1502,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Country type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;Country&gt;</returns>
-        System.Threading.Tasks.Task<List<Country>> GetAllCountriesAsync ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of Country type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;Country&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Country>>> GetAllCountriesAsyncWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of MarketDataSubscription type
+        /// Retrieves all entities of MarketDataSubscription type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;MarketDataSubscription&gt;</returns>
@@ -1909,7 +1512,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type
+        /// Retrieves all entities of MarketDataSubscription type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;MarketDataSubscription&gt;)</returns>
@@ -1918,7 +1521,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Organization type
+        /// Retrieves all entities of Organization type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Organization&gt;</returns>
@@ -1928,7 +1531,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of Organization type
+        /// Retrieves all entities of Organization type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Organization&gt;)</returns>
@@ -1937,7 +1540,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type
+        /// Retrieves all entities of TradovateSubscription type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;TradovateSubscription&gt;</returns>
@@ -1947,7 +1550,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type
+        /// Retrieves all entities of TradovateSubscription type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;TradovateSubscription&gt;)</returns>
@@ -1956,7 +1559,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type
+        /// Retrieves all entities of UserPlugin type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;UserPlugin&gt;</returns>
@@ -1966,7 +1569,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type
+        /// Retrieves all entities of UserPlugin type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;UserPlugin&gt;)</returns>
@@ -1975,26 +1578,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserReadStatus type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;UserReadStatus&gt;</returns>
-        System.Threading.Tasks.Task<List<UserReadStatus>> GetAllUserReadStatusesAsync ();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserReadStatus type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetAllUserReadStatusesAsyncWithHttpInfo ();
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserSessionStats type
+        /// Retrieves all entities of UserSessionStats type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
@@ -2004,7 +1588,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserSessionStats type
+        /// Retrieves all entities of UserSessionStats type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
@@ -2013,7 +1597,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of User type
+        /// Retrieves all entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;User&gt;</returns>
@@ -2023,7 +1607,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of User type
+        /// Retrieves all entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;User&gt;)</returns>
@@ -2035,9 +1619,8 @@ namespace Tradovate.Services.Api
         /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>Task of ConnectedApplications</returns>
-        System.Threading.Tasks.Task<ConnectedApplications> GetConnectedApplicationsAsync (GetConnectedApplications body);
+        System.Threading.Tasks.Task<ConnectedApplications> GetConnectedApplicationsAsync ();
 
         /// <summary>
         /// 
@@ -2046,14 +1629,13 @@ namespace Tradovate.Services.Api
         /// 
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>Task of ApiResponse (ConnectedApplications)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ConnectedApplications>> GetConnectedApplicationsAsyncWithHttpInfo (GetConnectedApplications body);
+        System.Threading.Tasks.Task<ApiResponse<ConnectedApplications>> GetConnectedApplicationsAsyncWithHttpInfo ();
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContactInfo type by its id
+        /// Retrieves an entity of ContactInfo type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2064,7 +1646,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of ContactInfo type by its id
+        /// Retrieves an entity of ContactInfo type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2074,7 +1656,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContactInfo type by its ids
+        /// Retrieves multiple entities of ContactInfo type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2085,7 +1667,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of ContactInfo type by its ids
+        /// Retrieves multiple entities of ContactInfo type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2095,49 +1677,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Country type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of List&lt;Country&gt;</returns>
-        System.Threading.Tasks.Task<List<Country>> GetCountriesAsync (List<int?> ids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of Country type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of ApiResponse (List&lt;Country&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Country>>> GetCountriesAsyncWithHttpInfo (List<int?> ids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Country type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of Country</returns>
-        System.Threading.Tasks.Task<Country> GetCountryAsync (int? id);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of Country type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of ApiResponse (Country)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Country>> GetCountryAsyncWithHttpInfo (int? id);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of MarketDataSubscription type by its id
+        /// Retrieves an entity of MarketDataSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2148,7 +1688,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of MarketDataSubscription type by its id
+        /// Retrieves an entity of MarketDataSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2158,7 +1698,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscription type by its ids
+        /// Retrieves multiple entities of MarketDataSubscription type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2169,7 +1709,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of MarketDataSubscription type by its ids
+        /// Retrieves multiple entities of MarketDataSubscription type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2179,7 +1719,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Organization type by its id
+        /// Retrieves an entity of Organization type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2190,7 +1730,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of Organization type by its id
+        /// Retrieves an entity of Organization type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2200,7 +1740,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Organization type by its ids
+        /// Retrieves multiple entities of Organization type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2211,7 +1751,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of Organization type by its ids
+        /// Retrieves multiple entities of Organization type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2221,7 +1761,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type related to User type
+        /// Retrieves all entities of ContactInfo type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2232,7 +1772,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type related to User type
+        /// Retrieves all entities of ContactInfo type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2242,10 +1782,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type related to multiple entities of User type
+        /// Retrieves all entities of ContactInfo type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;ContactInfo&gt;</returns>
         System.Threading.Tasks.Task<List<ContactInfo>> GetOwnedContactInfosBatchAsync (List<int?> masterids);
 
@@ -2253,17 +1793,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of ContactInfo type related to multiple entities of User type
+        /// Retrieves all entities of ContactInfo type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;ContactInfo&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<ContactInfo>>> GetOwnedContactInfosBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type related to User type
+        /// Retrieves all entities of MarketDataSubscription type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2274,7 +1814,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type related to User type
+        /// Retrieves all entities of MarketDataSubscription type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2284,10 +1824,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type related to multiple entities of User type
+        /// Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;MarketDataSubscription&gt;</returns>
         System.Threading.Tasks.Task<List<MarketDataSubscription>> GetOwnedMarketDataSubscriptionsBatchAsync (List<int?> masterids);
 
@@ -2295,17 +1835,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of MarketDataSubscription type related to multiple entities of User type
+        /// Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;MarketDataSubscription&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<MarketDataSubscription>>> GetOwnedMarketDataSubscriptionsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type related to User type
+        /// Retrieves all entities of TradovateSubscription type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2316,7 +1856,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type related to User type
+        /// Retrieves all entities of TradovateSubscription type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2326,10 +1866,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type related to multiple entities of User type
+        /// Retrieves all entities of TradovateSubscription type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;TradovateSubscription&gt;</returns>
         System.Threading.Tasks.Task<List<TradovateSubscription>> GetOwnedTradovateSubscriptionsBatchAsync (List<int?> masterids);
 
@@ -2337,17 +1877,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of TradovateSubscription type related to multiple entities of User type
+        /// Retrieves all entities of TradovateSubscription type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;TradovateSubscription&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<TradovateSubscription>>> GetOwnedTradovateSubscriptionsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type related to User type
+        /// Retrieves all entities of UserPlugin type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2358,7 +1898,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type related to User type
+        /// Retrieves all entities of UserPlugin type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2368,10 +1908,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type related to multiple entities of User type
+        /// Retrieves all entities of UserPlugin type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;UserPlugin&gt;</returns>
         System.Threading.Tasks.Task<List<UserPlugin>> GetOwnedUserPluginsBatchAsync (List<int?> masterids);
 
@@ -2379,17 +1919,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserPlugin type related to multiple entities of User type
+        /// Retrieves all entities of UserPlugin type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserPlugin&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<UserPlugin>>> GetOwnedUserPluginsBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserProperty type related to User type
+        /// Retrieves all entities of UserProperty type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2400,7 +1940,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserProperty type related to User type
+        /// Retrieves all entities of UserProperty type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2410,10 +1950,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserProperty type related to multiple entities of User type
+        /// Retrieves all entities of UserProperty type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;UserProperty&gt;</returns>
         System.Threading.Tasks.Task<List<UserProperty>> GetOwnedUserPropertiesBatchAsync (List<int?> masterids);
 
@@ -2421,59 +1961,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserProperty type related to multiple entities of User type
+        /// Retrieves all entities of UserProperty type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserProperty&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<UserProperty>>> GetOwnedUserPropertiesBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserReadStatus type related to User type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of User entity</param>
-        /// <returns>Task of List&lt;UserReadStatus&gt;</returns>
-        System.Threading.Tasks.Task<List<UserReadStatus>> GetOwnedUserReadStatusesAsync (int? masterid);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserReadStatus type related to User type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of User entity</param>
-        /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetOwnedUserReadStatusesAsyncWithHttpInfo (int? masterid);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserReadStatus type related to multiple entities of User type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
-        /// <returns>Task of List&lt;UserReadStatus&gt;</returns>
-        System.Threading.Tasks.Task<List<UserReadStatus>> GetOwnedUserReadStatusesBatchAsync (List<int?> masterids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserReadStatus type related to multiple entities of User type
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
-        /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetOwnedUserReadStatusesBatchAsyncWithHttpInfo (List<int?> masterids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns all entities of UserSessionStats type related to User type
+        /// Retrieves all entities of UserSessionStats type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2484,7 +1982,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserSessionStats type related to User type
+        /// Retrieves all entities of UserSessionStats type related to User entity
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -2494,10 +1992,10 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// Retrieves all entities of UserSessionStats type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
         System.Threading.Tasks.Task<List<UserSessionStats>> GetOwnedUserSessionStatsesBatchAsync (List<int?> masterids);
 
@@ -2505,17 +2003,17 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns all entities of UserSessionStats type related to multiple entities of User type
+        /// Retrieves all entities of UserSessionStats type related to multiple entities of User type
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetOwnedUserSessionStatsesBatchAsyncWithHttpInfo (List<int?> masterids);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscription type by its id
+        /// Retrieves an entity of TradovateSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2526,7 +2024,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of TradovateSubscription type by its id
+        /// Retrieves an entity of TradovateSubscription type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2536,7 +2034,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradovateSubscription type by its ids
+        /// Retrieves multiple entities of TradovateSubscription type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2547,7 +2045,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of TradovateSubscription type by its ids
+        /// Retrieves multiple entities of TradovateSubscription type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2557,7 +2055,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of User type by its id
+        /// Retrieves an entity of User type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2568,7 +2066,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of User type by its id
+        /// Retrieves an entity of User type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2578,7 +2076,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserPlugin type by its id
+        /// Retrieves an entity of UserPlugin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2589,7 +2087,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserPlugin type by its id
+        /// Retrieves an entity of UserPlugin type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2599,7 +2097,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserPlugin type by its ids
+        /// Retrieves multiple entities of UserPlugin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2610,7 +2108,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserPlugin type by its ids
+        /// Retrieves multiple entities of UserPlugin type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2620,7 +2118,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserProperty type by its ids
+        /// Retrieves multiple entities of UserProperty type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2631,7 +2129,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserProperty type by its ids
+        /// Retrieves multiple entities of UserProperty type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2641,7 +2139,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserProperty type by its id
+        /// Retrieves an entity of UserProperty type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2652,7 +2150,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserProperty type by its id
+        /// Retrieves an entity of UserProperty type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2662,49 +2160,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserReadStatus type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of UserReadStatus</returns>
-        System.Threading.Tasks.Task<UserReadStatus> GetUserReadStatusAsync (int? id);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of UserReadStatus type by its id
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of ApiResponse (UserReadStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UserReadStatus>> GetUserReadStatusAsyncWithHttpInfo (int? id);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of UserReadStatus type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of List&lt;UserReadStatus&gt;</returns>
-        System.Threading.Tasks.Task<List<UserReadStatus>> GetUserReadStatusesAsync (List<int?> ids);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds multiple entities of UserReadStatus type by its ids
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetUserReadStatusesAsyncWithHttpInfo (List<int?> ids);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Finds an entity of UserSession type by its id
+        /// Retrieves an entity of UserSession type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2715,7 +2171,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserSession type by its id
+        /// Retrieves an entity of UserSession type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2725,7 +2181,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserSessionStats type by its id
+        /// Retrieves an entity of UserSessionStats type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2736,7 +2192,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds an entity of UserSessionStats type by its id
+        /// Retrieves an entity of UserSessionStats type by its id
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -2746,7 +2202,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserSessionStats type by its ids
+        /// Retrieves multiple entities of UserSessionStats type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2757,7 +2213,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserSessionStats type by its ids
+        /// Retrieves multiple entities of UserSessionStats type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2767,7 +2223,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserSession type by its ids
+        /// Retrieves multiple entities of UserSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2778,7 +2234,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of UserSession type by its ids
+        /// Retrieves multiple entities of UserSession type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2788,7 +2244,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of User type by its ids
+        /// Retrieves multiple entities of User type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2799,7 +2255,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Finds multiple entities of User type by its ids
+        /// Retrieves multiple entities of User type by its ids
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -2939,27 +2395,6 @@ namespace Tradovate.Services.Api
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>Task of UserReadStatusResponse</returns>
-        System.Threading.Tasks.Task<UserReadStatusResponse> SetLastNewsReadStatusAsync (SetLastNewsReadStatus body);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserReadStatusResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UserReadStatusResponse>> SetLastNewsReadStatusAsyncWithHttpInfo (SetLastNewsReadStatus body);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>Task of SignUpResponse</returns>
         System.Threading.Tasks.Task<SignUpResponse> SignUpOrganizationMemberAsync (SignUpOrganizationMember body);
 
@@ -2977,30 +2412,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Country type filtered by occurence of a text in one of its fields
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="t">Text</param>
-        /// <param name="l">Max number of entities</param>
-        /// <returns>Task of List&lt;Country&gt;</returns>
-        System.Threading.Tasks.Task<List<Country>> SuggestCountriesAsync (string t, int? l);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns entities of Country type filtered by occurence of a text in one of its fields
-        /// </remarks>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="t">Text</param>
-        /// <param name="l">Max number of entities</param>
-        /// <returns>Task of ApiResponse (List&lt;Country&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Country>>> SuggestCountriesAsyncWithHttpInfo (string t, int? l);
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Returns entities of Organization type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3012,7 +2424,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of Organization type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3023,7 +2435,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of User type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of User type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3035,7 +2447,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Returns entities of User type filtered by occurence of a text in one of its fields
+        /// Retrieves entities of User type filtered by an occurrence of a text in one of its fields
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -3067,7 +2479,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of MarketDataSubscription
+        /// Updates an existing entity of MarketDataSubscription
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -3078,7 +2490,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of MarketDataSubscription
+        /// Updates an existing entity of MarketDataSubscription
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -3088,7 +2500,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of TradovateSubscription
+        /// Updates an existing entity of TradovateSubscription
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -3099,7 +2511,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of TradovateSubscription
+        /// Updates an existing entity of TradovateSubscription
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -3109,7 +2521,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserPlugin
+        /// Updates an existing entity of UserPlugin
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -3120,7 +2532,7 @@ namespace Tradovate.Services.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Updates a existing entity of UserPlugin
+        /// Updates an existing entity of UserPlugin
         /// </remarks>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -4415,665 +3827,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of MarketDataSubscription
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>MarketDataSubscription</returns>
-        public MarketDataSubscription DeleteMarketDataSubscription (MarketDataSubscription body)
-        {
-             ApiResponse<MarketDataSubscription> localVarResponse = DeleteMarketDataSubscriptionWithHttpInfo(body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of MarketDataSubscription
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of MarketDataSubscription</returns>
-        public ApiResponse< MarketDataSubscription > DeleteMarketDataSubscriptionWithHttpInfo (MarketDataSubscription body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteMarketDataSubscription");
-
-            var localVarPath = "/marketDataSubscription/delete";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteMarketDataSubscription", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<MarketDataSubscription>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MarketDataSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(MarketDataSubscription)));
-            
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of MarketDataSubscription
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of MarketDataSubscription</returns>
-        public async System.Threading.Tasks.Task<MarketDataSubscription> DeleteMarketDataSubscriptionAsync (MarketDataSubscription body)
-        {
-             ApiResponse<MarketDataSubscription> localVarResponse = await DeleteMarketDataSubscriptionAsyncWithHttpInfo(body);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of MarketDataSubscription
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (MarketDataSubscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<MarketDataSubscription>> DeleteMarketDataSubscriptionAsyncWithHttpInfo (MarketDataSubscription body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteMarketDataSubscription");
-
-            var localVarPath = "/marketDataSubscription/delete";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteMarketDataSubscription", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<MarketDataSubscription>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MarketDataSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(MarketDataSubscription)));
-            
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of TradovateSubscription
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>TradovateSubscription</returns>
-        public TradovateSubscription DeleteTradovateSubscription (TradovateSubscription body)
-        {
-             ApiResponse<TradovateSubscription> localVarResponse = DeleteTradovateSubscriptionWithHttpInfo(body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of TradovateSubscription
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of TradovateSubscription</returns>
-        public ApiResponse< TradovateSubscription > DeleteTradovateSubscriptionWithHttpInfo (TradovateSubscription body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteTradovateSubscription");
-
-            var localVarPath = "/tradovateSubscription/delete";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteTradovateSubscription", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<TradovateSubscription>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (TradovateSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscription)));
-            
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of TradovateSubscription
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of TradovateSubscription</returns>
-        public async System.Threading.Tasks.Task<TradovateSubscription> DeleteTradovateSubscriptionAsync (TradovateSubscription body)
-        {
-             ApiResponse<TradovateSubscription> localVarResponse = await DeleteTradovateSubscriptionAsyncWithHttpInfo(body);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of TradovateSubscription
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (TradovateSubscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<TradovateSubscription>> DeleteTradovateSubscriptionAsyncWithHttpInfo (TradovateSubscription body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteTradovateSubscription");
-
-            var localVarPath = "/tradovateSubscription/delete";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteTradovateSubscription", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<TradovateSubscription>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (TradovateSubscription) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TradovateSubscription)));
-            
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of UserPlugin
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>UserPlugin</returns>
-        public UserPlugin DeleteUserPlugin (UserPlugin body)
-        {
-             ApiResponse<UserPlugin> localVarResponse = DeleteUserPluginWithHttpInfo(body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of UserPlugin
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of UserPlugin</returns>
-        public ApiResponse< UserPlugin > DeleteUserPluginWithHttpInfo (UserPlugin body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteUserPlugin");
-
-            var localVarPath = "/userPlugin/delete";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteUserPlugin", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UserPlugin>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserPlugin) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserPlugin)));
-            
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of UserPlugin
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of UserPlugin</returns>
-        public async System.Threading.Tasks.Task<UserPlugin> DeleteUserPluginAsync (UserPlugin body)
-        {
-             ApiResponse<UserPlugin> localVarResponse = await DeleteUserPluginAsyncWithHttpInfo(body);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Updates a existing entity of UserPlugin
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserPlugin)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UserPlugin>> DeleteUserPluginAsyncWithHttpInfo (UserPlugin body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->DeleteUserPlugin");
-
-            var localVarPath = "/userPlugin/delete";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteUserPlugin", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UserPlugin>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserPlugin) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserPlugin)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of Country type by its name
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name"></param>
-        /// <returns>Country</returns>
-        public Country FindCountry (string name)
-        {
-             ApiResponse<Country> localVarResponse = FindCountryWithHttpInfo(name);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds an entity of Country type by its name
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name"></param>
-        /// <returns>ApiResponse of Country</returns>
-        public ApiResponse< Country > FindCountryWithHttpInfo (string name)
-        {
-            // verify the required parameter 'name' is set
-            if (name == null)
-                throw new ApiException(400, "Missing required parameter 'name' when calling UsersApi->FindCountry");
-
-            var localVarPath = "/country/find";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (name != null) localVarQueryParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("FindCountry", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Country>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Country) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Country)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of Country type by its name
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name"></param>
-        /// <returns>Task of Country</returns>
-        public async System.Threading.Tasks.Task<Country> FindCountryAsync (string name)
-        {
-             ApiResponse<Country> localVarResponse = await FindCountryAsyncWithHttpInfo(name);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds an entity of Country type by its name
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name"></param>
-        /// <returns>Task of ApiResponse (Country)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Country>> FindCountryAsyncWithHttpInfo (string name)
-        {
-            // verify the required parameter 'name' is set
-            if (name == null)
-                throw new ApiException(400, "Missing required parameter 'name' when calling UsersApi->FindCountry");
-
-            var localVarPath = "/country/find";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (name != null) localVarQueryParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("FindCountry", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Country>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Country) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Country)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of Organization type by its name
+        ///  Retrieves an entity of Organization type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -5085,7 +3839,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Organization type by its name
+        ///  Retrieves an entity of Organization type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -5150,7 +3904,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Organization type by its name
+        ///  Retrieves an entity of Organization type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -5163,7 +3917,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Organization type by its name
+        ///  Retrieves an entity of Organization type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -5227,7 +3981,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of User type by its name
+        ///  Retrieves an entity of User type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -5239,7 +3993,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of User type by its name
+        ///  Retrieves an entity of User type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -5304,7 +4058,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of User type by its name
+        ///  Retrieves an entity of User type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -5317,7 +4071,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of User type by its name
+        ///  Retrieves an entity of User type by its name
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name"></param>
@@ -5549,149 +4303,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Country type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;Country&gt;</returns>
-        public List<Country> GetAllCountries ()
-        {
-             ApiResponse<List<Country>> localVarResponse = GetAllCountriesWithHttpInfo();
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of Country type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;Country&gt;</returns>
-        public ApiResponse< List<Country> > GetAllCountriesWithHttpInfo ()
-        {
-
-            var localVarPath = "/country/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllCountries", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<Country>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<Country>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Country>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of Country type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;Country&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Country>> GetAllCountriesAsync ()
-        {
-             ApiResponse<List<Country>> localVarResponse = await GetAllCountriesAsyncWithHttpInfo();
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of Country type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;Country&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Country>>> GetAllCountriesAsyncWithHttpInfo ()
-        {
-
-            var localVarPath = "/country/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllCountries", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<Country>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<Country>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Country>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of MarketDataSubscription type
+        ///  Retrieves all entities of MarketDataSubscription type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;MarketDataSubscription&gt;</returns>
@@ -5702,7 +4314,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type
+        ///  Retrieves all entities of MarketDataSubscription type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;MarketDataSubscription&gt;</returns>
@@ -5762,7 +4374,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type
+        ///  Retrieves all entities of MarketDataSubscription type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;MarketDataSubscription&gt;</returns>
@@ -5774,7 +4386,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type
+        ///  Retrieves all entities of MarketDataSubscription type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;MarketDataSubscription&gt;)</returns>
@@ -5833,7 +4445,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Organization type
+        ///  Retrieves all entities of Organization type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;Organization&gt;</returns>
@@ -5844,7 +4456,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Organization type
+        ///  Retrieves all entities of Organization type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;Organization&gt;</returns>
@@ -5904,7 +4516,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Organization type
+        ///  Retrieves all entities of Organization type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;Organization&gt;</returns>
@@ -5916,7 +4528,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of Organization type
+        ///  Retrieves all entities of Organization type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;Organization&gt;)</returns>
@@ -5975,7 +4587,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type
+        ///  Retrieves all entities of TradovateSubscription type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;TradovateSubscription&gt;</returns>
@@ -5986,7 +4598,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type
+        ///  Retrieves all entities of TradovateSubscription type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;TradovateSubscription&gt;</returns>
@@ -6046,7 +4658,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type
+        ///  Retrieves all entities of TradovateSubscription type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;TradovateSubscription&gt;</returns>
@@ -6058,7 +4670,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type
+        ///  Retrieves all entities of TradovateSubscription type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;TradovateSubscription&gt;)</returns>
@@ -6117,7 +4729,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type
+        ///  Retrieves all entities of UserPlugin type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;UserPlugin&gt;</returns>
@@ -6128,7 +4740,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type
+        ///  Retrieves all entities of UserPlugin type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;UserPlugin&gt;</returns>
@@ -6188,7 +4800,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type
+        ///  Retrieves all entities of UserPlugin type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;UserPlugin&gt;</returns>
@@ -6200,7 +4812,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type
+        ///  Retrieves all entities of UserPlugin type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;UserPlugin&gt;)</returns>
@@ -6259,149 +4871,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserReadStatus type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;UserReadStatus&gt;</returns>
-        public List<UserReadStatus> GetAllUserReadStatuses ()
-        {
-             ApiResponse<List<UserReadStatus>> localVarResponse = GetAllUserReadStatusesWithHttpInfo();
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
-        public ApiResponse< List<UserReadStatus> > GetAllUserReadStatusesWithHttpInfo ()
-        {
-
-            var localVarPath = "/userReadStatus/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllUserReadStatuses", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;UserReadStatus&gt;</returns>
-        public async System.Threading.Tasks.Task<List<UserReadStatus>> GetAllUserReadStatusesAsync ()
-        {
-             ApiResponse<List<UserReadStatus>> localVarResponse = await GetAllUserReadStatusesAsyncWithHttpInfo();
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetAllUserReadStatusesAsyncWithHttpInfo ()
-        {
-
-            var localVarPath = "/userReadStatus/list";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetAllUserReadStatuses", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserSessionStats type
+        ///  Retrieves all entities of UserSessionStats type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;UserSessionStats&gt;</returns>
@@ -6412,7 +4882,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type
+        ///  Retrieves all entities of UserSessionStats type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
@@ -6472,7 +4942,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type
+        ///  Retrieves all entities of UserSessionStats type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
@@ -6484,7 +4954,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type
+        ///  Retrieves all entities of UserSessionStats type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
@@ -6543,7 +5013,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of User type
+        ///  Retrieves all entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>List&lt;User&gt;</returns>
@@ -6554,7 +5024,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of User type
+        ///  Retrieves all entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of List&lt;User&gt;</returns>
@@ -6614,7 +5084,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of User type
+        ///  Retrieves all entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of List&lt;User&gt;</returns>
@@ -6626,7 +5096,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of User type
+        ///  Retrieves all entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (List&lt;User&gt;)</returns>
@@ -6688,11 +5158,10 @@ namespace Tradovate.Services.Api
         ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>ConnectedApplications</returns>
-        public ConnectedApplications GetConnectedApplications (GetConnectedApplications body)
+        public ConnectedApplications GetConnectedApplications ()
         {
-             ApiResponse<ConnectedApplications> localVarResponse = GetConnectedApplicationsWithHttpInfo(body);
+             ApiResponse<ConnectedApplications> localVarResponse = GetConnectedApplicationsWithHttpInfo();
              return localVarResponse.Data;
         }
 
@@ -6700,13 +5169,9 @@ namespace Tradovate.Services.Api
         ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>ApiResponse of ConnectedApplications</returns>
-        public ApiResponse< ConnectedApplications > GetConnectedApplicationsWithHttpInfo (GetConnectedApplications body)
+        public ApiResponse< ConnectedApplications > GetConnectedApplicationsWithHttpInfo ()
         {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->GetConnectedApplications");
 
             var localVarPath = "/user/getconnectedapplications";
             var localVarPathParams = new Dictionary<String, String>();
@@ -6733,14 +5198,6 @@ namespace Tradovate.Services.Api
             // set "format" to json by default
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
 
             // authentication (bearer_access_token) required
             if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -6772,11 +5229,10 @@ namespace Tradovate.Services.Api
         ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>Task of ConnectedApplications</returns>
-        public async System.Threading.Tasks.Task<ConnectedApplications> GetConnectedApplicationsAsync (GetConnectedApplications body)
+        public async System.Threading.Tasks.Task<ConnectedApplications> GetConnectedApplicationsAsync ()
         {
-             ApiResponse<ConnectedApplications> localVarResponse = await GetConnectedApplicationsAsyncWithHttpInfo(body);
+             ApiResponse<ConnectedApplications> localVarResponse = await GetConnectedApplicationsAsyncWithHttpInfo();
              return localVarResponse.Data;
 
         }
@@ -6785,13 +5241,9 @@ namespace Tradovate.Services.Api
         ///  
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>Task of ApiResponse (ConnectedApplications)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ConnectedApplications>> GetConnectedApplicationsAsyncWithHttpInfo (GetConnectedApplications body)
+        public async System.Threading.Tasks.Task<ApiResponse<ConnectedApplications>> GetConnectedApplicationsAsyncWithHttpInfo ()
         {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->GetConnectedApplications");
 
             var localVarPath = "/user/getconnectedapplications";
             var localVarPathParams = new Dictionary<String, String>();
@@ -6818,14 +5270,6 @@ namespace Tradovate.Services.Api
             // set "format" to json by default
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
 
             // authentication (bearer_access_token) required
             if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -6853,7 +5297,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContactInfo type by its id
+        ///  Retrieves an entity of ContactInfo type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6865,7 +5309,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContactInfo type by its id
+        ///  Retrieves an entity of ContactInfo type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6930,7 +5374,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContactInfo type by its id
+        ///  Retrieves an entity of ContactInfo type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -6943,7 +5387,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of ContactInfo type by its id
+        ///  Retrieves an entity of ContactInfo type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7007,7 +5451,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContactInfo type by its ids
+        ///  Retrieves multiple entities of ContactInfo type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7019,7 +5463,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContactInfo type by its ids
+        ///  Retrieves multiple entities of ContactInfo type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7084,7 +5528,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContactInfo type by its ids
+        ///  Retrieves multiple entities of ContactInfo type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7097,7 +5541,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of ContactInfo type by its ids
+        ///  Retrieves multiple entities of ContactInfo type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7161,315 +5605,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Country type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>List&lt;Country&gt;</returns>
-        public List<Country> GetCountries (List<int?> ids)
-        {
-             ApiResponse<List<Country>> localVarResponse = GetCountriesWithHttpInfo(ids);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of Country type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>ApiResponse of List&lt;Country&gt;</returns>
-        public ApiResponse< List<Country> > GetCountriesWithHttpInfo (List<int?> ids)
-        {
-            // verify the required parameter 'ids' is set
-            if (ids == null)
-                throw new ApiException(400, "Missing required parameter 'ids' when calling UsersApi->GetCountries");
-
-            var localVarPath = "/country/items";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetCountries", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<Country>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<Country>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Country>)));
-            
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of Country type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of List&lt;Country&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Country>> GetCountriesAsync (List<int?> ids)
-        {
-             ApiResponse<List<Country>> localVarResponse = await GetCountriesAsyncWithHttpInfo(ids);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of Country type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of ApiResponse (List&lt;Country&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Country>>> GetCountriesAsyncWithHttpInfo (List<int?> ids)
-        {
-            // verify the required parameter 'ids' is set
-            if (ids == null)
-                throw new ApiException(400, "Missing required parameter 'ids' when calling UsersApi->GetCountries");
-
-            var localVarPath = "/country/items";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetCountries", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<Country>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<Country>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Country>)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of Country type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Country</returns>
-        public Country GetCountry (int? id)
-        {
-             ApiResponse<Country> localVarResponse = GetCountryWithHttpInfo(id);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds an entity of Country type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>ApiResponse of Country</returns>
-        public ApiResponse< Country > GetCountryWithHttpInfo (int? id)
-        {
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling UsersApi->GetCountry");
-
-            var localVarPath = "/country/item";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetCountry", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Country>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Country) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Country)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of Country type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of Country</returns>
-        public async System.Threading.Tasks.Task<Country> GetCountryAsync (int? id)
-        {
-             ApiResponse<Country> localVarResponse = await GetCountryAsyncWithHttpInfo(id);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds an entity of Country type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of ApiResponse (Country)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Country>> GetCountryAsyncWithHttpInfo (int? id)
-        {
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling UsersApi->GetCountry");
-
-            var localVarPath = "/country/item";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetCountry", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Country>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Country) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Country)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of MarketDataSubscription type by its id
+        ///  Retrieves an entity of MarketDataSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7481,7 +5617,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscription type by its id
+        ///  Retrieves an entity of MarketDataSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7546,7 +5682,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscription type by its id
+        ///  Retrieves an entity of MarketDataSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7559,7 +5695,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of MarketDataSubscription type by its id
+        ///  Retrieves an entity of MarketDataSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7623,7 +5759,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscription type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscription type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7635,7 +5771,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscription type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscription type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7700,7 +5836,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscription type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscription type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7713,7 +5849,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of MarketDataSubscription type by its ids
+        ///  Retrieves multiple entities of MarketDataSubscription type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7777,7 +5913,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Organization type by its id
+        ///  Retrieves an entity of Organization type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7789,7 +5925,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Organization type by its id
+        ///  Retrieves an entity of Organization type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7854,7 +5990,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Organization type by its id
+        ///  Retrieves an entity of Organization type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7867,7 +6003,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of Organization type by its id
+        ///  Retrieves an entity of Organization type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -7931,7 +6067,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Organization type by its ids
+        ///  Retrieves multiple entities of Organization type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -7943,7 +6079,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Organization type by its ids
+        ///  Retrieves multiple entities of Organization type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -8008,7 +6144,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Organization type by its ids
+        ///  Retrieves multiple entities of Organization type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -8021,7 +6157,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of Organization type by its ids
+        ///  Retrieves multiple entities of Organization type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -8085,7 +6221,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type related to User type
+        ///  Retrieves all entities of ContactInfo type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8097,7 +6233,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type related to User type
+        ///  Retrieves all entities of ContactInfo type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8162,7 +6298,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type related to User type
+        ///  Retrieves all entities of ContactInfo type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8175,7 +6311,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type related to User type
+        ///  Retrieves all entities of ContactInfo type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8239,10 +6375,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type related to multiple entities of User type
+        ///  Retrieves all entities of ContactInfo type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;ContactInfo&gt;</returns>
         public List<ContactInfo> GetOwnedContactInfosBatch (List<int?> masterids)
         {
@@ -8251,10 +6387,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type related to multiple entities of User type
+        ///  Retrieves all entities of ContactInfo type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;ContactInfo&gt;</returns>
         public ApiResponse< List<ContactInfo> > GetOwnedContactInfosBatchWithHttpInfo (List<int?> masterids)
         {
@@ -8316,10 +6452,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type related to multiple entities of User type
+        ///  Retrieves all entities of ContactInfo type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;ContactInfo&gt;</returns>
         public async System.Threading.Tasks.Task<List<ContactInfo>> GetOwnedContactInfosBatchAsync (List<int?> masterids)
         {
@@ -8329,10 +6465,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of ContactInfo type related to multiple entities of User type
+        ///  Retrieves all entities of ContactInfo type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;ContactInfo&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<ContactInfo>>> GetOwnedContactInfosBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -8393,7 +6529,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type related to User type
+        ///  Retrieves all entities of MarketDataSubscription type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8405,7 +6541,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type related to User type
+        ///  Retrieves all entities of MarketDataSubscription type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8470,7 +6606,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type related to User type
+        ///  Retrieves all entities of MarketDataSubscription type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8483,7 +6619,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type related to User type
+        ///  Retrieves all entities of MarketDataSubscription type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8547,10 +6683,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type related to multiple entities of User type
+        ///  Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;MarketDataSubscription&gt;</returns>
         public List<MarketDataSubscription> GetOwnedMarketDataSubscriptionsBatch (List<int?> masterids)
         {
@@ -8559,10 +6695,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type related to multiple entities of User type
+        ///  Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;MarketDataSubscription&gt;</returns>
         public ApiResponse< List<MarketDataSubscription> > GetOwnedMarketDataSubscriptionsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -8624,10 +6760,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type related to multiple entities of User type
+        ///  Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;MarketDataSubscription&gt;</returns>
         public async System.Threading.Tasks.Task<List<MarketDataSubscription>> GetOwnedMarketDataSubscriptionsBatchAsync (List<int?> masterids)
         {
@@ -8637,10 +6773,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of MarketDataSubscription type related to multiple entities of User type
+        ///  Retrieves all entities of MarketDataSubscription type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;MarketDataSubscription&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<MarketDataSubscription>>> GetOwnedMarketDataSubscriptionsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -8701,7 +6837,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type related to User type
+        ///  Retrieves all entities of TradovateSubscription type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8713,7 +6849,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type related to User type
+        ///  Retrieves all entities of TradovateSubscription type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8778,7 +6914,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type related to User type
+        ///  Retrieves all entities of TradovateSubscription type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8791,7 +6927,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type related to User type
+        ///  Retrieves all entities of TradovateSubscription type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -8855,10 +6991,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type related to multiple entities of User type
+        ///  Retrieves all entities of TradovateSubscription type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;TradovateSubscription&gt;</returns>
         public List<TradovateSubscription> GetOwnedTradovateSubscriptionsBatch (List<int?> masterids)
         {
@@ -8867,10 +7003,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type related to multiple entities of User type
+        ///  Retrieves all entities of TradovateSubscription type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;TradovateSubscription&gt;</returns>
         public ApiResponse< List<TradovateSubscription> > GetOwnedTradovateSubscriptionsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -8932,10 +7068,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type related to multiple entities of User type
+        ///  Retrieves all entities of TradovateSubscription type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;TradovateSubscription&gt;</returns>
         public async System.Threading.Tasks.Task<List<TradovateSubscription>> GetOwnedTradovateSubscriptionsBatchAsync (List<int?> masterids)
         {
@@ -8945,10 +7081,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of TradovateSubscription type related to multiple entities of User type
+        ///  Retrieves all entities of TradovateSubscription type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;TradovateSubscription&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<TradovateSubscription>>> GetOwnedTradovateSubscriptionsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -9009,7 +7145,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type related to User type
+        ///  Retrieves all entities of UserPlugin type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9021,7 +7157,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type related to User type
+        ///  Retrieves all entities of UserPlugin type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9086,7 +7222,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type related to User type
+        ///  Retrieves all entities of UserPlugin type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9099,7 +7235,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type related to User type
+        ///  Retrieves all entities of UserPlugin type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9163,10 +7299,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type related to multiple entities of User type
+        ///  Retrieves all entities of UserPlugin type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;UserPlugin&gt;</returns>
         public List<UserPlugin> GetOwnedUserPluginsBatch (List<int?> masterids)
         {
@@ -9175,10 +7311,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type related to multiple entities of User type
+        ///  Retrieves all entities of UserPlugin type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;UserPlugin&gt;</returns>
         public ApiResponse< List<UserPlugin> > GetOwnedUserPluginsBatchWithHttpInfo (List<int?> masterids)
         {
@@ -9240,10 +7376,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type related to multiple entities of User type
+        ///  Retrieves all entities of UserPlugin type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;UserPlugin&gt;</returns>
         public async System.Threading.Tasks.Task<List<UserPlugin>> GetOwnedUserPluginsBatchAsync (List<int?> masterids)
         {
@@ -9253,10 +7389,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserPlugin type related to multiple entities of User type
+        ///  Retrieves all entities of UserPlugin type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserPlugin&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<UserPlugin>>> GetOwnedUserPluginsBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -9317,7 +7453,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserProperty type related to User type
+        ///  Retrieves all entities of UserProperty type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9329,7 +7465,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserProperty type related to User type
+        ///  Retrieves all entities of UserProperty type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9394,7 +7530,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserProperty type related to User type
+        ///  Retrieves all entities of UserProperty type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9407,7 +7543,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserProperty type related to User type
+        ///  Retrieves all entities of UserProperty type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9471,10 +7607,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserProperty type related to multiple entities of User type
+        ///  Retrieves all entities of UserProperty type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;UserProperty&gt;</returns>
         public List<UserProperty> GetOwnedUserPropertiesBatch (List<int?> masterids)
         {
@@ -9483,10 +7619,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserProperty type related to multiple entities of User type
+        ///  Retrieves all entities of UserProperty type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;UserProperty&gt;</returns>
         public ApiResponse< List<UserProperty> > GetOwnedUserPropertiesBatchWithHttpInfo (List<int?> masterids)
         {
@@ -9548,10 +7684,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserProperty type related to multiple entities of User type
+        ///  Retrieves all entities of UserProperty type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;UserProperty&gt;</returns>
         public async System.Threading.Tasks.Task<List<UserProperty>> GetOwnedUserPropertiesBatchAsync (List<int?> masterids)
         {
@@ -9561,10 +7697,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserProperty type related to multiple entities of User type
+        ///  Retrieves all entities of UserProperty type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserProperty&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<UserProperty>>> GetOwnedUserPropertiesBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -9625,315 +7761,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserReadStatus type related to User type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of User entity</param>
-        /// <returns>List&lt;UserReadStatus&gt;</returns>
-        public List<UserReadStatus> GetOwnedUserReadStatuses (int? masterid)
-        {
-             ApiResponse<List<UserReadStatus>> localVarResponse = GetOwnedUserReadStatusesWithHttpInfo(masterid);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type related to User type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of User entity</param>
-        /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
-        public ApiResponse< List<UserReadStatus> > GetOwnedUserReadStatusesWithHttpInfo (int? masterid)
-        {
-            // verify the required parameter 'masterid' is set
-            if (masterid == null)
-                throw new ApiException(400, "Missing required parameter 'masterid' when calling UsersApi->GetOwnedUserReadStatuses");
-
-            var localVarPath = "/userReadStatus/deps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterid != null) localVarQueryParams.Add("masterid", Configuration.ApiClient.ParameterToString(masterid)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedUserReadStatuses", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type related to User type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of User entity</param>
-        /// <returns>Task of List&lt;UserReadStatus&gt;</returns>
-        public async System.Threading.Tasks.Task<List<UserReadStatus>> GetOwnedUserReadStatusesAsync (int? masterid)
-        {
-             ApiResponse<List<UserReadStatus>> localVarResponse = await GetOwnedUserReadStatusesAsyncWithHttpInfo(masterid);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type related to User type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterid">id of User entity</param>
-        /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetOwnedUserReadStatusesAsyncWithHttpInfo (int? masterid)
-        {
-            // verify the required parameter 'masterid' is set
-            if (masterid == null)
-                throw new ApiException(400, "Missing required parameter 'masterid' when calling UsersApi->GetOwnedUserReadStatuses");
-
-            var localVarPath = "/userReadStatus/deps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterid != null) localVarQueryParams.Add("masterid", Configuration.ApiClient.ParameterToString(masterid)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedUserReadStatuses", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type related to multiple entities of User type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
-        /// <returns>List&lt;UserReadStatus&gt;</returns>
-        public List<UserReadStatus> GetOwnedUserReadStatusesBatch (List<int?> masterids)
-        {
-             ApiResponse<List<UserReadStatus>> localVarResponse = GetOwnedUserReadStatusesBatchWithHttpInfo(masterids);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type related to multiple entities of User type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
-        /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
-        public ApiResponse< List<UserReadStatus> > GetOwnedUserReadStatusesBatchWithHttpInfo (List<int?> masterids)
-        {
-            // verify the required parameter 'masterids' is set
-            if (masterids == null)
-                throw new ApiException(400, "Missing required parameter 'masterids' when calling UsersApi->GetOwnedUserReadStatusesBatch");
-
-            var localVarPath = "/userReadStatus/ldeps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterids != null) localVarQueryParams.Add("masterids", Configuration.ApiClient.ParameterToString(masterids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedUserReadStatusesBatch", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type related to multiple entities of User type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
-        /// <returns>Task of List&lt;UserReadStatus&gt;</returns>
-        public async System.Threading.Tasks.Task<List<UserReadStatus>> GetOwnedUserReadStatusesBatchAsync (List<int?> masterids)
-        {
-             ApiResponse<List<UserReadStatus>> localVarResponse = await GetOwnedUserReadStatusesBatchAsyncWithHttpInfo(masterids);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserReadStatus type related to multiple entities of User type
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
-        /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetOwnedUserReadStatusesBatchAsyncWithHttpInfo (List<int?> masterids)
-        {
-            // verify the required parameter 'masterids' is set
-            if (masterids == null)
-                throw new ApiException(400, "Missing required parameter 'masterids' when calling UsersApi->GetOwnedUserReadStatusesBatch");
-
-            var localVarPath = "/userReadStatus/ldeps";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (masterids != null) localVarQueryParams.Add("masterids", Configuration.ApiClient.ParameterToString(masterids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetOwnedUserReadStatusesBatch", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns all entities of UserSessionStats type related to User type
+        ///  Retrieves all entities of UserSessionStats type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -9945,7 +7773,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type related to User type
+        ///  Retrieves all entities of UserSessionStats type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -10010,7 +7838,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type related to User type
+        ///  Retrieves all entities of UserSessionStats type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -10023,7 +7851,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type related to User type
+        ///  Retrieves all entities of UserSessionStats type related to User entity
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="masterid">id of User entity</param>
@@ -10087,10 +7915,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type related to multiple entities of User type
+        ///  Retrieves all entities of UserSessionStats type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>List&lt;UserSessionStats&gt;</returns>
         public List<UserSessionStats> GetOwnedUserSessionStatsesBatch (List<int?> masterids)
         {
@@ -10099,10 +7927,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type related to multiple entities of User type
+        ///  Retrieves all entities of UserSessionStats type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>ApiResponse of List&lt;UserSessionStats&gt;</returns>
         public ApiResponse< List<UserSessionStats> > GetOwnedUserSessionStatsesBatchWithHttpInfo (List<int?> masterids)
         {
@@ -10164,10 +7992,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type related to multiple entities of User type
+        ///  Retrieves all entities of UserSessionStats type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of List&lt;UserSessionStats&gt;</returns>
         public async System.Threading.Tasks.Task<List<UserSessionStats>> GetOwnedUserSessionStatsesBatchAsync (List<int?> masterids)
         {
@@ -10177,10 +8005,10 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns all entities of UserSessionStats type related to multiple entities of User type
+        ///  Retrieves all entities of UserSessionStats type related to multiple entities of User type
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="masterids">ids of User entity</param>
+        /// <param name="masterids">ids of User entities</param>
         /// <returns>Task of ApiResponse (List&lt;UserSessionStats&gt;)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<UserSessionStats>>> GetOwnedUserSessionStatsesBatchAsyncWithHttpInfo (List<int?> masterids)
         {
@@ -10241,7 +8069,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscription type by its id
+        ///  Retrieves an entity of TradovateSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10253,7 +8081,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscription type by its id
+        ///  Retrieves an entity of TradovateSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10318,7 +8146,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscription type by its id
+        ///  Retrieves an entity of TradovateSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10331,7 +8159,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of TradovateSubscription type by its id
+        ///  Retrieves an entity of TradovateSubscription type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10395,7 +8223,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradovateSubscription type by its ids
+        ///  Retrieves multiple entities of TradovateSubscription type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -10407,7 +8235,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradovateSubscription type by its ids
+        ///  Retrieves multiple entities of TradovateSubscription type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -10472,7 +8300,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradovateSubscription type by its ids
+        ///  Retrieves multiple entities of TradovateSubscription type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -10485,7 +8313,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of TradovateSubscription type by its ids
+        ///  Retrieves multiple entities of TradovateSubscription type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -10549,7 +8377,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of User type by its id
+        ///  Retrieves an entity of User type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10561,7 +8389,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of User type by its id
+        ///  Retrieves an entity of User type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10626,7 +8454,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of User type by its id
+        ///  Retrieves an entity of User type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10639,7 +8467,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of User type by its id
+        ///  Retrieves an entity of User type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10703,7 +8531,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserPlugin type by its id
+        ///  Retrieves an entity of UserPlugin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10715,7 +8543,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserPlugin type by its id
+        ///  Retrieves an entity of UserPlugin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10780,7 +8608,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserPlugin type by its id
+        ///  Retrieves an entity of UserPlugin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10793,7 +8621,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserPlugin type by its id
+        ///  Retrieves an entity of UserPlugin type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -10857,7 +8685,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserPlugin type by its ids
+        ///  Retrieves multiple entities of UserPlugin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -10869,7 +8697,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserPlugin type by its ids
+        ///  Retrieves multiple entities of UserPlugin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -10934,7 +8762,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserPlugin type by its ids
+        ///  Retrieves multiple entities of UserPlugin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -10947,7 +8775,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserPlugin type by its ids
+        ///  Retrieves multiple entities of UserPlugin type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -11011,7 +8839,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserProperty type by its ids
+        ///  Retrieves multiple entities of UserProperty type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -11023,7 +8851,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserProperty type by its ids
+        ///  Retrieves multiple entities of UserProperty type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -11088,7 +8916,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserProperty type by its ids
+        ///  Retrieves multiple entities of UserProperty type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -11101,7 +8929,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserProperty type by its ids
+        ///  Retrieves multiple entities of UserProperty type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -11165,7 +8993,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserProperty type by its id
+        ///  Retrieves an entity of UserProperty type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11177,7 +9005,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserProperty type by its id
+        ///  Retrieves an entity of UserProperty type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11242,7 +9070,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserProperty type by its id
+        ///  Retrieves an entity of UserProperty type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11255,7 +9083,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserProperty type by its id
+        ///  Retrieves an entity of UserProperty type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11319,315 +9147,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserReadStatus type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>UserReadStatus</returns>
-        public UserReadStatus GetUserReadStatus (int? id)
-        {
-             ApiResponse<UserReadStatus> localVarResponse = GetUserReadStatusWithHttpInfo(id);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds an entity of UserReadStatus type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>ApiResponse of UserReadStatus</returns>
-        public ApiResponse< UserReadStatus > GetUserReadStatusWithHttpInfo (int? id)
-        {
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling UsersApi->GetUserReadStatus");
-
-            var localVarPath = "/userReadStatus/item";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetUserReadStatus", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UserReadStatus>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserReadStatus) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserReadStatus)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of UserReadStatus type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of UserReadStatus</returns>
-        public async System.Threading.Tasks.Task<UserReadStatus> GetUserReadStatusAsync (int? id)
-        {
-             ApiResponse<UserReadStatus> localVarResponse = await GetUserReadStatusAsyncWithHttpInfo(id);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds an entity of UserReadStatus type by its id
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id"></param>
-        /// <returns>Task of ApiResponse (UserReadStatus)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UserReadStatus>> GetUserReadStatusAsyncWithHttpInfo (int? id)
-        {
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling UsersApi->GetUserReadStatus");
-
-            var localVarPath = "/userReadStatus/item";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (id != null) localVarQueryParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetUserReadStatus", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UserReadStatus>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserReadStatus) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserReadStatus)));
-            
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of UserReadStatus type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>List&lt;UserReadStatus&gt;</returns>
-        public List<UserReadStatus> GetUserReadStatuses (List<int?> ids)
-        {
-             ApiResponse<List<UserReadStatus>> localVarResponse = GetUserReadStatusesWithHttpInfo(ids);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of UserReadStatus type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>ApiResponse of List&lt;UserReadStatus&gt;</returns>
-        public ApiResponse< List<UserReadStatus> > GetUserReadStatusesWithHttpInfo (List<int?> ids)
-        {
-            // verify the required parameter 'ids' is set
-            if (ids == null)
-                throw new ApiException(400, "Missing required parameter 'ids' when calling UsersApi->GetUserReadStatuses");
-
-            var localVarPath = "/userReadStatus/items";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetUserReadStatuses", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
-            
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of UserReadStatus type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of List&lt;UserReadStatus&gt;</returns>
-        public async System.Threading.Tasks.Task<List<UserReadStatus>> GetUserReadStatusesAsync (List<int?> ids)
-        {
-             ApiResponse<List<UserReadStatus>> localVarResponse = await GetUserReadStatusesAsyncWithHttpInfo(ids);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Finds multiple entities of UserReadStatus type by its ids
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="ids"></param>
-        /// <returns>Task of ApiResponse (List&lt;UserReadStatus&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<UserReadStatus>>> GetUserReadStatusesAsyncWithHttpInfo (List<int?> ids)
-        {
-            // verify the required parameter 'ids' is set
-            if (ids == null)
-                throw new ApiException(400, "Missing required parameter 'ids' when calling UsersApi->GetUserReadStatuses");
-
-            var localVarPath = "/userReadStatus/items";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (ids != null) localVarQueryParams.Add("ids", Configuration.ApiClient.ParameterToString(ids)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetUserReadStatuses", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<UserReadStatus>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<UserReadStatus>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<UserReadStatus>)));
-            
-        }
-
-        /// <summary>
-        ///  Finds an entity of UserSession type by its id
+        ///  Retrieves an entity of UserSession type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11639,7 +9159,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserSession type by its id
+        ///  Retrieves an entity of UserSession type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11704,7 +9224,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserSession type by its id
+        ///  Retrieves an entity of UserSession type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11717,7 +9237,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserSession type by its id
+        ///  Retrieves an entity of UserSession type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11781,7 +9301,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserSessionStats type by its id
+        ///  Retrieves an entity of UserSessionStats type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11793,7 +9313,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserSessionStats type by its id
+        ///  Retrieves an entity of UserSessionStats type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11858,7 +9378,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserSessionStats type by its id
+        ///  Retrieves an entity of UserSessionStats type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11871,7 +9391,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds an entity of UserSessionStats type by its id
+        ///  Retrieves an entity of UserSessionStats type by its id
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id"></param>
@@ -11935,7 +9455,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserSessionStats type by its ids
+        ///  Retrieves multiple entities of UserSessionStats type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -11947,7 +9467,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserSessionStats type by its ids
+        ///  Retrieves multiple entities of UserSessionStats type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12012,7 +9532,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserSessionStats type by its ids
+        ///  Retrieves multiple entities of UserSessionStats type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12025,7 +9545,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserSessionStats type by its ids
+        ///  Retrieves multiple entities of UserSessionStats type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12089,7 +9609,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserSession type by its ids
+        ///  Retrieves multiple entities of UserSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12101,7 +9621,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserSession type by its ids
+        ///  Retrieves multiple entities of UserSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12166,7 +9686,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserSession type by its ids
+        ///  Retrieves multiple entities of UserSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12179,7 +9699,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of UserSession type by its ids
+        ///  Retrieves multiple entities of UserSession type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12243,7 +9763,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of User type by its ids
+        ///  Retrieves multiple entities of User type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12255,7 +9775,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of User type by its ids
+        ///  Retrieves multiple entities of User type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12320,7 +9840,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of User type by its ids
+        ///  Retrieves multiple entities of User type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -12333,7 +9853,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Finds multiple entities of User type by its ids
+        ///  Retrieves multiple entities of User type by its ids
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ids"></param>
@@ -13409,174 +10929,6 @@ namespace Tradovate.Services.Api
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
-        /// <returns>UserReadStatusResponse</returns>
-        public UserReadStatusResponse SetLastNewsReadStatus (SetLastNewsReadStatus body)
-        {
-             ApiResponse<UserReadStatusResponse> localVarResponse = SetLastNewsReadStatusWithHttpInfo(body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>ApiResponse of UserReadStatusResponse</returns>
-        public ApiResponse< UserReadStatusResponse > SetLastNewsReadStatusWithHttpInfo (SetLastNewsReadStatus body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->SetLastNewsReadStatus");
-
-            var localVarPath = "/userReadStatus/setlastnewsreadstatus";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("SetLastNewsReadStatus", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UserReadStatusResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserReadStatusResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserReadStatusResponse)));
-            
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of UserReadStatusResponse</returns>
-        public async System.Threading.Tasks.Task<UserReadStatusResponse> SetLastNewsReadStatusAsync (SetLastNewsReadStatus body)
-        {
-             ApiResponse<UserReadStatusResponse> localVarResponse = await SetLastNewsReadStatusAsyncWithHttpInfo(body);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
-        /// <returns>Task of ApiResponse (UserReadStatusResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UserReadStatusResponse>> SetLastNewsReadStatusAsyncWithHttpInfo (SetLastNewsReadStatus body)
-        {
-            // verify the required parameter 'body' is set
-            if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling UsersApi->SetLastNewsReadStatus");
-
-            var localVarPath = "/userReadStatus/setlastnewsreadstatus";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("SetLastNewsReadStatus", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UserReadStatusResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (UserReadStatusResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(UserReadStatusResponse)));
-            
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"></param>
         /// <returns>SignUpResponse</returns>
         public SignUpResponse SignUpOrganizationMember (SignUpOrganizationMember body)
         {
@@ -13741,173 +11093,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Country type filtered by occurence of a text in one of its fields
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="t">Text</param>
-        /// <param name="l">Max number of entities</param>
-        /// <returns>List&lt;Country&gt;</returns>
-        public List<Country> SuggestCountries (string t, int? l)
-        {
-             ApiResponse<List<Country>> localVarResponse = SuggestCountriesWithHttpInfo(t, l);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Returns entities of Country type filtered by occurence of a text in one of its fields
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="t">Text</param>
-        /// <param name="l">Max number of entities</param>
-        /// <returns>ApiResponse of List&lt;Country&gt;</returns>
-        public ApiResponse< List<Country> > SuggestCountriesWithHttpInfo (string t, int? l)
-        {
-            // verify the required parameter 't' is set
-            if (t == null)
-                throw new ApiException(400, "Missing required parameter 't' when calling UsersApi->SuggestCountries");
-            // verify the required parameter 'l' is set
-            if (l == null)
-                throw new ApiException(400, "Missing required parameter 'l' when calling UsersApi->SuggestCountries");
-
-            var localVarPath = "/country/suggest";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (t != null) localVarQueryParams.Add("t", Configuration.ApiClient.ParameterToString(t)); // query parameter
-            if (l != null) localVarQueryParams.Add("l", Configuration.ApiClient.ParameterToString(l)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("SuggestCountries", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<Country>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<Country>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Country>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns entities of Country type filtered by occurence of a text in one of its fields
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="t">Text</param>
-        /// <param name="l">Max number of entities</param>
-        /// <returns>Task of List&lt;Country&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Country>> SuggestCountriesAsync (string t, int? l)
-        {
-             ApiResponse<List<Country>> localVarResponse = await SuggestCountriesAsyncWithHttpInfo(t, l);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Returns entities of Country type filtered by occurence of a text in one of its fields
-        /// </summary>
-        /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="t">Text</param>
-        /// <param name="l">Max number of entities</param>
-        /// <returns>Task of ApiResponse (List&lt;Country&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Country>>> SuggestCountriesAsyncWithHttpInfo (string t, int? l)
-        {
-            // verify the required parameter 't' is set
-            if (t == null)
-                throw new ApiException(400, "Missing required parameter 't' when calling UsersApi->SuggestCountries");
-            // verify the required parameter 'l' is set
-            if (l == null)
-                throw new ApiException(400, "Missing required parameter 'l' when calling UsersApi->SuggestCountries");
-
-            var localVarPath = "/country/suggest";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (t != null) localVarQueryParams.Add("t", Configuration.ApiClient.ParameterToString(t)); // query parameter
-            if (l != null) localVarQueryParams.Add("l", Configuration.ApiClient.ParameterToString(l)); // query parameter
-
-            // authentication (bearer_access_token) required
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarHeaderParams["Authorization"] = Configuration.GetApiKeyWithPrefix("Authorization");
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("SuggestCountries", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<List<Country>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<Country>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Country>)));
-            
-        }
-
-        /// <summary>
-        ///  Returns entities of Organization type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -13920,7 +11106,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Organization type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -13990,7 +11176,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Organization type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -14004,7 +11190,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of Organization type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of Organization type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -14073,7 +11259,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of User type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of User type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -14086,7 +11272,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of User type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of User type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -14156,7 +11342,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of User type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of User type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -14170,7 +11356,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Returns entities of User type filtered by occurence of a text in one of its fields
+        ///  Retrieves entities of User type filtered by an occurrence of a text in one of its fields
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="t">Text</param>
@@ -14407,7 +11593,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of MarketDataSubscription
+        ///  Updates an existing entity of MarketDataSubscription
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14419,7 +11605,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of MarketDataSubscription
+        ///  Updates an existing entity of MarketDataSubscription
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14491,7 +11677,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of MarketDataSubscription
+        ///  Updates an existing entity of MarketDataSubscription
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14504,7 +11690,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of MarketDataSubscription
+        ///  Updates an existing entity of MarketDataSubscription
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14575,7 +11761,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of TradovateSubscription
+        ///  Updates an existing entity of TradovateSubscription
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14587,7 +11773,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of TradovateSubscription
+        ///  Updates an existing entity of TradovateSubscription
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14659,7 +11845,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of TradovateSubscription
+        ///  Updates an existing entity of TradovateSubscription
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14672,7 +11858,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of TradovateSubscription
+        ///  Updates an existing entity of TradovateSubscription
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14743,7 +11929,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserPlugin
+        ///  Updates an existing entity of UserPlugin
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14755,7 +11941,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserPlugin
+        ///  Updates an existing entity of UserPlugin
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14827,7 +12013,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserPlugin
+        ///  Updates an existing entity of UserPlugin
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
@@ -14840,7 +12026,7 @@ namespace Tradovate.Services.Api
         }
 
         /// <summary>
-        ///  Updates a existing entity of UserPlugin
+        ///  Updates an existing entity of UserPlugin
         /// </summary>
         /// <exception cref="Tradovate.Services.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>

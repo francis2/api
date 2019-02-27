@@ -48,22 +48,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum WeakPassword for "WeakPassword"
+            /// Enum DataError for "DataError"
             /// </summary>
-            [EnumMember(Value = "WeakPassword")]
-            WeakPassword,
+            [EnumMember(Value = "DataError")]
+            DataError,
             
             /// <summary>
-            /// Enum UnknownError for "UnknownError"
+            /// Enum EmailAlreadyRegistered for "EmailAlreadyRegistered"
             /// </summary>
-            [EnumMember(Value = "UnknownError")]
-            UnknownError,
-            
-            /// <summary>
-            /// Enum UserAlreadyExists for "UserAlreadyExists"
-            /// </summary>
-            [EnumMember(Value = "UserAlreadyExists")]
-            UserAlreadyExists,
+            [EnumMember(Value = "EmailAlreadyRegistered")]
+            EmailAlreadyRegistered,
             
             /// <summary>
             /// Enum EmailPolicyFailed for "EmailPolicyFailed"
@@ -78,34 +72,40 @@ namespace Tradovate.Services.Model
             FailedRecaptcha,
             
             /// <summary>
-            /// Enum DataError for "DataError"
-            /// </summary>
-            [EnumMember(Value = "DataError")]
-            DataError,
-            
-            /// <summary>
-            /// Enum EmailAlreadyRegistered for "EmailAlreadyRegistered"
-            /// </summary>
-            [EnumMember(Value = "EmailAlreadyRegistered")]
-            EmailAlreadyRegistered,
-            
-            /// <summary>
-            /// Enum WrongChallengeOrigin for "WrongChallengeOrigin"
-            /// </summary>
-            [EnumMember(Value = "WrongChallengeOrigin")]
-            WrongChallengeOrigin,
-            
-            /// <summary>
             /// Enum Success for "Success"
             /// </summary>
             [EnumMember(Value = "Success")]
             Success,
             
             /// <summary>
+            /// Enum UnknownError for "UnknownError"
+            /// </summary>
+            [EnumMember(Value = "UnknownError")]
+            UnknownError,
+            
+            /// <summary>
+            /// Enum UserAlreadyExists for "UserAlreadyExists"
+            /// </summary>
+            [EnumMember(Value = "UserAlreadyExists")]
+            UserAlreadyExists,
+            
+            /// <summary>
+            /// Enum WeakPassword for "WeakPassword"
+            /// </summary>
+            [EnumMember(Value = "WeakPassword")]
+            WeakPassword,
+            
+            /// <summary>
             /// Enum WrongChallenge for "WrongChallenge"
             /// </summary>
             [EnumMember(Value = "WrongChallenge")]
-            WrongChallenge
+            WrongChallenge,
+            
+            /// <summary>
+            /// Enum WrongChallengeOrigin for "WrongChallengeOrigin"
+            /// </summary>
+            [EnumMember(Value = "WrongChallengeOrigin")]
+            WrongChallengeOrigin
         }
 
         /// <summary>

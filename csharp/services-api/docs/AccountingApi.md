@@ -1,6 +1,6 @@
 # Tradovate.Services.Api.AccountingApi
 
-All URIs are relative to *https://live-api-d.tradovate.com/v1*
+All URIs are relative to *https://demo-api-d.tradovate.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -39,7 +39,7 @@ Method | HTTP request | Description
 
 
 
-Finds an entity of Account type by its name
+Retrieves an entity of Account type by its name
 
 ### Example
 ```csharp
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of Account type by its id
+Retrieves an entity of Account type by its id
 
 ### Example
 ```csharp
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of Account type by its ids
+Retrieves multiple entities of Account type by its ids
 
 ### Example
 ```csharp
@@ -237,7 +237,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Account type
+Retrieves all entities of Account type
 
 ### Example
 ```csharp
@@ -299,7 +299,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of CashBalance type
+Retrieves all entities of CashBalance type
 
 ### Example
 ```csharp
@@ -361,7 +361,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of MarginSnapshot type
+Retrieves all entities of MarginSnapshot type
 
 ### Example
 ```csharp
@@ -423,7 +423,7 @@ This endpoint does not need any parameter.
 
 
 
-Returns all entities of TradingPermission type
+Retrieves all entities of TradingPermission type
 
 ### Example
 ```csharp
@@ -485,7 +485,7 @@ This endpoint does not need any parameter.
 
 
 
-Finds an entity of CashBalance type by its id
+Retrieves an entity of CashBalance type by its id
 
 ### Example
 ```csharp
@@ -551,7 +551,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of CashBalanceLog type by its id
+Retrieves an entity of CashBalanceLog type by its id
 
 ### Example
 ```csharp
@@ -617,7 +617,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of CashBalanceLog type by its ids
+Retrieves multiple entities of CashBalanceLog type by its ids
 
 ### Example
 ```csharp
@@ -747,7 +747,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of CashBalance type by its ids
+Retrieves multiple entities of CashBalance type by its ids
 
 ### Example
 ```csharp
@@ -813,7 +813,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of MarginSnapshot type by its id
+Retrieves an entity of MarginSnapshot type by its id
 
 ### Example
 ```csharp
@@ -879,7 +879,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of MarginSnapshot type by its ids
+Retrieves multiple entities of MarginSnapshot type by its ids
 
 ### Example
 ```csharp
@@ -945,7 +945,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Account type related to User type
+Retrieves all entities of Account type related to User entity
 
 ### Example
 ```csharp
@@ -1011,7 +1011,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of Account type related to multiple entities of User type
+Retrieves all entities of Account type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -1034,7 +1034,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AccountingApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -1054,7 +1054,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 
@@ -1077,7 +1077,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CashBalanceLog type related to Account type
+Retrieves all entities of CashBalanceLog type related to Account entity
 
 ### Example
 ```csharp
@@ -1143,7 +1143,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CashBalanceLog type related to multiple entities of Account type
+Retrieves all entities of CashBalanceLog type related to multiple entities of Account type
 
 ### Example
 ```csharp
@@ -1166,7 +1166,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AccountingApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
+            var masterids = new List<int?>(); // List<int?> | ids of Account entities
 
             try
             {
@@ -1186,7 +1186,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Account entities | 
 
 ### Return type
 
@@ -1209,7 +1209,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CashBalance type related to Account type
+Retrieves all entities of CashBalance type related to Account entity
 
 ### Example
 ```csharp
@@ -1275,7 +1275,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of CashBalance type related to multiple entities of Account type
+Retrieves all entities of CashBalance type related to multiple entities of Account type
 
 ### Example
 ```csharp
@@ -1298,7 +1298,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AccountingApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
+            var masterids = new List<int?>(); // List<int?> | ids of Account entities
 
             try
             {
@@ -1318,7 +1318,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Account entities | 
 
 ### Return type
 
@@ -1341,7 +1341,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of MarginSnapshot type related to Account type
+Retrieves all entities of MarginSnapshot type related to Account entity
 
 ### Example
 ```csharp
@@ -1407,7 +1407,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of MarginSnapshot type related to multiple entities of Account type
+Retrieves all entities of MarginSnapshot type related to multiple entities of Account type
 
 ### Example
 ```csharp
@@ -1430,7 +1430,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AccountingApi();
-            var masterids = new List<int?>(); // List<int?> | ids of Account entity
+            var masterids = new List<int?>(); // List<int?> | ids of Account entities
 
             try
             {
@@ -1450,7 +1450,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of Account entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of Account entities | 
 
 ### Return type
 
@@ -1473,7 +1473,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of TradingPermission type related to User type
+Retrieves all entities of TradingPermission type related to User entity
 
 ### Example
 ```csharp
@@ -1539,7 +1539,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns all entities of TradingPermission type related to multiple entities of User type
+Retrieves all entities of TradingPermission type related to multiple entities of User type
 
 ### Example
 ```csharp
@@ -1562,7 +1562,7 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AccountingApi();
-            var masterids = new List<int?>(); // List<int?> | ids of User entity
+            var masterids = new List<int?>(); // List<int?> | ids of User entities
 
             try
             {
@@ -1582,7 +1582,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **masterids** | [**List<int?>**](int?.md)| ids of User entity | 
+ **masterids** | [**List<int?>**](int?.md)| ids of User entities | 
 
 ### Return type
 
@@ -1605,7 +1605,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds an entity of TradingPermission type by its id
+Retrieves an entity of TradingPermission type by its id
 
 ### Example
 ```csharp
@@ -1671,7 +1671,7 @@ Name | Type | Description  | Notes
 
 
 
-Finds multiple entities of TradingPermission type by its ids
+Retrieves multiple entities of TradingPermission type by its ids
 
 ### Example
 ```csharp
@@ -1737,7 +1737,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns entities of Account type filtered by occurence of a text in one of its fields
+Retrieves entities of Account type filtered by an occurrence of a text in one of its fields
 
 ### Example
 ```csharp

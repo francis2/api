@@ -48,16 +48,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum TemporaryLocked for "TemporaryLocked"
-            /// </summary>
-            [EnumMember(Value = "TemporaryLocked")]
-            TemporaryLocked,
-            
-            /// <summary>
             /// Enum Active for "Active"
             /// </summary>
             [EnumMember(Value = "Active")]
             Active,
+            
+            /// <summary>
+            /// Enum Closed for "Closed"
+            /// </summary>
+            [EnumMember(Value = "Closed")]
+            Closed,
             
             /// <summary>
             /// Enum Initiated for "Initiated"
@@ -66,16 +66,16 @@ namespace Tradovate.Services.Model
             Initiated,
             
             /// <summary>
+            /// Enum TemporaryLocked for "TemporaryLocked"
+            /// </summary>
+            [EnumMember(Value = "TemporaryLocked")]
+            TemporaryLocked,
+            
+            /// <summary>
             /// Enum UnconfirmedEmail for "UnconfirmedEmail"
             /// </summary>
             [EnumMember(Value = "UnconfirmedEmail")]
-            UnconfirmedEmail,
-            
-            /// <summary>
-            /// Enum Closed for "Closed"
-            /// </summary>
-            [EnumMember(Value = "Closed")]
-            Closed
+            UnconfirmedEmail
         }
 
         /// <summary>
@@ -99,7 +99,8 @@ namespace Tradovate.Services.Model
         /// <param name="Status">Active, Closed, Initiated, TemporaryLocked, UnconfirmedEmail (required).</param>
         /// <param name="Professional">Professional (required).</param>
         /// <param name="OrganizationId">id of Organization.</param>
-        public User(int? Id = null, string Name = null, DateTime? Timestamp = null, string Email = null, StatusEnum? Status = null, bool? Professional = null, int? OrganizationId = null)
+        /// <param name="LinkedUserId">id of User.</param>
+        public User(int? Id = null, string Name = null, DateTime? Timestamp = null, string Email = null, StatusEnum? Status = null, bool? Professional = null, int? OrganizationId = null, int? LinkedUserId = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -148,6 +149,7 @@ namespace Tradovate.Services.Model
             }
             this.Id = Id;
             this.OrganizationId = OrganizationId;
+            this.LinkedUserId = LinkedUserId;
         }
         
         /// <summary>
@@ -182,6 +184,12 @@ namespace Tradovate.Services.Model
         [DataMember(Name="organizationId", EmitDefaultValue=false)]
         public int? OrganizationId { get; set; }
         /// <summary>
+        /// id of User
+        /// </summary>
+        /// <value>id of User</value>
+        [DataMember(Name="linkedUserId", EmitDefaultValue=false)]
+        public int? LinkedUserId { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -196,6 +204,7 @@ namespace Tradovate.Services.Model
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  Professional: ").Append(Professional).Append("\n");
             sb.Append("  OrganizationId: ").Append(OrganizationId).Append("\n");
+            sb.Append("  LinkedUserId: ").Append(LinkedUserId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -266,6 +275,11 @@ namespace Tradovate.Services.Model
                     this.OrganizationId == other.OrganizationId ||
                     this.OrganizationId != null &&
                     this.OrganizationId.Equals(other.OrganizationId)
+                ) && 
+                (
+                    this.LinkedUserId == other.LinkedUserId ||
+                    this.LinkedUserId != null &&
+                    this.LinkedUserId.Equals(other.LinkedUserId)
                 );
         }
 
@@ -294,6 +308,8 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Professional.GetHashCode();
                 if (this.OrganizationId != null)
                     hash = hash * 59 + this.OrganizationId.GetHashCode();
+                if (this.LinkedUserId != null)
+                    hash = hash * 59 + this.LinkedUserId.GetHashCode();
                 return hash;
             }
         }

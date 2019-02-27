@@ -48,16 +48,16 @@ namespace Tradovate.Services.Model
         {
             
             /// <summary>
-            /// Enum String for "String"
-            /// </summary>
-            [EnumMember(Value = "String")]
-            String,
-            
-            /// <summary>
             /// Enum Boolean for "Boolean"
             /// </summary>
             [EnumMember(Value = "Boolean")]
             Boolean,
+            
+            /// <summary>
+            /// Enum Enum for "Enum"
+            /// </summary>
+            [EnumMember(Value = "Enum")]
+            Enum,
             
             /// <summary>
             /// Enum Integer for "Integer"
@@ -66,10 +66,10 @@ namespace Tradovate.Services.Model
             Integer,
             
             /// <summary>
-            /// Enum Enum for "Enum"
+            /// Enum String for "String"
             /// </summary>
-            [EnumMember(Value = "Enum")]
-            Enum
+            [EnumMember(Value = "String")]
+            String
         }
 
         /// <summary>

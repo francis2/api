@@ -49,14 +49,13 @@ namespace Tradovate.Services.Model
         /// </summary>
         /// <param name="Id">Id.</param>
         /// <param name="Timestamp">Timestamp (required).</param>
-        /// <param name="RiskTimePeriodId">id of RiskTimePeriod (required).</param>
         /// <param name="InitialMargin">InitialMargin (required).</param>
         /// <param name="MaintenanceMargin">MaintenanceMargin (required).</param>
         /// <param name="AutoLiqLevel">AutoLiqLevel.</param>
         /// <param name="LiqOnlyLevel">LiqOnlyLevel.</param>
         /// <param name="TotalUsedMargin">TotalUsedMargin (required).</param>
         /// <param name="FullInitialMargin">FullInitialMargin (required).</param>
-        public MarginSnapshot(int? Id = null, DateTime? Timestamp = null, int? RiskTimePeriodId = null, double? InitialMargin = null, double? MaintenanceMargin = null, double? AutoLiqLevel = null, double? LiqOnlyLevel = null, double? TotalUsedMargin = null, double? FullInitialMargin = null)
+        public MarginSnapshot(int? Id = null, DateTime? Timestamp = null, double? InitialMargin = null, double? MaintenanceMargin = null, double? AutoLiqLevel = null, double? LiqOnlyLevel = null, double? TotalUsedMargin = null, double? FullInitialMargin = null)
         {
             // to ensure "Timestamp" is required (not null)
             if (Timestamp == null)
@@ -66,15 +65,6 @@ namespace Tradovate.Services.Model
             else
             {
                 this.Timestamp = Timestamp;
-            }
-            // to ensure "RiskTimePeriodId" is required (not null)
-            if (RiskTimePeriodId == null)
-            {
-                throw new InvalidDataException("RiskTimePeriodId is a required property for MarginSnapshot and cannot be null");
-            }
-            else
-            {
-                this.RiskTimePeriodId = RiskTimePeriodId;
             }
             // to ensure "InitialMargin" is required (not null)
             if (InitialMargin == null)
@@ -128,12 +118,6 @@ namespace Tradovate.Services.Model
         [DataMember(Name="timestamp", EmitDefaultValue=false)]
         public DateTime? Timestamp { get; set; }
         /// <summary>
-        /// id of RiskTimePeriod
-        /// </summary>
-        /// <value>id of RiskTimePeriod</value>
-        [DataMember(Name="riskTimePeriodId", EmitDefaultValue=false)]
-        public int? RiskTimePeriodId { get; set; }
-        /// <summary>
         /// Gets or Sets InitialMargin
         /// </summary>
         [DataMember(Name="initialMargin", EmitDefaultValue=false)]
@@ -173,7 +157,6 @@ namespace Tradovate.Services.Model
             sb.Append("class MarginSnapshot {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Timestamp: ").Append(Timestamp).Append("\n");
-            sb.Append("  RiskTimePeriodId: ").Append(RiskTimePeriodId).Append("\n");
             sb.Append("  InitialMargin: ").Append(InitialMargin).Append("\n");
             sb.Append("  MaintenanceMargin: ").Append(MaintenanceMargin).Append("\n");
             sb.Append("  AutoLiqLevel: ").Append(AutoLiqLevel).Append("\n");
@@ -227,11 +210,6 @@ namespace Tradovate.Services.Model
                     this.Timestamp.Equals(other.Timestamp)
                 ) && 
                 (
-                    this.RiskTimePeriodId == other.RiskTimePeriodId ||
-                    this.RiskTimePeriodId != null &&
-                    this.RiskTimePeriodId.Equals(other.RiskTimePeriodId)
-                ) && 
-                (
                     this.InitialMargin == other.InitialMargin ||
                     this.InitialMargin != null &&
                     this.InitialMargin.Equals(other.InitialMargin)
@@ -278,8 +256,6 @@ namespace Tradovate.Services.Model
                     hash = hash * 59 + this.Id.GetHashCode();
                 if (this.Timestamp != null)
                     hash = hash * 59 + this.Timestamp.GetHashCode();
-                if (this.RiskTimePeriodId != null)
-                    hash = hash * 59 + this.RiskTimePeriodId.GetHashCode();
                 if (this.InitialMargin != null)
                     hash = hash * 59 + this.InitialMargin.GetHashCode();
                 if (this.MaintenanceMargin != null)
