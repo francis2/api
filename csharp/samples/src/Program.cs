@@ -119,7 +119,7 @@ namespace Tradovate
                     ContractLibrary.PrepopulateCache();
 
                     Thread.Sleep(3000);
-                    var symbol = "ESH7";
+                    var symbol = "ESH9";
                     Log.Write($"SHOW {symbol} SPECIFICATIONS");
                     ContractLibrary.ContractSpec(symbol);
 
